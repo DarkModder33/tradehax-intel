@@ -1,10 +1,22 @@
 # TradeHax worker
 
-Always-on process for inferred option flow. It is not deployed from this checkout.
+Always-on process for option flow, market tide, alerts, NOPE, and off-exchange prints. It serves JSON to the static site, which reads its origin from `NEXT_PUBLIC_WORKER_URL` at build time.
 
-- Heroku: `worker/` is the app root. `Procfile` starts Node 22. Set `ALLOWED_ORIGIN=https://darkmodder33.github.io`.
-- Azure: the same start command on a B1s Linux app, with the same setting.
+## What it does
 
-`GET /v1/health` reports whether `ALPACA_KEY_ID` is set. Flow, tide, alerts, NOPE, and off-exchange routes answer with an empty tape and `live feed not connected` until a poller has diffs or Alpaca keys exist on the server. Do not put those keys in the static site.
+- Every `CHAIN_POLL_SEC` (120) it pulls Cboe delayed chains for `WORKER_SYMBOLS` (SPY, QQQ, IWM, NVDA, TSLA, AAPL, AMD, META, AMZN, MSFT) straight from `cdn.cboe.com`. The quotes set bid/ask side and delta. Without Alpaca keys, the volume change between two snapshots becomes an inferred print.
+- With `ALPACA_KEY_ID` and `ALPACA_SECRET`, every `ALPACA_POLL_SEC` (60) it pulls 15-minute-delayed OPRA trades for the most active `WATCH_CONTRACTS` (400) contracts, plus anything trading above open interest. These are individual prints with exchange and condition codes, so ISO sweeps, blocks, and multi-leg trades are flagged. It also pulls SIP stock trades and keeps TRF (exchange `D`) prints of at least `OFFEX_MIN_NOTIONAL` ($1M).
+- On start it backfills the last `BACKFILL_MIN` (30) minutes of the current or most recent session. State is in memory only.
 
-Azure App Service uses the same start command as Heroku. Set `ALLOWED_ORIGIN` and, when you have them, `ALPACA_KEY_ID` and `ALPACA_SECRET`. `worker/src/alpaca.ts` only builds request URLs.
+## Routes
+
+`/health` and `/v1/health`, `/v1/flow` and `/v1/interval` (`?symbol=&minPremium=&flag=sweep|block|multileg&limit=`), `/v1/alerts`, `/v1/tide`, `/v1/top-net-impact`, `/v1/netflow/:symbol`, `/v1/nope/:symbol`, `/v1/offex` (`?symbol=&limit=`), and `/v1/stream` (server-sent events, a `hello` event and then `prints` after each poll). CORS allows each origin in `ALLOWED_ORIGIN` (comma separated).
+
+## Deploy
+
+The worker imports shared code from `../src/lib`, so it is bundled with esbuild into `dist/server.mjs` and only `Procfile`, `package.json`, and `dist/` are shipped.
+
+- Heroku: `worker/deploy-heroku.sh <app>` with `HEROKU_API_KEY` set. Use a Basic dyno; Eco sleeps. Config vars: `ALPACA_KEY_ID`, `ALPACA_SECRET`, `ALLOWED_ORIGIN=https://darkmodder33.github.io`, `NODE_ENV=production`.
+- Azure: the same bundle and `node dist/server.mjs` on a B1s Linux app, with the same settings.
+
+Never put the Alpaca keys in the static site.

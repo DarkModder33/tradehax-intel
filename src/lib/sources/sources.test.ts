@@ -64,8 +64,8 @@ describe("manifest and worker presence", () => {
     expect(emptyDataset("SEC", "timed out").unavailable).toBe(true);
   });
 
-  it("treats a missing worker URL as disconnected", () => {
-    expect(workerConnected()).toBe(false);
+  it("points at the public worker unless the URL is turned off", () => {
+    expect(workerConnected()).toBe(true);
     expect(healthBody("2026-11-15T00:00:00.000Z").ok).toBe(true);
   });
 

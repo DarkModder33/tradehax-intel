@@ -1,4 +1,4 @@
-import type { FlowPrint } from "./classify";
+import type { FlowPrint } from "./classify.ts";
 
 export interface TideBar {
   netCallPremium: number;
