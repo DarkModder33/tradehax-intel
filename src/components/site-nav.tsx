@@ -12,6 +12,15 @@ export const NAV = [
   { href: "/flow/hot/", label: "Hot" },
   { href: "/shorts/", label: "Shorts" },
   { href: "/strategy/", label: "Strategy" },
+  { href: "/insiders/", label: "Insiders" },
+  { href: "/congress/", label: "Congress" },
+  { href: "/institutions/", label: "13F" },
+  { href: "/oi/", label: "OI" },
+  { href: "/earnings/", label: "Earnings" },
+  { href: "/calendar/", label: "Calendar" },
+  { href: "/etf/", label: "ETF" },
+  { href: "/screener/", label: "Screener" },
+  { href: "/seasonality/", label: "Seasonality" },
 ] as const;
 
 export function SiteNav() {

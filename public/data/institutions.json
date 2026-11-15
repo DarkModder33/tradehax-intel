@@ -1,0 +1,13 @@
+{
+  "meta": {
+    "asOf": null,
+    "source": "SEC 13F",
+    "rows": 0,
+    "delay": "n/a",
+    "unavailable": true,
+    "stale": true,
+    "error": "Quarterly 13F ZIP is not expanded in this run. The job records the miss instead of a partial table."
+  },
+  "rows": [],
+  "note": "Kept unavailable because the source failed. Yesterday's file is left in place when this runs again."
+}

@@ -1,0 +1,50 @@
+{
+  "meta": {
+    "asOf": null,
+    "source": "Nasdaq calendars",
+    "rows": 0,
+    "delay": "daily",
+    "unavailable": true,
+    "error": "The operation was aborted due to timeout"
+  },
+  "rows": [],
+  "parts": {
+    "earnings": {
+      "asOf": null,
+      "source": "Nasdaq earnings",
+      "rows": 0,
+      "delay": "n/a",
+      "unavailable": true,
+      "stale": true,
+      "error": "The operation was aborted due to timeout"
+    },
+    "economic": {
+      "asOf": null,
+      "source": "Nasdaq economic calendar",
+      "rows": 0,
+      "delay": "n/a",
+      "unavailable": true,
+      "stale": true,
+      "error": "The operation was aborted due to timeout"
+    },
+    "fomc": {
+      "asOf": null,
+      "source": "Federal Reserve",
+      "rows": 0,
+      "delay": "n/a",
+      "unavailable": true,
+      "stale": true,
+      "error": "No FOMC date list is bundled. The economic calendar is the source when Nasdaq answers."
+    },
+    "ipo": {
+      "asOf": null,
+      "source": "Nasdaq IPO",
+      "rows": 0,
+      "delay": "n/a",
+      "unavailable": true,
+      "stale": true,
+      "error": "IPO calendar was not requested in this run."
+    }
+  },
+  "note": "FOMC dates are not bundled. IPO was not requested."
+}

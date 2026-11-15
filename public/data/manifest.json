@@ -1,4 +1,104 @@
 {
-  "generatedAt": null,
-  "datasets": {}
+  "generatedAt": "2026-11-15T22:39:28.493Z",
+  "datasets": {
+    "insiders": {
+      "asOf": "2026-11-15T22:38:31.847Z",
+      "source": "SEC EDGAR Form 4",
+      "rows": 25,
+      "delay": "hours",
+      "stale": false,
+      "unavailable": false
+    },
+    "congress": {
+      "asOf": "2026-11-15T22:38:31.967Z",
+      "source": "House Clerk PTR index",
+      "rows": 40,
+      "delay": "daily",
+      "stale": false,
+      "unavailable": false
+    },
+    "institutions": {
+      "asOf": null,
+      "source": "SEC 13F",
+      "rows": 0,
+      "delay": "n/a",
+      "unavailable": true,
+      "stale": true,
+      "error": "Quarterly 13F ZIP is not expanded in this run. The job records the miss instead of a partial table."
+    },
+    "oi-change": {
+      "asOf": null,
+      "source": "Cboe open interest",
+      "rows": 0,
+      "delay": "n/a",
+      "unavailable": true,
+      "stale": true,
+      "error": "No prior chain is stored yet, so a change cannot be computed. The next run can diff against a saved baseline."
+    },
+    "iv": {
+      "asOf": "2026-11-15T22:38:32.382Z",
+      "source": "Cboe iv30",
+      "rows": 1,
+      "delay": "about 15 min",
+      "stale": false,
+      "unavailable": false
+    },
+    "shorts": {
+      "asOf": "2026-11-15T22:39:18.473Z",
+      "source": "FINRA consolidated short interest",
+      "rows": 1,
+      "delay": "twice monthly",
+      "stale": false,
+      "unavailable": false
+    },
+    "ftd": {
+      "asOf": "2026-11-15T22:38:33.165Z",
+      "source": "SEC fails-to-deliver",
+      "rows": 16,
+      "delay": "about 3 weeks",
+      "stale": false,
+      "unavailable": false
+    },
+    "ats": {
+      "asOf": "2026-11-15T22:39:28.493Z",
+      "source": "FINRA ATS weekly",
+      "rows": 5,
+      "delay": "2 to 4 weeks",
+      "stale": false,
+      "unavailable": false
+    },
+    "calendar": {
+      "asOf": null,
+      "source": "Nasdaq calendars",
+      "rows": 0,
+      "delay": "daily",
+      "unavailable": true,
+      "error": "The operation was aborted due to timeout"
+    },
+    "etf-flows": {
+      "asOf": null,
+      "source": "SPDR",
+      "rows": 0,
+      "delay": "n/a",
+      "unavailable": true,
+      "stale": true,
+      "error": "The NAV workbook is xlsx. This run does not expand it, so flows are unavailable rather than estimated."
+    },
+    "screener": {
+      "asOf": "2026-11-15T22:39:03.619Z",
+      "source": "Yahoo most actives",
+      "rows": 25,
+      "delay": "delayed",
+      "stale": false,
+      "unavailable": false
+    },
+    "seasonality": {
+      "asOf": "2026-11-15T22:39:03.708Z",
+      "source": "Yahoo SPY monthly",
+      "rows": 12,
+      "delay": "daily",
+      "stale": false,
+      "unavailable": false
+    }
+  }
 }

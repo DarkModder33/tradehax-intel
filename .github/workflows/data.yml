@@ -45,7 +45,7 @@ jobs:
           mkdir -p /tmp/tradehax-data/data
 
       - name: Build datasets
-        run: node scripts/data/run.mjs --job "${{ github.event.schedule }}"
+        run: node --experimental-strip-types scripts/data/run.mjs --job "${{ github.event.schedule }}"
         env:
           DATA_DIR: /tmp/tradehax-data/data
           SEC_USER_AGENT: ${{ secrets.SEC_USER_AGENT }}

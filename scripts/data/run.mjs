@@ -1,50 +1,38 @@
-/**
- * Precompute entrypoint. P0 writes an empty manifest. Later jobs fill datasets
- * and never throw away yesterday's file when a source fails.
- */
 import { mkdir, writeFile } from "node:fs/promises";
 import path from "node:path";
+import { JOBS } from "./jobs.mjs";
 
 const root = path.resolve(process.env.DATA_DIR ?? "data");
 
-export const DATASETS = [
-  "insiders",
-  "congress",
-  "institutions",
-  "oi-change",
-  "iv",
-  "maxpain",
-  "shorts",
-  "ftd",
-  "ats",
-  "calendar",
-  "etf-flows",
-  "screener",
-  "seasonality",
-];
-
-export function emptyManifest(now = new Date().toISOString()) {
-  const datasets = {};
-  for (const name of DATASETS) {
-    datasets[name] = {
-      asOf: null,
-      source: name,
-      rows: 0,
-      delay: "n/a",
-      unavailable: true,
-      error: "not built yet",
+function metaOf(payload) {
+  if (payload?.earnings) {
+    return {
+      asOf: payload.earnings.meta?.asOf ?? null,
+      source: "Nasdaq calendars",
+      rows: (payload.earnings.meta?.rows ?? 0) + (payload.economic.meta?.rows ?? 0),
+      delay: "daily",
+      unavailable: Boolean(payload.earnings.meta?.unavailable && payload.economic.meta?.unavailable),
+      error: payload.earnings.meta?.error,
     };
   }
-  return { generatedAt: now, datasets };
+  return payload.meta;
 }
 
-export async function writeManifest(dir = root, manifest = emptyManifest()) {
+export async function buildDatasets(dir = root) {
   await mkdir(dir, { recursive: true });
+  const datasets = {};
+  for (const [name, job] of Object.entries(JOBS)) {
+    const payload = await job();
+    datasets[name] = metaOf(payload);
+    const file = path.join(dir, `${name}.json`);
+    await writeFile(file, JSON.stringify(payload, null, 2));
+    console.log(`${name}: ${datasets[name].unavailable ? "unavailable" : datasets[name].rows + " rows"}`);
+  }
+  const manifest = { generatedAt: new Date().toISOString(), datasets };
   await writeFile(path.join(dir, "manifest.json"), JSON.stringify(manifest, null, 2));
   return manifest;
 }
 
-if (import.meta.url === `file://${process.argv[1]}`) {
-  const manifest = await writeManifest();
-  console.log(`wrote ${root}/manifest.json (${Object.keys(manifest.datasets).length} datasets)`);
+if (import.meta.url === `file://${process.argv[1]}` || process.argv[1]?.endsWith("run.mjs")) {
+  await buildDatasets();
 }

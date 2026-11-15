@@ -1,0 +1,438 @@
+{
+  "meta": {
+    "asOf": "2026-11-15T22:38:31.847Z",
+    "source": "SEC EDGAR Form 4",
+    "rows": 25,
+    "delay": "hours",
+    "stale": false,
+    "unavailable": false
+  },
+  "rows": [
+    {
+      "id": "0002161365-26-000011:wk-form4_1794616529.xml",
+      "filed": "2026-11-09",
+      "names": [
+        "Arntzen Steven W.  (CIK 0002161365)",
+        "Accel Entertainment, Inc.  (CIK 0001698991)"
+      ],
+      "trade": {
+        "owner": "Arntzen Steven W.",
+        "ticker": "ACEL",
+        "code": "S",
+        "shares": 10000,
+        "price": 13.785,
+        "acquired": false,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002156034-26-000007:edgardoc.xml",
+      "filed": "2026-11-12",
+      "names": [
+        "Jenks Trisha Esakoff  (CIK 0002156034)",
+        "RESOURCES CONNECTION, INC.  (CIK 0001084765)"
+      ],
+      "trade": {
+        "owner": "Jenks Trisha Esakoff",
+        "ticker": "RGP",
+        "code": "F",
+        "shares": 458.2798,
+        "price": 2.69,
+        "acquired": false,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002148490-26-000005:wk-form4_1794617804.xml",
+      "filed": "2026-11-11",
+      "names": [
+        "Krishnaswamy Brijesh  (CIK 0002148490)",
+        "BEYOND MEAT, INC.  (CIK 0001655210)"
+      ],
+      "trade": {
+        "owner": "Krishnaswamy Brijesh",
+        "ticker": "BYND",
+        "code": "A",
+        "shares": 101351,
+        "price": 0,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002147247-26-000006:wk-form4_1794623095.xml",
+      "filed": "2026-11-10",
+      "names": [
+        "Vyvoda Michael  (CIK 0002147247)",
+        "Enovix Corp  (CIK 0001828318)"
+      ],
+      "trade": {
+        "owner": "Vyvoda Michael",
+        "ticker": "ENVX",
+        "code": "A",
+        "shares": 67600,
+        "price": 0,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002144166-26-000005:wk-form4_1794617743.xml",
+      "filed": "2026-11-11",
+      "names": [
+        "Figee Adriaan Gerrit  (CIK 0002144166)",
+        "BEYOND MEAT, INC.  (CIK 0001655210)"
+      ],
+      "trade": {
+        "owner": "Figee Adriaan Gerrit",
+        "ticker": "BYND",
+        "code": "A",
+        "shares": 84459,
+        "price": 0,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002139084-26-000006:form4-11132026_101138.xml",
+      "filed": "2026-11-11",
+      "names": [
+        "Kachhela Jiten  (CIK 0002139084)",
+        "JACOBS SOLUTIONS INC.  (CIK 0000052988)"
+      ],
+      "trade": {
+        "owner": "Kachhela Jiten",
+        "ticker": "J",
+        "code": "A",
+        "shares": 1271,
+        "price": 157.47,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002133255-26-000018:ownership.xml",
+      "filed": "2026-11-11",
+      "names": [
+        "Hott Douglas  (CIK 0002133255)",
+        "Snap Inc  (CIK 0001564408)"
+      ],
+      "trade": {
+        "owner": "Hott Douglas",
+        "ticker": "SNAP",
+        "code": "S",
+        "shares": 15000,
+        "price": 5.0183,
+        "acquired": false,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002131880-26-000008:wk-form4_1794607606.xml",
+      "filed": "2026-11-13",
+      "names": [
+        "Warriner Kenneth Thomas  (CIK 0002131880)",
+        "Meridian Corp  (CIK 0001750735)"
+      ],
+      "trade": {
+        "owner": "Warriner Kenneth Thomas",
+        "ticker": "MRBK",
+        "code": "P",
+        "shares": 1000,
+        "price": 16.185,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002131696-26-000001:wk-form4_1794585731.xml",
+      "filed": "2026-11-12",
+      "names": [
+        "CALLAHAN MICHAEL KEVIN  (CIK 0002131696)",
+        "DONEGAL GROUP INC  (CIK 0000800457)"
+      ],
+      "trade": {
+        "owner": "CALLAHAN MICHAEL KEVIN",
+        "ticker": "DGICA",
+        "code": "M",
+        "shares": 1500,
+        "price": 15.76,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002124256-26-000006:primary_doc.xml",
+      "filed": "2026-11-12",
+      "names": [
+        "BERHO CORONA LORENZO MANUEL  (CIK 0002124256)",
+        "Vesta Real Estate Corporation, S.A.B. de C.V.  (CIK 0001969373)"
+      ],
+      "trade": {
+        "owner": "BERHO CORONA LORENZO MANUEL",
+        "ticker": "VTMX",
+        "code": "S",
+        "shares": 128959,
+        "price": 3.77,
+        "acquired": false,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002121825-26-000013:edgardoc.xml",
+      "filed": "2026-11-12",
+      "names": [
+        "Iyer Venkataraman Ramaswamy  (CIK 0002121825)",
+        "RESOURCES CONNECTION, INC.  (CIK 0001084765)"
+      ],
+      "trade": {
+        "owner": "Iyer Venkataraman Ramaswamy",
+        "ticker": "RGP",
+        "code": "F",
+        "shares": 965.8859,
+        "price": 2.69,
+        "acquired": false,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002119764-26-000036:section16.xml",
+      "filed": "2026-11-12",
+      "names": [
+        "Elsztain Alejandro Gustavo  (CIK 0002119764)",
+        "CRESUD INC  (CIK 0001034957)"
+      ],
+      "trade": {
+        "owner": "Elsztain Alejandro Gustavo",
+        "ticker": "CRESY",
+        "code": "P",
+        "shares": 100000,
+        "price": 0.89,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002119764-26-000034:section16.xml",
+      "filed": "2026-11-05",
+      "names": [
+        "Elsztain Alejandro Gustavo  (CIK 0002119764)",
+        "IRSA INVESTMENTS & REPRESENTATIONS INC  (CIK 0000933267)"
+      ],
+      "trade": {
+        "owner": "Elsztain Alejandro Gustavo",
+        "ticker": "IRS",
+        "code": "J",
+        "shares": 157943,
+        "price": 0,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002119033-26-000011:edgardoc.xml",
+      "filed": "2026-11-12",
+      "names": [
+        "Lane Michael Wayne  (CIK 0002119033)",
+        "RESOURCES CONNECTION, INC.  (CIK 0001084765)"
+      ],
+      "trade": {
+        "owner": "Lane Michael Wayne",
+        "ticker": "RGP",
+        "code": "F",
+        "shares": 629.5846,
+        "price": 2.69,
+        "acquired": false,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002117905-26-000049:primary_doc.xml",
+      "filed": "2026-11-12",
+      "names": [
+        "Sousa Mauad Bruno  (CIK 0002117905)",
+        "Aura Minerals Inc.  (CIK 0001468642)"
+      ],
+      "trade": {
+        "owner": "Sousa Mauad Bruno",
+        "ticker": "AUGO",
+        "code": "S",
+        "shares": 11356,
+        "price": 79.7593,
+        "acquired": false,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002117143-26-000007:primary_doc.xml",
+      "filed": "2026-11-12",
+      "names": [
+        "PUCHEU ROMERO ALEJANDRO  (CIK 0002117143)",
+        "Vesta Real Estate Corporation, S.A.B. de C.V.  (CIK 0001969373)"
+      ],
+      "trade": {
+        "owner": "PUCHEU ROMERO ALEJANDRO",
+        "ticker": "VTMX",
+        "code": "S",
+        "shares": 70000,
+        "price": 3.78,
+        "acquired": false,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002115914-26-000003:wk-form4_1794604867.xml",
+      "filed": "2026-11-10",
+      "names": [
+        "Freedman Amy  (CIK 0002115914)",
+        "Keel Infrastructure Corp.  (CIK 0001812477)"
+      ],
+      "trade": {
+        "owner": "Freedman Amy",
+        "ticker": "KEEL",
+        "code": "P",
+        "shares": 25000,
+        "price": 1.88,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002111538-26-000005:wk-form4_1794592466.xml",
+      "filed": "2026-11-10",
+      "names": [
+        "D'Antuono Christopher T.  (CIK 0002111538)",
+        "NEW JERSEY RESOURCES CORP  (CIK 0000356309)"
+      ],
+      "trade": {
+        "owner": "D'Antuono Christopher T.",
+        "ticker": "NJR",
+        "code": "A",
+        "shares": 878,
+        "price": 54.71,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002109337-26-000016:primary_doc.xml",
+      "filed": "2026-11-12",
+      "names": [
+        "WANG CHUN KAI  (CIK 0002109337)",
+        "OBOOK HOLDINGS INC.  (CIK 0002025416)"
+      ],
+      "trade": {
+        "owner": "WANG CHUN KAI",
+        "ticker": "OWLS",
+        "code": "P",
+        "shares": 6171,
+        "price": 2.172,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002094778-26-000008:wk-form4_1794614397.xml",
+      "filed": "2026-11-12",
+      "names": [
+        "Smith Patrick E  (CIK 0002094778)",
+        "AMEREN CORP  (CIK 0001002910)"
+      ],
+      "trade": {
+        "owner": "Smith Patrick E",
+        "ticker": "AEE",
+        "code": "G",
+        "shares": 445,
+        "price": 0,
+        "acquired": false,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002093849-26-000010:wk-form4_1794614446.xml",
+      "filed": "2026-11-12",
+      "names": [
+        "Martin Ryan J  (CIK 0002093849)",
+        "AMEREN CORP  (CIK 0001002910)"
+      ],
+      "trade": {
+        "owner": "Martin Ryan J",
+        "ticker": "AEE",
+        "code": "S",
+        "shares": 800,
+        "price": 114.12,
+        "acquired": false,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002093135-26-000005:primary_doc.xml",
+      "filed": "2026-11-11",
+      "names": [
+        "Wang Haichen  (CIK 0002093135)",
+        "Webull Corp  (CIK 0001866364)"
+      ],
+      "trade": {
+        "owner": "Wang Haichen",
+        "ticker": "BULL",
+        "code": "M",
+        "shares": 67186,
+        "price": 0,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002092820-26-000003:primary_doc.xml",
+      "filed": "2026-11-11",
+      "names": [
+        "James Benjamin Worthy  (CIK 0002092820)",
+        "Webull Corp  (CIK 0001866364)"
+      ],
+      "trade": {
+        "owner": "James Benjamin Worthy",
+        "ticker": "BULL",
+        "code": "M",
+        "shares": 41991,
+        "price": 0,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002076003-26-000003:form4-11132026_041129.xml",
+      "filed": "2026-11-12",
+      "names": [
+        "Graham James E.  (CIK 0002076003)",
+        "BAR HARBOR BANKSHARES  (CIK 0000743367)"
+      ],
+      "trade": {
+        "owner": "Graham James E.",
+        "ticker": "BHB",
+        "code": "A",
+        "shares": 966,
+        "price": 0,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002064832-26-000337:form4.xml",
+      "filed": "2026-11-11",
+      "names": [
+        "Doherty John N.  (CIK 0001645756)",
+        "Butterfly Network, Inc.  (CIK 0001804176)"
+      ],
+      "trade": {
+        "owner": "Doherty John N.",
+        "ticker": "BFLY",
+        "code": "S",
+        "shares": 50000,
+        "price": 7,
+        "acquired": false,
+        "form": "4"
+      }
+    }
+  ],
+  "note": "Fair-access User-Agent. XML parse is best effort."
+}
