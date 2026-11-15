@@ -1,9 +1,11 @@
 import { parseForm4 } from "../../src/lib/datasets/form4.ts";
 import { parseHouseIndex } from "../../src/lib/datasets/congress.ts";
 import { parseFtd } from "../../src/lib/datasets/ftd.ts";
+import { parseNavHistory } from "../../src/lib/datasets/nav.ts";
 import { monthlyReturns } from "../../src/lib/datasets/seasonality.ts";
 
 const USER_AGENT = process.env.SEC_USER_AGENT || "TradeHaxIntel admin@tradehax.local";
+const BROWSER = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36";
 
 export function secUserAgent() {
   return USER_AGENT;
@@ -17,6 +19,34 @@ async function grab(url, options = {}, timeoutMs = 20000) {
   });
   if (!response.ok) throw new Error(`${response.status} ${url}`);
   return response;
+}
+
+async function grabRetry(url, options = {}, timeoutMs = 45000, attempts = 3) {
+  let last = new Error(`No attempt for ${url}`);
+  for (let attempt = 1; attempt <= attempts; attempt++) {
+    try {
+      return await grab(url, options, timeoutMs);
+    } catch (error) {
+      last = error instanceof Error ? error : new Error(String(error));
+      await new Promise((resolve) => setTimeout(resolve, 400 * attempt));
+    }
+  }
+  throw last;
+}
+
+function recentWeekdays(count = 4) {
+  const dates = [];
+  const cursor = new Date();
+  while (dates.length < count) {
+    const weekday = cursor.getUTCDay();
+    if (weekday !== 0 && weekday !== 6) {
+      const month = String(cursor.getUTCMonth() + 1).padStart(2, "0");
+      const day = String(cursor.getUTCDate()).padStart(2, "0");
+      dates.push(`${cursor.getUTCFullYear()}-${month}-${day}`);
+    }
+    cursor.setUTCDate(cursor.getUTCDate() - 1);
+  }
+  return dates;
 }
 
 function parseJsonLoose(text) {
@@ -209,37 +239,64 @@ export async function ats() {
   }
 }
 
+async function nasdaqCalendar(path) {
+  const browser = {
+    headers: {
+      "user-agent": BROWSER,
+      accept: "application/json, text/plain, */*",
+      "accept-language": "en-US,en;q=0.9",
+      referer: "https://www.nasdaq.com/",
+    },
+  };
+  let last = new Error(`Nasdaq ${path} did not answer`);
+  for (const date of recentWeekdays(4)) {
+    try {
+      const response = await grabRetry(`https://api.nasdaq.com/api/${path}?date=${date}`, browser, 45000, 3);
+      const body = parseJsonLoose(await response.text());
+      const rows = body?.data?.rows ?? (Array.isArray(body?.data) ? body.data : []);
+      if (Array.isArray(rows) && rows.length) {
+        return pack(`Nasdaq ${path}`, rows.slice(0, 40).map((row) => ({ date, ...row })), { delay: "daily" });
+      }
+      last = new Error(`Nasdaq ${path} returned no rows for ${date}`);
+    } catch (error) {
+      last = error instanceof Error ? error : new Error(String(error));
+    }
+  }
+  if (process.env.FINNHUB_KEY && path === "calendar/earnings") {
+    try {
+      const dates = recentWeekdays(4);
+      const response = await grabRetry(
+        `https://finnhub.io/api/v1/calendar/earnings?from=${dates.at(-1)}&to=${dates[0]}&token=${process.env.FINNHUB_KEY}`,
+        {},
+        30000,
+        2,
+      );
+      const body = parseJsonLoose(await response.text());
+      const rows = body?.earningsCalendar ?? [];
+      if (Array.isArray(rows) && rows.length) {
+        return pack("Finnhub earnings", rows.slice(0, 40), { delay: "daily", note: "Nasdaq did not answer. Finnhub is the fallback." });
+      }
+    } catch (error) {
+      last = error instanceof Error ? error : new Error(String(error));
+    }
+  }
+  return failed(`Nasdaq ${path}`, last);
+}
+
 export async function calendars() {
-  const earnings = await (async () => {
-    try {
-      const response = await grab("https://api.nasdaq.com/api/calendar/earnings?date=2026-11-13", { headers: { accept: "application/json" } }, 15000);
-      const body = await response.json();
-      const rows = body?.data?.rows ?? body?.data ?? [];
-      return pack("Nasdaq earnings", Array.isArray(rows) ? rows.slice(0, 40) : [], { delay: "daily" });
-    } catch (error) {
-      return failed("Nasdaq earnings", error);
-    }
-  })();
-  const economic = await (async () => {
-    try {
-      const response = await grab("https://api.nasdaq.com/api/calendar/economicevents?date=2026-11-13", { headers: { accept: "application/json" } }, 15000);
-      const body = await response.json();
-      const rows = body?.data?.rows ?? [];
-      return pack("Nasdaq economic calendar", Array.isArray(rows) ? rows.slice(0, 40) : [], { delay: "daily" });
-    } catch (error) {
-      return failed("Nasdaq economic calendar", error);
-    }
-  })();
+  const earnings = await nasdaqCalendar("calendar/earnings");
+  const economic = await nasdaqCalendar("calendar/economicevents");
+  const ipo = await nasdaqCalendar("ipo/calendar");
   const fomc = failed("Federal Reserve", new Error("No FOMC date list is bundled. The economic calendar is the source when Nasdaq answers."));
-  const ipo = failed("Nasdaq IPO", new Error("IPO calendar was not requested in this run."));
   const rows = [
     ...(earnings.rows ?? []).map((row) => ({ kind: "earnings", ...row })),
     ...(economic.rows ?? []).map((row) => ({ kind: "economic", ...row })),
+    ...(ipo.rows ?? []).map((row) => ({ kind: "ipo", ...row })),
   ];
-  const unavailable = Boolean(earnings.meta.unavailable && economic.meta.unavailable);
+  const unavailable = rows.length === 0;
   return {
     meta: {
-      asOf: earnings.meta.asOf ?? economic.meta.asOf,
+      asOf: earnings.meta.asOf ?? economic.meta.asOf ?? ipo.meta.asOf ?? null,
       source: "Nasdaq calendars",
       rows: rows.length,
       delay: "daily",
@@ -248,12 +305,37 @@ export async function calendars() {
     },
     rows,
     parts: { earnings: earnings.meta, economic: economic.meta, fomc: fomc.meta, ipo: ipo.meta },
-    note: "FOMC dates are not bundled. IPO was not requested.",
+    note: "FOMC dates are not bundled. Earnings fall back to Finnhub when FINNHUB_KEY is set and Nasdaq times out.",
   };
 }
 
 export async function etfFlows() {
-  return failed("SPDR", new Error("The NAV workbook is xlsx. This run does not expand it, so flows are unavailable rather than estimated."));
+  try {
+    const response = await grabRetry(
+      "https://www.ssga.com/library-content/products/fund-data/etfs/us/navhist-us-en-spy.xlsx",
+      { headers: { "user-agent": BROWSER, accept: "*/*", referer: "https://www.ssga.com/" } },
+      45000,
+      3,
+    );
+    const bytes = Buffer.from(await response.arrayBuffer());
+    const { execFileSync } = await import("node:child_process");
+    const { mkdtempSync, writeFileSync, rmSync } = await import("node:fs");
+    const { tmpdir } = await import("node:os");
+    const dir = mkdtempSync(`${tmpdir()}/spy-nav-`);
+    const file = `${dir}/spy.xlsx`;
+    writeFileSync(file, bytes);
+    const shared = execFileSync("unzip", ["-p", file, "xl/sharedStrings.xml"], { encoding: "utf8", maxBuffer: 20_000_000 });
+    const sheet = execFileSync("unzip", ["-p", file, "xl/worksheets/sheet1.xml"], { encoding: "utf8", maxBuffer: 40_000_000 });
+    rmSync(dir, { recursive: true, force: true });
+    const days = parseNavHistory(shared, sheet).slice(0, 20);
+    if (!days.length) return failed("SPDR", new Error("NAV workbook had no dated rows."));
+    return pack("SPDR NAV history", days, {
+      delay: "daily",
+      note: "Flow is the change in shares outstanding times that day's NAV. SPY only.",
+    });
+  } catch (error) {
+    return failed("SPDR", error);
+  }
 }
 
 export async function screener() {

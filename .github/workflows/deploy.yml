@@ -19,10 +19,15 @@ concurrency:
 
 jobs:
   build:
+    # A data-branch push uses the default token and does not start this workflow.
+    # workflow_run does, and only after that job succeeds. The site itself is always built from main.
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout main
         uses: actions/checkout@v4
+        with:
+          ref: main
 
       - name: Setup Node
         uses: actions/setup-node@v4

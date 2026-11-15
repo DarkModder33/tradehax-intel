@@ -4,6 +4,7 @@ import { parseFtd } from "./ftd";
 import { parseForm4 } from "./form4";
 import { oiChanges } from "./oi";
 import { matchQuery } from "./query";
+import { parseNavDate, parseNavHistory } from "./nav";
 import { monthlyReturns } from "./seasonality";
 
 describe("precompute parsers", () => {
@@ -31,6 +32,18 @@ describe("precompute parsers", () => {
     const row = { iv_rank: 90, sector: "Technology" };
     expect(matchQuery(row, 'iv_rank > 80 AND sector = "Technology"')).toBe(true);
     expect(matchQuery(row, "iv_rank < 80")).toBe(false);
+  });
+
+  it("turns a SPDR-style sheet into a one-day flow", () => {
+    expect(parseNavDate("12-Nov-2026")).toBe("2026-11-12");
+    const shared = `<sst><si><t>Date</t></si><si><t>NAV</t></si><si><t>Shares Outstanding</t></si></sst>`;
+    const sheet = `
+      <row r="4"><c r="A4" t="s"><v>0</v></c><c r="B4" t="s"><v>1</v></c><c r="C4" t="s"><v>2</v></c></row>
+      <row r="5"><c r="A5" t="s"><v>3</v></c><c r="B5"><v>10</v></c><c r="C5"><v>110</v></c></row>
+      <row r="6"><c r="A6" t="s"><v>4</v></c><c r="B6"><v>9</v></c><c r="C6"><v>100</v></c></row>`;
+    const withDates = shared.replace("</sst>", "<si><t>12-Nov-2026</t></si><si><t>11-Nov-2026</t></si></sst>");
+    const [latest] = parseNavHistory(withDates, sheet);
+    expect(latest).toMatchObject({ date: "2026-11-12", nav: 10, shares: 110, flow: 100 });
   });
 
   it("summarizes a month of closes", () => {
