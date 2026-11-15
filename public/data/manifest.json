@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T22:39:28.493Z",
+  "generatedAt": "2026-11-15T22:54:23.722Z",
   "datasets": {
     "insiders": {
       "asOf": "2026-11-15T22:38:31.847Z",
@@ -68,21 +68,19 @@
       "unavailable": false
     },
     "calendar": {
-      "asOf": null,
+      "asOf": "2026-11-15T22:54:22.222Z",
       "source": "Nasdaq calendars",
-      "rows": 0,
+      "rows": 80,
       "delay": "daily",
-      "unavailable": true,
-      "error": "The operation was aborted due to timeout"
+      "unavailable": false
     },
     "etf-flows": {
-      "asOf": null,
-      "source": "SPDR",
-      "rows": 0,
-      "delay": "n/a",
-      "unavailable": true,
-      "stale": true,
-      "error": "The NAV workbook is xlsx. This run does not expand it, so flows are unavailable rather than estimated."
+      "asOf": "2026-11-15T22:54:23.721Z",
+      "source": "SPDR NAV history",
+      "rows": 20,
+      "delay": "daily",
+      "stale": false,
+      "unavailable": false
     },
     "screener": {
       "asOf": "2026-11-15T22:39:03.619Z",

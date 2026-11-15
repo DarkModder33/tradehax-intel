@@ -2,6 +2,7 @@
   "name": "tradehax",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "description": "TradeHax market intelligence dashboard",
   "scripts": {
     "dev": "next dev",
