@@ -1,9 +1,7 @@
-import type { NextConfig } from "next";
-
 // Project site: https://darkmodder33.github.io/tradehax-intel/
 const pagesBase = "/tradehax-intel";
 
-const nextConfig: NextConfig = {
+const nextConfig = {
   output: "export",
   basePath: pagesBase,
   assetPrefix: pagesBase,
