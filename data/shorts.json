@@ -1,0 +1,29 @@
+{
+  "meta": {
+    "asOf": "2026-11-15T22:59:35.837Z",
+    "source": "FINRA consolidated short interest",
+    "rows": 1,
+    "delay": "twice monthly",
+    "stale": false,
+    "unavailable": false
+  },
+  "rows": [
+    {
+      "stockSplitFlag": null,
+      "previousShortPositionQuantity": 131591865,
+      "averageDailyVolumeQuantity": 43085075,
+      "issueName": "Apple Inc. Common Stock",
+      "currentShortPositionQuantity": 144791472,
+      "changePreviousNumber": 13199607,
+      "accountingYearMonthNumber": 20261030,
+      "settlementDate": "2026-10-30",
+      "marketClassCode": "NNM",
+      "symbolCode": "AAPL",
+      "daysToCoverQuantity": 3.36,
+      "issuerServicesGroupExchangeCode": "R",
+      "revisionFlag": null,
+      "changePercent": 10.03
+    }
+  ],
+  "note": "AAPL sample. Float is not in this file, so SI% float is n/a."
+}

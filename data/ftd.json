@@ -1,0 +1,125 @@
+{
+  "meta": {
+    "asOf": "2026-11-15T22:59:36.094Z",
+    "source": "SEC fails-to-deliver",
+    "rows": 16,
+    "delay": "about 3 weeks",
+    "stale": false,
+    "unavailable": false
+  },
+  "rows": [
+    {
+      "date": "2026-10-01",
+      "symbol": "SPY",
+      "quantity": 60319,
+      "description": "STATE STREET SPDR S&P 500 ETF",
+      "price": 762.63
+    },
+    {
+      "date": "2026-10-02",
+      "symbol": "AAPL",
+      "quantity": 156354,
+      "description": "APPLE INC;COM NPV",
+      "price": 330.32
+    },
+    {
+      "date": "2026-10-05",
+      "symbol": "AAPL",
+      "quantity": 1610,
+      "description": "APPLE INC;COM NPV",
+      "price": 333.69
+    },
+    {
+      "date": "2026-10-05",
+      "symbol": "SPY",
+      "quantity": 5943,
+      "description": "STATE STREET SPDR S&P 500 ETF",
+      "price": 769.64
+    },
+    {
+      "date": "2026-10-06",
+      "symbol": "AAPL",
+      "quantity": 1519,
+      "description": "APPLE INC;COM NPV",
+      "price": 332.89
+    },
+    {
+      "date": "2026-10-06",
+      "symbol": "SPY",
+      "quantity": 2970,
+      "description": "STATE STREET SPDR S&P 500 ETF",
+      "price": 774.83
+    },
+    {
+      "date": "2026-10-07",
+      "symbol": "AAPL",
+      "quantity": 69,
+      "description": "APPLE INC;COM NPV",
+      "price": 333.63
+    },
+    {
+      "date": "2026-10-07",
+      "symbol": "SPY",
+      "quantity": 4508,
+      "description": "STATE STREET SPDR S&P 500 ETF",
+      "price": 779.09
+    },
+    {
+      "date": "2026-10-08",
+      "symbol": "AAPL",
+      "quantity": 6046,
+      "description": "APPLE INC;COM NPV",
+      "price": 336.67
+    },
+    {
+      "date": "2026-10-08",
+      "symbol": "SPY",
+      "quantity": 101039,
+      "description": "STATE STREET SPDR S&P 500 ETF",
+      "price": 777.22
+    },
+    {
+      "date": "2026-10-09",
+      "symbol": "AAPL",
+      "quantity": 2,
+      "description": "APPLE INC;COM NPV",
+      "price": 340.42
+    },
+    {
+      "date": "2026-10-09",
+      "symbol": "SPY",
+      "quantity": 85,
+      "description": "STATE STREET SPDR S&P 500 ETF",
+      "price": 773.93
+    },
+    {
+      "date": "2026-10-13",
+      "symbol": "AAPL",
+      "quantity": 1,
+      "description": "APPLE INC;COM NPV",
+      "price": 340.97
+    },
+    {
+      "date": "2026-10-13",
+      "symbol": "SPY",
+      "quantity": 14192,
+      "description": "STATE STREET SPDR S&P 500 ETF",
+      "price": 778.1
+    },
+    {
+      "date": "2026-10-14",
+      "symbol": "AAPL",
+      "quantity": 5,
+      "description": "APPLE INC;COM NPV",
+      "price": 341.27
+    },
+    {
+      "date": "2026-10-14",
+      "symbol": "SPY",
+      "quantity": 2,
+      "description": "STATE STREET SPDR S&P 500 ETF",
+      "price": 778.01
+    }
+  ],
+  "note": "Half-month file. SPY and AAPL only in this snapshot."
+}
