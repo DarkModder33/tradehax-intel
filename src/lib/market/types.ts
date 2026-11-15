@@ -1,4 +1,8 @@
+import type { ReplayReport } from "@/lib/backtest";
+import type { JournalSummary } from "@/lib/journal";
 import type { Bar, Signal, Timeframe } from "@/lib/indicators/types";
+import type { HeadlineResult, MarketContext } from "./context";
+import type { DataHealth } from "./health";
 
 export interface Quote {
   symbol: string;
@@ -34,6 +38,11 @@ export interface DashboardPayload {
   quotes: Quote[];
   signals: Signal[];
   errors: SymbolError[];
+  health: DataHealth;
+  context: MarketContext | null;
+  backtests: Record<string, ReplayReport>;
+  journal: JournalSummary;
+  headlines: HeadlineResult[];
 }
 
 export type { Bar, Signal, Timeframe };

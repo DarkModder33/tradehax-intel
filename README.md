@@ -84,6 +84,10 @@ The weighted average of the votes is `net`, from -1 to +1. Confidence is 70% the
 
 Timeframe agreement is separate. It counts how many of the six timeframes share a side, and it calls out the case where 1m/5m/15m fight 1h/4h/1D.
 
+Each live card also shows a measured history line. The same signal function is replayed on older bars, then judged on the next 5 bars (1m), 6 bars (5m), 4 bars (15m and 1h), 3 bars (4h), or 5 bars (1D). A hit is a call whose price moved that way. The line quotes the hit rate, the average move in the called direction, and the sample size. Samples under 8 are labeled too small to quote. Live calls are stored in this browser and scored the same way once those forward bars exist.
+
+The desk also loads a second price source, CNBC's public charts, to fill a symbol Yahoo missed and to flag last prices that differ by more than 1.5%. VIX, SPY, and QQQ daily charts from CNBC set a risk-on or risk-off note. Sector ETFs are ranked against SPY over 20 days. Bitcoin and Ethereum come from CoinGecko. Headlines come from Yahoo's public search endpoint through the same keyless proxy. Earnings dates are labeled unavailable: no keyless browser calendar responded. Stooq did not send CORS headers, so it is not used.
+
 ## Architecture
 
 ```

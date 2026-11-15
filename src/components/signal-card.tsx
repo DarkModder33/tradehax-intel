@@ -72,12 +72,16 @@ export function SignalCard({
   peers,
   selected,
   onSelect,
+  history,
+  regimeNote,
 }: {
   signal: Signal;
   quote: Quote | undefined;
   peers: Signal[];
   selected: boolean;
   onSelect: () => void;
+  history: string | null;
+  regimeNote: string | null;
 }) {
   const agreement = describeAgreement(peers);
   const change = quote?.changePercent ?? null;
@@ -143,9 +147,12 @@ export function SignalCard({
             />
           </div>
           <p className="mt-1 text-right text-[11px] tracking-[0.14em] text-muted-foreground uppercase">
-            Confidence
+            Model confidence
           </p>
         </div>
+
+        {history ? <p className="text-sm leading-relaxed text-foreground/95">{history}</p> : null}
+        {regimeNote ? <p className="text-sm leading-relaxed text-gold">{regimeNote}</p> : null}
 
         <p className="font-serif text-[15px] leading-relaxed text-foreground/95">{signal.summary}</p>
 

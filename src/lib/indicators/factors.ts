@@ -2,10 +2,10 @@ import { ema } from "./ema";
 import { macd } from "./macd";
 import { clamp, isFiniteNumber } from "./math";
 import { rsi } from "./rsi";
-import { FACTOR_LABEL, type Bar, type Factor, type FactorId, type Timeframe } from "./types";
+import { FACTOR_LABEL, type Bar, type Direction, type Factor, type FactorId, type Timeframe } from "./types";
 import { sessionKey, sessionVwap, trailingVwap } from "./vwap";
 import { volumeRatio } from "./volume";
-import { FACTOR_WEIGHTS } from "./score";
+import { scoreFactors, FACTOR_WEIGHTS } from "./score";
 
 /** A factor only takes a side once its vote is at least this strong. */
 export const VOTE_THRESHOLD = 0.15;
@@ -274,4 +274,167 @@ export function buildFactors(bars: Bar[], timeframe: Timeframe): Factor[] {
     vwapFactor(bars, timeframe),
     volumeFactor(bars),
   ];
+}
+
+function sessionVwapSeries(bars: Bar[]): Array<number | null> {
+  const out: Array<number | null> = new Array(bars.length).fill(null);
+  let key = "";
+  let priceVolume = 0;
+  let volume = 0;
+  for (let index = 0; index < bars.length; index += 1) {
+    const bar = bars[index];
+    const session = sessionKey(bar.time);
+    if (session !== key) {
+      key = session;
+      priceVolume = 0;
+      volume = 0;
+    }
+    if (bar.volume > 0) {
+      const typical = (bar.high + bar.low + bar.close) / 3;
+      priceVolume += typical * bar.volume;
+      volume += bar.volume;
+    }
+    out[index] = volume > 0 ? priceVolume / volume : null;
+  }
+  return out;
+}
+
+function trailingVwapAt(bars: Bar[], index: number, window = 20): number | null {
+  let priceVolume = 0;
+  let volume = 0;
+  const start = Math.max(0, index - window + 1);
+  for (let cursor = start; cursor <= index; cursor += 1) {
+    const bar = bars[cursor];
+    if (bar.volume <= 0) continue;
+    const typical = (bar.high + bar.low + bar.close) / 3;
+    priceVolume += typical * bar.volume;
+    volume += bar.volume;
+  }
+  return volume > 0 ? priceVolume / volume : null;
+}
+
+function volumeRatioAt(bars: Bar[], index: number, lookback = 20): number | null {
+  if (index < lookback) return null;
+  let sum = 0;
+  for (let cursor = index - lookback; cursor < index; cursor += 1) sum += bars[cursor].volume;
+  const average = sum / lookback;
+  if (average <= 0) return null;
+  return bars[index].volume / average;
+}
+
+/**
+ * Direction of the same model at every bar, computed in one pass.
+ * The last entry matches `buildSignal` for the full series.
+ */
+export function replayDirections(bars: Bar[], timeframe: Timeframe): Direction[] {
+  const closes = bars.map((bar) => bar.close);
+  const fast = ema(closes, 9);
+  const slow = ema(closes, 21);
+  const rsiSeries = rsi(closes, 14);
+  const macdSeries = macd(closes);
+  const intradayVwap = timeframe === "1d" ? null : sessionVwapSeries(bars);
+  const directions: Direction[] = new Array(bars.length).fill("neutral");
+
+  for (let index = MIN_DIRECTION_INDEX; index < bars.length; index += 1) {
+    const close = closes[index];
+    const previousClose = closes[index - 1];
+    const fastNow = fast[index];
+    const slowNow = slow[index];
+    const fastPrev = fast[index - 1];
+    const slowPrev = slow[index - 1];
+    const emaScore = emaScoreAt(fastNow, slowNow, fastPrev, slowPrev, close, previousClose);
+    const hist = macdSeries[index]?.histogram ?? null;
+    const prevHist = macdSeries[index - 1]?.histogram ?? null;
+    const macdScore = macdScoreAt(hist, prevHist, close);
+    const rsiValue = rsiSeries[index];
+    const rsiEarlier = rsiSeries[index - 3] ?? rsiSeries[index - 1];
+    const rsiScore = rsiScoreAt(rsiValue, rsiEarlier);
+    const anchor = timeframe === "1d" ? trailingVwapAt(bars, index, 20) : intradayVwap?.[index] ?? null;
+    const vwapScore = vwapScoreAt(close, anchor, timeframe !== "1d");
+    const ratio = volumeRatioAt(bars, index, 20);
+    const volumeScore = volumeScoreAt(ratio, bars[index]);
+    const factors = [
+      vote("ema", emaScore, "."),
+      vote("macd", macdScore, "."),
+      vote("rsi", rsiScore, "."),
+      vote("vwap", vwapScore, "."),
+      vote("volume", volumeScore, "."),
+    ];
+    directions[index] = scoreFactors(factors).direction;
+  }
+  return directions;
+}
+
+const MIN_DIRECTION_INDEX = 39;
+
+function emaScoreAt(
+  fastNow: number | null,
+  slowNow: number | null,
+  fastPrev: number | null,
+  slowPrev: number | null,
+  close: number,
+  previousClose: number,
+): number {
+  if (
+    !isFiniteNumber(fastNow) ||
+    !isFiniteNumber(slowNow) ||
+    !isFiniteNumber(fastPrev) ||
+    !isFiniteNumber(slowPrev) ||
+    !isFiniteNumber(close) ||
+    close === 0 ||
+    !isFiniteNumber(previousClose) ||
+    previousClose === 0
+  ) {
+    return 0;
+  }
+  const spread = (fastNow - slowNow) / close;
+  const previousSpread = (fastPrev - slowPrev) / previousClose;
+  if (fastPrev <= slowPrev && fastNow > slowNow) return 0.95;
+  if (fastPrev >= slowPrev && fastNow < slowNow) return -0.95;
+  const widening = Math.abs(spread) > Math.abs(previousSpread);
+  const magnitude = widening ? clamp(Math.abs(spread) / 0.004, 0.4, 0.9) : 0.32;
+  if (fastNow > slowNow) return magnitude;
+  if (fastNow < slowNow) return -magnitude;
+  return 0;
+}
+
+function macdScoreAt(hist: number | null, prevHist: number | null, close: number): number {
+  if (!isFiniteNumber(hist) || !isFiniteNumber(prevHist)) return 0;
+  if (prevHist <= 0 && hist > 0) return 0.85;
+  if (prevHist >= 0 && hist < 0) return -0.85;
+  const flatBand = Math.max(Math.abs(close) * 0.00005, 1e-8);
+  if (Math.abs(hist) < flatBand) return 0;
+  const expanding = Math.abs(hist) > Math.abs(prevHist);
+  const magnitude = clamp(
+    Math.abs(hist) / Math.max(Math.abs(close) * 0.002, 1e-8),
+    expanding ? 0.45 : 0.25,
+    expanding ? 1 : 0.55,
+  );
+  return hist > 0 ? magnitude : -magnitude;
+}
+
+function rsiScoreAt(value: number | null, earlier: number | null): number {
+  if (!isFiniteNumber(value)) return 0;
+  const slope = isFiniteNumber(earlier) ? value - earlier : 0;
+  if (value < 30) return clamp(0.45 + (30 - value) / 40, 0.45, 1);
+  if (value > 70) return -clamp(0.45 + (value - 70) / 40, 0.45, 1);
+  if (value >= 55 && slope > 1) return clamp(Math.abs(value - 50) / 25, 0.25, 0.7);
+  if (value <= 45 && slope < -1) return -clamp(Math.abs(value - 50) / 25, 0.25, 0.7);
+  return 0;
+}
+
+function vwapScoreAt(close: number, anchor: number | null, intraday: boolean): number {
+  if (!isFiniteNumber(close) || close === 0 || !isFiniteNumber(anchor) || anchor === 0) return 0;
+  const distance = (close - anchor) / anchor;
+  const fullMove = intraday ? 0.004 : 0.015;
+  return clamp(distance / fullMove, -1, 1);
+}
+
+function volumeScoreAt(ratio: number | null, bar: Bar): number {
+  if (!isFiniteNumber(ratio) || ratio < 0.75) return 0;
+  const up = bar.close > bar.open * 1.0001;
+  const down = bar.close < bar.open * 0.9999;
+  if (ratio < 1.15 || (!up && !down)) return 0;
+  const magnitude = clamp((ratio - 1) / 1.2, 0.2, 1);
+  return up ? magnitude : -magnitude;
 }

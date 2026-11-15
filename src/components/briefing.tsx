@@ -1,6 +1,7 @@
 import { TIMEFRAME_LABEL, TIMEFRAMES, type Signal, type Timeframe } from "@/lib/indicators/types";
 import type { Agreement } from "@/lib/indicators/agreement";
 import { directionClass, directionLabel, formatChange, formatPrice } from "@/lib/format";
+import type { HeadlineResult } from "@/lib/market/context";
 import type { Quote } from "@/lib/market/types";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
@@ -13,6 +14,7 @@ export function Briefing({
   active,
   onTimeframe,
   onClear,
+  headlines,
 }: {
   symbol: string;
   quote: Quote | undefined;
@@ -21,6 +23,7 @@ export function Briefing({
   active: Timeframe | "board";
   onTimeframe: (timeframe: Timeframe) => void;
   onClear: () => void;
+  headlines: HeadlineResult | undefined;
 }) {
   const change = quote?.changePercent ?? null;
   return (
@@ -70,6 +73,33 @@ export function Briefing({
           );
         })}
       </div>
+      <Headlines result={headlines} />
     </section>
+  );
+}
+
+function Headlines({ result }: { result: HeadlineResult | undefined }) {
+  if (!result) return null;
+  if (result.status === "unavailable") {
+    return <p className="mt-4 text-sm text-muted-foreground">Headlines unavailable for {result.symbol}.</p>;
+  }
+  if (result.items.length === 0) {
+    return <p className="mt-4 text-sm text-muted-foreground">No headlines came back for {result.symbol}.</p>;
+  }
+  return (
+    <ul className="mt-4 flex flex-col gap-2">
+      {result.items.map((item) => (
+        <li key={item.title} className="text-sm leading-relaxed">
+          {item.url ? (
+            <a href={item.url} target="_blank" rel="noreferrer" className="underline decoration-foreground/30 underline-offset-2">
+              {item.title}
+            </a>
+          ) : (
+            item.title
+          )}
+          <span className="text-muted-foreground"> · {item.publisher}</span>
+        </li>
+      ))}
+    </ul>
   );
 }

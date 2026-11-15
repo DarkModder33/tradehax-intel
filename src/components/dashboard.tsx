@@ -5,6 +5,9 @@ import { RefreshCw } from "lucide-react";
 import { describeAgreement, rankSignals } from "@/lib/indicators/agreement";
 import { FACTOR_LABEL, FACTOR_WEIGHTS, TIMEFRAME_LABEL, TIMEFRAMES, type Timeframe } from "@/lib/indicators";
 import { NEUTRAL_NET, SCORE_BLEND } from "@/lib/indicators/score";
+import { historyLabel } from "@/lib/backtest";
+import { journalLine } from "@/lib/journal";
+import { regimeNote, SYMBOL_SECTOR } from "@/lib/market/context";
 import { formatAge, formatEt } from "@/lib/format";
 import { usEquitySession } from "@/lib/market/session";
 import { MAX_SYMBOLS, sanitizeSymbols } from "@/lib/market/symbols";
@@ -106,8 +109,18 @@ export function Dashboard() {
           </div>
           <div className="flex flex-wrap items-center gap-2">
             {data ? (
-              <Badge variant="outline" className={cn(data.source.kind === "demo" && "border-gold/50 text-gold")}>
-                {data.source.kind === "demo" ? "Demo data" : "Yahoo Finance"}
+              <Badge
+                variant="outline"
+                className={cn(
+                  data.health.status === "demo" && "border-gold/50 text-gold",
+                  data.health.status === "disagrees" && "border-bearish/50 text-bearish",
+                )}
+              >
+                {data.health.status === "demo"
+                  ? "Demo data"
+                  : data.health.status === "disagrees"
+                    ? "Sources differ"
+                    : "Yahoo Finance"}
               </Badge>
             ) : null}
             {session ? (
@@ -182,7 +195,7 @@ export function Dashboard() {
               <p className="mt-1 text-foreground/90">{data.source.disclaimer}</p>
             </div>
           ) : data ? (
-            <p className="text-xs leading-relaxed text-muted-foreground">{data.source.disclaimer}</p>
+            <DataHealthPanel data={data} />
           ) : null}
 
           {session?.status === "closed" && data?.source.kind === "live" ? (
@@ -221,6 +234,7 @@ export function Dashboard() {
               active={view}
               onTimeframe={setView}
               onClear={() => setSelected(null)}
+              headlines={data.headlines.find((item) => item.symbol === selected)}
             />
           ) : (
             <p className="max-w-2xl text-sm leading-relaxed text-muted-foreground">
@@ -239,6 +253,8 @@ export function Dashboard() {
                   peers={data.signals.filter((item) => item.symbol === featured.symbol)}
                   selected
                   onSelect={() => setSelected(featured.symbol)}
+                  history={historyLabel(data.backtests[`${featured.symbol}|${featured.timeframe}`], featured.direction)}
+                  regimeNote={noteFor(data, featured.direction, featured.symbol)}
                 />
               ) : null}
               {rest.length > 0 ? (
@@ -257,6 +273,8 @@ export function Dashboard() {
                         peers={data.signals.filter((item) => item.symbol === signal.symbol)}
                         selected={selected === signal.symbol}
                         onSelect={() => setSelected(signal.symbol)}
+                        history={historyLabel(data.backtests[`${signal.symbol}|${signal.timeframe}`], signal.direction)}
+                        regimeNote={noteFor(data, signal.direction, signal.symbol)}
                       />
                     ))}
                   </div>
@@ -285,6 +303,61 @@ export function Dashboard() {
         </main>
       </div>
     </div>
+  );
+}
+
+function noteFor(
+  data: NonNullable<ReturnType<typeof useDashboard>["data"]>,
+  direction: "bullish" | "bearish" | "neutral",
+  symbol: string,
+): string | null {
+  const base = regimeNote(direction, data.context?.risk ?? null);
+  const sector = SYMBOL_SECTOR[symbol];
+  const row = data.context?.sectors.find((item) => item.symbol === sector);
+  if (!row) return base;
+  const excess = `${row.excessVsSpy >= 0 ? "+" : ""}${(row.excessVsSpy * 100).toFixed(1)}% vs SPY over 20 days`;
+  const sectorLine = `${row.name} is ${excess}.`;
+  return base ? `${base} ${sectorLine}` : sectorLine;
+}
+
+function DataHealthPanel({ data }: { data: NonNullable<ReturnType<typeof useDashboard>["data"]> }) {
+  const context = data.context;
+  const leaders = context?.sectors.slice(0, 2) ?? [];
+  const laggard = context?.sectors.at(-1);
+  return (
+    <section className="rounded-2xl bg-card/70 px-4 py-3 text-sm leading-relaxed ring-1 ring-foreground/10">
+      <p>
+        <span className="font-medium">{data.health.primaryLabel}.</span>{" "}
+        <span className={data.health.status === "disagrees" ? "text-bearish" : "text-muted-foreground"}>
+          {data.health.detail}
+        </span>
+      </p>
+      <p className="mt-1 text-muted-foreground">{data.source.disclaimer}</p>
+      <p className="mt-1 text-muted-foreground">{journalLine(data.journal)}</p>
+      {context ? (
+        <p className="mt-2">{context.riskDetail}</p>
+      ) : data.source.kind === "live" ? (
+        <p className="mt-2 text-muted-foreground">Market regime did not load.</p>
+      ) : null}
+      {leaders.length > 0 ? (
+        <p className="mt-1 text-muted-foreground">
+          Strongest vs SPY: {leaders.map((item) => `${item.name} ${(item.excessVsSpy * 100).toFixed(1)}%`).join(", ")}
+          {laggard ? `. Softest: ${laggard.name} ${(laggard.excessVsSpy * 100).toFixed(1)}%` : ""}.
+        </p>
+      ) : null}
+      {context && context.crypto.length > 0 ? (
+        <p className="mt-1 font-mono text-xs text-muted-foreground">
+          {context.crypto
+            .map((coin) => {
+              const change = coin.change24h == null ? "" : ` ${coin.change24h >= 0 ? "+" : ""}${coin.change24h.toFixed(1)}% 24h`;
+              return `${coin.label} $${coin.usd.toLocaleString("en-US", { maximumFractionDigits: 0 })}${change}`;
+            })
+            .join(" · ")}
+          <span> · CoinGecko</span>
+        </p>
+      ) : null}
+      <p className="mt-1 text-xs text-muted-foreground">{context?.earnings.detail ?? "Earnings dates: not checked."}</p>
+    </section>
   );
 }
 
