@@ -48,6 +48,8 @@ jobs:
 
       - name: Build static export
         run: npm run build
+        env:
+          NEXT_PUBLIC_WORKER_URL: ${{ vars.WORKER_URL || 'https://tradehax-intel-worker-bf2f623ce81a.herokuapp.com' }}
 
       - name: Checkout data branch
         continue-on-error: true

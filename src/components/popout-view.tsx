@@ -9,6 +9,7 @@ import { adoptPopoutPrefs, getPopoutSnapshot, getServerPopoutSnapshot, publishPo
 import { POPOUT_STORAGE_KEY, readPopoutPrefs, type PopoutPrefs } from "@/lib/popout/prefs";
 import { playFlipSound, primeFlipSound } from "@/lib/popout/sound";
 import { normalizeSymbol } from "@/lib/market/symbols";
+import { FlowTicker } from "@/components/live/flow-ticker";
 import { Button } from "@/components/ui/button";
 import { usePopoutFeed } from "@/components/use-popout-feed";
 import { cn } from "@/lib/utils";
@@ -71,6 +72,7 @@ export function PopoutView() {
 
   return (
     <div className="flex min-h-dvh flex-col bg-background text-foreground">
+      <FlowTicker />
       <header className="sticky top-0 z-10 flex flex-wrap items-center gap-2 border-b border-border/80 bg-background/90 px-3 py-2 backdrop-blur-md">
         <p className="text-[11px] font-semibold tracking-[0.18em]">TRADEHAX</p>
         <label className="sr-only" htmlFor="popout-timeframe">

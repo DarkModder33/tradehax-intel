@@ -1,5 +1,5 @@
 import type { ChainContract } from "@/lib/sources/cboe";
-import { inferSide, sentiment, type FlowPrint } from "./classify";
+import { inferSide, sentiment, type FlowPrint } from "./classify.ts";
 
 export function diffChain(previous: ChainContract[], next: ChainContract[], time: string): FlowPrint[] {
   const prior = new Map(previous.map((contract) => [contract.symbol, contract]));
