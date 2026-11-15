@@ -41,6 +41,19 @@ MARKET_DATA_PROVIDER=yahoo
 
 Set `MARKET_DATA_PROVIDER=mock` to force the simulated feed. The screen labels that feed **Demo data**. It never presents simulated prices as the market.
 
+## Deploy
+
+Vercel can host this repo as a Next.js app. Import [DarkModder33/tradehax-intel](https://github.com/DarkModder33/tradehax-intel), leave the framework preset on Next.js, and deploy from `main`. The dashboard calls `/api/dashboard` on the same origin, so the production URL does not need to be set in the app.
+
+No environment variables are required. Yahoo Finance's public chart endpoint is the default. Optional settings:
+
+| Variable | Production value |
+| --- | --- |
+| `MARKET_DATA_PROVIDER` | `yahoo` (default) or `mock` for the labeled simulated feed |
+| `POLYGON_API_KEY`, `FINNHUB_API_KEY`, `TRADIER_API_KEY` | Unused in v1. Leave them unset. |
+
+`npm run build` is the production check. Chart responses are cached in memory on the server process, so a serverless cold start fetches Yahoo again and falls back to the labeled demo feed if that fetch fails.
+
 ## Data source
 
 v1 reads [Yahoo Finance's public chart endpoint](https://query1.finance.yahoo.com/v8/finance/chart/) (`/v8/finance/chart/{symbol}`). No API key. Quotes can be delayed, and the endpoint is unofficial, so it can change or rate-limit.
