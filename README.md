@@ -84,7 +84,7 @@ The weighted average of the votes is `net`, from -1 to +1. Confidence is 70% the
 
 Timeframe agreement is separate. It counts how many of the six timeframes share a side, and it calls out the case where 1m/5m/15m fight 1h/4h/1D.
 
-Each live card also shows a measured history line. The same signal function is replayed on older bars, then judged on the next 5 bars (1m), 6 bars (5m), 4 bars (15m and 1h), 3 bars (4h), or 5 bars (1D). A hit is a call whose price moved that way. The line quotes the hit rate, the average move in the called direction, and the sample size. Samples under 8 are labeled too small to quote. Live calls are stored in this browser and scored the same way once those forward bars exist.
+Each live card also shows a measured history line. The legacy vote is replayed on older bars. A position is entered only when the absolute score reaches 0.60, and it is filled at the next bar's open, not the signal close. It is scored over the next 5 bars (1m), 6 bars (5m), 4 bars (15m and 1h), 3 bars (4h), or 5 bars (1D), after a round-trip cost. The line quotes a Wilson 95% interval, a beta-binomial shrink toward 50%, the sample size, and gross versus net expectancy in basis points. "Significant" appears only when the Wilson lower bound is above 50% and the cell survives Benjamini–Hochberg at q = 0.10 across the symbol, timeframe, and direction cells. Otherwise the card says "Not significant." A walk-forward L2 logistic combiner is fit on the same bars and is adopted only when its out-of-sample log loss and Brier score beat both the base rate and the legacy vote. The track-record line shows the trial count and a deflated Sharpe. Live calls are stored in this browser and scored the same way once those forward bars exist.
 
 The desk also loads a second price source, CNBC's public charts, to fill a symbol Yahoo missed and to flag last prices that differ by more than 1.5%. VIX, SPY, and QQQ daily charts from CNBC set a risk-on or risk-off note. Sector ETFs are ranked against SPY over 20 days. Bitcoin and Ethereum come from CoinGecko. Headlines come from Yahoo's public search endpoint through the same keyless proxy. Earnings dates are labeled unavailable: no keyless browser calendar responded. Stooq did not send CORS headers, so it is not used.
 
@@ -123,14 +123,16 @@ The pack does not include a market-data vendor. Options flow, unusual options vo
 
 ## Roadmap
 
-1. **Calibrate the score.** Log signals and later outcomes so confidence can become a measured hit rate instead of an agreement formula. Keep the factor breakdown either way.
-2. **Stream the tape.** Replace the 25-second poll with a websocket or SSE once the provider supports it. Add a premarket and after-hours switch.
-3. **Options flow.** New provider methods for sweeps, unusual options volume, put/call, and opening versus closing prints. The ranked feed should gain a second column, still written in plain language.
-4. **Unusual activity.** Relative volume, gaps, and halts on the same watchlist. Dark-pool prints only if a source is actually licensed.
-5. **Alerts.** A name crosses a confidence level, or timeframes flip from conflict to agreement.
-6. **Accounts.** Persist watchlists and a signal journal. MongoDB Atlas is enough. No login in v1.
-7. **Business intelligence.** Hit rate by setup, by timeframe confluence, and by ticker. That is the journal turned into a report, not a second product.
-8. **A licensed feed.** Keep `MarketDataProvider`. Point it at a keyed vendor when delayed Yahoo data is no longer good enough. Keys stay in environment variables.
+1. **Regime weights and a momentum-crash guard.** Reweight the vote when VIX is stressed, and stand down when a sharp rally follows a deep drawdown. Not in this build.
+2. **Meta-labeling.** A second model that decides whether to take the legacy call, once a few hundred out-of-sample events exist. Not in this build.
+3. **Nightly model fit.** Precompute the daily logistic in GitHub Actions and ship the coefficients with the static export, so the browser does not refit on every refresh.
+4. **Stream the tape.** Replace the 25-second poll with a websocket or SSE once the provider supports it. Add a premarket and after-hours switch.
+5. **Options flow.** New provider methods for sweeps, unusual options volume, put/call, and opening versus closing prints. The ranked feed should gain a second column, still written in plain language.
+6. **Unusual activity.** Relative volume, gaps, and halts on the same watchlist. Dark-pool prints only if a source is actually licensed.
+7. **Alerts.** A name crosses a confidence level, or timeframes flip from conflict to agreement.
+8. **Accounts.** Persist watchlists and a signal journal. MongoDB Atlas is enough. No login in v1.
+9. **Business intelligence.** Hit rate by setup, by timeframe confluence, and by ticker. That is the journal turned into a report, not a second product.
+10. **A licensed feed.** Keep `MarketDataProvider`. Point it at a keyed vendor when delayed Yahoo data is no longer good enough. Keys stay in environment variables.
 
 ## Disclaimer
 

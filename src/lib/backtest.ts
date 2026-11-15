@@ -1,4 +1,4 @@
-import { replayDirections } from "@/lib/indicators/factors";
+import { replayCalls } from "@/lib/indicators/factors";
 import { MIN_BARS } from "@/lib/indicators/build-signal";
 import type { Bar, Direction, Timeframe } from "@/lib/indicators/types";
 
@@ -80,7 +80,7 @@ export function summarizeOutcomes(
 export function replaySignals(symbol: string, timeframe: Timeframe, bars: Bar[]): ReplayReport {
   void symbol;
   const horizon = FORWARD_BARS[timeframe];
-  const directions = replayDirections(bars, timeframe);
+  const directions = replayCalls(bars, timeframe).map((call) => call.direction);
   const outcomes: CallOutcome[] = [];
   const lastIndex = bars.length - 1 - horizon;
   for (let index = MIN_BARS - 1; index <= lastIndex; index += 1) {

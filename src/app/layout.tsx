@@ -22,7 +22,7 @@ const newsreader = Newsreader({
 });
 
 export const metadata: Metadata = {
-  title: "TradeHax | Market intelligence",
+  title: "TradeHax | Statistical signals",
   description:
     "A ranked briefing of bullish and bearish setups across a watchlist, with the reason each signal fired and where the timeframes agree.",
 };

@@ -74,6 +74,8 @@ export function SignalCard({
   onSelect,
   history,
   regimeNote,
+  significant,
+  extras,
 }: {
   signal: Signal;
   quote: Quote | undefined;
@@ -82,6 +84,8 @@ export function SignalCard({
   onSelect: () => void;
   history: string | null;
   regimeNote: string | null;
+  significant: boolean;
+  extras: { gap: string | null; momentum: string | null; opening: string | null; noise: string | null; bvc: string | null; size: string | null } | null;
 }) {
   const agreement = describeAgreement(peers);
   const change = quote?.changePercent ?? null;
@@ -147,14 +151,24 @@ export function SignalCard({
             />
           </div>
           <p className="mt-1 text-right text-[11px] tracking-[0.14em] text-muted-foreground uppercase">
-            Model confidence
+            Legacy vote
           </p>
         </div>
+        <p className={cn("text-[11px] font-medium tracking-wide uppercase", significant ? "text-bullish" : "text-muted-foreground")}>
+          {significant ? "Significant" : "Not significant"}
+        </p>
 
         {history ? <p className="text-sm leading-relaxed text-foreground/95">{history}</p> : null}
         {regimeNote ? <p className="text-sm leading-relaxed text-gold">{regimeNote}</p> : null}
 
         <p className="font-serif text-[15px] leading-relaxed text-foreground/95">{signal.summary}</p>
+        {extras ? (
+          <div className="text-xs leading-relaxed text-muted-foreground">
+            {[extras.bvc, extras.size, extras.gap, extras.momentum, extras.opening, extras.noise].filter(Boolean).map((line) => (
+              <p key={line}>{line}</p>
+            ))}
+          </div>
+        ) : null}
 
         <p className={cn("text-xs", directionClass(agreement.direction))}>{agreement.label}</p>
 

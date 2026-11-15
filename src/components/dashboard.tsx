@@ -5,7 +5,7 @@ import { RefreshCw } from "lucide-react";
 import { describeAgreement, rankSignals } from "@/lib/indicators/agreement";
 import { FACTOR_LABEL, FACTOR_WEIGHTS, TIMEFRAME_LABEL, TIMEFRAMES, type Timeframe } from "@/lib/indicators";
 import { NEUTRAL_NET, SCORE_BLEND } from "@/lib/indicators/score";
-import { historyLabel } from "@/lib/backtest";
+import { cellKey } from "@/lib/engine/study";
 import { journalLine } from "@/lib/journal";
 import { regimeNote, SYMBOL_SECTOR } from "@/lib/market/context";
 import { formatAge, formatEt } from "@/lib/format";
@@ -104,7 +104,7 @@ export function Dashboard() {
             <Mark />
             <div>
               <p className="text-sm font-semibold tracking-[0.18em]">TRADEHAX</p>
-              <h1 className="text-xs text-muted-foreground">Market intelligence</h1>
+              <h1 className="text-xs text-muted-foreground">Statistical signals</h1>
             </div>
           </div>
           <div className="flex flex-wrap items-center gap-2">
@@ -253,7 +253,9 @@ export function Dashboard() {
                   peers={data.signals.filter((item) => item.symbol === featured.symbol)}
                   selected
                   onSelect={() => setSelected(featured.symbol)}
-                  history={historyLabel(data.backtests[`${featured.symbol}|${featured.timeframe}`], featured.direction)}
+                  history={historyFor(data, featured)}
+                  significant={featured.direction !== "neutral" && Boolean(data.cells[cellKey(featured.symbol, featured.timeframe, featured.direction)]?.significant)}
+                  extras={data.notes[`${featured.symbol}|${featured.timeframe}`] ?? null}
                   regimeNote={noteFor(data, featured.direction, featured.symbol)}
                 />
               ) : null}
@@ -273,7 +275,9 @@ export function Dashboard() {
                         peers={data.signals.filter((item) => item.symbol === signal.symbol)}
                         selected={selected === signal.symbol}
                         onSelect={() => setSelected(signal.symbol)}
-                        history={historyLabel(data.backtests[`${signal.symbol}|${signal.timeframe}`], signal.direction)}
+                        history={historyFor(data, signal)}
+                        significant={signal.direction !== "neutral" && Boolean(data.cells[cellKey(signal.symbol, signal.timeframe, signal.direction)]?.significant)}
+                        extras={data.notes[`${signal.symbol}|${signal.timeframe}`] ?? null}
                         regimeNote={noteFor(data, signal.direction, signal.symbol)}
                       />
                     ))}
@@ -298,12 +302,17 @@ export function Dashboard() {
 
           <ScoreLegend />
           <p className="max-w-2xl text-xs leading-relaxed text-muted-foreground">
-            TradeHax is a research desk, not a broker and not investment advice. A high confidence score means the indicators agree. It does not mean a trade will work.
+            Statistical signals, not financial advice. Hit rates are computed in this browser from the loaded bars, with a Wilson interval and shrinkage. They are not a promise from any paper, and this is not high-frequency trading.
           </p>
         </main>
       </div>
     </div>
   );
+}
+
+function historyFor(data: NonNullable<ReturnType<typeof useDashboard>["data"]>, signal: { symbol: string; timeframe: Timeframe; direction: "bullish" | "bearish" | "neutral" }): string {
+  if (signal.direction === "neutral") return "Mixed readings are left out of the hit rate.";
+  return data.cells[cellKey(signal.symbol, signal.timeframe, signal.direction)]?.label ?? "History has not been measured for this timeframe yet.";
 }
 
 function noteFor(
@@ -357,6 +366,12 @@ function DataHealthPanel({ data }: { data: NonNullable<ReturnType<typeof useDash
         </p>
       ) : null}
       <p className="mt-1 text-xs text-muted-foreground">{context?.earnings.detail ?? "Earnings dates: not checked."}</p>
+      <p className="mt-2 text-xs text-muted-foreground">
+        Track record: {data.track.trials} configurations tried. Deflated Sharpe probability {data.track.deflatedSharpe.toFixed(2)}. Logistic combiner {data.track.adopted ? "adopted" : "not adopted"}. {data.track.reason}
+        {data.track.modelLogLoss != null && data.track.baseLogLoss != null && data.track.legacyLogLoss != null
+          ? ` Out-of-sample log-loss ${data.track.modelLogLoss.toFixed(3)} versus base ${data.track.baseLogLoss.toFixed(3)} and legacy ${data.track.legacyLogLoss.toFixed(3)}.`
+          : ""}
+      </p>
     </section>
   );
 }

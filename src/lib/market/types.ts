@@ -1,4 +1,5 @@
-import type { ReplayReport } from "@/lib/backtest";
+import type { CellStats } from "@/lib/engine/backtest";
+import type { BarNote, TrackRecord } from "@/lib/engine/study";
 import type { JournalSummary } from "@/lib/journal";
 import type { Bar, Signal, Timeframe } from "@/lib/indicators/types";
 import type { HeadlineResult, MarketContext } from "./context";
@@ -40,7 +41,9 @@ export interface DashboardPayload {
   errors: SymbolError[];
   health: DataHealth;
   context: MarketContext | null;
-  backtests: Record<string, ReplayReport>;
+  cells: Record<string, CellStats>;
+  notes: Record<string, BarNote>;
+  track: TrackRecord;
   journal: JournalSummary;
   headlines: HeadlineResult[];
 }

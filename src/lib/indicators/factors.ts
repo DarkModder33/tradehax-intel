@@ -322,18 +322,24 @@ function volumeRatioAt(bars: Bar[], index: number, lookback = 20): number | null
   return bars[index].volume / average;
 }
 
+export interface BarCall {
+  direction: Direction;
+  /** Legacy model confidence in `direction`, from 0 to 100. */
+  probability: number;
+}
+
 /**
- * Direction of the same model at every bar, computed in one pass.
+ * Legacy vote at every bar, computed in one pass.
  * The last entry matches `buildSignal` for the full series.
  */
-export function replayDirections(bars: Bar[], timeframe: Timeframe): Direction[] {
+export function replayCalls(bars: Bar[], timeframe: Timeframe): BarCall[] {
   const closes = bars.map((bar) => bar.close);
   const fast = ema(closes, 9);
   const slow = ema(closes, 21);
   const rsiSeries = rsi(closes, 14);
   const macdSeries = macd(closes);
   const intradayVwap = timeframe === "1d" ? null : sessionVwapSeries(bars);
-  const directions: Direction[] = new Array(bars.length).fill("neutral");
+  const calls: BarCall[] = bars.map(() => ({ direction: "neutral" as Direction, probability: 0 }));
 
   for (let index = MIN_DIRECTION_INDEX; index < bars.length; index += 1) {
     const close = closes[index];
@@ -360,9 +366,14 @@ export function replayDirections(bars: Bar[], timeframe: Timeframe): Direction[]
       vote("vwap", vwapScore, "."),
       vote("volume", volumeScore, "."),
     ];
-    directions[index] = scoreFactors(factors).direction;
+    const scored = scoreFactors(factors);
+    calls[index] = { direction: scored.direction, probability: scored.probability };
   }
-  return directions;
+  return calls;
+}
+
+export function replayDirections(bars: Bar[], timeframe: Timeframe): Direction[] {
+  return replayCalls(bars, timeframe).map((call) => call.direction);
 }
 
 const MIN_DIRECTION_INDEX = 39;
