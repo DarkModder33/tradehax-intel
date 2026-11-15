@@ -1,4 +1,4 @@
-import { replaySignals } from "@/lib/backtest";
+import { studySnapshots } from "@/lib/engine/study";
 import { TIMEFRAMES } from "@/lib/indicators/types";
 import { buildSignal } from "@/lib/indicators/build-signal";
 import { readJournal, summarizeJournal, updateJournal, writeJournal } from "@/lib/journal";
@@ -59,17 +59,10 @@ async function collect(provider: MarketDataProvider, symbols: string[]): Promise
   return { quotes, signals, errors, snapshots };
 }
 
-async function backtestsFor(snapshots: SymbolSnapshot[]): Promise<Record<string, ReturnType<typeof replaySignals>>> {
-  const reports: Record<string, ReturnType<typeof replaySignals>> = {};
-  for (const snapshot of snapshots) {
-    for (const timeframe of TIMEFRAMES) {
-      const bars = snapshot.bars[timeframe];
-      if (!bars) continue;
-      reports[`${snapshot.quote.symbol}|${timeframe}`] = replaySignals(snapshot.quote.symbol, timeframe, bars);
-    }
-    await new Promise((resolve) => setTimeout(resolve, 0));
-  }
-  return reports;
+async function runStudy(snapshots: SymbolSnapshot[]) {
+  // Yield once so the loading shell can paint before the walk-forward fit.
+  await new Promise((resolve) => setTimeout(resolve, 0));
+  return studySnapshots(snapshots);
 }
 
 function remember(signals: DashboardPayload["signals"], snapshots: SymbolSnapshot[]) {
@@ -90,7 +83,7 @@ async function finish(
   gaps: ReturnType<typeof comparePrices>,
 ): Promise<DashboardPayload> {
   const asOf = collected.quotes.reduce((max, quote) => Math.max(max, quote.asOf), 0) || null;
-  const backtests = await backtestsFor(collected.snapshots);
+  const study = await runStudy(collected.snapshots);
   let context = null;
   let headlines: DashboardPayload["headlines"] = [];
   if (healthKind === "live") {
@@ -116,7 +109,9 @@ async function finish(
       asOf,
     }),
     context,
-    backtests,
+    cells: study.cells,
+    notes: study.notes,
+    track: study.track,
     journal: remember(collected.signals, collected.snapshots),
     headlines,
   };

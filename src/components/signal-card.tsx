@@ -74,6 +74,9 @@ export function SignalCard({
   onSelect,
   history,
   regimeNote,
+  significant,
+  extras,
+  onPopOut,
 }: {
   signal: Signal;
   quote: Quote | undefined;
@@ -82,6 +85,9 @@ export function SignalCard({
   onSelect: () => void;
   history: string | null;
   regimeNote: string | null;
+  significant: boolean;
+  extras: { gap: string | null; momentum: string | null; opening: string | null; noise: string | null; bvc: string | null; size: string | null } | null;
+  onPopOut: () => void;
 }) {
   const agreement = describeAgreement(peers);
   const change = quote?.changePercent ?? null;
@@ -94,7 +100,10 @@ export function SignalCard({
       tabIndex={0}
       aria-pressed={selected}
       aria-label={`${signal.symbol} on ${TIMEFRAME_LABEL[signal.timeframe]}, ${directionLabel(signal.direction)}, ${signal.probability} percent confidence`}
-      onClick={onSelect}
+      onClick={(event) => {
+        if ((event.target as HTMLElement).closest("[data-popout]")) return;
+        onSelect();
+      }}
       onKeyDown={(event) => {
         if (event.key === "Enter" || event.key === " ") {
           event.preventDefault();
@@ -114,6 +123,17 @@ export function SignalCard({
               <span className="rounded-full bg-foreground/10 px-2 py-0.5 font-mono text-[11px] text-muted-foreground">
                 {TIMEFRAME_LABEL[signal.timeframe]}
               </span>
+              <button
+                type="button"
+                data-popout
+                className="rounded-full border border-border px-2 py-0.5 text-[11px] text-muted-foreground hover:text-foreground"
+                onClick={(event) => {
+                  event.stopPropagation();
+                  onPopOut();
+                }}
+              >
+                Pop out
+              </button>
             </div>
             <p className="mt-1 font-mono text-sm">
               {formatPrice(price)}{" "}
@@ -147,14 +167,24 @@ export function SignalCard({
             />
           </div>
           <p className="mt-1 text-right text-[11px] tracking-[0.14em] text-muted-foreground uppercase">
-            Model confidence
+            Legacy vote
           </p>
         </div>
+        <p className={cn("text-[11px] font-medium tracking-wide uppercase", significant ? "text-bullish" : "text-muted-foreground")}>
+          {significant ? "Significant" : "Not significant"}
+        </p>
 
         {history ? <p className="text-sm leading-relaxed text-foreground/95">{history}</p> : null}
         {regimeNote ? <p className="text-sm leading-relaxed text-gold">{regimeNote}</p> : null}
 
         <p className="font-serif text-[15px] leading-relaxed text-foreground/95">{signal.summary}</p>
+        {extras ? (
+          <div className="text-xs leading-relaxed text-muted-foreground">
+            {[extras.bvc, extras.size, extras.gap, extras.momentum, extras.opening, extras.noise].filter(Boolean).map((line) => (
+              <p key={line}>{line}</p>
+            ))}
+          </div>
+        ) : null}
 
         <p className={cn("text-xs", directionClass(agreement.direction))}>{agreement.label}</p>
 
