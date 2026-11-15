@@ -1,0 +1,18 @@
+{
+  "meta": {
+    "asOf": "2026-11-15T22:38:32.382Z",
+    "source": "Cboe iv30",
+    "rows": 1,
+    "delay": "about 15 min",
+    "stale": false,
+    "unavailable": false
+  },
+  "rows": [
+    {
+      "symbol": "SPY",
+      "iv30": 14.874,
+      "asOf": "2026-11-15 22:22:02"
+    }
+  ],
+  "note": "History building: 1 point. Rank needs 252 sessions."
+}

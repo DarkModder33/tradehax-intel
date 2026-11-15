@@ -1,0 +1,297 @@
+{
+  "meta": {
+    "asOf": "2026-11-15T22:38:31.967Z",
+    "source": "House Clerk PTR index",
+    "rows": 40,
+    "delay": "daily",
+    "stale": false,
+    "unavailable": false
+  },
+  "rows": [
+    {
+      "name": "Hon. David J. Taylor",
+      "state": "OH02",
+      "filingType": "P",
+      "filed": "3/6/2026",
+      "docId": "20034138"
+    },
+    {
+      "name": "Hon. David J. Taylor",
+      "state": "OH02",
+      "filingType": "P",
+      "filed": "3/20/2026",
+      "docId": "20034207"
+    },
+    {
+      "name": "Hon. David J. Taylor",
+      "state": "OH02",
+      "filingType": "P",
+      "filed": "4/2/2026",
+      "docId": "20034280"
+    },
+    {
+      "name": "Hon. David J. Taylor",
+      "state": "OH02",
+      "filingType": "P",
+      "filed": "5/7/2026",
+      "docId": "20034489"
+    },
+    {
+      "name": "Hon. David J. Taylor",
+      "state": "OH02",
+      "filingType": "P",
+      "filed": "5/28/2026",
+      "docId": "20034650"
+    },
+    {
+      "name": "Hon. David J. Taylor",
+      "state": "OH02",
+      "filingType": "P",
+      "filed": "6/12/2026",
+      "docId": "20034780"
+    },
+    {
+      "name": "Hon. David J. Taylor",
+      "state": "OH02",
+      "filingType": "P",
+      "filed": "7/1/2026",
+      "docId": "20034897"
+    },
+    {
+      "name": "Hon. David J. Taylor",
+      "state": "OH02",
+      "filingType": "P",
+      "filed": "8/6/2026",
+      "docId": "20035146"
+    },
+    {
+      "name": "Hon. David J. Taylor",
+      "state": "OH02",
+      "filingType": "P",
+      "filed": "8/20/2026",
+      "docId": "20035289"
+    },
+    {
+      "name": "Hon. David J. Taylor",
+      "state": "OH02",
+      "filingType": "P",
+      "filed": "9/5/2026",
+      "docId": "20035392"
+    },
+    {
+      "name": "Hon. David J. Taylor",
+      "state": "OH02",
+      "filingType": "P",
+      "filed": "9/17/2026",
+      "docId": "20035471"
+    },
+    {
+      "name": "Hon. David J. Taylor",
+      "state": "OH02",
+      "filingType": "P",
+      "filed": "10/1/2026",
+      "docId": "20035549"
+    },
+    {
+      "name": "Hon. David J. Taylor",
+      "state": "OH02",
+      "filingType": "P",
+      "filed": "10/15/2026",
+      "docId": "20035660"
+    },
+    {
+      "name": "Hon. David J. Taylor",
+      "state": "OH02",
+      "filingType": "P",
+      "filed": "10/29/2026",
+      "docId": "20035727"
+    },
+    {
+      "name": "Hon. David J. Taylor",
+      "state": "OH02",
+      "filingType": "P",
+      "filed": "11/12/2026",
+      "docId": "20035831"
+    },
+    {
+      "name": "Hon. Shri Thanedar",
+      "state": "MI13",
+      "filingType": "P",
+      "filed": "8/13/2026",
+      "docId": "20033910"
+    },
+    {
+      "name": "Hon. William R. Timmons IV",
+      "state": "SC04",
+      "filingType": "P",
+      "filed": "7/19/2026",
+      "docId": "20022577"
+    },
+    {
+      "name": "Hon. William R. Timmons IV",
+      "state": "SC04",
+      "filingType": "P",
+      "filed": "7/19/2026",
+      "docId": "20035042"
+    },
+    {
+      "name": "Hon. Ritchie John Torres",
+      "state": "NY15",
+      "filingType": "P",
+      "filed": "7/8/2026",
+      "docId": "20034224"
+    },
+    {
+      "name": "Hon. Lori Trahan",
+      "state": "MA03",
+      "filingType": "P",
+      "filed": "4/30/2026",
+      "docId": "20034414"
+    },
+    {
+      "name": "Hon. Derek Tran",
+      "state": "CA45",
+      "filingType": "P",
+      "filed": "8/13/2026",
+      "docId": "20035183"
+    },
+    {
+      "name": "Hon. Matthew Robert Van Epps",
+      "state": "TN07",
+      "filingType": "P",
+      "filed": "6/17/2026",
+      "docId": "20034807"
+    },
+    {
+      "name": "Hon. Ann Wagner",
+      "state": "MO02",
+      "filingType": "P",
+      "filed": "1/2/2026",
+      "docId": "20033718"
+    },
+    {
+      "name": "Hon. Ann Wagner",
+      "state": "MO02",
+      "filingType": "P",
+      "filed": "5/4/2026",
+      "docId": "20034462"
+    },
+    {
+      "name": "Hon. Ann Wagner",
+      "state": "MO02",
+      "filingType": "P",
+      "filed": "7/2/2026",
+      "docId": "20034915"
+    },
+    {
+      "name": "Hon. Ann Wagner",
+      "state": "MO02",
+      "filingType": "P",
+      "filed": "11/2/2026",
+      "docId": "20035751"
+    },
+    {
+      "name": "Hon. Tim Walberg",
+      "state": "MI05",
+      "filingType": "P",
+      "filed": "6/3/2026",
+      "docId": "20034660"
+    },
+    {
+      "name": "Hon. Debbie Wasserman Schultz",
+      "state": "FL25",
+      "filingType": "P",
+      "filed": "7/14/2026",
+      "docId": "20034999"
+    },
+    {
+      "name": "Hon. Daniel Webster",
+      "state": "FL11",
+      "filingType": "P",
+      "filed": "6/1/2026",
+      "docId": "20034562"
+    },
+    {
+      "name": "Tony Wied",
+      "state": "WI08",
+      "filingType": "P",
+      "filed": "3/9/2026",
+      "docId": "8221360"
+    },
+    {
+      "name": "Tony Wied",
+      "state": "WI08",
+      "filingType": "P",
+      "filed": "5/5/2026",
+      "docId": "9115816"
+    },
+    {
+      "name": "Tony Wied",
+      "state": "WI08",
+      "filingType": "P",
+      "filed": "7/24/2026",
+      "docId": "9116260"
+    },
+    {
+      "name": "Tony Wied",
+      "state": "WI08",
+      "filingType": "P",
+      "filed": "8/18/2026",
+      "docId": "9116308"
+    },
+    {
+      "name": "Tony Wied",
+      "state": "WI08",
+      "filingType": "P",
+      "filed": "9/2/2026",
+      "docId": "9116326"
+    },
+    {
+      "name": "Tony Wied",
+      "state": "WI08",
+      "filingType": "P",
+      "filed": "10/2/2026",
+      "docId": "9116361"
+    },
+    {
+      "name": "Hon. Roger Williams",
+      "state": "TX25",
+      "filingType": "P",
+      "filed": "1/15/2026",
+      "docId": "20033783"
+    },
+    {
+      "name": "Hon. Robert J. Wittman",
+      "state": "VA01",
+      "filingType": "P",
+      "filed": "7/10/2026",
+      "docId": "20034916"
+    },
+    {
+      "name": "Hon. Rudy C. Yakym III",
+      "state": "IN02",
+      "filingType": "P",
+      "filed": "4/6/2026",
+      "docId": "20034298"
+    },
+    {
+      "name": "Hon. Rudy C. Yakym III",
+      "state": "IN02",
+      "filingType": "P",
+      "filed": "7/13/2026",
+      "docId": "20034984"
+    },
+    {
+      "name": "Hon. Rudy C. Yakym III",
+      "state": "IN02",
+      "filingType": "P",
+      "filed": "10/20/2026",
+      "docId": "20035691"
+    }
+  ],
+  "note": "Transaction lines need pdftotext. This file is the filing index. Senate eFD is not included.",
+  "senate": {
+    "unavailable": true,
+    "error": "Senate eFD was under maintenance when this job was written. House filings only."
+  }
+}

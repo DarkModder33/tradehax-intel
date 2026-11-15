@@ -1,0 +1,13 @@
+{
+  "meta": {
+    "asOf": null,
+    "source": "Cboe open interest",
+    "rows": 0,
+    "delay": "n/a",
+    "unavailable": true,
+    "stale": true,
+    "error": "No prior chain is stored yet, so a change cannot be computed. The next run can diff against a saved baseline."
+  },
+  "rows": [],
+  "note": "Kept unavailable because the source failed. Yesterday's file is left in place when this runs again."
+}

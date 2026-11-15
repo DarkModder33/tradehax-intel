@@ -1,0 +1,13 @@
+{
+  "meta": {
+    "asOf": null,
+    "source": "SPDR",
+    "rows": 0,
+    "delay": "n/a",
+    "unavailable": true,
+    "stale": true,
+    "error": "The NAV workbook is xlsx. This run does not expand it, so flows are unavailable rather than estimated."
+  },
+  "rows": [],
+  "note": "Kept unavailable because the source failed. Yesterday's file is left in place when this runs again."
+}

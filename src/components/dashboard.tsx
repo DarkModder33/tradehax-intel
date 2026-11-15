@@ -19,6 +19,7 @@ import { Briefing } from "@/components/briefing";
 import { SignalCard } from "@/components/signal-card";
 import { TimeframeBoard } from "@/components/timeframe-board";
 import { PopoutView } from "@/components/popout-view";
+import { SiteNav } from "@/components/site-nav";
 import { useBreakaway } from "@/components/use-breakaway";
 import { useDashboard } from "@/components/use-dashboard";
 import { postPopout } from "@/lib/popout/channel";
@@ -115,6 +116,7 @@ export function Dashboard() {
 
   return (
     <div className="min-h-dvh">
+      <SiteNav />
       <header className="sticky top-0 z-30 border-b border-border/80 bg-background/80 backdrop-blur-md">
         <div className="mx-auto flex max-w-[1400px] flex-wrap items-center justify-between gap-3 px-4 py-3 md:px-6">
           <div className="flex items-center gap-3">

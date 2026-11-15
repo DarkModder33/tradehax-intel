@@ -4,6 +4,9 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+  workflow_run:
+    workflows: ["data"]
+    types: [completed]
 
 permissions:
   contents: read
@@ -40,6 +43,18 @@ jobs:
 
       - name: Build static export
         run: npm run build
+
+      - name: Checkout data branch
+        continue-on-error: true
+        uses: actions/checkout@v4
+        with:
+          ref: data
+          path: data-branch
+
+      - name: Copy precomputed data
+        run: |
+          mkdir -p out/data
+          if [ -d data-branch/data ]; then cp -a data-branch/data/. out/data/; fi
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
