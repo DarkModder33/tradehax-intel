@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useState } from "react";
+import { loadDashboard } from "@/lib/market/dashboard";
 import type { DashboardPayload } from "@/lib/market/types";
 
 const POLL_MS = 25_000;
@@ -16,7 +17,6 @@ export function useDashboard(symbolKey: string, enabled: boolean) {
   useEffect(() => {
     if (!enabled || !symbolKey) return;
 
-    const controller = new AbortController();
     let stopped = false;
     let requestId = 0;
 
@@ -24,25 +24,13 @@ export function useDashboard(symbolKey: string, enabled: boolean) {
       const id = ++requestId;
       if (!initial) setRefreshing(true);
       try {
-        const signal =
-          typeof AbortSignal.any === "function" && typeof AbortSignal.timeout === "function"
-            ? AbortSignal.any([controller.signal, AbortSignal.timeout(60_000)])
-            : controller.signal;
-        const response = await fetch(`/api/dashboard?symbols=${encodeURIComponent(symbolKey)}`, {
-          cache: "no-store",
-          signal,
-        });
-        const body = (await response.json().catch(() => null)) as
-          | (DashboardPayload & { error?: string })
-          | null;
-        if (!response.ok) {
-          throw new Error(body?.error || "The briefing could not be loaded.");
-        }
-        if (stopped || id !== requestId || !body) return;
-        setPacket({ key: symbolKey, payload: body });
+        const symbols = symbolKey.split(",").filter(Boolean);
+        const payload = await loadDashboard(symbols);
+        if (stopped || id !== requestId) return;
+        setPacket({ key: symbolKey, payload });
         setFailure(null);
       } catch (err) {
-        if (stopped || (err instanceof DOMException && err.name === "AbortError")) return;
+        if (stopped) return;
         if (id !== requestId) return;
         const timedOut = err instanceof DOMException && err.name === "TimeoutError";
         setFailure({
@@ -66,7 +54,6 @@ export function useDashboard(symbolKey: string, enabled: boolean) {
 
     return () => {
       stopped = true;
-      controller.abort();
       window.clearInterval(timer);
     };
   }, [enabled, symbolKey, reloadKey]);

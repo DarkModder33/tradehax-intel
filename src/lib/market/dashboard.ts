@@ -6,7 +6,8 @@ import type { DashboardPayload } from "./types";
 import { getYahooProvider } from "./yahoo";
 
 export function providerMode(): "yahoo" | "mock" {
-  return (process.env.MARKET_DATA_PROVIDER ?? "yahoo").trim().toLowerCase() === "mock" ? "mock" : "yahoo";
+  const raw = process.env.NEXT_PUBLIC_MARKET_DATA_PROVIDER ?? "yahoo";
+  return raw.trim().toLowerCase() === "mock" ? "mock" : "yahoo";
 }
 
 function cleanMessage(symbol: string, error: unknown): string {

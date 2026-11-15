@@ -30,37 +30,41 @@ npm test
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000).
+Open [http://localhost:3000/tradehax-intel/](http://localhost:3000/tradehax-intel/). The `/tradehax-intel` prefix matches the GitHub Pages project site.
 
-Copy `.env.example` to `.env.local` only if you want to change the data source. The default needs no key.
+Copy `.env.example` to `.env.local` only if you want to force the simulated feed. The default needs no key.
 
 ```bash
 # .env.local
-MARKET_DATA_PROVIDER=yahoo
+NEXT_PUBLIC_MARKET_DATA_PROVIDER=yahoo
 ```
 
-Set `MARKET_DATA_PROVIDER=mock` to force the simulated feed. The screen labels that feed **Demo data**. It never presents simulated prices as the market.
+Set `NEXT_PUBLIC_MARKET_DATA_PROVIDER=mock` to force the simulated feed. The screen labels that feed **Demo data**. It never presents simulated prices as the market.
 
 ## Deploy
 
-Vercel can host this repo as a Next.js app. Import [DarkModder33/tradehax-intel](https://github.com/DarkModder33/tradehax-intel), leave the framework preset on Next.js, and deploy from `main`. The dashboard calls `/api/dashboard` on the same origin, so the production URL does not need to be set in the app.
+The live site is a static export on GitHub Pages:
 
-No environment variables are required. Yahoo Finance's public chart endpoint is the default. Optional settings:
+[https://darkmodder33.github.io/tradehax-intel/](https://darkmodder33.github.io/tradehax-intel/)
 
-| Variable | Production value |
+Pushing to `main` on [DarkModder33/tradehax-intel](https://github.com/DarkModder33/tradehax-intel) runs `.github/workflows/deploy.yml`. That workflow installs, tests, runs `npm run build`, and deploys the `out` directory with the official Pages actions. In the repo settings, Pages must use the **GitHub Actions** source.
+
+No environment variables are required on Pages. Optional:
+
+| Variable | Use |
 | --- | --- |
-| `MARKET_DATA_PROVIDER` | `yahoo` (default) or `mock` for the labeled simulated feed |
-| `POLYGON_API_KEY`, `FINNHUB_API_KEY`, `TRADIER_API_KEY` | Unused in v1. Leave them unset. |
+| `NEXT_PUBLIC_MARKET_DATA_PROVIDER` | `yahoo` (default) or `mock` for the labeled simulated feed |
+| `POLYGON_API_KEY`, `FINNHUB_API_KEY`, `TRADIER_API_KEY` | Unused in v1. Leave them unset. Do not put keys in client code. |
 
-`npm run build` is the production check. Chart responses are cached in memory on the server process, so a serverless cold start fetches Yahoo again and falls back to the labeled demo feed if that fetch fails.
+`basePath` and `assetPrefix` are `/tradehax-intel`. Images are unoptimized because Pages has no Next image server.
 
 ## Data source
 
-v1 reads [Yahoo Finance's public chart endpoint](https://query1.finance.yahoo.com/v8/finance/chart/) (`/v8/finance/chart/{symbol}`). No API key. Quotes can be delayed, and the endpoint is unofficial, so it can change or rate-limit.
+v1 reads [Yahoo Finance's public chart endpoint](https://query1.finance.yahoo.com/v8/finance/chart/) (`/v8/finance/chart/{symbol}`). No API key. The browser cannot call that host directly, because Yahoo does not send `Access-Control-Allow-Origin`. The client loads it through the keyless [cors.dev](https://proxy.cors.dev/) GET proxy, which does. Quotes can be delayed, and the Yahoo endpoint is unofficial, so it can change or rate-limit.
 
-If every requested symbol fails, the server falls back to the simulated feed and says why. A single bad ticker stays as an error on that row. The rest of the book still scores.
+If every requested symbol fails, the page falls back to the simulated feed and says why. A single bad ticker stays as an error on that row. The rest of the book still scores.
 
-Market data goes through `MarketDataProvider` in `src/lib/market/provider.ts`. Yahoo (`src/lib/market/yahoo.ts`) and the demo feed (`src/lib/market/mock.ts`) both implement it. A later Polygon, Tradier, or flow vendor replaces the body of `loadDashboard` in `src/lib/market/dashboard.ts` without a UI rewrite. Chart responses are cached in memory on the server (about 30 seconds for 1-minute bars, longer for slower timeframes). 4h bars are built by folding 1h bars.
+Market data goes through `MarketDataProvider` in `src/lib/market/provider.ts`. The browser Yahoo provider (`src/lib/market/yahoo.ts`) and the demo feed (`src/lib/market/mock.ts`) both implement it. Scoring runs in the browser. A later vendor replaces `loadDashboard` in `src/lib/market/dashboard.ts` without a UI rewrite. Chart responses are cached in memory for the open tab (about 30 seconds for 1-minute bars, longer for slower timeframes). 4h bars are built by folding 1h bars.
 
 ## How a score is made
 
@@ -84,14 +88,11 @@ Timeframe agreement is separate. It counts how many of the six timeframes share 
 
 ```
 src/lib/indicators   RSI, MACD, EMA, VWAP, volume, confidence, agreement
-src/lib/market       provider interface, Yahoo, simulated feed, dashboard assembly
-src/app/api/dashboard
+src/lib/market       provider interface, browser Yahoo fetch, simulated feed
 src/components       watchlist, ranked cards, side-by-side board, briefing
 ```
 
-`GET /api/dashboard?symbols=NVDA,SPY` returns quotes, one signal per symbol per timeframe, the source label, and any per-symbol errors.
-
-The page is a client view over that endpoint. The first paint is a loading shell. Prices are not baked into the static page, which is what Next.js cache components expect for data that changes through the day.
+The page is a static shell. After it loads, the browser fetches prices and scores them. There is no Next.js server and no API route in the Pages build.
 
 ## Tests
 

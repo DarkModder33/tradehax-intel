@@ -1,6 +1,18 @@
 import { describe, expect, it } from "vitest";
 import { MarketDataError } from "./provider";
-import { parseYahooChart } from "./yahoo";
+import { parseYahooChart, yahooChartRequestUrl } from "./yahoo";
+
+describe("yahooChartRequestUrl", () => {
+  it("routes Yahoo through the keyless browser proxy and does not embed a secret", () => {
+    const url = yahooChartRequestUrl("BRK.B", "15m", "5d");
+    expect(url.startsWith("https://proxy.cors.dev/https://query1.finance.yahoo.com/v8/finance/chart/BRK-B?")).toBe(
+      true,
+    );
+    expect(url).toContain("interval=15m");
+    expect(url).toContain("range=5d");
+    expect(url.toLowerCase()).not.toMatch(/apikey|api_key|token|secret|authorization/);
+  });
+});
 
 describe("parseYahooChart", () => {
   it("keeps valid bars, skips nulls, and drops a trailing zero-volume print", () => {

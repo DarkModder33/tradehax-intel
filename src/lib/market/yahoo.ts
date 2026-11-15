@@ -5,7 +5,13 @@ import { aggregateBars } from "./resample";
 import type { Quote, SymbolSnapshot } from "./types";
 
 const FOUR_HOURS_MS = 4 * 60 * 60 * 1000;
-const USER_AGENT = "TradeHax/0.1 (market-intelligence; +https://tradehax.net)";
+const YAHOO_CHART_HOST = "https://query1.finance.yahoo.com";
+/**
+ * Yahoo's chart host does not send Access-Control-Allow-Origin, so a static
+ * page cannot fetch it directly. cors.dev is a keyless GET proxy that does.
+ * Verified for https://darkmodder33.github.io and local dev origins.
+ */
+export const YAHOO_BROWSER_PROXY = "https://proxy.cors.dev/";
 
 const TTL_MS: Record<string, number> = {
   "1m": 30_000,
@@ -122,6 +128,18 @@ function yahooSymbol(symbol: string): string {
   return symbol.replace(/\./g, "-");
 }
 
+/** Browser-safe chart URL. No API key is included. */
+export function yahooChartRequestUrl(symbol: string, interval: string, range: string): string {
+  const params = new URLSearchParams({
+    interval,
+    range,
+    includePrePost: "false",
+    events: "div|split",
+  });
+  const yahoo = `${YAHOO_CHART_HOST}/v8/finance/chart/${encodeURIComponent(yahooSymbol(symbol))}?${params}`;
+  return `${YAHOO_BROWSER_PROXY}${yahoo}`;
+}
+
 const delay = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 
 /**
@@ -133,7 +151,7 @@ export class YahooMarketData implements MarketDataProvider {
   readonly label = "Yahoo Finance public data";
   readonly kind = "live" as const;
   readonly disclaimer =
-    "Prices come from Yahoo Finance's public chart endpoint. Quotes can be delayed. This is research, not a recommendation.";
+    "Prices come from Yahoo Finance's public chart endpoint, loaded in your browser through the keyless cors.dev proxy because Yahoo does not allow direct browser requests. Quotes can be delayed. This is research, not a recommendation.";
 
   private readonly limiter = new Limiter(4);
   private readonly cache = new Map<string, CacheEntry>();
@@ -186,19 +204,13 @@ export class YahooMarketData implements MarketDataProvider {
   }
 
   private async fetchChart(symbol: string, interval: string, range: string): Promise<ChartPayload> {
-    const params = new URLSearchParams({
-      interval,
-      range,
-      includePrePost: "false",
-      events: "div|split",
-    });
-    const url = `https://query1.finance.yahoo.com/v8/finance/chart/${encodeURIComponent(yahooSymbol(symbol))}?${params}`;
+    const url = yahooChartRequestUrl(symbol, interval, range);
     let lastError: Error = new MarketDataError(`No price data for ${symbol}.`, symbol);
 
     for (let attempt = 0; attempt < 2; attempt += 1) {
       try {
         const response = await fetch(url, {
-          headers: { Accept: "application/json", "User-Agent": USER_AGENT },
+          headers: { Accept: "application/json" },
           signal: AbortSignal.timeout(12_000),
           cache: "no-store",
         });
