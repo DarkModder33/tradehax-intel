@@ -76,6 +76,7 @@ export function SignalCard({
   regimeNote,
   significant,
   extras,
+  onPopOut,
 }: {
   signal: Signal;
   quote: Quote | undefined;
@@ -86,6 +87,7 @@ export function SignalCard({
   regimeNote: string | null;
   significant: boolean;
   extras: { gap: string | null; momentum: string | null; opening: string | null; noise: string | null; bvc: string | null; size: string | null } | null;
+  onPopOut: () => void;
 }) {
   const agreement = describeAgreement(peers);
   const change = quote?.changePercent ?? null;
@@ -98,7 +100,10 @@ export function SignalCard({
       tabIndex={0}
       aria-pressed={selected}
       aria-label={`${signal.symbol} on ${TIMEFRAME_LABEL[signal.timeframe]}, ${directionLabel(signal.direction)}, ${signal.probability} percent confidence`}
-      onClick={onSelect}
+      onClick={(event) => {
+        if ((event.target as HTMLElement).closest("[data-popout]")) return;
+        onSelect();
+      }}
       onKeyDown={(event) => {
         if (event.key === "Enter" || event.key === " ") {
           event.preventDefault();
@@ -118,6 +123,17 @@ export function SignalCard({
               <span className="rounded-full bg-foreground/10 px-2 py-0.5 font-mono text-[11px] text-muted-foreground">
                 {TIMEFRAME_LABEL[signal.timeframe]}
               </span>
+              <button
+                type="button"
+                data-popout
+                className="rounded-full border border-border px-2 py-0.5 text-[11px] text-muted-foreground hover:text-foreground"
+                onClick={(event) => {
+                  event.stopPropagation();
+                  onPopOut();
+                }}
+              >
+                Pop out
+              </button>
             </div>
             <p className="mt-1 font-mono text-sm">
               {formatPrice(price)}{" "}

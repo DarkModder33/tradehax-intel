@@ -4,9 +4,9 @@ import { useCallback, useEffect, useState } from "react";
 import { loadDashboard } from "@/lib/market/dashboard";
 import type { DashboardPayload } from "@/lib/market/types";
 
-const POLL_MS = 25_000;
+export const DASHBOARD_POLL_MS = 25_000;
 
-export function useDashboard(symbolKey: string, enabled: boolean) {
+export function useDashboard(symbolKey: string, enabled: boolean, stayAwake = false) {
   const [packet, setPacket] = useState<{ key: string; payload: DashboardPayload } | null>(null);
   const [failure, setFailure] = useState<{ key: string; message: string } | null>(null);
   const [refreshing, setRefreshing] = useState(false);
@@ -48,15 +48,15 @@ export function useDashboard(symbolKey: string, enabled: boolean) {
 
     void pull(true);
     const timer = window.setInterval(() => {
-      if (document.visibilityState !== "visible") return;
+      if (!stayAwake && document.visibilityState !== "visible") return;
       void pull(false);
-    }, POLL_MS);
+    }, DASHBOARD_POLL_MS);
 
     return () => {
       stopped = true;
       window.clearInterval(timer);
     };
-  }, [enabled, symbolKey, reloadKey]);
+  }, [enabled, symbolKey, reloadKey, stayAwake]);
 
   return {
     data: packet?.key === symbolKey ? packet.payload : null,

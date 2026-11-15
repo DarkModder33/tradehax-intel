@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
+import { createPortal } from "react-dom";
 import { RefreshCw } from "lucide-react";
 import { describeAgreement, rankSignals } from "@/lib/indicators/agreement";
 import { FACTOR_LABEL, FACTOR_WEIGHTS, TIMEFRAME_LABEL, TIMEFRAMES, type Timeframe } from "@/lib/indicators";
@@ -17,7 +18,11 @@ import { Skeleton } from "@/components/ui/skeleton";
 import { Briefing } from "@/components/briefing";
 import { SignalCard } from "@/components/signal-card";
 import { TimeframeBoard } from "@/components/timeframe-board";
+import { PopoutView } from "@/components/popout-view";
+import { useBreakaway } from "@/components/use-breakaway";
 import { useDashboard } from "@/components/use-dashboard";
+import { postPopout } from "@/lib/popout/channel";
+import { getPopoutSnapshot } from "@/lib/popout/live-prefs";
 import { useWatchlist } from "@/components/use-watchlist";
 import { Watchlist, type WatchHint } from "@/components/watchlist";
 import { cn } from "@/lib/utils";
@@ -42,6 +47,18 @@ export function Dashboard() {
 
   const symbolKey = symbols.join(",");
   const { data, error, refreshing, reload } = useDashboard(symbolKey, symbols.length > 0);
+  const breakaway = useBreakaway();
+  const popTimeframe: Timeframe = view === "board" ? "15m" : view;
+
+  useEffect(() => {
+    if (!data) return;
+    postPopout({ type: "snapshot", sentAt: Date.now(), payload: data });
+  }, [data]);
+
+  const openPopout = (nextSymbols: string[], timeframe: Timeframe) => {
+    const sound = getPopoutSnapshot().sound;
+    void breakaway.open({ symbols: nextSymbols, timeframe, sound });
+  };
   const session = now == null ? null : usEquitySession(new Date(now));
 
   const hints = useMemo(() => {
@@ -129,6 +146,15 @@ export function Dashboard() {
             <span className="text-xs text-muted-foreground" aria-live="polite">
               {refreshing ? "Updating" : data && now ? `Synced ${formatAge(data.updatedAt, now)}` : "Loading"}
             </span>
+            <Button
+              type="button"
+              variant="outline"
+              size="sm"
+              onClick={() => openPopout(selected ? [selected] : symbols.slice(0, 4), popTimeframe)}
+              disabled={symbols.length === 0}
+            >
+              Pop out
+            </Button>
             <Button type="button" variant="ghost" size="icon-sm" aria-label="Refresh signals" onClick={reload} disabled={symbols.length === 0}>
               <RefreshCw className={refreshing ? "animate-spin" : undefined} />
             </Button>
@@ -257,6 +283,7 @@ export function Dashboard() {
                   significant={featured.direction !== "neutral" && Boolean(data.cells[cellKey(featured.symbol, featured.timeframe, featured.direction)]?.significant)}
                   extras={data.notes[`${featured.symbol}|${featured.timeframe}`] ?? null}
                   regimeNote={noteFor(data, featured.direction, featured.symbol)}
+                  onPopOut={() => openPopout([featured.symbol], featured.timeframe)}
                 />
               ) : null}
               {rest.length > 0 ? (
@@ -279,6 +306,7 @@ export function Dashboard() {
                         significant={signal.direction !== "neutral" && Boolean(data.cells[cellKey(signal.symbol, signal.timeframe, signal.direction)]?.significant)}
                         extras={data.notes[`${signal.symbol}|${signal.timeframe}`] ?? null}
                         regimeNote={noteFor(data, signal.direction, signal.symbol)}
+                        onPopOut={() => openPopout([signal.symbol], signal.timeframe)}
                       />
                     ))}
                   </div>
@@ -306,6 +334,9 @@ export function Dashboard() {
           </p>
         </main>
       </div>
+      {breakaway.pipWindow
+        ? createPortal(<PopoutView />, breakaway.pipWindow.document.body)
+        : null}
     </div>
   );
 }
