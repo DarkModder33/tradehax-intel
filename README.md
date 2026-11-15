@@ -90,6 +90,10 @@ A **Pop out** button on the desk and on each card opens a compact live tape. Chr
 
 The desk also loads a second price source, CNBC's public charts, to fill a symbol Yahoo missed and to flag last prices that differ by more than 1.5%. VIX, SPY, and QQQ daily charts from CNBC set a risk-on or risk-off note. Sector ETFs are ranked against SPY over 20 days. Bitcoin and Ethereum come from CoinGecko. Headlines come from Yahoo's public search endpoint through the same keyless proxy. Earnings dates are labeled unavailable: no keyless browser calendar responded. Stooq did not send CORS headers, so it is not used.
 
+## Options and market structure
+
+Gamma, the chain, volatility, hot contracts, and the strategy calculator run in the browser on Cboe delayed chains. Insiders, Congress, short interest, fails-to-deliver, and seasonality are precomputed JSON in `public/data`. Flow, tide, and off-exchange prints say "live feed not connected" until `NEXT_PUBLIC_WORKER_URL` points at the worker in `worker/`. That process is not deployed from this repo.
+
 ## Architecture
 
 ```
