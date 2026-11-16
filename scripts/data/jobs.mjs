@@ -3,6 +3,9 @@ import { parseHouseIndex } from "../../src/lib/datasets/congress.ts";
 import { parseFtd } from "../../src/lib/datasets/ftd.ts";
 import { parseNavHistory } from "../../src/lib/datasets/nav.ts";
 import { monthlyReturns } from "../../src/lib/datasets/seasonality.ts";
+import { DEFAULT_UNIVERSE } from "../../src/lib/live/universe.ts";
+import { appendIvHistory } from "../../src/lib/options/ivrank.ts";
+import { readFile } from "node:fs/promises";
 
 const USER_AGENT = process.env.SEC_USER_AGENT || "TradeHaxIntel admin@tradehax.local";
 const BROWSER = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36";
@@ -190,18 +193,46 @@ export async function oiChange() {
   return failed("Cboe open interest", new Error("No prior chain is stored yet, so a change cannot be computed. The next run can diff against a saved baseline."));
 }
 
-export async function ivHistory() {
+export const UNIVERSE = [...DEFAULT_UNIVERSE];
+
+async function readPrior(name) {
+  const dir = process.env.PREV_DIR;
+  if (!dir) return null;
   try {
-    const response = await grab("https://cdn.cboe.com/api/global/delayed_quotes/options/SPY.json", {}, 20000);
-    const body = await response.json();
-    const iv30 = body?.data?.iv30 ?? null;
-    return pack("Cboe iv30", [{ symbol: "SPY", iv30, asOf: body?.timestamp ?? null }], {
-      delay: "about 15 min",
-      note: "History building: 1 point. Rank needs 252 sessions.",
-    });
-  } catch (error) {
-    return failed("Cboe iv30", error);
+    return JSON.parse(await readFile(`${dir.replace(/\/$/, "")}/${name}`, "utf8"));
+  } catch {
+    return null;
   }
+}
+
+export async function ivHistory() {
+  const prior = await readPrior("iv-history.json");
+  const date = new Date().toISOString().slice(0, 10);
+  const updates = [];
+  const errors = [];
+  for (const symbol of UNIVERSE) {
+    try {
+      const response = await grab(`https://cdn.cboe.com/api/global/delayed_quotes/options/${symbol}.json`, {}, 20000);
+      const body = await response.json();
+      const iv30 = body?.data?.iv30;
+      const close = body?.data?.current_price;
+      if (typeof iv30 === "number") {
+        updates.push({ sym: symbol, date, iv30, close: typeof close === "number" ? close : null, asOf: body?.timestamp ?? null });
+      }
+    } catch (error) {
+      errors.push(`${symbol}: ${error instanceof Error ? error.message : error}`);
+    }
+    await new Promise((resolve) => setTimeout(resolve, 400));
+  }
+  if (!updates.length) return failed("Cboe iv30", new Error(errors[0] ?? "No iv30 values came back."));
+  const history = appendIvHistory(prior?.series ?? prior, updates.map(({ sym, date: session, iv30, close }) => ({ sym, date: session, iv30, close })));
+  const packed = pack("Cboe iv30", updates.map((row) => ({ symbol: row.sym, iv30: row.iv30, close: row.close, asOf: row.asOf })), {
+    delay: "about 15 min",
+    note: `Universe ${updates.length}/${UNIVERSE.length}. Rank stays blank until 20 stored sessions. ${errors.length ? errors.slice(0, 3).join("; ") : ""}`.trim(),
+  });
+  packed.history = { series: history };
+  packed.meta.coverage = updates.length / UNIVERSE.length;
+  return packed;
 }
 
 export async function shortInterest() {

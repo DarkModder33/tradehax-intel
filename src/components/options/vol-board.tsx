@@ -1,11 +1,15 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { DataBadge } from "@/components/data-badge";
 import { SymbolForm } from "@/components/options/symbol-form";
 import { readSymbol, useChain } from "@/components/options/use-chain";
+import { datasetUrl } from "@/lib/sources/manifest";
 import { expectedMove } from "@/lib/options/expectedMove";
 import { skew25, smile, termStructure, volSurface } from "@/lib/options/iv";
+import { asDecimalVol, closeToCloseVol, ivPercentile, ivRank, rankLabel, varianceRiskPremium, type IvPoint } from "@/lib/options/ivrank";
+import { fetchWorkerChart } from "@/lib/market/worker-bars";
+import { parseYahooChart, yahooChartRequestUrl } from "@/lib/market/yahoo";
 
 export function VolBoard() {
   const [symbol, setSymbol] = useState(readSymbol);
@@ -15,6 +19,44 @@ export function VolBoard() {
   const expiry = term[0]?.expiry;
   const points = chain && expiry ? smile(chain.contracts, expiry).filter((point) => Math.abs(point.strike - chain.spot) / chain.spot < 0.08) : [];
   const surface = chain ? volSurface(chain.contracts, chain.spot).filter((cell) => term.slice(0, 6).some((point) => point.expiry === cell.expiry)) : [];
+  const [history, setHistory] = useState<Record<string, IvPoint[]>>({});
+  const [hv, setHv] = useState<number | null>(null);
+  useEffect(() => {
+    let stopped = false;
+    fetch(datasetUrl("iv-history.json"))
+      .then((response) => (response.ok ? response.json() : { series: {} }))
+      .then((body: { series?: Record<string, IvPoint[]> }) => {
+        if (!stopped) setHistory(body.series ?? {});
+      })
+      .catch(() => {
+        if (!stopped) setHistory({});
+      });
+    return () => {
+      stopped = true;
+    };
+  }, []);
+  useEffect(() => {
+    let stopped = false;
+    void (async () => {
+      try {
+        const viaWorker = await fetchWorkerChart(symbol, "1d", "1y");
+        const bars = viaWorker?.bars ?? parseYahooChart(await (await fetch(yahooChartRequestUrl(symbol, "1d", "1y"))).json(), symbol).bars;
+        if (!stopped) setHv(closeToCloseVol(bars.map((bar) => bar.close), 20));
+      } catch {
+        if (!stopped) setHv(null);
+      }
+    })();
+    return () => {
+      stopped = true;
+    };
+  }, [symbol]);
+  const series = history[symbol] ?? [];
+  const ivSeries = series.map((point) => point[1]);
+  const iv30 = chain?.iv30 == null ? null : asDecimalVol(chain.iv30);
+  const vrp = varianceRiskPremium(iv30, hv);
+  const front = term[0];
+  const back = term.find((point) => point.dte >= 45 && point.dte <= 90) ?? term.at(-1);
+  const slope = front?.iv != null && back?.iv != null && back !== front ? back.iv - front.iv : null;
 
   return (
     <div className="flex flex-col gap-4">
@@ -24,7 +66,12 @@ export function VolBoard() {
       {chain ? (
         <>
           <DataBadge source={chain.source} asOf={chain.asOf} delay={chain.delay} />
-          <p className="text-sm">IV30 from the chain file: {chain.iv30 == null ? "n/a" : `${chain.iv30.toFixed(2)} (vendor scale)`}. Rank needs a year of nightly snapshots. History building: 0/252 days.</p>
+          <p className="text-sm">
+            IV30 {iv30 == null ? "n/a" : `${(iv30 * 100).toFixed(1)}%`}. HV20 {hv == null ? "n/a" : `${(hv * 100).toFixed(1)}%`}. VRP {vrp == null ? "n/a" : `${(vrp * 100).toFixed(1)} pts`}.
+            IV rank {rankLabel(ivSeries)}. Percentile {ivPercentile(ivSeries) == null ? "building" : `${((ivPercentile(ivSeries) ?? 0) * 100).toFixed(0)}`}.
+            Term slope {slope == null ? "n/a" : `${(slope * 100).toFixed(1)} pts`}. 25Δ skew {expiry && skew25(chain.contracts, expiry) != null ? (skew25(chain.contracts, expiry)! * 100).toFixed(2) : "n/a"}.
+          </p>
+          <p className="text-[11px] text-muted-foreground">Rank and percentile stay on “building” until 20 nightly sessions are stored. Stored points for {symbol}: {series.length}. {ivRank(ivSeries) == null ? "No rank is shown from a short or flat history." : ""}</p>
           <section>
             <h2 className="mb-2 text-sm font-medium">Term structure and straddle move</h2>
             <ul className="grid gap-2 sm:grid-cols-2 lg:grid-cols-3">

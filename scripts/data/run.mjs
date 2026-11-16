@@ -26,6 +26,7 @@ export async function buildDatasets(dir = root) {
     datasets[name] = metaOf(payload);
     const file = path.join(dir, `${name}.json`);
     await writeFile(file, JSON.stringify(payload, null, 2));
+    if (payload.history) await writeFile(path.join(dir, "iv-history.json"), JSON.stringify(payload.history, null, 2));
     console.log(`${name}: ${datasets[name].unavailable ? "unavailable" : datasets[name].rows + " rows"}`);
   }
   const manifest = { generatedAt: new Date().toISOString(), datasets };

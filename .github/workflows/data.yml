@@ -46,11 +46,15 @@ jobs:
             git -C /tmp/tradehax-data clean -fdx
           fi
           mkdir -p /tmp/tradehax-data/data
+          rm -rf prev
+          mkdir -p prev
+          cp -a /tmp/tradehax-data/data prev/data
 
       - name: Build datasets
         run: node --experimental-strip-types scripts/data/run.mjs --job "${{ github.event.schedule }}"
         env:
           DATA_DIR: /tmp/tradehax-data/data
+          PREV_DIR: prev/data
           SEC_USER_AGENT: ${{ secrets.SEC_USER_AGENT }}
           FINNHUB_KEY: ${{ secrets.FINNHUB_KEY }}
           FRED_KEY: ${{ secrets.FRED_KEY }}
