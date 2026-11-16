@@ -8,6 +8,7 @@ describe("yahooChartRequestUrl", () => {
     expect(url.startsWith("https://proxy.cors.dev/https://query1.finance.yahoo.com/v8/finance/chart/BRK-B?")).toBe(
       true,
     );
+    expect(yahooChartRequestUrl("BRKB", "1d", "1y")).toContain("/chart/BRK-B?");
     expect(url).toContain("interval=15m");
     expect(url).toContain("range=5d");
     expect(url.toLowerCase()).not.toMatch(/apikey|api_key|token|secret|authorization/);

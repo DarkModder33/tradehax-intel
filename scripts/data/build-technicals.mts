@@ -1,13 +1,13 @@
 import { writeFile } from "node:fs/promises";
 import { DEFAULT_UNIVERSE } from "../../src/lib/live/universe.ts";
-import { parseYahooChart } from "../../src/lib/market/yahoo.ts";
+import { parseYahooChart, toYahooSymbol } from "../../src/lib/market/yahoo.ts";
 import { technicalsFromBars } from "../../src/lib/screener/technicals.ts";
 
 const rows: Record<string, ReturnType<typeof technicalsFromBars>> = {};
 const errors: string[] = [];
 for (const symbol of DEFAULT_UNIVERSE) {
   try {
-    const yahoo = symbol.replace(/\./g, "-");
+    const yahoo = toYahooSymbol(symbol);
     const response = await fetch(`https://query1.finance.yahoo.com/v8/finance/chart/${encodeURIComponent(yahoo)}?interval=1d&range=2y`, {
       headers: { "user-agent": "Mozilla/5.0" },
     });
