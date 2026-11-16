@@ -60,7 +60,7 @@ describe("FINRA short volume", () => {
 
 describe("manifest and worker presence", () => {
   it("builds static data urls and an unavailable dataset", () => {
-    expect(datasetUrl("manifest.json")).toBe("/tradehax-intel/data/manifest.json");
+    expect(datasetUrl("manifest.json")).toBe("/data/manifest.json");
     expect(emptyDataset("SEC", "timed out").unavailable).toBe(true);
   });
 

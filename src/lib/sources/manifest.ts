@@ -1,4 +1,6 @@
-export const SITE_BASE = "/tradehax-intel";
+import { SITE_BASE, withBase } from "@/lib/site";
+
+export { SITE_BASE };
 
 export interface DatasetMeta {
   asOf: string | null;
@@ -16,7 +18,7 @@ export interface DataManifest {
 }
 
 export function datasetUrl(name: string, base = SITE_BASE): string {
-  return `${base}/data/${name.replace(/^\/+/, "")}`;
+  return withBase(`/data/${name.replace(/^\/+/, "")}`, base);
 }
 
 export function manifestUrl(base = SITE_BASE): string {

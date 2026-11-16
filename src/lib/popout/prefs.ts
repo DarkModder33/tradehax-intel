@@ -1,8 +1,10 @@
 import { TIMEFRAMES, type Timeframe } from "@/lib/indicators/types";
 import { sanitizeSymbols } from "@/lib/market/symbols";
+import { SITE_BASE, withBase } from "@/lib/site";
 
 export const POPOUT_STORAGE_KEY = "tradehax.popout";
-export const SITE_BASE = "/tradehax-intel";
+
+export { SITE_BASE };
 
 export interface PopoutPrefs {
   symbols: string[];
@@ -96,7 +98,7 @@ export function resolveVisit(record: PopoutRecord, search: string): PopoutRecord
 
 export function popoutPath(prefs: Pick<PopoutPrefs, "symbols" | "timeframe">): string {
   const symbols = prefs.symbols.map((symbol) => encodeURIComponent(symbol)).join(",");
-  return `${SITE_BASE}/popout/?symbols=${symbols}&tf=${encodeURIComponent(prefs.timeframe)}`;
+  return withBase(`/popout/?symbols=${symbols}&tf=${encodeURIComponent(prefs.timeframe)}`);
 }
 
 export function readPopoutPrefs(storage: Pick<Storage, "getItem"> | null): PopoutPrefs {

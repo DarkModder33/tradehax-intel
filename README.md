@@ -30,7 +30,7 @@ npm test
 npm run dev
 ```
 
-Open [http://localhost:3000/tradehax-intel/](http://localhost:3000/tradehax-intel/). The `/tradehax-intel` prefix matches the GitHub Pages project site.
+Open [http://localhost:3000/](http://localhost:3000/). The site is served from the domain root.
 
 Copy `.env.example` to `.env.local` only if you want to force the simulated feed. The default needs no key.
 
@@ -45,7 +45,7 @@ Set `NEXT_PUBLIC_MARKET_DATA_PROVIDER=mock` to force the simulated feed. The scr
 
 The live site is a static export on GitHub Pages:
 
-[https://darkmodder33.github.io/tradehax-intel/](https://darkmodder33.github.io/tradehax-intel/)
+[https://tradehaxai.tech/](https://tradehaxai.tech/)
 
 Pushing to `main` on [DarkModder33/tradehax-intel](https://github.com/DarkModder33/tradehax-intel) runs `.github/workflows/deploy.yml`. That workflow installs, tests, runs `npm run build`, and deploys the `out` directory with the official Pages actions. In the repo settings, Pages must use the **GitHub Actions** source.
 
@@ -56,7 +56,7 @@ No environment variables are required on Pages. Optional:
 | `NEXT_PUBLIC_MARKET_DATA_PROVIDER` | `yahoo` (default) or `mock` for the labeled simulated feed |
 | `POLYGON_API_KEY`, `FINNHUB_API_KEY`, `TRADIER_API_KEY` | Unused in v1. Leave them unset. Do not put keys in client code. |
 
-`basePath` and `assetPrefix` are `/tradehax-intel`. Images are unoptimized because Pages has no Next image server.
+`basePath` and `assetPrefix` come from `NEXT_PUBLIC_BASE_PATH`. Unset, the site is served from `/`. Set the variable only if Pages is mounted under a project path. Images are unoptimized because Pages has no Next image server.
 
 ## Data source
 
@@ -86,7 +86,7 @@ Timeframe agreement is separate. It counts how many of the six timeframes share 
 
 Each live card also shows a measured history line. The legacy vote is replayed on older bars. A position is entered only when the absolute score reaches 0.60, and it is filled at the next bar's open, not the signal close. It is scored over the next 5 bars (1m), 6 bars (5m), 4 bars (15m and 1h), 3 bars (4h), or 5 bars (1D), after a round-trip cost. The line quotes a Wilson 95% interval, a beta-binomial shrink toward 50%, the sample size, and gross versus net expectancy in basis points. "Significant" appears only when the Wilson lower bound is above 50% and the cell survives Benjamini–Hochberg at q = 0.10 across the symbol, timeframe, and direction cells. Otherwise the card says "Not significant." A walk-forward L2 logistic combiner is fit on the same bars and is adopted only when its out-of-sample log loss and Brier score beat both the base rate and the legacy vote. The track-record line shows the trial count and a deflated Sharpe. Live calls are stored in this browser and scored the same way once those forward bars exist.
 
-A **Pop out** button on the desk and on each card opens a compact live tape. Chromium browsers (Chrome, Edge, Opera, and other Chromium shells from version 116) use the Document Picture-in-Picture API, which floats an always-on-top window. Firefox and Safari do not support that API, so the same button opens a normal resizable window at `/tradehax-intel/popout/?symbols=SPY,NVDA&tf=5m`. That page is part of the static export and works on its own. Both windows share the latest briefing over `BroadcastChannel` when the desk is open, and the pop-out fetches for itself when it is the only window. The symbol list, timeframe, and the optional flip sound (off until you turn it on) are stored in `localStorage`. Opening the link applies its query; a reload keeps the last choice made in the window.
+A **Pop out** button on the desk and on each card opens a compact live tape. Chromium browsers (Chrome, Edge, Opera, and other Chromium shells from version 116) use the Document Picture-in-Picture API, which floats an always-on-top window. Firefox and Safari do not support that API, so the same button opens a normal resizable window at `/popout/?symbols=SPY,NVDA&tf=5m`. That page is part of the static export and works on its own. Both windows share the latest briefing over `BroadcastChannel` when the desk is open, and the pop-out fetches for itself when it is the only window. The symbol list, timeframe, and the optional flip sound (off until you turn it on) are stored in `localStorage`. Opening the link applies its query; a reload keeps the last choice made in the window.
 
 The desk also loads a second price source, CNBC's public charts, to fill a symbol Yahoo missed and to flag last prices that differ by more than 1.5%. VIX, SPY, and QQQ daily charts from CNBC set a risk-on or risk-off note. Sector ETFs are ranked against SPY over 20 days. Bitcoin and Ethereum come from CoinGecko. Headlines come from Yahoo's public search endpoint through the same keyless proxy. Earnings dates are labeled unavailable: no keyless browser calendar responded. Stooq did not send CORS headers, so it is not used.
 
