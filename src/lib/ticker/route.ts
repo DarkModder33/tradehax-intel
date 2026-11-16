@@ -3,6 +3,10 @@ export function tickerPath(symbol: string): string {
   return `/t/?s=${encodeURIComponent(symbol.toUpperCase())}`;
 }
 
+export function chartPath(symbol: string, timeframe = "1d"): string {
+  return `/chart/?s=${encodeURIComponent(symbol.toUpperCase())}&tf=${timeframe}`;
+}
+
 export function readTicker(search: string, hash: string, fallback = "SPY"): string {
   const query = new URLSearchParams(search.startsWith("?") ? search.slice(1) : search).get("s");
   const fromHash = hash.replace(/^#/, "");

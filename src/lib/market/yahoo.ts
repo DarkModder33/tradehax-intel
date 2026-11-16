@@ -3,6 +3,7 @@ import { Limiter } from "./limiter";
 import { MarketDataError, type MarketDataProvider } from "./provider";
 import { aggregateBars } from "./resample";
 import type { Quote, SymbolSnapshot } from "./types";
+import { fetchWorkerChart } from "./worker-bars";
 
 const FOUR_HOURS_MS = 4 * 60 * 60 * 1000;
 const YAHOO_CHART_HOST = "https://query1.finance.yahoo.com";
@@ -150,13 +151,24 @@ export class YahooMarketData implements MarketDataProvider {
   readonly id = "yahoo";
   readonly label = "Yahoo Finance public data";
   readonly kind = "live" as const;
-  readonly disclaimer =
-    "Prices come from Yahoo Finance's public chart endpoint, loaded in your browser through the keyless cors.dev proxy because Yahoo does not allow direct browser requests. Quotes can be delayed. This is research, not a recommendation.";
-
+  private feeds = new Set<"alpaca" | "yahoo">();
   private readonly limiter = new Limiter(4);
   private readonly cache = new Map<string, CacheEntry>();
 
+  get disclaimer(): string {
+    const alpaca = this.feeds.has("alpaca");
+    const yahoo = this.feeds.has("yahoo");
+    if (alpaca && yahoo) {
+      return "Some prices came from Alpaca SIP through the TradeHax worker. The rest came from Yahoo Finance through the keyless proxy. Quotes can be delayed. This is research, not a recommendation.";
+    }
+    if (alpaca) {
+      return "Prices come from Alpaca SIP through the TradeHax worker. Quotes are about 15 minutes delayed. This is research, not a recommendation.";
+    }
+    return "Prices come from Yahoo Finance's public chart endpoint, loaded in your browser through the keyless cors.dev proxy because Yahoo does not allow direct browser requests. Quotes can be delayed. This is research, not a recommendation.";
+  }
+
   async load(symbol: string, timeframes: readonly Timeframe[]): Promise<SymbolSnapshot> {
+    this.feeds.clear();
     const needed = new Set(timeframes);
     const requests: Array<{ id: string; interval: string; range: string }> = [];
     const add = (id: string, interval: string, range: string) => {
@@ -204,6 +216,12 @@ export class YahooMarketData implements MarketDataProvider {
   }
 
   private async fetchChart(symbol: string, interval: string, range: string): Promise<ChartPayload> {
+    const viaWorker = await fetchWorkerChart(symbol, interval, range);
+    if (viaWorker) {
+      this.feeds.add("alpaca");
+      return viaWorker;
+    }
+    this.feeds.add("yahoo");
     const url = yahooChartRequestUrl(symbol, interval, range);
     let lastError: Error = new MarketDataError(`No price data for ${symbol}.`, symbol);
 

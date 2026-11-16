@@ -10,13 +10,13 @@ Always-on process for option flow, market tide, alerts, NOPE, and off-exchange p
 
 ## Routes
 
-`/health` and `/v1/health`, `/v1/flow` and `/v1/interval` (`?symbol=&minPremium=&flag=sweep|block|multileg&limit=`), `/v1/alerts`, `/v1/tide`, `/v1/top-net-impact`, `/v1/hot`, `/v1/ticker/:symbol`, `/v1/history?date=&symbol=`, `/v1/netflow/:symbol`, `/v1/nope/:symbol`, `/v1/offex` (`?symbol=&limit=`), and `/v1/stream`. CORS allows each origin in `ALLOWED_ORIGIN` (comma separated). Set `UNIVERSE` to override the default list of about 50 names. `CHAIN_BATCH` (8) and `STOCK_BATCH` (10) stagger the polls.
+`/health` and `/v1/health`, `/v1/flow` and `/v1/interval` (`?symbol=&minPremium=&flag=sweep|block|multileg&limit=`), `/v1/alerts`, `/v1/tide`, `/v1/top-net-impact`, `/v1/hot`, `/v1/ticker/:symbol`, `/v1/history?date=&symbol=`, `/v1/netflow/:symbol`, `/v1/nope/:symbol`, `/v1/offex` (`?symbol=&limit=`), `/v1/bars/:symbol?tf=1Min|5Min|15Min|1Hour|1Day&limit=` (Alpaca SIP, 60s cache, max 2,500), `/v1/chain/:symbol`, `/v1/chain-summary/:symbol` (gamma, max pain, expected move, term structure), `/v1/news?q=`, and `/v1/stream`. CORS allows each origin in `ALLOWED_ORIGIN` (comma separated). The default covers tradehaxai.tech, www, and the github.io project site. Set `UNIVERSE` to override the default list of about 50 names. `CHAIN_BATCH` (8) and `STOCK_BATCH` (10) stagger the polls.
 
 ## Deploy
 
 The worker imports shared code from `../src/lib`, so it is bundled with esbuild into `dist/server.mjs` and only `Procfile`, `package.json`, and `dist/` are shipped.
 
-- Heroku: `worker/deploy-heroku.sh <app>` with `HEROKU_API_KEY` set. Use a Basic dyno; Eco sleeps. Config vars: `ALPACA_KEY_ID`, `ALPACA_SECRET`, `ALLOWED_ORIGIN=https://darkmodder33.github.io`, `NODE_ENV=production`.
+- Heroku: `worker/deploy-heroku.sh <app>` with `HEROKU_API_KEY` set. Use a Basic dyno; Eco sleeps. Config vars: `ALPACA_KEY_ID`, `ALPACA_SECRET`, `ALLOWED_ORIGIN=https://tradehaxai.tech,https://www.tradehaxai.tech,https://darkmodder33.github.io`, `NODE_ENV=production`.
 - Azure: the same bundle and `node dist/server.mjs` on a B1s Linux app, with the same settings.
 
 Never put the Alpaca keys in the static site.

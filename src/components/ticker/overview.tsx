@@ -1,9 +1,12 @@
 "use client";
 
+import Link from "next/link";
 import { useEffect, useState } from "react";
 import { DataBadge } from "@/components/data-badge";
-import { readTicker } from "@/lib/ticker/route";
+import { chartPath, readTicker } from "@/lib/ticker/route";
 import { fetchChain } from "@/lib/sources/cboe";
+import { fetchNews } from "@/lib/market/news";
+import { fetchWorkerChart } from "@/lib/market/worker-bars";
 import { parseYahooChart, yahooChartRequestUrl } from "@/lib/market/yahoo";
 import { buildSignal } from "@/lib/indicators/build-signal";
 import { buildExposure } from "@/lib/options/exposure";
@@ -42,8 +45,8 @@ export function TickerOverview() {
     let stopped = false;
     const load = async () => {
       try {
-        const chart = await fetch(yahooChartRequestUrl(symbol, "1d", "6mo")).then((response) => response.json());
-        const parsed = parseYahooChart(chart, symbol);
+        const viaWorker = await fetchWorkerChart(symbol, "1d", "6mo");
+        const parsed = viaWorker ?? parseYahooChart(await fetch(yahooChartRequestUrl(symbol, "1d", "6mo")).then((response) => response.json()), symbol);
         if (stopped) return;
         setPrice(parsed.quote.price);
         setTrail(parsed.bars.slice(-60).map((bar) => bar.close));
@@ -100,9 +103,8 @@ export function TickerOverview() {
         if (!stopped) setFilings([]);
       }
       try {
-        const search = await fetch(`https://proxy.cors.dev/https://query1.finance.yahoo.com/v1/finance/search?q=${symbol}&newsCount=3&quotesCount=0`).then((response) => response.json());
-        const titles = (search?.news ?? []).map((item: { title?: string }) => item.title).filter(Boolean) as string[];
-        if (!stopped) setNews(titles);
+        const search = await fetchNews(symbol, 3);
+        if (!stopped) setNews(search.items.map((item) => item.title));
       } catch {
         if (!stopped) setNews([]);
       }
@@ -116,7 +118,9 @@ export function TickerOverview() {
   return (
     <div className="flex flex-col gap-4">
       <DataBadge source="Yahoo, Cboe delayed, worker" delay="about 15 min" />
-      <h2 className="font-mono text-2xl">{symbol} {price == null ? "" : formatPrice(price)}</h2>
+      <h2 className="font-mono text-2xl">
+        <Link href={chartPath(symbol)} className="underline-offset-4 hover:underline">{symbol}</Link> {price == null ? "" : formatPrice(price)}
+      </h2>
       {error ? <p className="text-sm text-bearish">{error}</p> : null}
       <Spark values={trail} />
       <Section title="Daily signal" body={signal} />

@@ -1,5 +1,6 @@
 import type { Direction } from "@/lib/indicators/types";
 import { parseCnbcBars } from "./cnbc";
+import { fetchNews } from "./news";
 
 export interface Headline {
   title: string;
@@ -273,26 +274,8 @@ export async function fetchHeadlines(symbol: string): Promise<HeadlineResult> {
   const cached = headlineCache.get(symbol);
   if (cached && cached.expires > Date.now()) return cached.result;
   try {
-    const response = await fetch(
-      `https://proxy.cors.dev/https://query1.finance.yahoo.com/v1/finance/search?q=${encodeURIComponent(symbol)}&newsCount=2&quotesCount=0`,
-      { headers: { Accept: "application/json" }, cache: "no-store" },
-    );
-    if (!response.ok) {
-      const result: HeadlineResult = { symbol, status: "unavailable", items: [] };
-      return result;
-    }
-    const payload = (await response.json()) as {
-      news?: Array<{ title?: string; publisher?: string; link?: string }>;
-    };
-    const items = (payload.news ?? [])
-      .filter((item) => typeof item.title === "string" && item.title.trim())
-      .slice(0, 2)
-      .map((item) => ({
-        title: item.title as string,
-        publisher: item.publisher || "Yahoo Finance",
-        url: item.link || null,
-      }));
-    const result: HeadlineResult = { symbol, status: "ok", items };
+    const loaded = await fetchNews(symbol, 2);
+    const result: HeadlineResult = { symbol, status: loaded.items.length ? "ok" : "unavailable", items: loaded.items };
     headlineCache.set(symbol, { expires: Date.now() + 10 * 60_000, result });
     return result;
   } catch {

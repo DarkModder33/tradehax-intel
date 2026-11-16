@@ -23,6 +23,22 @@ export function sessionVwap(bars: Bar[], key: string): number | null {
   return priceVolume / volume;
 }
 
+/** Cumulative VWAP from the first bar at or after `anchorMs`. */
+export function anchoredVwap(bars: Bar[], anchorMs: number): Array<number | null> {
+  const out: Array<number | null> = bars.map(() => null);
+  let priceVolume = 0;
+  let volume = 0;
+  for (let index = 0; index < bars.length; index += 1) {
+    const bar = bars[index];
+    if (bar.time < anchorMs || bar.volume <= 0) continue;
+    const typical = (bar.high + bar.low + bar.close) / 3;
+    priceVolume += typical * bar.volume;
+    volume += bar.volume;
+    out[index] = priceVolume / volume;
+  }
+  return out;
+}
+
 /** Volume-weighted typical price over the last `window` bars, including the current one. */
 export function trailingVwap(bars: Bar[], window = 20): number | null {
   const slice = bars.slice(-window);

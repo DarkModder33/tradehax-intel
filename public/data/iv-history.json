@@ -1,0 +1,4 @@
+{
+  "series": {},
+  "note": "The nightly job appends one Cboe iv30 per symbol. Rank stays blank until 20 sessions exist. This file starts empty so nothing is invented."
+}

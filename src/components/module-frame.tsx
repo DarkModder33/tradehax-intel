@@ -3,7 +3,7 @@ import { SiteNav } from "@/components/site-nav";
 
 export function ModuleFrame({ title, lede, children }: { title: string; lede: string; children: ReactNode }) {
   return (
-    <div className="min-h-dvh">
+    <div className="min-h-dvh pb-16 md:pb-0">
       <SiteNav />
       <main className="mx-auto flex w-full max-w-[1400px] flex-col gap-4 px-4 py-4 md:px-6">
         <header>

@@ -13,3 +13,10 @@ export function stockTradesUrl(symbols: string[], start: string, end: string): s
 export function alpacaConfigured(): boolean {
   return Boolean(process.env.ALPACA_KEY_ID && process.env.ALPACA_SECRET);
 }
+
+export function alpacaHeaders(): Record<string, string> {
+  return {
+    "APCA-API-KEY-ID": process.env.ALPACA_KEY_ID ?? "",
+    "APCA-API-SECRET-KEY": process.env.ALPACA_SECRET ?? "",
+  };
+}

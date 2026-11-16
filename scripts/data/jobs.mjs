@@ -3,6 +3,10 @@ import { parseHouseIndex } from "../../src/lib/datasets/congress.ts";
 import { parseFtd } from "../../src/lib/datasets/ftd.ts";
 import { parseNavHistory } from "../../src/lib/datasets/nav.ts";
 import { monthlyReturns } from "../../src/lib/datasets/seasonality.ts";
+import { DEFAULT_UNIVERSE } from "../../src/lib/live/universe.ts";
+import { appendIvHistory } from "../../src/lib/options/ivrank.ts";
+import { oiChanges } from "../../src/lib/datasets/oi.ts";
+import { readFile } from "node:fs/promises";
 
 const USER_AGENT = process.env.SEC_USER_AGENT || "TradeHaxIntel admin@tradehax.local";
 const BROWSER = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36";
@@ -187,42 +191,109 @@ export async function institutions() {
 }
 
 export async function oiChange() {
-  return failed("Cboe open interest", new Error("No prior chain is stored yet, so a change cannot be computed. The next run can diff against a saved baseline."));
+  const priorFile = await readPrior("oi-snapshot.json");
+  const previous = priorFile?.snapshot && typeof priorFile.snapshot === "object" ? priorFile.snapshot : {};
+  const current = [];
+  const snapshot = {};
+  let fetched = 0;
+  for (const symbol of UNIVERSE) {
+    try {
+      const response = await grab(`https://cdn.cboe.com/api/global/delayed_quotes/options/${symbol}.json`, {}, 20000);
+      const body = await response.json();
+      fetched += 1;
+      for (const option of body?.data?.options ?? []) {
+        const occ = option?.option;
+        const openInterest = Number(option?.open_interest);
+        if (!occ || !Number.isFinite(openInterest)) continue;
+        snapshot[occ] = openInterest;
+        current.push({ symbol: occ, openInterest });
+      }
+    } catch {
+      // A missing chain stays out of the snapshot. It is not filled with zero.
+    }
+    await new Promise((resolve) => setTimeout(resolve, 200));
+  }
+  const priorRows = Object.entries(previous).map(([symbol, openInterest]) => ({ symbol, openInterest: Number(openInterest) }));
+  const rows = priorRows.length ? oiChanges(priorRows, current).slice(0, 500) : [];
+  const packed = pack("Cboe open interest", rows, {
+    delay: "daily",
+    note: priorRows.length ? `${rows.length} contracts changed.` : "Baseline stored. A change is computed on the next run.",
+  });
+  packed.snapshot = snapshot;
+  packed.meta.coverage = UNIVERSE.length ? fetched / UNIVERSE.length : 0;
+  packed.meta.unavailable = fetched === 0;
+  return packed;
+}
+
+export const UNIVERSE = [...DEFAULT_UNIVERSE];
+
+async function readPrior(name) {
+  const dir = process.env.PREV_DIR;
+  if (!dir) return null;
+  try {
+    return JSON.parse(await readFile(`${dir.replace(/\/$/, "")}/${name}`, "utf8"));
+  } catch {
+    return null;
+  }
 }
 
 export async function ivHistory() {
-  try {
-    const response = await grab("https://cdn.cboe.com/api/global/delayed_quotes/options/SPY.json", {}, 20000);
-    const body = await response.json();
-    const iv30 = body?.data?.iv30 ?? null;
-    return pack("Cboe iv30", [{ symbol: "SPY", iv30, asOf: body?.timestamp ?? null }], {
-      delay: "about 15 min",
-      note: "History building: 1 point. Rank needs 252 sessions.",
-    });
-  } catch (error) {
-    return failed("Cboe iv30", error);
+  const prior = await readPrior("iv-history.json");
+  const date = new Date().toISOString().slice(0, 10);
+  const updates = [];
+  const errors = [];
+  for (const symbol of UNIVERSE) {
+    try {
+      const response = await grab(`https://cdn.cboe.com/api/global/delayed_quotes/options/${symbol}.json`, {}, 20000);
+      const body = await response.json();
+      const iv30 = body?.data?.iv30;
+      const close = body?.data?.current_price;
+      if (typeof iv30 === "number") {
+        updates.push({ sym: symbol, date, iv30, close: typeof close === "number" ? close : null, asOf: body?.timestamp ?? null });
+      }
+    } catch (error) {
+      errors.push(`${symbol}: ${error instanceof Error ? error.message : error}`);
+    }
+    await new Promise((resolve) => setTimeout(resolve, 400));
   }
+  if (!updates.length) return failed("Cboe iv30", new Error(errors[0] ?? "No iv30 values came back."));
+  const history = appendIvHistory(prior?.series ?? prior, updates.map(({ sym, date: session, iv30, close }) => ({ sym, date: session, iv30, close })));
+  const packed = pack("Cboe iv30", updates.map((row) => ({ symbol: row.sym, iv30: row.iv30, close: row.close, asOf: row.asOf })), {
+    delay: "about 15 min",
+    note: `Universe ${updates.length}/${UNIVERSE.length}. Rank stays blank until 20 stored sessions. ${errors.length ? errors.slice(0, 3).join("; ") : ""}`.trim(),
+  });
+  packed.history = { series: history };
+  packed.meta.coverage = updates.length / UNIVERSE.length;
+  return packed;
 }
 
 export async function shortInterest() {
-  try {
-    const response = await grab("https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest", {
-      method: "POST",
-      headers: { "content-type": "application/json", accept: "application/json" },
-      body: JSON.stringify({
-        compareFilters: [
-          { compareType: "EQUAL", fieldName: "symbolCode", fieldValue: "AAPL" },
-          { compareType: "GREATER", fieldName: "settlementDate", fieldValue: "2026-06-01" },
-        ],
-        limit: 20,
-      }),
-    });
-    const rows = parseJsonLoose(await response.text());
-    const latest = Array.isArray(rows) ? rows.sort((a, b) => String(b.settlementDate).localeCompare(String(a.settlementDate)))[0] : null;
-    return pack("FINRA consolidated short interest", latest ? [latest] : [], { delay: "twice monthly", note: "AAPL sample. Float is not in this file, so SI% float is n/a." });
-  } catch (error) {
-    return failed("FINRA short interest", error);
+  const rows = [];
+  const errors = [];
+  for (const symbol of UNIVERSE) {
+    try {
+      const response = await grab("https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest", {
+        method: "POST",
+        headers: { "content-type": "application/json", accept: "application/json" },
+        body: JSON.stringify({
+          compareFilters: [
+            { compareType: "EQUAL", fieldName: "symbolCode", fieldValue: symbol },
+            { compareType: "GREATER", fieldName: "settlementDate", fieldValue: "2026-06-01" },
+          ],
+          limit: 5,
+        }),
+      }, 20000);
+      const parsed = parseJsonLoose(await response.text());
+      const latest = Array.isArray(parsed) ? parsed.sort((a, b) => String(b.settlementDate).localeCompare(String(a.settlementDate)))[0] : null;
+      if (latest) rows.push(latest);
+    } catch (error) {
+      errors.push(`${symbol}: ${error instanceof Error ? error.message : error}`);
+    }
   }
+  if (!rows.length) return failed("FINRA short interest", new Error(errors[0] ?? "No short-interest rows."));
+  const packed = pack("FINRA consolidated short interest", rows, { delay: "twice monthly", note: "Float is not in this file, so SI% float stays blank. " + errors.slice(0, 2).join("; ") });
+  packed.meta.coverage = rows.length / UNIVERSE.length;
+  return packed;
 }
 
 export async function ftd() {
@@ -239,31 +310,42 @@ export async function ftd() {
     const name = listing.split("\n").map((line) => line.trim().split(/\s+/).pop()).find((item) => item && item.endsWith(".txt"));
     const text = name ? execFileSync("unzip", ["-p", file, name], { encoding: "utf8", maxBuffer: 20_000_000 }) : "";
     rmSync(dir, { recursive: true, force: true });
-    const rows = parseFtd(text).filter((row) => row.symbol === "SPY" || row.symbol === "AAPL").slice(0, 50);
-    return pack("SEC fails-to-deliver", rows, { delay: "about 3 weeks", note: "Half-month file. SPY and AAPL only in this snapshot." });
+    const universe = new Set(UNIVERSE);
+    const rows = parseFtd(text).filter((row) => universe.has(row.symbol));
+    const packed = pack("SEC fails-to-deliver", rows, { delay: "about 3 weeks", note: "Half-month file, filtered to the liquid universe." });
+    packed.meta.coverage = UNIVERSE.length ? new Set(rows.map((row) => row.symbol)).size / UNIVERSE.length : 0;
+    return packed;
   } catch (error) {
     return failed("SEC fails-to-deliver", error);
   }
 }
 
 export async function ats() {
-  try {
-    const response = await grab("https://api.finra.org/data/group/otcMarket/name/weeklySummary", {
-      method: "POST",
-      headers: { "content-type": "application/json", accept: "application/json" },
-      body: JSON.stringify({
-        compareFilters: [
-          { compareType: "EQUAL", fieldName: "issueSymbolIdentifier", fieldValue: "AAPL" },
-          { compareType: "GREATER", fieldName: "summaryStartDate", fieldValue: "2026-09-01" },
-        ],
-        limit: 5,
-      }),
-    });
-    const rows = parseJsonLoose(await response.text());
-    return pack("FINRA ATS weekly", Array.isArray(rows) ? rows : [], { delay: "2 to 4 weeks" });
-  } catch (error) {
-    return failed("FINRA ATS", error);
+  const rows = [];
+  const errors = [];
+  for (const symbol of UNIVERSE) {
+    try {
+      const response = await grab("https://api.finra.org/data/group/otcMarket/name/weeklySummary", {
+        method: "POST",
+        headers: { "content-type": "application/json", accept: "application/json" },
+        body: JSON.stringify({
+          compareFilters: [
+            { compareType: "EQUAL", fieldName: "issueSymbolIdentifier", fieldValue: symbol },
+            { compareType: "GREATER", fieldName: "summaryStartDate", fieldValue: "2026-09-01" },
+          ],
+          limit: 2,
+        }),
+      }, 20000);
+      const parsed = parseJsonLoose(await response.text());
+      if (Array.isArray(parsed)) rows.push(...parsed.map((row) => ({ symbol, ...row })));
+    } catch (error) {
+      errors.push(`${symbol}: ${error instanceof Error ? error.message : error}`);
+    }
   }
+  if (!rows.length) return failed("FINRA ATS", new Error(errors[0] ?? "No ATS rows."));
+  const packed = pack("FINRA ATS weekly", rows, { delay: "2 to 4 weeks", note: errors.slice(0, 2).join("; ") });
+  packed.meta.coverage = new Set(rows.map((row) => row.symbol)).size / UNIVERSE.length;
+  return packed;
 }
 
 async function nasdaqCalendar(path) {
@@ -356,12 +438,64 @@ export async function etfFlows() {
     rmSync(dir, { recursive: true, force: true });
     const days = parseNavHistory(shared, sheet).slice(0, 20);
     if (!days.length) return failed("SPDR", new Error("NAV workbook had no dated rows."));
-    return pack("SPDR NAV history", days, {
+    const packed = pack("SPDR NAV history", days.map((day) => ({ symbol: "SPY", ...day })), {
       delay: "daily",
-      note: "Flow is the change in shares outstanding times that day's NAV. SPY only.",
+      note: "Flow is the change in shares outstanding times that day's NAV. Sector workbooks are not on this URL, so only SPY is stored. Coverage is partial.",
     });
+    packed.meta.coverage = 1 / 12;
+    return packed;
   } catch (error) {
     return failed("SPDR", error);
+  }
+}
+
+export async function universe() {
+  try {
+    const response = await grabRetry(
+      "https://api.nasdaq.com/api/screener/stocks?tableonly=true&download=true",
+      { headers: { "user-agent": BROWSER, accept: "application/json", referer: "https://www.nasdaq.com/" } },
+      45000,
+      3,
+    );
+    const body = parseJsonLoose(await response.text());
+    const rows = (body?.data?.rows ?? [])
+      .map((row) => {
+        const mcap = Number(String(row.marketCap ?? "").replace(/[$,]/g, ""));
+        const price = Number(String(row.lastsale ?? "").replace(/[$,]/g, ""));
+        const change = Number(String(row.pctchange ?? "").replace(/%/g, "").replace(/^\+/, ""));
+        const volume = Number(String(row.volume ?? "").replace(/,/g, ""));
+        return {
+          symbol: row.symbol,
+          name: row.name ?? row.symbol,
+          sector: row.sector || null,
+          industry: row.industry || null,
+          mcap: Number.isFinite(mcap) ? mcap : null,
+          price: Number.isFinite(price) ? price : null,
+          change: Number.isFinite(change) ? change : null,
+          volume: Number.isFinite(volume) ? volume : null,
+        };
+      })
+      .filter((row) => row.symbol && row.mcap != null && row.mcap >= 300_000_000);
+    if (!rows.length) return failed("Nasdaq screener", new Error("No names at or above a $300M market cap."));
+    const packed = pack("Nasdaq screener", rows, { delay: "daily", note: "Market cap at least $300M." });
+    packed.meta.coverage = 1;
+    return packed;
+  } catch (error) {
+    return failed("Nasdaq screener", error);
+  }
+}
+
+export async function technicals() {
+  const base = process.env.WORKER_URL;
+  if (!base) return failed("worker technicals", new Error("WORKER_URL is not set. The liquid-universe snapshot shipped with the site stays in place until this job succeeds."));
+  try {
+    const response = await grabRetry(`${base.replace(/\/$/, "")}/v1/technicals`, {}, 60000, 2);
+    const body = parseJsonLoose(await response.text());
+    const rows = body.rows && typeof body.rows === "object" ? body.rows : {};
+    if (!Object.keys(rows).length) return failed("worker technicals", new Error(body.error ?? "The worker returned no technicals."));
+    return pack("worker /v1/technicals", Object.entries(rows).map(([symbol, stats]) => ({ symbol, ...stats })), { delay: "daily" });
+  } catch (error) {
+    return failed("worker technicals", error);
   }
 }
 
@@ -384,19 +518,28 @@ export async function screener() {
 }
 
 export async function seasonality() {
-  try {
-    const url = "https://proxy.cors.dev/https://query1.finance.yahoo.com/v8/finance/chart/SPY?interval=1mo&range=10y";
-    const body = await (await grab(url)).json();
-    const result = body?.chart?.result?.[0];
-    const stamps = result?.timestamp ?? [];
-    const closes = result?.indicators?.quote?.[0]?.close ?? [];
-    const points = stamps
-      .map((stamp, index) => ({ date: new Date(stamp * 1000).toISOString().slice(0, 10), close: closes[index] }))
-      .filter((point) => Number.isFinite(point.close));
-    return pack("Yahoo SPY monthly", monthlyReturns(points), { delay: "daily", note: "Month-of-year returns from monthly closes, not a trading system." });
-  } catch (error) {
-    return failed("Yahoo SPY", error);
+  const symbols = ["SPY", "XLK", "XLF", "XLE", "XLV", "XLY", "XLP", "XLI", "XLB", "XLU", "XLRE", "XLC"];
+  const rows = [];
+  const errors = [];
+  for (const symbol of symbols) {
+    try {
+      const url = `https://query1.finance.yahoo.com/v8/finance/chart/${symbol}?interval=1mo&range=10y`;
+      const body = await (await grab(url, { headers: { "user-agent": BROWSER } })).json();
+      const result = body?.chart?.result?.[0];
+      const stamps = result?.timestamp ?? [];
+      const closes = result?.indicators?.quote?.[0]?.close ?? [];
+      const points = stamps
+        .map((stamp, index) => ({ date: new Date(stamp * 1000).toISOString().slice(0, 10), close: closes[index] }))
+        .filter((point) => Number.isFinite(point.close));
+      rows.push(...monthlyReturns(points).map((row) => ({ symbol, ...row })));
+    } catch (error) {
+      errors.push(`${symbol}: ${error instanceof Error ? error.message : error}`);
+    }
   }
+  if (!rows.length) return failed("Yahoo monthly", new Error(errors[0] ?? "No monthly closes."));
+  const packed = pack("Yahoo monthly closes", rows, { delay: "daily", note: "Month-of-year returns from monthly closes, not a trading system. " + errors.slice(0, 2).join("; ") });
+  packed.meta.coverage = new Set(rows.map((row) => row.symbol)).size / symbols.length;
+  return packed;
 }
 
 export async function flowHistory() {
@@ -424,6 +567,7 @@ export const JOBS = {
   calendar: calendars,
   "etf-flows": etfFlows,
   screener,
+  universe,
   seasonality,
   "flow-history": flowHistory,
 };

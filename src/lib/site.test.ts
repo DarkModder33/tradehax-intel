@@ -7,9 +7,7 @@ describe("site base path", () => {
     expect(normalizeBasePath("")).toBe("");
     expect(withBase("/popout/?symbols=SPY,NVDA&tf=5m", "")).toBe("/popout/?symbols=SPY,NVDA&tf=5m");
     expect(withBase("/data/manifest.json", "")).toBe("/data/manifest.json");
-    expect(withBase("/popout/?symbols=SPY,NVDA&tf=5m", "/tradehax-intel")).toBe(
-      "/tradehax-intel/popout/?symbols=SPY,NVDA&tf=5m",
-    );
-    expect(withBase("/data/manifest.json", "/tradehax-intel")).toBe("/tradehax-intel/data/manifest.json");
+    expect(withBase("/popout/?symbols=SPY,NVDA&tf=5m", "/project")).toBe("/project/popout/?symbols=SPY,NVDA&tf=5m");
+    expect(withBase("/data/manifest.json", "/project")).toBe("/project/data/manifest.json");
   });
 });
