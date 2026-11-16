@@ -29,7 +29,7 @@ function frontExpiry(chain: ChainSnapshot, asOf: Date): string | null {
 }
 
 /** Compact gamma book. The full chain stays on the worker. */
-export function summarizeChain(chain: ChainSnapshot, asOf: Date, source = chain.source): ChainSummary {
+export function summarizeChain(chain: ChainSnapshot, asOf: Date, source: string = chain.source): ChainSummary {
   const book = buildExposure(chain, asOf);
   const expiry = frontExpiry(chain, asOf);
   const move = expiry ? expectedMove(chain.contracts, chain.spot, expiry) : null;
