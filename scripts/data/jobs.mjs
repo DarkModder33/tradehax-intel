@@ -399,6 +399,19 @@ export async function seasonality() {
   }
 }
 
+export async function flowHistory() {
+  const base = process.env.WORKER_URL;
+  if (!base) return failed("worker history", new Error("WORKER_URL is not set, so /v1/history was not pulled."));
+  try {
+    const response = await grabRetry(`${base.replace(/\/$/, "")}/v1/history`, {}, 30000, 2);
+    const body = parseJsonLoose(await response.text());
+    const rows = Array.isArray(body.prints) ? body.prints : [];
+    return pack("worker /v1/history", rows.slice(0, 2000), { delay: "about 15 min", note: "Compact snapshot of prints still in worker memory. Empty until the new worker is deployed." });
+  } catch (error) {
+    return failed("worker history", error);
+  }
+}
+
 export const JOBS = {
   insiders,
   congress,
@@ -412,4 +425,5 @@ export const JOBS = {
   "etf-flows": etfFlows,
   screener,
   seasonality,
+  "flow-history": flowHistory,
 };
