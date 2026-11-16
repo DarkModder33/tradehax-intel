@@ -1,13 +1,153 @@
 {
   "meta": {
-    "asOf": null,
-    "source": "SEC 13F",
-    "rows": 0,
-    "delay": "n/a",
-    "unavailable": true,
-    "stale": true,
-    "error": "Quarterly 13F ZIP is not expanded in this run. The job records the miss instead of a partial table."
+    "asOf": "2026-11-16T02:38:01.263Z",
+    "source": "SEC 13F-HR index",
+    "rows": 20,
+    "delay": "quarterly",
+    "stale": false,
+    "unavailable": false
   },
-  "rows": [],
-  "note": "Kept unavailable because the source failed. Yesterday's file is left in place when this runs again."
+  "rows": [
+    {
+      "id": "0002164997-26-000001:primary_doc.xml",
+      "filed": "2026-09-30",
+      "names": [
+        "Stillwater Capital Management, Corp  (CIK 0002164997)"
+      ]
+    },
+    {
+      "id": "0002164859-26-000001:primary_doc.xml",
+      "filed": "2026-09-30",
+      "names": [
+        "White Sand Wealth Management LLC  (CIK 0002164859)"
+      ]
+    },
+    {
+      "id": "0002162591-26-000002:primary_doc.xml",
+      "filed": "2026-09-30",
+      "names": [
+        "United Southern Bank - Trust Department  (CIK 0002162591)"
+      ]
+    },
+    {
+      "id": "0002150482-26-000005:primary_doc.xml",
+      "filed": "2026-09-30",
+      "names": [
+        "IKE Capital, LLC  (CIK 0002150482)"
+      ]
+    },
+    {
+      "id": "0002147967-26-000005:primary_doc.xml",
+      "filed": "2026-09-30",
+      "names": [
+        "XP Advisory US, Inc.  (CIK 0002147967)"
+      ]
+    },
+    {
+      "id": "0002144243-26-000003:primary_doc.xml",
+      "filed": "2026-09-30",
+      "names": [
+        "Daniel Investment Group, Inc.  (CIK 0002144243)"
+      ]
+    },
+    {
+      "id": "0002140988-26-000002:primary_doc.xml",
+      "filed": "2026-09-30",
+      "names": [
+        "Bank of Ann Arbor  (CIK 0002140988)"
+      ]
+    },
+    {
+      "id": "0002140776-26-000003:primary_doc.xml",
+      "filed": "2026-09-30",
+      "names": [
+        "Steelhead Wealth Management LLC  (CIK 0002140776)"
+      ]
+    },
+    {
+      "id": "0002137372-26-000004:primary_doc.xml",
+      "filed": "2026-09-30",
+      "names": [
+        "Atomic Invest LLC  (CIK 0002137372)"
+      ]
+    },
+    {
+      "id": "0002137268-26-000007:primary_doc.xml",
+      "filed": "2026-09-30",
+      "names": [
+        "Lionhunter Capital Management, LLC  (CIK 0002137268)"
+      ]
+    },
+    {
+      "id": "0002134981-26-000002:primary_doc.xml",
+      "filed": "2026-09-30",
+      "names": [
+        "MAGARIAN CAPITAL MANAGEMENT, LLC  (CIK 0002134981)"
+      ]
+    },
+    {
+      "id": "0002132639-26-000012:primary_doc.xml",
+      "filed": "2026-09-30",
+      "names": [
+        "Causey Wealth LLC  (CIK 0002132639)"
+      ]
+    },
+    {
+      "id": "0002131047-26-000004:primary_doc.xml",
+      "filed": "2026-09-30",
+      "names": [
+        "Capital Advisor Network LLC  (CIK 0002131047)"
+      ]
+    },
+    {
+      "id": "0002129318-26-000033:primary_doc.xml",
+      "filed": "2026-09-30",
+      "names": [
+        "Norris Financial Group, LLC  (CIK 0002129318)"
+      ]
+    },
+    {
+      "id": "0002127793-26-000011:primary_doc.xml",
+      "filed": "2026-09-30",
+      "names": [
+        "E20 Capital Ltd  (CIK 0002127793)"
+      ]
+    },
+    {
+      "id": "0002113017-26-000003:primary_doc.xml",
+      "filed": "2026-09-30",
+      "names": [
+        "Rising Stella Capital Pte. Ltd  (CIK 0002113017)"
+      ]
+    },
+    {
+      "id": "0002112646-26-000008:primary_doc.xml",
+      "filed": "2026-09-30",
+      "names": [
+        "LARCH CAPITAL PARTNERS LLC  (CIK 0002112646)"
+      ]
+    },
+    {
+      "id": "0002112504-26-000013:primary_doc.xml",
+      "filed": "2026-09-30",
+      "names": [
+        "SIP Global Opportunity Manager LLC  (CIK 0002112504)"
+      ]
+    },
+    {
+      "id": "0002111611-26-000005:primary_doc.xml",
+      "filed": "2026-09-30",
+      "names": [
+        "Buckley Capital Advisors, LLC  (CIK 0002111611)"
+      ]
+    },
+    {
+      "id": "0002111350-26-000003:primary_doc.xml",
+      "filed": "2026-09-30",
+      "names": [
+        "Declaration Partners LP  (CIK 0002111350)"
+      ]
+    }
+  ],
+  "note": "Filing index only. Holdings tables inside the quarterly ZIP are not expanded."
 }
