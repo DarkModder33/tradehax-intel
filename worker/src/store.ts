@@ -16,6 +16,8 @@ export interface OffexPrint {
   conditions: string[];
 }
 
+export const history = new Map<string, FlowPrint[]>();
+
 export const state = {
   prints: [] as FlowPrint[],
   offex: [] as OffexPrint[],
@@ -43,6 +45,13 @@ function trim<T>(list: T[], max: number) {
 export function addPrints(next: FlowPrint[], offex: OffexPrint[] = []) {
   if (!next.length && !offex.length) return;
   state.prints.push(...next);
+  for (const print of next) {
+    const day = print.time.slice(0, 10);
+    const bucket = history.get(day) ?? [];
+    bucket.push(print);
+    history.set(day, bucket);
+    if (bucket.length > 5000) bucket.splice(0, bucket.length - 5000);
+  }
   state.prints.sort((a, b) => Date.parse(a.time) - Date.parse(b.time));
   trim(state.prints, MAX_PRINTS);
   state.offex.push(...offex);

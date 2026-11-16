@@ -3,12 +3,14 @@ import { parseOcc } from "../../src/lib/sources/occ.ts";
 import { inferSide, sentiment, withFlags, type FlowPrint } from "../../src/lib/flow/classify.ts";
 import { optionTradesUrl, stockTradesUrl, alpacaConfigured } from "./alpaca.ts";
 import { addPrints, ingestChain, noteError, state, type OffexPrint } from "./store.ts";
+import { parseUniverse } from "../../src/lib/live/universe.ts";
 import { inSession, lastSessionEnd } from "./time.ts";
 
-export const SYMBOLS = (process.env.WORKER_SYMBOLS ?? "SPY,QQQ,IWM,NVDA,TSLA,AAPL,AMD,META,AMZN,MSFT")
-  .split(",")
-  .map((symbol) => symbol.trim().toUpperCase())
-  .filter(Boolean);
+export const SYMBOLS = parseUniverse(process.env.UNIVERSE ?? process.env.WORKER_SYMBOLS);
+const CHAIN_BATCH = Number(process.env.CHAIN_BATCH ?? 8);
+const STOCK_BATCH = Number(process.env.STOCK_BATCH ?? 10);
+let chainCursor = 0;
+let stockCursor = 0;
 const CHAIN_POLL_SEC = Number(process.env.CHAIN_POLL_SEC ?? 120);
 const ALPACA_POLL_SEC = Number(process.env.ALPACA_POLL_SEC ?? 60);
 const WATCH_CONTRACTS = Number(process.env.WATCH_CONTRACTS ?? 400);
@@ -41,7 +43,10 @@ async function getJson(url: string, headers: Record<string, string> = {}): Promi
 
 export async function pollChains(): Promise<void> {
   const emit = !alpacaConfigured();
-  for (const symbol of SYMBOLS) {
+  const slice: string[] = [];
+  for (let index = 0; index < Math.min(CHAIN_BATCH, SYMBOLS.length); index++) slice.push(SYMBOLS[(chainCursor + index) % SYMBOLS.length]);
+  chainCursor = SYMBOLS.length ? (chainCursor + slice.length) % SYMBOLS.length : 0;
+  for (const symbol of slice) {
     try {
       const snapshot = parseCboeChain(await getJson(cboeChainUrl(symbol)), symbol);
       ingestChain(snapshot, emit);
@@ -152,7 +157,10 @@ export async function pollAlpaca(now = new Date()): Promise<void> {
       noteError("alpaca options", error);
     }
   }
-  for (const symbol of SYMBOLS) {
+  const stockSlice: string[] = [];
+  for (let index = 0; index < Math.min(STOCK_BATCH, SYMBOLS.length); index++) stockSlice.push(SYMBOLS[(stockCursor + index) % SYMBOLS.length]);
+  stockCursor = SYMBOLS.length ? (stockCursor + stockSlice.length) % SYMBOLS.length : 0;
+  for (const symbol of stockSlice) {
     try {
       const trades = await pagedTrades(stockTradesUrl([symbol], span.start, span.end));
       for (const trade of trades[symbol] ?? []) {
