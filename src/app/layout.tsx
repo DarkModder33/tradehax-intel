@@ -28,6 +28,17 @@ export const metadata: Metadata = {
   description:
     "A ranked briefing of bullish and bearish setups across a watchlist, with the reason each signal fired and where the timeframes agree.",
   manifest: "/manifest.webmanifest",
+  openGraph: {
+    title: "TradeHax Intel",
+    description: "Delayed quotes, options flow, and a research desk. Not a recommendation.",
+    siteName: "TradeHax Intel",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "TradeHax Intel",
+    description: "Delayed quotes, options flow, and a research desk. Not a recommendation.",
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
