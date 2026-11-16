@@ -1,4 +1,4 @@
-import { parseCboeChain } from "./cboe";
+import { parseCboeChain } from "./cboe-parse";
 
 const scope = globalThis as unknown as {
   onmessage: ((event: MessageEvent<{ payload: unknown; root: string }>) => void) | null;

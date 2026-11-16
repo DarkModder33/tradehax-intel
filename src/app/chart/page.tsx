@@ -1,11 +1,6 @@
 import type { Metadata } from "next";
-import dynamic from "next/dynamic";
+import { ChartLoader } from "@/components/chart/chart-loader";
 import { ModuleFrame } from "@/components/module-frame";
-
-const ProChart = dynamic(() => import("@/components/chart/pro-chart").then((mod) => mod.ProChart), {
-  ssr: false,
-  loading: () => <p className="text-sm text-muted-foreground">Loading the chart.</p>,
-});
 
 export const metadata: Metadata = {
   title: "Chart | TradeHax",
@@ -15,7 +10,7 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <ModuleFrame title="Chart" lede="Candles with volume, indicators, and optional gamma or flow overlays. The link is the chart: reload it and the same symbol, timeframe, and studies come back.">
-      <ProChart />
+      <ChartLoader />
     </ModuleFrame>
   );
 }
