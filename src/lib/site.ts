@@ -1,9 +1,6 @@
-/**
- * Public site prefix. Unset keeps the GitHub project path. An empty string is the domain root.
- */
+/** Public site prefix. Unset or empty serves the domain root. A path such as /project is only used when set. */
 export function normalizeBasePath(raw: string | undefined | null): string {
-  if (raw == null) return "/tradehax-intel";
-  if (raw === "" || raw === "/") return "";
+  if (raw == null || raw === "" || raw === "/") return "";
   const trimmed = raw.replace(/\/+$/, "");
   return trimmed.startsWith("/") ? trimmed : `/${trimmed}`;
 }

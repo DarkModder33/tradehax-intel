@@ -1,7 +1,6 @@
-// Unset keeps the GitHub project path. An empty NEXT_PUBLIC_BASE_PATH is the domain root.
+// Unset or empty serves https://tradehaxai.tech from /. Set NEXT_PUBLIC_BASE_PATH only for a project-site prefix.
 const rawBase = process.env.NEXT_PUBLIC_BASE_PATH;
-const pagesBase =
-  rawBase == null ? "/tradehax-intel" : rawBase === "" || rawBase === "/" ? "" : rawBase.replace(/\/+$/, "");
+const pagesBase = rawBase == null || rawBase === "" || rawBase === "/" ? "" : rawBase.replace(/\/+$/, "");
 const prefix = pagesBase === "" ? "" : pagesBase.startsWith("/") ? pagesBase : `/${pagesBase}`;
 
 const nextConfig = {

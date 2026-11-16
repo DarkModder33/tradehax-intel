@@ -12,7 +12,7 @@ import { DEFAULT_POPOUT, mergePopoutPrefs, normalizePopoutPrefs, popoutPath, rea
 describe("pop-out preferences", () => {
   it("builds the static fallback route", () => {
     expect(popoutPath({ symbols: ["SPY", "NVDA"], timeframe: "5m" })).toBe(
-      "/tradehax-intel/popout/?symbols=SPY,NVDA&tf=5m",
+      "/popout/?symbols=SPY,NVDA&tf=5m",
     );
   });
 
