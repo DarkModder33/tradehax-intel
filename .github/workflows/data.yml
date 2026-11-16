@@ -54,7 +54,7 @@ jobs:
           SEC_USER_AGENT: ${{ secrets.SEC_USER_AGENT }}
           FINNHUB_KEY: ${{ secrets.FINNHUB_KEY }}
           FRED_KEY: ${{ secrets.FRED_KEY }}
-          WORKER_URL: ${{ vars.WORKER_URL }}
+          WORKER_URL: ${{ vars.WORKER_URL || 'https://tradehax-intel-worker-bf2f623ce81a.herokuapp.com' }}
           WORKER_PUBLISH_TOKEN: ${{ secrets.WORKER_PUBLISH_TOKEN }}
 
       - name: Publish data branch
