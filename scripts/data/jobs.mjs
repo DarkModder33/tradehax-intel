@@ -133,6 +133,19 @@ export async function insiders() {
   }
 }
 
+async function senateNote() {
+  try {
+    const response = await grabRetry("https://efdsearch.senate.gov/search/", {
+      headers: { "user-agent": BROWSER, accept: "text/html" },
+    }, 20000, 3);
+    const text = await response.text();
+    if (/maintenance/i.test(text)) return "Senate eFD still says the site is under maintenance.";
+    return "Senate eFD answered, but the report table needs the agreement cookie. Rows were not parsed.";
+  } catch (error) {
+    return error instanceof Error ? error.message : "Senate eFD did not answer.";
+  }
+}
+
 export async function congress() {
   try {
     const zip = await grab("https://disclosures-clerk.house.gov/public_disc/financial-pdfs/2026FD.zip", {}, 20000);
@@ -147,8 +160,8 @@ export async function congress() {
     rmSync(dir, { recursive: true, force: true });
     const filings = parseHouseIndex(text).filter((row) => row.filingType === "P").slice(-40);
     return {
-      ...pack("House Clerk PTR index", filings, { delay: "daily", note: "Transaction lines need pdftotext. This file is the filing index. Senate eFD is not included." }),
-      senate: { unavailable: true, error: "Senate eFD was under maintenance when this job was written. House filings only." },
+      ...pack("House Clerk PTR index", filings, { delay: "daily", note: "Transaction lines need pdftotext. This file is the filing index." }),
+      senate: { unavailable: true, error: await senateNote() },
     };
   } catch (error) {
     return { ...failed("House Clerk", error), senate: { unavailable: true, error: "Senate eFD unavailable" } };
@@ -156,7 +169,21 @@ export async function congress() {
 }
 
 export async function institutions() {
-  return failed("SEC 13F", new Error("Quarterly 13F ZIP is not expanded in this run. The job records the miss instead of a partial table."));
+  try {
+    const end = new Date().toISOString().slice(0, 10);
+    const url = `https://efts.sec.gov/LATEST/search-index?forms=13F-HR&dateRange=custom&startdt=2026-08-01&enddt=${end}`;
+    const body = parseJsonLoose(await (await grabRetry(url, {}, 30000, 3)).text());
+    const hits = body?.hits?.hits ?? [];
+    const rows = hits.slice(0, 20).map((hit) => ({
+      id: hit._id ?? "",
+      filed: hit._source?.period_ending ?? hit._source?.file_date ?? null,
+      names: hit._source?.display_names ?? [],
+    }));
+    if (!rows.length) return failed("SEC 13F-HR", new Error("The full-text index returned no 13F-HR hits. The quarterly ZIP is not expanded."));
+    return pack("SEC 13F-HR index", rows, { delay: "quarterly", note: "Filing index only. Holdings tables inside the quarterly ZIP are not expanded." });
+  } catch (error) {
+    return failed("SEC 13F", error);
+  }
 }
 
 export async function oiChange() {
@@ -372,6 +399,19 @@ export async function seasonality() {
   }
 }
 
+export async function flowHistory() {
+  const base = process.env.WORKER_URL;
+  if (!base) return failed("worker history", new Error("WORKER_URL is not set, so /v1/history was not pulled."));
+  try {
+    const response = await grabRetry(`${base.replace(/\/$/, "")}/v1/history`, {}, 30000, 2);
+    const body = parseJsonLoose(await response.text());
+    const rows = Array.isArray(body.prints) ? body.prints : [];
+    return pack("worker /v1/history", rows.slice(0, 2000), { delay: "about 15 min", note: "Compact snapshot of prints still in worker memory. Empty until the new worker is deployed." });
+  } catch (error) {
+    return failed("worker history", error);
+  }
+}
+
 export const JOBS = {
   insiders,
   congress,
@@ -385,4 +425,5 @@ export const JOBS = {
   "etf-flows": etfFlows,
   screener,
   seasonality,
+  "flow-history": flowHistory,
 };

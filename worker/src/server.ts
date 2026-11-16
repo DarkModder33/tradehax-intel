@@ -4,8 +4,9 @@ import type { FlowPrint } from "../../src/lib/flow/classify.ts";
 import { repeatedHits } from "../../src/lib/flow/rules.ts";
 import { tideBar, topNetImpact } from "../../src/lib/flow/tide.ts";
 import { nope } from "../../src/lib/flow/nope.ts";
+import { hotByPremium } from "../../src/lib/flow/rank.ts";
 import { alpacaConfigured } from "./alpaca.ts";
-import { state } from "./store.ts";
+import { history, state } from "./store.ts";
 import { SYMBOLS, startPollers } from "./poller.ts";
 
 const port = Number(process.env.PORT ?? 8787);
@@ -73,6 +74,33 @@ export function handle(url: URL, res: http.ServerResponse, requestOrigin?: strin
   }
   if (path === "/v1/flow" || path === "/v1/interval") {
     json(res, 200, { ...live, prints: filterPrints(url, state.prints), total: state.prints.length, delay: "about 15 min", inferred: !live.alpaca }, cors);
+    return;
+  }
+  if (path === "/v1/hot") {
+    json(res, 200, { ...live, hot: hotByPremium(state.prints) }, cors);
+    return;
+  }
+  if (path.startsWith("/v1/ticker/")) {
+    const symbol = decodeURIComponent(path.split("/").pop() ?? "").toUpperCase();
+    const mine = state.prints.filter((print) => print.root === symbol);
+    const spotVolume = state.snapshots.get(symbol)?.volume ?? 0;
+    json(res, 200, {
+      ...live,
+      symbol,
+      prints: mine.slice(-30).reverse(),
+      tide: tideBar(mine),
+      nope: nope(mine.map((print) => ({ right: print.right, volume: print.size, delta: print.delta })), spotVolume || 1),
+      offex: state.offex.filter((print) => print.symbol === symbol).slice(-20),
+      hot: hotByPremium(mine, 5),
+    }, cors);
+    return;
+  }
+  if (path === "/v1/history") {
+    const date = url.searchParams.get("date");
+    const symbol = url.searchParams.get("symbol")?.toUpperCase();
+    const days = date ? [date] : [...history.keys()].sort();
+    const prints = days.flatMap((day) => history.get(day) ?? []).filter((print) => !symbol || print.root === symbol);
+    json(res, 200, { ...live, days, prints: prints.slice(-5000) }, cors);
     return;
   }
   if (path === "/v1/alerts") {

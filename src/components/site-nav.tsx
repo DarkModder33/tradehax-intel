@@ -2,10 +2,17 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { TickerSearch } from "@/components/ticker-search";
 import { cn } from "@/lib/utils";
 
 export const NAV = [
   { href: "/", label: "Desk" },
+  { href: "/t/", label: "Ticker" },
+  { href: "/alerts/", label: "Alerts" },
+  { href: "/flow/history/", label: "History" },
+  { href: "/map/", label: "Map" },
+  { href: "/markets/", label: "Markets" },
+  { href: "/workspace/", label: "Workspace" },
   { href: "/gex/", label: "Gamma" },
   { href: "/chain/", label: "Chain" },
   { href: "/vol/", label: "Vol" },
@@ -46,6 +53,7 @@ export function SiteNav() {
             </Link>
           );
         })}
+        <TickerSearch />
       </div>
     </nav>
   );
