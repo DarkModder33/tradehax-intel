@@ -1,6 +1,6 @@
 {
   "meta": {
-    "asOf": "2026-11-16T02:38:01.263Z",
+    "asOf": "2026-11-16T21:59:40.000Z",
     "source": "SEC 13F-HR index",
     "rows": 20,
     "delay": "quarterly",
@@ -9,143 +9,143 @@
   },
   "rows": [
     {
-      "id": "0002164997-26-000001:primary_doc.xml",
+      "id": "0002164991-26-000002:primary_doc.xml",
       "filed": "2026-09-30",
       "names": [
-        "Stillwater Capital Management, Corp  (CIK 0002164997)"
+        "Arnold Castellano & Associates, LLC  (CIK 0002164991)"
       ]
     },
     {
-      "id": "0002164859-26-000001:primary_doc.xml",
+      "id": "0002163472-26-000001:primary_doc.xml",
       "filed": "2026-09-30",
       "names": [
-        "White Sand Wealth Management LLC  (CIK 0002164859)"
+        "PFS Signature Wealth LLC  (CIK 0002163472)"
       ]
     },
     {
-      "id": "0002162591-26-000002:primary_doc.xml",
-      "filed": "2026-09-30",
+      "id": "0002158126-26-000005:primary_doc.xml",
+      "filed": "2026-06-30",
       "names": [
-        "United Southern Bank - Trust Department  (CIK 0002162591)"
+        "CONWAY PARTNERS MANAGEMENT, LLC  (CIK 0002158126)"
       ]
     },
     {
-      "id": "0002150482-26-000005:primary_doc.xml",
-      "filed": "2026-09-30",
+      "id": "0002158126-26-000004:primary_doc.xml",
+      "filed": "2026-03-31",
       "names": [
-        "IKE Capital, LLC  (CIK 0002150482)"
+        "CONWAY PARTNERS MANAGEMENT, LLC  (CIK 0002158126)"
       ]
     },
     {
-      "id": "0002147967-26-000005:primary_doc.xml",
-      "filed": "2026-09-30",
+      "id": "0002158126-26-000003:primary_doc.xml",
+      "filed": "2025-12-31",
       "names": [
-        "XP Advisory US, Inc.  (CIK 0002147967)"
+        "CONWAY PARTNERS MANAGEMENT, LLC  (CIK 0002158126)"
       ]
     },
     {
-      "id": "0002144243-26-000003:primary_doc.xml",
+      "id": "0002158126-26-000002:primary_doc.xml",
       "filed": "2026-09-30",
       "names": [
-        "Daniel Investment Group, Inc.  (CIK 0002144243)"
+        "CONWAY PARTNERS MANAGEMENT, LLC  (CIK 0002158126)"
       ]
     },
     {
-      "id": "0002140988-26-000002:primary_doc.xml",
+      "id": "0002149913-26-000002:primary_doc.xml",
       "filed": "2026-09-30",
       "names": [
-        "Bank of Ann Arbor  (CIK 0002140988)"
+        "Outlook Capital Management, LLC  (CIK 0002149913)"
       ]
     },
     {
-      "id": "0002140776-26-000003:primary_doc.xml",
+      "id": "0002146304-26-000004:primary_doc.xml",
       "filed": "2026-09-30",
       "names": [
-        "Steelhead Wealth Management LLC  (CIK 0002140776)"
+        "Odyssey Group, LLC  (CIK 0002146304)"
       ]
     },
     {
-      "id": "0002137372-26-000004:primary_doc.xml",
+      "id": "0002139999-26-000002:primary_doc.xml",
       "filed": "2026-09-30",
       "names": [
-        "Atomic Invest LLC  (CIK 0002137372)"
+        "X ADVISORS, LLC  (CIK 0002139999)"
       ]
     },
     {
-      "id": "0002137268-26-000007:primary_doc.xml",
+      "id": "0002136496-26-000002:primary_doc.xml",
       "filed": "2026-09-30",
       "names": [
-        "Lionhunter Capital Management, LLC  (CIK 0002137268)"
+        "Smith Brothers Financial, LLC  (CIK 0002136496)"
       ]
     },
     {
-      "id": "0002134981-26-000002:primary_doc.xml",
+      "id": "0002129102-26-000029:primary_doc.xml",
       "filed": "2026-09-30",
       "names": [
-        "MAGARIAN CAPITAL MANAGEMENT, LLC  (CIK 0002134981)"
+        "NATIONAL FARMERS UNION MUTUAL INSURANCE SOCIETY LIMITED(THE)  (CIK 0002156979)"
       ]
     },
     {
-      "id": "0002132639-26-000012:primary_doc.xml",
+      "id": "0002129102-26-000028:primary_doc.xml",
       "filed": "2026-09-30",
       "names": [
-        "Causey Wealth LLC  (CIK 0002132639)"
+        "NFU Mutual Investment Services Limited  (CIK 0002163891)"
       ]
     },
     {
-      "id": "0002131047-26-000004:primary_doc.xml",
+      "id": "0002126773-26-000004:primary_doc.xml",
       "filed": "2026-09-30",
       "names": [
-        "Capital Advisor Network LLC  (CIK 0002131047)"
+        "Bravera Wealth  (CIK 0002126773)"
       ]
     },
     {
-      "id": "0002129318-26-000033:primary_doc.xml",
+      "id": "0002126627-26-000003:primary_doc.xml",
       "filed": "2026-09-30",
       "names": [
-        "Norris Financial Group, LLC  (CIK 0002129318)"
+        "Sanchez Levi Garrett  (CIK 0002126627)"
       ]
     },
     {
-      "id": "0002127793-26-000011:primary_doc.xml",
+      "id": "0002123957-26-000005:primary_doc.xml",
       "filed": "2026-09-30",
       "names": [
-        "E20 Capital Ltd  (CIK 0002127793)"
+        "Kryger Capital LLC  (CIK 0002123957)"
       ]
     },
     {
-      "id": "0002113017-26-000003:primary_doc.xml",
+      "id": "0002118977-26-000005:primary_doc.xml",
       "filed": "2026-09-30",
       "names": [
-        "Rising Stella Capital Pte. Ltd  (CIK 0002113017)"
+        "Estate Planners Group, LLC  (CIK 0002118977)"
       ]
     },
     {
-      "id": "0002112646-26-000008:primary_doc.xml",
+      "id": "0002118292-26-000010:primary_doc.xml",
       "filed": "2026-09-30",
       "names": [
-        "LARCH CAPITAL PARTNERS LLC  (CIK 0002112646)"
+        "Galaxy Digital Capital Management GP LLC  (CIK 0002118292)"
       ]
     },
     {
-      "id": "0002112504-26-000013:primary_doc.xml",
+      "id": "0002112884-26-000004:primary_doc.xml",
       "filed": "2026-09-30",
       "names": [
-        "SIP Global Opportunity Manager LLC  (CIK 0002112504)"
+        "RIHO Partners, LLC  (CIK 0002112884)"
       ]
     },
     {
-      "id": "0002111611-26-000005:primary_doc.xml",
+      "id": "0002112647-26-000003:primary_doc.xml",
       "filed": "2026-09-30",
       "names": [
-        "Buckley Capital Advisors, LLC  (CIK 0002111611)"
+        "GTS FINANCIAL, LLC  (CIK 0002112647)"
       ]
     },
     {
-      "id": "0002111350-26-000003:primary_doc.xml",
+      "id": "0002112250-26-000008:primary_doc.xml",
       "filed": "2026-09-30",
       "names": [
-        "Declaration Partners LP  (CIK 0002111350)"
+        "Civilization Ventures Management, LLC  (CIK 0002112250)"
       ]
     }
   ],
