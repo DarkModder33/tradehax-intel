@@ -1,6 +1,6 @@
 {
   "meta": {
-    "asOf": "2026-11-16T21:59:38.698Z",
+    "asOf": "2026-11-16T23:06:09.740Z",
     "source": "SEC EDGAR Form 4",
     "rows": 25,
     "delay": "hours",
@@ -8,6 +8,57 @@
     "unavailable": false
   },
   "rows": [
+    {
+      "id": "0002162137-26-000005:form4-11162026_061108.xml",
+      "filed": "2026-11-12",
+      "names": [
+        "Santarelli Luca  (CIK 0002162137)",
+        "WINDWARD BIO GROUP AG  (CIK 0002145089)"
+      ],
+      "trade": {
+        "owner": "Santarelli Luca",
+        "ticker": "WWB",
+        "code": "A",
+        "shares": 815755,
+        "price": 0,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002160088-26-000005:form4-11162026_061112.xml",
+      "filed": "2026-11-12",
+      "names": [
+        "D'Augusta Claudia  (CIK 0002160088)",
+        "WINDWARD BIO GROUP AG  (CIK 0002145089)"
+      ],
+      "trade": {
+        "owner": "D'Augusta Claudia",
+        "ticker": "WWB",
+        "code": "A",
+        "shares": 180160,
+        "price": 0,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002157619-26-000005:form4-11162026_061104.xml",
+      "filed": "2026-11-12",
+      "names": [
+        "Harris Kevin Andrew  (CIK 0002157619)",
+        "WINDWARD BIO GROUP AG  (CIK 0002145089)"
+      ],
+      "trade": {
+        "owner": "Harris Kevin Andrew",
+        "ticker": "WWB",
+        "code": "A",
+        "shares": 33206,
+        "price": 0,
+        "acquired": true,
+        "form": "4"
+      }
+    },
     {
       "id": "0002152228-26-000004:wk-form4_1794864688.xml",
       "filed": "2026-11-15",
@@ -264,6 +315,23 @@
       }
     },
     {
+      "id": "0002031707-26-000004:wk-form4_1794869265.xml",
+      "filed": "2026-11-16",
+      "names": [
+        "Newton William Keith  (CIK 0002031707)",
+        "Concentra Group Holdings Parent, Inc.  (CIK 0002014596)"
+      ],
+      "trade": {
+        "owner": "Newton William Keith",
+        "ticker": "CON",
+        "code": "S",
+        "shares": 68232,
+        "price": 43.129,
+        "acquired": false,
+        "form": "4"
+      }
+    },
+    {
       "id": "0002029838-26-000004:wk-form4_1794864678.xml",
       "filed": "2026-11-16",
       "names": [
@@ -349,87 +417,17 @@
       }
     },
     {
-      "id": "0002000759-26-000001:f4_a1eus00000acjipma3-live.xml",
+      "id": "0002001931-26-000003:edgardoc.xml",
       "filed": "2026-11-13",
       "names": [
-        "Palleschi Craig  (CIK 0002000759)",
-        "SUBURBAN PROPANE PARTNERS LP  (CIK 0001005210)"
+        "Wardell-Smith Sara  (CIK 0002001931)",
+        "Axos Financial, Inc.  (CIK 0001299709)"
       ],
       "trade": {
-        "owner": "Palleschi Craig",
-        "ticker": "SPH",
-        "code": "M",
-        "shares": 7594,
-        "price": 17.41,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0001999371-26-025503:tpg-form4_111226.xml",
-      "filed": "2026-11-12",
-      "names": [
-        "COULTER JAMES G  (CIK 0001099776)",
-        "TPG GP A, LLC  (CIK 0001903793)",
-        "WINKELRIED JON  (CIK 0001366946)",
-        "LifeStance Health Group, Inc.  (CIK 0001845257)"
-      ],
-      "trade": {
-        "owner": "TPG GP A, LLC",
-        "ticker": "LFST",
-        "code": "S",
-        "shares": 37233110,
-        "price": 13.02,
-        "acquired": false,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0001994049-26-000002:wk-form4_1794863800.xml",
-      "filed": "2026-11-12",
-      "names": [
-        "Zimmermann Martine  (CIK 0001994049)",
-        "LIGAND PHARMACEUTICALS INC  (CIK 0000886163)"
-      ],
-      "trade": {
-        "owner": "Zimmermann Martine",
-        "ticker": "LGND",
-        "code": "S",
-        "shares": 2000,
-        "price": 318.1681,
-        "acquired": false,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0001990612-26-000008:form4-11162026_031105.xml",
-      "filed": "2026-09-26",
-      "names": [
-        "Underwood Rebecca  (CIK 0001990612)",
-        "CLEAN HARBORS INC  (CIK 0000822818)"
-      ],
-      "trade": {
-        "owner": "Underwood Rebecca",
-        "ticker": "CLH",
-        "code": "D",
-        "shares": 9523,
-        "price": 0,
-        "acquired": false,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0001990128-26-000001:f4_a1eus00000acikjman-live.xml",
-      "filed": "2026-11-13",
-      "names": [
-        "Centeno Alejandro  (CIK 0001990128)",
-        "SUBURBAN PROPANE PARTNERS LP  (CIK 0001005210)"
-      ],
-      "trade": {
-        "owner": "Centeno Alejandro",
-        "ticker": "SPH",
+        "owner": "Wardell-Smith Sara",
+        "ticker": "AX",
         "code": "A",
-        "shares": 39924,
+        "shares": 3137,
         "price": 0,
         "acquired": true,
         "form": "4"

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "asOf": "2026-11-16T21:59:40.000Z",
+    "asOf": "2026-11-16T23:06:13.593Z",
     "source": "SEC 13F-HR index",
     "rows": 20,
     "delay": "quarterly",
@@ -55,6 +55,13 @@
       "filed": "2026-09-30",
       "names": [
         "Outlook Capital Management, LLC  (CIK 0002149913)"
+      ]
+    },
+    {
+      "id": "0002147372-26-000002:primary_doc.xml",
+      "filed": "2026-09-30",
+      "names": [
+        "Noble Wealth Partners LLC  (CIK 0002147372)"
       ]
     },
     {
@@ -139,13 +146,6 @@
       "filed": "2026-09-30",
       "names": [
         "GTS FINANCIAL, LLC  (CIK 0002112647)"
-      ]
-    },
-    {
-      "id": "0002112250-26-000008:primary_doc.xml",
-      "filed": "2026-09-30",
-      "names": [
-        "Civilization Ventures Management, LLC  (CIK 0002112250)"
       ]
     }
   ],
