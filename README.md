@@ -56,7 +56,7 @@ No environment variables are required on Pages. Optional:
 | `NEXT_PUBLIC_MARKET_DATA_PROVIDER` | `yahoo` (default) or `mock` for the labeled simulated feed |
 | `POLYGON_API_KEY`, `FINNHUB_API_KEY`, `TRADIER_API_KEY` | Unused in v1. Leave them unset. Do not put keys in client code. |
 
-`basePath` and `assetPrefix` are `/tradehax-intel`. Images are unoptimized because Pages has no Next image server.
+`basePath` and `assetPrefix` come from `NEXT_PUBLIC_BASE_PATH`. Unset, that is `/tradehax-intel`. An empty value serves the site from the domain root, which is what https://tradehaxai.tech will use. Images are unoptimized because Pages has no Next image server.
 
 ## Data source
 
