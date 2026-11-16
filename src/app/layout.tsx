@@ -38,6 +38,20 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     >
       <body className="min-h-full pb-16 md:pb-0">
         <RegisterSw />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebApplication",
+              name: "TradeHax Intel",
+              applicationCategory: "FinanceApplication",
+              operatingSystem: "Web",
+              offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+              url: "https://tradehaxai.tech",
+            }),
+          }}
+        />
         {children}
       </body>
     </html>
