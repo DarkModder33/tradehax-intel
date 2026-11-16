@@ -1,6 +1,7 @@
 import { parseCboeChain, cboeChainUrl } from "../../src/lib/sources/cboe.ts";
 import { parseOcc } from "../../src/lib/sources/occ.ts";
 import { inferSide, sentiment, withFlags, type FlowPrint } from "../../src/lib/flow/classify.ts";
+import { alpacaSymbol } from "../../src/lib/market/alpaca-bars.ts";
 import { optionTradesUrl, stockTradesUrl, alpacaConfigured } from "./alpaca.ts";
 import { addPrints, ingestChain, noteError, state, type OffexPrint } from "./store.ts";
 import { parseUniverse } from "../../src/lib/live/universe.ts";
@@ -162,8 +163,9 @@ export async function pollAlpaca(now = new Date()): Promise<void> {
   stockCursor = SYMBOLS.length ? (stockCursor + stockSlice.length) % SYMBOLS.length : 0;
   for (const symbol of stockSlice) {
     try {
+      const vendor = alpacaSymbol(symbol);
       const trades = await pagedTrades(stockTradesUrl([symbol], span.start, span.end));
-      for (const trade of trades[symbol] ?? []) {
+      for (const trade of trades[vendor] ?? trades[symbol] ?? []) {
         const notional = trade.p * trade.s;
         if (trade.x !== "D" || notional < OFFEX_MIN_NOTIONAL) continue;
         offex.push({ time: trade.t, symbol, price: trade.p, size: trade.s, notional, exchange: trade.x, conditions: Array.isArray(trade.c) ? trade.c.map((c) => c.trim()).filter(Boolean) : [] });

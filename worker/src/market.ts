@@ -1,4 +1,4 @@
-import { clampBarLimit, isBarTimeframe, multiBarsUrl, parseAlpacaBars, stockBarsUrl } from "../../src/lib/market/alpaca-bars.ts";
+import { canonicalSymbol, clampBarLimit, isBarTimeframe, mergeBarPages, multiBarsUrl, parseAlpacaBars, readPageToken, stockBarsUrl } from "../../src/lib/market/alpaca-bars.ts";
 import { technicalsFromBars } from "../../src/lib/screener/technicals.ts";
 import { DEFAULT_UNIVERSE } from "../../src/lib/live/universe.ts";
 import { parseNews, yahooNewsUpstream } from "../../src/lib/market/news.ts";
@@ -39,7 +39,7 @@ export async function barsPayload(symbol: string, tf: string | null, limitRaw: s
   const key = `${root}|${tf}|${limit}`;
   const hit = barsCache.get(key);
   if (hit && hit.expires > now) return { status: 200, body: hit.body };
-  const bars = parseAlpacaBars(await getJson(stockBarsUrl(root, tf, limit), alpacaHeaders()), root);
+  const bars = parseAlpacaBars(await getJson(stockBarsUrl(root, tf, limit, new Date(now)), alpacaHeaders()), root);
   const body = { symbol: root, tf, source: "Alpaca SIP", delay: "about 15 min", bars };
   barsCache.set(key, { expires: now + TTL_MS, body });
   return { status: 200, body };
@@ -75,13 +75,23 @@ export async function technicalsPayload(now = Date.now()): Promise<{ status: num
   if (!alpacaConfigured()) return { status: 503, body: { error: "alpaca not configured", source: "unavailable", rows: {} } };
   const rows: Record<string, unknown> = {};
   const symbols = [...DEFAULT_UNIVERSE];
-  for (let index = 0; index < symbols.length; index += 200) {
-    const batch = symbols.slice(index, index + 200);
-    const payload = await getJson(multiBarsUrl(batch), alpacaHeaders());
-    const book = payload && typeof payload === "object" ? (payload as { bars?: Record<string, unknown[]> }).bars ?? {} : {};
+  const target = 260;
+  for (let index = 0; index < symbols.length; index += 40) {
+    const batch = symbols.slice(index, index + 40);
+    const pages: unknown[] = [];
+    let token: string | null = null;
+    for (let page = 0; page < 8; page += 1) {
+      const payload = await getJson(multiBarsUrl(batch, target, { pageToken: token ?? undefined, now: new Date(now) }), alpacaHeaders());
+      pages.push(payload);
+      token = readPageToken(payload);
+      const merged = mergeBarPages(pages, batch, target);
+      const full = batch.every((symbol) => (merged[canonicalSymbol(symbol)]?.length ?? 0) >= target);
+      if (full || !token) break;
+    }
+    const merged = mergeBarPages(pages, batch, target);
     for (const symbol of batch) {
-      const bars = parseAlpacaBars({ bars: book[symbol] ?? [] }, symbol);
-      if (bars.length) rows[symbol] = technicalsFromBars(bars);
+      const bars = merged[canonicalSymbol(symbol)] ?? [];
+      if (bars.length) rows[canonicalSymbol(symbol)] = technicalsFromBars(bars);
     }
   }
   const body = { source: "Alpaca SIP daily bars", asOf: new Date(now).toISOString(), rows };

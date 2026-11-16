@@ -5,7 +5,7 @@ import { cacheFromStore } from "@/lib/sources/idb-cache";
 import { fetchChainSummary } from "@/lib/options/load-summary";
 import { summarizeChain } from "@/lib/options/summary";
 import type { ChainSnapshot } from "@/lib/sources/cboe";
-import { clampBarLimit, parseAlpacaBars, stockBarsUrl } from "./alpaca-bars";
+import { clampBarLimit, lookbackDays, mergeBarPages, multiBarsUrl, parseAlpacaBars, readPageToken, stockBarsUrl } from "./alpaca-bars";
 import { fetchNews, parseNews, yahooNewsUpstream } from "./news";
 import { fetchWorkerChart } from "./worker-bars";
 
@@ -66,20 +66,53 @@ const chain: ChainSnapshot = {
 };
 
 describe("Alpaca bars", () => {
-  it("caps the limit and reads both response shapes", () => {
+  const now = new Date("2026-11-16T15:00:00Z");
+
+  it("asks for the recent window with start and newest-first order", () => {
     expect(clampBarLimit(9000)).toBe(2500);
-    const url = stockBarsUrl("spy", "1Day", 9000);
-    expect(url).toContain("/v2/stocks/SPY/bars?");
-    expect(url).toContain("feed=sip");
-    expect(url).toContain("limit=2500");
+    expect(lookbackDays("1Day", 100)).toBe(160);
+    expect(lookbackDays("1Hour", 8)).toBe(4);
+    const url = new URL(stockBarsUrl("spy", "1Day", 100, now));
+    expect(url.pathname).toBe("/v2/stocks/SPY/bars");
+    expect(url.searchParams.get("feed")).toBe("sip");
+    expect(url.searchParams.get("limit")).toBe("100");
+    expect(url.searchParams.get("sort")).toBe("desc");
+    expect(url.searchParams.get("end")).toBeNull();
+    expect(Date.parse(url.searchParams.get("start") ?? "")).toBe(now.getTime() - 160 * 86_400_000);
+    const berkshire = new URL(stockBarsUrl("BRKB", "1Day", 10, now));
+    expect(berkshire.pathname).toBe("/v2/stocks/BRK.B/bars");
+  });
+
+  it("reverses a descending page and merges later pages onto it", () => {
     const single = parseAlpacaBars({
-      bars: [{ t: "2026-11-14T14:30:00Z", o: 1, h: 2, l: 0.5, c: 1.5, v: 10 }, { t: "bad" }],
+      bars: [
+        { t: "2026-11-14T15:00:00Z", o: 2, h: 2, l: 2, c: 2, v: 2 },
+        { t: "2026-11-14T14:30:00Z", o: 1, h: 2, l: 0.5, c: 1.5, v: 10 },
+        { t: "bad" },
+      ],
     });
-    expect(single).toEqual([{ time: Date.parse("2026-11-14T14:30:00Z"), open: 1, high: 2, low: 0.5, close: 1.5, volume: 10 }]);
-    const multi = parseAlpacaBars({ bars: { Nvda: [{ t: "2026-11-14T14:30:00Z", o: 3, h: 4, l: 2, c: 3.5, v: 8 }] } }, "NVDA");
-    expect(multi[0].close).toBe(3.5);
+    expect(single.map((bar) => bar.close)).toEqual([1.5, 2]);
+    const newer = { t: "2026-11-14T15:00:00Z", o: 3, h: 4, l: 2, c: 3, v: 8 };
+    const older = { t: "2026-11-13T15:00:00Z", o: 2, h: 3, l: 1, c: 2, v: 8 };
+    const oldest = { t: "2026-11-12T15:00:00Z", o: 1, h: 2, l: 1, c: 1, v: 8 };
+    const first = { bars: { "BRK.B": [newer, older], SPY: [newer] }, next_page_token: "page-2" };
+    const second = { bars: { "BRK.B": [oldest] }, next_page_token: null };
+    expect(readPageToken(first)).toBe("page-2");
+    const merged = mergeBarPages([first, second], ["BRKB", "SPY"], 10);
+    expect(merged.BRKB.map((bar) => bar.close)).toEqual([1, 2, 3]);
+    expect(merged.SPY.map((bar) => bar.close)).toEqual([3]);
+    const multi = new URL(multiBarsUrl(["BRKB", "SPY"], 260, { now, pageToken: "page-2" }));
+    expect(multi.searchParams.get("symbols")).toBe("BRK.B,SPY");
+    expect(multi.searchParams.get("sort")).toBe("desc");
+    expect(multi.searchParams.get("page_token")).toBe("page-2");
+    expect(multi.searchParams.get("end")).toBeNull();
+    expect(multi.searchParams.get("start")).toBe(barsStartForTest());
   });
 });
+
+function barsStartForTest(): string {
+  return new Date(Date.parse("2026-11-16T15:00:00Z") - 416 * 86_400_000).toISOString();
+}
 
 describe("chain summary and shared cache", () => {
   it("builds a compact book and ignores the proxy when the worker answers", async () => {

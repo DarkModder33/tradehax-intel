@@ -3,6 +3,7 @@ import { Limiter } from "./limiter";
 import { MarketDataError, type MarketDataProvider } from "./provider";
 import { aggregateBars } from "./resample";
 import type { Quote, SymbolSnapshot } from "./types";
+import { yahooVendorSymbol } from "./alpaca-bars";
 import { fetchWorkerChart } from "./worker-bars";
 
 const FOUR_HOURS_MS = 4 * 60 * 60 * 1000;
@@ -125,8 +126,8 @@ export function parseYahooChart(payload: unknown, symbol: string): ChartPayload 
   };
 }
 
-function yahooSymbol(symbol: string): string {
-  return symbol.replace(/\./g, "-");
+export function toYahooSymbol(symbol: string): string {
+  return yahooVendorSymbol(symbol);
 }
 
 /** Browser-safe chart URL. No API key is included. */
@@ -137,7 +138,7 @@ export function yahooChartRequestUrl(symbol: string, interval: string, range: st
     includePrePost: "false",
     events: "div|split",
   });
-  const yahoo = `${YAHOO_CHART_HOST}/v8/finance/chart/${encodeURIComponent(yahooSymbol(symbol))}?${params}`;
+  const yahoo = `${YAHOO_CHART_HOST}/v8/finance/chart/${encodeURIComponent(toYahooSymbol(symbol))}?${params}`;
   return `${YAHOO_BROWSER_PROXY}${yahoo}`;
 }
 
