@@ -8,7 +8,7 @@ import { hotByPremium } from "../../src/lib/flow/rank.ts";
 import { alpacaConfigured } from "./alpaca.ts";
 import { history, state } from "./store.ts";
 import { SYMBOLS, startPollers } from "./poller.ts";
-import { barsPayload, chainPayload, newsPayload, summaryPayload } from "./market.ts";
+import { barsPayload, chainPayload, newsPayload, summaryPayload, technicalsPayload } from "./market.ts";
 
 const port = Number(process.env.PORT ?? 8787);
 const origins = (process.env.ALLOWED_ORIGIN ?? "https://tradehaxai.tech,https://www.tradehaxai.tech,https://darkmodder33.github.io")
@@ -74,6 +74,11 @@ export async function handle(url: URL, res: http.ServerResponse, requestOrigin?:
   if (path.startsWith("/v1/chain/")) {
     const symbol = decodeURIComponent(path.slice("/v1/chain/".length));
     const result = await chainPayload(symbol);
+    json(res, result.status, result.body, cors);
+    return;
+  }
+  if (path === "/v1/technicals") {
+    const result = await technicalsPayload();
     json(res, result.status, result.body, cors);
     return;
   }

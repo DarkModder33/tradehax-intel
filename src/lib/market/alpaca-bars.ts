@@ -14,6 +14,17 @@ export function clampBarLimit(raw: number): number {
 }
 
 /** Alpaca SIP stock bars. The worker calls this. The browser never sees the keys. */
+export function multiBarsUrl(symbols: string[], limit = 260): string {
+  const params = new URLSearchParams({
+    symbols: symbols.map((symbol) => symbol.toUpperCase()).join(","),
+    timeframe: "1Day",
+    limit: String(clampBarLimit(limit)),
+    adjustment: "split",
+    feed: "sip",
+  });
+  return `https://data.alpaca.markets/v2/stocks/bars?${params}`;
+}
+
 export function stockBarsUrl(symbol: string, timeframe: BarTimeframe, limit: number): string {
   const params = new URLSearchParams({
     timeframe,

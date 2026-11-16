@@ -396,6 +396,56 @@ export async function etfFlows() {
   }
 }
 
+export async function universe() {
+  try {
+    const response = await grabRetry(
+      "https://api.nasdaq.com/api/screener/stocks?tableonly=true&download=true",
+      { headers: { "user-agent": BROWSER, accept: "application/json", referer: "https://www.nasdaq.com/" } },
+      45000,
+      3,
+    );
+    const body = parseJsonLoose(await response.text());
+    const rows = (body?.data?.rows ?? [])
+      .map((row) => {
+        const mcap = Number(String(row.marketCap ?? "").replace(/[$,]/g, ""));
+        const price = Number(String(row.lastsale ?? "").replace(/[$,]/g, ""));
+        const change = Number(String(row.pctchange ?? "").replace(/%/g, "").replace(/^\+/, ""));
+        const volume = Number(String(row.volume ?? "").replace(/,/g, ""));
+        return {
+          symbol: row.symbol,
+          name: row.name ?? row.symbol,
+          sector: row.sector || null,
+          industry: row.industry || null,
+          mcap: Number.isFinite(mcap) ? mcap : null,
+          price: Number.isFinite(price) ? price : null,
+          change: Number.isFinite(change) ? change : null,
+          volume: Number.isFinite(volume) ? volume : null,
+        };
+      })
+      .filter((row) => row.symbol && row.mcap != null && row.mcap >= 300_000_000);
+    if (!rows.length) return failed("Nasdaq screener", new Error("No names at or above a $300M market cap."));
+    const packed = pack("Nasdaq screener", rows, { delay: "daily", note: "Market cap at least $300M." });
+    packed.meta.coverage = 1;
+    return packed;
+  } catch (error) {
+    return failed("Nasdaq screener", error);
+  }
+}
+
+export async function technicals() {
+  const base = process.env.WORKER_URL;
+  if (!base) return failed("worker technicals", new Error("WORKER_URL is not set. The liquid-universe snapshot shipped with the site stays in place until this job succeeds."));
+  try {
+    const response = await grabRetry(`${base.replace(/\/$/, "")}/v1/technicals`, {}, 60000, 2);
+    const body = parseJsonLoose(await response.text());
+    const rows = body.rows && typeof body.rows === "object" ? body.rows : {};
+    if (!Object.keys(rows).length) return failed("worker technicals", new Error(body.error ?? "The worker returned no technicals."));
+    return pack("worker /v1/technicals", Object.entries(rows).map(([symbol, stats]) => ({ symbol, ...stats })), { delay: "daily" });
+  } catch (error) {
+    return failed("worker technicals", error);
+  }
+}
+
 export async function screener() {
   try {
     const url = "https://proxy.cors.dev/https://query1.finance.yahoo.com/v1/finance/screener/predefined/saved?scrIds=most_actives&count=25";
@@ -455,6 +505,7 @@ export const JOBS = {
   calendar: calendars,
   "etf-flows": etfFlows,
   screener,
+  universe,
   seasonality,
   "flow-history": flowHistory,
 };

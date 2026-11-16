@@ -1,4 +1,6 @@
-import { clampBarLimit, isBarTimeframe, parseAlpacaBars, stockBarsUrl } from "../../src/lib/market/alpaca-bars.ts";
+import { clampBarLimit, isBarTimeframe, multiBarsUrl, parseAlpacaBars, stockBarsUrl } from "../../src/lib/market/alpaca-bars.ts";
+import { technicalsFromBars } from "../../src/lib/screener/technicals.ts";
+import { DEFAULT_UNIVERSE } from "../../src/lib/live/universe.ts";
 import { parseNews, yahooNewsUpstream } from "../../src/lib/market/news.ts";
 import { summarizeChain } from "../../src/lib/options/summary.ts";
 import { cboeChainUrl, parseCboeChain, type ChainSnapshot } from "../../src/lib/sources/cboe.ts";
@@ -64,6 +66,28 @@ export async function summaryPayload(symbol: string, now = Date.now()): Promise<
   } catch (error) {
     return { status: 502, body: { error: error instanceof Error ? error.message : "summary failed", source: "unavailable" } };
   }
+}
+
+const technicalCache: { expires: number; body: unknown } = { expires: 0, body: null };
+
+export async function technicalsPayload(now = Date.now()): Promise<{ status: number; body: unknown }> {
+  if (technicalCache.body && technicalCache.expires > now) return { status: 200, body: technicalCache.body };
+  if (!alpacaConfigured()) return { status: 503, body: { error: "alpaca not configured", source: "unavailable", rows: {} } };
+  const rows: Record<string, unknown> = {};
+  const symbols = [...DEFAULT_UNIVERSE];
+  for (let index = 0; index < symbols.length; index += 200) {
+    const batch = symbols.slice(index, index + 200);
+    const payload = await getJson(multiBarsUrl(batch), alpacaHeaders());
+    const book = payload && typeof payload === "object" ? (payload as { bars?: Record<string, unknown[]> }).bars ?? {} : {};
+    for (const symbol of batch) {
+      const bars = parseAlpacaBars({ bars: book[symbol] ?? [] }, symbol);
+      if (bars.length) rows[symbol] = technicalsFromBars(bars);
+    }
+  }
+  const body = { source: "Alpaca SIP daily bars", asOf: new Date(now).toISOString(), rows };
+  technicalCache.expires = now + 60 * 60_000;
+  technicalCache.body = body;
+  return { status: 200, body };
 }
 
 export async function newsPayload(query: string, countRaw: string | null): Promise<{ status: number; body: unknown }> {
