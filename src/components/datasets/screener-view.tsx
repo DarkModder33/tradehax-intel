@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import { DataBadge } from "@/components/data-badge";
+import { PanelState } from "@/components/panel-state";
 import { VirtualTable } from "@/components/ui/virtual-table";
 import { matchQuery, parseQuery } from "@/lib/datasets/query";
 import { datasetUrl } from "@/lib/sources/manifest";
@@ -112,8 +113,9 @@ export function ScreenerView() {
       </label>
       {suggestions.length ? <p className="text-[11px] text-muted-foreground">Fields: {suggestions.join(", ")}</p> : null}
       {caret ? <p className="text-sm text-bearish">{caret}</p> : null}
-      {loading ? <p className="text-sm text-muted-foreground">Loading the universe.</p> : null}
-      {error ? <p className="rounded-xl border border-bearish/40 bg-bearish/10 px-4 py-3 text-sm">{error}</p> : null}
+      {loading ? <PanelState kind="loading" detail="Loading the universe." /> : null}
+      {error ? <PanelState kind="unavailable" detail={error} /> : null}
+      {!loading && !error && matches.length === 0 ? <PanelState kind="empty" /> : null}
       <div className="flex flex-wrap items-center justify-between gap-2 text-xs text-muted-foreground">
         <span>{matches.length.toLocaleString("en-US")} rows. A blank cell was missing at the source. It is not zero.</span>
         <button

@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { DataBadge } from "@/components/data-badge";
+import { PanelState } from "@/components/panel-state";
 import { SymbolForm } from "@/components/options/symbol-form";
 import { readSymbol } from "@/components/options/use-chain";
 import { fetchChainSummary } from "@/lib/options/load-summary";
@@ -49,8 +50,8 @@ export function GexBoard({ initial }: { initial?: string }) {
   return (
     <div className="flex flex-col gap-4">
       <SymbolForm symbol={symbol} onSubmit={setSymbol} />
-      {loading ? <p className="text-sm text-muted-foreground">Reading the delayed chain.</p> : null}
-      {error ? <p className="rounded-xl border border-bearish/40 bg-bearish/10 px-4 py-3 text-sm">{error}</p> : null}
+      {loading ? <PanelState kind="loading" detail="Reading the delayed chain." /> : null}
+      {error ? <PanelState kind="error" detail={error} /> : null}
       {summary ? (
         <>
           <DataBadge source={summary.source} asOf={summary.asOf} delay={summary.delay} />
