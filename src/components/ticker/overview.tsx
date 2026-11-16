@@ -1,8 +1,9 @@
 "use client";
 
+import Link from "next/link";
 import { useEffect, useState } from "react";
 import { DataBadge } from "@/components/data-badge";
-import { readTicker } from "@/lib/ticker/route";
+import { chartPath, readTicker } from "@/lib/ticker/route";
 import { fetchChain } from "@/lib/sources/cboe";
 import { fetchNews } from "@/lib/market/news";
 import { fetchWorkerChart } from "@/lib/market/worker-bars";
@@ -117,7 +118,9 @@ export function TickerOverview() {
   return (
     <div className="flex flex-col gap-4">
       <DataBadge source="Yahoo, Cboe delayed, worker" delay="about 15 min" />
-      <h2 className="font-mono text-2xl">{symbol} {price == null ? "" : formatPrice(price)}</h2>
+      <h2 className="font-mono text-2xl">
+        <Link href={chartPath(symbol)} className="underline-offset-4 hover:underline">{symbol}</Link> {price == null ? "" : formatPrice(price)}
+      </h2>
       {error ? <p className="text-sm text-bearish">{error}</p> : null}
       <Spark values={trail} />
       <Section title="Daily signal" body={signal} />
