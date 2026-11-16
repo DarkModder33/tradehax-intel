@@ -1,24 +1,49 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { DataBadge } from "@/components/data-badge";
 import { SymbolForm } from "@/components/options/symbol-form";
-import { readSymbol, useChain } from "@/components/options/use-chain";
-import { buildExposure, heatmap } from "@/lib/options/exposure";
+import { readSymbol } from "@/components/options/use-chain";
+import { fetchChainSummary } from "@/lib/options/load-summary";
+import type { ChainSummary } from "@/lib/options/summary";
 
 function billions(value: number): string {
   return `${value < 0 ? "−" : ""}$${Math.abs(value / 1e9).toFixed(2)}B`;
 }
 
-export function GexBoard() {
-  const [symbol, setSymbol] = useState(readSymbol);
-  const { chain, error, loading } = useChain(symbol);
-  const book = chain ? buildExposure(chain, new Date()) : null;
-  const cells = chain ? heatmap(chain) : [];
+export function GexBoard({ initial }: { initial?: string }) {
+  const [symbol, setSymbol] = useState(initial ?? readSymbol);
+  const [summary, setSummary] = useState<ChainSummary | null>(null);
+  const [error, setError] = useState<string | null>(null);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    let stopped = false;
+    setLoading(true);
+    fetchChainSummary(symbol)
+      .then((next) => {
+        if (stopped) return;
+        setSummary(next);
+        setError(null);
+      })
+      .catch((err: unknown) => {
+        if (stopped) return;
+        setSummary(null);
+        setError(err instanceof Error ? err.message : "The gamma book did not load.");
+      })
+      .finally(() => {
+        if (!stopped) setLoading(false);
+      });
+    return () => {
+      stopped = true;
+    };
+  }, [symbol]);
+
+  const cells = summary?.heatmap ?? [];
   const expiries = [...new Set(cells.map((cell) => cell.expiry))].slice(0, 8);
   const strikes = [...new Set(cells.filter((cell) => expiries.includes(cell.expiry)).map((cell) => cell.strike))].sort((a, b) => a - b);
   const max = Math.max(1, ...cells.map((cell) => Math.abs(cell.netGex)));
-  const near = book?.byStrike.filter((row) => chain && Math.abs(row.strike - chain.spot) / chain.spot <= 0.04) ?? [];
+  const near = summary?.near ?? [];
   const span = Math.max(1, ...near.map((row) => Math.max(row.callGex, row.putGex)));
 
   return (
@@ -26,18 +51,19 @@ export function GexBoard() {
       <SymbolForm symbol={symbol} onSubmit={setSymbol} />
       {loading ? <p className="text-sm text-muted-foreground">Reading the delayed chain.</p> : null}
       {error ? <p className="rounded-xl border border-bearish/40 bg-bearish/10 px-4 py-3 text-sm">{error}</p> : null}
-      {chain && book ? (
+      {summary ? (
         <>
-          <DataBadge source={chain.source} asOf={chain.asOf} delay={chain.delay} />
+          <DataBadge source={summary.source} asOf={summary.asOf} delay={summary.delay} />
           <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-            <Level label="Net gamma / 1%" value={billions(book.levels.netGex)} />
-            <Level label="Call wall" value={book.levels.callWall?.toString() ?? "n/a"} />
-            <Level label="Put wall" value={book.levels.putWall?.toString() ?? "n/a"} />
-            <Level label="Gamma flip" value={book.levels.flip == null ? "n/a" : book.levels.flip.toFixed(2)} />
+            <Level label="Net gamma / 1%" value={billions(summary.levels.netGex)} />
+            <Level label="Call wall" value={summary.levels.callWall?.toString() ?? "n/a"} />
+            <Level label="Put wall" value={summary.levels.putWall?.toString() ?? "n/a"} />
+            <Level label="Gamma flip" value={summary.levels.flip == null ? "n/a" : summary.levels.flip.toFixed(2)} />
           </div>
           <p className="text-sm">
-            Spot {chain.spot.toFixed(2)}. Regime: {book.levels.regime}. Magnet {book.levels.magnet ?? "n/a"}.
-            {book.levels.flips.length > 1 ? ` Nearby flips ${book.levels.flips.map((flip) => flip.toFixed(1)).join(", ")}.` : ""}
+            Spot {summary.spot.toFixed(2)}. Regime: {summary.levels.regime}. Magnet {summary.levels.magnet ?? "n/a"}.
+            {summary.expectedMove ? ` Expected move ${summary.expectedMove.low.toFixed(2)} to ${summary.expectedMove.high.toFixed(2)}.` : ""}
+            {summary.levels.flips.length > 1 ? ` Nearby flips ${summary.levels.flips.map((flip) => flip.toFixed(1)).join(", ")}.` : ""}
           </p>
           <section>
             <h2 className="mb-2 text-sm font-medium">By strike, near the spot</h2>

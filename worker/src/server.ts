@@ -8,9 +8,13 @@ import { hotByPremium } from "../../src/lib/flow/rank.ts";
 import { alpacaConfigured } from "./alpaca.ts";
 import { history, state } from "./store.ts";
 import { SYMBOLS, startPollers } from "./poller.ts";
+import { barsPayload, chainPayload, newsPayload, summaryPayload } from "./market.ts";
 
 const port = Number(process.env.PORT ?? 8787);
-const origins = (process.env.ALLOWED_ORIGIN ?? "https://darkmodder33.github.io").split(",").map((o) => o.trim()).filter(Boolean);
+const origins = (process.env.ALLOWED_ORIGIN ?? "https://tradehaxai.tech,https://www.tradehaxai.tech,https://darkmodder33.github.io")
+  .split(",")
+  .map((o) => o.trim())
+  .filter(Boolean);
 
 export { ingestChain } from "./store.ts";
 
@@ -51,10 +55,33 @@ function filterPrints(url: URL, prints: FlowPrint[]): FlowPrint[] {
   return out;
 }
 
-export function handle(url: URL, res: http.ServerResponse, requestOrigin?: string) {
+export async function handle(url: URL, res: http.ServerResponse, requestOrigin?: string) {
   const cors = corsHeaders(requestOrigin);
   const path = url.pathname.replace(/\/+$/, "") || "/";
   const live = noteLive();
+  if (path.startsWith("/v1/bars/")) {
+    const symbol = decodeURIComponent(path.slice("/v1/bars/".length));
+    const result = await barsPayload(symbol, url.searchParams.get("tf"), url.searchParams.get("limit"));
+    json(res, result.status, { ...live, ...asRecord(result.body) }, cors);
+    return;
+  }
+  if (path.startsWith("/v1/chain-summary/")) {
+    const symbol = decodeURIComponent(path.slice("/v1/chain-summary/".length));
+    const result = await summaryPayload(symbol);
+    json(res, result.status, result.body, cors);
+    return;
+  }
+  if (path.startsWith("/v1/chain/")) {
+    const symbol = decodeURIComponent(path.slice("/v1/chain/".length));
+    const result = await chainPayload(symbol);
+    json(res, result.status, result.body, cors);
+    return;
+  }
+  if (path === "/v1/news") {
+    const result = await newsPayload(url.searchParams.get("q") ?? "", url.searchParams.get("newsCount"));
+    json(res, result.status, result.body, cors);
+    return;
+  }
   if (path === "/v1/health" || path === "/health" || path === "/") {
     json(res, 200, {
       ...healthBody(),
@@ -151,6 +178,10 @@ export function handle(url: URL, res: http.ServerResponse, requestOrigin?: strin
   json(res, 404, { error: "not found" }, cors);
 }
 
+function asRecord(value: unknown): Record<string, unknown> {
+  return value && typeof value === "object" ? (value as Record<string, unknown>) : {};
+}
+
 const server = http.createServer((req, res) => {
   const requestOrigin = req.headers.origin;
   if (req.method === "OPTIONS") {
@@ -158,12 +189,10 @@ const server = http.createServer((req, res) => {
     res.end();
     return;
   }
-  try {
-    handle(new URL(req.url ?? "/", "http://localhost"), res, requestOrigin);
-  } catch (error) {
+  void handle(new URL(req.url ?? "/", "http://localhost"), res, requestOrigin).catch((error) => {
     console.error(error);
     if (!res.headersSent) json(res, 500, { error: "internal error" }, corsHeaders(requestOrigin));
-  }
+  });
 });
 
 // Tests import this module; the process entry (server.ts or the bundled server.mjs) starts listening.

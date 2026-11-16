@@ -31,6 +31,9 @@ export const state = {
   listeners: new Set<(event: { prints: FlowPrint[]; offex: OffexPrint[] }) => void>(),
 };
 
+/** When each symbol's chain was last stored, so /v1/chain and /v1/chain-summary can share one fetch. */
+export const snapshotAt = new Map<string, number>();
+
 export function noteError(source: string, error: unknown) {
   const message = error instanceof Error ? error.message : String(error);
   state.errors.push({ time: new Date().toISOString(), source, message: message.slice(0, 300) });
@@ -64,6 +67,7 @@ export function addPrints(next: FlowPrint[], offex: OffexPrint[] = []) {
 export function ingestChain(snapshot: ChainSnapshot, emit: boolean, time = new Date().toISOString()): FlowPrint[] {
   const symbol = snapshot.symbol;
   state.snapshots.set(symbol, snapshot);
+  snapshotAt.set(symbol, Date.now());
   for (const contract of snapshot.contracts) state.quotes.set(contract.symbol, contract);
   const prior = state.previous.get(symbol);
   state.previous.set(symbol, snapshot.contracts);
