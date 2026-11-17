@@ -1,6 +1,6 @@
 {
   "meta": {
-    "asOf": "2026-11-17T04:43:42.493Z",
+    "asOf": "2026-11-17T20:53:10.670Z",
     "source": "SEC 13F-HR index",
     "rows": 20,
     "delay": "quarterly",
@@ -9,143 +9,143 @@
   },
   "rows": [
     {
-      "id": "0002164991-26-000002:primary_doc.xml",
+      "id": "0002165378-26-000002:primary_doc.xml",
       "filed": "2026-09-30",
       "names": [
-        "Arnold Castellano & Associates, LLC  (CIK 0002164991)"
+        "Snow Capital Management LLC  (CIK 0002165378)"
       ]
     },
     {
-      "id": "0002163472-26-000001:primary_doc.xml",
+      "id": "0002163672-26-000001:primary_doc.xml",
       "filed": "2026-09-30",
       "names": [
-        "PFS Signature Wealth LLC  (CIK 0002163472)"
+        "Holistic Wealth Advisors, LLC  (CIK 0002163672)"
       ]
     },
     {
-      "id": "0002158126-26-000005:primary_doc.xml",
-      "filed": "2026-06-30",
-      "names": [
-        "CONWAY PARTNERS MANAGEMENT, LLC  (CIK 0002158126)"
-      ]
-    },
-    {
-      "id": "0002158126-26-000004:primary_doc.xml",
+      "id": "0002158449-26-000003:primary_doc.xml",
       "filed": "2026-03-31",
       "names": [
-        "CONWAY PARTNERS MANAGEMENT, LLC  (CIK 0002158126)"
+        "Nova Financial LLC  (CIK 0002158449)"
       ]
     },
     {
-      "id": "0002158126-26-000003:primary_doc.xml",
+      "id": "0002158449-26-000002:primary_doc.xml",
+      "filed": "2026-06-30",
+      "names": [
+        "Nova Financial LLC  (CIK 0002158449)"
+      ]
+    },
+    {
+      "id": "0002135126-26-000017:primary_doc.xml",
+      "filed": "2026-09-30",
+      "names": [
+        "CapitalatWork S.A.  (CIK 0002135126)"
+      ]
+    },
+    {
+      "id": "0002095947-26-000008:primary_doc.xml",
+      "filed": "2026-09-30",
+      "names": [
+        "KERR FINANCIAL PLANNING Corp  (CIK 0002095947)"
+      ]
+    },
+    {
+      "id": "0002093346-26-000004:primary_doc.xml",
+      "filed": "2026-09-30",
+      "names": [
+        "Missouri Education Pension Trust  (CIK 0002093346)"
+      ]
+    },
+    {
+      "id": "0002085853-26-001407:primary_doc.xml",
+      "filed": "2026-09-30",
+      "names": [
+        "PCB Capital LLC  (CIK 0002123661)"
+      ]
+    },
+    {
+      "id": "0002081474-26-000015:primary_doc.xml",
+      "filed": "2026-09-30",
+      "names": [
+        "Vestwell Advisors, LLC  (CIK 0002081474)"
+      ]
+    },
+    {
+      "id": "0002073679-26-000181:primary_doc.xml",
+      "filed": "2026-09-30",
+      "names": [
+        "Almitas Capital LLC  (CIK 0001596468)"
+      ]
+    },
+    {
+      "id": "0002068251-26-000006:primary_doc.xml",
+      "filed": "2026-09-30",
+      "names": [
+        "Gullane Capital, LLC  (CIK 0002068251)"
+      ]
+    },
+    {
+      "id": "0002067588-26-000019:primary_doc.xml",
+      "filed": "2026-06-30",
+      "names": [
+        "Robinhood Asset Management, LLC  (CIK 0002067588)"
+      ]
+    },
+    {
+      "id": "0002067588-26-000018:primary_doc.xml",
+      "filed": "2026-03-31",
+      "names": [
+        "Robinhood Asset Management, LLC  (CIK 0002067588)"
+      ]
+    },
+    {
+      "id": "0002067588-26-000017:primary_doc.xml",
       "filed": "2025-12-31",
       "names": [
-        "CONWAY PARTNERS MANAGEMENT, LLC  (CIK 0002158126)"
+        "Robinhood Asset Management, LLC  (CIK 0002067588)"
       ]
     },
     {
-      "id": "0002158126-26-000002:primary_doc.xml",
+      "id": "0002065849-26-000010:primary_doc.xml",
       "filed": "2026-09-30",
       "names": [
-        "CONWAY PARTNERS MANAGEMENT, LLC  (CIK 0002158126)"
+        "Yukon Wealth Management, Inc.  (CIK 0002065849)"
       ]
     },
     {
-      "id": "0002149913-26-000002:primary_doc.xml",
+      "id": "0002059671-26-000006:primary_doc.xml",
       "filed": "2026-09-30",
       "names": [
-        "Outlook Capital Management, LLC  (CIK 0002149913)"
+        "Ampersand Capital Group, L.P.  (CIK 0002059671)"
       ]
     },
     {
-      "id": "0002147372-26-000002:primary_doc.xml",
+      "id": "0002057421-26-000013:primary_doc.xml",
       "filed": "2026-09-30",
       "names": [
-        "Noble Wealth Partners LLC  (CIK 0002147372)"
+        "General Pension Society PZU Joint Stock Co  (CIK 0002057421)"
       ]
     },
     {
-      "id": "0002146304-26-000004:primary_doc.xml",
+      "id": "0002056069-26-000004:primary_doc.xml",
       "filed": "2026-09-30",
       "names": [
-        "Odyssey Group, LLC  (CIK 0002146304)"
+        "TFJ Management, LLC  (CIK 0002056069)"
       ]
     },
     {
-      "id": "0002139999-26-000002:primary_doc.xml",
+      "id": "0002030780-26-000006:primary_doc.xml",
       "filed": "2026-09-30",
       "names": [
-        "X ADVISORS, LLC  (CIK 0002139999)"
+        "DIVERSIFY WEALTH MANAGEMENT, LLC  (CIK 0002030780)"
       ]
     },
     {
-      "id": "0002136496-26-000002:primary_doc.xml",
+      "id": "0002021232-26-000007:primary_doc.xml",
       "filed": "2026-09-30",
       "names": [
-        "Smith Brothers Financial, LLC  (CIK 0002136496)"
-      ]
-    },
-    {
-      "id": "0002129102-26-000029:primary_doc.xml",
-      "filed": "2026-09-30",
-      "names": [
-        "NATIONAL FARMERS UNION MUTUAL INSURANCE SOCIETY LIMITED(THE)  (CIK 0002156979)"
-      ]
-    },
-    {
-      "id": "0002129102-26-000028:primary_doc.xml",
-      "filed": "2026-09-30",
-      "names": [
-        "NFU Mutual Investment Services Limited  (CIK 0002163891)"
-      ]
-    },
-    {
-      "id": "0002126773-26-000004:primary_doc.xml",
-      "filed": "2026-09-30",
-      "names": [
-        "Bravera Wealth  (CIK 0002126773)"
-      ]
-    },
-    {
-      "id": "0002126627-26-000003:primary_doc.xml",
-      "filed": "2026-09-30",
-      "names": [
-        "Sanchez Levi Garrett  (CIK 0002126627)"
-      ]
-    },
-    {
-      "id": "0002123957-26-000005:primary_doc.xml",
-      "filed": "2026-09-30",
-      "names": [
-        "Kryger Capital LLC  (CIK 0002123957)"
-      ]
-    },
-    {
-      "id": "0002118977-26-000005:primary_doc.xml",
-      "filed": "2026-09-30",
-      "names": [
-        "Estate Planners Group, LLC  (CIK 0002118977)"
-      ]
-    },
-    {
-      "id": "0002118292-26-000010:primary_doc.xml",
-      "filed": "2026-09-30",
-      "names": [
-        "Galaxy Digital Capital Management GP LLC  (CIK 0002118292)"
-      ]
-    },
-    {
-      "id": "0002112884-26-000004:primary_doc.xml",
-      "filed": "2026-09-30",
-      "names": [
-        "RIHO Partners, LLC  (CIK 0002112884)"
-      ]
-    },
-    {
-      "id": "0002112647-26-000003:primary_doc.xml",
-      "filed": "2026-09-30",
-      "names": [
-        "GTS FINANCIAL, LLC  (CIK 0002112647)"
+        "Diversify Advisory Services, LLC  (CIK 0002021232)"
       ]
     }
   ],
