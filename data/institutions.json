@@ -1,6 +1,6 @@
 {
   "meta": {
-    "asOf": "2026-11-17T20:53:10.670Z",
+    "asOf": "2026-11-17T21:56:59.438Z",
     "source": "SEC 13F-HR index",
     "rows": 20,
     "delay": "quarterly",
@@ -20,6 +20,13 @@
       "filed": "2026-09-30",
       "names": [
         "Holistic Wealth Advisors, LLC  (CIK 0002163672)"
+      ]
+    },
+    {
+      "id": "0002160101-26-000001:primary_doc.xml",
+      "filed": "2026-09-30",
+      "names": [
+        "Schwarz Investment Partners, Inc.  (CIK 0002160101)"
       ]
     },
     {
@@ -139,13 +146,6 @@
       "filed": "2026-09-30",
       "names": [
         "DIVERSIFY WEALTH MANAGEMENT, LLC  (CIK 0002030780)"
-      ]
-    },
-    {
-      "id": "0002021232-26-000007:primary_doc.xml",
-      "filed": "2026-09-30",
-      "names": [
-        "Diversify Advisory Services, LLC  (CIK 0002021232)"
       ]
     }
   ],

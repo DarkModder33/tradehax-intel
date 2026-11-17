@@ -1,6 +1,6 @@
 {
   "meta": {
-    "asOf": "2026-11-17T20:53:09.521Z",
+    "asOf": "2026-11-17T21:56:58.608Z",
     "source": "SEC EDGAR Form 4",
     "rows": 25,
     "delay": "hours",
@@ -8,6 +8,23 @@
     "unavailable": false
   },
   "rows": [
+    {
+      "id": "0002165064-26-000005:primarydocument.xml",
+      "filed": "2026-11-13",
+      "names": [
+        "Duncan Tyler Jesse  (CIK 0002165064)",
+        "Commerce.com, Inc.  (CIK 0001626450)"
+      ],
+      "trade": {
+        "owner": "Duncan Tyler Jesse",
+        "ticker": "CMRC",
+        "code": "A",
+        "shares": 125000,
+        "price": 0,
+        "acquired": true,
+        "form": "4"
+      }
+    },
     {
       "id": "0002163393-26-000004:wk-form4_1794948371.xml",
       "filed": "2026-11-16",
@@ -21,6 +38,142 @@
         "code": "A",
         "shares": 5170,
         "price": 0,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002163354-26-000004:wk-form4_1794951615.xml",
+      "filed": "2026-11-13",
+      "names": [
+        "Webster Ryan  (CIK 0002163354)",
+        "Oklo Inc.  (CIK 0001849056)"
+      ],
+      "trade": {
+        "owner": "Webster Ryan",
+        "ticker": "OKLO",
+        "code": "M",
+        "shares": 1576,
+        "price": 0.47,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002149502-26-000004:wk-form4_1794949412.xml",
+      "filed": "2026-11-13",
+      "names": [
+        "East Nicholas Stuart Mackay  (CIK 0002149502)",
+        "NCR Voyix Corp  (CIK 0000070866)"
+      ],
+      "trade": {
+        "owner": "East Nicholas Stuart Mackay",
+        "ticker": "VYX",
+        "code": "M",
+        "shares": 10194,
+        "price": 0,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002147680-26-000018:wk-form4_1794951544.xml",
+      "filed": "2026-11-13",
+      "names": [
+        "Renner Alexandra  (CIK 0002147680)",
+        "Oklo Inc.  (CIK 0001849056)"
+      ],
+      "trade": {
+        "owner": "Renner Alexandra",
+        "ticker": "OKLO",
+        "code": "M",
+        "shares": 1201,
+        "price": null,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002146828-26-000014:wk-form4_1794951467.xml",
+      "filed": "2026-11-13",
+      "names": [
+        "Hanson John  (CIK 0002146828)",
+        "Oklo Inc.  (CIK 0001849056)"
+      ],
+      "trade": {
+        "owner": "Hanson John",
+        "ticker": "OKLO",
+        "code": "M",
+        "shares": 961,
+        "price": null,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002146790-26-000029:wk-form4_1794951432.xml",
+      "filed": "2026-11-13",
+      "names": [
+        "Narayanadas Vivek  (CIK 0002146790)",
+        "Oklo Inc.  (CIK 0001849056)"
+      ],
+      "trade": {
+        "owner": "Narayanadas Vivek",
+        "ticker": "OKLO",
+        "code": "S",
+        "shares": 936,
+        "price": 23.5633,
+        "acquired": false,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002135579-26-000005:form4.xml",
+      "filed": "2026-11-13",
+      "names": [
+        "Bores Scott Robert  (CIK 0002135579)",
+        "NEXTERA ENERGY INC  (CIK 0000753308)"
+      ],
+      "trade": {
+        "owner": "Bores Scott Robert",
+        "ticker": "NEE",
+        "code": "F",
+        "shares": 171,
+        "price": 85.12,
+        "acquired": false,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002126485-26-000008:wk-form4_1794952049.xml",
+      "filed": "2026-11-15",
+      "names": [
+        "Gogi Aalia Nighat  (CIK 0002126485)",
+        "COTY INC.  (CIK 0001024305)"
+      ],
+      "trade": {
+        "owner": "Gogi Aalia Nighat",
+        "ticker": "COTY",
+        "code": "A",
+        "shares": 53732,
+        "price": null,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002126484-26-000008:wk-form4_1794951975.xml",
+      "filed": "2026-11-15",
+      "names": [
+        "Kunst-Concewitz Robert  (CIK 0002126484)",
+        "COTY INC.  (CIK 0001024305)"
+      ],
+      "trade": {
+        "owner": "Kunst-Concewitz Robert",
+        "ticker": "COTY",
+        "code": "A",
+        "shares": 53732,
+        "price": null,
         "acquired": true,
         "form": "4"
       }
@@ -71,6 +224,57 @@
         "ticker": "QTRX",
         "code": "M",
         "shares": 81,
+        "price": null,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002120008-26-000010:wk-form4_1794949383.xml",
+      "filed": "2026-11-16",
+      "names": [
+        "Denny Jordan M.  (CIK 0002120008)",
+        "VALVOLINE INC  (CIK 0001674910)"
+      ],
+      "trade": {
+        "owner": "Denny Jordan M.",
+        "ticker": "VVV",
+        "code": "M",
+        "shares": 404,
+        "price": null,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002116239-26-000008:wk-form4_1794951749.xml",
+      "filed": "2026-11-15",
+      "names": [
+        "Liuni Maria Carla  (CIK 0002116239)",
+        "COTY INC.  (CIK 0001024305)"
+      ],
+      "trade": {
+        "owner": "Liuni Maria Carla",
+        "ticker": "COTY",
+        "code": "A",
+        "shares": 53732,
+        "price": null,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002110450-26-000012:wk-form4_1794949396.xml",
+      "filed": "2026-11-16",
+      "names": [
+        "Worsham Adam C.  (CIK 0002110450)",
+        "VALVOLINE INC  (CIK 0001674910)"
+      ],
+      "trade": {
+        "owner": "Worsham Adam C.",
+        "ticker": "VVV",
+        "code": "M",
+        "shares": 604,
         "price": null,
         "acquired": true,
         "form": "4"
@@ -128,6 +332,74 @@
       }
     },
     {
+      "id": "0002092017-26-000009:primarydocument.xml",
+      "filed": "2026-11-13",
+      "names": [
+        "Patel Jeegar Pravinkumar  (CIK 0002092017)",
+        "Evommune, Inc.  (CIK 0002044725)"
+      ],
+      "trade": {
+        "owner": "Patel Jeegar Pravinkumar",
+        "ticker": "EVMN",
+        "code": "D",
+        "shares": 179619,
+        "price": null,
+        "acquired": false,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002091053-26-000007:primarydocument.xml",
+      "filed": "2026-11-13",
+      "names": [
+        "Drew Janice Suzann  (CIK 0002091053)",
+        "Evommune, Inc.  (CIK 0002044725)"
+      ],
+      "trade": {
+        "owner": "Drew Janice Suzann",
+        "ticker": "EVMN",
+        "code": "D",
+        "shares": 231274,
+        "price": null,
+        "acquired": false,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002082930-26-000022:wk-form4_1794949794.xml",
+      "filed": "2026-11-15",
+      "names": [
+        "Rogers Chris  (CIK 0002082930)",
+        "Maplebear Inc.  (CIK 0001579091)"
+      ],
+      "trade": {
+        "owner": "Rogers Chris",
+        "ticker": "CART",
+        "code": "F",
+        "shares": 36831,
+        "price": 58.87,
+        "acquired": false,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002080498-26-000007:form4-11172026_041112.xml",
+      "filed": "2026-11-13",
+      "names": [
+        "Jani Ravi  (CIK 0002080498)",
+        "Real REMAX Group Inc.  (CIK 0002136387)"
+      ],
+      "trade": {
+        "owner": "Jani Ravi",
+        "ticker": "REAX",
+        "code": "M",
+        "shares": 631,
+        "price": 0,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
       "id": "0002080407-26-000021:wk-form4_1794923728.xml",
       "filed": "2026-11-13",
       "names": [
@@ -156,278 +428,6 @@
         "ticker": "ACN",
         "code": "A",
         "shares": 55,
-        "price": 0,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002070403-26-000018:wk-form4_1794945942.xml",
-      "filed": "2026-11-15",
-      "names": [
-        "Dameron Clifton  (CIK 0002070403)",
-        "WILLIS LEASE FINANCE CORP  (CIK 0001018164)"
-      ],
-      "trade": {
-        "owner": "Dameron Clifton",
-        "ticker": "WLFC",
-        "code": "F",
-        "shares": 1021,
-        "price": 46.04,
-        "acquired": false,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002056204-26-000008:primarydocument.xml",
-      "filed": "2026-11-13",
-      "names": [
-        "Schuler Scott Alan  (CIK 0002056204)",
-        "CINCINNATI FINANCIAL CORP  (CIK 0000020286)"
-      ],
-      "trade": {
-        "owner": "Schuler Scott Alan",
-        "ticker": "CINF",
-        "code": "A",
-        "shares": 10,
-        "price": 0,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002056184-26-000008:primarydocument.xml",
-      "filed": "2026-11-13",
-      "names": [
-        "Chapel Dawn Shannon  (CIK 0002056184)",
-        "CINCINNATI FINANCIAL CORP  (CIK 0000020286)"
-      ],
-      "trade": {
-        "owner": "Chapel Dawn Shannon",
-        "ticker": "CINF",
-        "code": "A",
-        "shares": 10,
-        "price": 0,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002056099-26-000008:primarydocument.xml",
-      "filed": "2026-11-13",
-      "names": [
-        "Swisher Chet Hogan  (CIK 0002056099)",
-        "CINCINNATI FINANCIAL CORP  (CIK 0000020286)"
-      ],
-      "trade": {
-        "owner": "Swisher Chet Hogan",
-        "ticker": "CINF",
-        "code": "A",
-        "shares": 10,
-        "price": 0,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002053100-26-000012:wk-form4_1794922960.xml",
-      "filed": "2026-11-13",
-      "names": [
-        "Miaritis Nick  (CIK 0002053100)",
-        "SCOTTS MIRACLE-GRO CO  (CIK 0000825542)"
-      ],
-      "trade": {
-        "owner": "Miaritis Nick",
-        "ticker": "SMG",
-        "code": "A",
-        "shares": 3246,
-        "price": 0,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002052025-26-000006:wk-form4_1794923688.xml",
-      "filed": "2026-11-13",
-      "names": [
-        "Uotani Masahiko  (CIK 0002052025)",
-        "Accenture plc  (CIK 0001467373)"
-      ],
-      "trade": {
-        "owner": "Uotani Masahiko",
-        "ticker": "ACN",
-        "code": "A",
-        "shares": 7,
-        "price": 0,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002052022-26-000006:wk-form4_1794923694.xml",
-      "filed": "2026-11-13",
-      "names": [
-        "Nason Jennifer  (CIK 0002052022)",
-        "Accenture plc  (CIK 0001467373)"
-      ],
-      "trade": {
-        "owner": "Nason Jennifer",
-        "ticker": "ACN",
-        "code": "A",
-        "shares": 7,
-        "price": 0,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002043272-26-000004:form4-11172026_081111.xml",
-      "filed": "2026-11-13",
-      "names": [
-        "SPENCE JESSICA  (CIK 0002043272)",
-        "EDGEWELL PERSONAL CARE Co  (CIK 0001096752)"
-      ],
-      "trade": {
-        "owner": "SPENCE JESSICA",
-        "ticker": "EPC",
-        "code": "M",
-        "shares": 8826,
-        "price": 0,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002043192-26-000006:form4-11172026_081117.xml",
-      "filed": "2026-11-13",
-      "names": [
-        "WEISSMAN FRANCESCA  (CIK 0002043192)",
-        "EDGEWELL PERSONAL CARE Co  (CIK 0001096752)"
-      ],
-      "trade": {
-        "owner": "WEISSMAN FRANCESCA",
-        "ticker": "EPC",
-        "code": "M",
-        "shares": 8826,
-        "price": 0,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002040268-26-000008:edgardoc.xml",
-      "filed": "2026-11-15",
-      "names": [
-        "GILL ANN  (CIK 0002040268)",
-        "Axos Financial, Inc.  (CIK 0001299709)"
-      ],
-      "trade": {
-        "owner": "GILL ANN",
-        "ticker": "AX",
-        "code": "M",
-        "shares": 1000,
-        "price": 91.17,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002030855-26-000009:wk-form4_1794923733.xml",
-      "filed": "2026-11-13",
-      "names": [
-        "Macchi Mauro  (CIK 0002030855)",
-        "Accenture plc  (CIK 0001467373)"
-      ],
-      "trade": {
-        "owner": "Macchi Mauro",
-        "ticker": "ACN",
-        "code": "A",
-        "shares": 23,
-        "price": 0,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002030841-26-000007:wk-form4_1794923722.xml",
-      "filed": "2026-11-13",
-      "names": [
-        "Egawa Atsushi  (CIK 0002030841)",
-        "Accenture plc  (CIK 0001467373)"
-      ],
-      "trade": {
-        "owner": "Egawa Atsushi",
-        "ticker": "ACN",
-        "code": "A",
-        "shares": 23,
-        "price": 0,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002030833-26-000005:wk-form4_1794923699.xml",
-      "filed": "2026-11-13",
-      "names": [
-        "Sekido Ryoji  (CIK 0002030833)",
-        "Accenture plc  (CIK 0001467373)"
-      ],
-      "trade": {
-        "owner": "Sekido Ryoji",
-        "ticker": "ACN",
-        "code": "A",
-        "shares": 23,
-        "price": 0,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002028917-26-000004:primary_doc.xml",
-      "filed": "2026-11-13",
-      "names": [
-        "Mariani Gustavo  (CIK 0002028917)",
-        "Pampa Energy Inc.  (CIK 0001469395)"
-      ],
-      "trade": {
-        "owner": "Mariani Gustavo",
-        "ticker": "PAM",
-        "code": "P",
-        "shares": 2649,
-        "price": 63.917,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002028611-26-000019:wk-form4_1794923676.xml",
-      "filed": "2026-11-13",
-      "names": [
-        "Park Angie Y  (CIK 0002028611)",
-        "Accenture plc  (CIK 0001467373)"
-      ],
-      "trade": {
-        "owner": "Park Angie Y",
-        "ticker": "ACN",
-        "code": "A",
-        "shares": 24,
-        "price": 0,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002023036-26-000010:primarydocument.xml",
-      "filed": "2026-11-13",
-      "names": [
-        "Hogan Thomas Christopher  (CIK 0002023036)",
-        "CINCINNATI FINANCIAL CORP  (CIK 0000020286)"
-      ],
-      "trade": {
-        "owner": "Hogan Thomas Christopher",
-        "ticker": "CINF",
-        "code": "A",
-        "shares": 10,
         "price": 0,
         "acquired": true,
         "form": "4"
