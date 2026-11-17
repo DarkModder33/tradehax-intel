@@ -1,6 +1,6 @@
 {
   "meta": {
-    "asOf": "2026-11-16T23:06:09.740Z",
+    "asOf": "2026-11-17T04:43:40.825Z",
     "source": "SEC EDGAR Form 4",
     "rows": 25,
     "delay": "hours",
@@ -94,6 +94,74 @@
       }
     },
     {
+      "id": "0002144083-26-000003:form4-11162026_111121.xml",
+      "filed": "2026-11-13",
+      "names": [
+        "Copeland Alicia Crispin  (CIK 0002144083)",
+        "ADI GLOBAL DISTRIBUTION INC.  (CIK 0002105139)"
+      ],
+      "trade": {
+        "owner": "Copeland Alicia Crispin",
+        "ticker": "ADIG",
+        "code": "P",
+        "shares": 5000,
+        "price": 10.11,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002144017-26-000003:form4-11162026_111156.xml",
+      "filed": "2026-11-13",
+      "names": [
+        "Cardazzi Marco  (CIK 0002144017)",
+        "ADI GLOBAL DISTRIBUTION INC.  (CIK 0002105139)"
+      ],
+      "trade": {
+        "owner": "Cardazzi Marco",
+        "ticker": "ADIG",
+        "code": "P",
+        "shares": 2508,
+        "price": 10,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002127288-26-000010:form4-11162026_111124.xml",
+      "filed": "2026-11-16",
+      "names": [
+        "Serafini John Sheldon  (CIK 0002127288)",
+        "HawkEye 360, Inc.  (CIK 0001750704)"
+      ],
+      "trade": {
+        "owner": "Serafini John Sheldon",
+        "ticker": "HAWK",
+        "code": "P",
+        "shares": 1383,
+        "price": 17.8017,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002127284-26-000008:form4-11162026_111142.xml",
+      "filed": "2026-11-16",
+      "names": [
+        "Searle Craig Chih-Meng  (CIK 0002127284)",
+        "HawkEye 360, Inc.  (CIK 0001750704)"
+      ],
+      "trade": {
+        "owner": "Searle Craig Chih-Meng",
+        "ticker": "HAWK",
+        "code": "P",
+        "shares": 548,
+        "price": 18.25,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
       "id": "0002125533-26-000021:primarydocument.xml",
       "filed": "2026-11-13",
       "names": [
@@ -111,6 +179,23 @@
       }
     },
     {
+      "id": "0002125336-26-000006:primarydocument.xml",
+      "filed": "2026-11-12",
+      "names": [
+        "WILSON ROBERT ALLEN  (CIK 0002125336)",
+        "Select Water Solutions, Inc.  (CIK 0001693256)"
+      ],
+      "trade": {
+        "owner": "WILSON ROBERT ALLEN",
+        "ticker": "WTTR",
+        "code": "A",
+        "shares": 12570,
+        "price": 0,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
       "id": "0002120865-26-000009:wk-form4_1794851222.xml",
       "filed": "2026-08-28",
       "names": [
@@ -123,6 +208,40 @@
         "code": "L",
         "shares": 127.7578,
         "price": 3.88,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002120008-26-000008:wk-form4_1794871400.xml",
+      "filed": "2026-11-12",
+      "names": [
+        "Denny Jordan M.  (CIK 0002120008)",
+        "VALVOLINE INC  (CIK 0001674910)"
+      ],
+      "trade": {
+        "owner": "Denny Jordan M.",
+        "ticker": "VVV",
+        "code": "A",
+        "shares": 530,
+        "price": null,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002110450-26-000010:wk-form4_1794871376.xml",
+      "filed": "2026-11-12",
+      "names": [
+        "Worsham Adam C.  (CIK 0002110450)",
+        "VALVOLINE INC  (CIK 0001674910)"
+      ],
+      "trade": {
+        "owner": "Worsham Adam C.",
+        "ticker": "VVV",
+        "code": "A",
+        "shares": 1588,
+        "price": null,
         "acquired": true,
         "form": "4"
       }
@@ -196,6 +315,23 @@
       }
     },
     {
+      "id": "0002078454-26-000023:form4-11172026_121133.xml",
+      "filed": "2026-11-12",
+      "names": [
+        "Esaka Fumihide  (CIK 0002078454)",
+        "Ambiq Micro, Inc.  (CIK 0001500412)"
+      ],
+      "trade": {
+        "owner": "Esaka Fumihide",
+        "ticker": "AMBQ",
+        "code": "M",
+        "shares": 50000,
+        "price": 12.6,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
       "id": "0002075704-26-000044:wk-form4_1794863043.xml",
       "filed": "2026-11-12",
       "names": [
@@ -247,187 +383,51 @@
       }
     },
     {
-      "id": "0002045066-26-000004:primarydocument.xml",
-      "filed": "2026-11-15",
-      "names": [
-        "Vogt Adam M  (CIK 0002045066)",
-        "UNITED FIRE GROUP INC  (CIK 0000101199)"
-      ],
-      "trade": {
-        "owner": "Vogt Adam M",
-        "ticker": "UFCS",
-        "code": "F",
-        "shares": 322,
-        "price": 50.91,
-        "acquired": false,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002043323-26-000001:f4_a1eus00000acj8jmaf-live.xml",
-      "filed": "2026-11-13",
-      "names": [
-        "Dante Elmer  (CIK 0002043323)",
-        "SUBURBAN PROPANE PARTNERS LP  (CIK 0001005210)"
-      ],
-      "trade": {
-        "owner": "Dante Elmer",
-        "ticker": "SPH",
-        "code": "M",
-        "shares": 7105,
-        "price": 17.41,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002043192-26-000004:form4-11162026_071142.xml",
+      "id": "0002049662-26-000018:wk-form4_1794876039.xml",
       "filed": "2026-11-12",
       "names": [
-        "WEISSMAN FRANCESCA  (CIK 0002043192)",
-        "EDGEWELL PERSONAL CARE Co  (CIK 0001096752)"
+        "Duva Jason A  (CIK 0001534001)",
+        "Factorial Energy Inc.  (CIK 0002049662)"
       ],
       "trade": {
-        "owner": "WEISSMAN FRANCESCA",
-        "ticker": "EPC",
-        "code": "M",
-        "shares": 2783,
-        "price": 0,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002035847-26-000006:section16.xml",
-      "filed": "2026-11-15",
-      "names": [
-        "DiRico Jennifer Leigh  (CIK 0002035847)",
-        "PTC INC.  (CIK 0000857005)"
-      ],
-      "trade": {
-        "owner": "DiRico Jennifer Leigh",
-        "ticker": "PTC",
-        "code": "M",
-        "shares": 10524,
-        "price": 0,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002031707-26-000004:wk-form4_1794869265.xml",
-      "filed": "2026-11-16",
-      "names": [
-        "Newton William Keith  (CIK 0002031707)",
-        "Concentra Group Holdings Parent, Inc.  (CIK 0002014596)"
-      ],
-      "trade": {
-        "owner": "Newton William Keith",
-        "ticker": "CON",
-        "code": "S",
-        "shares": 68232,
-        "price": 43.129,
-        "acquired": false,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002029838-26-000004:wk-form4_1794864678.xml",
-      "filed": "2026-11-16",
-      "names": [
-        "Devasia Thomas A.  (CIK 0002029838)",
-        "Concentra Group Holdings Parent, Inc.  (CIK 0002014596)"
-      ],
-      "trade": {
-        "owner": "Devasia Thomas A.",
-        "ticker": "CON",
-        "code": "S",
-        "shares": 18194,
-        "price": 42.925,
-        "acquired": false,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002029837-26-000003:wk-form4_1794863125.xml",
-      "filed": "2026-11-12",
-      "names": [
-        "Gilbert Greg M.  (CIK 0002029837)",
-        "Concentra Group Holdings Parent, Inc.  (CIK 0002014596)"
-      ],
-      "trade": {
-        "owner": "Gilbert Greg M.",
-        "ticker": "CON",
-        "code": "S",
-        "shares": 18194,
-        "price": 42.9,
-        "acquired": false,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002029684-26-000003:wk-form4_1794863174.xml",
-      "filed": "2026-11-12",
-      "names": [
-        "Conser Jonathan P.  (CIK 0002029684)",
-        "Concentra Group Holdings Parent, Inc.  (CIK 0002014596)"
-      ],
-      "trade": {
-        "owner": "Conser Jonathan P.",
-        "ticker": "CON",
-        "code": "S",
-        "shares": 18194,
-        "price": 42.99,
-        "acquired": false,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002028916-26-000015:primary_doc.xml",
-      "filed": "2026-11-12",
-      "names": [
-        "Mindlin Damian Miguel  (CIK 0002028916)",
-        "Pampa Energy Inc.  (CIK 0001469395)"
-      ],
-      "trade": {
-        "owner": "Mindlin Damian Miguel",
-        "ticker": "PAM",
-        "code": "P",
-        "shares": 20000,
-        "price": 63.203,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002007480-26-000006:section16.xml",
-      "filed": "2026-11-15",
-      "names": [
-        "CHRISTENSON ALICE  (CIK 0002007480)",
-        "PTC INC.  (CIK 0000857005)"
-      ],
-      "trade": {
-        "owner": "CHRISTENSON ALICE",
-        "ticker": "PTC",
-        "code": "M",
-        "shares": 2426,
-        "price": 0,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002001931-26-000003:edgardoc.xml",
-      "filed": "2026-11-13",
-      "names": [
-        "Wardell-Smith Sara  (CIK 0002001931)",
-        "Axos Financial, Inc.  (CIK 0001299709)"
-      ],
-      "trade": {
-        "owner": "Wardell-Smith Sara",
-        "ticker": "AX",
+        "owner": "Duva Jason A",
+        "ticker": "FAC",
         "code": "A",
-        "shares": 3137,
+        "shares": 36581,
+        "price": 0,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002049662-26-000017:wk-form4_1794876034.xml",
+      "filed": "2026-11-12",
+      "names": [
+        "Scuteri Jeffrey T. Jr.  (CIK 0002140113)",
+        "Factorial Energy Inc.  (CIK 0002049662)"
+      ],
+      "trade": {
+        "owner": "Scuteri Jeffrey T. Jr.",
+        "ticker": "FAC",
+        "code": "M",
+        "shares": 15000,
+        "price": 0,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002049662-26-000016:wk-form4_1794876028.xml",
+      "filed": "2026-11-12",
+      "names": [
+        "Taylor Joseph Michael  (CIK 0002036111)",
+        "Factorial Energy Inc.  (CIK 0002049662)"
+      ],
+      "trade": {
+        "owner": "Taylor Joseph Michael",
+        "ticker": "FAC",
+        "code": "A",
+        "shares": 82950,
         "price": 0,
         "acquired": true,
         "form": "4"

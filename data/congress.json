@@ -1,6 +1,6 @@
 {
   "meta": {
-    "asOf": "2026-11-16T23:06:09.956Z",
+    "asOf": "2026-11-17T04:43:40.905Z",
     "source": "House Clerk PTR index",
     "rows": 40,
     "delay": "daily",
@@ -292,6 +292,6 @@
   "note": "Transaction lines need pdftotext. This file is the filing index.",
   "senate": {
     "unavailable": true,
-    "error": "403 https://efdsearch.senate.gov/search/"
+    "error": "Senate eFD answered, but the report table needs the agreement cookie. Rows were not parsed."
   }
 }

@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-16T23:07:36.712Z",
+  "generatedAt": "2026-11-17T04:45:05.091Z",
   "datasets": {
     "insiders": {
-      "asOf": "2026-11-16T23:06:09.740Z",
+      "asOf": "2026-11-17T04:43:40.825Z",
       "source": "SEC EDGAR Form 4",
       "rows": 25,
       "delay": "hours",
@@ -10,7 +10,7 @@
       "unavailable": false
     },
     "congress": {
-      "asOf": "2026-11-16T23:06:09.956Z",
+      "asOf": "2026-11-17T04:43:40.905Z",
       "source": "House Clerk PTR index",
       "rows": 40,
       "delay": "daily",
@@ -18,7 +18,7 @@
       "unavailable": false
     },
     "institutions": {
-      "asOf": "2026-11-16T23:06:13.593Z",
+      "asOf": "2026-11-17T04:43:42.493Z",
       "source": "SEC 13F-HR index",
       "rows": 20,
       "delay": "quarterly",
@@ -26,7 +26,7 @@
       "unavailable": false
     },
     "oi-change": {
-      "asOf": "2026-11-16T23:06:30.450Z",
+      "asOf": "2026-11-17T04:43:56.492Z",
       "source": "Cboe open interest",
       "rows": 0,
       "delay": "daily",
@@ -35,16 +35,16 @@
       "coverage": 0.9803921568627451
     },
     "iv": {
-      "asOf": "2026-11-16T23:06:56.427Z",
+      "asOf": "2026-11-17T04:44:20.824Z",
       "source": "Cboe iv30",
-      "rows": 46,
+      "rows": 50,
       "delay": "about 15 min",
       "stale": false,
       "unavailable": false,
-      "coverage": 0.9019607843137255
+      "coverage": 0.9803921568627451
     },
     "shorts": {
-      "asOf": "2026-11-16T23:07:10.454Z",
+      "asOf": "2026-11-17T04:44:32.126Z",
       "source": "FINRA consolidated short interest",
       "rows": 51,
       "delay": "twice monthly",
@@ -53,7 +53,7 @@
       "coverage": 1
     },
     "ftd": {
-      "asOf": "2026-11-16T23:07:10.919Z",
+      "asOf": "2026-11-17T04:44:32.423Z",
       "source": "SEC fails-to-deliver",
       "rows": 316,
       "delay": "about 3 weeks",
@@ -62,7 +62,7 @@
       "coverage": 1
     },
     "ats": {
-      "asOf": "2026-11-16T23:07:32.636Z",
+      "asOf": "2026-11-17T04:44:50.894Z",
       "source": "FINRA ATS weekly",
       "rows": 100,
       "delay": "2 to 4 weeks",
@@ -71,14 +71,14 @@
       "coverage": 0.9803921568627451
     },
     "calendar": {
-      "asOf": "2026-11-16T23:07:33.144Z",
+      "asOf": "2026-11-17T04:44:53.949Z",
       "source": "Nasdaq calendars",
-      "rows": 60,
+      "rows": 80,
       "delay": "daily",
       "unavailable": false
     },
     "etf-flows": {
-      "asOf": "2026-11-16T23:07:34.823Z",
+      "asOf": "2026-11-17T04:45:03.450Z",
       "source": "SPDR NAV history",
       "rows": 20,
       "delay": "daily",
@@ -87,7 +87,7 @@
       "coverage": 0.08333333333333333
     },
     "screener": {
-      "asOf": "2026-11-16T23:07:35.236Z",
+      "asOf": "2026-11-17T04:45:03.834Z",
       "source": "Yahoo most actives",
       "rows": 25,
       "delay": "delayed",
@@ -95,7 +95,7 @@
       "unavailable": false
     },
     "universe": {
-      "asOf": "2026-11-16T23:07:35.408Z",
+      "asOf": "2026-11-17T04:45:03.930Z",
       "source": "Nasdaq screener",
       "rows": 3608,
       "delay": "daily",
@@ -104,7 +104,7 @@
       "coverage": 1
     },
     "seasonality": {
-      "asOf": "2026-11-16T23:07:36.425Z",
+      "asOf": "2026-11-17T04:45:04.908Z",
       "source": "Yahoo monthly closes",
       "rows": 144,
       "delay": "daily",
@@ -113,7 +113,7 @@
       "coverage": 1
     },
     "flow-history": {
-      "asOf": "2026-11-16T23:07:36.707Z",
+      "asOf": "2026-11-17T04:45:05.088Z",
       "source": "worker /v1/history",
       "rows": 2000,
       "delay": "about 15 min",
