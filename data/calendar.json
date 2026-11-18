@@ -1,6 +1,6 @@
 {
   "meta": {
-    "asOf": "2026-11-18T20:29:46.720Z",
+    "asOf": "2026-11-18T21:40:40.044Z",
     "source": "Nasdaq calendars",
     "rows": 80,
     "delay": "daily",
@@ -473,7 +473,7 @@
       "marketCap": "$64,152,348",
       "fiscalQuarterEnding": "Sep/2026",
       "epsForecast": "",
-      "noOfEsts": "1"
+      "noOfEsts": "N/A"
     },
     {
       "kind": "earnings",
@@ -970,7 +970,7 @@
   ],
   "parts": {
     "earnings": {
-      "asOf": "2026-11-18T20:29:46.720Z",
+      "asOf": "2026-11-18T21:40:40.044Z",
       "source": "Nasdaq calendar/earnings",
       "rows": 40,
       "delay": "daily",
@@ -978,7 +978,7 @@
       "unavailable": false
     },
     "economic": {
-      "asOf": "2026-11-18T20:29:46.745Z",
+      "asOf": "2026-11-18T21:40:40.230Z",
       "source": "Nasdaq calendar/economicevents",
       "rows": 40,
       "delay": "daily",

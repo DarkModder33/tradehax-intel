@@ -1,6 +1,6 @@
 {
   "meta": {
-    "asOf": "2026-11-18T20:28:36.153Z",
+    "asOf": "2026-11-18T21:39:05.801Z",
     "source": "SEC 13F-HR index",
     "rows": 20,
     "delay": "quarterly",
@@ -107,6 +107,13 @@
       ]
     },
     {
+      "id": "0001935795-26-000008:primary_doc.xml",
+      "filed": "2026-09-30",
+      "names": [
+        "Drake & Associates, LLC  (CIK 0001935795)"
+      ]
+    },
+    {
       "id": "0001911938-26-000004:primary_doc.xml",
       "filed": "2026-09-30",
       "names": [
@@ -135,17 +142,10 @@
       ]
     },
     {
-      "id": "0001544204-26-000011:primary_doc.xml",
+      "id": "0001845536-26-000004:primary_doc.xml",
       "filed": "2026-09-30",
       "names": [
-        "Liontrust Investment Partners LLP  (CIK 0001544204)"
-      ]
-    },
-    {
-      "id": "0001394096-26-000004:primary_doc.xml",
-      "filed": "2026-09-30",
-      "names": [
-        "ZEVIN ASSET MANAGEMENT LLC  (CIK 0001394096)"
+        "Kensington Investment Counsel, LLC  (CIK 0001845536)"
       ]
     }
   ],
