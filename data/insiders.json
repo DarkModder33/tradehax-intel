@@ -1,6 +1,6 @@
 {
   "meta": {
-    "asOf": "2026-11-18T03:49:27.869Z",
+    "asOf": "2026-11-18T20:28:32.620Z",
     "source": "SEC EDGAR Form 4",
     "rows": 25,
     "delay": "hours",
@@ -9,426 +9,426 @@
   },
   "rows": [
     {
-      "id": "0002165064-26-000005:primarydocument.xml",
-      "filed": "2026-11-13",
+      "id": "0002127991-26-000004:form4.xml",
+      "filed": "2026-11-18",
       "names": [
-        "Duncan Tyler Jesse  (CIK 0002165064)",
-        "Commerce.com, Inc.  (CIK 0001626450)"
+        "Reiman William L  (CIK 0002127991)",
+        "GLADSTONE LAND Corp  (CIK 0001495240)"
       ],
       "trade": {
-        "owner": "Duncan Tyler Jesse",
-        "ticker": "CMRC",
-        "code": "A",
-        "shares": 125000,
-        "price": 0,
+        "owner": "Reiman William L",
+        "ticker": "LAND",
+        "code": "P",
+        "shares": 500,
+        "price": 6.369,
         "acquired": true,
         "form": "4"
       }
     },
     {
-      "id": "0002164267-26-000010:form4-11172026_051101.xml",
+      "id": "0002127484-26-000022:primary_doc.xml",
       "filed": "2026-11-16",
       "names": [
-        "Delsman Jeroen  (CIK 0002164267)",
-        "AXCELIS TECHNOLOGIES INC  (CIK 0001113232)"
+        "Pittas Aristeidis P  (CIK 0002127484)",
+        "EuroDry Ltd.  (CIK 0001731388)"
       ],
       "trade": {
-        "owner": "Delsman Jeroen",
-        "ticker": "ACLS",
-        "code": "A",
-        "shares": 10377,
-        "price": 0,
+        "owner": "Pittas Aristeidis P",
+        "ticker": "EDRY",
+        "code": "P",
+        "shares": 575,
+        "price": 37.4507,
         "acquired": true,
         "form": "4"
       }
     },
     {
-      "id": "0002163393-26-000004:wk-form4_1794948371.xml",
+      "id": "0002117905-26-000050:primary_doc.xml",
+      "filed": "2026-11-17",
+      "names": [
+        "Sousa Mauad Bruno  (CIK 0002117905)",
+        "Aura Minerals Inc.  (CIK 0001468642)"
+      ],
+      "trade": {
+        "owner": "Sousa Mauad Bruno",
+        "ticker": "AUGO",
+        "code": "P",
+        "shares": 2500,
+        "price": 22.4027,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002110298-26-000010:primarydocument.xml",
       "filed": "2026-11-16",
       "names": [
-        "Harwood Nathan S  (CIK 0002163393)",
-        "STANDARD MOTOR PRODUCTS, INC.  (CIK 0000093389)"
+        "Sandercox Robert Philip  (CIK 0002110298)",
+        "CINCINNATI FINANCIAL CORP  (CIK 0000020286)"
       ],
       "trade": {
-        "owner": "Harwood Nathan S",
-        "ticker": "SMP",
-        "code": "A",
-        "shares": 5170,
-        "price": 0,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002163354-26-000004:wk-form4_1794951615.xml",
-      "filed": "2026-11-13",
-      "names": [
-        "Webster Ryan  (CIK 0002163354)",
-        "Oklo Inc.  (CIK 0001849056)"
-      ],
-      "trade": {
-        "owner": "Webster Ryan",
-        "ticker": "OKLO",
+        "owner": "Sandercox Robert Philip",
+        "ticker": "CINF",
         "code": "M",
-        "shares": 1576,
-        "price": 0.47,
+        "shares": 769,
+        "price": 70.7,
         "acquired": true,
         "form": "4"
       }
     },
     {
-      "id": "0002156224-26-000009:wk-form4_1794952618.xml",
-      "filed": "2026-11-15",
-      "names": [
-        "Sullivan Haas  (CIK 0002156224)",
-        "MAGNITE, INC.  (CIK 0001595974)"
-      ],
-      "trade": {
-        "owner": "Sullivan Haas",
-        "ticker": "MGNI",
-        "code": "F",
-        "shares": 2439,
-        "price": 29.29,
-        "acquired": false,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002156094-26-000004:wk-form4_1794954627.xml",
-      "filed": "2026-11-15",
-      "names": [
-        "Mulvey Derek B  (CIK 0002156094)",
-        "Rivian Automotive, Inc. / DE  (CIK 0001874178)"
-      ],
-      "trade": {
-        "owner": "Mulvey Derek B",
-        "ticker": "RIVN",
-        "code": "F",
-        "shares": 7097,
-        "price": 12.18,
-        "acquired": false,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002149502-26-000004:wk-form4_1794949412.xml",
-      "filed": "2026-11-13",
-      "names": [
-        "East Nicholas Stuart Mackay  (CIK 0002149502)",
-        "NCR Voyix Corp  (CIK 0000070866)"
-      ],
-      "trade": {
-        "owner": "East Nicholas Stuart Mackay",
-        "ticker": "VYX",
-        "code": "M",
-        "shares": 10194,
-        "price": 0,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002147680-26-000018:wk-form4_1794951544.xml",
-      "filed": "2026-11-13",
-      "names": [
-        "Renner Alexandra  (CIK 0002147680)",
-        "Oklo Inc.  (CIK 0001849056)"
-      ],
-      "trade": {
-        "owner": "Renner Alexandra",
-        "ticker": "OKLO",
-        "code": "M",
-        "shares": 1201,
-        "price": null,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002146828-26-000014:wk-form4_1794951467.xml",
-      "filed": "2026-11-13",
-      "names": [
-        "Hanson John  (CIK 0002146828)",
-        "Oklo Inc.  (CIK 0001849056)"
-      ],
-      "trade": {
-        "owner": "Hanson John",
-        "ticker": "OKLO",
-        "code": "M",
-        "shares": 961,
-        "price": null,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002146790-26-000029:wk-form4_1794951432.xml",
-      "filed": "2026-11-13",
-      "names": [
-        "Narayanadas Vivek  (CIK 0002146790)",
-        "Oklo Inc.  (CIK 0001849056)"
-      ],
-      "trade": {
-        "owner": "Narayanadas Vivek",
-        "ticker": "OKLO",
-        "code": "S",
-        "shares": 936,
-        "price": 23.5633,
-        "acquired": false,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002145960-26-000004:form4-11172026_111141.xml",
-      "filed": "2026-11-15",
-      "names": [
-        "Furlong David G  (CIK 0002145960)",
-        "MODEXUS SOLUTIONS, INC.  (CIK 0000067347)"
-      ],
-      "trade": {
-        "owner": "Furlong David G",
-        "ticker": "MOD",
-        "code": "A",
-        "shares": 307,
-        "price": 0,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002140365-26-000006:primarydocument.xml",
-      "filed": "2026-11-15",
-      "names": [
-        "Boettcher Laura  (CIK 0002140365)",
-        "Hippo Holdings Inc.  (CIK 0001828105)"
-      ],
-      "trade": {
-        "owner": "Boettcher Laura",
-        "ticker": "HIPO",
-        "code": "F",
-        "shares": 1349,
-        "price": 37.603,
-        "acquired": false,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002135579-26-000005:form4.xml",
-      "filed": "2026-11-13",
-      "names": [
-        "Bores Scott Robert  (CIK 0002135579)",
-        "NEXTERA ENERGY INC  (CIK 0000753308)"
-      ],
-      "trade": {
-        "owner": "Bores Scott Robert",
-        "ticker": "NEE",
-        "code": "F",
-        "shares": 171,
-        "price": 85.12,
-        "acquired": false,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002130035-26-000009:primary_doc.xml",
-      "filed": "2026-11-13",
-      "names": [
-        "MOORE H LYNN JR  (CIK 0001250902)",
-        "TYLER TECHNOLOGIES INC  (CIK 0000860731)"
-      ],
-      "trade": {
-        "owner": "MOORE H LYNN JR",
-        "ticker": "TYL",
-        "code": "M",
-        "shares": 10000,
-        "price": 205.66,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002128025-26-000015:wk-form4_1794968181.xml",
-      "filed": "2026-11-15",
-      "names": [
-        "Starzak Alissa Michelle  (CIK 0002128025)",
-        "Cloudflare, Inc.  (CIK 0001477333)"
-      ],
-      "trade": {
-        "owner": "Starzak Alissa Michelle",
-        "ticker": "NET",
-        "code": "F",
-        "shares": 3775,
-        "price": 305.81,
-        "acquired": false,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002126485-26-000008:wk-form4_1794952049.xml",
-      "filed": "2026-11-15",
-      "names": [
-        "Gogi Aalia Nighat  (CIK 0002126485)",
-        "COTY INC.  (CIK 0001024305)"
-      ],
-      "trade": {
-        "owner": "Gogi Aalia Nighat",
-        "ticker": "COTY",
-        "code": "A",
-        "shares": 53732,
-        "price": null,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002126484-26-000008:wk-form4_1794951975.xml",
-      "filed": "2026-11-15",
-      "names": [
-        "Kunst-Concewitz Robert  (CIK 0002126484)",
-        "COTY INC.  (CIK 0001024305)"
-      ],
-      "trade": {
-        "owner": "Kunst-Concewitz Robert",
-        "ticker": "COTY",
-        "code": "A",
-        "shares": 53732,
-        "price": null,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002124464-26-000013:wk-form4_1794952851.xml",
+      "id": "0002109337-26-000018:primary_doc.xml",
       "filed": "2026-11-16",
       "names": [
-        "Blankmeyer Andrea  (CIK 0002124464)",
-        "Upstart Holdings, Inc.  (CIK 0001647639)"
+        "WANG CHUN KAI  (CIK 0002109337)",
+        "OBOOK HOLDINGS INC.  (CIK 0002025416)"
       ],
       "trade": {
-        "owner": "Blankmeyer Andrea",
-        "ticker": "UPST",
-        "code": "S",
-        "shares": 9499,
-        "price": 19.295,
-        "acquired": false,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002124256-26-000007:primary_doc.xml",
-      "filed": "2026-11-13",
-      "names": [
-        "BERHO CORONA LORENZO MANUEL  (CIK 0002124256)",
-        "Vesta Real Estate Corporation, S.A.B. de C.V.  (CIK 0001969373)"
-      ],
-      "trade": {
-        "owner": "BERHO CORONA LORENZO MANUEL",
-        "ticker": "VTMX",
-        "code": "S",
-        "shares": 60875,
-        "price": 3.76,
-        "acquired": false,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002122855-26-000008:primarydocument.xml",
-      "filed": "2026-11-16",
-      "names": [
-        "CHUONG JAMES  (CIK 0002122855)",
-        "Atlassian Corp  (CIK 0001650372)"
-      ],
-      "trade": {
-        "owner": "CHUONG JAMES",
-        "ticker": "TEAM",
-        "code": "S",
-        "shares": 3,
-        "price": 145.2131,
-        "acquired": false,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002121311-26-000012:wk-form4_1794932971.xml",
-      "filed": "2026-11-13",
-      "names": [
-        "Palomaki Daniel Scott  (CIK 0002121311)",
-        "HSBC HOLDINGS PLC  (CIK 0001089113)"
-      ],
-      "trade": {
-        "owner": "Palomaki Daniel Scott",
-        "ticker": "HSBC",
-        "code": "A",
-        "shares": 88,
-        "price": null,
+        "owner": "WANG CHUN KAI",
+        "ticker": "OWLS",
+        "code": "P",
+        "shares": 2800,
+        "price": 2.1953,
         "acquired": true,
         "form": "4"
       }
     },
     {
-      "id": "0002120516-26-000019:primarydocument.xml",
+      "id": "0002081604-26-000015:form4-11182026_071131.xml",
       "filed": "2026-11-15",
       "names": [
-        "Miller Michael Francis  (CIK 0002120516)",
-        "Quanterix Corp  (CIK 0001503274)"
+        "Seger Andrew M  (CIK 0002081604)",
+        "GERMAN AMERICAN BANCORP, INC.  (CIK 0000714395)"
       ],
       "trade": {
-        "owner": "Miller Michael Francis",
-        "ticker": "QTRX",
-        "code": "M",
-        "shares": 81,
-        "price": null,
+        "owner": "Seger Andrew M",
+        "ticker": "GABC",
+        "code": "P",
+        "shares": 23.9697,
+        "price": 50.0633,
         "acquired": true,
         "form": "4"
       }
     },
     {
-      "id": "0002120008-26-000010:wk-form4_1794949383.xml",
-      "filed": "2026-11-16",
+      "id": "0002040255-26-000008:wk-form4_1795032858.xml",
+      "filed": "2026-11-18",
       "names": [
-        "Denny Jordan M.  (CIK 0002120008)",
-        "VALVOLINE INC  (CIK 0001674910)"
+        "Jones Cecil W.  (CIK 0002040255)",
+        "Origin Bancorp, Inc.  (CIK 0001516912)"
       ],
       "trade": {
-        "owner": "Denny Jordan M.",
-        "ticker": "VVV",
-        "code": "M",
-        "shares": 404,
-        "price": null,
+        "owner": "Jones Cecil W.",
+        "ticker": "OBK",
+        "code": "P",
+        "shares": 3800,
+        "price": 52.55,
         "acquired": true,
         "form": "4"
       }
     },
     {
-      "id": "0002116239-26-000008:wk-form4_1794951749.xml",
-      "filed": "2026-11-15",
+      "id": "0002029760-26-000011:primary_doc.xml",
+      "filed": "2026-11-18",
       "names": [
-        "Liuni Maria Carla  (CIK 0002116239)",
-        "COTY INC.  (CIK 0001024305)"
+        "Huang Jack Jiajia  (CIK 0002029760)",
+        "51Talk Online Education Group  (CIK 0001659494)"
       ],
       "trade": {
-        "owner": "Liuni Maria Carla",
-        "ticker": "COTY",
-        "code": "A",
-        "shares": 53732,
-        "price": null,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002111929-26-000020:wk-form4_1794959563.xml",
-      "filed": "2026-11-13",
-      "names": [
-        "Fontaine Danielle  (CIK 0002111929)",
-        "ServiceNow, Inc.  (CIK 0001373715)"
-      ],
-      "trade": {
-        "owner": "Fontaine Danielle",
-        "ticker": "NOW",
+        "owner": "Huang Jack Jiajia",
+        "ticker": "COE",
         "code": "M",
-        "shares": 235,
+        "shares": 137500,
         "price": 0,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002028917-26-000005:primary_doc.xml",
+      "filed": "2026-11-16",
+      "names": [
+        "Mariani Gustavo  (CIK 0002028917)",
+        "Pampa Energy Inc.  (CIK 0001469395)"
+      ],
+      "trade": {
+        "owner": "Mariani Gustavo",
+        "ticker": "PAM",
+        "code": "P",
+        "shares": 10128,
+        "price": 63.917,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002028916-26-000016:primary_doc.xml",
+      "filed": "2026-11-16",
+      "names": [
+        "Mindlin Damian Miguel  (CIK 0002028916)",
+        "Pampa Energy Inc.  (CIK 0001469395)"
+      ],
+      "trade": {
+        "owner": "Mindlin Damian Miguel",
+        "ticker": "PAM",
+        "code": "P",
+        "shares": 10242,
+        "price": 63.917,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002022936-26-000019:primary_doc.xml",
+      "filed": "2026-11-16",
+      "names": [
+        "Mindlin Marcos Marcelo  (CIK 0002022936)",
+        "Pampa Energy Inc.  (CIK 0001469395)"
+      ],
+      "trade": {
+        "owner": "Mindlin Marcos Marcelo",
+        "ticker": "PAM",
+        "code": "P",
+        "shares": 30557,
+        "price": 63.92,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0001992394-26-000013:wk-form4_1795007981.xml",
+      "filed": "2026-11-16",
+      "names": [
+        "Marino Jason P.  (CIK 0001992394)",
+        "MARRIOTT VACATIONS WORLDWIDE Corp  (CIK 0001524358)"
+      ],
+      "trade": {
+        "owner": "Marino Jason P.",
+        "ticker": "VAC",
+        "code": "F",
+        "shares": 1314,
+        "price": 116.36,
+        "acquired": false,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0001976408-26-000954:primary_doc.xml",
+      "filed": "2026-11-17",
+      "names": [
+        "Omer Gal  (CIK 0002083020)",
+        "Nayax Ltd.  (CIK 0001901279)"
+      ],
+      "trade": {
+        "owner": "Omer Gal",
+        "ticker": "NYAX",
+        "code": "M",
+        "shares": 1250,
+        "price": 21.352,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0001976408-26-000951:primary_doc.xml",
+      "filed": "2026-11-17",
+      "names": [
+        "ADLERSBERG SHABTAI  (CIK 0001215547)",
+        "AUDIOCODES LTD  (CIK 0001086434)"
+      ],
+      "trade": {
+        "owner": "ADLERSBERG SHABTAI",
+        "ticker": "AUDC",
+        "code": "P",
+        "shares": 3000,
+        "price": 8.4096,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0001976408-26-000950:primary_doc.xml",
+      "filed": "2026-11-16",
+      "names": [
+        "Akkerman Michael  (CIK 0002025822)",
+        "SIMILARWEB LTD.  (CIK 0001842731)"
+      ],
+      "trade": {
+        "owner": "Akkerman Michael",
+        "ticker": "SMWB",
+        "code": "A",
+        "shares": 364964,
+        "price": 0,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0001976129-26-000001:primary_doc.xml",
+      "filed": "2026-11-17",
+      "names": [
+        "GRIMES THOMAS MICHAEL  (CIK 0001976129)",
+        "REAVES UTILITY INCOME FUND  (CIK 0001263994)"
+      ],
+      "trade": {
+        "owner": "GRIMES THOMAS MICHAEL",
+        "ticker": "UTG",
+        "code": "P",
+        "shares": 5000,
+        "price": 32.09,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0001969133-26-000010:wk-form4_1795033412.xml",
+      "filed": "2026-11-18",
+      "names": [
+        "Sanden Blayne  (CIK 0001969133)",
+        "WAFD INC  (CIK 0000936528)"
+      ],
+      "trade": {
+        "owner": "Sanden Blayne",
+        "ticker": "WAFD",
+        "code": "A",
+        "shares": 565,
+        "price": 0,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0001885329-26-000006:wk-form4_1795031430.xml",
+      "filed": "2026-11-16",
+      "names": [
+        "Spoor Bradly William  (CIK 0001885329)",
+        "BayFirst Financial Corp.  (CIK 0001649739)"
+      ],
+      "trade": {
+        "owner": "Spoor Bradly William",
+        "ticker": "BAFN",
+        "code": "J",
+        "shares": 6868,
+        "price": null,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0001843064-26-000004:wk-form4_1795033417.xml",
+      "filed": "2026-11-16",
+      "names": [
+        "Greer Valerie E  (CIK 0001843064)",
+        "BREAD FINANCIAL HOLDINGS, INC.  (CIK 0001101215)"
+      ],
+      "trade": {
+        "owner": "Greer Valerie E",
+        "ticker": "BFH",
+        "code": "F",
+        "shares": 384,
+        "price": 97.91,
+        "acquired": false,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0001837478-26-000019:primary_doc.xml",
+      "filed": "2026-11-16",
+      "names": [
+        "Manulife (Singapore) Pte. Ltd.  (CIK 0001837478)",
+        "John Hancock GA Mortgage Trust  (CIK 0001742952)"
+      ],
+      "trade": {
+        "owner": "Manulife (Singapore) Pte. Ltd.",
+        "ticker": "N/A",
+        "code": "P",
+        "shares": 503732.9973,
+        "price": 17.866,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0001833683-26-000021:primary_doc.xml",
+      "filed": "2026-11-16",
+      "names": [
+        "Manufacturers Life Insurance Co (Bermuda Branch)  (CIK 0001833683)",
+        "John Hancock GA Mortgage Trust  (CIK 0001742952)"
+      ],
+      "trade": {
+        "owner": "Manufacturers Life Insurance Co (Bermuda Branch)",
+        "ticker": "N/A",
+        "code": "P",
+        "shares": 55970.333,
+        "price": 17.866,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0001816539-26-000005:wk-form4_1795033137.xml",
+      "filed": "2026-11-18",
+      "names": [
+        "Platshon Scott  (CIK 0001816539)",
+        "Zymeworks Inc.  (CIK 0001937653)"
+      ],
+      "trade": {
+        "owner": "Platshon Scott",
+        "ticker": "ZYME",
+        "code": "M",
+        "shares": 37037,
+        "price": 0,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0001810400-26-000002:wk-form4_1795008820.xml",
+      "filed": "2026-11-16",
+      "names": [
+        "SZADY ANNETTE BROOKENS  (CIK 0001810400)",
+        "DONEGAL GROUP INC  (CIK 0000800457)"
+      ],
+      "trade": {
+        "owner": "SZADY ANNETTE BROOKENS",
+        "ticker": "DGICA",
+        "code": "M",
+        "shares": 600,
+        "price": 14.39,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0001801850-26-000007:wk-form4_1795033531.xml",
+      "filed": "2026-11-16",
+      "names": [
+        "Andretta Ralph J  (CIK 0001801850)",
+        "BREAD FINANCIAL HOLDINGS, INC.  (CIK 0001101215)"
+      ],
+      "trade": {
+        "owner": "Andretta Ralph J",
+        "ticker": "BFH",
+        "code": "F",
+        "shares": 1572,
+        "price": 97.91,
+        "acquired": false,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0001782810-26-000011:wk-form4_1795023088.xml",
+      "filed": "2026-11-16",
+      "names": [
+        "Hill Gary L.  (CIK 0001782810)",
+        "TEAM INC  (CIK 0000318833)"
+      ],
+      "trade": {
+        "owner": "Hill Gary L.",
+        "ticker": "TISI",
+        "code": "P",
+        "shares": 4200,
+        "price": 22.88,
         "acquired": true,
         "form": "4"
       }

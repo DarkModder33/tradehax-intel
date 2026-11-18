@@ -1,6 +1,6 @@
 {
   "meta": {
-    "asOf": "2026-11-18T03:49:28.771Z",
+    "asOf": "2026-11-18T20:28:36.153Z",
     "source": "SEC 13F-HR index",
     "rows": 20,
     "delay": "quarterly",
@@ -9,143 +9,143 @@
   },
   "rows": [
     {
-      "id": "0002165378-26-000002:primary_doc.xml",
-      "filed": "2026-09-30",
-      "names": [
-        "Snow Capital Management LLC  (CIK 0002165378)"
-      ]
-    },
-    {
-      "id": "0002163672-26-000001:primary_doc.xml",
-      "filed": "2026-09-30",
-      "names": [
-        "Holistic Wealth Advisors, LLC  (CIK 0002163672)"
-      ]
-    },
-    {
-      "id": "0002160101-26-000001:primary_doc.xml",
-      "filed": "2026-09-30",
-      "names": [
-        "Schwarz Investment Partners, Inc.  (CIK 0002160101)"
-      ]
-    },
-    {
-      "id": "0002158449-26-000003:primary_doc.xml",
-      "filed": "2026-03-31",
+      "id": "0002158449-26-000008:primary_doc.xml",
+      "filed": "2024-12-31",
       "names": [
         "Nova Financial LLC  (CIK 0002158449)"
       ]
     },
     {
-      "id": "0002158449-26-000002:primary_doc.xml",
-      "filed": "2026-06-30",
+      "id": "0002158449-26-000007:primary_doc.xml",
+      "filed": "2025-03-31",
       "names": [
         "Nova Financial LLC  (CIK 0002158449)"
       ]
     },
     {
-      "id": "0002135126-26-000017:primary_doc.xml",
-      "filed": "2026-09-30",
+      "id": "0002158449-26-000006:primary_doc.xml",
+      "filed": "2025-06-30",
       "names": [
-        "CapitalatWork S.A.  (CIK 0002135126)"
+        "Nova Financial LLC  (CIK 0002158449)"
       ]
     },
     {
-      "id": "0002095947-26-000008:primary_doc.xml",
-      "filed": "2026-09-30",
+      "id": "0002158449-26-000005:primary_doc.xml",
+      "filed": "2025-09-30",
       "names": [
-        "KERR FINANCIAL PLANNING Corp  (CIK 0002095947)"
+        "Nova Financial LLC  (CIK 0002158449)"
       ]
     },
     {
-      "id": "0002093346-26-000004:primary_doc.xml",
-      "filed": "2026-09-30",
-      "names": [
-        "Missouri Education Pension Trust  (CIK 0002093346)"
-      ]
-    },
-    {
-      "id": "0002085853-26-001407:primary_doc.xml",
-      "filed": "2026-09-30",
-      "names": [
-        "PCB Capital LLC  (CIK 0002123661)"
-      ]
-    },
-    {
-      "id": "0002081474-26-000015:primary_doc.xml",
-      "filed": "2026-09-30",
-      "names": [
-        "Vestwell Advisors, LLC  (CIK 0002081474)"
-      ]
-    },
-    {
-      "id": "0002073679-26-000181:primary_doc.xml",
-      "filed": "2026-09-30",
-      "names": [
-        "Almitas Capital LLC  (CIK 0001596468)"
-      ]
-    },
-    {
-      "id": "0002068251-26-000006:primary_doc.xml",
-      "filed": "2026-09-30",
-      "names": [
-        "Gullane Capital, LLC  (CIK 0002068251)"
-      ]
-    },
-    {
-      "id": "0002067588-26-000019:primary_doc.xml",
-      "filed": "2026-06-30",
-      "names": [
-        "Robinhood Asset Management, LLC  (CIK 0002067588)"
-      ]
-    },
-    {
-      "id": "0002067588-26-000018:primary_doc.xml",
-      "filed": "2026-03-31",
-      "names": [
-        "Robinhood Asset Management, LLC  (CIK 0002067588)"
-      ]
-    },
-    {
-      "id": "0002067588-26-000017:primary_doc.xml",
+      "id": "0002158449-26-000004:primary_doc.xml",
       "filed": "2025-12-31",
       "names": [
-        "Robinhood Asset Management, LLC  (CIK 0002067588)"
+        "Nova Financial LLC  (CIK 0002158449)"
       ]
     },
     {
-      "id": "0002065849-26-000010:primary_doc.xml",
-      "filed": "2026-09-30",
+      "id": "0002153041-26-000003:primary_doc.xml",
+      "filed": "2025-12-31",
       "names": [
-        "Yukon Wealth Management, Inc.  (CIK 0002065849)"
+        "Seven Hills Financial, LLC  (CIK 0002153041)"
       ]
     },
     {
-      "id": "0002059671-26-000006:primary_doc.xml",
-      "filed": "2026-09-30",
+      "id": "0002153041-26-000002:primary_doc.xml",
+      "filed": "2026-03-31",
       "names": [
-        "Ampersand Capital Group, L.P.  (CIK 0002059671)"
+        "Seven Hills Financial, LLC  (CIK 0002153041)"
       ]
     },
     {
-      "id": "0002057421-26-000013:primary_doc.xml",
+      "id": "0002110886-26-000011:primary_doc.xml",
       "filed": "2026-09-30",
       "names": [
-        "General Pension Society PZU Joint Stock Co  (CIK 0002057421)"
+        "ATLas Financial Planning LLC  (CIK 0002110886)"
       ]
     },
     {
-      "id": "0002056069-26-000004:primary_doc.xml",
+      "id": "0002106996-26-000010:primary_doc.xml",
       "filed": "2026-09-30",
       "names": [
-        "TFJ Management, LLC  (CIK 0002056069)"
+        "FLAX POND CAPITAL, LLC  (CIK 0002106996)"
       ]
     },
     {
-      "id": "0002053727-26-000008:primary_doc.xml",
+      "id": "0002085853-26-001410:primary_doc.xml",
       "filed": "2026-09-30",
       "names": [
-        "MOKAN Wealth Management Inc.  (CIK 0002053727)"
+        "Triton Financial Group Inc  (CIK 0001811805)"
+      ]
+    },
+    {
+      "id": "0002085853-26-001409:primary_doc.xml",
+      "filed": "2026-09-30",
+      "names": [
+        "Coastal Bridge Advisors, LLC  (CIK 0001665976)"
+      ]
+    },
+    {
+      "id": "0002063364-26-000401:primary_doc.xml",
+      "filed": "2026-09-30",
+      "names": [
+        "Addis & Hill, Inc  (CIK 0002016470)"
+      ]
+    },
+    {
+      "id": "0002035548-26-000007:primary_doc.xml",
+      "filed": "2026-09-30",
+      "names": [
+        "Brown Financial Advisors  (CIK 0002035548)"
+      ]
+    },
+    {
+      "id": "0002024333-26-000005:primary_doc.xml",
+      "filed": "2026-09-30",
+      "names": [
+        "ALEXANDER LABRUNERIE & CO., INC.  (CIK 0002024333)"
+      ]
+    },
+    {
+      "id": "0001911938-26-000004:primary_doc.xml",
+      "filed": "2026-09-30",
+      "names": [
+        "Capasso Planning Partners LLC  (CIK 0001911938)"
+      ]
+    },
+    {
+      "id": "0001867958-26-000007:primary_doc.xml",
+      "filed": "2026-09-30",
+      "names": [
+        "SK Wealth Management, LLC  (CIK 0001867958)"
+      ]
+    },
+    {
+      "id": "0001866040-26-000008:primary_doc.xml",
+      "filed": "2026-09-30",
+      "names": [
+        "Heartland Bank & Trust Co  (CIK 0001866040)"
+      ]
+    },
+    {
+      "id": "0001862427-26-000001:primary_doc.xml",
+      "filed": "2026-09-30",
+      "names": [
+        "Fi3 FINANCIAL ADVISORS, LLC  (CIK 0001862427)"
+      ]
+    },
+    {
+      "id": "0001544204-26-000011:primary_doc.xml",
+      "filed": "2026-09-30",
+      "names": [
+        "Liontrust Investment Partners LLP  (CIK 0001544204)"
+      ]
+    },
+    {
+      "id": "0001394096-26-000004:primary_doc.xml",
+      "filed": "2026-09-30",
+      "names": [
+        "ZEVIN ASSET MANAGEMENT LLC  (CIK 0001394096)"
       ]
     }
   ],
