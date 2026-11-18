@@ -1,6 +1,6 @@
 {
   "meta": {
-    "asOf": "2026-11-17T21:56:58.608Z",
+    "asOf": "2026-11-18T03:49:27.869Z",
     "source": "SEC EDGAR Form 4",
     "rows": 25,
     "delay": "hours",
@@ -20,6 +20,23 @@
         "ticker": "CMRC",
         "code": "A",
         "shares": 125000,
+        "price": 0,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002164267-26-000010:form4-11172026_051101.xml",
+      "filed": "2026-11-16",
+      "names": [
+        "Delsman Jeroen  (CIK 0002164267)",
+        "AXCELIS TECHNOLOGIES INC  (CIK 0001113232)"
+      ],
+      "trade": {
+        "owner": "Delsman Jeroen",
+        "ticker": "ACLS",
+        "code": "A",
+        "shares": 10377,
         "price": 0,
         "acquired": true,
         "form": "4"
@@ -56,6 +73,40 @@
         "shares": 1576,
         "price": 0.47,
         "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002156224-26-000009:wk-form4_1794952618.xml",
+      "filed": "2026-11-15",
+      "names": [
+        "Sullivan Haas  (CIK 0002156224)",
+        "MAGNITE, INC.  (CIK 0001595974)"
+      ],
+      "trade": {
+        "owner": "Sullivan Haas",
+        "ticker": "MGNI",
+        "code": "F",
+        "shares": 2439,
+        "price": 29.29,
+        "acquired": false,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002156094-26-000004:wk-form4_1794954627.xml",
+      "filed": "2026-11-15",
+      "names": [
+        "Mulvey Derek B  (CIK 0002156094)",
+        "Rivian Automotive, Inc. / DE  (CIK 0001874178)"
+      ],
+      "trade": {
+        "owner": "Mulvey Derek B",
+        "ticker": "RIVN",
+        "code": "F",
+        "shares": 7097,
+        "price": 12.18,
+        "acquired": false,
         "form": "4"
       }
     },
@@ -128,6 +179,40 @@
       }
     },
     {
+      "id": "0002145960-26-000004:form4-11172026_111141.xml",
+      "filed": "2026-11-15",
+      "names": [
+        "Furlong David G  (CIK 0002145960)",
+        "MODEXUS SOLUTIONS, INC.  (CIK 0000067347)"
+      ],
+      "trade": {
+        "owner": "Furlong David G",
+        "ticker": "MOD",
+        "code": "A",
+        "shares": 307,
+        "price": 0,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002140365-26-000006:primarydocument.xml",
+      "filed": "2026-11-15",
+      "names": [
+        "Boettcher Laura  (CIK 0002140365)",
+        "Hippo Holdings Inc.  (CIK 0001828105)"
+      ],
+      "trade": {
+        "owner": "Boettcher Laura",
+        "ticker": "HIPO",
+        "code": "F",
+        "shares": 1349,
+        "price": 37.603,
+        "acquired": false,
+        "form": "4"
+      }
+    },
+    {
       "id": "0002135579-26-000005:form4.xml",
       "filed": "2026-11-13",
       "names": [
@@ -140,6 +225,40 @@
         "code": "F",
         "shares": 171,
         "price": 85.12,
+        "acquired": false,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002130035-26-000009:primary_doc.xml",
+      "filed": "2026-11-13",
+      "names": [
+        "MOORE H LYNN JR  (CIK 0001250902)",
+        "TYLER TECHNOLOGIES INC  (CIK 0000860731)"
+      ],
+      "trade": {
+        "owner": "MOORE H LYNN JR",
+        "ticker": "TYL",
+        "code": "M",
+        "shares": 10000,
+        "price": 205.66,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002128025-26-000015:wk-form4_1794968181.xml",
+      "filed": "2026-11-15",
+      "names": [
+        "Starzak Alissa Michelle  (CIK 0002128025)",
+        "Cloudflare, Inc.  (CIK 0001477333)"
+      ],
+      "trade": {
+        "owner": "Starzak Alissa Michelle",
+        "ticker": "NET",
+        "code": "F",
+        "shares": 3775,
+        "price": 305.81,
         "acquired": false,
         "form": "4"
       }
@@ -179,6 +298,23 @@
       }
     },
     {
+      "id": "0002124464-26-000013:wk-form4_1794952851.xml",
+      "filed": "2026-11-16",
+      "names": [
+        "Blankmeyer Andrea  (CIK 0002124464)",
+        "Upstart Holdings, Inc.  (CIK 0001647639)"
+      ],
+      "trade": {
+        "owner": "Blankmeyer Andrea",
+        "ticker": "UPST",
+        "code": "S",
+        "shares": 9499,
+        "price": 19.295,
+        "acquired": false,
+        "form": "4"
+      }
+    },
+    {
       "id": "0002124256-26-000007:primary_doc.xml",
       "filed": "2026-11-13",
       "names": [
@@ -191,6 +327,23 @@
         "code": "S",
         "shares": 60875,
         "price": 3.76,
+        "acquired": false,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002122855-26-000008:primarydocument.xml",
+      "filed": "2026-11-16",
+      "names": [
+        "CHUONG JAMES  (CIK 0002122855)",
+        "Atlassian Corp  (CIK 0001650372)"
+      ],
+      "trade": {
+        "owner": "CHUONG JAMES",
+        "ticker": "TEAM",
+        "code": "S",
+        "shares": 3,
+        "price": 145.2131,
         "acquired": false,
         "form": "4"
       }
@@ -264,170 +417,17 @@
       }
     },
     {
-      "id": "0002110450-26-000012:wk-form4_1794949396.xml",
-      "filed": "2026-11-16",
+      "id": "0002111929-26-000020:wk-form4_1794959563.xml",
+      "filed": "2026-11-13",
       "names": [
-        "Worsham Adam C.  (CIK 0002110450)",
-        "VALVOLINE INC  (CIK 0001674910)"
+        "Fontaine Danielle  (CIK 0002111929)",
+        "ServiceNow, Inc.  (CIK 0001373715)"
       ],
       "trade": {
-        "owner": "Worsham Adam C.",
-        "ticker": "VVV",
+        "owner": "Fontaine Danielle",
+        "ticker": "NOW",
         "code": "M",
-        "shares": 604,
-        "price": null,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002110300-26-000010:primarydocument.xml",
-      "filed": "2026-11-13",
-      "names": [
-        "Schnell Andrew Michael  (CIK 0002110300)",
-        "CINCINNATI FINANCIAL CORP  (CIK 0000020286)"
-      ],
-      "trade": {
-        "owner": "Schnell Andrew Michael",
-        "ticker": "CINF",
-        "code": "A",
-        "shares": 10,
-        "price": 0,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002110299-26-000012:primarydocument.xml",
-      "filed": "2026-11-13",
-      "names": [
-        "Fu Luyang  (CIK 0002110299)",
-        "CINCINNATI FINANCIAL CORP  (CIK 0000020286)"
-      ],
-      "trade": {
-        "owner": "Fu Luyang",
-        "ticker": "CINF",
-        "code": "A",
-        "shares": 10,
-        "price": 0,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002110298-26-000008:primarydocument.xml",
-      "filed": "2026-11-13",
-      "names": [
-        "Sandercox Robert Philip  (CIK 0002110298)",
-        "CINCINNATI FINANCIAL CORP  (CIK 0000020286)"
-      ],
-      "trade": {
-        "owner": "Sandercox Robert Philip",
-        "ticker": "CINF",
-        "code": "A",
-        "shares": 10,
-        "price": 0,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002092017-26-000009:primarydocument.xml",
-      "filed": "2026-11-13",
-      "names": [
-        "Patel Jeegar Pravinkumar  (CIK 0002092017)",
-        "Evommune, Inc.  (CIK 0002044725)"
-      ],
-      "trade": {
-        "owner": "Patel Jeegar Pravinkumar",
-        "ticker": "EVMN",
-        "code": "D",
-        "shares": 179619,
-        "price": null,
-        "acquired": false,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002091053-26-000007:primarydocument.xml",
-      "filed": "2026-11-13",
-      "names": [
-        "Drew Janice Suzann  (CIK 0002091053)",
-        "Evommune, Inc.  (CIK 0002044725)"
-      ],
-      "trade": {
-        "owner": "Drew Janice Suzann",
-        "ticker": "EVMN",
-        "code": "D",
-        "shares": 231274,
-        "price": null,
-        "acquired": false,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002082930-26-000022:wk-form4_1794949794.xml",
-      "filed": "2026-11-15",
-      "names": [
-        "Rogers Chris  (CIK 0002082930)",
-        "Maplebear Inc.  (CIK 0001579091)"
-      ],
-      "trade": {
-        "owner": "Rogers Chris",
-        "ticker": "CART",
-        "code": "F",
-        "shares": 36831,
-        "price": 58.87,
-        "acquired": false,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002080498-26-000007:form4-11172026_041112.xml",
-      "filed": "2026-11-13",
-      "names": [
-        "Jani Ravi  (CIK 0002080498)",
-        "Real REMAX Group Inc.  (CIK 0002136387)"
-      ],
-      "trade": {
-        "owner": "Jani Ravi",
-        "ticker": "REAX",
-        "code": "M",
-        "shares": 631,
-        "price": 0,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002080407-26-000021:wk-form4_1794923728.xml",
-      "filed": "2026-11-13",
-      "names": [
-        "Clifford Katherine Lee  (CIK 0002080407)",
-        "Accenture plc  (CIK 0001467373)"
-      ],
-      "trade": {
-        "owner": "Clifford Katherine Lee",
-        "ticker": "ACN",
-        "code": "A",
-        "shares": 40,
-        "price": 0,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002080406-26-000021:wk-form4_1794923705.xml",
-      "filed": "2026-11-13",
-      "names": [
-        "Hogan Catherine Kiernan  (CIK 0002080406)",
-        "Accenture plc  (CIK 0001467373)"
-      ],
-      "trade": {
-        "owner": "Hogan Catherine Kiernan",
-        "ticker": "ACN",
-        "code": "A",
-        "shares": 55,
+        "shares": 235,
         "price": 0,
         "acquired": true,
         "form": "4"

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "asOf": "2026-11-17T21:56:59.438Z",
+    "asOf": "2026-11-18T03:49:28.771Z",
     "source": "SEC 13F-HR index",
     "rows": 20,
     "delay": "quarterly",
@@ -142,10 +142,10 @@
       ]
     },
     {
-      "id": "0002030780-26-000006:primary_doc.xml",
+      "id": "0002053727-26-000008:primary_doc.xml",
       "filed": "2026-09-30",
       "names": [
-        "DIVERSIFY WEALTH MANAGEMENT, LLC  (CIK 0002030780)"
+        "MOKAN Wealth Management Inc.  (CIK 0002053727)"
       ]
     }
   ],
