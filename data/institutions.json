@@ -1,6 +1,6 @@
 {
   "meta": {
-    "asOf": "2026-11-19T20:32:12.885Z",
+    "asOf": "2026-11-19T21:54:18.735Z",
     "source": "SEC 13F-HR index",
     "rows": 20,
     "delay": "quarterly",
@@ -135,17 +135,17 @@
       ]
     },
     {
+      "id": "0001751492-26-000008:primary_doc.xml",
+      "filed": "2026-09-30",
+      "names": [
+        "Wasserstein Management, L.P.  (CIK 0001751492)"
+      ]
+    },
+    {
       "id": "0001732541-26-000007:primary_doc.xml",
       "filed": "2026-09-30",
       "names": [
         "Defiance ETFs, LLC  (CIK 0001732541)"
-      ]
-    },
-    {
-      "id": "0001677044-26-000013:primary_doc.xml",
-      "filed": "2026-03-31",
-      "names": [
-        "OSAIC HOLDINGS, INC.  (CIK 0001677044)"
       ]
     }
   ],

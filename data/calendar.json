@@ -1,6 +1,6 @@
 {
   "meta": {
-    "asOf": "2026-11-19T20:33:34.379Z",
+    "asOf": "2026-11-19T21:55:29.446Z",
     "source": "Nasdaq calendars",
     "rows": 80,
     "delay": "daily",
@@ -278,7 +278,7 @@
       "marketCap": "$1,865,691,900",
       "fiscalQuarterEnding": "Sep/2026",
       "epsForecast": "",
-      "noOfEsts": "N/A"
+      "noOfEsts": "1"
     },
     {
       "kind": "earnings",
@@ -318,19 +318,6 @@
       "fiscalQuarterEnding": "Sep/2026",
       "epsForecast": "$0.34",
       "noOfEsts": "2"
-    },
-    {
-      "kind": "earnings",
-      "date": "2026-11-19",
-      "lastYearRptDt": "N/A",
-      "lastYearEPS": "$1.05",
-      "time": "time-pre-market",
-      "symbol": "TEN",
-      "name": "Tsakos Energy Navigation Ltd",
-      "marketCap": "$1,327,723,520",
-      "fiscalQuarterEnding": "Sep/2026",
-      "epsForecast": "",
-      "noOfEsts": "1"
     },
     {
       "kind": "earnings",
@@ -408,7 +395,7 @@
       "marketCap": "$426,377,984",
       "fiscalQuarterEnding": "Sep/2026",
       "epsForecast": "",
-      "noOfEsts": "N/A"
+      "noOfEsts": "1"
     },
     {
       "kind": "earnings",
@@ -434,7 +421,7 @@
       "marketCap": "$169,096,064",
       "fiscalQuarterEnding": "Sep/2026",
       "epsForecast": "",
-      "noOfEsts": "N/A"
+      "noOfEsts": "1"
     },
     {
       "kind": "earnings",
@@ -447,7 +434,7 @@
       "marketCap": "$137,840,704",
       "fiscalQuarterEnding": "Sep/2026",
       "epsForecast": "",
-      "noOfEsts": "N/A"
+      "noOfEsts": "1"
     },
     {
       "kind": "earnings",
@@ -473,7 +460,7 @@
       "marketCap": "$115,805,864",
       "fiscalQuarterEnding": "Sep/2026",
       "epsForecast": "",
-      "noOfEsts": "N/A"
+      "noOfEsts": "1"
     },
     {
       "kind": "earnings",
@@ -486,7 +473,7 @@
       "marketCap": "$107,134,952",
       "fiscalQuarterEnding": "Sep/2026",
       "epsForecast": "",
-      "noOfEsts": "N/A"
+      "noOfEsts": "1"
     },
     {
       "kind": "earnings",
@@ -499,7 +486,7 @@
       "marketCap": "$50,463,640",
       "fiscalQuarterEnding": "Sep/2026",
       "epsForecast": "",
-      "noOfEsts": "N/A"
+      "noOfEsts": "1"
     },
     {
       "kind": "earnings",
@@ -525,6 +512,19 @@
       "marketCap": "$39,190,016",
       "fiscalQuarterEnding": "Sep/2026",
       "epsForecast": "($1.05)",
+      "noOfEsts": "1"
+    },
+    {
+      "kind": "earnings",
+      "date": "2026-11-19",
+      "lastYearRptDt": "N/A",
+      "lastYearEPS": "($0.45)",
+      "time": "time-not-supplied",
+      "symbol": "SER",
+      "name": "Serina Therapeutics, Inc.",
+      "marketCap": "$35,868,768",
+      "fiscalQuarterEnding": "Sep/2026",
+      "epsForecast": "",
       "noOfEsts": "1"
     },
     {
@@ -970,7 +970,7 @@
   ],
   "parts": {
     "earnings": {
-      "asOf": "2026-11-19T20:33:34.379Z",
+      "asOf": "2026-11-19T21:55:29.446Z",
       "source": "Nasdaq calendar/earnings",
       "rows": 40,
       "delay": "daily",
@@ -978,7 +978,7 @@
       "unavailable": false
     },
     "economic": {
-      "asOf": "2026-11-19T20:33:34.407Z",
+      "asOf": "2026-11-19T21:55:29.471Z",
       "source": "Nasdaq calendar/economicevents",
       "rows": 40,
       "delay": "daily",
