@@ -1,6 +1,6 @@
 {
   "meta": {
-    "asOf": "2026-11-19T03:48:45.325Z",
+    "asOf": "2026-11-19T20:33:34.913Z",
     "source": "SPDR NAV history",
     "rows": 20,
     "delay": "daily",
@@ -9,6 +9,13 @@
     "coverage": 0.08333333333333333
   },
   "rows": [
+    {
+      "symbol": "SPY",
+      "date": "2026-11-18",
+      "nav": 730.535454,
+      "shares": 1072482116,
+      "flow": 1351490589.8999999
+    },
     {
       "symbol": "SPY",
       "date": "2026-11-17",
@@ -141,13 +148,6 @@
       "nav": 763.789533,
       "shares": 1061182116,
       "flow": -267326336.55
-    },
-    {
-      "symbol": "SPY",
-      "date": "2026-10-21",
-      "nav": 773.118066,
-      "shares": 1061532116,
-      "flow": -2435321907.9
     }
   ],
   "note": "Flow is the change in shares outstanding times that day's NAV. Sector workbooks are not on this URL, so only SPY is stored. Coverage is partial."

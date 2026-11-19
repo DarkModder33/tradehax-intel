@@ -1,6 +1,6 @@
 {
   "meta": {
-    "asOf": "2026-11-19T03:47:28.006Z",
+    "asOf": "2026-11-19T20:32:12.885Z",
     "source": "SEC 13F-HR index",
     "rows": 20,
     "delay": "quarterly",
@@ -9,143 +9,143 @@
   },
   "rows": [
     {
-      "id": "0002158449-26-000008:primary_doc.xml",
-      "filed": "2024-12-31",
-      "names": [
-        "Nova Financial LLC  (CIK 0002158449)"
-      ]
-    },
-    {
-      "id": "0002158449-26-000007:primary_doc.xml",
-      "filed": "2025-03-31",
-      "names": [
-        "Nova Financial LLC  (CIK 0002158449)"
-      ]
-    },
-    {
-      "id": "0002158449-26-000006:primary_doc.xml",
-      "filed": "2025-06-30",
-      "names": [
-        "Nova Financial LLC  (CIK 0002158449)"
-      ]
-    },
-    {
-      "id": "0002158449-26-000005:primary_doc.xml",
-      "filed": "2025-09-30",
-      "names": [
-        "Nova Financial LLC  (CIK 0002158449)"
-      ]
-    },
-    {
-      "id": "0002158449-26-000004:primary_doc.xml",
-      "filed": "2025-12-31",
-      "names": [
-        "Nova Financial LLC  (CIK 0002158449)"
-      ]
-    },
-    {
-      "id": "0002153041-26-000003:primary_doc.xml",
-      "filed": "2025-12-31",
+      "id": "0002153041-26-000004:primary_doc.xml",
+      "filed": "2026-06-30",
       "names": [
         "Seven Hills Financial, LLC  (CIK 0002153041)"
       ]
     },
     {
-      "id": "0002153041-26-000002:primary_doc.xml",
+      "id": "0002130487-26-000011:primary_doc.xml",
+      "filed": "2026-09-30",
+      "names": [
+        "Militia Capital Management LLC  (CIK 0002130487)"
+      ]
+    },
+    {
+      "id": "0002085853-26-001414:primary_doc.xml",
+      "filed": "2026-09-30",
+      "names": [
+        "Carolina Financial Advisors, Inc  (CIK 0001910288)"
+      ]
+    },
+    {
+      "id": "0002085853-26-001413:primary_doc.xml",
+      "filed": "2026-06-30",
+      "names": [
+        "Carolina Financial Advisors, Inc  (CIK 0001910288)"
+      ]
+    },
+    {
+      "id": "0002085853-26-001412:primary_doc.xml",
       "filed": "2026-03-31",
       "names": [
-        "Seven Hills Financial, LLC  (CIK 0002153041)"
+        "Carolina Financial Advisors, Inc  (CIK 0001910288)"
       ]
     },
     {
-      "id": "0002110886-26-000011:primary_doc.xml",
-      "filed": "2026-09-30",
+      "id": "0002085853-26-001411:primary_doc.xml",
+      "filed": "2025-12-31",
       "names": [
-        "ATLas Financial Planning LLC  (CIK 0002110886)"
+        "Carolina Financial Advisors, Inc  (CIK 0001910288)"
       ]
     },
     {
-      "id": "0002106996-26-000010:primary_doc.xml",
+      "id": "0002060725-26-000008:primary_doc.xml",
       "filed": "2026-09-30",
       "names": [
-        "FLAX POND CAPITAL, LLC  (CIK 0002106996)"
+        "CIBRA Capital Ltd  (CIK 0002060725)"
       ]
     },
     {
-      "id": "0002085853-26-001410:primary_doc.xml",
-      "filed": "2026-09-30",
+      "id": "0002060725-26-000007:primary_doc.xml",
+      "filed": "2026-06-30",
       "names": [
-        "Triton Financial Group Inc  (CIK 0001811805)"
+        "CIBRA Capital Ltd  (CIK 0002060725)"
       ]
     },
     {
-      "id": "0002085853-26-001409:primary_doc.xml",
+      "id": "0002000324-26-006178:primary_doc.xml",
       "filed": "2026-09-30",
       "names": [
-        "Coastal Bridge Advisors, LLC  (CIK 0001665976)"
+        "Advisors Asset Management, Inc.  (CIK 0001297376)"
       ]
     },
     {
-      "id": "0002063364-26-000401:primary_doc.xml",
+      "id": "0001966640-26-000006:primary_doc.xml",
       "filed": "2026-09-30",
       "names": [
-        "Addis & Hill, Inc  (CIK 0002016470)"
+        "BUSH INVESTMENT GROUP, LLC  (CIK 0001966640)"
       ]
     },
     {
-      "id": "0002035548-26-000007:primary_doc.xml",
-      "filed": "2026-09-30",
+      "id": "0001966640-26-000005:primary_doc.xml",
+      "filed": "2026-06-30",
       "names": [
-        "Brown Financial Advisors  (CIK 0002035548)"
+        "BUSH INVESTMENT GROUP, LLC  (CIK 0001966640)"
       ]
     },
     {
-      "id": "0002024333-26-000005:primary_doc.xml",
+      "id": "0001932342-26-000005:primary_doc.xml",
       "filed": "2026-09-30",
       "names": [
-        "ALEXANDER LABRUNERIE & CO., INC.  (CIK 0002024333)"
+        "Tradewinds, LLC.  (CIK 0001932342)"
       ]
     },
     {
-      "id": "0001935795-26-000008:primary_doc.xml",
+      "id": "0001830819-26-000012:primary_doc.xml",
       "filed": "2026-09-30",
       "names": [
-        "Drake & Associates, LLC  (CIK 0001935795)"
+        "Kestra Advisory Services, LLC  (CIK 0001830819)"
       ]
     },
     {
-      "id": "0001911938-26-000004:primary_doc.xml",
+      "id": "0001807060-26-000007:primary_doc.xml",
       "filed": "2026-09-30",
       "names": [
-        "Capasso Planning Partners LLC  (CIK 0001911938)"
+        "SHP Wealth Management  (CIK 0001807060)"
       ]
     },
     {
-      "id": "0001867958-26-000007:primary_doc.xml",
+      "id": "0001803203-26-000004:primary_doc.xml",
       "filed": "2026-09-30",
       "names": [
-        "SK Wealth Management, LLC  (CIK 0001867958)"
+        "Big Sioux Wealth Management  (CIK 0001803203)"
       ]
     },
     {
-      "id": "0001866040-26-000008:primary_doc.xml",
-      "filed": "2026-09-30",
+      "id": "0001803203-26-000003:primary_doc.xml",
+      "filed": "2026-06-30",
       "names": [
-        "Heartland Bank & Trust Co  (CIK 0001866040)"
+        "Big Sioux Wealth Management  (CIK 0001803203)"
       ]
     },
     {
-      "id": "0001862427-26-000001:primary_doc.xml",
-      "filed": "2026-09-30",
+      "id": "0001803203-26-000002:primary_doc.xml",
+      "filed": "2026-03-31",
       "names": [
-        "Fi3 FINANCIAL ADVISORS, LLC  (CIK 0001862427)"
+        "Big Sioux Wealth Management  (CIK 0001803203)"
       ]
     },
     {
-      "id": "0001845536-26-000004:primary_doc.xml",
+      "id": "0001803203-26-000001:primary_doc.xml",
+      "filed": "2025-12-31",
+      "names": [
+        "Big Sioux Wealth Management  (CIK 0001803203)"
+      ]
+    },
+    {
+      "id": "0001732541-26-000007:primary_doc.xml",
       "filed": "2026-09-30",
       "names": [
-        "Kensington Investment Counsel, LLC  (CIK 0001845536)"
+        "Defiance ETFs, LLC  (CIK 0001732541)"
+      ]
+    },
+    {
+      "id": "0001677044-26-000013:primary_doc.xml",
+      "filed": "2026-03-31",
+      "names": [
+        "OSAIC HOLDINGS, INC.  (CIK 0001677044)"
       ]
     }
   ],
