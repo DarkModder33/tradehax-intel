@@ -1,6 +1,6 @@
 {
   "meta": {
-    "asOf": "2026-11-18T21:39:04.911Z",
+    "asOf": "2026-11-19T03:47:26.629Z",
     "source": "SEC EDGAR Form 4",
     "rows": 25,
     "delay": "hours",
@@ -8,6 +8,57 @@
     "unavailable": false
   },
   "rows": [
+    {
+      "id": "0002165834-26-000004:ownership.xml",
+      "filed": "2026-11-16",
+      "names": [
+        "Abrams JoAnna  (CIK 0002165834)",
+        "SenesTech, Inc.  (CIK 0001680378)"
+      ],
+      "trade": {
+        "owner": "Abrams JoAnna",
+        "ticker": "SNES",
+        "code": "A",
+        "shares": 95129,
+        "price": 0,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002164576-26-000005:wk-form4_1795043062.xml",
+      "filed": "2026-11-16",
+      "names": [
+        "Sandy Neal Joseph  (CIK 0002164576)",
+        "GE HealthCare Technologies Inc.  (CIK 0001932393)"
+      ],
+      "trade": {
+        "owner": "Sandy Neal Joseph",
+        "ticker": "GEHC",
+        "code": "A",
+        "shares": 1018,
+        "price": 0,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002159683-26-000006:wk-form4_1795040155.xml",
+      "filed": "2026-11-17",
+      "names": [
+        "Dufour Jean Frederic  (CIK 0002159683)",
+        "ESTEE LAUDER COMPANIES INC  (CIK 0001001250)"
+      ],
+      "trade": {
+        "owner": "Dufour Jean Frederic",
+        "ticker": "EL",
+        "code": "A",
+        "shares": 2656,
+        "price": 0,
+        "acquired": true,
+        "form": "4"
+      }
+    },
     {
       "id": "0002156820-26-000008:form4-11182026_091120.xml",
       "filed": "2026-11-18",
@@ -21,6 +72,40 @@
         "code": "P",
         "shares": 10000,
         "price": 1.4187,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002156232-26-000009:ownership.xml",
+      "filed": "2026-11-16",
+      "names": [
+        "Harris Ronan  (CIK 0002156232)",
+        "Snap Inc  (CIK 0001564408)"
+      ],
+      "trade": {
+        "owner": "Harris Ronan",
+        "ticker": "SNAP",
+        "code": "S",
+        "shares": 140437,
+        "price": 5.0896,
+        "acquired": false,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002155257-26-000004:form4-11182026_051104.xml",
+      "filed": "2026-11-17",
+      "names": [
+        "Kappes Kathleen Marie  (CIK 0002155257)",
+        "RLI CORP  (CIK 0000084246)"
+      ],
+      "trade": {
+        "owner": "Kappes Kathleen Marie",
+        "ticker": "RLI",
+        "code": "M",
+        "shares": 10000,
+        "price": 41.12,
         "acquired": true,
         "form": "4"
       }
@@ -56,6 +141,23 @@
         "shares": 350000,
         "price": 0,
         "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002133255-26-000020:ownership.xml",
+      "filed": "2026-11-16",
+      "names": [
+        "Hott Douglas  (CIK 0002133255)",
+        "Snap Inc  (CIK 0001564408)"
+      ],
+      "trade": {
+        "owner": "Hott Douglas",
+        "ticker": "SNAP",
+        "code": "S",
+        "shares": 129203,
+        "price": 5.0898,
+        "acquired": false,
         "form": "4"
       }
     },
@@ -128,6 +230,23 @@
       }
     },
     {
+      "id": "0002127442-26-000011:form4-11182026_111127.xml",
+      "filed": "2026-11-17",
+      "names": [
+        "Finelli Francis Alphonse  (CIK 0002127442)",
+        "HawkEye 360, Inc.  (CIK 0001750704)"
+      ],
+      "trade": {
+        "owner": "Finelli Francis Alphonse",
+        "ticker": "HAWK",
+        "code": "P",
+        "shares": 2700,
+        "price": 18.22,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
       "id": "0002127244-26-000008:form4-11182026_041106.xml",
       "filed": "2026-11-16",
       "names": [
@@ -174,6 +293,23 @@
         "code": "M",
         "shares": 40157,
         "price": 0.01,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002111867-26-000015:primarydocument.xml",
+      "filed": "2026-11-16",
+      "names": [
+        "Krishnamurthy Balaji (A)  (CIK 0002111867)",
+        "Uber Technologies, Inc  (CIK 0001543151)"
+      ],
+      "trade": {
+        "owner": "Krishnamurthy Balaji (A)",
+        "ticker": "UBER",
+        "code": "M",
+        "shares": 566,
+        "price": null,
         "acquired": true,
         "form": "4"
       }
@@ -230,6 +366,23 @@
       }
     },
     {
+      "id": "0002104960-26-000002:primary_doc.xml",
+      "filed": "2026-11-17",
+      "names": [
+        "Harrell William Edward Jr.  (CIK 0002104960)",
+        "URBAN ONE, INC.  (CIK 0001041657)"
+      ],
+      "trade": {
+        "owner": "Harrell William Edward Jr.",
+        "ticker": "UONEK",
+        "code": "S",
+        "shares": 115,
+        "price": 2.07,
+        "acquired": false,
+        "form": "4"
+      }
+    },
+    {
       "id": "0002104172-26-000012:wk-form4_1795037395.xml",
       "filed": "2026-11-16",
       "names": [
@@ -276,159 +429,6 @@
         "code": "F",
         "shares": 80,
         "price": 50.55,
-        "acquired": false,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002089362-26-000023:form4-11182026_041113.xml",
-      "filed": "2026-11-16",
-      "names": [
-        "Colis Peter George  (CIK 0002089362)",
-        "Ethos Technologies Inc.  (CIK 0001788451)"
-      ],
-      "trade": {
-        "owner": "Colis Peter George",
-        "ticker": "LIFE",
-        "code": "S",
-        "shares": 29227,
-        "price": 33.55,
-        "acquired": false,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002089263-26-000020:form4-11182026_041109.xml",
-      "filed": "2026-11-16",
-      "names": [
-        "Wang Lingke  (CIK 0002089263)",
-        "Ethos Technologies Inc.  (CIK 0001788451)"
-      ],
-      "trade": {
-        "owner": "Wang Lingke",
-        "ticker": "LIFE",
-        "code": "S",
-        "shares": 22607,
-        "price": 33.55,
-        "acquired": false,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002081604-26-000015:form4-11182026_071131.xml",
-      "filed": "2026-11-15",
-      "names": [
-        "Seger Andrew M  (CIK 0002081604)",
-        "GERMAN AMERICAN BANCORP, INC.  (CIK 0000714395)"
-      ],
-      "trade": {
-        "owner": "Seger Andrew M",
-        "ticker": "GABC",
-        "code": "P",
-        "shares": 23.9697,
-        "price": 50.0633,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002078339-26-000022:form4-11182026_091149.xml",
-      "filed": "2026-11-16",
-      "names": [
-        "Hanson Scott McLean  (CIK 0002078339)",
-        "Ambiq Micro, Inc.  (CIK 0001500412)"
-      ],
-      "trade": {
-        "owner": "Hanson Scott McLean",
-        "ticker": "AMBQ",
-        "code": "M",
-        "shares": 7000,
-        "price": 8.12,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002075704-26-000045:wk-form4_1795037324.xml",
-      "filed": "2026-11-16",
-      "names": [
-        "Schubach Sarah Elizabeth  (CIK 0002075704)",
-        "DROPBOX, INC.  (CIK 0001467623)"
-      ],
-      "trade": {
-        "owner": "Schubach Sarah Elizabeth",
-        "ticker": "DBX",
-        "code": "F",
-        "shares": 5346,
-        "price": 33.53,
-        "acquired": false,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002061801-26-000023:wk-form4_1795037366.xml",
-      "filed": "2026-11-16",
-      "names": [
-        "Britt Christopher R  (CIK 0002061801)",
-        "Chime Financial, Inc.  (CIK 0001795586)"
-      ],
-      "trade": {
-        "owner": "Britt Christopher R",
-        "ticker": "CHYM",
-        "code": "F",
-        "shares": 12701,
-        "price": 33.55,
-        "acquired": false,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002061361-26-000019:wk-form4_1795037063.xml",
-      "filed": "2026-11-16",
-      "names": [
-        "Asmerom Amine  (CIK 0002061361)",
-        "Chime Financial, Inc.  (CIK 0001795586)"
-      ],
-      "trade": {
-        "owner": "Asmerom Amine",
-        "ticker": "CHYM",
-        "code": "F",
-        "shares": 12980,
-        "price": 33.55,
-        "acquired": false,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002061219-26-000027:wk-form4_1795037488.xml",
-      "filed": "2026-11-16",
-      "names": [
-        "King Ryan A  (CIK 0002061219)",
-        "Chime Financial, Inc.  (CIK 0001795586)"
-      ],
-      "trade": {
-        "owner": "King Ryan A",
-        "ticker": "CHYM",
-        "code": "F",
-        "shares": 5936,
-        "price": 33.55,
-        "acquired": false,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002060166-26-000018:wk-form4_1795037288.xml",
-      "filed": "2026-11-16",
-      "names": [
-        "Alkarmi Ashraf  (CIK 0002060166)",
-        "DROPBOX, INC.  (CIK 0001467623)"
-      ],
-      "trade": {
-        "owner": "Alkarmi Ashraf",
-        "ticker": "DBX",
-        "code": "F",
-        "shares": 47873,
-        "price": 33.53,
         "acquired": false,
         "form": "4"
       }

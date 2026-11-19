@@ -1,6 +1,6 @@
 {
   "meta": {
-    "asOf": "2026-11-18T21:40:41.427Z",
+    "asOf": "2026-11-19T03:48:45.589Z",
     "source": "Yahoo most actives",
     "rows": 25,
     "delay": "delayed",
@@ -11,176 +11,176 @@
     {
       "symbol": "NVDA",
       "price": 150.96,
-      "change": -2.8946352,
-      "volume": 339545174,
+      "change": -2.89464,
+      "volume": 343007056,
       "name": "NVIDIA Corporation"
     },
     {
       "symbol": "AES",
       "price": 15.02,
       "change": 0.334003,
-      "volume": 97613971,
+      "volume": 97617229,
       "name": "The AES Corporation"
     },
     {
       "symbol": "IREN",
       "price": 15.24,
-      "change": -3.5748215,
-      "volume": 89302722,
+      "change": -3.57482,
+      "volume": 89711618,
       "name": "IREN LIMITED"
     },
     {
       "symbol": "SPCX",
       "price": 143.5,
-      "change": 1.2702914,
-      "volume": 84940719,
+      "change": 1.27029,
+      "volume": 85245028,
       "name": "Space Exploration Technologies "
     },
     {
       "symbol": "CRWV",
       "price": 47.83,
-      "change": -4.129079,
-      "volume": 59425611,
+      "change": -4.12908,
+      "volume": 60227746,
       "name": "CoreWeave, Inc."
     },
     {
       "symbol": "INTC",
       "price": 54.67,
-      "change": -0.90628964,
-      "volume": 79865963,
+      "change": -0.90629,
+      "volume": 80113842,
       "name": "Intel Corporation"
     },
     {
       "symbol": "MDLN",
       "price": 39.16,
-      "change": 3.927812,
-      "volume": 39751877,
+      "change": 3.92781,
+      "volume": 40687820,
       "name": "Medline Inc."
     },
     {
       "symbol": "NOK",
       "price": 7.59,
       "change": 0,
-      "volume": 47184349,
+      "volume": 48037927,
       "name": "Nokia Corporation Sponsored"
     },
     {
       "symbol": "STLA",
       "price": 3.54,
       "change": -2.74726,
-      "volume": 48324378,
+      "volume": 48335186,
       "name": "Stellantis N.V."
     },
     {
       "symbol": "GRAB",
       "price": 3.14,
-      "change": -1.2578604,
-      "volume": 73851788,
+      "change": -1.25786,
+      "volume": 94087050,
       "name": "Grab Holdings Limited"
     },
     {
       "symbol": "SNAP",
       "price": 5.44,
       "change": -1.09091,
-      "volume": 59129074,
+      "volume": 59309426,
       "name": "Snap Inc."
     },
     {
       "symbol": "CIFR",
       "price": 6.57,
       "change": 2.33645,
-      "volume": 45161808,
+      "volume": 45247761,
       "name": "Cipher Digital Inc."
     },
     {
       "symbol": "WULF",
       "price": 12,
-      "change": 2.8277628,
-      "volume": 36677453,
+      "change": 2.82776,
+      "volume": 36775790,
       "name": "TeraWulf Inc."
     },
     {
       "symbol": "SLS",
       "price": 17.95,
-      "change": -6.266313,
-      "volume": 35467628,
+      "change": -6.26631,
+      "volume": 35527834,
       "name": "SELLAS Life Sciences Group, Inc"
     },
     {
       "symbol": "NBIS",
       "price": 106.96,
-      "change": 0.8723491,
-      "volume": 25872556,
+      "change": 0.872349,
+      "volume": 25988040,
       "name": "Nebius Group N.V."
     },
     {
       "symbol": "RIG",
       "price": 5.03,
       "change": -0.198408,
-      "volume": 42311030,
+      "volume": 42319184,
       "name": "Transocean Ltd (Switzerland)"
     },
     {
       "symbol": "VALE",
       "price": 10.04,
       "change": -3.64683,
-      "volume": 33581595,
+      "volume": 33583313,
       "name": "VALE S.A."
     },
     {
       "symbol": "PRMB",
       "price": 22.96,
       "change": -5.31959,
-      "volume": 24227482,
+      "volume": 24237537,
       "name": "Primo Brands Corporation"
     },
     {
       "symbol": "NU",
       "price": 12.08,
       "change": -2.02758,
-      "volume": 37484452,
+      "volume": 37597532,
       "name": "Nu Holdings Ltd."
     },
     {
       "symbol": "AAOI",
       "price": 40.79,
-      "change": -9.796551,
-      "volume": 20065513,
+      "change": -9.79655,
+      "volume": 20316482,
       "name": "Applied Optoelectronics, Inc."
     },
     {
       "symbol": "AMD",
       "price": 530.14,
-      "change": 5.309789,
-      "volume": 33277645,
+      "change": 5.30979,
+      "volume": 33451755,
       "name": "Advanced Micro Devices, Inc."
     },
     {
       "symbol": "NIO",
       "price": 2.77,
       "change": -1.42349,
-      "volume": 38914810,
+      "volume": 39902280,
       "name": "NIO Inc."
     },
     {
       "symbol": "BBD",
       "price": 2.39,
       "change": -3.23886,
-      "volume": 49872367,
+      "volume": 49872757,
       "name": "Banco Bradesco Sa"
     },
     {
       "symbol": "SMCI",
       "price": 24.37,
-      "change": 0.95278156,
-      "volume": 26909584,
+      "change": 0.952782,
+      "volume": 26984333,
       "name": "Super Micro Computer, Inc."
     },
     {
       "symbol": "AMZN",
       "price": 267.74,
-      "change": 3.8194482,
-      "volume": 40319163,
+      "change": 3.81945,
+      "volume": 40845576,
       "name": "Amazon.com, Inc."
     }
   ],
