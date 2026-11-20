@@ -1,6 +1,6 @@
 {
   "meta": {
-    "asOf": "2026-11-19T21:54:18.735Z",
+    "asOf": "2026-11-20T03:41:51.165Z",
     "source": "SEC 13F-HR index",
     "rows": 20,
     "delay": "quarterly",
@@ -93,6 +93,20 @@
       ]
     },
     {
+      "id": "0001900110-26-000008:primary_doc.xml",
+      "filed": "2026-09-30",
+      "names": [
+        "DGS Capital Management, LLC  (CIK 0001900110)"
+      ]
+    },
+    {
+      "id": "0001900110-26-000007:primary_doc.xml",
+      "filed": "2026-06-30",
+      "names": [
+        "DGS Capital Management, LLC  (CIK 0001900110)"
+      ]
+    },
+    {
       "id": "0001830819-26-000012:primary_doc.xml",
       "filed": "2026-09-30",
       "names": [
@@ -132,20 +146,6 @@
       "filed": "2025-12-31",
       "names": [
         "Big Sioux Wealth Management  (CIK 0001803203)"
-      ]
-    },
-    {
-      "id": "0001751492-26-000008:primary_doc.xml",
-      "filed": "2026-09-30",
-      "names": [
-        "Wasserstein Management, L.P.  (CIK 0001751492)"
-      ]
-    },
-    {
-      "id": "0001732541-26-000007:primary_doc.xml",
-      "filed": "2026-09-30",
-      "names": [
-        "Defiance ETFs, LLC  (CIK 0001732541)"
       ]
     }
   ],
