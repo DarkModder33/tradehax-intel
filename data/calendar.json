@@ -1,25 +1,12 @@
 {
   "meta": {
-    "asOf": "2026-11-20T03:43:02.373Z",
+    "asOf": "2026-11-20T20:11:40.639Z",
     "source": "Nasdaq calendars",
-    "rows": 79,
+    "rows": 70,
     "delay": "daily",
     "unavailable": false
   },
   "rows": [
-    {
-      "kind": "earnings",
-      "date": "2026-11-20",
-      "lastYearRptDt": "N/A",
-      "lastYearEPS": "N/A",
-      "time": "time-pre-market",
-      "symbol": "BSP",
-      "name": "Bending Spoons S.p.A.",
-      "marketCap": "$29,716,768,800",
-      "fiscalQuarterEnding": "Sep/2026",
-      "epsForecast": "$0.25",
-      "noOfEsts": "1"
-    },
     {
       "kind": "earnings",
       "date": "2026-11-20",
@@ -28,7 +15,7 @@
       "time": "time-pre-market",
       "symbol": "BJ",
       "name": "BJ's Wholesale Club Holdings, Inc.",
-      "marketCap": "$14,005,773,300",
+      "marketCap": "$13,989,352,400",
       "fiscalQuarterEnding": "Oct/2026",
       "epsForecast": "$1.24",
       "noOfEsts": "11"
@@ -41,36 +28,10 @@
       "time": "time-pre-market",
       "symbol": "MOG.A",
       "name": "Moog Inc.",
-      "marketCap": "$10,615,859,200",
+      "marketCap": "$10,390,360,100",
       "fiscalQuarterEnding": "Sep/2026",
       "epsForecast": "$2.70",
       "noOfEsts": "4"
-    },
-    {
-      "kind": "earnings",
-      "date": "2026-11-20",
-      "lastYearRptDt": "N/A",
-      "lastYearEPS": "$2.56",
-      "time": "time-pre-market",
-      "symbol": "MOG.B",
-      "name": "Moog Inc.",
-      "marketCap": "$10,615,859,200",
-      "fiscalQuarterEnding": "Sep/2026",
-      "epsForecast": "",
-      "noOfEsts": "N/A"
-    },
-    {
-      "kind": "earnings",
-      "date": "2026-11-20",
-      "lastYearRptDt": "N/A",
-      "lastYearEPS": "$0.19",
-      "time": "time-pre-market",
-      "symbol": "FRO",
-      "name": "Frontline Plc",
-      "marketCap": "$9,886,682,100",
-      "fiscalQuarterEnding": "Sep/2026",
-      "epsForecast": "",
-      "noOfEsts": "1"
     },
     {
       "kind": "earnings",
@@ -80,49 +41,10 @@
       "time": "time-not-supplied",
       "symbol": "KT",
       "name": "KT Corporation",
-      "marketCap": "$8,491,367,900",
+      "marketCap": "$8,139,369,500",
       "fiscalQuarterEnding": "Sep/2026",
       "epsForecast": "",
       "noOfEsts": "N/A"
-    },
-    {
-      "kind": "earnings",
-      "date": "2026-11-20",
-      "lastYearRptDt": "N/A",
-      "lastYearEPS": "$1.88",
-      "time": "time-pre-market",
-      "symbol": "IESC",
-      "name": "IES Holdings, Inc.",
-      "marketCap": "$6,760,005,100",
-      "fiscalQuarterEnding": "Sep/2026",
-      "epsForecast": "",
-      "noOfEsts": "1"
-    },
-    {
-      "kind": "earnings",
-      "date": "2026-11-20",
-      "lastYearRptDt": "N/A",
-      "lastYearEPS": "$0.96",
-      "time": "time-pre-market",
-      "symbol": "BKE",
-      "name": "Buckle, Inc. (The)",
-      "marketCap": "$2,201,641,470",
-      "fiscalQuarterEnding": "Oct/2026",
-      "epsForecast": "",
-      "noOfEsts": "N/A"
-    },
-    {
-      "kind": "earnings",
-      "date": "2026-11-20",
-      "lastYearRptDt": "N/A",
-      "lastYearEPS": "$0.02",
-      "time": "time-pre-market",
-      "symbol": "RLX",
-      "name": "RLX Technology Inc.",
-      "marketCap": "$1,784,491,650",
-      "fiscalQuarterEnding": "Sep/2026",
-      "epsForecast": "",
-      "noOfEsts": "1"
     },
     {
       "kind": "earnings",
@@ -132,7 +54,7 @@
       "time": "time-pre-market",
       "symbol": "WRD",
       "name": "WeRide Inc.",
-      "marketCap": "$1,230,391,300",
+      "marketCap": "$1,094,612,350",
       "fiscalQuarterEnding": "Sep/2026",
       "epsForecast": "",
       "noOfEsts": "N/A"
@@ -145,7 +67,7 @@
       "time": "time-after-hours",
       "symbol": "DLNG",
       "name": "Dynagas LNG Partners LP",
-      "marketCap": "$112,784,232",
+      "marketCap": "$109,146,032",
       "fiscalQuarterEnding": "Sep/2026",
       "epsForecast": "",
       "noOfEsts": "1"
@@ -158,23 +80,10 @@
       "time": "time-not-supplied",
       "symbol": "AREC",
       "name": "American Resources Corporation",
-      "marketCap": "$91,396,256",
+      "marketCap": "$94,894,216",
       "fiscalQuarterEnding": "Sep/2026",
       "epsForecast": "($0.08)",
       "noOfEsts": "2"
-    },
-    {
-      "kind": "earnings",
-      "date": "2026-11-20",
-      "lastYearRptDt": "N/A",
-      "lastYearEPS": "($0.24)",
-      "time": "time-not-supplied",
-      "symbol": "SIDU",
-      "name": "Sidus Space, Inc.",
-      "marketCap": "$87,316,968",
-      "fiscalQuarterEnding": "Sep/2026",
-      "epsForecast": "",
-      "noOfEsts": "1"
     },
     {
       "kind": "earnings",
@@ -184,7 +93,20 @@
       "time": "time-not-supplied",
       "symbol": "SOWG",
       "name": "Sow Good Inc.",
-      "marketCap": "$84,802,448",
+      "marketCap": "$93,859,016",
+      "fiscalQuarterEnding": "Sep/2026",
+      "epsForecast": "",
+      "noOfEsts": "1"
+    },
+    {
+      "kind": "earnings",
+      "date": "2026-11-20",
+      "lastYearRptDt": "N/A",
+      "lastYearEPS": "($0.24)",
+      "time": "time-not-supplied",
+      "symbol": "SIDU",
+      "name": "Sidus Space, Inc.",
+      "marketCap": "$80,939,768",
       "fiscalQuarterEnding": "Sep/2026",
       "epsForecast": "",
       "noOfEsts": "1"
@@ -197,7 +119,7 @@
       "time": "time-not-supplied",
       "symbol": "FSI",
       "name": "Flexible Solutions International Inc.",
-      "marketCap": "$75,688,904",
+      "marketCap": "$75,752,776",
       "fiscalQuarterEnding": "Sep/2026",
       "epsForecast": "($0.01)",
       "noOfEsts": "2"
@@ -210,7 +132,7 @@
       "time": "time-not-supplied",
       "symbol": "PVL",
       "name": "Permianville Royalty Trust",
-      "marketCap": "$63,690,000",
+      "marketCap": "$60,390,000",
       "fiscalQuarterEnding": "Sep/2026",
       "epsForecast": "",
       "noOfEsts": "N/A"
@@ -223,7 +145,7 @@
       "time": "time-not-supplied",
       "symbol": "NORD",
       "name": "Nordicus Partners Corporation",
-      "marketCap": "$57,574,384",
+      "marketCap": "$59,190,504",
       "fiscalQuarterEnding": "Sep/2026",
       "epsForecast": "",
       "noOfEsts": "N/A"
@@ -236,7 +158,7 @@
       "time": "time-not-supplied",
       "symbol": "AAME",
       "name": "Atlantic American Corporation",
-      "marketCap": "$26,516,474",
+      "marketCap": "$25,904,556",
       "fiscalQuarterEnding": "Sep/2026",
       "epsForecast": "",
       "noOfEsts": "1"
@@ -249,7 +171,7 @@
       "time": "time-not-supplied",
       "symbol": "CIRC",
       "name": "Circle8 Group, Inc.",
-      "marketCap": "$18,199,912",
+      "marketCap": "$18,223,410",
       "fiscalQuarterEnding": "Sep/2026",
       "epsForecast": "",
       "noOfEsts": "N/A"
@@ -262,7 +184,7 @@
       "time": "time-not-supplied",
       "symbol": "CELU",
       "name": "Celularity Inc.",
-      "marketCap": "$15,676,923",
+      "marketCap": "$15,183,673",
       "fiscalQuarterEnding": "Sep/2026",
       "epsForecast": "",
       "noOfEsts": "1"
@@ -275,7 +197,7 @@
       "time": "time-not-supplied",
       "symbol": "COSM",
       "name": "Cosmos Health Inc.",
-      "marketCap": "$14,843,483",
+      "marketCap": "$14,440,947",
       "fiscalQuarterEnding": "Sep/2026",
       "epsForecast": "($0.80)",
       "noOfEsts": "2"
@@ -288,7 +210,7 @@
       "time": "time-not-supplied",
       "symbol": "SUNE",
       "name": "SUNation Energy, Inc.",
-      "marketCap": "$12,635,430",
+      "marketCap": "$12,374,905",
       "fiscalQuarterEnding": "Sep/2026",
       "epsForecast": "",
       "noOfEsts": "N/A"
@@ -301,7 +223,7 @@
       "time": "time-not-supplied",
       "symbol": "ASBP",
       "name": "Aspire-Lakewood Holdings, Inc.",
-      "marketCap": "$11,066,175",
+      "marketCap": "$10,729,561",
       "fiscalQuarterEnding": "Sep/2026",
       "epsForecast": "",
       "noOfEsts": "N/A"
@@ -314,7 +236,7 @@
       "time": "time-not-supplied",
       "symbol": "TCRT",
       "name": "Alaunos Therapeutics, Inc.",
-      "marketCap": "$7,238,377",
+      "marketCap": "$6,691,291",
       "fiscalQuarterEnding": "Sep/2026",
       "epsForecast": "$0.82",
       "noOfEsts": "1"
@@ -327,7 +249,7 @@
       "time": "time-not-supplied",
       "symbol": "XCUR",
       "name": "Exicure, Inc.",
-      "marketCap": "$6,807,835",
+      "marketCap": "$6,415,075",
       "fiscalQuarterEnding": "Sep/2026",
       "epsForecast": "",
       "noOfEsts": "N/A"
@@ -340,7 +262,7 @@
       "time": "time-not-supplied",
       "symbol": "SCLX",
       "name": "Scilex Holding Company",
-      "marketCap": "$5,327,659",
+      "marketCap": "$5,520,450",
       "fiscalQuarterEnding": "Sep/2026",
       "epsForecast": "",
       "noOfEsts": "N/A"
@@ -353,33 +275,7 @@
       "time": "time-not-supplied",
       "symbol": "ATXG",
       "name": "Addentax Group Corp.",
-      "marketCap": "$5,215,492",
-      "fiscalQuarterEnding": "Sep/2026",
-      "epsForecast": "",
-      "noOfEsts": "1"
-    },
-    {
-      "kind": "earnings",
-      "date": "2026-11-20",
-      "lastYearRptDt": "N/A",
-      "lastYearEPS": "($0.13)",
-      "time": "time-not-supplied",
-      "symbol": "OLB",
-      "name": "The OLB Group, Inc.",
-      "marketCap": "$4,895,164",
-      "fiscalQuarterEnding": "Sep/2026",
-      "epsForecast": "",
-      "noOfEsts": "1"
-    },
-    {
-      "kind": "earnings",
-      "date": "2026-11-20",
-      "lastYearRptDt": "N/A",
-      "lastYearEPS": "N/A",
-      "time": "time-not-supplied",
-      "symbol": "GYGY",
-      "name": "Game Your Game, Inc.",
-      "marketCap": "$4,825,638",
+      "marketCap": "$5,206,229",
       "fiscalQuarterEnding": "Sep/2026",
       "epsForecast": "",
       "noOfEsts": "1"
@@ -392,7 +288,20 @@
       "time": "time-not-supplied",
       "symbol": "XWEL",
       "name": "XWELL, Inc.",
-      "marketCap": "$4,641,446",
+      "marketCap": "$4,338,331",
+      "fiscalQuarterEnding": "Sep/2026",
+      "epsForecast": "",
+      "noOfEsts": "1"
+    },
+    {
+      "kind": "earnings",
+      "date": "2026-11-20",
+      "lastYearRptDt": "N/A",
+      "lastYearEPS": "($0.13)",
+      "time": "time-not-supplied",
+      "symbol": "OLB",
+      "name": "The OLB Group, Inc.",
+      "marketCap": "$3,750,151",
       "fiscalQuarterEnding": "Sep/2026",
       "epsForecast": "",
       "noOfEsts": "1"
@@ -405,10 +314,10 @@
       "time": "time-not-supplied",
       "symbol": "ICON",
       "name": "Icon Energy Corp.",
-      "marketCap": "$3,044,668",
+      "marketCap": "$3,245,792",
       "fiscalQuarterEnding": "Sep/2026",
       "epsForecast": "($0.24)",
-      "noOfEsts": "N/A"
+      "noOfEsts": "1"
     },
     {
       "kind": "earnings",
@@ -418,7 +327,7 @@
       "time": "time-not-supplied",
       "symbol": "AMSS",
       "name": "AMASS Brands Inc.",
-      "marketCap": "$2,606,556",
+      "marketCap": "$2,711,397",
       "fiscalQuarterEnding": "Sep/2026",
       "epsForecast": "",
       "noOfEsts": "N/A"
@@ -431,20 +340,7 @@
       "time": "time-not-supplied",
       "symbol": "SONM",
       "name": "DNA X, Inc.",
-      "marketCap": "$2,505,499",
-      "fiscalQuarterEnding": "Sep/2026",
-      "epsForecast": "",
-      "noOfEsts": "N/A"
-    },
-    {
-      "kind": "earnings",
-      "date": "2026-11-20",
-      "lastYearRptDt": "N/A",
-      "lastYearEPS": "($39.92)",
-      "time": "time-not-supplied",
-      "symbol": "BURU",
-      "name": "Nuburu, Inc.",
-      "marketCap": "$2,315,586",
+      "marketCap": "$2,470,525",
       "fiscalQuarterEnding": "Sep/2026",
       "epsForecast": "",
       "noOfEsts": "N/A"
@@ -457,7 +353,7 @@
       "time": "time-not-supplied",
       "symbol": "ENLV",
       "name": "Enlivex Ltd.",
-      "marketCap": "$2,294,771",
+      "marketCap": "$2,237,402",
       "fiscalQuarterEnding": "Sep/2026",
       "epsForecast": "($4.48)",
       "noOfEsts": "1"
@@ -466,11 +362,11 @@
       "kind": "earnings",
       "date": "2026-11-20",
       "lastYearRptDt": "N/A",
-      "lastYearEPS": "($0.39)",
+      "lastYearEPS": "($39.92)",
       "time": "time-not-supplied",
-      "symbol": "BGLC",
-      "name": "BioNexus Gene Lab Corp",
-      "marketCap": "$2,151,683",
+      "symbol": "BURU",
+      "name": "Nuburu, Inc.",
+      "marketCap": "$2,157,200",
       "fiscalQuarterEnding": "Sep/2026",
       "epsForecast": "",
       "noOfEsts": "N/A"
@@ -483,23 +379,10 @@
       "time": "time-not-supplied",
       "symbol": "VBIO",
       "name": "Valion Bio, Inc.",
-      "marketCap": "$1,082,992",
+      "marketCap": "$1,163,828",
       "fiscalQuarterEnding": "Sep/2026",
       "epsForecast": "",
       "noOfEsts": "N/A"
-    },
-    {
-      "kind": "earnings",
-      "date": "2026-11-20",
-      "lastYearRptDt": "N/A",
-      "lastYearEPS": "($3.20)",
-      "time": "time-not-supplied",
-      "symbol": "MYSZ",
-      "name": "My Size, Inc.",
-      "marketCap": "$796,167",
-      "fiscalQuarterEnding": "Sep/2026",
-      "epsForecast": "",
-      "noOfEsts": "1"
     },
     {
       "kind": "earnings",
@@ -509,7 +392,7 @@
       "time": "time-not-supplied",
       "symbol": "DBGI",
       "name": "Digital Brands Group, Inc.",
-      "marketCap": "$175,500",
+      "marketCap": "$159,910",
       "fiscalQuarterEnding": "Sep/2026",
       "epsForecast": "",
       "noOfEsts": "N/A"
@@ -946,26 +829,26 @@
     {
       "kind": "economic",
       "date": "2026-11-20",
-      "gmt": "14:00",
+      "gmt": "14:15",
       "country": "United States",
-      "eventName": "FOMC Member Barkin Speaks",
+      "eventName": "Fed Vice Chair for Supervision Barr Speaks",
       "actual": "&nbsp;",
       "consensus": " ",
       "previous": "&nbsp;",
-      "description": "Richmond Fed President Thomas Barkin. His public engagements are often used to drop subtle clues regarding future monetary policy."
+      "description": ""
     }
   ],
   "parts": {
     "earnings": {
-      "asOf": "2026-11-20T03:43:02.373Z",
+      "asOf": "2026-11-20T20:11:40.639Z",
       "source": "Nasdaq calendar/earnings",
-      "rows": 39,
+      "rows": 30,
       "delay": "daily",
       "stale": false,
       "unavailable": false
     },
     "economic": {
-      "asOf": "2026-11-20T03:43:02.428Z",
+      "asOf": "2026-11-20T20:11:40.750Z",
       "source": "Nasdaq calendar/economicevents",
       "rows": 40,
       "delay": "daily",

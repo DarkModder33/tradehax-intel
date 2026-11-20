@@ -1,6 +1,6 @@
 {
   "meta": {
-    "asOf": "2026-11-20T03:41:49.897Z",
+    "asOf": "2026-11-20T20:10:36.024Z",
     "source": "SEC EDGAR Form 4",
     "rows": 25,
     "delay": "hours",
@@ -9,246 +9,127 @@
   },
   "rows": [
     {
-      "id": "0002162137-26-000005:form4-11162026_061108.xml",
-      "filed": "2026-11-12",
+      "id": "0002137771-26-000012:form4-11202026_071124.xml",
+      "filed": "2026-11-18",
       "names": [
-        "Santarelli Luca  (CIK 0002162137)",
-        "WINDWARD BIO GROUP AG  (CIK 0002145089)"
+        "Jochim David  (CIK 0002137771)",
+        "SOUNDTHINKING, INC.  (CIK 0001351636)"
       ],
       "trade": {
-        "owner": "Santarelli Luca",
-        "ticker": "WWB",
-        "code": "A",
-        "shares": 815755,
-        "price": 0,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002160088-26-000005:form4-11162026_061112.xml",
-      "filed": "2026-11-12",
-      "names": [
-        "D'Augusta Claudia  (CIK 0002160088)",
-        "WINDWARD BIO GROUP AG  (CIK 0002145089)"
-      ],
-      "trade": {
-        "owner": "D'Augusta Claudia",
-        "ticker": "WWB",
-        "code": "A",
-        "shares": 180160,
-        "price": 0,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002157619-26-000005:form4-11162026_061104.xml",
-      "filed": "2026-11-12",
-      "names": [
-        "Harris Kevin Andrew  (CIK 0002157619)",
-        "WINDWARD BIO GROUP AG  (CIK 0002145089)"
-      ],
-      "trade": {
-        "owner": "Harris Kevin Andrew",
-        "ticker": "WWB",
-        "code": "A",
-        "shares": 33206,
-        "price": 0,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002152228-26-000004:wk-form4_1794864688.xml",
-      "filed": "2026-11-15",
-      "names": [
-        "Waits Julian Wendell Sr.  (CIK 0002152228)",
-        "Rapid7, Inc.  (CIK 0001560327)"
-      ],
-      "trade": {
-        "owner": "Waits Julian Wendell Sr.",
-        "ticker": "RPD",
-        "code": "F",
-        "shares": 1667,
-        "price": 14.41,
+        "owner": "Jochim David",
+        "ticker": "SSTI",
+        "code": "U",
+        "shares": 1870,
+        "price": 8,
         "acquired": false,
         "form": "4"
       }
     },
     {
-      "id": "0002149661-26-000005:wk-form4_1794863162.xml",
-      "filed": "2026-11-13",
+      "id": "0002131351-26-000016:form4-11202026_071123.xml",
+      "filed": "2026-11-20",
       "names": [
-        "Murray Jason W.  (CIK 0002149661)",
-        "SYSCO CORP  (CIK 0000096021)"
+        "Weeks Brad Allan  (CIK 0002131351)",
+        "VIVOS INC  (CIK 0001449349)"
       ],
       "trade": {
-        "owner": "Murray Jason W.",
-        "ticker": "SYY",
-        "code": "A",
-        "shares": 2820,
-        "price": 0,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002144083-26-000003:form4-11162026_111121.xml",
-      "filed": "2026-11-13",
-      "names": [
-        "Copeland Alicia Crispin  (CIK 0002144083)",
-        "ADI GLOBAL DISTRIBUTION INC.  (CIK 0002105139)"
-      ],
-      "trade": {
-        "owner": "Copeland Alicia Crispin",
-        "ticker": "ADIG",
+        "owner": "Weeks Brad Allan",
+        "ticker": "RDGL",
         "code": "P",
-        "shares": 5000,
-        "price": 10.11,
+        "shares": 150000,
+        "price": 0.0386,
         "acquired": true,
         "form": "4"
       }
     },
     {
-      "id": "0002144017-26-000003:form4-11162026_111156.xml",
-      "filed": "2026-11-13",
+      "id": "0002127484-26-000025:primary_doc.xml",
+      "filed": "2026-11-19",
       "names": [
-        "Cardazzi Marco  (CIK 0002144017)",
-        "ADI GLOBAL DISTRIBUTION INC.  (CIK 0002105139)"
+        "Pittas Aristeidis P  (CIK 0002127484)",
+        "EUROSEAS LTD.  (CIK 0001341170)"
       ],
       "trade": {
-        "owner": "Cardazzi Marco",
-        "ticker": "ADIG",
+        "owner": "Pittas Aristeidis P",
+        "ticker": "ESEA",
         "code": "P",
-        "shares": 2508,
-        "price": 10,
+        "shares": 475,
+        "price": 62.08,
         "acquired": true,
         "form": "4"
       }
     },
     {
-      "id": "0002127288-26-000010:form4-11162026_111124.xml",
-      "filed": "2026-11-16",
+      "id": "0002127484-26-000024:primary_doc.xml",
+      "filed": "2026-11-19",
       "names": [
-        "Serafini John Sheldon  (CIK 0002127288)",
-        "HawkEye 360, Inc.  (CIK 0001750704)"
+        "Pittas Aristeidis P  (CIK 0002127484)",
+        "EuroDry Ltd.  (CIK 0001731388)"
       ],
       "trade": {
-        "owner": "Serafini John Sheldon",
-        "ticker": "HAWK",
+        "owner": "Pittas Aristeidis P",
+        "ticker": "EDRY",
         "code": "P",
-        "shares": 1383,
-        "price": 17.8017,
+        "shares": 500,
+        "price": 38.31,
         "acquired": true,
         "form": "4"
       }
     },
     {
-      "id": "0002127284-26-000008:form4-11162026_111142.xml",
-      "filed": "2026-11-16",
+      "id": "0002127484-26-000023:primary_doc.xml",
+      "filed": "2026-11-18",
       "names": [
-        "Searle Craig Chih-Meng  (CIK 0002127284)",
-        "HawkEye 360, Inc.  (CIK 0001750704)"
+        "Pittas Aristeidis P  (CIK 0002127484)",
+        "EUROSEAS LTD.  (CIK 0001341170)"
       ],
       "trade": {
-        "owner": "Searle Craig Chih-Meng",
-        "ticker": "HAWK",
+        "owner": "Pittas Aristeidis P",
+        "ticker": "ESEA",
         "code": "P",
-        "shares": 548,
-        "price": 18.25,
+        "shares": 250,
+        "price": 61.6633,
         "acquired": true,
         "form": "4"
       }
     },
     {
-      "id": "0002125533-26-000021:primarydocument.xml",
-      "filed": "2026-11-13",
+      "id": "0002120697-26-000006:primary_doc.xml",
+      "filed": "2026-11-20",
       "names": [
-        "Lee Tae  (CIK 0002125533)",
-        "Playtika Holding Corp.  (CIK 0001828016)"
+        "Gaivironsky Matias Ivan  (CIK 0002120697)",
+        "IRSA INVESTMENTS & REPRESENTATIONS INC  (CIK 0000933267)"
       ],
       "trade": {
-        "owner": "Lee Tae",
-        "ticker": "PLTK",
-        "code": "F",
-        "shares": 26837,
-        "price": 2.64,
-        "acquired": false,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002125336-26-000006:primarydocument.xml",
-      "filed": "2026-11-12",
-      "names": [
-        "WILSON ROBERT ALLEN  (CIK 0002125336)",
-        "Select Water Solutions, Inc.  (CIK 0001693256)"
-      ],
-      "trade": {
-        "owner": "WILSON ROBERT ALLEN",
-        "ticker": "WTTR",
-        "code": "A",
-        "shares": 12570,
-        "price": 0,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002120865-26-000009:wk-form4_1794851222.xml",
-      "filed": "2026-08-28",
-      "names": [
-        "Hoxworth Seth Alan  (CIK 0002120865)",
-        "CITIZENS, INC.  (CIK 0000024090)"
-      ],
-      "trade": {
-        "owner": "Hoxworth Seth Alan",
-        "ticker": "CIA",
-        "code": "L",
-        "shares": 127.7578,
-        "price": 3.88,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002120008-26-000008:wk-form4_1794871400.xml",
-      "filed": "2026-11-12",
-      "names": [
-        "Denny Jordan M.  (CIK 0002120008)",
-        "VALVOLINE INC  (CIK 0001674910)"
-      ],
-      "trade": {
-        "owner": "Denny Jordan M.",
-        "ticker": "VVV",
-        "code": "A",
-        "shares": 530,
+        "owner": "Gaivironsky Matias Ivan",
+        "ticker": "IRS",
+        "code": "J",
+        "shares": 15832,
         "price": null,
         "acquired": true,
         "form": "4"
       }
     },
     {
-      "id": "0002110450-26-000010:wk-form4_1794871376.xml",
-      "filed": "2026-11-12",
+      "id": "0002114032-26-000002:wk-form4_1795172790.xml",
+      "filed": "2026-11-20",
       "names": [
-        "Worsham Adam C.  (CIK 0002110450)",
-        "VALVOLINE INC  (CIK 0001674910)"
+        "Lu Lee-Chung  (CIK 0002114032)",
+        "TAIWAN SEMICONDUCTOR MANUFACTURING CO LTD  (CIK 0001046179)"
       ],
       "trade": {
-        "owner": "Worsham Adam C.",
-        "ticker": "VVV",
-        "code": "A",
-        "shares": 1588,
-        "price": null,
+        "owner": "Lu Lee-Chung",
+        "ticker": "TSM",
+        "code": "P",
+        "shares": 2000,
+        "price": 60.57,
         "acquired": true,
         "form": "4"
       }
     },
     {
-      "id": "0002109337-26-000017:primary_doc.xml",
-      "filed": "2026-11-13",
+      "id": "0002109337-26-000019:primary_doc.xml",
+      "filed": "2026-11-18",
       "names": [
         "WANG CHUN KAI  (CIK 0002109337)",
         "OBOOK HOLDINGS INC.  (CIK 0002025416)"
@@ -257,179 +138,298 @@
         "owner": "WANG CHUN KAI",
         "ticker": "OWLS",
         "code": "P",
-        "shares": 610,
-        "price": 2.2043,
+        "shares": 1120,
+        "price": 2.2344,
         "acquired": true,
         "form": "4"
       }
     },
     {
-      "id": "0002098061-26-000001:section16.xml",
-      "filed": "2026-11-15",
+      "id": "0002108307-26-000008:form4-11202026_071139.xml",
+      "filed": "2026-11-18",
       "names": [
-        "STEVENSON JON  (CIK 0002098061)",
-        "PTC INC.  (CIK 0000857005)"
+        "Arthur Kirk  (CIK 0002108307)",
+        "SOUNDTHINKING, INC.  (CIK 0001351636)"
       ],
       "trade": {
-        "owner": "STEVENSON JON",
-        "ticker": "PTC",
-        "code": "M",
-        "shares": 9693,
+        "owner": "Arthur Kirk",
+        "ticker": "SSTI",
+        "code": "U",
+        "shares": 6743,
+        "price": 8,
+        "acquired": false,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002071271-26-000021:primary_doc.xml",
+      "filed": "2026-11-19",
+      "names": [
+        "RICHERSON HERBERT ELMER  (CIK 0001252875)",
+        "WILSON BANK HOLDING CO  (CIK 0000885275)"
+      ],
+      "trade": {
+        "owner": "RICHERSON HERBERT ELMER",
+        "ticker": "NONE",
+        "code": "J",
+        "shares": 915,
+        "price": 36.92,
+        "acquired": false,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0001976408-26-000956:primary_doc.xml",
+      "filed": "2026-11-16",
+      "names": [
+        "Akkerman Michael  (CIK 0002025822)",
+        "SIMILARWEB LTD.  (CIK 0001842731)"
+      ],
+      "trade": {
+        "owner": "Akkerman Michael",
+        "ticker": "SMWB",
+        "code": "A",
+        "shares": 364964,
         "price": 0,
         "acquired": true,
         "form": "4"
       }
     },
     {
-      "id": "0002088468-26-000008:form4-11162026_041104.xml",
-      "filed": "2026-11-12",
+      "id": "0001976408-26-000955:primary_doc.xml",
+      "filed": "2026-11-18",
       "names": [
-        "Salovey Peter  (CIK 0002088468)",
-        "Legend Biotech Corp  (CIK 0001801198)"
+        "Offer Or  (CIK 0001910424)",
+        "SIMILARWEB LTD.  (CIK 0001842731)"
       ],
       "trade": {
-        "owner": "Salovey Peter",
-        "ticker": "LEGN",
+        "owner": "Offer Or",
+        "ticker": "SMWB",
+        "code": "M",
+        "shares": 13870,
+        "price": 2.71,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0001957908-26-000004:primary_doc.xml",
+      "filed": "2026-11-20",
+      "names": [
+        "Sunderland Todd  (CIK 0001957908)",
+        "NXG NextGen Infrastructure Income Fund  (CIK 0001506488)"
+      ],
+      "trade": {
+        "owner": "Sunderland Todd",
+        "ticker": "NXG",
         "code": "P",
-        "shares": 10000,
-        "price": 9.375,
+        "shares": 1000,
+        "price": 38.7,
         "acquired": true,
         "form": "4"
       }
     },
     {
-      "id": "0002080717-26-000015:wk-form4_1794863002.xml",
-      "filed": "2026-11-12",
-      "names": [
-        "Goodwin William Carroll Murphy  (CIK 0002080717)",
-        "Oklo Inc.  (CIK 0001849056)"
-      ],
-      "trade": {
-        "owner": "Goodwin William Carroll Murphy",
-        "ticker": "OKLO",
-        "code": "M",
-        "shares": 20686,
-        "price": null,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002078454-26-000023:form4-11172026_121133.xml",
-      "filed": "2026-11-12",
-      "names": [
-        "Esaka Fumihide  (CIK 0002078454)",
-        "Ambiq Micro, Inc.  (CIK 0001500412)"
-      ],
-      "trade": {
-        "owner": "Esaka Fumihide",
-        "ticker": "AMBQ",
-        "code": "M",
-        "shares": 50000,
-        "price": 12.6,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002075704-26-000044:wk-form4_1794863043.xml",
-      "filed": "2026-11-12",
-      "names": [
-        "Schubach Sarah Elizabeth  (CIK 0002075704)",
-        "DROPBOX, INC.  (CIK 0001467623)"
-      ],
-      "trade": {
-        "owner": "Schubach Sarah Elizabeth",
-        "ticker": "DBX",
-        "code": "S",
-        "shares": 2055,
-        "price": 32.95,
-        "acquired": false,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002070979-26-000298:wk-form4_1794838508.xml",
+      "id": "0001945031-26-000015:wk-form4_1795193819.xml",
       "filed": "2026-11-13",
       "names": [
-        "Fresco Gutierrez Diego  (CIK 0002085762)",
-        "StoneCo Ltd.  (CIK 0001745431)"
+        "Poillon Diane  (CIK 0001945031)",
+        "Burke & Herbert Financial Services Corp.  (CIK 0001964333)"
       ],
       "trade": {
-        "owner": "Fresco Gutierrez Diego",
-        "ticker": "STNE",
-        "code": "S",
-        "shares": 1366,
-        "price": 7.95,
+        "owner": "Poillon Diane",
+        "ticker": "BHRB",
+        "code": "P",
+        "shares": 1500,
+        "price": 70.7543,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0001917503-26-000004:wk-form4_1795189982.xml",
+      "filed": "2026-11-19",
+      "names": [
+        "Rangesh Abinand  (CIK 0001917503)",
+        "TECOGEN INC.  (CIK 0001537435)"
+      ],
+      "trade": {
+        "owner": "Rangesh Abinand",
+        "ticker": "TGEN",
+        "code": "P",
+        "shares": 1500,
+        "price": 1.75,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0001914341-26-000003:wk-form4_1795205344.xml",
+      "filed": "2026-11-19",
+      "names": [
+        "Tyson Jesse J  (CIK 0001914341)",
+        "WILLIAMS COMPANIES, INC.  (CIK 0000107263)"
+      ],
+      "trade": {
+        "owner": "Tyson Jesse J",
+        "ticker": "WMB",
+        "code": "P",
+        "shares": 72,
+        "price": 67.23,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0001911537-26-000011:primarydocument.xml",
+      "filed": "2026-11-20",
+      "names": [
+        "Weibel Paul Wesley III  (CIK 0001911537)",
+        "5E Advanced Materials, Inc.  (CIK 0001888654)"
+      ],
+      "trade": {
+        "owner": "Weibel Paul Wesley III",
+        "ticker": "FEAM",
+        "code": "P",
+        "shares": 514,
+        "price": 1.45,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0001903596-26-000440:ownership.xml",
+      "filed": "2026-11-19",
+      "names": [
+        "White Blaine Scott  (CIK 0001291662)",
+        "NEW PEOPLES BANKSHARES INC  (CIK 0001163389)"
+      ],
+      "trade": {
+        "owner": "White Blaine Scott",
+        "ticker": "NWPP",
+        "code": "P",
+        "shares": 928,
+        "price": 5.1,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0001880428-26-000004:form4-11202026_071110.xml",
+      "filed": "2026-11-18",
+      "names": [
+        "Sharma Ruby  (CIK 0001880428)",
+        "SOUNDTHINKING, INC.  (CIK 0001351636)"
+      ],
+      "trade": {
+        "owner": "Sharma Ruby",
+        "ticker": "SSTI",
+        "code": "U",
+        "shares": 20761,
+        "price": 8,
         "acquired": false,
         "form": "4"
       }
     },
     {
-      "id": "0002056949-26-000006:primarydocument.xml",
-      "filed": "2026-11-15",
+      "id": "0001872261-26-000006:wk-form4_1795174741.xml",
+      "filed": "2026-11-18",
       "names": [
-        "Forsythe Wendy  (CIK 0002056949)",
-        "AGNT, Inc.  (CIK 0001495932)"
+        "Heltebran Laura  (CIK 0001872261)",
+        "Atmus Filtration Technologies Inc.  (CIK 0001921963)"
       ],
       "trade": {
-        "owner": "Forsythe Wendy",
-        "ticker": "AGNT",
-        "code": "M",
-        "shares": 2287,
-        "price": 0,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002049662-26-000018:wk-form4_1794876039.xml",
-      "filed": "2026-11-12",
-      "names": [
-        "Duva Jason A  (CIK 0001534001)",
-        "Factorial Energy Inc.  (CIK 0002049662)"
-      ],
-      "trade": {
-        "owner": "Duva Jason A",
-        "ticker": "FAC",
+        "owner": "Heltebran Laura",
+        "ticker": "ATMU",
         "code": "A",
-        "shares": 36581,
+        "shares": 5070,
         "price": 0,
         "acquired": true,
         "form": "4"
       }
     },
     {
-      "id": "0002049662-26-000017:wk-form4_1794876034.xml",
-      "filed": "2026-11-12",
+      "id": "0001871307-26-000004:form4-11202026_071148.xml",
+      "filed": "2026-11-18",
       "names": [
-        "Scuteri Jeffrey T. Jr.  (CIK 0002140113)",
-        "Factorial Energy Inc.  (CIK 0002049662)"
+        "Jacobson Roberta S.  (CIK 0001871307)",
+        "SOUNDTHINKING, INC.  (CIK 0001351636)"
       ],
       "trade": {
-        "owner": "Scuteri Jeffrey T. Jr.",
-        "ticker": "FAC",
-        "code": "M",
-        "shares": 15000,
-        "price": 0,
+        "owner": "Jacobson Roberta S.",
+        "ticker": "SSTI",
+        "code": "U",
+        "shares": 12589,
+        "price": 8,
+        "acquired": false,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0001869941-26-000008:wk-form4_1795180884.xml",
+      "filed": "2026-11-19",
+      "names": [
+        "Beberman Perry S  (CIK 0001869941)",
+        "BREAD FINANCIAL HOLDINGS, INC.  (CIK 0001101215)"
+      ],
+      "trade": {
+        "owner": "Beberman Perry S",
+        "ticker": "BFH",
+        "code": "P",
+        "shares": 5000,
+        "price": 21.85,
         "acquired": true,
         "form": "4"
       }
     },
     {
-      "id": "0002049662-26-000016:wk-form4_1794876028.xml",
-      "filed": "2026-11-12",
+      "id": "0001867159-26-000002:form4-11202026_071102.xml",
+      "filed": "2026-11-18",
       "names": [
-        "Taylor Joseph Michael  (CIK 0002036111)",
-        "Factorial Energy Inc.  (CIK 0002049662)"
+        "Grant Deborah A  (CIK 0001867159)",
+        "SOUNDTHINKING, INC.  (CIK 0001351636)"
       ],
       "trade": {
-        "owner": "Taylor Joseph Michael",
-        "ticker": "FAC",
-        "code": "A",
-        "shares": 82950,
-        "price": 0,
-        "acquired": true,
+        "owner": "Grant Deborah A",
+        "ticker": "SSTI",
+        "code": "U",
+        "shares": 10966,
+        "price": 8,
+        "acquired": false,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0001855612-26-000162:wk-form4_1795177959.xml",
+      "filed": "2026-11-18",
+      "names": [
+        "Pierantoni John  (CIK 0001609465)",
+        "Grab Holdings Ltd  (CIK 0001855612)"
+      ],
+      "trade": {
+        "owner": "Pierantoni John",
+        "ticker": "GRAB",
+        "code": "S",
+        "shares": 28153,
+        "price": 3.1945,
+        "acquired": false,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0001850485-26-000008:wk-form4_1795188936.xml",
+      "filed": "2026-11-19",
+      "names": [
+        "Stephon Kenneth John  (CIK 0001850485)",
+        "MID PENN BANCORP INC  (CIK 0000879635)"
+      ],
+      "trade": {
+        "owner": "Stephon Kenneth John",
+        "ticker": "MPB",
+        "code": "S",
+        "shares": 1.1847,
+        "price": 34.2678,
+        "acquired": false,
         "form": "4"
       }
     }

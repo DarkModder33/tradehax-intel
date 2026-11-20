@@ -1,6 +1,6 @@
 {
   "meta": {
-    "asOf": "2026-11-20T03:41:51.165Z",
+    "asOf": "2026-11-20T20:10:36.670Z",
     "source": "SEC 13F-HR index",
     "rows": 20,
     "delay": "quarterly",
@@ -8,6 +8,69 @@
     "unavailable": false
   },
   "rows": [
+    {
+      "id": "0002085853-26-001417:primary_doc.xml",
+      "filed": "2026-09-30",
+      "names": [
+        "WNY Asset Management, LLC  (CIK 0001803296)"
+      ]
+    },
+    {
+      "id": "0002063364-26-000403:primary_doc.xml",
+      "filed": "2026-09-30",
+      "names": [
+        "Forefront Wealth Partners, LLC  (CIK 0002068112)"
+      ]
+    },
+    {
+      "id": "0002033312-26-000005:primary_doc.xml",
+      "filed": "2026-09-30",
+      "names": [
+        "Summit Wealth Partners, LLC  (CIK 0002033312)"
+      ]
+    },
+    {
+      "id": "0001942361-26-000006:primary_doc.xml",
+      "filed": "2025-09-30",
+      "names": [
+        "PhiloSmith Capital Corp  (CIK 0001942361)"
+      ]
+    },
+    {
+      "id": "0001942361-26-000005:primary_doc.xml",
+      "filed": "2025-06-30",
+      "names": [
+        "PhiloSmith Capital Corp  (CIK 0001942361)"
+      ]
+    },
+    {
+      "id": "0001765380-26-000516:primary_doc.xml",
+      "filed": "2026-09-30",
+      "names": [
+        "Stonebrook Private Inc.  (CIK 0002008738)"
+      ]
+    },
+    {
+      "id": "0001725547-26-000404:primary_doc.xml",
+      "filed": "2026-09-30",
+      "names": [
+        "Infinity Advisory Group, LLC  (CIK 0002157078)"
+      ]
+    },
+    {
+      "id": "0001398344-26-020342:primary_doc.xml",
+      "filed": "2026-09-30",
+      "names": [
+        "Innovative Asset Advisors Group, LLC  (CIK 0002127147)"
+      ]
+    },
+    {
+      "id": "0000748054-26-000009:primary_doc.xml",
+      "filed": "2026-09-30",
+      "names": [
+        "AMERICAN CENTURY COMPANIES INC  (CIK 0000748054)"
+      ]
+    },
     {
       "id": "0002153041-26-000004:primary_doc.xml",
       "filed": "2026-06-30",
@@ -83,69 +146,6 @@
       "filed": "2026-06-30",
       "names": [
         "BUSH INVESTMENT GROUP, LLC  (CIK 0001966640)"
-      ]
-    },
-    {
-      "id": "0001932342-26-000005:primary_doc.xml",
-      "filed": "2026-09-30",
-      "names": [
-        "Tradewinds, LLC.  (CIK 0001932342)"
-      ]
-    },
-    {
-      "id": "0001900110-26-000008:primary_doc.xml",
-      "filed": "2026-09-30",
-      "names": [
-        "DGS Capital Management, LLC  (CIK 0001900110)"
-      ]
-    },
-    {
-      "id": "0001900110-26-000007:primary_doc.xml",
-      "filed": "2026-06-30",
-      "names": [
-        "DGS Capital Management, LLC  (CIK 0001900110)"
-      ]
-    },
-    {
-      "id": "0001830819-26-000012:primary_doc.xml",
-      "filed": "2026-09-30",
-      "names": [
-        "Kestra Advisory Services, LLC  (CIK 0001830819)"
-      ]
-    },
-    {
-      "id": "0001807060-26-000007:primary_doc.xml",
-      "filed": "2026-09-30",
-      "names": [
-        "SHP Wealth Management  (CIK 0001807060)"
-      ]
-    },
-    {
-      "id": "0001803203-26-000004:primary_doc.xml",
-      "filed": "2026-09-30",
-      "names": [
-        "Big Sioux Wealth Management  (CIK 0001803203)"
-      ]
-    },
-    {
-      "id": "0001803203-26-000003:primary_doc.xml",
-      "filed": "2026-06-30",
-      "names": [
-        "Big Sioux Wealth Management  (CIK 0001803203)"
-      ]
-    },
-    {
-      "id": "0001803203-26-000002:primary_doc.xml",
-      "filed": "2026-03-31",
-      "names": [
-        "Big Sioux Wealth Management  (CIK 0001803203)"
-      ]
-    },
-    {
-      "id": "0001803203-26-000001:primary_doc.xml",
-      "filed": "2025-12-31",
-      "names": [
-        "Big Sioux Wealth Management  (CIK 0001803203)"
       ]
     }
   ],
