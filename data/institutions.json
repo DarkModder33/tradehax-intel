@@ -1,6 +1,6 @@
 {
   "meta": {
-    "asOf": "2026-11-20T20:10:36.670Z",
+    "asOf": "2026-11-20T21:36:21.780Z",
     "source": "SEC 13F-HR index",
     "rows": 20,
     "delay": "quarterly",
@@ -8,6 +8,13 @@
     "unavailable": false
   },
   "rows": [
+    {
+      "id": "0002085853-26-001418:primary_doc.xml",
+      "filed": "2026-09-30",
+      "names": [
+        "AssuredPartners Investment Advisors, LLC  (CIK 0002055492)"
+      ]
+    },
     {
       "id": "0002085853-26-001417:primary_doc.xml",
       "filed": "2026-09-30",
@@ -27,6 +34,34 @@
       "filed": "2026-09-30",
       "names": [
         "Summit Wealth Partners, LLC  (CIK 0002033312)"
+      ]
+    },
+    {
+      "id": "0001942361-26-000010:primary_doc.xml",
+      "filed": "2026-09-30",
+      "names": [
+        "PhiloSmith Capital Corp  (CIK 0001942361)"
+      ]
+    },
+    {
+      "id": "0001942361-26-000009:primary_doc.xml",
+      "filed": "2026-06-30",
+      "names": [
+        "PhiloSmith Capital Corp  (CIK 0001942361)"
+      ]
+    },
+    {
+      "id": "0001942361-26-000008:primary_doc.xml",
+      "filed": "2026-03-31",
+      "names": [
+        "PhiloSmith Capital Corp  (CIK 0001942361)"
+      ]
+    },
+    {
+      "id": "0001942361-26-000007:primary_doc.xml",
+      "filed": "2025-12-31",
+      "names": [
+        "PhiloSmith Capital Corp  (CIK 0001942361)"
       ]
     },
     {
@@ -65,6 +100,20 @@
       ]
     },
     {
+      "id": "0001104659-26-130609:primary_doc.xml",
+      "filed": "2026-06-30",
+      "names": [
+        "49 WEALTH MANAGEMENT, LLC  (CIK 0002022291)"
+      ]
+    },
+    {
+      "id": "0001072613-26-000921:primary_doc.xml",
+      "filed": "2026-09-30",
+      "names": [
+        "NEA Management Company, LLC  (CIK 0001512848)"
+      ]
+    },
+    {
       "id": "0000748054-26-000009:primary_doc.xml",
       "filed": "2026-09-30",
       "names": [
@@ -97,55 +146,6 @@
       "filed": "2026-06-30",
       "names": [
         "Carolina Financial Advisors, Inc  (CIK 0001910288)"
-      ]
-    },
-    {
-      "id": "0002085853-26-001412:primary_doc.xml",
-      "filed": "2026-03-31",
-      "names": [
-        "Carolina Financial Advisors, Inc  (CIK 0001910288)"
-      ]
-    },
-    {
-      "id": "0002085853-26-001411:primary_doc.xml",
-      "filed": "2025-12-31",
-      "names": [
-        "Carolina Financial Advisors, Inc  (CIK 0001910288)"
-      ]
-    },
-    {
-      "id": "0002060725-26-000008:primary_doc.xml",
-      "filed": "2026-09-30",
-      "names": [
-        "CIBRA Capital Ltd  (CIK 0002060725)"
-      ]
-    },
-    {
-      "id": "0002060725-26-000007:primary_doc.xml",
-      "filed": "2026-06-30",
-      "names": [
-        "CIBRA Capital Ltd  (CIK 0002060725)"
-      ]
-    },
-    {
-      "id": "0002000324-26-006178:primary_doc.xml",
-      "filed": "2026-09-30",
-      "names": [
-        "Advisors Asset Management, Inc.  (CIK 0001297376)"
-      ]
-    },
-    {
-      "id": "0001966640-26-000006:primary_doc.xml",
-      "filed": "2026-09-30",
-      "names": [
-        "BUSH INVESTMENT GROUP, LLC  (CIK 0001966640)"
-      ]
-    },
-    {
-      "id": "0001966640-26-000005:primary_doc.xml",
-      "filed": "2026-06-30",
-      "names": [
-        "BUSH INVESTMENT GROUP, LLC  (CIK 0001966640)"
       ]
     }
   ],
