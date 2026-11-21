@@ -1,6 +1,6 @@
 {
   "meta": {
-    "asOf": "2026-11-20T21:36:20.501Z",
+    "asOf": "2026-11-21T03:24:37.065Z",
     "source": "SEC EDGAR Form 4",
     "rows": 25,
     "delay": "hours",
@@ -94,6 +94,23 @@
       }
     },
     {
+      "id": "0002135516-26-000005:primarydocument.xml",
+      "filed": "2026-11-18",
+      "names": [
+        "Shaffer Mark E.  (CIK 0002135516)",
+        "Merchants Bancorp  (CIK 0001629019)"
+      ],
+      "trade": {
+        "owner": "Shaffer Mark E.",
+        "ticker": "MBIN",
+        "code": "A",
+        "shares": 342,
+        "price": 51.28,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
       "id": "0002131351-26-000016:form4-11202026_071123.xml",
       "filed": "2026-11-20",
       "names": [
@@ -174,6 +191,40 @@
         "code": "P",
         "shares": 100,
         "price": 45.4,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002124464-26-000015:wk-form4_1795224166.xml",
+      "filed": "2026-11-18",
+      "names": [
+        "Blankmeyer Andrea  (CIK 0002124464)",
+        "Upstart Holdings, Inc.  (CIK 0001647639)"
+      ],
+      "trade": {
+        "owner": "Blankmeyer Andrea",
+        "ticker": "UPST",
+        "code": "S",
+        "shares": 3000,
+        "price": 18.35,
+        "acquired": false,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002123861-26-000009:wk-form4_1795211235.xml",
+      "filed": "2026-11-19",
+      "names": [
+        "Martindell Clarence Addis  (CIK 0002123861)",
+        "Meridian Corp  (CIK 0001750735)"
+      ],
+      "trade": {
+        "owner": "Martindell Clarence Addis",
+        "ticker": "MRBK",
+        "code": "A",
+        "shares": 3000,
+        "price": 0,
         "acquired": true,
         "form": "4"
       }
@@ -332,6 +383,40 @@
       }
     },
     {
+      "id": "0002089362-26-000025:form4-11212026_121109.xml",
+      "filed": "2026-11-18",
+      "names": [
+        "Colis Peter George  (CIK 0002089362)",
+        "Ethos Technologies Inc.  (CIK 0001788451)"
+      ],
+      "trade": {
+        "owner": "Colis Peter George",
+        "ticker": "LIFE",
+        "code": "S",
+        "shares": 23367,
+        "price": 32.45,
+        "acquired": false,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002089263-26-000022:form4-11212026_121106.xml",
+      "filed": "2026-11-19",
+      "names": [
+        "Wang Lingke  (CIK 0002089263)",
+        "Ethos Technologies Inc.  (CIK 0001788451)"
+      ],
+      "trade": {
+        "owner": "Wang Lingke",
+        "ticker": "LIFE",
+        "code": "C",
+        "shares": 83197,
+        "price": null,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
       "id": "0002088887-26-000011:wk-form4_1795208733.xml",
       "filed": "2026-11-19",
       "names": [
@@ -344,91 +429,6 @@
         "code": "F",
         "shares": 4973,
         "price": 3.06,
-        "acquired": false,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002082930-26-000024:wk-form4_1795208411.xml",
-      "filed": "2026-11-18",
-      "names": [
-        "Rogers Chris  (CIK 0002082930)",
-        "Maplebear Inc.  (CIK 0001579091)"
-      ],
-      "trade": {
-        "owner": "Rogers Chris",
-        "ticker": "CART",
-        "code": "S",
-        "shares": 6395,
-        "price": 58.5,
-        "acquired": false,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002075704-26-000046:wk-form4_1795209320.xml",
-      "filed": "2026-11-18",
-      "names": [
-        "Schubach Sarah Elizabeth  (CIK 0002075704)",
-        "DROPBOX, INC.  (CIK 0001467623)"
-      ],
-      "trade": {
-        "owner": "Schubach Sarah Elizabeth",
-        "ticker": "DBX",
-        "code": "S",
-        "shares": 1276,
-        "price": 34.3,
-        "acquired": false,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002071271-26-000021:primary_doc.xml",
-      "filed": "2026-11-19",
-      "names": [
-        "RICHERSON HERBERT ELMER  (CIK 0001252875)",
-        "WILSON BANK HOLDING CO  (CIK 0000885275)"
-      ],
-      "trade": {
-        "owner": "RICHERSON HERBERT ELMER",
-        "ticker": "NONE",
-        "code": "J",
-        "shares": 915,
-        "price": 36.92,
-        "acquired": false,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002069480-26-000010:wk-form4_1795208537.xml",
-      "filed": "2026-11-18",
-      "names": [
-        "JUSKIE JO ANN  (CIK 0002069480)",
-        "Keysight Technologies, Inc.  (CIK 0001601046)"
-      ],
-      "trade": {
-        "owner": "JUSKIE JO ANN",
-        "ticker": "KEYS",
-        "code": "A",
-        "shares": 1326,
-        "price": 0,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002051813-26-000014:primarydocument.xml",
-      "filed": "2026-11-19",
-      "names": [
-        "DUFFY BRIAN  (CIK 0002051813)",
-        "Atlassian Corp  (CIK 0001650372)"
-      ],
-      "trade": {
-        "owner": "DUFFY BRIAN",
-        "ticker": "TEAM",
-        "code": "S",
-        "shares": 281,
-        "price": 136.0792,
         "acquired": false,
         "form": "4"
       }
