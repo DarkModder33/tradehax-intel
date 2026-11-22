@@ -555,6 +555,32 @@ export async function flowHistory() {
   }
 }
 
+export async function macro() {
+  const ids = ["DGS3MO", "DGS2", "DGS5", "DGS10", "DGS30", "T10Y2Y", "T10Y3M", "BAMLH0A0HYM2", "DFF", "CPIAUCSL", "UNRATE", "ICSA", "WALCL"];
+  const latest = {};
+  const errors = [];
+  for (const id of ids) {
+    try {
+      const response = await grab(`https://fred.stlouisfed.org/graph/fredgraph.csv?id=${id}`, { headers: { "user-agent": BROWSER } }, 20000);
+      const lines = (await response.text()).trim().split(/\r?\n/);
+      const last = lines.at(-1)?.split(",") ?? [];
+      const raw = (last[1] ?? "").trim();
+      latest[id] = raw === "." || raw === "" ? null : Number(raw);
+      if (!Number.isFinite(latest[id])) latest[id] = null;
+    } catch (error) {
+      latest[id] = null;
+      errors.push(`${id}: ${error instanceof Error ? error.message : error}`);
+    }
+  }
+  const packed = pack("FRED public CSV", Object.entries(latest).map(([id, value]) => ({ id, value })), {
+    delay: "daily",
+    note: `VIX futures CSV is unverified and is left unavailable until a file answers. ${errors.slice(0, 3).join("; ")}`.trim(),
+  });
+  packed.latest = latest;
+  packed.meta.coverage = Object.values(latest).filter((value) => value != null).length / ids.length;
+  return packed;
+}
+
 export async function earningsMoves() {
   const prior = await readPrior("earnings-moves.json");
   const rows = Array.isArray(prior?.rows) ? prior.rows : [];
@@ -577,6 +603,7 @@ export const JOBS = {
   ats,
   calendar: calendars,
   "earnings-moves": earningsMoves,
+  macro,
   "etf-flows": etfFlows,
   screener,
   universe,
