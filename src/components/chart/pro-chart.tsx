@@ -1,4 +1,5 @@
 "use client";
+import { formatDigits } from "@/lib/format";
 
 import { useEffect, useRef, useState } from "react";
 import {
@@ -220,11 +221,11 @@ export function ProChart() {
       const row = bars.find((bar) => stamp(bar.time) === param.time);
       if (!row) return;
       const index = bars.indexOf(row);
-      const bits = [`O ${row.open.toFixed(2)} H ${row.high.toFixed(2)} L ${row.low.toFixed(2)} C ${row.close.toFixed(2)} V ${Math.round(row.volume)}`];
+      const bits = [`O ${formatDigits(row.open, 2)} H ${formatDigits(row.high, 2)} L ${formatDigits(row.low, 2)} C ${formatDigits(row.close, 2)} V ${Math.round(row.volume)}`];
       for (const token of query.indicators) {
         if (token.startsWith("rsi")) {
           const value = rsi(closes, indicatorPeriod(token, 14))[index];
-          if (value != null) bits.push(`RSI ${value.toFixed(1)}`);
+          if (value != null) bits.push(`RSI ${formatDigits(value, 1)}`);
         }
       }
       setReadout(bits.join(" · "));

@@ -1,4 +1,5 @@
 "use client";
+import { formatDigits } from "@/lib/format";
 
 import { useEffect, useState } from "react";
 import { DataBadge } from "@/components/data-badge";
@@ -9,7 +10,7 @@ import { fetchChainSummary } from "@/lib/options/load-summary";
 import type { ChainSummary } from "@/lib/options/summary";
 
 function billions(value: number): string {
-  return `${value < 0 ? "−" : ""}$${Math.abs(value / 1e9).toFixed(2)}B`;
+  return `${value < 0 ? "−" : ""}$${formatDigits(Math.abs(value / 1e9), 2)}B`;
 }
 
 export function GexBoard({ initial }: { initial?: string }) {
@@ -59,12 +60,12 @@ export function GexBoard({ initial }: { initial?: string }) {
             <Level label="Net gamma / 1%" value={billions(summary.levels.netGex)} />
             <Level label="Call wall" value={summary.levels.callWall?.toString() ?? "n/a"} />
             <Level label="Put wall" value={summary.levels.putWall?.toString() ?? "n/a"} />
-            <Level label="Gamma flip" value={summary.levels.flip == null ? "n/a" : summary.levels.flip.toFixed(2)} />
+            <Level label="Gamma flip" value={summary.levels.flip == null ? "n/a" : formatDigits(summary.levels.flip, 2)} />
           </div>
           <p className="text-sm">
-            Spot {summary.spot.toFixed(2)}. Regime: {summary.levels.regime}. Magnet {summary.levels.magnet ?? "n/a"}.
-            {summary.expectedMove ? ` Expected move ${summary.expectedMove.low.toFixed(2)} to ${summary.expectedMove.high.toFixed(2)}.` : ""}
-            {summary.levels.flips.length > 1 ? ` Nearby flips ${summary.levels.flips.map((flip) => flip.toFixed(1)).join(", ")}.` : ""}
+            Spot {formatDigits(summary.spot, 2)}. Regime: {summary.levels.regime}. Magnet {summary.levels.magnet ?? "n/a"}.
+            {summary.expectedMove ? ` Expected move ${formatDigits(summary.expectedMove.low, 2)} to ${formatDigits(summary.expectedMove.high, 2)}.` : ""}
+            {summary.levels.flips.length > 1 ? ` Nearby flips ${summary.levels.flips.map((flip) => formatDigits(flip, 1)).join(", ")}.` : ""}
           </p>
           <section>
             <h2 className="mb-2 text-sm font-medium">By strike, near the spot</h2>

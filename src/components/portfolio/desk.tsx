@@ -1,4 +1,5 @@
 "use client";
+import { formatDigits } from "@/lib/format";
 
 import { useEffect, useState } from "react";
 import { DataBadge } from "@/components/data-badge";
@@ -69,7 +70,7 @@ export function PortfolioDesk() {
     };
     await save([...rows, tx]);
     setMarks((current) => ({ ...current, [symbol]: last }));
-    setNote(`${fill.label}. Filled ${qty} @ ${fill.price.toFixed(2)}. No order left this browser.`);
+    setNote(`${fill.label}. Filled ${qty} @ ${formatDigits(fill.price, 2)}. No order left this browser.`);
   };
 
   return (
@@ -96,9 +97,9 @@ export function PortfolioDesk() {
             <tr key={row.symbol} className="border-t border-border/60">
               <td className="py-1 font-mono">{row.symbol}</td>
               <td>{row.qty}</td>
-              <td>{row.cost.toFixed(2)}</td>
-              <td>{row.realized.toFixed(2)}</td>
-              <td>{marks[row.symbol] == null ? "—" : marks[row.symbol].toFixed(2)}</td>
+              <td>{formatDigits(row.cost, 2)}</td>
+              <td>{formatDigits(row.realized, 2)}</td>
+              <td>{marks[row.symbol] == null ? "—" : formatDigits(marks[row.symbol], 2)}</td>
             </tr>
           ))}
         </tbody>
@@ -178,7 +179,7 @@ export function PortfolioDesk() {
           const b = beta(asset, market);
           const vol = annualizedVol(asset);
           const dd = maxDrawdown(closes.map((bar) => bar.close));
-          setRiskText(`${first} beta to SPY ${b == null ? "n/a" : b.toFixed(2)}, vol ${vol == null ? "n/a" : `${(vol * 100).toFixed(1)}%`}, max drawdown ${dd == null ? "n/a" : `${(dd * 100).toFixed(1)}%`}.`);
+          setRiskText(`${first} beta to SPY ${b == null ? "n/a" : formatDigits(b, 2)}, vol ${vol == null ? "n/a" : `${formatDigits((vol * 100), 1)}%`}, max drawdown ${dd == null ? "n/a" : `${formatDigits((dd * 100), 1)}%`}.`);
         }}>Risk</button>
       </div>
       <p className="text-sm text-muted-foreground">{riskText}</p>

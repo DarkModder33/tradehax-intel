@@ -1,4 +1,5 @@
 "use client";
+import { formatDigits } from "@/lib/format";
 
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
@@ -28,7 +29,7 @@ export function EarningsCompare() {
             const last = closes.at(-1)?.date ?? "";
             const realized = realizedMove(closes, last, 1);
             setText(
-              `Current straddle ${implied ? `±${(implied.percent * 100).toFixed(2)}% into ${implied.expiry}` : "unavailable"}. The last daily close-to-close move was ${realized == null ? "n/a" : `${(realized * 100).toFixed(2)}%`}. That is not the move on a past earnings date. Historical implied moves need a chain stored on each report date, and this build does not have those chains.`,
+              `Current straddle ${implied ? `±${formatDigits((implied.percent * 100), 2)}% into ${implied.expiry}` : "unavailable"}. The last daily close-to-close move was ${realized == null ? "n/a" : `${formatDigits((realized * 100), 2)}%`}. That is not the move on a past earnings date. Historical implied moves need a chain stored on each report date, and this build does not have those chains.`,
             );
           })().catch((err: unknown) => setError(err instanceof Error ? err.message : "Could not compare."));
         }}

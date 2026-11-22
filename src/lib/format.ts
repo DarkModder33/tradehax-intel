@@ -12,9 +12,54 @@ export function formatPrice(price: number): string {
 }
 
 export function formatChange(percent: number | null): string {
-  if (percent == null || !Number.isFinite(percent)) return "n/a";
-  const sign = percent > 0 ? "+" : "";
-  return `${sign}${percent.toFixed(2)}%`;
+  return formatSignedPercent(percent, 2);
+}
+
+/** Fixed digits. Components call this instead of `toFixed`. */
+export function formatDigits(value: number | null | undefined, digits = 2): string {
+  if (value == null || !Number.isFinite(value)) return "n/a";
+  return value.toFixed(digits);
+}
+
+/** `$1.24M`, `12.3K`, or a plain price when the value is small. */
+export function formatCompact(value: number | null | undefined, withDollar = true): string {
+  if (value == null || !Number.isFinite(value)) return "n/a";
+  const sign = value < 0 ? "-" : "";
+  const abs = Math.abs(value);
+  const prefix = withDollar ? "$" : "";
+  if (abs >= 1_000_000_000) return `${sign}${prefix}${(abs / 1_000_000_000).toFixed(2)}B`;
+  if (abs >= 1_000_000) return `${sign}${prefix}${(abs / 1_000_000).toFixed(2)}M`;
+  if (abs >= 1_000) return `${sign}${prefix}${(abs / 1_000).toFixed(1)}K`;
+  return `${sign}${prefix}${abs.toFixed(abs >= 100 ? 0 : 2)}`;
+}
+
+/** A ratio such as 0.123 becomes `+12.3%`. `points` means the value is already in percent. */
+export function formatSignedPercent(value: number | null | undefined, digits = 1, points = false): string {
+  if (value == null || !Number.isFinite(value)) return "n/a";
+  const shown = points ? value : value * 100;
+  const sign = shown > 0 ? "+" : "";
+  return `${sign}${shown.toFixed(digits)}%`;
+}
+
+/** `NVDA 12/18 200C` from an OCC symbol. Returns the input when it does not parse. */
+export function formatOcc(symbol: string): string {
+  const match = symbol.trim().toUpperCase().match(/^([A-Z]{1,6})(\d{2})(\d{2})(\d{2})([CP])(\d{8})$/);
+  if (!match) return symbol;
+  const [, root, , month, day, right, strike] = match;
+  const price = Number(strike) / 1000;
+  const shown = Number.isInteger(price) ? String(price) : String(price);
+  return `${root} ${month}/${day} ${shown}${right}`;
+}
+
+/** `4:00 PM ET`. */
+export function formatEtClock(ms: number): string {
+  if (!ms) return "n/a";
+  const clock = new Intl.DateTimeFormat("en-US", {
+    timeZone: "America/New_York",
+    hour: "numeric",
+    minute: "2-digit",
+  }).format(new Date(ms));
+  return `${clock} ET`;
 }
 
 export function formatEt(ms: number): string {

@@ -1,4 +1,5 @@
 "use client";
+import { formatDigits } from "@/lib/format";
 
 import { useEffect, useState } from "react";
 import { DataBadge } from "@/components/data-badge";
@@ -65,7 +66,7 @@ export function ShortsBoard() {
       {rows && rows.length > 0 ? (
         <>
           <p className="text-sm">
-            Short volume ratio {(total > 0 ? (totalShort / total) * 100 : 0).toFixed(1)}% of FINRA-reported volume. This is not short interest, and borrow fee is n/a.
+            Short volume ratio {formatDigits((total > 0 ? (totalShort / total) * 100 : 0), 1)}% of FINRA-reported volume. This is not short interest, and borrow fee is n/a.
           </p>
           <table className="w-full text-sm">
             <thead className="text-xs text-muted-foreground">
@@ -82,7 +83,7 @@ export function ShortsBoard() {
                   <td className="py-1">{row.market || "all"}</td>
                   <td className="text-right font-mono">{row.shortVolume.toLocaleString("en-US")}</td>
                   <td className="text-right font-mono">{row.totalVolume.toLocaleString("en-US")}</td>
-                  <td className="text-right font-mono">{shortVolumeRatio(row) == null ? "n/a" : `${((shortVolumeRatio(row) ?? 0) * 100).toFixed(1)}%`}</td>
+                  <td className="text-right font-mono">{shortVolumeRatio(row) == null ? "n/a" : `${formatDigits(((shortVolumeRatio(row) ?? 0) * 100), 1)}%`}</td>
                 </tr>
               ))}
             </tbody>

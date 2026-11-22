@@ -1,6 +1,6 @@
 "use client";
 
-import { formatPrice } from "@/lib/format";
+import { formatDigits, formatPrice } from "@/lib/format";
 import {
   aggregateGreeks,
   bookValue,
@@ -46,8 +46,8 @@ export function StrategySummary({ legs, hedge, spot, asOf, ivShift }: { legs: St
       <Stat label={debit >= 0 ? "Net debit" : "Net credit"} value={formatPrice(Math.abs(debit))} />
       <Stat label="Max profit" value={money(bounds.maxProfit, bounds.unboundedProfit)} />
       <Stat label="Max loss" value={money(bounds.maxLoss, bounds.unboundedLoss, true)} />
-      <Stat label="Breakevens" value={crossings.length ? crossings.map((item) => item.toFixed(2)).join(", ") : "n/a"} />
-      <Stat label="POP, model, risk-neutral" value={pop == null ? "n/a" : `${(pop * 100).toFixed(1)}%`} />
+      <Stat label="Breakevens" value={crossings.length ? crossings.map((item) => formatDigits(item, 2)).join(", ") : "n/a"} />
+      <Stat label="POP, model, risk-neutral" value={pop == null ? "n/a" : `${formatDigits((pop * 100), 1)}%`} />
       <Stat label="Expected value" value={value == null ? "n/a" : formatPrice(value)} />
       <Stat label="Delta $" value={formatPrice(greeks.delta)} />
       <Stat label="Gamma $ / 1%" value={formatPrice(greeks.gamma)} />

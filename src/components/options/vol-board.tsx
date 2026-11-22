@@ -1,4 +1,5 @@
 "use client";
+import { formatDigits } from "@/lib/format";
 
 import { useEffect, useState } from "react";
 import { DataBadge } from "@/components/data-badge";
@@ -67,9 +68,9 @@ export function VolBoard() {
         <>
           <DataBadge source={chain.source} asOf={chain.asOf} delay={chain.delay} />
           <p className="text-sm">
-            IV30 {iv30 == null ? "n/a" : `${(iv30 * 100).toFixed(1)}%`}. HV20 {hv == null ? "n/a" : `${(hv * 100).toFixed(1)}%`}. VRP {vrp == null ? "n/a" : `${(vrp * 100).toFixed(1)} pts`}.
-            IV rank {rankLabel(ivSeries)}. Percentile {ivPercentile(ivSeries) == null ? "building" : `${((ivPercentile(ivSeries) ?? 0) * 100).toFixed(0)}`}.
-            Term slope {slope == null ? "n/a" : `${(slope * 100).toFixed(1)} pts`}. 25Δ skew {expiry && skew25(chain.contracts, expiry) != null ? (skew25(chain.contracts, expiry)! * 100).toFixed(2) : "n/a"}.
+            IV30 {iv30 == null ? "n/a" : `${formatDigits((iv30 * 100), 1)}%`}. HV20 {hv == null ? "n/a" : `${formatDigits((hv * 100), 1)}%`}. VRP {vrp == null ? "n/a" : `${formatDigits((vrp * 100), 1)} pts`}.
+            IV rank {rankLabel(ivSeries)}. Percentile {ivPercentile(ivSeries) == null ? "building" : `${formatDigits(((ivPercentile(ivSeries) ?? 0) * 100), 0)}`}.
+            Term slope {slope == null ? "n/a" : `${formatDigits((slope * 100), 1)} pts`}. 25Δ skew {expiry && skew25(chain.contracts, expiry) != null ? formatDigits((skew25(chain.contracts, expiry)! * 100), 2) : "n/a"}.
           </p>
           <p className="text-[11px] text-muted-foreground">Rank and percentile stay on “building” until 20 nightly sessions are stored. Stored points for {symbol}: {series.length}. {ivRank(ivSeries) == null ? "No rank is shown from a short or flat history." : ""}</p>
           <section>
@@ -80,9 +81,9 @@ export function VolBoard() {
                 return (
                   <li key={point.expiry} className="rounded-xl bg-card/80 px-3 py-2 text-sm ring-1 ring-foreground/10">
                     <p className="font-mono">{point.expiry}</p>
-                    <p>ATM IV {point.iv == null ? "n/a" : `${(point.iv * 100).toFixed(1)}%`}</p>
-                    <p>Expected move {move ? `±${(move.percent * 100).toFixed(2)}%` : "n/a"}</p>
-                    <p className="text-xs text-muted-foreground">25Δ skew {skew25(chain.contracts, point.expiry) == null ? "n/a" : (skew25(chain.contracts, point.expiry)! * 100).toFixed(2)}</p>
+                    <p>ATM IV {point.iv == null ? "n/a" : `${formatDigits((point.iv * 100), 1)}%`}</p>
+                    <p>Expected move {move ? `±${formatDigits((move.percent * 100), 2)}%` : "n/a"}</p>
+                    <p className="text-xs text-muted-foreground">25Δ skew {skew25(chain.contracts, point.expiry) == null ? "n/a" : formatDigits((skew25(chain.contracts, point.expiry)! * 100), 2)}</p>
                   </li>
                 );
               })}
@@ -92,7 +93,7 @@ export function VolBoard() {
             <h2 className="mb-2 text-sm font-medium">Smile, nearest expiry</h2>
             <div className="flex h-28 items-end gap-1">
               {points.map((point) => (
-                <div key={`${point.strike}-${point.delta}`} className="flex-1 rounded-t bg-gold/80" style={{ height: `${Math.min(100, point.iv * 200)}%` }} title={`${point.strike} ${(point.iv * 100).toFixed(1)}%`} />
+                <div key={`${point.strike}-${point.delta}`} className="flex-1 rounded-t bg-gold/80" style={{ height: `${Math.min(100, point.iv * 200)}%` }} title={`${point.strike} ${formatDigits((point.iv * 100), 1)}%`} />
               ))}
             </div>
           </section>
@@ -102,10 +103,10 @@ export function VolBoard() {
               <tbody>
                 {[0.9, 0.95, 1, 1.05, 1.1].map((moneyness) => (
                   <tr key={moneyness}>
-                    <td className="pr-2 font-mono">{moneyness.toFixed(2)}</td>
+                    <td className="pr-2 font-mono">{formatDigits(moneyness, 2)}</td>
                     {term.slice(0, 6).map((point) => {
                       const cell = surface.find((item) => item.expiry === point.expiry && item.moneyness === moneyness);
-                      return <td key={point.expiry} className="px-2 py-1">{cell ? `${(cell.iv * 100).toFixed(0)}` : "—"}</td>;
+                      return <td key={point.expiry} className="px-2 py-1">{cell ? `${formatDigits((cell.iv * 100), 0)}` : "—"}</td>;
                     })}
                   </tr>
                 ))}

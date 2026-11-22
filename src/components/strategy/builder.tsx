@@ -1,4 +1,5 @@
 "use client";
+import { formatDigits } from "@/lib/format";
 
 import { useEffect, useMemo, useState } from "react";
 import { DataBadge } from "@/components/data-badge";
@@ -84,11 +85,11 @@ export function StrategyBuilder() {
       <ul className="text-sm">
         {priced.map((leg, index) => (
           <li key={`${leg.symbol ?? leg.strike}-${index}`} className="flex items-center justify-between gap-2 border-t border-border/50 py-1">
-            <span>{leg.side > 0 ? "Buy" : "Sell"} {leg.quantity} {leg.expiry} {leg.strike} {leg.right} @ {leg.premium.toFixed(2)} {leg.symbol ? `(${leg.symbol})` : ""}</span>
+            <span>{leg.side > 0 ? "Buy" : "Sell"} {leg.quantity} {leg.expiry} {leg.strike} {leg.right} @ {formatDigits(leg.premium, 2)} {leg.symbol ? `(${leg.symbol})` : ""}</span>
             <button type="button" className="text-xs text-muted-foreground" onClick={() => setLegs((current) => current.filter((_, item) => item !== index))}>Remove</button>
           </li>
         ))}
-        {hedge ? <li>Stock {hedge.shares} shares from {hedge.entry.toFixed(2)}</li> : null}
+        {hedge ? <li>Stock {hedge.shares} shares from {formatDigits(hedge.entry, 2)}</li> : null}
       </ul>
       <div className="flex flex-wrap items-center gap-3 text-xs">
         <label>IV shift {shift > 0 ? "+" : ""}{shift} vol pts

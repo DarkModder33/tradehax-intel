@@ -1,3 +1,4 @@
+import { formatDigits } from "@/lib/format";
 export function TideLines({ points }: { points: { call: number; put: number; net: number }[] }) {
   if (points.length < 2) return <p className="text-sm text-muted-foreground">Not enough prints for a line yet.</p>;
   const values = points.flatMap((point) => [point.call, point.put, point.net]);
@@ -9,7 +10,7 @@ export function TideLines({ points }: { points: { call: number; put: number; net
       .map((point, index) => {
         const x = (index / (points.length - 1)) * 100;
         const y = 40 - ((pick(point) - min) / span) * 36;
-        return `${index === 0 ? "M" : "L"}${x.toFixed(2)} ${y.toFixed(2)}`;
+        return `${index === 0 ? "M" : "L"}${formatDigits(x, 2)} ${formatDigits(y, 2)}`;
       })
       .join(" ");
   return (

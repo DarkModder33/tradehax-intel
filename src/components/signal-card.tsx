@@ -1,6 +1,6 @@
 import { describeAgreement } from "@/lib/indicators/agreement";
 import { TIMEFRAME_LABEL, type Direction, type Factor, type Signal } from "@/lib/indicators/types";
-import { directionClass, directionLabel, formatChange, formatPrice } from "@/lib/format";
+import { formatDigits, directionClass, directionLabel, formatChange, formatPrice } from "@/lib/format";
 import type { Quote } from "@/lib/market/types";
 import { Card, CardContent } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
@@ -16,7 +16,7 @@ function Sparkline({ values, direction }: { values: number[]; direction: Directi
     .map((value, index) => {
       const x = (index / (values.length - 1)) * width;
       const y = height - ((value - min) / span) * (height - 4) - 2;
-      return `${index === 0 ? "M" : "L"}${x.toFixed(1)} ${y.toFixed(1)}`;
+      return `${index === 0 ? "M" : "L"}${formatDigits(x, 1)} ${formatDigits(y, 1)}`;
     })
     .join(" ");
   const stroke =

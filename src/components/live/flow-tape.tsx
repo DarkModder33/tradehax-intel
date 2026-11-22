@@ -4,15 +4,15 @@ import { useMemo, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { StatusPill } from "@/components/live/status-pill";
 import { useWorkerFeed } from "@/components/live/use-worker-feed";
-import { formatEt } from "@/lib/format";
+import { formatDigits, formatEt } from "@/lib/format";
 import { OPEN_FILTER, daysToExpiry, passesTapeFilter, type TapeFilter } from "@/lib/flow/tape";
 
 function money(value: number): string {
   const abs = Math.abs(value);
   const sign = value < 0 ? "−" : "";
-  if (abs >= 1_000_000) return `${sign}$${(abs / 1_000_000).toFixed(2)}M`;
-  if (abs >= 1_000) return `${sign}$${(abs / 1_000).toFixed(1)}k`;
-  return `${sign}$${abs.toFixed(0)}`;
+  if (abs >= 1_000_000) return `${sign}$${formatDigits((abs / 1_000_000), 2)}M`;
+  if (abs >= 1_000) return `${sign}$${formatDigits((abs / 1_000), 1)}k`;
+  return `${sign}$${formatDigits(abs, 0)}`;
 }
 
 export function FlowTape() {

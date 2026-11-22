@@ -9,7 +9,7 @@ import { NEUTRAL_NET, SCORE_BLEND } from "@/lib/indicators/score";
 import { cellKey } from "@/lib/engine/study";
 import { journalLine } from "@/lib/journal";
 import { regimeNote, SYMBOL_SECTOR } from "@/lib/market/context";
-import { formatAge, formatEt } from "@/lib/format";
+import { formatDigits, formatAge, formatEt } from "@/lib/format";
 import { usEquitySession } from "@/lib/market/session";
 import { MAX_SYMBOLS, sanitizeSymbols } from "@/lib/market/symbols";
 import { Badge } from "@/components/ui/badge";
@@ -357,7 +357,7 @@ function noteFor(
   const sector = SYMBOL_SECTOR[symbol];
   const row = data.context?.sectors.find((item) => item.symbol === sector);
   if (!row) return base;
-  const excess = `${row.excessVsSpy >= 0 ? "+" : ""}${(row.excessVsSpy * 100).toFixed(1)}% vs SPY over 20 days`;
+  const excess = `${row.excessVsSpy >= 0 ? "+" : ""}${formatDigits((row.excessVsSpy * 100), 1)}% vs SPY over 20 days`;
   const sectorLine = `${row.name} is ${excess}.`;
   return base ? `${base} ${sectorLine}` : sectorLine;
 }
@@ -383,15 +383,15 @@ function DataHealthPanel({ data }: { data: NonNullable<ReturnType<typeof useDash
       ) : null}
       {leaders.length > 0 ? (
         <p className="mt-1 text-muted-foreground">
-          Strongest vs SPY: {leaders.map((item) => `${item.name} ${(item.excessVsSpy * 100).toFixed(1)}%`).join(", ")}
-          {laggard ? `. Softest: ${laggard.name} ${(laggard.excessVsSpy * 100).toFixed(1)}%` : ""}.
+          Strongest vs SPY: {leaders.map((item) => `${item.name} ${formatDigits((item.excessVsSpy * 100), 1)}%`).join(", ")}
+          {laggard ? `. Softest: ${laggard.name} ${formatDigits((laggard.excessVsSpy * 100), 1)}%` : ""}.
         </p>
       ) : null}
       {context && context.crypto.length > 0 ? (
         <p className="mt-1 font-mono text-xs text-muted-foreground">
           {context.crypto
             .map((coin) => {
-              const change = coin.change24h == null ? "" : ` ${coin.change24h >= 0 ? "+" : ""}${coin.change24h.toFixed(1)}% 24h`;
+              const change = coin.change24h == null ? "" : ` ${coin.change24h >= 0 ? "+" : ""}${formatDigits(coin.change24h, 1)}% 24h`;
               return `${coin.label} $${coin.usd.toLocaleString("en-US", { maximumFractionDigits: 0 })}${change}`;
             })
             .join(" · ")}
@@ -400,9 +400,9 @@ function DataHealthPanel({ data }: { data: NonNullable<ReturnType<typeof useDash
       ) : null}
       <p className="mt-1 text-xs text-muted-foreground">{context?.earnings.detail ?? "Earnings dates: not checked."}</p>
       <p className="mt-2 text-xs text-muted-foreground">
-        Track record: {data.track.trials} configurations tried. Deflated Sharpe probability {data.track.deflatedSharpe.toFixed(2)}. Logistic combiner {data.track.adopted ? "adopted" : "not adopted"}. {data.track.reason}
+        Track record: {data.track.trials} configurations tried. Deflated Sharpe probability {formatDigits(data.track.deflatedSharpe, 2)}. Logistic combiner {data.track.adopted ? "adopted" : "not adopted"}. {data.track.reason}
         {data.track.modelLogLoss != null && data.track.baseLogLoss != null && data.track.legacyLogLoss != null
-          ? ` Out-of-sample log-loss ${data.track.modelLogLoss.toFixed(3)} versus base ${data.track.baseLogLoss.toFixed(3)} and legacy ${data.track.legacyLogLoss.toFixed(3)}.`
+          ? ` Out-of-sample log-loss ${formatDigits(data.track.modelLogLoss, 3)} versus base ${formatDigits(data.track.baseLogLoss, 3)} and legacy ${formatDigits(data.track.legacyLogLoss, 3)}.`
           : ""}
       </p>
     </section>

@@ -1,4 +1,5 @@
 "use client";
+import { formatDigits } from "@/lib/format";
 
 import { useWorkerFeed } from "@/components/live/use-worker-feed";
 
@@ -12,7 +13,7 @@ export function FlowTicker() {
       {rows.length === 0 ? <span className="text-muted-foreground">Waiting for prints</span> : null}
       {rows.map((print) => (
         <span key={`${print.contract}-${print.time}`} className={print.sentiment === "bullish" ? "shrink-0 text-bullish" : print.sentiment === "bearish" ? "shrink-0 text-bearish" : "shrink-0"}>
-          {print.root} {print.right === "call" ? "C" : "P"} {print.strike} {print.side} ${(print.premium / 1000).toFixed(0)}k
+          {print.root} {print.right === "call" ? "C" : "P"} {print.strike} {print.side} ${formatDigits((print.premium / 1000), 0)}k
         </span>
       ))}
     </div>

@@ -15,7 +15,7 @@ import { maxPain } from "@/lib/options/maxpain";
 import { termStructure } from "@/lib/options/iv";
 import { datasetUrl } from "@/lib/sources/manifest";
 import { workerUrl } from "@/lib/live/worker";
-import { formatEt, formatPrice } from "@/lib/format";
+import { formatDigits, formatEt, formatPrice } from "@/lib/format";
 import type { FlowPrint } from "@/lib/flow/classify";
 
 export function TickerOverview() {
@@ -60,12 +60,12 @@ export function TickerOverview() {
         if (stopped) return;
         const book = buildExposure(chain, new Date());
         const front = chain.contracts.map((contract) => contract.expiry).sort()[0];
-        setGamma(`${book.levels.regime}. Net ${(book.levels.netGex / 1e9).toFixed(2)}B per 1%. Call wall ${book.levels.callWall ?? "n/a"}, put wall ${book.levels.putWall ?? "n/a"}.`);
+        setGamma(`${book.levels.regime}. Net ${formatDigits((book.levels.netGex / 1e9), 2)}B per 1%. Call wall ${book.levels.callWall ?? "n/a"}, put wall ${book.levels.putWall ?? "n/a"}.`);
         setPain(front ? `${maxPain(chain.contracts.filter((contract) => contract.expiry === front)) ?? "n/a"} on ${front}` : "n/a");
         const em = front ? expectedMove(chain.contracts, chain.spot, front) : null;
-        setMove(em ? `±${(em.percent * 100).toFixed(2)}% into ${em.expiry}` : "n/a");
+        setMove(em ? `±${formatDigits((em.percent * 100), 2)}% into ${em.expiry}` : "n/a");
         const iv = termStructure(chain.contracts, chain.spot, new Date()).find((point) => point.iv != null);
-        setTerm(iv?.iv != null ? `Nearest ATM IV ${(iv.iv * 100).toFixed(1)}%. Rank needs 252 stored sessions; history is still building.` : "IV term unavailable");
+        setTerm(iv?.iv != null ? `Nearest ATM IV ${formatDigits((iv.iv * 100), 1)}%. Rank needs 252 stored sessions; history is still building.` : "IV term unavailable");
       } catch {
         if (!stopped) setGamma("Chain unavailable.");
       }
@@ -78,7 +78,7 @@ export function TickerOverview() {
         if (stopped) return;
         setPrints(flow.prints ?? []);
         const tide = netflow.tide;
-        setNet(tide ? `Net call $${(tide.netCallPremium / 1e6).toFixed(2)}M, net put $${(tide.netPutPremium / 1e6).toFixed(2)}M. NOPE ${netflow.nope == null ? "n/a" : Number(netflow.nope).toFixed(3)}.` : "Net flow unavailable.");
+        setNet(tide ? `Net call $${formatDigits((tide.netCallPremium / 1e6), 2)}M, net put $${formatDigits((tide.netPutPremium / 1e6), 2)}M. NOPE ${netflow.nope == null ? "n/a" : formatDigits(Number(netflow.nope), 3)}.` : "Net flow unavailable.");
         const rows = offex.prints ?? [];
         setLevels(rows.length ? `${rows.length} recent off-exchange prints. Largest $${Math.round(Math.max(...rows.map((row: { notional: number }) => row.notional)) / 1000)}k.` : "No off-exchange prints for this name in the worker window.");
       } catch {
@@ -155,7 +155,7 @@ function Spark({ values }: { values: number[] }) {
   const d = values.map((value, index) => {
     const x = (index / (values.length - 1)) * 100;
     const y = 28 - ((value - min) / span) * 24;
-    return `${index === 0 ? "M" : "L"}${x.toFixed(1)} ${y.toFixed(1)}`;
+    return `${index === 0 ? "M" : "L"}${formatDigits(x, 1)} ${formatDigits(y, 1)}`;
   }).join(" ");
   return <svg viewBox="0 0 100 28" className="h-16 w-full" aria-hidden="true"><path d={d} fill="none" stroke="var(--gold)" strokeWidth="1.2" /></svg>;
 }
