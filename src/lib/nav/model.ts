@@ -16,6 +16,7 @@ export const NAV_GROUPS: NavGroup[] = [
     items: [
       { href: "/chart/", label: "Chart" },
       { href: "/backtest/", label: "Backtest" },
+      { href: "/rotation/", label: "Rotation" },
       { href: "/seasonality/", label: "Seasonality" },
       { href: "/markets/", label: "Markets" },
     ],
