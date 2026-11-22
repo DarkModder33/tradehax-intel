@@ -1,4 +1,5 @@
 "use client";
+import { formatDigits } from "@/lib/format";
 
 import { useState } from "react";
 import { DataBadge } from "@/components/data-badge";
@@ -35,11 +36,11 @@ export function HotBoard() {
                     <td className="px-2 py-1 text-left font-mono">{contract.right === "call" ? "Call" : "Put"}</td>
                     <td className="px-2 py-1 text-right">{contract.expiry}</td>
                     <td className="px-2 py-1 text-right font-mono">{contract.strike}</td>
-                    <td className="px-2 py-1 text-right">{contract.volume.toFixed(0)}</td>
-                    <td className="px-2 py-1 text-right">{contract.openInterest.toFixed(0)}</td>
+                    <td className="px-2 py-1 text-right">{formatDigits(contract.volume, 0)}</td>
+                    <td className="px-2 py-1 text-right">{formatDigits(contract.openInterest, 0)}</td>
                     <td className="px-2 py-1 text-right">${Math.round(contractPremium(contract)).toLocaleString("en-US")}</td>
-                    <td className="px-2 py-1 text-right">{(contract.iv * 100).toFixed(1)}%</td>
-                    <td className="px-2 py-1 text-right">{contract.delta.toFixed(2)}</td>
+                    <td className="px-2 py-1 text-right">{formatDigits((contract.iv * 100), 1)}%</td>
+                    <td className="px-2 py-1 text-right">{formatDigits(contract.delta, 2)}</td>
                   </tr>
                 ))}
               </tbody>

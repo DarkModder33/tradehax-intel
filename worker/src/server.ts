@@ -9,6 +9,9 @@ import { alpacaConfigured } from "./alpaca.ts";
 import { history, state } from "./store.ts";
 import { SYMBOLS, startPollers } from "./poller.ts";
 import { barsPayload, chainPayload, newsPayload, summaryPayload, technicalsPayload } from "./market.ts";
+import { cacheControl, isHeavy, rateLimit } from "./guard.ts";
+import { unusualScore } from "../../src/lib/flow/score.ts";
+import { optionBarsUrl } from "./alpaca.ts";
 
 const port = Number(process.env.PORT ?? 8787);
 const origins = (process.env.ALLOWED_ORIGIN ?? "https://tradehaxai.tech,https://www.tradehaxai.tech,https://darkmodder33.github.io")
@@ -33,8 +36,10 @@ function corsHeaders(requestOrigin: string | undefined): Record<string, string> 
   return { "access-control-allow-origin": allow, "access-control-allow-methods": "GET, OPTIONS", vary: "Origin" };
 }
 
-function json(res: http.ServerResponse, status: number, body: unknown, cors: Record<string, string>) {
-  res.writeHead(status, { "content-type": "application/json", "cache-control": "no-store", ...cors });
+const hitsByIp = new Map<string, number[]>();
+
+function json(res: http.ServerResponse, status: number, body: unknown, cors: Record<string, string>, path = "/") {
+  res.writeHead(status, { "content-type": "application/json", "cache-control": cacheControl(path), ...cors });
   res.end(JSON.stringify(body));
 }
 
@@ -52,13 +57,62 @@ function filterPrints(url: URL, prints: FlowPrint[]): FlowPrint[] {
     if (flag && !print.flags.includes(flag)) continue;
     out.push(print);
   }
-  return out;
+  return withScores(out);
 }
 
-export async function handle(url: URL, res: http.ServerResponse, requestOrigin?: string) {
+function withScores(prints: FlowPrint[]): FlowPrint[] {
+  const premiums = prints.map((print) => print.premium).sort((a, b) => a - b);
+  const median = premiums.length ? premiums[Math.floor(premiums.length / 2)] : 0;
+  return prints.map((print) => {
+    const scored = unusualScore({
+      premium: print.premium,
+      medianPremium: median,
+      volume: print.size,
+      openInterest: 0,
+      askSide: print.side === "ASK",
+      sweep: print.flags.includes("sweep"),
+      otmFraction: 0,
+      dte: 15,
+      repeats: 0,
+      daysToEarnings: null,
+    }, premiums.length);
+    return { ...print, score: scored.score, scoreStatus: scored.status };
+  });
+}
+
+export async function handle(url: URL, res: http.ServerResponse, requestOrigin?: string, ip = "local") {
   const cors = corsHeaders(requestOrigin);
   const path = url.pathname.replace(/\/+$/, "") || "/";
+  if (isHeavy(path)) {
+    const decision = rateLimit(hitsByIp.get(ip) ?? [], Date.now());
+    hitsByIp.set(ip, decision.next);
+    if (!decision.allowed) {
+      json(res, 429, { error: "rate limit", limit: "60/min" }, cors, path);
+      return;
+    }
+  }
   const live = noteLive();
+  if (path === "/v1/push/key") {
+    const publicKey = process.env.VAPID_PUBLIC;
+    const enabled = Boolean(publicKey && process.env.VAPID_PRIVATE && process.env.VAPID_SUBJECT && process.env.CF_ACCOUNT_ID && process.env.CF_KV_NAMESPACE_ID && process.env.CF_API_TOKEN);
+    json(res, 200, { enabled, publicKey: enabled ? publicKey : null, note: enabled ? "Push is configured." : "Push is coming soon. Set VAPID_PUBLIC, VAPID_PRIVATE, VAPID_SUBJECT, CF_ACCOUNT_ID, CF_KV_NAMESPACE_ID, and CF_API_TOKEN on the worker. Do not commit them." }, cors, path);
+    return;
+  }
+  if (path.startsWith("/v1/optbars/")) {
+    const occ = decodeURIComponent(path.slice("/v1/optbars/".length)).toUpperCase();
+    if (!alpacaConfigured()) {
+      json(res, 503, { error: "alpaca not configured", source: "unavailable", bars: [] }, cors, path);
+      return;
+    }
+    try {
+      const payload = await fetch(optionBarsUrl(occ), { headers: { "APCA-API-KEY-ID": process.env.ALPACA_KEY_ID ?? "", "APCA-API-SECRET-KEY": process.env.ALPACA_SECRET ?? "" } });
+      const body = await payload.json();
+      json(res, payload.ok ? 200 : payload.status, { source: "Alpaca option bars", delay: "about 15 min", body }, cors, path);
+    } catch (error) {
+      json(res, 502, { error: error instanceof Error ? error.message : "optbars failed", source: "unavailable" }, cors, path);
+    }
+    return;
+  }
   if (path.startsWith("/v1/bars/")) {
     const symbol = decodeURIComponent(path.slice("/v1/bars/".length));
     const result = await barsPayload(symbol, url.searchParams.get("tf"), url.searchParams.get("limit"));
@@ -194,7 +248,9 @@ const server = http.createServer((req, res) => {
     res.end();
     return;
   }
-  void handle(new URL(req.url ?? "/", "http://localhost"), res, requestOrigin).catch((error) => {
+  const forwarded = req.headers["x-forwarded-for"];
+  const ip = (Array.isArray(forwarded) ? forwarded[0] : forwarded)?.split(",")[0]?.trim() || req.socket.remoteAddress || "local";
+  void handle(new URL(req.url ?? "/", "http://localhost"), res, requestOrigin, ip).catch((error) => {
     console.error(error);
     if (!res.headersSent) json(res, 500, { error: "internal error" }, corsHeaders(requestOrigin));
   });

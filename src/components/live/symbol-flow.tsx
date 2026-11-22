@@ -1,4 +1,5 @@
 "use client";
+import { formatDigits } from "@/lib/format";
 
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
@@ -52,7 +53,7 @@ export function SymbolFlow({ initial = "SPY", title }: { initial?: string; title
       <h2 className="text-sm font-medium">{title}: {symbol}</h2>
       {error ? <p className="text-sm text-bearish">{error}</p> : null}
       {symbol === "SPX" ? <p className="text-sm text-muted-foreground">SPX itself is not in the polled universe. The chain is too large for a browser pull. This view is the worker net flow for the symbol you type. SPY is the liquid stand-in.</p> : null}
-      <p className="text-sm">NOPE {detail?.nope == null ? "n/a" : detail.nope.toFixed(3)}. Net call ${((detail?.netCall ?? 0) / 1e6).toFixed(2)}M. Net put ${((detail?.netPut ?? 0) / 1e6).toFixed(2)}M.</p>
+      <p className="text-sm">NOPE {detail?.nope == null ? "n/a" : formatDigits(detail.nope, 3)}. Net call ${formatDigits(((detail?.netCall ?? 0) / 1e6), 2)}M. Net put ${formatDigits(((detail?.netPut ?? 0) / 1e6), 2)}M.</p>
       <TideLines points={cumulativeTide(mine)} />
     </div>
   );

@@ -1,4 +1,5 @@
 "use client";
+import { formatDigits } from "@/lib/format";
 
 import { useMemo, useState } from "react";
 import { DataBadge } from "@/components/data-badge";
@@ -102,8 +103,8 @@ function QuoteCells({
 
 function format(value: number | null): string {
   if (value == null) return "—";
-  if (Math.abs(value) >= 100) return value.toFixed(0);
-  return value.toFixed(2);
+  if (Math.abs(value) >= 100) return formatDigits(value, 0);
+  return formatDigits(value, 2);
 }
 
 function ContractCard({ contract, onClose }: { contract: ChainContract; onClose: () => void }) {
@@ -114,14 +115,14 @@ function ContractCard({ contract, onClose }: { contract: ChainContract; onClose:
         <button type="button" className="text-xs text-muted-foreground" onClick={onClose}>Close</button>
       </div>
       <div className="mt-3 grid gap-3 sm:grid-cols-2 lg:grid-cols-4 text-sm">
-        <p>Bid {contract.bid.toFixed(2)} / ask {contract.ask.toFixed(2)}</p>
-        <p>Last {contract.last.toFixed(2)}</p>
-        <p>Volume {contract.volume.toFixed(0)} · OI {contract.openInterest.toFixed(0)}</p>
-        <p>IV {(contract.iv * 100).toFixed(1)}%</p>
-        <p>Delta {contract.delta.toFixed(3)}</p>
-        <p>Gamma {contract.gamma.toFixed(4)}</p>
-        <p>Theta {contract.theta.toFixed(4)}</p>
-        <p>Vega {contract.vega.toFixed(4)}</p>
+        <p>Bid {formatDigits(contract.bid, 2)} / ask {formatDigits(contract.ask, 2)}</p>
+        <p>Last {formatDigits(contract.last, 2)}</p>
+        <p>Volume {formatDigits(contract.volume, 0)} · OI {formatDigits(contract.openInterest, 0)}</p>
+        <p>IV {formatDigits((contract.iv * 100), 1)}%</p>
+        <p>Delta {formatDigits(contract.delta, 3)}</p>
+        <p>Gamma {formatDigits(contract.gamma, 4)}</p>
+        <p>Theta {formatDigits(contract.theta, 4)}</p>
+        <p>Vega {formatDigits(contract.vega, 4)}</p>
       </div>
       <p className="mt-2 text-xs text-muted-foreground">
         Intraday side history needs the live worker. This card is the delayed snapshot only.

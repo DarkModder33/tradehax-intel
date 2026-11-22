@@ -10,6 +10,7 @@ export interface DatasetMeta {
   stale?: boolean;
   unavailable?: boolean;
   error?: string;
+  coverage?: number;
 }
 
 export interface DataManifest {

@@ -1,4 +1,5 @@
 "use client";
+import { formatDigits } from "@/lib/format";
 
 import { bookValue, type StockHedge, type StrategyLeg } from "@/lib/options/strategy";
 
@@ -24,7 +25,7 @@ export function PnlHeatmap({ legs, hedge, spot, asOf, ivShift }: { legs: Strateg
         <tbody>
           {prices.map((price) => (
             <tr key={price}>
-              <td className="p-1 font-mono">{price.toFixed(1)}</td>
+              <td className="p-1 font-mono">{formatDigits(price, 1)}</td>
               {dates.map((date) => {
                 const value = bookValue(legs, hedge, price, date, ivShift);
                 const alpha = Math.min(0.8, Math.abs(value) / max);

@@ -1,4 +1,5 @@
 "use client";
+import { formatDigits } from "@/lib/format";
 
 import type { ChainContract } from "@/lib/sources/cboe";
 import type { StrategyLeg } from "@/lib/options/strategy";
@@ -84,7 +85,7 @@ function QuoteButton({
       className="h-8 min-w-12 rounded-md px-1 font-mono hover:bg-foreground/10"
       onClick={(event) => onAdd(contract, event.shiftKey ? "mid" : field, field === "bid" ? -1 : 1)}
     >
-      {shown ? shown.toFixed(2) : "—"}
+      {shown ? formatDigits(shown, 2) : "—"}
     </button>
   );
 }

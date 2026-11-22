@@ -2,7 +2,7 @@
 
 import { StatusPill } from "@/components/live/status-pill";
 import { useWorkerFeed } from "@/components/live/use-worker-feed";
-import { formatEt } from "@/lib/format";
+import { formatDigits, formatEt } from "@/lib/format";
 import { priceLevels } from "@/lib/flow/tape";
 
 export function OffexBoard() {
@@ -19,9 +19,9 @@ export function OffexBoard() {
         <ul className="flex flex-col gap-1">
           {levels.map((level) => (
             <li key={level.price} className="grid grid-cols-[5rem_1fr_6rem] items-center gap-2 text-xs">
-              <span className="font-mono">{level.price.toFixed(2)}</span>
+              <span className="font-mono">{formatDigits(level.price, 2)}</span>
               <span className="h-2 rounded-full bg-foreground/10"><span className="block h-2 rounded-full bg-gold" style={{ width: `${(level.notional / max) * 100}%` }} /></span>
-              <span className="text-right font-mono">${(level.notional / 1e6).toFixed(2)}M</span>
+              <span className="text-right font-mono">${formatDigits((level.notional / 1e6), 2)}M</span>
             </li>
           ))}
         </ul>
@@ -36,7 +36,7 @@ export function OffexBoard() {
               <tr key={`${print.symbol}-${print.time}-${print.size}`} className="border-t border-border/50">
                 <td className="px-2 py-1 text-right">{formatEt(Date.parse(print.time))}</td>
                 <td className="px-2 py-1 text-right font-mono">{print.symbol}</td>
-                <td className="px-2 py-1 text-right font-mono">{print.price.toFixed(2)}</td>
+                <td className="px-2 py-1 text-right font-mono">{formatDigits(print.price, 2)}</td>
                 <td className="px-2 py-1 text-right">{print.size.toLocaleString("en-US")}</td>
                 <td className="px-2 py-1 text-right">${Math.round(print.notional).toLocaleString("en-US")}</td>
               </tr>

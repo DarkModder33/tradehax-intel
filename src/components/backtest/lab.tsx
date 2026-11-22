@@ -1,4 +1,5 @@
 "use client";
+import { formatDigits } from "@/lib/format";
 
 import { useMemo, useState } from "react";
 import { DataBadge } from "@/components/data-badge";
@@ -77,7 +78,8 @@ export function BacktestLab() {
       setSource(loaded.source);
       setSpec(next);
       setTrials((count) => count + 1);
-      window.location.hash = `s=${encodeStrategy(next)}`;
+      const hash = `s=${encodeStrategy(next)}`;
+      window.history.replaceState(null, "", `${window.location.pathname}${window.location.search}#${hash}`);
     } catch (err) {
       setError(err instanceof Error ? err.message : "The backtest did not run.");
     } finally {
@@ -113,7 +115,7 @@ export function BacktestLab() {
         </button>
       </div>
       <DataBadge source={source} delay="daily bars" />
-      <p className="text-xs text-muted-foreground">Fills are the next bar's open, so the signal bar's close is not tradable. Costs use the spread estimate in basis points. Session trials for the deflated Sharpe: {trials}.</p>
+      <p className="text-xs text-muted-foreground">Fills are the next bar open, so the signal bar close is not tradable. Costs use the spread estimate in basis points. Session trials for the deflated Sharpe: {trials}.</p>
       {error ? <p className="rounded-xl border border-bearish/40 bg-bearish/10 px-4 py-3 text-sm">{error}</p> : null}
       {result && result.stats.trades < 30 ? <p className="rounded-xl border border-gold/40 px-4 py-3 text-sm">Fewer than 30 trades. The ratios are descriptive, not evidence of an edge.</p> : null}
       {result ? (
@@ -121,15 +123,15 @@ export function BacktestLab() {
           <div className="grid gap-2 sm:grid-cols-3 lg:grid-cols-4">
             <Stat label="Total return" value={pct(result.stats.totalReturn)} />
             <Stat label="CAGR" value={pct(result.stats.cagr)} />
-            <Stat label="Sharpe" value={result.stats.sharpe.toFixed(2)} />
-            <Stat label="Sortino" value={result.stats.sortino.toFixed(2)} />
-            <Stat label="Calmar" value={result.stats.calmar.toFixed(2)} />
+            <Stat label="Sharpe" value={formatDigits(result.stats.sharpe, 2)} />
+            <Stat label="Sortino" value={formatDigits(result.stats.sortino, 2)} />
+            <Stat label="Calmar" value={formatDigits(result.stats.calmar, 2)} />
             <Stat label="Max drawdown" value={pct(result.stats.maxDrawdown)} />
-            <Stat label="Win rate" value={`${(result.stats.winRate * 100).toFixed(1)}%`} />
-            <Stat label="Wilson 95%" value={`${(result.wilson.lo * 100).toFixed(0)}–${(result.wilson.hi * 100).toFixed(0)}%`} />
-            <Stat label="Profit factor" value={Number.isFinite(result.stats.profitFactor) ? result.stats.profitFactor.toFixed(2) : "n/a"} />
+            <Stat label="Win rate" value={`${formatDigits((result.stats.winRate * 100), 1)}%`} />
+            <Stat label="Wilson 95%" value={`${formatDigits((result.wilson.lo * 100), 0)}–${formatDigits((result.wilson.hi * 100), 0)}%`} />
+            <Stat label="Profit factor" value={Number.isFinite(result.stats.profitFactor) ? formatDigits(result.stats.profitFactor, 2) : "n/a"} />
             <Stat label="Buy and hold" value={pct(result.stats.buyHold)} />
-            <Stat label="Deflated Sharpe" value={result.dsr.toFixed(2)} />
+            <Stat label="Deflated Sharpe" value={formatDigits(result.dsr, 2)} />
             <Stat label="Walk-forward folds" value={String(result.folds)} />
           </div>
           <div className="flex h-32 items-end gap-px">
@@ -140,7 +142,7 @@ export function BacktestLab() {
               return <div key={index} className="flex-1 bg-gold/80" style={{ height: `${height}%` }} />;
             })}
           </div>
-          {sweep ? <p className="text-xs text-muted-foreground">Sweep trials = {countTrials([10, 20, 50], null)}. Sharpe by fast length: {sweep.cells.map((cell) => `${cell.a}:${cell.sharpe.toFixed(2)}`).join("  ")}</p> : null}
+          {sweep ? <p className="text-xs text-muted-foreground">Sweep trials = {countTrials([10, 20, 50], null)}. Sharpe by fast length: {sweep.cells.map((cell) => `${cell.a}:${formatDigits(cell.sharpe, 2)}`).join("  ")}</p> : null}
           <button
             type="button"
             className="h-8 self-start rounded-full px-3 text-xs"
@@ -176,5 +178,5 @@ function Stat({ label, value }: { label: string; value: string }) {
 }
 
 function pct(value: number): string {
-  return `${value >= 0 ? "+" : ""}${(value * 100).toFixed(1)}%`;
+  return `${value >= 0 ? "+" : ""}${formatDigits((value * 100), 1)}%`;
 }

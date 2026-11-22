@@ -1,0 +1,13 @@
+TradeHax Intel
+
+The project license has not been chosen. Do not treat this repository as MIT, Apache, or any other license until a LICENSE file is added by the owner.
+
+Third-party notices
+
+lightweight-charts
+Copyright TradingView, Inc.
+Licensed under the Apache License, Version 2.0.
+The chart pane keeps the TradingView attribution logo, which satisfies the linking requirement in that license.
+https://www.tradingview.com/
+
+Other runtime dependencies keep the licenses declared in their own packages. AGPL and GPL projects were used as ideas only and were not copied into this tree.

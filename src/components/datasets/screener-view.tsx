@@ -1,7 +1,8 @@
 "use client";
+import { formatDigits } from "@/lib/format";
 
 import Link from "next/link";
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useState } from "react";
 import { DataBadge } from "@/components/data-badge";
 import { PanelState } from "@/components/panel-state";
 import { VirtualTable } from "@/components/ui/virtual-table";
@@ -91,7 +92,7 @@ export function ScreenerView() {
     parseError = err instanceof Error ? err.message : "The query could not be read.";
   }
 
-  const caret = useMemo(() => parseError, [parseError]);
+  const caret = parseError;
 
   return (
     <div className="flex flex-col gap-3">
@@ -166,9 +167,9 @@ export function ScreenerView() {
 function formatCell(value: string | number | null | undefined): string {
   if (value == null) return "—";
   if (typeof value === "number") {
-    if (Math.abs(value) >= 1_000_000_000) return `${(value / 1_000_000_000).toFixed(1)}B`;
-    if (Math.abs(value) >= 1_000_000) return `${(value / 1_000_000).toFixed(1)}M`;
-    return Math.abs(value) >= 100 ? value.toFixed(0) : value.toFixed(2);
+    if (Math.abs(value) >= 1_000_000_000) return `${formatDigits((value / 1_000_000_000), 1)}B`;
+    if (Math.abs(value) >= 1_000_000) return `${formatDigits((value / 1_000_000), 1)}M`;
+    return Math.abs(value) >= 100 ? formatDigits(value, 0) : formatDigits(value, 2);
   }
   return value;
 }

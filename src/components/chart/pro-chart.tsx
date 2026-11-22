@@ -1,4 +1,5 @@
 "use client";
+import { formatDigits } from "@/lib/format";
 
 import { useEffect, useRef, useState } from "react";
 import {
@@ -89,11 +90,14 @@ export function ProChart() {
   const [readout, setReadout] = useState("Crosshair values show here.");
   const [symbolDraft, setSymbolDraft] = useState(query.symbol);
 
-  useEffect(() => setSymbolDraft(query.symbol), [query.symbol]);
+  useEffect(() => {
+    const timer = window.setTimeout(() => setSymbolDraft(query.symbol), 0);
+    return () => window.clearTimeout(timer);
+  }, [query.symbol]);
 
   useEffect(() => {
     let stopped = false;
-    setLoading(true);
+    const timer = window.setTimeout(() => setLoading(true), 0);
     void (async () => {
       try {
         const primary = await loadBars(query.symbol, query.timeframe);
@@ -125,6 +129,7 @@ export function ProChart() {
     })();
     return () => {
       stopped = true;
+      window.clearTimeout(timer);
     };
   }, [query.symbol, query.timeframe, query.compare, query.overlays]);
 
@@ -220,11 +225,11 @@ export function ProChart() {
       const row = bars.find((bar) => stamp(bar.time) === param.time);
       if (!row) return;
       const index = bars.indexOf(row);
-      const bits = [`O ${row.open.toFixed(2)} H ${row.high.toFixed(2)} L ${row.low.toFixed(2)} C ${row.close.toFixed(2)} V ${Math.round(row.volume)}`];
+      const bits = [`O ${formatDigits(row.open, 2)} H ${formatDigits(row.high, 2)} L ${formatDigits(row.low, 2)} C ${formatDigits(row.close, 2)} V ${Math.round(row.volume)}`];
       for (const token of query.indicators) {
         if (token.startsWith("rsi")) {
           const value = rsi(closes, indicatorPeriod(token, 14))[index];
-          if (value != null) bits.push(`RSI ${value.toFixed(1)}`);
+          if (value != null) bits.push(`RSI ${formatDigits(value, 1)}`);
         }
       }
       setReadout(bits.join(" · "));

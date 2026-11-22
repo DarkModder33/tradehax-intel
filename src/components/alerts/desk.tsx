@@ -52,7 +52,7 @@ export function AlertDesk() {
       </section>
       <section>
         <h2 className="text-sm font-medium">Rules</h2>
-        <p className="text-xs text-muted-foreground">A rule that requires volume above open interest stays quiet unless the print carries open interest. This feed does not.</p>
+        <p className="text-xs text-muted-foreground">A rule that requires volume above open interest stays quiet unless the print carries open interest. This feed does not. Web push stays off until the worker has VAPID_PUBLIC, VAPID_PRIVATE, VAPID_SUBJECT, CF_ACCOUNT_ID, CF_KV_NAMESPACE_ID, and CF_API_TOKEN. Those values are never stored in the repo.</p>
         <Button
           type="button"
           size="sm"

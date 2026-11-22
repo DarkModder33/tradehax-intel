@@ -1,4 +1,5 @@
 "use client";
+import { formatDigits } from "@/lib/format";
 
 import { useEffect, useState } from "react";
 import { StatusPill } from "@/components/live/status-pill";
@@ -51,7 +52,7 @@ export function HistoryBoard() {
             const chart = parseYahooChart(await (await fetch(yahooChartRequestUrl(ticker, "1d", "1y"))).json(), ticker);
             const closes = chart.bars.map((bar) => ({ date: new Date(bar.time).toISOString().slice(0, 10), close: bar.close }));
             const forward = flowForward(shown, closes, 1);
-            setResult(`${forward.hits}/${forward.n} prints were followed by a next-day move in the called direction. Average ${(forward.average * 100).toFixed(2)}%. Wilson 95% ${(forward.wilsonLo * 100).toFixed(0)}–${(forward.wilsonHi * 100).toFixed(0)}%.`);
+            setResult(`${forward.hits}/${forward.n} prints were followed by a next-day move in the called direction. Average ${formatDigits((forward.average * 100), 2)}%. Wilson 95% ${formatDigits((forward.wilsonLo * 100), 0)}–${formatDigits((forward.wilsonHi * 100), 0)}%.`);
           })().catch((err: unknown) => setError(err instanceof Error ? err.message : "Backtest failed."));
         }}
       >

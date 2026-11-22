@@ -1,4 +1,5 @@
 "use client";
+import { formatDigits } from "@/lib/format";
 
 import { StatusPill } from "@/components/live/status-pill";
 import { TideLines } from "@/components/live/tide-lines";
@@ -7,7 +8,7 @@ import { ETFS, cumulativeTide, sectorTide } from "@/lib/flow/tape";
 
 function money(value: number): string {
   const sign = value < 0 ? "−" : "";
-  return `${sign}$${(Math.abs(value) / 1e6).toFixed(2)}M`;
+  return `${sign}$${formatDigits((Math.abs(value) / 1e6), 2)}M`;
 }
 
 export function TideBoard() {

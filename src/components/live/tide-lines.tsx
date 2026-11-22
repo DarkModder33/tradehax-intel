@@ -1,22 +1,16 @@
+import { AreaChart } from "@/components/chart/series";
+import { CHART_THEME } from "@/components/chart/theme";
+
 export function TideLines({ points }: { points: { call: number; put: number; net: number }[] }) {
   if (points.length < 2) return <p className="text-sm text-muted-foreground">Not enough prints for a line yet.</p>;
-  const values = points.flatMap((point) => [point.call, point.put, point.net]);
-  const min = Math.min(...values);
-  const max = Math.max(...values);
-  const span = max - min || 1;
-  const path = (pick: (point: (typeof points)[number]) => number) =>
-    points
-      .map((point, index) => {
-        const x = (index / (points.length - 1)) * 100;
-        const y = 40 - ((pick(point) - min) / span) * 36;
-        return `${index === 0 ? "M" : "L"}${x.toFixed(2)} ${y.toFixed(2)}`;
-      })
-      .join(" ");
   return (
-    <svg viewBox="0 0 100 40" className="h-36 w-full" role="img">
-      <path d={path((point) => point.call)} fill="none" stroke="var(--bullish)" strokeWidth="0.8" />
-      <path d={path((point) => point.put)} fill="none" stroke="var(--bearish)" strokeWidth="0.8" />
-      <path d={path((point) => point.net)} fill="none" stroke="var(--gold)" strokeWidth="0.8" />
-    </svg>
+    <AreaChart
+      label="Call, put, and net premium"
+      series={[
+        { values: points.map((point) => point.call), color: CHART_THEME.bull },
+        { values: points.map((point) => point.put), color: CHART_THEME.bear },
+        { values: points.map((point) => point.net), color: CHART_THEME.gold },
+      ]}
+    />
   );
 }

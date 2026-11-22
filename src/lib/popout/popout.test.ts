@@ -7,6 +7,7 @@ import {
   snapshotCovers,
   snapshotIsFresh,
 } from "./channel";
+import { popoutMode } from "./pip";
 import { DEFAULT_POPOUT, mergePopoutPrefs, normalizePopoutPrefs, popoutPath, readPopoutPrefs, resolveVisit, writePopoutPrefs } from "./prefs";
 
 describe("pop-out preferences", () => {
@@ -14,6 +15,8 @@ describe("pop-out preferences", () => {
     expect(popoutPath({ symbols: ["SPY", "NVDA"], timeframe: "5m" })).toBe(
       "/popout/?symbols=SPY,NVDA&tf=5m",
     );
+    expect(popoutMode("Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X)", true)).toBe("window");
+    expect(popoutMode("Mozilla/5.0 Chrome/120", true)).toBe("pip");
   });
 
   it("lets a new link override stored symbols and timeframe, and leaves sound off", () => {

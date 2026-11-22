@@ -43,11 +43,14 @@ jobs:
       - name: Install
         run: npm ci
 
+      - name: Lint
+        run: npm run lint
+
       - name: Test
         run: npm test
 
       - name: Build static export
-        run: npm run build && node scripts/build/sw-manifest.mjs out
+        run: npm run build && node scripts/build/sw-manifest.mjs out && node scripts/build/budget.mjs
         env:
           NEXT_PUBLIC_WORKER_URL: ${{ vars.WORKER_URL || 'https://tradehax-intel-worker-bf2f623ce81a.herokuapp.com' }}
           NEXT_PUBLIC_BASE_PATH: ${{ vars.PAGES_BASE_PATH || '' }}

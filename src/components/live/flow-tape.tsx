@@ -4,15 +4,15 @@ import { useMemo, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { StatusPill } from "@/components/live/status-pill";
 import { useWorkerFeed } from "@/components/live/use-worker-feed";
-import { formatEt } from "@/lib/format";
+import { formatDigits, formatEt } from "@/lib/format";
 import { OPEN_FILTER, daysToExpiry, passesTapeFilter, type TapeFilter } from "@/lib/flow/tape";
 
 function money(value: number): string {
   const abs = Math.abs(value);
   const sign = value < 0 ? "−" : "";
-  if (abs >= 1_000_000) return `${sign}$${(abs / 1_000_000).toFixed(2)}M`;
-  if (abs >= 1_000) return `${sign}$${(abs / 1_000).toFixed(1)}k`;
-  return `${sign}$${abs.toFixed(0)}`;
+  if (abs >= 1_000_000) return `${sign}$${formatDigits((abs / 1_000_000), 2)}M`;
+  if (abs >= 1_000) return `${sign}$${formatDigits((abs / 1_000), 1)}k`;
+  return `${sign}$${formatDigits(abs, 0)}`;
 }
 
 export function FlowTape() {
@@ -71,7 +71,7 @@ export function FlowTape() {
         <table className="w-full text-xs">
           <thead className="sticky top-0 bg-background text-muted-foreground">
             <tr>
-              {["Time", "Ticker", "Exp", "Strike", "C/P", "Side", "Size", "Premium", "Tags"].map((label) => (
+              {["Time", "Ticker", "Exp", "Strike", "C/P", "Side", "Size", "Premium", "Score", "Tags"].map((label) => (
                 <th key={label} className="px-2 py-1 text-right font-normal">{label}</th>
               ))}
             </tr>
@@ -87,6 +87,9 @@ export function FlowTape() {
                 <td className="px-2 py-1 text-right">{print.side}{print.inferred ? " · inferred" : ""}</td>
                 <td className="px-2 py-1 text-right">{print.size}</td>
                 <td className="px-2 py-1 text-right">{money(print.premium)}</td>
+                <td className="px-2 py-1 text-right" title={print.scoreStatus === "building" ? "Median premium is still building" : "Weighted unusual score"}>
+                  {print.score == null ? "—" : print.scoreStatus === "building" ? `${print.score} building` : print.score}
+                </td>
                 <td className="px-2 py-1 text-right">{print.flags.filter((flag) => flag === "sweep" || flag === "block" || flag === "multileg").join(" ") || "—"}</td>
               </tr>
             ))}

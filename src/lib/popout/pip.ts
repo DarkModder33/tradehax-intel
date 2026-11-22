@@ -15,6 +15,12 @@ export function pictureInPictureSupported(): boolean {
   return pictureInPictureApi() != null;
 }
 
+/** iOS has no Document Picture-in-Picture. Those browsers get a normal window. */
+export function popoutMode(userAgent: string, hasApi: boolean): "pip" | "window" {
+  if (/iPhone|iPad|iPod/i.test(userAgent)) return "window";
+  return hasApi ? "pip" : "window";
+}
+
 /** Copy the desk styles into a Picture-in-Picture document so Tailwind classes resolve there. */
 export function preparePipDocument(pipWindow: Window): void {
   const doc = pipWindow.document;

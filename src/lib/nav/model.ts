@@ -16,6 +16,9 @@ export const NAV_GROUPS: NavGroup[] = [
     items: [
       { href: "/chart/", label: "Chart" },
       { href: "/backtest/", label: "Backtest" },
+      { href: "/rotation/", label: "Rotation" },
+      { href: "/macro/", label: "Macro" },
+      { href: "/lab/", label: "Lab" },
       { href: "/seasonality/", label: "Seasonality" },
       { href: "/markets/", label: "Markets" },
     ],
@@ -72,6 +75,9 @@ export const NAV_RIGHT: NavItem[] = [
   { href: "/portfolio/", label: "Portfolio" },
   { href: "/workspace/", label: "Workspace" },
   { href: "/about/", label: "About" },
+  { href: "/about/methodology/", label: "Methodology" },
+  { href: "/c/", label: "Contract" },
+  { href: "/status/", label: "Status" },
 ];
 
 export const NAV_HREFS = [...NAV_GROUPS.flatMap((group) => group.items.map((item) => item.href)), ...NAV_RIGHT.map((item) => item.href)];
