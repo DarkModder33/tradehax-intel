@@ -10,6 +10,8 @@ import { history, state } from "./store.ts";
 import { SYMBOLS, startPollers } from "./poller.ts";
 import { barsPayload, chainPayload, newsPayload, summaryPayload, technicalsPayload } from "./market.ts";
 import { cacheControl, isHeavy, rateLimit } from "./guard.ts";
+import { unusualScore } from "../../src/lib/flow/score.ts";
+import { optionBarsUrl } from "./alpaca.ts";
 
 const port = Number(process.env.PORT ?? 8787);
 const origins = (process.env.ALLOWED_ORIGIN ?? "https://tradehaxai.tech,https://www.tradehaxai.tech,https://darkmodder33.github.io")
@@ -55,7 +57,27 @@ function filterPrints(url: URL, prints: FlowPrint[]): FlowPrint[] {
     if (flag && !print.flags.includes(flag)) continue;
     out.push(print);
   }
-  return out;
+  return withScores(out);
+}
+
+function withScores(prints: FlowPrint[]): FlowPrint[] {
+  const premiums = prints.map((print) => print.premium).sort((a, b) => a - b);
+  const median = premiums.length ? premiums[Math.floor(premiums.length / 2)] : 0;
+  return prints.map((print) => {
+    const scored = unusualScore({
+      premium: print.premium,
+      medianPremium: median,
+      volume: print.size,
+      openInterest: 0,
+      askSide: print.side === "ASK",
+      sweep: print.flags.includes("sweep"),
+      otmFraction: 0,
+      dte: 15,
+      repeats: 0,
+      daysToEarnings: null,
+    }, premiums.length);
+    return { ...print, score: scored.score, scoreStatus: scored.status };
+  });
 }
 
 export async function handle(url: URL, res: http.ServerResponse, requestOrigin?: string, ip = "local") {
@@ -70,6 +92,21 @@ export async function handle(url: URL, res: http.ServerResponse, requestOrigin?:
     }
   }
   const live = noteLive();
+  if (path.startsWith("/v1/optbars/")) {
+    const occ = decodeURIComponent(path.slice("/v1/optbars/".length)).toUpperCase();
+    if (!alpacaConfigured()) {
+      json(res, 503, { error: "alpaca not configured", source: "unavailable", bars: [] }, cors, path);
+      return;
+    }
+    try {
+      const payload = await fetch(optionBarsUrl(occ), { headers: { "APCA-API-KEY-ID": process.env.ALPACA_KEY_ID ?? "", "APCA-API-SECRET-KEY": process.env.ALPACA_SECRET ?? "" } });
+      const body = await payload.json();
+      json(res, payload.ok ? 200 : payload.status, { source: "Alpaca option bars", delay: "about 15 min", body }, cors, path);
+    } catch (error) {
+      json(res, 502, { error: error instanceof Error ? error.message : "optbars failed", source: "unavailable" }, cors, path);
+    }
+    return;
+  }
   if (path.startsWith("/v1/bars/")) {
     const symbol = decodeURIComponent(path.slice("/v1/bars/".length));
     const result = await barsPayload(symbol, url.searchParams.get("tf"), url.searchParams.get("limit"));

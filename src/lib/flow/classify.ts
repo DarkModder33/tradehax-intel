@@ -18,6 +18,8 @@ export interface FlowPrint {
   inferred: boolean;
   sentiment: "bullish" | "bearish" | "neutral";
   flags: string[];
+  score?: number;
+  scoreStatus?: "scored" | "building";
 }
 
 export function inferSide(price: number, bid: number, ask: number): Side {

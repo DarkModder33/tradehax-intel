@@ -72,6 +72,8 @@ export const NAV_RIGHT: NavItem[] = [
   { href: "/portfolio/", label: "Portfolio" },
   { href: "/workspace/", label: "Workspace" },
   { href: "/about/", label: "About" },
+  { href: "/about/methodology/", label: "Methodology" },
+  { href: "/c/", label: "Contract" },
   { href: "/status/", label: "Status" },
 ];
 

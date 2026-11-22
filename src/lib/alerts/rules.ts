@@ -11,6 +11,7 @@ export interface AlertRule {
   otm: boolean;
   /** Cannot be confirmed from a print that has no open interest. Those prints do not match. */
   volOverOi: boolean;
+  minScore?: number | null;
 }
 
 export interface AlertHit {
@@ -27,6 +28,7 @@ export function matchesRule(print: FlowPrint, rule: AlertRule, now: Date, spot?:
   if (rule.flag !== "any" && !print.flags.includes(rule.flag)) return false;
   if (rule.maxDte != null && daysToExpiry(print.expiry, now) > rule.maxDte) return false;
   if (rule.otm && isOtm(print, spot) !== true) return false;
+  if (rule.minScore != null && (print.score ?? 0) < rule.minScore) return false;
   if (rule.volOverOi) {
     if (openInterest == null) return false;
     if (!(print.size > openInterest)) return false;

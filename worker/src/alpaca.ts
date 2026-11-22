@@ -7,6 +7,11 @@ export function optionTradesUrl(symbols: string[], start: string, end: string): 
   return `https://data.alpaca.markets/v1beta1/options/trades?${params}`;
 }
 
+export function optionBarsUrl(symbol: string, limit = 300): string {
+  const params = new URLSearchParams({ symbols: symbol.toUpperCase(), timeframe: "5Min", limit: String(Math.min(limit, 1000)), sort: "desc" });
+  return `https://data.alpaca.markets/v1beta1/options/bars?${params}`;
+}
+
 export function stockTradesUrl(symbols: string[], start: string, end: string): string {
   const params = new URLSearchParams({ symbols: symbols.map(alpacaSymbol).join(","), start, end, feed: "sip" });
   return `https://data.alpaca.markets/v2/stocks/trades?${params}`;
