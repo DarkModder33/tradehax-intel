@@ -1,7 +1,7 @@
 import { readdirSync, readFileSync, statSync } from "node:fs";
 import path from "node:path";
 import { describe, expect, it } from "vitest";
-import { formatCompact, formatDigits, formatEtClock, formatOcc, formatSignedPercent } from "./format";
+import { formatCompact, formatDigits, formatEtClock, formatOcc, formatSignedPercent, signedGlyph } from "./format";
 
 function files(dir: string): string[] {
   const found: string[] = [];
@@ -23,6 +23,8 @@ describe("formatters", () => {
     expect(formatOcc("NVDA261218C00200000")).toBe("NVDA 12/18 200C");
     expect(formatDigits(1.2, 2)).toBe("1.20");
     expect(formatEtClock(Date.parse("2026-11-16T21:00:00Z"))).toMatch(/PM ET|AM ET/);
+    expect(signedGlyph(1)).toBe("▲ +1");
+    expect(signedGlyph(-2)).toBe("▼ -2");
   });
 
   it("keeps toFixed out of components", () => {

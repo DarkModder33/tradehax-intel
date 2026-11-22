@@ -124,6 +124,12 @@
   animation: popout-flash 0.8s ease-out;
 }
 
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 2px;
+}
+
 input,
 select,
 textarea {
@@ -162,6 +168,7 @@ a {
 @media (prefers-reduced-motion: reduce) {
   .animate-pulse,
   .animate-spin,
+  .popout-flip,
   .popout-flip {
     animation: none;
   }

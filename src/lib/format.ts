@@ -85,9 +85,15 @@ export function formatAge(from: number, now: number): string {
 }
 
 export function directionLabel(direction: Direction): string {
-  if (direction === "bullish") return "Bullish";
-  if (direction === "bearish") return "Bearish";
+  if (direction === "bullish") return "▲ Bullish";
+  if (direction === "bearish") return "▼ Bearish";
   return "Mixed";
+}
+
+/** Colour-blind safe marker. The sign is included as well as the arrow. */
+export function signedGlyph(value: number): string {
+  if (!Number.isFinite(value) || value === 0) return "• 0";
+  return value > 0 ? `▲ +${value}` : `▼ ${value}`;
 }
 
 export function directionClass(direction: Direction | "split"): string {
