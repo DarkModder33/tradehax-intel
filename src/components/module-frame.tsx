@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import Link from "next/link";
 import { SiteNav } from "@/components/site-nav";
 
 export function ModuleFrame({ title, lede, children }: { title: string; lede: string; children: ReactNode }) {
@@ -13,7 +14,8 @@ export function ModuleFrame({ title, lede, children }: { title: string; lede: st
         </header>
         {children}
         <p className="max-w-3xl text-xs leading-relaxed text-muted-foreground">
-          Not investment advice. Delayed and inferred data. Dealer gamma uses the naive open-interest sign: calls positive, puts negative.
+          Not investment advice. Delayed and inferred data. Dealer gamma uses the naive open-interest sign: calls positive, puts negative.{" "}
+          <Link href="/about/" className="underline">About</Link> · <Link href="/status/" className="underline">Status</Link>
         </p>
       </main>
     </div>
