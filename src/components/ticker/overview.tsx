@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { LineChart } from "@/components/chart/series";
 import { DataBadge } from "@/components/data-badge";
 import { chartPath, readTicker } from "@/lib/ticker/route";
 import { fetchChain } from "@/lib/sources/cboe";
@@ -148,14 +149,5 @@ function Section({ title, body }: { title: string; body: string | null }) {
 }
 
 function Spark({ values }: { values: number[] }) {
-  if (values.length < 2) return null;
-  const min = Math.min(...values);
-  const max = Math.max(...values);
-  const span = max - min || 1;
-  const d = values.map((value, index) => {
-    const x = (index / (values.length - 1)) * 100;
-    const y = 28 - ((value - min) / span) * 24;
-    return `${index === 0 ? "M" : "L"}${formatDigits(x, 1)} ${formatDigits(y, 1)}`;
-  }).join(" ");
-  return <svg viewBox="0 0 100 28" className="h-16 w-full" aria-hidden="true"><path d={d} fill="none" stroke="var(--gold)" strokeWidth="1.2" /></svg>;
+  return <LineChart values={values} className="h-16 w-full" label="Daily closes" />;
 }

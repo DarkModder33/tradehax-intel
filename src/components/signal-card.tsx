@@ -1,35 +1,13 @@
 import { describeAgreement } from "@/lib/indicators/agreement";
 import { TIMEFRAME_LABEL, type Direction, type Factor, type Signal } from "@/lib/indicators/types";
-import { formatDigits, directionClass, directionLabel, formatChange, formatPrice } from "@/lib/format";
+import { LineChart } from "@/components/chart/series";
+import { directionClass, directionLabel, formatChange, formatPrice } from "@/lib/format";
 import type { Quote } from "@/lib/market/types";
 import { Card, CardContent } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
 
 function Sparkline({ values, direction }: { values: number[]; direction: Direction }) {
-  if (values.length < 2) return null;
-  const min = Math.min(...values);
-  const max = Math.max(...values);
-  const span = max - min || 1;
-  const width = 112;
-  const height = 36;
-  const path = values
-    .map((value, index) => {
-      const x = (index / (values.length - 1)) * width;
-      const y = height - ((value - min) / span) * (height - 4) - 2;
-      return `${index === 0 ? "M" : "L"}${formatDigits(x, 1)} ${formatDigits(y, 1)}`;
-    })
-    .join(" ");
-  const stroke =
-    direction === "bullish"
-      ? "var(--bullish)"
-      : direction === "bearish"
-        ? "var(--bearish)"
-        : "var(--muted-foreground)";
-  return (
-    <svg viewBox={`0 0 ${width} ${height}`} className="h-9 w-28" aria-hidden="true">
-      <path d={path} fill="none" stroke={stroke} strokeWidth="1.75" strokeLinejoin="round" strokeLinecap="round" />
-    </svg>
-  );
+  return <LineChart values={values} direction={direction} label="Signal trail" />;
 }
 
 function VoteBar({ score }: { score: number }) {
