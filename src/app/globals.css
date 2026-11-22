@@ -124,6 +124,41 @@
   animation: popout-flash 0.8s ease-out;
 }
 
+input,
+select,
+textarea {
+  font-size: 16px;
+}
+
+.h-scroll {
+  overflow-x: auto;
+  background:
+    linear-gradient(to right, var(--background) 30%, transparent),
+    linear-gradient(to left, var(--background) 30%, transparent) 100% 0;
+  background-repeat: no-repeat;
+  background-size: 24px 100%;
+  background-attachment: local, local;
+}
+
+table th:first-child,
+table td:first-child {
+  position: sticky;
+  left: 0;
+  background: var(--background);
+}
+
+button,
+a {
+  min-height: 40px;
+}
+
+@media (min-width: 768px) {
+  button,
+  a {
+    min-height: 0;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .animate-pulse,
   .animate-spin,
