@@ -555,6 +555,17 @@ export async function flowHistory() {
   }
 }
 
+export async function earningsMoves() {
+  const prior = await readPrior("earnings-moves.json");
+  const rows = Array.isArray(prior?.rows) ? prior.rows : [];
+  const packed = pack("Cboe straddle vs later close", rows, {
+    delay: "daily",
+    note: "Building. Upcoming implied moves are stored when a calendar row and a Cboe chain both answer. Past implied moves are not invented. Nasdaq earnings-surprise is unverified and is not used to fill implied history.",
+  });
+  packed.meta.unavailable = false;
+  return packed;
+}
+
 export const JOBS = {
   insiders,
   congress,
@@ -565,6 +576,7 @@ export const JOBS = {
   ftd,
   ats,
   calendar: calendars,
+  "earnings-moves": earningsMoves,
   "etf-flows": etfFlows,
   screener,
   universe,

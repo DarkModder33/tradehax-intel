@@ -1,0 +1,4 @@
+{
+  "rows": [],
+  "note": "Building. Implied moves are stored only after a nightly run sees a reporter and a Cboe chain. Past implied moves are not invented."
+}
