@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { LineChart } from "@/components/chart/series";
 import { DataBadge } from "@/components/data-badge";
-import { chartPath, readTicker } from "@/lib/ticker/route";
+import { chartPath, readTicker, readTickerTab, tickerTabPath, TICKER_TABS, type TickerTab } from "@/lib/ticker/route";
 import { fetchChain } from "@/lib/sources/cboe";
 import { fetchNews } from "@/lib/market/news";
 import { fetchWorkerChart } from "@/lib/market/worker-bars";
@@ -21,6 +21,8 @@ import type { FlowPrint } from "@/lib/flow/classify";
 
 export function TickerOverview() {
   const [symbol, setSymbol] = useState("SPY");
+  const [tab, setTab] = useState<TickerTab>("overview");
+  const [starred, setStarred] = useState(false);
   const [price, setPrice] = useState<number | null>(null);
   const [trail, setTrail] = useState<number[]>([]);
   const [signal, setSignal] = useState<string | null>(null);
@@ -36,7 +38,13 @@ export function TickerOverview() {
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-    const apply = () => setSymbol(readTicker(window.location.search, window.location.hash));
+    const apply = () => {
+      const next = readTicker(window.location.search, window.location.hash);
+      setSymbol(next);
+      setTab(readTickerTab(window.location.search));
+      const saved = window.localStorage.getItem("tradehax-watchlist") ?? "";
+      setStarred(saved.split(",").filter(Boolean).includes(next));
+    };
     apply();
     window.addEventListener("hashchange", apply);
     return () => window.removeEventListener("hashchange", apply);
@@ -119,22 +127,43 @@ export function TickerOverview() {
   return (
     <div className="flex flex-col gap-4">
       <DataBadge source="Yahoo, Cboe delayed, worker" delay="about 15 min" />
-      <h2 className="font-mono text-2xl">
+      <h2 className="flex items-center gap-3 font-mono text-2xl">
         <Link href={chartPath(symbol)} className="underline-offset-4 hover:underline">{symbol}</Link> {price == null ? "" : formatPrice(price)}
+        <button
+          type="button"
+          className="h-10 rounded-full px-3 text-xs"
+          aria-pressed={starred}
+          onClick={() => {
+            const saved = (window.localStorage.getItem("tradehax-watchlist") ?? "").split(",").filter(Boolean);
+            const next = starred ? saved.filter((item) => item !== symbol) : [...new Set([...saved, symbol])];
+            window.localStorage.setItem("tradehax-watchlist", next.join(","));
+            setStarred(!starred);
+          }}
+        >
+          {starred ? "★ On watchlist" : "☆ Watch"}
+        </button>
       </h2>
+      <nav aria-label="Ticker sections" className="flex gap-1 overflow-x-auto">
+        {TICKER_TABS.map((item) => (
+          <Link key={item} href={tickerTabPath(symbol, item)} className={`h-10 rounded-full px-3 text-xs leading-10 ${tab === item ? "bg-foreground text-background" : "text-muted-foreground"}`}>
+            {item}
+          </Link>
+        ))}
+      </nav>
       {error ? <p className="text-sm text-bearish">{error}</p> : null}
-      <Spark values={trail} />
-      <Section title="Daily signal" body={signal} />
-      <Section title="Gamma, max pain, expected move" body={[gamma, `Max pain ${pain}`, `Expected move ${move}`].filter(Boolean).join(" ")} />
-      <Section title="IV" body={term} />
-      <Section title="Net premium" body={net} />
-      <Section title="Recent flow" body={prints.length ? prints.slice(0, 6).map((print) => `${formatEt(Date.parse(print.time))} ${print.right} ${print.strike} ${print.side} $${Math.round(print.premium)}`).join(" · ") : "No prints in the worker window."} />
-      <Section title="Off-exchange" body={levels} />
-      <Section title="Insiders and Congress" body={filings.length ? filings.join(" · ") : "No matching rows in the latest precompute. 13F holdings are not expanded."} />
-      <Section title="Short interest" body="The precomputed short file is an AAPL sample. A per-ticker short-interest history is not stored yet." />
-      <Section title="Earnings" body={move ? `Current expected move ${move}. A past implied-versus-realized table needs a chain saved on each report date.` : "Earnings date is on the calendar file when Nasdaq listed it."} />
-      <Section title="News" body={news.length ? news.join(" · ") : "No headlines returned."} />
-      <Section title="Seasonality" body="Month-of-year stats on the seasonality page are SPY, not this ticker, unless the nightly file is rebuilt per name." />
+      {tab === "overview" || tab === "chart" ? <Spark values={trail} /> : null}
+      {tab === "chart" ? <p className="text-sm"><Link href={chartPath(symbol)}>Open the full chart</Link></p> : null}
+      {tab === "overview" ? <Section title="Daily signal" body={signal} /> : null}
+      {tab === "overview" || tab === "options" ? <Section title="Gamma, max pain, expected move" body={[gamma, `Max pain ${pain}`, `Expected move ${move}`].filter(Boolean).join(" ")} /> : null}
+      {tab === "options" ? <Section title="IV" body={term} /> : null}
+      {tab === "options" ? <p className="text-sm"><Link href={`/chain/?s=${symbol}`}>Chain</Link> · <Link href={`/gex/?s=${symbol}`}>Gamma</Link></p> : null}
+      {tab === "flow" ? <Section title="Net premium" body={net} /> : null}
+      {tab === "flow" ? <Section title="Recent flow" body={prints.length ? prints.slice(0, 6).map((print) => `${formatEt(Date.parse(print.time))} ${print.right} ${print.strike} ${print.side} $${Math.round(print.premium)}`).join(" · ") : "No prints in the worker window."} /> : null}
+      {tab === "flow" ? <Section title="Off-exchange" body={levels} /> : null}
+      {tab === "filings" ? <Section title="Insiders and Congress" body={filings.length ? filings.join(" · ") : "No matching rows in the latest precompute."} /> : null}
+      {tab === "shorts" ? <Section title="Short interest" body="Short volume is on the shorts page. Days-to-cover stays blank until FINRA includes this symbol." /> : null}
+      {tab === "earnings" ? <Section title="Earnings" body={move ? `Current expected move ${move}. Past implied moves are not stored.` : "Earnings date is on the calendar when Nasdaq listed it."} /> : null}
+      {tab === "overview" ? <Section title="News" body={news.length ? news.join(" · ") : "No headlines returned."} /> : null}
     </div>
   );
 }
