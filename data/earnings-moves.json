@@ -1,0 +1,12 @@
+{
+  "meta": {
+    "asOf": "2026-11-22T18:14:07.078Z",
+    "source": "Cboe straddle vs later close",
+    "rows": 0,
+    "delay": "daily",
+    "stale": false,
+    "unavailable": false
+  },
+  "rows": [],
+  "note": "Building. Upcoming implied moves are stored when a calendar row and a Cboe chain both answer. Past implied moves are not invented. Nasdaq earnings-surprise is unverified and is not used to fill implied history."
+}

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "asOf": "2026-11-21T20:01:17.398Z",
+    "asOf": "2026-11-22T18:18:27.638Z",
     "source": "Yahoo most actives",
     "rows": 25,
     "delay": "delayed",
@@ -12,50 +12,50 @@
       "symbol": "NVDA",
       "price": 125.53,
       "change": -14.008766,
-      "volume": 626274281,
+      "volume": 633418432,
       "name": "NVIDIA Corporation"
     },
     {
       "symbol": "ANT",
       "price": 88.91,
       "change": -8.500561,
-      "volume": 399629474,
+      "volume": 400460284,
       "name": "Anthropic, PBC"
     },
     {
       "symbol": "INTC",
       "price": 51.28,
       "change": -7.9684176,
-      "volume": 207749593,
+      "volume": 208735616,
       "name": "Intel Corporation"
     },
     {
       "symbol": "IREN",
       "price": 11.82,
       "change": -17.97363,
-      "volume": 131457012,
+      "volume": 132422519,
       "name": "IREN LIMITED"
     },
     {
       "symbol": "SNDK",
       "price": 79.24,
       "change": -16.054874,
-      "volume": 127147042,
+      "volume": 127860864,
       "name": "Sandisk Corporation"
-    },
-    {
-      "symbol": "GRAB",
-      "price": 2.75,
-      "change": -6.143347,
-      "volume": 124393018,
-      "name": "Grab Holdings Limited"
     },
     {
       "symbol": "SPCX",
       "price": 127.79,
       "change": -7.6861897,
-      "volume": 124076688,
+      "volume": 124602664,
       "name": "Space Exploration Technologies "
+    },
+    {
+      "symbol": "GRAB",
+      "price": 2.75,
+      "change": -6.143347,
+      "volume": 124551006,
+      "name": "Grab Holdings Limited"
     },
     {
       "symbol": "NOK",
@@ -68,7 +68,7 @@
       "symbol": "AAPL",
       "price": 342.56,
       "change": -1.9042965,
-      "volume": 80450240,
+      "volume": 80692545,
       "name": "Apple Inc."
     },
     {
@@ -82,36 +82,43 @@
       "symbol": "CRWV",
       "price": 39.51,
       "change": -12.024052,
-      "volume": 76731408,
+      "volume": 77197336,
       "name": "CoreWeave, Inc."
     },
     {
       "symbol": "SOFI",
       "price": 12.48,
       "change": -7.760534,
-      "volume": 75711108,
+      "volume": 76069611,
       "name": "SoFi Technologies, Inc."
     },
     {
       "symbol": "AMZN",
       "price": 246.82,
       "change": -4.099152,
-      "volume": 74106823,
+      "volume": 74362636,
       "name": "Amazon.com, Inc."
     },
     {
       "symbol": "AAL",
       "price": 11.9,
       "change": -6.4465456,
-      "volume": 71032620,
+      "volume": 71106987,
       "name": "American Airlines Group, Inc."
     },
     {
       "symbol": "AMD",
       "price": 424.39,
       "change": -13.246385,
-      "volume": 69985844,
+      "volume": 70280864,
       "name": "Advanced Micro Devices, Inc."
+    },
+    {
+      "symbol": "NFLX",
+      "price": 56.73,
+      "change": -2.9592876,
+      "volume": 68844144,
+      "name": "Netflix, Inc."
     },
     {
       "symbol": "NU",
@@ -121,24 +128,17 @@
       "name": "Nu Holdings Ltd."
     },
     {
-      "symbol": "NFLX",
-      "price": 56.73,
-      "change": -2.9592876,
-      "volume": 67967356,
-      "name": "Netflix, Inc."
-    },
-    {
       "symbol": "WULF",
       "price": 9.85,
       "change": -14.939547,
-      "volume": 63088854,
+      "volume": 63197587,
       "name": "TeraWulf Inc."
     },
     {
       "symbol": "CCC",
       "price": 7.66,
       "change": -0.39011976,
-      "volume": 62475321,
+      "volume": 62475922,
       "name": "CCC Intelligent Solutions Holdi"
     },
     {
@@ -152,15 +152,22 @@
       "symbol": "AVGO",
       "price": 304.41,
       "change": -12.185199,
-      "volume": 59550482,
+      "volume": 60112570,
       "name": "Broadcom Inc."
     },
     {
       "symbol": "MU",
       "price": 594.51,
       "change": -13.894038,
-      "volume": 59087700,
+      "volume": 59423144,
       "name": "Micron Technology, Inc."
+    },
+    {
+      "symbol": "GOOGL",
+      "price": 265.29,
+      "change": -2.7029982,
+      "volume": 58330646,
+      "name": "Alphabet Inc."
     },
     {
       "symbol": "F",
@@ -170,17 +177,10 @@
       "name": "Ford Motor Company"
     },
     {
-      "symbol": "GOOGL",
-      "price": 265.29,
-      "change": -2.7029982,
-      "volume": 57297123,
-      "name": "Alphabet Inc."
-    },
-    {
       "symbol": "CIFR",
       "price": 5.435,
       "change": -16.126545,
-      "volume": 55756330,
+      "volume": 55905279,
       "name": "Cipher Digital Inc."
     }
   ],

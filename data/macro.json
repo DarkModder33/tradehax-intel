@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "asOf": "2026-11-22T18:18:27.084Z",
+    "source": "FRED public CSV",
+    "rows": 13,
+    "delay": "daily",
+    "stale": false,
+    "unavailable": false,
+    "coverage": 0
+  },
+  "rows": [
+    {
+      "id": "DGS3MO",
+      "value": null
+    },
+    {
+      "id": "DGS2",
+      "value": null
+    },
+    {
+      "id": "DGS5",
+      "value": null
+    },
+    {
+      "id": "DGS10",
+      "value": null
+    },
+    {
+      "id": "DGS30",
+      "value": null
+    },
+    {
+      "id": "T10Y2Y",
+      "value": null
+    },
+    {
+      "id": "T10Y3M",
+      "value": null
+    },
+    {
+      "id": "BAMLH0A0HYM2",
+      "value": null
+    },
+    {
+      "id": "DFF",
+      "value": null
+    },
+    {
+      "id": "CPIAUCSL",
+      "value": null
+    },
+    {
+      "id": "UNRATE",
+      "value": null
+    },
+    {
+      "id": "ICSA",
+      "value": null
+    },
+    {
+      "id": "WALCL",
+      "value": null
+    }
+  ],
+  "note": "VIX futures CSV is unverified and is left unavailable until a file answers. DGS3MO: The operation was aborted due to timeout; DGS2: The operation was aborted due to timeout; DGS5: The operation was aborted due to timeout",
+  "latest": {
+    "DGS3MO": null,
+    "DGS2": null,
+    "DGS5": null,
+    "DGS10": null,
+    "DGS30": null,
+    "T10Y2Y": null,
+    "T10Y3M": null,
+    "BAMLH0A0HYM2": null,
+    "DFF": null,
+    "CPIAUCSL": null,
+    "UNRATE": null,
+    "ICSA": null,
+    "WALCL": null
+  }
+}

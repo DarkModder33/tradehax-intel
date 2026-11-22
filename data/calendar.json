@@ -1,6 +1,6 @@
 {
   "meta": {
-    "asOf": "2026-11-21T20:01:15.983Z",
+    "asOf": "2026-11-22T18:14:06.519Z",
     "source": "Nasdaq calendars",
     "rows": 79,
     "delay": "daily",
@@ -957,7 +957,7 @@
   ],
   "parts": {
     "earnings": {
-      "asOf": "2026-11-21T20:01:15.983Z",
+      "asOf": "2026-11-22T18:14:06.519Z",
       "source": "Nasdaq calendar/earnings",
       "rows": 39,
       "delay": "daily",
@@ -965,7 +965,7 @@
       "unavailable": false
     },
     "economic": {
-      "asOf": "2026-11-21T20:01:16.086Z",
+      "asOf": "2026-11-22T18:14:06.591Z",
       "source": "Nasdaq calendar/economicevents",
       "rows": 40,
       "delay": "daily",
