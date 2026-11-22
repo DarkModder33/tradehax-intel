@@ -2,7 +2,7 @@
 import { formatDigits } from "@/lib/format";
 
 import Link from "next/link";
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useState } from "react";
 import { DataBadge } from "@/components/data-badge";
 import { PanelState } from "@/components/panel-state";
 import { VirtualTable } from "@/components/ui/virtual-table";
@@ -92,7 +92,7 @@ export function ScreenerView() {
     parseError = err instanceof Error ? err.message : "The query could not be read.";
   }
 
-  const caret = useMemo(() => parseError, [parseError]);
+  const caret = parseError;
 
   return (
     <div className="flex flex-col gap-3">

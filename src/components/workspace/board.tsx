@@ -30,8 +30,10 @@ export function WorkspaceBoard() {
     if (window.location.hash.startsWith("#layout=")) {
       const shared = decodeLayout(hash);
       if (shared) {
-        setPanels(shared.panels);
-        setName(shared.name);
+        window.setTimeout(() => {
+          setPanels(shared.panels);
+          setName(shared.name);
+        }, 0);
       }
     }
     const timer = window.setTimeout(() => {

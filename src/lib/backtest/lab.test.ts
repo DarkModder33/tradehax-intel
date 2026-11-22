@@ -48,7 +48,7 @@ describe("backtest lab", () => {
     expect(stats.maxDrawdown).toBeCloseTo(90 / 110 - 1, 8);
     expect(stats.cagr).toBeCloseTo(-0.01, 8);
     const spec = smaCross(2, 4);
-    const sweep = sweepSharpe(barsFrom([1, 2, 3, 4, 5, 6, 7, 8]), spec, (next, fast) => ({ ...next, entry: next.entry, exit: next.exit, sizePct: next.sizePct }), [5, 10], [20], 1);
+    const sweep = sweepSharpe(barsFrom([1, 2, 3, 4, 5, 6, 7, 8]), spec, (next) => ({ ...next, entry: next.entry, exit: next.exit, sizePct: next.sizePct }), [5, 10], [20], 1);
     expect(sweep.trials).toBe(countTrials([5, 10], [20]));
     const sharpes = sweep.cells.map((cell) => cell.sharpe);
     const dsr = deflatedSharpe({

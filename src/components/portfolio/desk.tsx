@@ -76,7 +76,7 @@ export function PortfolioDesk() {
   return (
     <div className="flex flex-col gap-4">
       <DataBadge source="This browser only" delay="simulated, 15-min-delayed data" />
-      <p className="text-xs text-muted-foreground">Paper fills never use the desk's broker keys. Quotes are delayed. Nothing here is sent to a broker.</p>
+      <p className="text-xs text-muted-foreground">Paper fills never use the desk broker keys. Quotes are delayed. Nothing here is sent to a broker.</p>
       <div className="flex gap-2 text-sm">
         {(["real", "paper"] as const).map((item) => (
           <button key={item} type="button" className={`h-9 rounded-full px-3 ${book === item ? "bg-foreground text-background" : ""}`} onClick={() => setBook(item)}>{item}</button>

@@ -78,7 +78,8 @@ export function BacktestLab() {
       setSource(loaded.source);
       setSpec(next);
       setTrials((count) => count + 1);
-      window.location.hash = `s=${encodeStrategy(next)}`;
+      const hash = `s=${encodeStrategy(next)}`;
+      window.history.replaceState(null, "", `${window.location.pathname}${window.location.search}#${hash}`);
     } catch (err) {
       setError(err instanceof Error ? err.message : "The backtest did not run.");
     } finally {
@@ -114,7 +115,7 @@ export function BacktestLab() {
         </button>
       </div>
       <DataBadge source={source} delay="daily bars" />
-      <p className="text-xs text-muted-foreground">Fills are the next bar's open, so the signal bar's close is not tradable. Costs use the spread estimate in basis points. Session trials for the deflated Sharpe: {trials}.</p>
+      <p className="text-xs text-muted-foreground">Fills are the next bar open, so the signal bar close is not tradable. Costs use the spread estimate in basis points. Session trials for the deflated Sharpe: {trials}.</p>
       {error ? <p className="rounded-xl border border-bearish/40 bg-bearish/10 px-4 py-3 text-sm">{error}</p> : null}
       {result && result.stats.trades < 30 ? <p className="rounded-xl border border-gold/40 px-4 py-3 text-sm">Fewer than 30 trades. The ratios are descriptive, not evidence of an edge.</p> : null}
       {result ? (

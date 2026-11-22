@@ -21,7 +21,7 @@ export function GexBoard({ initial }: { initial?: string }) {
 
   useEffect(() => {
     let stopped = false;
-    setLoading(true);
+    const timer = window.setTimeout(() => setLoading(true), 0);
     fetchChainSummary(symbol)
       .then((next) => {
         if (stopped) return;
@@ -38,6 +38,7 @@ export function GexBoard({ initial }: { initial?: string }) {
       });
     return () => {
       stopped = true;
+      window.clearTimeout(timer);
     };
   }, [symbol]);
 

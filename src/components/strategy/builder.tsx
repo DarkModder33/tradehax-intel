@@ -21,16 +21,22 @@ export function StrategyBuilder() {
 
   const expiries = useMemo(() => [...new Set(chain?.contracts.map((contract) => contract.expiry) ?? [])].sort(), [chain]);
   useEffect(() => {
-    if (!expiry && expiries[0]) setExpiry(expiries[0]);
+    const timer = window.setTimeout(() => {
+      if (!expiry && expiries[0]) setExpiry(expiries[0]);
+    }, 0);
+    return () => window.clearTimeout(timer);
   }, [expiry, expiries]);
   useEffect(() => {
-    const raw = window.location.hash.replace(/^#legs=/, "");
-    if (!raw || window.location.hash.indexOf("#legs=") !== 0) return;
-    const book = decodeLegs(raw);
-    if (book) {
-      setLegs(book.legs);
-      setHedge(book.hedge);
-    }
+    const timer = window.setTimeout(() => {
+      const raw = window.location.hash.replace(/^#legs=/, "");
+      if (!raw || window.location.hash.indexOf("#legs=") !== 0) return;
+      const book = decodeLegs(raw);
+      if (book) {
+        setLegs(book.legs);
+        setHedge(book.hedge);
+      }
+    }, 0);
+    return () => window.clearTimeout(timer);
   }, []);
 
   const priced = legs.map((leg) => {
@@ -45,7 +51,8 @@ export function StrategyBuilder() {
     const book = presetLegs(chain, expiry, kind);
     setLegs(book.legs);
     setHedge(book.hedge);
-    window.location.hash = `legs=${encodeLegs(book.legs, book.hedge)}`;
+    const hash = `legs=${encodeLegs(book.legs, book.hedge)}`;
+    window.history.replaceState(null, "", `${window.location.pathname}${window.location.search}#${hash}`);
   };
 
   return (

@@ -90,11 +90,14 @@ export function ProChart() {
   const [readout, setReadout] = useState("Crosshair values show here.");
   const [symbolDraft, setSymbolDraft] = useState(query.symbol);
 
-  useEffect(() => setSymbolDraft(query.symbol), [query.symbol]);
+  useEffect(() => {
+    const timer = window.setTimeout(() => setSymbolDraft(query.symbol), 0);
+    return () => window.clearTimeout(timer);
+  }, [query.symbol]);
 
   useEffect(() => {
     let stopped = false;
-    setLoading(true);
+    const timer = window.setTimeout(() => setLoading(true), 0);
     void (async () => {
       try {
         const primary = await loadBars(query.symbol, query.timeframe);
@@ -126,6 +129,7 @@ export function ProChart() {
     })();
     return () => {
       stopped = true;
+      window.clearTimeout(timer);
     };
   }, [query.symbol, query.timeframe, query.compare, query.overlays]);
 
