@@ -8,6 +8,16 @@ self.addEventListener("activate", (event) => {
   event.waitUntil(self.clients.claim());
 });
 
+self.addEventListener("push", (event) => {
+  const payload = event.data ? event.data.json() : { title: "TradeHax", body: "Alert" };
+  event.waitUntil(self.registration.showNotification(payload.title || "TradeHax", { body: payload.body || "", data: payload }));
+});
+
+self.addEventListener("notificationclick", (event) => {
+  event.notification.close();
+  event.waitUntil(self.clients.openWindow("/alerts/"));
+});
+
 self.addEventListener("fetch", (event) => {
   const url = new URL(event.request.url);
   if (url.pathname.includes("/v1/") || event.request.headers.get("accept")?.includes("text/event-stream")) return;

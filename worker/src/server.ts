@@ -92,6 +92,12 @@ export async function handle(url: URL, res: http.ServerResponse, requestOrigin?:
     }
   }
   const live = noteLive();
+  if (path === "/v1/push/key") {
+    const publicKey = process.env.VAPID_PUBLIC;
+    const enabled = Boolean(publicKey && process.env.VAPID_PRIVATE && process.env.VAPID_SUBJECT && process.env.CF_ACCOUNT_ID && process.env.CF_KV_NAMESPACE_ID && process.env.CF_API_TOKEN);
+    json(res, 200, { enabled, publicKey: enabled ? publicKey : null, note: enabled ? "Push is configured." : "Push is coming soon. Set VAPID_PUBLIC, VAPID_PRIVATE, VAPID_SUBJECT, CF_ACCOUNT_ID, CF_KV_NAMESPACE_ID, and CF_API_TOKEN on the worker. Do not commit them." }, cors, path);
+    return;
+  }
   if (path.startsWith("/v1/optbars/")) {
     const occ = decodeURIComponent(path.slice("/v1/optbars/".length)).toUpperCase();
     if (!alpacaConfigured()) {
