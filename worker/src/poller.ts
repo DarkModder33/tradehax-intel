@@ -3,6 +3,7 @@ import { parseOcc } from "../../src/lib/sources/occ.ts";
 import { inferSide, sentiment, withFlags, type FlowPrint } from "../../src/lib/flow/classify.ts";
 import { alpacaSymbol } from "../../src/lib/market/alpaca-bars.ts";
 import { optionTradesUrl, stockTradesUrl, alpacaConfigured } from "./alpaca.ts";
+import { printsFromHistory } from "./guard.ts";
 import { addPrints, ingestChain, noteError, state, type OffexPrint } from "./store.ts";
 import { parseUniverse } from "../../src/lib/live/universe.ts";
 import { inSession, lastSessionEnd } from "./time.ts";
@@ -187,7 +188,21 @@ export async function pollAlpaca(now = new Date()): Promise<void> {
 let chainBusy = false;
 let alpacaBusy = false;
 
+export async function warmHistory(): Promise<void> {
+  if (state.prints.length) return;
+  const url = process.env.HISTORY_URL ?? "https://tradehaxai.tech/data/flow-history.json";
+  try {
+    const response = await fetch(url, { headers: { "user-agent": "tradehax-worker" } });
+    if (!response.ok) return;
+    const prints = printsFromHistory(await response.json()).filter((row) => row && typeof row === "object" && "contract" in row && "time" in row);
+    if (prints.length) addPrints(prints as never);
+  } catch (error) {
+    noteError("history warm", error);
+  }
+}
+
 export function startPollers(): void {
+  void warmHistory();
   const chainTick = async () => {
     if (chainBusy) return;
     chainBusy = true;

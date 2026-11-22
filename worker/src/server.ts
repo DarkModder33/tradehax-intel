@@ -9,6 +9,7 @@ import { alpacaConfigured } from "./alpaca.ts";
 import { history, state } from "./store.ts";
 import { SYMBOLS, startPollers } from "./poller.ts";
 import { barsPayload, chainPayload, newsPayload, summaryPayload, technicalsPayload } from "./market.ts";
+import { cacheControl, isHeavy, rateLimit } from "./guard.ts";
 
 const port = Number(process.env.PORT ?? 8787);
 const origins = (process.env.ALLOWED_ORIGIN ?? "https://tradehaxai.tech,https://www.tradehaxai.tech,https://darkmodder33.github.io")
@@ -33,8 +34,10 @@ function corsHeaders(requestOrigin: string | undefined): Record<string, string> 
   return { "access-control-allow-origin": allow, "access-control-allow-methods": "GET, OPTIONS", vary: "Origin" };
 }
 
-function json(res: http.ServerResponse, status: number, body: unknown, cors: Record<string, string>) {
-  res.writeHead(status, { "content-type": "application/json", "cache-control": "no-store", ...cors });
+const hitsByIp = new Map<string, number[]>();
+
+function json(res: http.ServerResponse, status: number, body: unknown, cors: Record<string, string>, path = "/") {
+  res.writeHead(status, { "content-type": "application/json", "cache-control": cacheControl(path), ...cors });
   res.end(JSON.stringify(body));
 }
 
@@ -55,9 +58,17 @@ function filterPrints(url: URL, prints: FlowPrint[]): FlowPrint[] {
   return out;
 }
 
-export async function handle(url: URL, res: http.ServerResponse, requestOrigin?: string) {
+export async function handle(url: URL, res: http.ServerResponse, requestOrigin?: string, ip = "local") {
   const cors = corsHeaders(requestOrigin);
   const path = url.pathname.replace(/\/+$/, "") || "/";
+  if (isHeavy(path)) {
+    const decision = rateLimit(hitsByIp.get(ip) ?? [], Date.now());
+    hitsByIp.set(ip, decision.next);
+    if (!decision.allowed) {
+      json(res, 429, { error: "rate limit", limit: "60/min" }, cors, path);
+      return;
+    }
+  }
   const live = noteLive();
   if (path.startsWith("/v1/bars/")) {
     const symbol = decodeURIComponent(path.slice("/v1/bars/".length));
@@ -194,7 +205,9 @@ const server = http.createServer((req, res) => {
     res.end();
     return;
   }
-  void handle(new URL(req.url ?? "/", "http://localhost"), res, requestOrigin).catch((error) => {
+  const forwarded = req.headers["x-forwarded-for"];
+  const ip = (Array.isArray(forwarded) ? forwarded[0] : forwarded)?.split(",")[0]?.trim() || req.socket.remoteAddress || "local";
+  void handle(new URL(req.url ?? "/", "http://localhost"), res, requestOrigin, ip).catch((error) => {
     console.error(error);
     if (!res.headersSent) json(res, 500, { error: "internal error" }, corsHeaders(requestOrigin));
   });
