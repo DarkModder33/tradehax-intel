@@ -10,15 +10,13 @@ import { parseOcc } from "@/lib/sources/occ";
 import { scoreDeciles } from "@/lib/flow/score";
 
 export function ContractDetail() {
-  const [occ, setOcc] = useState("NVDA261218C00200000");
+  const [occ, setOcc] = useState(() => {
+    if (typeof window === "undefined") return "NVDA261218C00200000";
+    return new URLSearchParams(window.location.search).get("occ")?.toUpperCase() || "NVDA261218C00200000";
+  });
   const [prints, setPrints] = useState<{ time: string; premium: number; side: string; score?: number; scoreStatus?: string }[]>([]);
   const [barsNote, setBarsNote] = useState("Option bars have not been requested.");
   const [error, setError] = useState<string | null>(null);
-
-  useEffect(() => {
-    const query = new URLSearchParams(window.location.search).get("occ");
-    if (query) setOcc(query.toUpperCase());
-  }, []);
 
   useEffect(() => {
     const parsed = parseOcc(occ);
