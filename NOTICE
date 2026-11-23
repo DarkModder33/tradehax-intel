@@ -10,4 +10,10 @@ Licensed under the Apache License, Version 2.0.
 The chart pane keeps the TradingView attribution logo, which satisfies the linking requirement in that license.
 https://www.tradingview.com/
 
+Liberation Sans
+Copyright 2010 Red Hat, Inc.
+Licensed under the SIL Open Font License, Version 1.1.
+The regular face is stored at scripts/news/fonts/LiberationSans-Regular.ttf and is used only to rasterize news card images.
+https://github.com/liberationfonts/liberation-fonts
+
 Other runtime dependencies keep the licenses declared in their own packages. AGPL and GPL projects were used as ideas only and were not copied into this tree.

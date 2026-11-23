@@ -140,6 +140,12 @@ The pack does not include a market-data vendor. Options flow, unusual options vo
 9. **Business intelligence.** Hit rate by setup, by timeframe confluence, and by ticker. That is the journal turned into a report, not a second product.
 10. **A licensed feed.** Keep `MarketDataProvider`. Point it at a keyed vendor when delayed Yahoo data is no longer good enough. Keys stay in environment variables.
 
+## News
+
+`node scripts/news/generate.mjs` writes `content/news/stories.json` from the files in `public/data` (or `DATA_DIR`). A story is kept only when a stored figure clears a fixed threshold. Earnings, IV rank, 13F, and insider cluster pages stay empty until those files have the rows the filter requires.
+
+Weekday data runs also generate stories around the open, midday, and the close. The Pages build copies `data/news/stories.json` from the data branch before `next build`, then writes RSS at `/news/feed.xml`, Atom at `/news/atom.xml`, a Google News sitemap of the last 48 hours at `/news-sitemap.xml`, and card images under `/news/og/`. IndexNow pings only when `INDEXNOW=1`, and a failed ping does not fail the job. The public key file is `public/a7c3e91b4d2f48e0a1b6c5d4e3f2a190.txt`.
+
 ## Disclaimer
 
 TradeHax is research software. It is not a broker, not investment advice, and not a promise that a high score will make money.

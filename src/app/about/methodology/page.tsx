@@ -16,6 +16,7 @@ export default function Page() {
         ))}
       </ul>
       <p className="max-w-3xl text-sm text-muted-foreground">Until a ticker has 20 stored prints, the median premium is thin and the score is marked building. The decile table shows the sample size even when the next-day edge is flat.</p>
+      <p className="max-w-3xl text-sm text-muted-foreground">News pages are written from stored files when a number clears a fixed threshold. Each story names the source and the timestamp. An empty file does not become an article. The line on the page says the note is auto-generated and is not investment advice.</p>
     </ModuleFrame>
   );
 }
