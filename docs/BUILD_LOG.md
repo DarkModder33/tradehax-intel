@@ -138,3 +138,18 @@ Live checks (3:15 PM ET, through `curl --resolve`): `/`, `/news/`, `/news/feed.x
 | 4:04 PM | 74106d8 | `finite(null)` was 0, producing three bogus "+5 point" Treasury stories; fixed and retracted via `content/news/retracted.json` |
 | 4:04 PM | 6a49c95 | Social only posts stories from the last 36 h (`SOCIAL_MAX_AGE_HOURS`) |
 | 4:07 PM | — | Data run 45266075011 ✅ (2m14s, was 6m34s): 51 technicals, shorts settled 2026-10-30, all 13 FRED series, 25 stories, news sitemap 16 |
+
+**Premium push, Nov 23 (late afternoon)**: Mike approved this push and the Discord cleanup. All commits are GitHub-only and **need an Origin backport**, in this order.
+
+| Time (ET) | SHA | Change |
+|---|---|---|
+| 4:17 PM | 647d0dc | Discord posts use `?wait=true`. The ledger records `messages[storyId][network] = messageId` for Telegram and Discord, so a bad post can be deleted by id. The 3 false Treasury posts on Discord were sent before this change and have no ids, so **Mike deletes them by hand**. Telegram 14–16 were deleted. |
+| 4:21 PM | aca34c1 | Day change on the desk and pop-out: the percent was multiplied by 100 twice (SPY showed ±6–7%), and the move was measured bar to bar. It is now measured against the prior NY-session daily close (`withSessionChange`). |
+| 4:31 PM | 1af13cd | Premium shell: sticky blurred nav, ⌘K command palette that also opens tickers, mobile drawer and bottom nav, home hero, market strip (SPY/QQQ/IWM/DIA/TLT/GLD), top stories, and skeleton, empty and error states. 390px overflow went from 302px to 0. |
+| 4:37 PM | 55364ee | Congress trades parsed from House PTR PDFs (`pdftotext -layout`, last 120 days, at most 160 docs, cached by docId). Party comes from congress-legislators. `/congress/` page, and Congress trades on each ticker page. Senate eFD is not parsed (agreement cookie). |
+| 4:42 PM | 0b01476 | Event-triggered stories: flow spikes (≥2.5× the 5-session average and ≥250k contracts), gamma flips (|net GEX| ≥ $50M), and insider buying clusters (shares and price > 0, within 14 days). `options-history.json` holds a daily options row. `validateStory` plus an input-age gate (36 h) refuse bad stories and log them. Short-interest jumps use the existing `short` type and pass through the same gate. |
+| 4:46 PM | f40a82c | GEX heatmap (strike × expiry, labeled, with the flip level) on `/gex/`. The intraday tide chart is an SVG with ET axes, sliced to the latest session. |
+| 4:51 PM | 9a924bb | Earnings implied vs actual: Nasdaq report dates and EPS surprise, worker daily closes (close before → first close after the report, which covers both BMO and AMC), and implied from the ATM straddle (Cboe live within 14 days, then Alpaca historical option bars). `/earnings/` has upcoming and history tables. Stories only run when the reaction closed in the last 3 days. |
+| 4:54 PM | c3e47f9 | Earnings story wording: ± implied, states the straddle source and expiry, and drops the stale "not backfilled" line. The WMT story went out at 4:53 PM ET with the old wording. Its numbers are correct. |
+
+Data run 45273858568 ✅: congress 1002 rows, earnings-moves 128 rows (32 names, all with an implied), 6 upcoming. Before and after screenshots are on the box in `/workspace/tradehax-shots/{before,after}/`.

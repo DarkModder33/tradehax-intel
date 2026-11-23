@@ -143,7 +143,7 @@ Logs show `social skip <net> <id>: already in ledger` for stories that were alre
 | X | ⏳ waiting on keys | Adapter is built (`post.mjs`, API v2 `POST /2/tweets`, OAuth 1.0a, $CASHTAG plus link, under 270 characters). It needs the four `X_*` secrets from the X developer portal. Check the free-tier posting limits. |
 | Bluesky, Mastodon | stubbed | — |
 
-Current ledger: `SECTORS|rotation|2026-11-16 → [discord, telegram]`.
+The ledger (`data/social-posted.json`) records the networks posted per story id. Since 647d0dc it also records `messages[storyId] = {telegram, discord}` message ids. Discord is posted with `?wait=true` so the id comes back. To retract a post, delete it by that id.
 
 ---
 
@@ -177,6 +177,9 @@ Current ledger: `SECTORS|rotation|2026-11-16 → [discord, telegram]`.
 | 5 | Google Search Console: set `NEXT_PUBLIC_GSC_VERIFICATION`, then submit `/sitemap.xml` and `/news-sitemap.xml` | Mike's GSC property |
 | 6 | ~~Make the data and news schedule reliable~~ done Nov 23 (gotcha 9). Backport the Nov 23 evening GitHub-only commits listed in BUILD_LOG to Origin. | Origin agent |
 | 7 | **MIT LICENSE**: deferred by Mike. Do not add it until he says so. | Mike |
+| 9 | Delete the 3 false Treasury (DGS2/DGS10/DGS30) posts on Discord by hand. They predate message-id logging. | Mike |
+| 10 | Backport the premium push (647d0dc, aca34c1, 1af13cd, 55364ee, 0b01476, f40a82c, 9a924bb, c3e47f9, and the docs commit) to Origin | Origin agent |
+| 11 | Senate trades: eFD needs the agreement cookie flow. Push alerts and 13F are deferred. | — |
 | 8 | Optional: `SEC_USER_AGENT` with a real contact, and rename the Telegram link to `tradehaxintel` | — |
 
 Ideas past these: regime weights, meta-labeling, a nightly model fit, Senate filings, and Polymarket and crypto whale extras (spec P6).
