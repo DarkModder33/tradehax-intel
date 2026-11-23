@@ -134,12 +134,12 @@ export function CongressTrades() {
           className="h-10 w-full rounded-full border border-white/10 bg-white/[0.03] px-4 text-sm sm:w-64"
         />
         {(["all", "buy", "sell"] as Side[]).map((value) => (
-          <button key={value} type="button" onClick={() => setSide(value)} className={cn("nav-pill border border-white/10", side === value && "nav-pill-active border-gold/40 text-gold")}>
+          <button key={value} type="button" onClick={() => setSide(value)} className={cn("chip", side === value && "chip-active")}>
             {value === "all" ? "All" : value === "buy" ? "Buys" : "Sells"}
           </button>
         ))}
         {(["all", "D", "R"] as Party[]).map((value) => (
-          <button key={value} type="button" onClick={() => setParty(value)} className={cn("nav-pill border border-white/10", party === value && "nav-pill-active border-gold/40 text-gold")}>
+          <button key={value} type="button" onClick={() => setParty(value)} className={cn("chip", party === value && "chip-active")}>
             {value === "all" ? "Both parties" : value === "D" ? "Democrats" : "Republicans"}
           </button>
         ))}

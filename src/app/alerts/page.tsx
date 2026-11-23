@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
-import { AlertDesk } from "@/components/alerts/desk";
+import Link from "next/link";
 import { ModuleFrame } from "@/components/module-frame";
 
 export const metadata: Metadata = { title: "Alerts" };
 
 export default function Page() {
   return (
-    <ModuleFrame title="Watchlists and alerts" lede="Lists and rules stay in this browser. Matches are checked against the worker stream. Web push is not wired: there is no VAPID key in this build, so notifications stay in the tab.">
-      <AlertDesk />
+    <ModuleFrame title="Alerts" lede="The alert feed is being built. Browser alert rules live on the rules page.">
+      <Link href="/alerts/rules/" className="text-sm text-gold hover:underline">Alert rules</Link>
     </ModuleFrame>
   );
 }

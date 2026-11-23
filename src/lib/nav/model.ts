@@ -9,74 +9,69 @@ export interface NavGroup {
   items: NavItem[];
 }
 
+/** Top-level sections. A group with one item renders as a plain link. */
 export const NAV_GROUPS: NavGroup[] = [
-  { label: "Desk", items: [{ href: "/", label: "Desk" }, { href: "/news/", label: "News" }, { href: "/t/", label: "Ticker" }, { href: "/alerts/", label: "Alerts" }, { href: "/screener/", label: "Screener" }] },
   {
-    label: "Charts",
+    label: "Markets",
     items: [
+      { href: "/", label: "Desk", keywords: "home dashboard" },
+      { href: "/markets/", label: "Overview" },
       { href: "/chart/", label: "Chart" },
-      { href: "/backtest/", label: "Backtest" },
-      { href: "/rotation/", label: "Rotation" },
+      { href: "/screener/", label: "Screener" },
+      { href: "/map/", label: "Heat map" },
+      { href: "/rotation/", label: "Sector rotation" },
       { href: "/macro/", label: "Macro" },
-      { href: "/lab/", label: "Lab" },
+      { href: "/calendar/", label: "Economic calendar" },
       { href: "/seasonality/", label: "Seasonality" },
-      { href: "/markets/", label: "Markets" },
-    ],
-  },
-  {
-    label: "Options",
-    items: [
-      { href: "/chain/", label: "Chain" },
-      { href: "/gex/", label: "Gamma" },
-      { href: "/vol/", label: "Vol" },
-      { href: "/strategy/", label: "Strategy" },
-      { href: "/oi/", label: "OI" },
-      { href: "/flow/hot/", label: "Hot" },
+      { href: "/etf/", label: "ETF flows" },
+      { href: "/spx/", label: "SPX" },
     ],
   },
   {
     label: "Flow",
     items: [
-      { href: "/flow/", label: "Tape" },
-      { href: "/flow/alerts/", label: "Flow alerts" },
+      { href: "/flow/", label: "Options tape" },
+      { href: "/flow/alerts/", label: "Unusual activity" },
+      { href: "/flow/hot/", label: "Hot contracts" },
+      { href: "/tide/", label: "Market tide" },
       { href: "/flow/interval/", label: "Interval" },
       { href: "/flow/history/", label: "History" },
-      { href: "/tide/", label: "Tide" },
+      { href: "/offex/", label: "Dark pool" },
     ],
   },
   {
-    label: "Structure",
+    label: "Options",
     items: [
-      { href: "/offex/", label: "Off-ex" },
-      { href: "/shorts/", label: "Shorts" },
-      { href: "/spx/", label: "SPX" },
-      { href: "/map/", label: "Map" },
+      { href: "/gex/", label: "Dealer gamma" },
+      { href: "/chain/", label: "Chain" },
+      { href: "/vol/", label: "Volatility" },
+      { href: "/oi/", label: "Open interest" },
+      { href: "/strategy/", label: "Strategy builder" },
+      { href: "/c/", label: "Contract" },
     ],
   },
   {
-    label: "Filings",
+    label: "Research",
     items: [
+      { href: "/t/", label: "Ticker" },
+      { href: "/earnings/", label: "Earnings moves" },
+      { href: "/congress/", label: "Congress trades" },
       { href: "/insiders/", label: "Insiders" },
-      { href: "/congress/", label: "Congress" },
+      { href: "/shorts/", label: "Short interest" },
       { href: "/institutions/", label: "13F" },
+      { href: "/backtest/", label: "Backtest" },
+      { href: "/lab/", label: "Lab" },
+      { href: "/portfolio/", label: "Portfolio" },
+      { href: "/workspace/", label: "Workspace" },
     ],
   },
-  {
-    label: "Calendar",
-    items: [
-      { href: "/earnings/", label: "Earnings" },
-      { href: "/calendar/", label: "Economic" },
-      { href: "/etf/", label: "ETF" },
-    ],
-  },
+  { label: "News", items: [{ href: "/news/", label: "News" }] },
+  { label: "Alerts", items: [{ href: "/alerts/", label: "Alerts" }, { href: "/alerts/rules/", label: "Alert rules" }] },
 ];
 
 export const NAV_RIGHT: NavItem[] = [
-  { href: "/portfolio/", label: "Portfolio" },
-  { href: "/workspace/", label: "Workspace" },
   { href: "/about/", label: "About" },
   { href: "/about/methodology/", label: "Methodology" },
-  { href: "/c/", label: "Contract" },
   { href: "/status/", label: "Status" },
 ];
 
