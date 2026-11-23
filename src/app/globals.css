@@ -98,6 +98,8 @@
   html {
     @apply font-sans;
     color-scheme: dark;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
   }
   body {
     @apply bg-background text-foreground;
@@ -183,15 +185,17 @@ table td:first-child {
   background: var(--background);
 }
 
-button,
-a {
-  min-height: 40px;
+.surface table th:first-child,
+.surface table td:first-child {
+  background: var(--card);
 }
 
-@media (min-width: 768px) {
+/* Touch targets on phones: controls and navigation, not inline links inside dense rows. */
+@media (max-width: 767px) {
   button,
-  a {
-    min-height: 0;
+  nav a,
+  .tap {
+    min-height: 40px;
   }
 }
 
@@ -324,4 +328,27 @@ a {
   color: var(--foreground);
   background: rgba(255, 255, 255, 0.06);
   border-color: rgba(255, 255, 255, 0.12);
+}
+
+/* Form controls share one quiet look across every tool page. */
+input:not([type="checkbox"]):not([type="radio"]):not([type="range"]),
+select {
+  font-size: 12px;
+  background-color: transparent;
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+input:focus-visible,
+select:focus-visible {
+  outline: none;
+  border-color: rgba(255, 255, 255, 0.25);
+}
+
+select option {
+  background: var(--popover);
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  accent-color: var(--gold);
 }

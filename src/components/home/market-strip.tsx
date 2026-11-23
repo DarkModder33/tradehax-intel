@@ -82,7 +82,7 @@ export function MarketStrip() {
 
   return (
     <section aria-label="Market strip" className="-mx-4 overflow-x-auto px-4 md:mx-0 md:px-0">
-      <div className="grid min-w-[780px] grid-cols-6 gap-2 md:min-w-0">
+      <div className="surface grid min-w-[720px] grid-cols-6 divide-x divide-white/[0.05] md:min-w-0">
         {STRIP_SYMBOLS.map(({ symbol, label }) => {
           const row = rows[symbol];
           const loading = !(symbol in rows) && !failed;
@@ -91,7 +91,7 @@ export function MarketStrip() {
             <Link
               key={symbol}
               href={tickerPath(symbol)}
-              className="surface flex items-center justify-between gap-2 px-3 py-2.5 transition-colors hover:border-white/20"
+              className="flex items-center justify-between gap-2 px-3 py-2.5 transition-colors first:rounded-l-lg last:rounded-r-lg hover:bg-white/[0.02]"
             >
               <span className="min-w-0">
                 <span className="block text-xs font-semibold">{symbol}</span>
@@ -114,7 +114,7 @@ export function MarketStrip() {
           );
         })}
       </div>
-      <p className="mt-1.5 text-[10px] text-muted-foreground">Daily change vs prior close. Alpaca SIP via the TradeHax worker, about 15 minutes delayed.</p>
+      <p className="mt-1.5 text-[10px] text-muted-foreground">Change vs prior close. Alpaca SIP via worker, about 15 min delayed.</p>
     </section>
   );
 }

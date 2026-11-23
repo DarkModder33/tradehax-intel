@@ -36,17 +36,23 @@ export function DataBadge({
   const session = usEquitySession(new Date(now));
   const staleNow = stale || (asOfMs != null && isStale(asOfMs, kind, now));
   const partial = coverage != null && coverage < 1;
+  const stamp = asOfMs
+    ? new Intl.DateTimeFormat("en-US", { timeZone: "America/New_York", month: "short", day: "numeric", hour: "numeric", minute: "2-digit" }).format(new Date(asOfMs)) + " ET"
+    : asOf ?? null;
+  const parts = [
+    unavailable ? "Unavailable" : source,
+    stamp ? `as of ${stamp}${age ? ` (${age})` : ""}` : null,
+    delay,
+    session.status === "closed" ? "market closed" : null,
+  ].filter(Boolean);
   return (
-    <p className="flex flex-wrap items-center gap-1.5 text-[11px] text-muted-foreground">
-      <span className="rounded-full border border-border px-2 py-0.5">{unavailable ? "Unavailable" : source}</span>
-      {asOf ? <span className="rounded-full border border-border px-2 py-0.5">As of {asOf}{age ? ` · ${age}` : ""}</span> : null}
-      {delay ? <span className="rounded-full border border-border px-2 py-0.5">{delay}</span> : null}
-      {session.status === "closed" ? <span className="rounded-full border border-border px-2 py-0.5">Market closed</span> : null}
-      {partial ? <span className="rounded-full border border-gold/50 px-2 py-0.5 text-gold">Partial coverage</span> : null}
-      {staleNow ? <span className="rounded-full border border-gold/50 px-2 py-0.5 text-gold">Stale</span> : null}
+    <p className="flex flex-wrap items-center gap-x-1.5 text-[11px] text-muted-foreground">
+      <span>{parts.join(" · ")}</span>
+      {partial ? <span className="text-gold">· partial coverage</span> : null}
+      {staleNow ? <span className="text-gold">· stale</span> : null}
       {inferred ? (
-        <span className="rounded-full border border-gold/50 px-2 py-0.5 text-gold" title={inferredReason ?? "This value is estimated, not observed."}>
-          Inferred
+        <span className="text-gold" title={inferredReason ?? "This value is estimated, not observed."}>
+          · inferred
         </span>
       ) : null}
     </p>

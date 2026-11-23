@@ -253,7 +253,7 @@ export function SiteNav() {
 
       <nav aria-label="Mobile" className="fixed inset-x-0 bottom-0 z-40 grid grid-cols-5 border-t border-white/[0.06] bg-[#08090b]/95 pb-[env(safe-area-inset-bottom)] backdrop-blur-md md:hidden">
         {[
-          { href: "/", label: "Desk", icon: LayoutDashboard },
+          { href: "/", label: "Home", icon: LayoutDashboard },
           { href: "/alerts/", label: "Alerts", icon: Bell },
           { href: "/flow/", label: "Flow", icon: Activity },
           { href: "/news/", label: "News", icon: Newspaper },
