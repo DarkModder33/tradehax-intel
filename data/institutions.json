@@ -1,6 +1,6 @@
 {
   "meta": {
-    "asOf": "2026-11-23T20:24:54.681Z",
+    "asOf": "2026-11-23T21:01:00.567Z",
     "source": "SEC 13F-HR index",
     "rows": 20,
     "delay": "quarterly",
@@ -48,6 +48,13 @@
       "filed": "2026-09-30",
       "names": [
         "Smart Portfolios, LLC  (CIK 0001513227)"
+      ]
+    },
+    {
+      "id": "0000921895-26-003243:primary_doc.xml",
+      "filed": "2026-09-30",
+      "names": [
+        "FINDELL CAPITAL MANAGEMENT LLC  (CIK 0001814465)"
       ]
     },
     {
@@ -139,13 +146,6 @@
       "filed": "2026-09-30",
       "names": [
         "Innovative Asset Advisors Group, LLC  (CIK 0002127147)"
-      ]
-    },
-    {
-      "id": "0001104659-26-130609:primary_doc.xml",
-      "filed": "2026-06-30",
-      "names": [
-        "49 WEALTH MANAGEMENT, LLC  (CIK 0002022291)"
       ]
     }
   ],

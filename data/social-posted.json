@@ -35,7 +35,39 @@
     "XLC|ftd|2026-11-23": [
       "telegram",
       "discord"
+    ],
+    "SECTORS|rotation|2026-11-23": [
+      "telegram",
+      "discord"
+    ],
+    "UNH|mover|2026-11-23": [
+      "telegram",
+      "discord"
+    ],
+    "DGS2|macro|2026-11-23": [
+      "telegram",
+      "discord"
+    ],
+    "DGS10|macro|2026-11-23": [
+      "telegram",
+      "discord"
+    ],
+    "DGS30|macro|2026-11-23": [
+      "telegram",
+      "discord"
+    ],
+    "META|short|2026-11-23": [
+      "telegram",
+      "discord"
+    ],
+    "BULL|insider|2026-11-23": [
+      "telegram",
+      "discord"
+    ],
+    "XLRE|short|2026-11-23": [
+      "telegram",
+      "discord"
     ]
   },
-  "updatedAt": "2026-11-23T20:31:10.226Z"
+  "updatedAt": "2026-11-23T21:03:07.525Z"
 }

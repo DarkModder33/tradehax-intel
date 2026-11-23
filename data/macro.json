@@ -1,81 +1,81 @@
 {
   "meta": {
-    "asOf": "2026-11-23T20:30:59.130Z",
+    "asOf": "2026-11-23T21:02:55.932Z",
     "source": "FRED public CSV",
     "rows": 13,
     "delay": "daily",
     "stale": false,
     "unavailable": false,
-    "coverage": 0
+    "coverage": 1
   },
   "rows": [
     {
       "id": "DGS3MO",
-      "value": null
+      "value": 4.34
     },
     {
       "id": "DGS2",
-      "value": null
+      "value": 4.76
     },
     {
       "id": "DGS5",
-      "value": null
+      "value": 4.86
     },
     {
       "id": "DGS10",
-      "value": null
+      "value": 5.04
     },
     {
       "id": "DGS30",
-      "value": null
+      "value": 5.4
     },
     {
       "id": "T10Y2Y",
-      "value": null
+      "value": 0.29
     },
     {
       "id": "T10Y3M",
-      "value": null
+      "value": 0.6
     },
     {
       "id": "BAMLH0A0HYM2",
-      "value": null
+      "value": 3.76
     },
     {
       "id": "DFF",
-      "value": null
+      "value": 3.88
     },
     {
       "id": "CPIAUCSL",
-      "value": null
+      "value": 337.476
     },
     {
       "id": "UNRATE",
-      "value": null
+      "value": 4.1
     },
     {
       "id": "ICSA",
-      "value": null
+      "value": 203000
     },
     {
       "id": "WALCL",
-      "value": null
+      "value": 6741452
     }
   ],
-  "note": "VIX futures CSV is unverified and is left unavailable until a file answers. DGS3MO: The operation was aborted due to timeout; DGS2: The operation was aborted due to timeout; DGS5: The operation was aborted due to timeout",
+  "note": "VIX futures CSV is unverified and is left unavailable until a file answers.",
   "latest": {
-    "DGS3MO": null,
-    "DGS2": null,
-    "DGS5": null,
-    "DGS10": null,
-    "DGS30": null,
-    "T10Y2Y": null,
-    "T10Y3M": null,
-    "BAMLH0A0HYM2": null,
-    "DFF": null,
-    "CPIAUCSL": null,
-    "UNRATE": null,
-    "ICSA": null,
-    "WALCL": null
+    "DGS3MO": 4.34,
+    "DGS2": 4.76,
+    "DGS5": 4.86,
+    "DGS10": 5.04,
+    "DGS30": 5.4,
+    "T10Y2Y": 0.29,
+    "T10Y3M": 0.6,
+    "BAMLH0A0HYM2": 3.76,
+    "DFF": 3.88,
+    "CPIAUCSL": 337.476,
+    "UNRATE": 4.1,
+    "ICSA": 203000,
+    "WALCL": 6741452
   }
 }

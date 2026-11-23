@@ -1,6 +1,6 @@
 {
   "meta": {
-    "asOf": "2026-11-23T20:24:53.551Z",
+    "asOf": "2026-11-23T21:00:59.161Z",
     "source": "SEC EDGAR Form 4",
     "rows": 25,
     "delay": "hours",
@@ -77,6 +77,23 @@
       }
     },
     {
+      "id": "0002130035-26-000010:primary_doc.xml",
+      "filed": "2026-11-19",
+      "names": [
+        "MILLER BRIAN K  (CIK 0001086072)",
+        "TYLER TECHNOLOGIES INC  (CIK 0000860731)"
+      ],
+      "trade": {
+        "owner": "MILLER BRIAN K",
+        "ticker": "TYL",
+        "code": "M",
+        "shares": 289,
+        "price": 345.87,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
       "id": "0002128910-26-000002:primary_doc.xml",
       "filed": "2026-11-20",
       "names": [
@@ -123,6 +140,23 @@
         "code": "P",
         "shares": 900,
         "price": 33.6221,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002120865-26-000011:wk-form4_1795467526.xml",
+      "filed": "2026-11-20",
+      "names": [
+        "Hoxworth Seth Alan  (CIK 0002120865)",
+        "CITIZENS, INC.  (CIK 0000024090)"
+      ],
+      "trade": {
+        "owner": "Hoxworth Seth Alan",
+        "ticker": "CIA",
+        "code": "P",
+        "shares": 6225,
+        "price": 3.105,
         "acquired": true,
         "form": "4"
       }
@@ -264,6 +298,23 @@
       }
     },
     {
+      "id": "0002093121-26-000010:primary_doc.xml",
+      "filed": "2026-11-23",
+      "names": [
+        "Denier Anthony Michael  (CIK 0002093121)",
+        "Webull Corp  (CIK 0001866364)"
+      ],
+      "trade": {
+        "owner": "Denier Anthony Michael",
+        "ticker": "BULL",
+        "code": "P",
+        "shares": 10000,
+        "price": 4.4687,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
       "id": "0002092820-26-000004:primary_doc.xml",
       "filed": "2026-11-23",
       "names": [
@@ -332,6 +383,40 @@
       }
     },
     {
+      "id": "0002058897-26-000351:wk-form4_1795465875.xml",
+      "filed": "2026-11-19",
+      "names": [
+        "Jaramillo Mejia Ricardo  (CIK 0002121522)",
+        "Grupo Cibest S.A.  (CIK 0002058897)"
+      ],
+      "trade": {
+        "owner": "Jaramillo Mejia Ricardo",
+        "ticker": "CIB",
+        "code": "A",
+        "shares": 266.09,
+        "price": 8.63,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002058897-26-000349:wk-form4_1795465521.xml",
+      "filed": "2026-11-19",
+      "names": [
+        "Toro Valencia Juan Esteban  (CIK 0002120846)",
+        "Grupo Cibest S.A.  (CIK 0002058897)"
+      ],
+      "trade": {
+        "owner": "Toro Valencia Juan Esteban",
+        "ticker": "CIB",
+        "code": "A",
+        "shares": 481.66,
+        "price": 8.63,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
       "id": "0002058897-26-000347:wk-form4_1795465416.xml",
       "filed": "2026-11-19",
       "names": [
@@ -344,91 +429,6 @@
         "code": "A",
         "shares": 682.18,
         "price": 8.63,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002058897-26-000345:wk-form4_1795464820.xml",
-      "filed": "2026-11-19",
-      "names": [
-        "Zapata Zuluaga Nicolas  (CIK 0002121524)",
-        "Grupo Cibest S.A.  (CIK 0002058897)"
-      ],
-      "trade": {
-        "owner": "Zapata Zuluaga Nicolas",
-        "ticker": "CIB",
-        "code": "A",
-        "shares": 500.31,
-        "price": 8.63,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002058897-26-000343:wk-form4_1795464716.xml",
-      "filed": "2026-11-19",
-      "names": [
-        "Restrepo Echavarria Luis Fernando  (CIK 0002120711)",
-        "Grupo Cibest S.A.  (CIK 0002058897)"
-      ],
-      "trade": {
-        "owner": "Restrepo Echavarria Luis Fernando",
-        "ticker": "CIB",
-        "code": "A",
-        "shares": 405.55,
-        "price": 8.63,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002058897-26-000341:wk-form4_1795464279.xml",
-      "filed": "2026-11-19",
-      "names": [
-        "Vatnick Silvina  (CIK 0002120729)",
-        "Grupo Cibest S.A.  (CIK 0002058897)"
-      ],
-      "trade": {
-        "owner": "Vatnick Silvina",
-        "ticker": "CIB",
-        "code": "A",
-        "shares": 447.64,
-        "price": 8.63,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002058897-26-000339:wk-form4_1795463889.xml",
-      "filed": "2026-11-19",
-      "names": [
-        "Escovar Gomez Sylvia  (CIK 0002121214)",
-        "Grupo Cibest S.A.  (CIK 0002058897)"
-      ],
-      "trade": {
-        "owner": "Escovar Gomez Sylvia",
-        "ticker": "CIB",
-        "code": "A",
-        "shares": 281.38,
-        "price": 8.63,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002047535-26-000005:primarydocument.xml",
-      "filed": "2026-11-19",
-      "names": [
-        "Krick Timothy W  (CIK 0002047535)",
-        "SPIRE INC  (CIK 0001126956)"
-      ],
-      "trade": {
-        "owner": "Krick Timothy W",
-        "ticker": "SR",
-        "code": "A",
-        "shares": 470,
-        "price": 85.63,
         "acquired": true,
         "form": "4"
       }

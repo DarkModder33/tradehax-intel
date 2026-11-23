@@ -1,8 +1,8 @@
 {
   "meta": {
-    "asOf": "2026-11-23T20:26:15.442Z",
+    "asOf": "2026-11-23T21:02:28.119Z",
     "source": "SEC fails-to-deliver",
-    "rows": 316,
+    "rows": 421,
     "delay": "about 3 weeks",
     "stale": false,
     "unavailable": false,
@@ -10,2217 +10,2952 @@
   },
   "rows": [
     {
-      "date": "2026-10-01",
+      "date": "2026-10-15",
       "symbol": "ABBV",
-      "quantity": 58,
+      "quantity": 5900,
       "description": "ABBVIE INC COM STK (DE)",
-      "price": 261.59
+      "price": 283.48
     },
     {
-      "date": "2026-10-01",
+      "date": "2026-10-15",
+      "symbol": "AMD",
+      "quantity": 29,
+      "description": "ADVANCED MICRO DEVICES",
+      "price": 570.82
+    },
+    {
+      "date": "2026-10-15",
       "symbol": "GOOGL",
-      "quantity": 2628,
+      "quantity": 807,
       "description": "ALPHABET INC CAP STK CL A",
-      "price": 344.08
+      "price": 347.64
     },
     {
-      "date": "2026-10-01",
+      "date": "2026-10-15",
       "symbol": "AMZN",
-      "quantity": 54801,
+      "quantity": 40,
       "description": "AMAZON COM INC;COM USD0.01",
-      "price": 249.15
+      "price": 254.08
     },
     {
-      "date": "2026-10-01",
-      "symbol": "BA",
-      "quantity": 571,
-      "description": "BOEING CO;COM USD5",
-      "price": 186.05
-    },
-    {
-      "date": "2026-10-01",
-      "symbol": "CVX",
-      "quantity": 120,
-      "description": "CHEVRON CORPORATION",
-      "price": 204.21
-    },
-    {
-      "date": "2026-10-01",
-      "symbol": "KO",
-      "quantity": 25,
-      "description": "COCA-COLA CO",
-      "price": 86.08
-    },
-    {
-      "date": "2026-10-01",
-      "symbol": "META",
-      "quantity": 25,
-      "description": "META PLATFORMS, INC. CLASS A C",
-      "price": 725.18
-    },
-    {
-      "date": "2026-10-01",
-      "symbol": "HD",
-      "quantity": 633,
-      "description": "HOME DEPOT INC",
-      "price": 284.49
-    },
-    {
-      "date": "2026-10-01",
-      "symbol": "TLT",
-      "quantity": 176564,
-      "description": "ISHARES BARCLAYS 20+ YEAR TREA",
-      "price": 77.78
-    },
-    {
-      "date": "2026-10-01",
-      "symbol": "IWM",
-      "quantity": 475,
-      "description": "ISHARES RUSSELL 2000 ETF",
-      "price": 277.89
-    },
-    {
-      "date": "2026-10-01",
-      "symbol": "HYG",
-      "quantity": 14868,
-      "description": "ISHARES TR",
-      "price": 77.21
-    },
-    {
-      "date": "2026-10-01",
-      "symbol": "MSFT",
-      "quantity": 1410,
-      "description": "MICROSOFT CORP;COM USD0.000012",
-      "price": 512.9
-    },
-    {
-      "date": "2026-10-01",
-      "symbol": "MSTR",
-      "quantity": 355,
-      "description": "STRATEGY INC COMMON STOCK CLAS",
-      "price": 153.09
-    },
-    {
-      "date": "2026-10-01",
-      "symbol": "NFLX",
-      "quantity": 1093,
-      "description": "NETFLIX COM INC",
-      "price": 69.58
-    },
-    {
-      "date": "2026-10-01",
-      "symbol": "NVDA",
-      "quantity": 300,
-      "description": "NVIDIA CORP",
-      "price": 228.38
-    },
-    {
-      "date": "2026-10-01",
-      "symbol": "ORCL",
-      "quantity": 203,
-      "description": "ORACLE CORPORATION",
-      "price": 137.3
-    },
-    {
-      "date": "2026-10-01",
-      "symbol": "PG",
-      "quantity": 11,
-      "description": "PROCTER & GAMBLE;COM NPV",
-      "price": 145.28
-    },
-    {
-      "date": "2026-10-01",
-      "symbol": "SPY",
-      "quantity": 60319,
-      "description": "STATE STREET SPDR S&P 500 ETF",
-      "price": 762.63
-    },
-    {
-      "date": "2026-10-01",
-      "symbol": "GLD",
-      "quantity": 3020,
-      "description": "SPDR GOLD TR, SPDR GOLD SHS",
-      "price": 380.84
-    },
-    {
-      "date": "2026-10-01",
-      "symbol": "XLB",
-      "quantity": 148008,
-      "description": "SELECT SECTOR SPDR TR STATE ST",
-      "price": 48.7
-    },
-    {
-      "date": "2026-10-01",
-      "symbol": "XLV",
-      "quantity": 1021,
-      "description": "SELECT SECTOR SPDR TR ST ST HE",
-      "price": 168.42
-    },
-    {
-      "date": "2026-10-01",
-      "symbol": "XLF",
-      "quantity": 1420782,
-      "description": "SELECT SECTOR SPDR TR STATE ST",
-      "price": 53.4
-    },
-    {
-      "date": "2026-10-01",
-      "symbol": "XLI",
-      "quantity": 33644,
-      "description": "SELECT SECTOR SPDR TR STATE ST",
-      "price": 166.98
-    },
-    {
-      "date": "2026-10-01",
-      "symbol": "XLC",
-      "quantity": 27807,
-      "description": "SELECT SECTOR SPDR TR STATE ST",
-      "price": 110.97
-    },
-    {
-      "date": "2026-10-01",
-      "symbol": "XLRE",
-      "quantity": 3319,
-      "description": "SELECT SECTOR SPDR TR STATE ST",
-      "price": 40.91
-    },
-    {
-      "date": "2026-10-01",
-      "symbol": "XLU",
-      "quantity": 24557,
-      "description": "SELECT SECTOR SPDR TR STATE ST",
-      "price": 39.44
-    },
-    {
-      "date": "2026-10-01",
-      "symbol": "TSLA",
-      "quantity": 25,
-      "description": "TESLA INC COM STK (TX)",
-      "price": 354.81
-    },
-    {
-      "date": "2026-10-01",
-      "symbol": "V",
-      "quantity": 32,
-      "description": "VISA INC CLASS A COM",
-      "price": 359.33
-    },
-    {
-      "date": "2026-10-02",
-      "symbol": "GOOGL",
-      "quantity": 1137,
-      "description": "ALPHABET INC CAP STK CL A",
-      "price": 338.24
-    },
-    {
-      "date": "2026-10-02",
-      "symbol": "AMZN",
-      "quantity": 1150,
-      "description": "AMAZON COM INC;COM USD0.01",
-      "price": 248.23
-    },
-    {
-      "date": "2026-10-02",
+      "date": "2026-10-15",
       "symbol": "AAPL",
-      "quantity": 156354,
+      "quantity": 231,
       "description": "APPLE INC;COM NPV",
-      "price": 330.32
+      "price": 342.96
     },
     {
-      "date": "2026-10-02",
+      "date": "2026-10-15",
       "symbol": "BAC",
-      "quantity": 74,
-      "description": "BANK OF AMERICA CORP",
-      "price": 53.73
-    },
-    {
-      "date": "2026-10-02",
-      "symbol": "BA",
-      "quantity": 1048,
-      "description": "BOEING CO;COM USD5",
-      "price": 192.28
-    },
-    {
-      "date": "2026-10-02",
-      "symbol": "CVX",
-      "quantity": 443,
-      "description": "CHEVRON CORPORATION",
-      "price": 207.1
-    },
-    {
-      "date": "2026-10-02",
-      "symbol": "KO",
-      "quantity": 400,
-      "description": "COCA-COLA CO",
-      "price": 86.1
-    },
-    {
-      "date": "2026-10-02",
-      "symbol": "COIN",
-      "quantity": 1087,
-      "description": "COINBASE GLOBAL INC COM CL A (",
-      "price": 189.29
-    },
-    {
-      "date": "2026-10-02",
-      "symbol": "COST",
-      "quantity": 441,
-      "description": "COSTCO WHOLESALE CORP-NEW",
-      "price": 914.94
-    },
-    {
-      "date": "2026-10-02",
-      "symbol": "XOM",
-      "quantity": 4166,
-      "description": "EXXONMOBIL HLDGS CORPORATION",
-      "price": 163.82
-    },
-    {
-      "date": "2026-10-02",
-      "symbol": "HD",
-      "quantity": 5929,
-      "description": "HOME DEPOT INC",
-      "price": 282.46
-    },
-    {
-      "date": "2026-10-02",
-      "symbol": "QQQ",
-      "quantity": 4817,
-      "description": "INVESCO QQQ TR",
-      "price": 742.03
-    },
-    {
-      "date": "2026-10-02",
-      "symbol": "TLT",
-      "quantity": 40067,
-      "description": "ISHARES BARCLAYS 20+ YEAR TREA",
-      "price": 77.71
-    },
-    {
-      "date": "2026-10-02",
-      "symbol": "IWM",
-      "quantity": 32034,
-      "description": "ISHARES RUSSELL 2000 ETF",
-      "price": 279.02
-    },
-    {
-      "date": "2026-10-02",
-      "symbol": "HYG",
-      "quantity": 405054,
-      "description": "ISHARES TR",
-      "price": 76.9
-    },
-    {
-      "date": "2026-10-02",
-      "symbol": "MRK",
-      "quantity": 25,
-      "description": "MERCK & CO INC;COM USD0.01",
-      "price": 143.81
-    },
-    {
-      "date": "2026-10-02",
-      "symbol": "MSFT",
-      "quantity": 7022,
-      "description": "MICROSOFT CORP;COM USD0.000012",
-      "price": 512.8
-    },
-    {
-      "date": "2026-10-02",
-      "symbol": "MSTR",
-      "quantity": 536,
-      "description": "STRATEGY INC COMMON STOCK CLAS",
-      "price": 160.5
-    },
-    {
-      "date": "2026-10-02",
-      "symbol": "NFLX",
-      "quantity": 545,
-      "description": "NETFLIX COM INC",
-      "price": 67.85
-    },
-    {
-      "date": "2026-10-02",
-      "symbol": "NVDA",
-      "quantity": 38491,
-      "description": "NVIDIA CORP",
-      "price": 230.86
-    },
-    {
-      "date": "2026-10-02",
-      "symbol": "ORCL",
-      "quantity": 242,
-      "description": "ORACLE CORPORATION",
-      "price": 138.07
-    },
-    {
-      "date": "2026-10-02",
-      "symbol": "PLTR",
-      "quantity": 2790,
-      "description": "PALANTIR TECHNOLOGIES INC CL A",
-      "price": 190.04
-    },
-    {
-      "date": "2026-10-02",
-      "symbol": "PG",
-      "quantity": 96,
-      "description": "PROCTER & GAMBLE;COM NPV",
-      "price": 143.95
-    },
-    {
-      "date": "2026-10-02",
-      "symbol": "DIA",
-      "quantity": 12,
-      "description": "STATE STR SPDR DOW JONES INDL",
-      "price": 508.62
-    },
-    {
-      "date": "2026-10-02",
-      "symbol": "XLB",
-      "quantity": 60250,
-      "description": "SELECT SECTOR SPDR TR STATE ST",
-      "price": 48.54
-    },
-    {
-      "date": "2026-10-02",
-      "symbol": "XLE",
-      "quantity": 1946,
-      "description": "SELECT SECTOR SPDR TR STATE ST",
-      "price": 62.7
-    },
-    {
-      "date": "2026-10-02",
-      "symbol": "XLF",
-      "quantity": 53938,
-      "description": "SELECT SECTOR SPDR TR STATE ST",
-      "price": 53.46
-    },
-    {
-      "date": "2026-10-02",
-      "symbol": "XLK",
-      "quantity": 89,
-      "description": "SELECT SECTOR SPDR TR STATE ST",
-      "price": 197.81
-    },
-    {
-      "date": "2026-10-02",
-      "symbol": "XLC",
-      "quantity": 411956,
-      "description": "SELECT SECTOR SPDR TR STATE ST",
-      "price": 109.94
-    },
-    {
-      "date": "2026-10-02",
-      "symbol": "SMH",
-      "quantity": 685,
-      "description": "VANECK ETF TR SEMICONDUCTOR ET",
-      "price": 617.81
-    },
-    {
-      "date": "2026-10-02",
-      "symbol": "WMT",
-      "quantity": 121,
-      "description": "WAL-MART INC (DE)",
-      "price": 104.26
-    },
-    {
-      "date": "2026-10-05",
-      "symbol": "ABBV",
-      "quantity": 16,
-      "description": "ABBVIE INC COM STK (DE)",
-      "price": 262.82
-    },
-    {
-      "date": "2026-10-05",
-      "symbol": "AMD",
-      "quantity": 319749,
-      "description": "ADVANCED MICRO DEVICES",
-      "price": 633.91
-    },
-    {
-      "date": "2026-10-05",
-      "symbol": "AAPL",
-      "quantity": 1610,
-      "description": "APPLE INC;COM NPV",
-      "price": 333.69
-    },
-    {
-      "date": "2026-10-05",
-      "symbol": "BA",
-      "quantity": 1155,
-      "description": "BOEING CO;COM USD5",
-      "price": 193.56
-    },
-    {
-      "date": "2026-10-05",
-      "symbol": "AVGO",
-      "quantity": 1200,
-      "description": "BROADCOM INC COM (DE)",
-      "price": 355.14
-    },
-    {
-      "date": "2026-10-05",
-      "symbol": "CVX",
-      "quantity": 65,
-      "description": "CHEVRON CORPORATION",
-      "price": 206.69
-    },
-    {
-      "date": "2026-10-05",
-      "symbol": "KO",
-      "quantity": 502492,
-      "description": "COCA-COLA CO",
-      "price": 85.65
-    },
-    {
-      "date": "2026-10-05",
-      "symbol": "COST",
-      "quantity": 100,
-      "description": "COSTCO WHOLESALE CORP-NEW",
-      "price": 920.65
-    },
-    {
-      "date": "2026-10-05",
-      "symbol": "XOM",
-      "quantity": 1323,
-      "description": "EXXONMOBIL HLDGS CORPORATION",
-      "price": 164.01
-    },
-    {
-      "date": "2026-10-05",
-      "symbol": "META",
-      "quantity": 8571,
-      "description": "META PLATFORMS, INC. CLASS A C",
-      "price": 728.08
-    },
-    {
-      "date": "2026-10-05",
-      "symbol": "QQQ",
-      "quantity": 65162,
-      "description": "INVESCO QQQ TR",
-      "price": 749.58
-    },
-    {
-      "date": "2026-10-05",
-      "symbol": "TLT",
-      "quantity": 2200,
-      "description": "ISHARES BARCLAYS 20+ YEAR TREA",
-      "price": 77.48
-    },
-    {
-      "date": "2026-10-05",
-      "symbol": "IWM",
-      "quantity": 164271,
-      "description": "ISHARES RUSSELL 2000 ETF",
-      "price": 281.52
-    },
-    {
-      "date": "2026-10-05",
-      "symbol": "HYG",
-      "quantity": 20805,
-      "description": "ISHARES TR",
-      "price": 76.91
-    },
-    {
-      "date": "2026-10-05",
-      "symbol": "JPM",
-      "quantity": 357,
-      "description": "JPMORGAN CHASE & CO COM STK",
-      "price": 332.38
-    },
-    {
-      "date": "2026-10-05",
-      "symbol": "JNJ",
-      "quantity": 2175,
-      "description": "JOHNSON AND JOHNSON",
-      "price": 256.03
-    },
-    {
-      "date": "2026-10-05",
-      "symbol": "MSFT",
-      "quantity": 135349,
-      "description": "MICROSOFT CORP;COM USD0.000012",
-      "price": 517.53
-    },
-    {
-      "date": "2026-10-05",
-      "symbol": "MSTR",
-      "quantity": 400,
-      "description": "STRATEGY INC COMMON STOCK CLAS",
-      "price": 160.01
-    },
-    {
-      "date": "2026-10-05",
-      "symbol": "NFLX",
-      "quantity": 274,
-      "description": "NETFLIX COM INC",
-      "price": 67.06
-    },
-    {
-      "date": "2026-10-05",
-      "symbol": "NVDA",
-      "quantity": 63726,
-      "description": "NVIDIA CORP",
-      "price": 233.95
-    },
-    {
-      "date": "2026-10-05",
-      "symbol": "ORCL",
-      "quantity": 3430,
-      "description": "ORACLE CORPORATION",
-      "price": 142.3
-    },
-    {
-      "date": "2026-10-05",
-      "symbol": "PLTR",
-      "quantity": 15601,
-      "description": "PALANTIR TECHNOLOGIES INC CL A",
-      "price": 188.75
-    },
-    {
-      "date": "2026-10-05",
-      "symbol": "SPY",
-      "quantity": 5943,
-      "description": "STATE STREET SPDR S&P 500 ETF",
-      "price": 769.64
-    },
-    {
-      "date": "2026-10-05",
-      "symbol": "GLD",
-      "quantity": 15352,
-      "description": "SPDR GOLD TR, SPDR GOLD SHS",
-      "price": 380.14
-    },
-    {
-      "date": "2026-10-05",
-      "symbol": "DIA",
-      "quantity": 8,
-      "description": "STATE STR SPDR DOW JONES INDL",
-      "price": 511.1
-    },
-    {
-      "date": "2026-10-05",
-      "symbol": "CRM",
-      "quantity": 16770,
-      "description": "SALESFORCE,INC",
-      "price": 234.69
-    },
-    {
-      "date": "2026-10-05",
-      "symbol": "XLY",
-      "quantity": 625,
-      "description": "STATE STREET CONSUMER DISCRETI",
-      "price": 110.04
-    },
-    {
-      "date": "2026-10-05",
-      "symbol": "XLE",
-      "quantity": 146028,
-      "description": "SELECT SECTOR SPDR TR STATE ST",
-      "price": 62.82
-    },
-    {
-      "date": "2026-10-05",
-      "symbol": "XLF",
-      "quantity": 287888,
-      "description": "SELECT SECTOR SPDR TR STATE ST",
-      "price": 53.49
-    },
-    {
-      "date": "2026-10-05",
-      "symbol": "XLC",
-      "quantity": 3445659,
-      "description": "SELECT SECTOR SPDR TR STATE ST",
-      "price": 110.32
-    },
-    {
-      "date": "2026-10-05",
-      "symbol": "XLU",
-      "quantity": 2000,
-      "description": "SELECT SECTOR SPDR TR STATE ST",
-      "price": 39.83
-    },
-    {
-      "date": "2026-10-05",
-      "symbol": "TSLA",
-      "quantity": 219841,
-      "description": "TESLA INC COM STK (TX)",
-      "price": 370.59
-    },
-    {
-      "date": "2026-10-05",
-      "symbol": "UNH",
-      "quantity": 1000,
-      "description": "UNITEDHEALTH GROUP INC",
-      "price": 371.9
-    },
-    {
-      "date": "2026-10-05",
-      "symbol": "SMH",
-      "quantity": 3353,
-      "description": "VANECK ETF TR SEMICONDUCTOR ET",
-      "price": 630.6
-    },
-    {
-      "date": "2026-10-06",
-      "symbol": "AMD",
-      "quantity": 800,
-      "description": "ADVANCED MICRO DEVICES",
-      "price": 631.75
-    },
-    {
-      "date": "2026-10-06",
-      "symbol": "GOOGL",
-      "quantity": 66,
-      "description": "ALPHABET INC CAP STK CL A",
-      "price": 346.47
-    },
-    {
-      "date": "2026-10-06",
-      "symbol": "AMZN",
-      "quantity": 57,
-      "description": "AMAZON COM INC;COM USD0.01",
-      "price": 251.4
-    },
-    {
-      "date": "2026-10-06",
-      "symbol": "AAPL",
-      "quantity": 1519,
-      "description": "APPLE INC;COM NPV",
-      "price": 332.89
-    },
-    {
-      "date": "2026-10-06",
-      "symbol": "BRKB",
-      "quantity": 31190,
-      "description": "BERKSHIRE HATHWY INC(HLDG CO)B",
-      "price": 504.26
-    },
-    {
-      "date": "2026-10-06",
-      "symbol": "BA",
-      "quantity": 1165,
-      "description": "BOEING CO;COM USD5",
-      "price": 192.72
-    },
-    {
-      "date": "2026-10-06",
-      "symbol": "AVGO",
-      "quantity": 1420,
-      "description": "BROADCOM INC COM (DE)",
-      "price": 362.51
-    },
-    {
-      "date": "2026-10-06",
-      "symbol": "CVX",
-      "quantity": 529,
-      "description": "CHEVRON CORPORATION",
-      "price": 206.47
-    },
-    {
-      "date": "2026-10-06",
-      "symbol": "KO",
-      "quantity": 285,
-      "description": "COCA-COLA CO",
-      "price": 86.51
-    },
-    {
-      "date": "2026-10-06",
-      "symbol": "COIN",
-      "quantity": 493,
-      "description": "COINBASE GLOBAL INC COM CL A (",
-      "price": 188.22
-    },
-    {
-      "date": "2026-10-06",
-      "symbol": "COST",
-      "quantity": 3,
-      "description": "COSTCO WHOLESALE CORP-NEW",
-      "price": 923.52
-    },
-    {
-      "date": "2026-10-06",
-      "symbol": "XOM",
-      "quantity": 6670,
-      "description": "EXXONMOBIL HLDGS CORPORATION",
-      "price": 164
-    },
-    {
-      "date": "2026-10-06",
-      "symbol": "META",
-      "quantity": 1452,
-      "description": "META PLATFORMS, INC. CLASS A C",
-      "price": 741.9
-    },
-    {
-      "date": "2026-10-06",
-      "symbol": "HD",
-      "quantity": 1104,
-      "description": "HOME DEPOT INC",
-      "price": 281.15
-    },
-    {
-      "date": "2026-10-06",
-      "symbol": "QQQ",
-      "quantity": 14516,
-      "description": "INVESCO QQQ TR",
-      "price": 756.2
-    },
-    {
-      "date": "2026-10-06",
-      "symbol": "TLT",
-      "quantity": 5392,
-      "description": "ISHARES BARCLAYS 20+ YEAR TREA",
-      "price": 77.11
-    },
-    {
-      "date": "2026-10-06",
-      "symbol": "IWM",
-      "quantity": 3471,
-      "description": "ISHARES RUSSELL 2000 ETF",
-      "price": 283.38
-    },
-    {
-      "date": "2026-10-06",
-      "symbol": "JPM",
-      "quantity": 211,
-      "description": "JPMORGAN CHASE & CO COM STK",
-      "price": 332.38
-    },
-    {
-      "date": "2026-10-06",
-      "symbol": "JNJ",
-      "quantity": 372,
-      "description": "JOHNSON AND JOHNSON",
-      "price": 252.93
-    },
-    {
-      "date": "2026-10-06",
-      "symbol": "MA",
-      "quantity": 460,
-      "description": "MASTERCARD INCORPORATED CL A C",
-      "price": 564.59
-    },
-    {
-      "date": "2026-10-06",
-      "symbol": "MSFT",
-      "quantity": 85,
-      "description": "MICROSOFT CORP;COM USD0.000012",
-      "price": 525.18
-    },
-    {
-      "date": "2026-10-06",
-      "symbol": "MSTR",
-      "quantity": 92,
-      "description": "STRATEGY INC COMMON STOCK CLAS",
-      "price": 164.43
-    },
-    {
-      "date": "2026-10-06",
-      "symbol": "NFLX",
-      "quantity": 1262,
-      "description": "NETFLIX COM INC",
-      "price": 67.5
-    },
-    {
-      "date": "2026-10-06",
-      "symbol": "NVDA",
-      "quantity": 13455,
-      "description": "NVIDIA CORP",
-      "price": 238.9
-    },
-    {
-      "date": "2026-10-06",
-      "symbol": "PLTR",
-      "quantity": 14,
-      "description": "PALANTIR TECHNOLOGIES INC CL A",
-      "price": 189.4
-    },
-    {
-      "date": "2026-10-06",
-      "symbol": "PG",
-      "quantity": 18,
-      "description": "PROCTER & GAMBLE;COM NPV",
-      "price": 145.94
-    },
-    {
-      "date": "2026-10-06",
-      "symbol": "SPY",
-      "quantity": 2970,
-      "description": "STATE STREET SPDR S&P 500 ETF",
-      "price": 774.83
-    },
-    {
-      "date": "2026-10-06",
-      "symbol": "DIA",
-      "quantity": 100,
-      "description": "STATE STR SPDR DOW JONES INDL",
-      "price": 512.11
-    },
-    {
-      "date": "2026-10-06",
-      "symbol": "XLV",
-      "quantity": 6,
-      "description": "SELECT SECTOR SPDR TR ST ST HE",
-      "price": 167.37
-    },
-    {
-      "date": "2026-10-06",
-      "symbol": "XLF",
-      "quantity": 5215,
-      "description": "SELECT SECTOR SPDR TR STATE ST",
-      "price": 53.88
-    },
-    {
-      "date": "2026-10-06",
-      "symbol": "XLK",
       "quantity": 20,
-      "description": "SELECT SECTOR SPDR TR STATE ST",
-      "price": 200.93
+      "description": "BANK OF AMERICA CORP",
+      "price": 51.39
     },
     {
-      "date": "2026-10-06",
-      "symbol": "XLC",
-      "quantity": 2822672,
-      "description": "SELECT SECTOR SPDR TR STATE ST",
-      "price": 111.61
-    },
-    {
-      "date": "2026-10-06",
-      "symbol": "XLRE",
-      "quantity": 7135,
-      "description": "SELECT SECTOR SPDR TR STATE ST",
-      "price": 40.67
-    },
-    {
-      "date": "2026-10-06",
-      "symbol": "XLU",
-      "quantity": 2,
-      "description": "SELECT SECTOR SPDR TR STATE ST",
-      "price": 39.97
-    },
-    {
-      "date": "2026-10-06",
-      "symbol": "TSLA",
-      "quantity": 2786,
-      "description": "TESLA INC COM STK (TX)",
-      "price": 378.73
-    },
-    {
-      "date": "2026-10-06",
-      "symbol": "UNH",
-      "quantity": 4,
-      "description": "UNITEDHEALTH GROUP INC",
-      "price": 378.58
-    },
-    {
-      "date": "2026-10-06",
-      "symbol": "SMH",
-      "quantity": 335,
-      "description": "VANECK ETF TR SEMICONDUCTOR ET",
-      "price": 633.9
-    },
-    {
-      "date": "2026-10-06",
-      "symbol": "V",
-      "quantity": 92,
-      "description": "VISA INC CLASS A COM",
-      "price": 369.71
-    },
-    {
-      "date": "2026-10-07",
-      "symbol": "ABBV",
-      "quantity": 5644,
-      "description": "ABBVIE INC COM STK (DE)",
-      "price": 266.69
-    },
-    {
-      "date": "2026-10-07",
-      "symbol": "AMD",
-      "quantity": 241,
-      "description": "ADVANCED MICRO DEVICES",
-      "price": 649.42
-    },
-    {
-      "date": "2026-10-07",
-      "symbol": "GOOGL",
-      "quantity": 51,
-      "description": "ALPHABET INC CAP STK CL A",
-      "price": 347.68
-    },
-    {
-      "date": "2026-10-07",
-      "symbol": "AAPL",
-      "quantity": 69,
-      "description": "APPLE INC;COM NPV",
-      "price": 333.63
-    },
-    {
-      "date": "2026-10-07",
+      "date": "2026-10-15",
       "symbol": "BRKB",
-      "quantity": 30451,
+      "quantity": 3283,
       "description": "BERKSHIRE HATHWY INC(HLDG CO)B",
-      "price": 505.54
+      "price": 526.35
     },
     {
-      "date": "2026-10-07",
+      "date": "2026-10-15",
       "symbol": "BA",
-      "quantity": 994,
+      "quantity": 1198,
       "description": "BOEING CO;COM USD5",
-      "price": 189.82
+      "price": 184.66
     },
     {
-      "date": "2026-10-07",
-      "symbol": "AVGO",
-      "quantity": 1,
-      "description": "BROADCOM INC COM (DE)",
-      "price": 375.81
+      "date": "2026-10-15",
+      "symbol": "CVX",
+      "quantity": 13,
+      "description": "CHEVRON CORPORATION",
+      "price": 222.04
     },
     {
-      "date": "2026-10-07",
+      "date": "2026-10-15",
+      "symbol": "COIN",
+      "quantity": 68,
+      "description": "COINBASE GLOBAL INC COM CL A (",
+      "price": 172.89
+    },
+    {
+      "date": "2026-10-15",
       "symbol": "META",
-      "quantity": 92,
+      "quantity": 94,
       "description": "META PLATFORMS, INC. CLASS A C",
-      "price": 738.88
+      "price": 737.54
     },
     {
-      "date": "2026-10-07",
+      "date": "2026-10-15",
       "symbol": "HD",
-      "quantity": 233,
+      "quantity": 450,
       "description": "HOME DEPOT INC",
-      "price": 286.69
+      "price": 295.51
     },
     {
-      "date": "2026-10-07",
-      "symbol": "QQQ",
-      "quantity": 7391,
-      "description": "INVESCO QQQ TR",
-      "price": 759.66
+      "date": "2026-10-15",
+      "symbol": "TLT",
+      "quantity": 40930,
+      "description": "ISHARES BARCLAYS 20+ YEAR TREA",
+      "price": 78.89
     },
     {
-      "date": "2026-10-07",
+      "date": "2026-10-15",
       "symbol": "IWM",
-      "quantity": 74795,
+      "quantity": 508235,
       "description": "ISHARES RUSSELL 2000 ETF",
-      "price": 281.34
+      "price": 271.37
     },
     {
-      "date": "2026-10-07",
-      "symbol": "LLY",
-      "quantity": 12,
-      "description": "ELI LILLY AND CO;COM NPV",
-      "price": 1157.49
+      "date": "2026-10-15",
+      "symbol": "HYG",
+      "quantity": 6,
+      "description": "ISHARES TR",
+      "price": 76.81
     },
     {
-      "date": "2026-10-07",
-      "symbol": "MSFT",
-      "quantity": 248,
-      "description": "MICROSOFT CORP;COM USD0.000012",
-      "price": 529.3
+      "date": "2026-10-15",
+      "symbol": "JPM",
+      "quantity": 1277,
+      "description": "JPMORGAN CHASE & CO COM STK",
+      "price": 335.28
     },
     {
-      "date": "2026-10-07",
+      "date": "2026-10-15",
+      "symbol": "JNJ",
+      "quantity": 173,
+      "description": "JOHNSON AND JOHNSON",
+      "price": 253.91
+    },
+    {
+      "date": "2026-10-15",
+      "symbol": "MRK",
+      "quantity": 6795,
+      "description": "MERCK & CO INC;COM USD0.01",
+      "price": 147.37
+    },
+    {
+      "date": "2026-10-15",
       "symbol": "MSTR",
-      "quantity": 76,
+      "quantity": 55223,
       "description": "STRATEGY INC COMMON STOCK CLAS",
-      "price": 164.55
+      "price": 143.24
     },
     {
-      "date": "2026-10-07",
+      "date": "2026-10-15",
       "symbol": "NFLX",
-      "quantity": 143,
+      "quantity": 4539,
+      "description": "NETFLIX COM INC",
+      "price": 70.57
+    },
+    {
+      "date": "2026-10-15",
+      "symbol": "NVDA",
+      "quantity": 4871,
+      "description": "NVIDIA CORP",
+      "price": 221.3
+    },
+    {
+      "date": "2026-10-15",
+      "symbol": "ORCL",
+      "quantity": 575,
+      "description": "ORACLE CORPORATION",
+      "price": 130.55
+    },
+    {
+      "date": "2026-10-15",
+      "symbol": "PLTR",
+      "quantity": 196,
+      "description": "PALANTIR TECHNOLOGIES INC CL A",
+      "price": 200.97
+    },
+    {
+      "date": "2026-10-15",
+      "symbol": "SPY",
+      "quantity": 3944,
+      "description": "STATE STREET SPDR S&P 500 ETF",
+      "price": 769.6
+    },
+    {
+      "date": "2026-10-15",
+      "symbol": "GLD",
+      "quantity": 44723,
+      "description": "SPDR GOLD TR, SPDR GOLD SHS",
+      "price": 375.99
+    },
+    {
+      "date": "2026-10-15",
+      "symbol": "DIA",
+      "quantity": 35387,
+      "description": "STATE STR SPDR DOW JONES INDL",
+      "price": 515.63
+    },
+    {
+      "date": "2026-10-15",
+      "symbol": "XLB",
+      "quantity": 970,
+      "description": "SELECT SECTOR SPDR TR STATE ST",
+      "price": 49.67
+    },
+    {
+      "date": "2026-10-15",
+      "symbol": "XLV",
+      "quantity": 2436,
+      "description": "SELECT SECTOR SPDR TR ST ST HE",
+      "price": 173.96
+    },
+    {
+      "date": "2026-10-15",
+      "symbol": "XLE",
+      "quantity": 396,
+      "description": "SELECT SECTOR SPDR TR STATE ST",
+      "price": 67.63
+    },
+    {
+      "date": "2026-10-15",
+      "symbol": "XLF",
+      "quantity": 1150566,
+      "description": "SELECT SECTOR SPDR TR STATE ST",
+      "price": 54.52
+    },
+    {
+      "date": "2026-10-15",
+      "symbol": "XLI",
+      "quantity": 3500,
+      "description": "SELECT SECTOR SPDR TR STATE ST",
+      "price": 167.04
+    },
+    {
+      "date": "2026-10-15",
+      "symbol": "XLK",
+      "quantity": 2362,
+      "description": "SELECT SECTOR SPDR TR STATE ST",
+      "price": 190.43
+    },
+    {
+      "date": "2026-10-15",
+      "symbol": "XLC",
+      "quantity": 97,
+      "description": "SELECT SECTOR SPDR TR STATE ST",
+      "price": 110.82
+    },
+    {
+      "date": "2026-10-15",
+      "symbol": "SMH",
+      "quantity": 2,
+      "description": "VANECK ETF TR SEMICONDUCTOR ET",
+      "price": 564.74
+    },
+    {
+      "date": "2026-10-15",
+      "symbol": "V",
+      "quantity": 89,
+      "description": "VISA INC CLASS A COM",
+      "price": 391.43
+    },
+    {
+      "date": "2026-10-15",
+      "symbol": "WMT",
+      "quantity": 1026,
+      "description": "WAL-MART INC (DE)",
+      "price": 116.16
+    },
+    {
+      "date": "2026-10-16",
+      "symbol": "GOOGL",
+      "quantity": 1032,
+      "description": "ALPHABET INC CAP STK CL A",
+      "price": 349.22
+    },
+    {
+      "date": "2026-10-16",
+      "symbol": "AMZN",
+      "quantity": 747,
+      "description": "AMAZON COM INC;COM USD0.01",
+      "price": 254.76
+    },
+    {
+      "date": "2026-10-16",
+      "symbol": "BRKB",
+      "quantity": 1228,
+      "description": "BERKSHIRE HATHWY INC(HLDG CO)B",
+      "price": 525.68
+    },
+    {
+      "date": "2026-10-16",
+      "symbol": "BA",
+      "quantity": 1197,
+      "description": "BOEING CO;COM USD5",
+      "price": 188.73
+    },
+    {
+      "date": "2026-10-16",
+      "symbol": "AVGO",
+      "quantity": 500,
+      "description": "BROADCOM INC COM (DE)",
+      "price": 344.33
+    },
+    {
+      "date": "2026-10-16",
+      "symbol": "COIN",
+      "quantity": 14102,
+      "description": "COINBASE GLOBAL INC COM CL A (",
+      "price": 183.81
+    },
+    {
+      "date": "2026-10-16",
+      "symbol": "COST",
+      "quantity": 9,
+      "description": "COSTCO WHOLESALE CORP-NEW",
+      "price": 978.01
+    },
+    {
+      "date": "2026-10-16",
+      "symbol": "XOM",
+      "quantity": 4478,
+      "description": "EXXONMOBIL HLDGS CORPORATION",
+      "price": 174.68
+    },
+    {
+      "date": "2026-10-16",
+      "symbol": "META",
+      "quantity": 234,
+      "description": "META PLATFORMS, INC. CLASS A C",
+      "price": 736.72
+    },
+    {
+      "date": "2026-10-16",
+      "symbol": "HD",
+      "quantity": 726,
+      "description": "HOME DEPOT INC",
+      "price": 308.24
+    },
+    {
+      "date": "2026-10-16",
+      "symbol": "QQQ",
+      "quantity": 826126,
+      "description": "INVESCO QQQ TR",
+      "price": 728
+    },
+    {
+      "date": "2026-10-16",
+      "symbol": "IWM",
+      "quantity": 3824,
+      "description": "ISHARES RUSSELL 2000 ETF",
+      "price": 275.08
+    },
+    {
+      "date": "2026-10-16",
+      "symbol": "HYG",
+      "quantity": 13694,
+      "description": "ISHARES TR",
+      "price": 77.13
+    },
+    {
+      "date": "2026-10-16",
+      "symbol": "JPM",
+      "quantity": 2870,
+      "description": "JPMORGAN CHASE & CO COM STK",
+      "price": 335.53
+    },
+    {
+      "date": "2026-10-16",
+      "symbol": "JNJ",
+      "quantity": 183,
+      "description": "JOHNSON AND JOHNSON",
+      "price": 253.28
+    },
+    {
+      "date": "2026-10-16",
+      "symbol": "MSFT",
+      "quantity": 49,
+      "description": "MICROSOFT CORP;COM USD0.000012",
+      "price": 539.44
+    },
+    {
+      "date": "2026-10-16",
+      "symbol": "MSTR",
+      "quantity": 48757,
+      "description": "STRATEGY INC COMMON STOCK CLAS",
+      "price": 151.29
+    },
+    {
+      "date": "2026-10-16",
+      "symbol": "NFLX",
+      "quantity": 102839,
+      "description": "NETFLIX COM INC",
+      "price": 72.61
+    },
+    {
+      "date": "2026-10-16",
+      "symbol": "NVDA",
+      "quantity": 6388,
+      "description": "NVIDIA CORP",
+      "price": 217.23
+    },
+    {
+      "date": "2026-10-16",
+      "symbol": "ORCL",
+      "quantity": 1022,
+      "description": "ORACLE CORPORATION",
+      "price": 134.47
+    },
+    {
+      "date": "2026-10-16",
+      "symbol": "PLTR",
+      "quantity": 296,
+      "description": "PALANTIR TECHNOLOGIES INC CL A",
+      "price": 200.5
+    },
+    {
+      "date": "2026-10-16",
+      "symbol": "SPY",
+      "quantity": 1531365,
+      "description": "STATE STREET SPDR S&P 500 ETF",
+      "price": 771.79
+    },
+    {
+      "date": "2026-10-16",
+      "symbol": "GLD",
+      "quantity": 389235,
+      "description": "SPDR GOLD TR, SPDR GOLD SHS",
+      "price": 382.71
+    },
+    {
+      "date": "2026-10-16",
+      "symbol": "DIA",
+      "quantity": 2328,
+      "description": "STATE STR SPDR DOW JONES INDL",
+      "price": 521.18
+    },
+    {
+      "date": "2026-10-16",
+      "symbol": "XLB",
+      "quantity": 46090,
+      "description": "SELECT SECTOR SPDR TR STATE ST",
+      "price": 50.56
+    },
+    {
+      "date": "2026-10-16",
+      "symbol": "XLV",
+      "quantity": 11092,
+      "description": "SELECT SECTOR SPDR TR ST ST HE",
+      "price": 177.19
+    },
+    {
+      "date": "2026-10-16",
+      "symbol": "XLE",
+      "quantity": 2009,
+      "description": "SELECT SECTOR SPDR TR STATE ST",
+      "price": 66.56
+    },
+    {
+      "date": "2026-10-16",
+      "symbol": "XLF",
+      "quantity": 8827,
+      "description": "SELECT SECTOR SPDR TR STATE ST",
+      "price": 55.27
+    },
+    {
+      "date": "2026-10-16",
+      "symbol": "XLI",
+      "quantity": 40080,
+      "description": "SELECT SECTOR SPDR TR STATE ST",
+      "price": 167.89
+    },
+    {
+      "date": "2026-10-16",
+      "symbol": "XLK",
+      "quantity": 2228,
+      "description": "SELECT SECTOR SPDR TR STATE ST",
+      "price": 189.19
+    },
+    {
+      "date": "2026-10-16",
+      "symbol": "XLC",
+      "quantity": 94,
+      "description": "SELECT SECTOR SPDR TR STATE ST",
+      "price": 112.44
+    },
+    {
+      "date": "2026-10-16",
+      "symbol": "XLRE",
+      "quantity": 3646,
+      "description": "SELECT SECTOR SPDR TR STATE ST",
+      "price": 41.99
+    },
+    {
+      "date": "2026-10-16",
+      "symbol": "SMH",
+      "quantity": 15853,
+      "description": "VANECK ETF TR SEMICONDUCTOR ET",
+      "price": 558.84
+    },
+    {
+      "date": "2026-10-16",
+      "symbol": "V",
+      "quantity": 62,
+      "description": "VISA INC CLASS A COM",
+      "price": 399.75
+    },
+    {
+      "date": "2026-10-16",
+      "symbol": "WMT",
+      "quantity": 283,
+      "description": "WAL-MART INC (DE)",
+      "price": 117.87
+    },
+    {
+      "date": "2026-10-19",
+      "symbol": "AMD",
+      "quantity": 400,
+      "description": "ADVANCED MICRO DEVICES",
+      "price": 528.75
+    },
+    {
+      "date": "2026-10-19",
+      "symbol": "GOOGL",
+      "quantity": 106903,
+      "description": "ALPHABET INC CAP STK CL A",
+      "price": 340.59
+    },
+    {
+      "date": "2026-10-19",
+      "symbol": "AMZN",
+      "quantity": 7960,
+      "description": "AMAZON COM INC;COM USD0.01",
+      "price": 250
+    },
+    {
+      "date": "2026-10-19",
+      "symbol": "AAPL",
+      "quantity": 18204,
+      "description": "APPLE INC;COM NPV",
+      "price": 343.46
+    },
+    {
+      "date": "2026-10-19",
+      "symbol": "BAC",
+      "quantity": 400,
+      "description": "BANK OF AMERICA CORP",
+      "price": 51.23
+    },
+    {
+      "date": "2026-10-19",
+      "symbol": "BRKB",
+      "quantity": 17273,
+      "description": "BERKSHIRE HATHWY INC(HLDG CO)B",
+      "price": 532.02
+    },
+    {
+      "date": "2026-10-19",
+      "symbol": "BA",
+      "quantity": 1198,
+      "description": "BOEING CO;COM USD5",
+      "price": 190.21
+    },
+    {
+      "date": "2026-10-19",
+      "symbol": "AVGO",
+      "quantity": 2081,
+      "description": "BROADCOM INC COM (DE)",
+      "price": 328.75
+    },
+    {
+      "date": "2026-10-19",
+      "symbol": "CVX",
+      "quantity": 4549,
+      "description": "CHEVRON CORPORATION",
+      "price": 224.99
+    },
+    {
+      "date": "2026-10-19",
+      "symbol": "COST",
+      "quantity": 10287,
+      "description": "COSTCO WHOLESALE CORP-NEW",
+      "price": 989.11
+    },
+    {
+      "date": "2026-10-19",
+      "symbol": "XOM",
+      "quantity": 363533,
+      "description": "EXXONMOBIL HLDGS CORPORATION",
+      "price": 178.98
+    },
+    {
+      "date": "2026-10-19",
+      "symbol": "META",
+      "quantity": 164175,
+      "description": "META PLATFORMS, INC. CLASS A C",
+      "price": 709.33
+    },
+    {
+      "date": "2026-10-19",
+      "symbol": "HD",
+      "quantity": 895,
+      "description": "HOME DEPOT INC",
+      "price": 309.63
+    },
+    {
+      "date": "2026-10-19",
+      "symbol": "QQQ",
+      "quantity": 73950,
+      "description": "INVESCO QQQ TR",
+      "price": 709.8
+    },
+    {
+      "date": "2026-10-19",
+      "symbol": "TLT",
+      "quantity": 211843,
+      "description": "ISHARES BARCLAYS 20+ YEAR TREA",
+      "price": 80.05
+    },
+    {
+      "date": "2026-10-19",
+      "symbol": "IWM",
+      "quantity": 108797,
+      "description": "ISHARES RUSSELL 2000 ETF",
+      "price": 270.44
+    },
+    {
+      "date": "2026-10-19",
+      "symbol": "HYG",
+      "quantity": 161,
+      "description": "ISHARES TR",
+      "price": 76.86
+    },
+    {
+      "date": "2026-10-19",
+      "symbol": "JPM",
+      "quantity": 2510,
+      "description": "JPMORGAN CHASE & CO COM STK",
+      "price": 339.72
+    },
+    {
+      "date": "2026-10-19",
+      "symbol": "JNJ",
+      "quantity": 173,
+      "description": "JOHNSON AND JOHNSON",
+      "price": 255.56
+    },
+    {
+      "date": "2026-10-19",
+      "symbol": "LLY",
+      "quantity": 1800,
+      "description": "ELI LILLY AND CO;COM NPV",
+      "price": 1257.03
+    },
+    {
+      "date": "2026-10-19",
+      "symbol": "MA",
+      "quantity": 4300,
+      "description": "MASTERCARD INCORPORATED CL A C",
+      "price": 617.42
+    },
+    {
+      "date": "2026-10-19",
+      "symbol": "MRK",
+      "quantity": 800,
+      "description": "MERCK & CO INC;COM USD0.01",
+      "price": 145.95
+    },
+    {
+      "date": "2026-10-19",
+      "symbol": "MSFT",
+      "quantity": 21134,
+      "description": "MICROSOFT CORP;COM USD0.000012",
+      "price": 529.05
+    },
+    {
+      "date": "2026-10-19",
+      "symbol": "NFLX",
+      "quantity": 1186,
+      "description": "NETFLIX COM INC",
+      "price": 70.53
+    },
+    {
+      "date": "2026-10-19",
+      "symbol": "NVDA",
+      "quantity": 6751,
+      "description": "NVIDIA CORP",
+      "price": 214.13
+    },
+    {
+      "date": "2026-10-19",
+      "symbol": "ORCL",
+      "quantity": 2116,
+      "description": "ORACLE CORPORATION",
+      "price": 128.23
+    },
+    {
+      "date": "2026-10-19",
+      "symbol": "PLTR",
+      "quantity": 2494,
+      "description": "PALANTIR TECHNOLOGIES INC CL A",
+      "price": 186.03
+    },
+    {
+      "date": "2026-10-19",
+      "symbol": "PG",
+      "quantity": 27408,
+      "description": "PROCTER & GAMBLE;COM NPV",
+      "price": 159.35
+    },
+    {
+      "date": "2026-10-19",
+      "symbol": "SPY",
+      "quantity": 1393039,
+      "description": "STATE STREET SPDR S&P 500 ETF",
+      "price": 763.25
+    },
+    {
+      "date": "2026-10-19",
+      "symbol": "GLD",
+      "quantity": 386078,
+      "description": "SPDR GOLD TR, SPDR GOLD SHS",
+      "price": 382.01
+    },
+    {
+      "date": "2026-10-19",
+      "symbol": "DIA",
+      "quantity": 5273,
+      "description": "STATE STR SPDR DOW JONES INDL",
+      "price": 519.1
+    },
+    {
+      "date": "2026-10-19",
+      "symbol": "CRM",
+      "quantity": 8835,
+      "description": "SALESFORCE,INC",
+      "price": 240.7
+    },
+    {
+      "date": "2026-10-19",
+      "symbol": "XLV",
+      "quantity": 230157,
+      "description": "SELECT SECTOR SPDR TR ST ST HE",
+      "price": 176.71
+    },
+    {
+      "date": "2026-10-19",
+      "symbol": "XLF",
+      "quantity": 81619,
+      "description": "SELECT SECTOR SPDR TR STATE ST",
+      "price": 55.52
+    },
+    {
+      "date": "2026-10-19",
+      "symbol": "XLI",
+      "quantity": 420804,
+      "description": "SELECT SECTOR SPDR TR STATE ST",
+      "price": 167.76
+    },
+    {
+      "date": "2026-10-19",
+      "symbol": "XLK",
+      "quantity": 4924,
+      "description": "SELECT SECTOR SPDR TR STATE ST",
+      "price": 183.47
+    },
+    {
+      "date": "2026-10-19",
+      "symbol": "XLRE",
+      "quantity": 16,
+      "description": "SELECT SECTOR SPDR TR STATE ST",
+      "price": 42.16
+    },
+    {
+      "date": "2026-10-19",
+      "symbol": "TSLA",
+      "quantity": 604753,
+      "description": "TESLA INC COM STK (TX)",
+      "price": 354.72
+    },
+    {
+      "date": "2026-10-19",
+      "symbol": "UNH",
+      "quantity": 6544,
+      "description": "UNITEDHEALTH GROUP INC",
+      "price": 401.43
+    },
+    {
+      "date": "2026-10-19",
+      "symbol": "SMH",
+      "quantity": 518860,
+      "description": "VANECK ETF TR SEMICONDUCTOR ET",
+      "price": 539.79
+    },
+    {
+      "date": "2026-10-19",
+      "symbol": "V",
+      "quantity": 84152,
+      "description": "VISA INC CLASS A COM",
+      "price": 402.61
+    },
+    {
+      "date": "2026-10-19",
+      "symbol": "WMT",
+      "quantity": 103670,
+      "description": "WAL-MART INC (DE)",
+      "price": 118.81
+    },
+    {
+      "date": "2026-10-20",
+      "symbol": "ABBV",
+      "quantity": 94,
+      "description": "ABBVIE INC COM STK (DE)",
+      "price": 282.68
+    },
+    {
+      "date": "2026-10-20",
+      "symbol": "AMD",
+      "quantity": 227,
+      "description": "ADVANCED MICRO DEVICES",
+      "price": 538.05
+    },
+    {
+      "date": "2026-10-20",
+      "symbol": "GOOGL",
+      "quantity": 144932,
+      "description": "ALPHABET INC CAP STK CL A",
+      "price": 344.18
+    },
+    {
+      "date": "2026-10-20",
+      "symbol": "AMZN",
+      "quantity": 227760,
+      "description": "AMAZON COM INC;COM USD0.01",
+      "price": 262.45
+    },
+    {
+      "date": "2026-10-20",
+      "symbol": "BAC",
+      "quantity": 10804,
+      "description": "BANK OF AMERICA CORP",
+      "price": 50.39
+    },
+    {
+      "date": "2026-10-20",
+      "symbol": "BA",
+      "quantity": 1177,
+      "description": "BOEING CO;COM USD5",
+      "price": 191.42
+    },
+    {
+      "date": "2026-10-20",
+      "symbol": "AVGO",
+      "quantity": 4539,
+      "description": "BROADCOM INC COM (DE)",
+      "price": 334.59
+    },
+    {
+      "date": "2026-10-20",
+      "symbol": "KO",
+      "quantity": 794,
+      "description": "COCA-COLA CO",
+      "price": 93.42
+    },
+    {
+      "date": "2026-10-20",
+      "symbol": "COIN",
+      "quantity": 2,
+      "description": "COINBASE GLOBAL INC COM CL A (",
+      "price": 168.45
+    },
+    {
+      "date": "2026-10-20",
+      "symbol": "COST",
+      "quantity": 9,
+      "description": "COSTCO WHOLESALE CORP-NEW",
+      "price": 995.53
+    },
+    {
+      "date": "2026-10-20",
+      "symbol": "META",
+      "quantity": 10603,
+      "description": "META PLATFORMS, INC. CLASS A C",
+      "price": 705.44
+    },
+    {
+      "date": "2026-10-20",
+      "symbol": "HD",
+      "quantity": 693,
+      "description": "HOME DEPOT INC",
+      "price": 309.88
+    },
+    {
+      "date": "2026-10-20",
+      "symbol": "QQQ",
+      "quantity": 2311837,
+      "description": "INVESCO QQQ TR",
+      "price": 718.36
+    },
+    {
+      "date": "2026-10-20",
+      "symbol": "IWM",
+      "quantity": 832749,
+      "description": "ISHARES RUSSELL 2000 ETF",
+      "price": 271.28
+    },
+    {
+      "date": "2026-10-20",
+      "symbol": "HYG",
+      "quantity": 951,
+      "description": "ISHARES TR",
+      "price": 76.83
+    },
+    {
+      "date": "2026-10-20",
+      "symbol": "JPM",
+      "quantity": 181,
+      "description": "JPMORGAN CHASE & CO COM STK",
+      "price": 333.53
+    },
+    {
+      "date": "2026-10-20",
+      "symbol": "JNJ",
+      "quantity": 104,
+      "description": "JOHNSON AND JOHNSON",
+      "price": 253.79
+    },
+    {
+      "date": "2026-10-20",
+      "symbol": "NFLX",
+      "quantity": 692,
+      "description": "NETFLIX COM INC",
+      "price": 69.85
+    },
+    {
+      "date": "2026-10-20",
+      "symbol": "NVDA",
+      "quantity": 1286,
+      "description": "NVIDIA CORP",
+      "price": 217.09
+    },
+    {
+      "date": "2026-10-20",
+      "symbol": "ORCL",
+      "quantity": 922,
+      "description": "ORACLE CORPORATION",
+      "price": 129.59
+    },
+    {
+      "date": "2026-10-20",
+      "symbol": "PLTR",
+      "quantity": 2533,
+      "description": "PALANTIR TECHNOLOGIES INC CL A",
+      "price": 194.15
+    },
+    {
+      "date": "2026-10-20",
+      "symbol": "PG",
+      "quantity": 81,
+      "description": "PROCTER & GAMBLE;COM NPV",
+      "price": 157.69
+    },
+    {
+      "date": "2026-10-20",
+      "symbol": "SPY",
+      "quantity": 18936,
+      "description": "STATE STREET SPDR S&P 500 ETF",
+      "price": 766.48
+    },
+    {
+      "date": "2026-10-20",
+      "symbol": "GLD",
+      "quantity": 3,
+      "description": "SPDR GOLD TR, SPDR GOLD SHS",
+      "price": 379.69
+    },
+    {
+      "date": "2026-10-20",
+      "symbol": "CRM",
+      "quantity": 2,
+      "description": "SALESFORCE,INC",
+      "price": 242.45
+    },
+    {
+      "date": "2026-10-20",
+      "symbol": "XLY",
+      "quantity": 183,
+      "description": "STATE STREET CONSUMER DISCRETI",
+      "price": 114.46
+    },
+    {
+      "date": "2026-10-20",
+      "symbol": "XLE",
+      "quantity": 250826,
+      "description": "SELECT SECTOR SPDR TR STATE ST",
+      "price": 67.8
+    },
+    {
+      "date": "2026-10-20",
+      "symbol": "XLF",
+      "quantity": 69390,
+      "description": "SELECT SECTOR SPDR TR STATE ST",
+      "price": 55.06
+    },
+    {
+      "date": "2026-10-20",
+      "symbol": "XLI",
+      "quantity": 59373,
+      "description": "SELECT SECTOR SPDR TR STATE ST",
+      "price": 166.68
+    },
+    {
+      "date": "2026-10-20",
+      "symbol": "XLK",
+      "quantity": 47373,
+      "description": "SELECT SECTOR SPDR TR STATE ST",
+      "price": 185.96
+    },
+    {
+      "date": "2026-10-20",
+      "symbol": "XLRE",
+      "quantity": 39009,
+      "description": "SELECT SECTOR SPDR TR STATE ST",
+      "price": 41.67
+    },
+    {
+      "date": "2026-10-20",
+      "symbol": "TSLA",
+      "quantity": 2700,
+      "description": "TESLA INC COM STK (TX)",
+      "price": 368.06
+    },
+    {
+      "date": "2026-10-20",
+      "symbol": "UNH",
+      "quantity": 33,
+      "description": "UNITEDHEALTH GROUP INC",
+      "price": 406.88
+    },
+    {
+      "date": "2026-10-20",
+      "symbol": "SMH",
+      "quantity": 145826,
+      "description": "VANECK ETF TR SEMICONDUCTOR ET",
+      "price": 548.46
+    },
+    {
+      "date": "2026-10-20",
+      "symbol": "V",
+      "quantity": 173,
+      "description": "VISA INC CLASS A COM",
+      "price": 402.92
+    },
+    {
+      "date": "2026-10-20",
+      "symbol": "WMT",
+      "quantity": 27,
+      "description": "WAL-MART INC (DE)",
+      "price": 118.7
+    },
+    {
+      "date": "2026-10-21",
+      "symbol": "AMD",
+      "quantity": 53,
+      "description": "ADVANCED MICRO DEVICES",
+      "price": 534.74
+    },
+    {
+      "date": "2026-10-21",
+      "symbol": "GOOGL",
+      "quantity": 26,
+      "description": "ALPHABET INC CAP STK CL A",
+      "price": 340.28
+    },
+    {
+      "date": "2026-10-21",
+      "symbol": "AMZN",
+      "quantity": 76473,
+      "description": "AMAZON COM INC;COM USD0.01",
+      "price": 262.63
+    },
+    {
+      "date": "2026-10-21",
+      "symbol": "BRKB",
+      "quantity": 15616,
+      "description": "BERKSHIRE HATHWY INC(HLDG CO)B",
+      "price": 539.82
+    },
+    {
+      "date": "2026-10-21",
+      "symbol": "BA",
+      "quantity": 2460,
+      "description": "BOEING CO;COM USD5",
+      "price": 190.47
+    },
+    {
+      "date": "2026-10-21",
+      "symbol": "AVGO",
+      "quantity": 300,
+      "description": "BROADCOM INC COM (DE)",
+      "price": 334.37
+    },
+    {
+      "date": "2026-10-21",
+      "symbol": "CVX",
+      "quantity": 72,
+      "description": "CHEVRON CORPORATION",
+      "price": 225.71
+    },
+    {
+      "date": "2026-10-21",
+      "symbol": "KO",
+      "quantity": 503,
+      "description": "COCA-COLA CO",
+      "price": 93.49
+    },
+    {
+      "date": "2026-10-21",
+      "symbol": "COIN",
+      "quantity": 628,
+      "description": "COINBASE GLOBAL INC COM CL A (",
+      "price": 170.85
+    },
+    {
+      "date": "2026-10-21",
+      "symbol": "COST",
+      "quantity": 21898,
+      "description": "COSTCO WHOLESALE CORP-NEW",
+      "price": 994.61
+    },
+    {
+      "date": "2026-10-21",
+      "symbol": "XOM",
+      "quantity": 18,
+      "description": "EXXONMOBIL HLDGS CORPORATION",
+      "price": 177.86
+    },
+    {
+      "date": "2026-10-21",
+      "symbol": "META",
+      "quantity": 13485,
+      "description": "META PLATFORMS, INC. CLASS A C",
+      "price": 694.25
+    },
+    {
+      "date": "2026-10-21",
+      "symbol": "HD",
+      "quantity": 621,
+      "description": "HOME DEPOT INC",
+      "price": 315.11
+    },
+    {
+      "date": "2026-10-21",
+      "symbol": "QQQ",
+      "quantity": 1257592,
+      "description": "INVESCO QQQ TR",
+      "price": 717.63
+    },
+    {
+      "date": "2026-10-21",
+      "symbol": "TLT",
+      "quantity": 6,
+      "description": "ISHARES BARCLAYS 20+ YEAR TREA",
+      "price": 80.13
+    },
+    {
+      "date": "2026-10-21",
+      "symbol": "IWM",
+      "quantity": 105602,
+      "description": "ISHARES RUSSELL 2000 ETF",
+      "price": 275.78
+    },
+    {
+      "date": "2026-10-21",
+      "symbol": "HYG",
+      "quantity": 56,
+      "description": "ISHARES TR",
+      "price": 76.83
+    },
+    {
+      "date": "2026-10-21",
+      "symbol": "JNJ",
+      "quantity": 70,
+      "description": "JOHNSON AND JOHNSON",
+      "price": 259.36
+    },
+    {
+      "date": "2026-10-21",
+      "symbol": "LLY",
+      "quantity": 2847,
+      "description": "ELI LILLY AND CO;COM NPV",
+      "price": 1283.66
+    },
+    {
+      "date": "2026-10-21",
+      "symbol": "MSFT",
+      "quantity": 44,
+      "description": "MICROSOFT CORP;COM USD0.000012",
+      "price": 531.87
+    },
+    {
+      "date": "2026-10-21",
+      "symbol": "NFLX",
+      "quantity": 1423,
       "description": "NETFLIX COM INC",
       "price": 68.69
     },
     {
-      "date": "2026-10-07",
-      "symbol": "NVDA",
-      "quantity": 1782,
-      "description": "NVIDIA CORP",
-      "price": 239.24
-    },
-    {
-      "date": "2026-10-07",
+      "date": "2026-10-21",
       "symbol": "ORCL",
-      "quantity": 58,
+      "quantity": 187,
       "description": "ORACLE CORPORATION",
-      "price": 144.77
+      "price": 131.14
     },
     {
-      "date": "2026-10-07",
-      "symbol": "SPY",
-      "quantity": 4508,
-      "description": "STATE STREET SPDR S&P 500 ETF",
-      "price": 779.09
+      "date": "2026-10-21",
+      "symbol": "PLTR",
+      "quantity": 500,
+      "description": "PALANTIR TECHNOLOGIES INC CL A",
+      "price": 192.6
     },
     {
-      "date": "2026-10-07",
-      "symbol": "GLD",
-      "quantity": 100,
-      "description": "SPDR GOLD TR, SPDR GOLD SHS",
-      "price": 382.27
-    },
-    {
-      "date": "2026-10-07",
-      "symbol": "CRM",
-      "quantity": 14,
-      "description": "SALESFORCE,INC",
-      "price": 224.99
-    },
-    {
-      "date": "2026-10-07",
-      "symbol": "XLV",
-      "quantity": 864,
-      "description": "SELECT SECTOR SPDR TR ST ST HE",
-      "price": 167.09
-    },
-    {
-      "date": "2026-10-07",
-      "symbol": "XLE",
-      "quantity": 20069,
-      "description": "SELECT SECTOR SPDR TR STATE ST",
-      "price": 63.75
-    },
-    {
-      "date": "2026-10-07",
-      "symbol": "XLF",
-      "quantity": 29261,
-      "description": "SELECT SECTOR SPDR TR STATE ST",
-      "price": 54.01
-    },
-    {
-      "date": "2026-10-07",
-      "symbol": "XLI",
-      "quantity": 146365,
-      "description": "SELECT SECTOR SPDR TR STATE ST",
-      "price": 171.58
-    },
-    {
-      "date": "2026-10-07",
-      "symbol": "XLC",
-      "quantity": 85,
-      "description": "SELECT SECTOR SPDR TR STATE ST",
-      "price": 111.65
-    },
-    {
-      "date": "2026-10-07",
-      "symbol": "XLRE",
-      "quantity": 726,
-      "description": "SELECT SECTOR SPDR TR STATE ST",
-      "price": 41.1
-    },
-    {
-      "date": "2026-10-07",
-      "symbol": "TSLA",
-      "quantity": 1865,
-      "description": "TESLA INC COM STK (TX)",
-      "price": 380.68
-    },
-    {
-      "date": "2026-10-07",
-      "symbol": "SMH",
-      "quantity": 454,
-      "description": "VANECK ETF TR SEMICONDUCTOR ET",
-      "price": 632.5
-    },
-    {
-      "date": "2026-10-07",
-      "symbol": "V",
-      "quantity": 61,
-      "description": "VISA INC CLASS A COM",
-      "price": 370.64
-    },
-    {
-      "date": "2026-10-08",
-      "symbol": "AMD",
-      "quantity": 97,
-      "description": "ADVANCED MICRO DEVICES",
-      "price": 645.86
-    },
-    {
-      "date": "2026-10-08",
-      "symbol": "GOOGL",
-      "quantity": 4298,
-      "description": "ALPHABET INC CAP STK CL A",
-      "price": 350.5
-    },
-    {
-      "date": "2026-10-08",
-      "symbol": "AMZN",
-      "quantity": 19155,
-      "description": "AMAZON COM INC;COM USD0.01",
-      "price": 259.92
-    },
-    {
-      "date": "2026-10-08",
-      "symbol": "AAPL",
-      "quantity": 6046,
-      "description": "APPLE INC;COM NPV",
-      "price": 336.67
-    },
-    {
-      "date": "2026-10-08",
-      "symbol": "BAC",
-      "quantity": 6359,
-      "description": "BANK OF AMERICA CORP",
-      "price": 53.52
-    },
-    {
-      "date": "2026-10-08",
-      "symbol": "BRKB",
-      "quantity": 31223,
-      "description": "BERKSHIRE HATHWY INC(HLDG CO)B",
-      "price": 506.25
-    },
-    {
-      "date": "2026-10-08",
-      "symbol": "BA",
-      "quantity": 878,
-      "description": "BOEING CO;COM USD5",
-      "price": 188.32
-    },
-    {
-      "date": "2026-10-08",
-      "symbol": "AVGO",
-      "quantity": 3600,
-      "description": "BROADCOM INC COM (DE)",
-      "price": 376.51
-    },
-    {
-      "date": "2026-10-08",
-      "symbol": "COIN",
-      "quantity": 22,
-      "description": "COINBASE GLOBAL INC COM CL A (",
-      "price": 178.45
-    },
-    {
-      "date": "2026-10-08",
-      "symbol": "COST",
-      "quantity": 3,
-      "description": "COSTCO WHOLESALE CORP-NEW",
-      "price": 942.25
-    },
-    {
-      "date": "2026-10-08",
-      "symbol": "XOM",
-      "quantity": 4680,
-      "description": "EXXONMOBIL HLDGS CORPORATION",
-      "price": 164.05
-    },
-    {
-      "date": "2026-10-08",
-      "symbol": "META",
-      "quantity": 45,
-      "description": "META PLATFORMS, INC. CLASS A C",
-      "price": 721.31
-    },
-    {
-      "date": "2026-10-08",
-      "symbol": "HD",
-      "quantity": 218,
-      "description": "HOME DEPOT INC",
-      "price": 285.77
-    },
-    {
-      "date": "2026-10-08",
-      "symbol": "QQQ",
-      "quantity": 212112,
-      "description": "INVESCO QQQ TR",
-      "price": 757.73
-    },
-    {
-      "date": "2026-10-08",
-      "symbol": "IWM",
-      "quantity": 274,
-      "description": "ISHARES RUSSELL 2000 ETF",
-      "price": 277.7
-    },
-    {
-      "date": "2026-10-08",
-      "symbol": "JPM",
-      "quantity": 315,
-      "description": "JPMORGAN CHASE & CO COM STK",
-      "price": 329.58
-    },
-    {
-      "date": "2026-10-08",
-      "symbol": "JNJ",
-      "quantity": 9,
-      "description": "JOHNSON AND JOHNSON",
-      "price": 258.45
-    },
-    {
-      "date": "2026-10-08",
-      "symbol": "MA",
-      "quantity": 767,
-      "description": "MASTERCARD INCORPORATED CL A C",
-      "price": 570.06
-    },
-    {
-      "date": "2026-10-08",
-      "symbol": "MSFT",
-      "quantity": 100,
-      "description": "MICROSOFT CORP;COM USD0.000012",
-      "price": 529.76
-    },
-    {
-      "date": "2026-10-08",
-      "symbol": "MSTR",
-      "quantity": 124,
-      "description": "STRATEGY INC COMMON STOCK CLAS",
-      "price": 153.37
-    },
-    {
-      "date": "2026-10-08",
-      "symbol": "NFLX",
-      "quantity": 4372,
-      "description": "NETFLIX COM INC",
-      "price": 69.7
-    },
-    {
-      "date": "2026-10-08",
-      "symbol": "NVDA",
-      "quantity": 2166,
-      "description": "NVIDIA CORP",
-      "price": 237.47
-    },
-    {
-      "date": "2026-10-08",
+      "date": "2026-10-21",
       "symbol": "PG",
-      "quantity": 100,
+      "quantity": 280,
       "description": "PROCTER & GAMBLE;COM NPV",
-      "price": 147.82
+      "price": 159.32
     },
     {
-      "date": "2026-10-08",
+      "date": "2026-10-21",
       "symbol": "SPY",
-      "quantity": 101039,
+      "quantity": 407,
       "description": "STATE STREET SPDR S&P 500 ETF",
-      "price": 777.22
+      "price": 769.05
     },
     {
-      "date": "2026-10-08",
-      "symbol": "DIA",
-      "quantity": 56386,
-      "description": "STATE STR SPDR DOW JONES INDL",
-      "price": 511.02
+      "date": "2026-10-21",
+      "symbol": "CRM",
+      "quantity": 233,
+      "description": "SALESFORCE,INC",
+      "price": 242.43
     },
     {
-      "date": "2026-10-08",
+      "date": "2026-10-21",
       "symbol": "XLB",
-      "quantity": 1120,
+      "quantity": 158096,
       "description": "SELECT SECTOR SPDR TR STATE ST",
-      "price": 48.98
+      "price": 51.23
     },
     {
-      "date": "2026-10-08",
-      "symbol": "XLV",
-      "quantity": 2225,
-      "description": "SELECT SECTOR SPDR TR ST ST HE",
-      "price": 168.81
-    },
-    {
-      "date": "2026-10-08",
-      "symbol": "XLY",
-      "quantity": 67,
-      "description": "STATE STREET CONSUMER DISCRETI",
-      "price": 111.36
-    },
-    {
-      "date": "2026-10-08",
+      "date": "2026-10-21",
       "symbol": "XLE",
-      "quantity": 1583,
+      "quantity": 116472,
       "description": "SELECT SECTOR SPDR TR STATE ST",
-      "price": 63.36
+      "price": 67.97
     },
     {
-      "date": "2026-10-08",
+      "date": "2026-10-21",
       "symbol": "XLF",
-      "quantity": 193779,
+      "quantity": 8828,
       "description": "SELECT SECTOR SPDR TR STATE ST",
-      "price": 53.75
+      "price": 55.72
     },
     {
-      "date": "2026-10-08",
-      "symbol": "XLI",
-      "quantity": 30197,
-      "description": "SELECT SECTOR SPDR TR STATE ST",
-      "price": 167.84
-    },
-    {
-      "date": "2026-10-08",
+      "date": "2026-10-21",
       "symbol": "XLK",
-      "quantity": 43,
+      "quantity": 279111,
       "description": "SELECT SECTOR SPDR TR STATE ST",
-      "price": 201.39
+      "price": 185.44
     },
     {
-      "date": "2026-10-08",
+      "date": "2026-10-21",
       "symbol": "XLC",
-      "quantity": 6818,
+      "quantity": 2259,
       "description": "SELECT SECTOR SPDR TR STATE ST",
-      "price": 111.26
+      "price": 110.19
     },
     {
-      "date": "2026-10-08",
-      "symbol": "XLRE",
-      "quantity": 315,
-      "description": "SELECT SECTOR SPDR TR STATE ST",
-      "price": 40.57
-    },
-    {
-      "date": "2026-10-08",
+      "date": "2026-10-21",
       "symbol": "TSLA",
-      "quantity": 371,
+      "quantity": 2915,
       "description": "TESLA INC COM STK (TX)",
-      "price": 377.81
+      "price": 373.71
     },
     {
-      "date": "2026-10-08",
-      "symbol": "V",
-      "quantity": 449,
-      "description": "VISA INC CLASS A COM",
-      "price": 372.1
-    },
-    {
-      "date": "2026-10-09",
-      "symbol": "ABBV",
-      "quantity": 28,
-      "description": "ABBVIE INC COM STK (DE)",
-      "price": 272.42
-    },
-    {
-      "date": "2026-10-09",
-      "symbol": "AMD",
-      "quantity": 314,
-      "description": "ADVANCED MICRO DEVICES",
-      "price": 620.68
-    },
-    {
-      "date": "2026-10-09",
-      "symbol": "GOOGL",
-      "quantity": 437,
-      "description": "ALPHABET INC CAP STK CL A",
-      "price": 348.29
-    },
-    {
-      "date": "2026-10-09",
-      "symbol": "AAPL",
-      "quantity": 2,
-      "description": "APPLE INC;COM NPV",
-      "price": 340.42
-    },
-    {
-      "date": "2026-10-09",
-      "symbol": "BAC",
-      "quantity": 4726,
-      "description": "BANK OF AMERICA CORP",
-      "price": 53.61
-    },
-    {
-      "date": "2026-10-09",
-      "symbol": "BRKB",
-      "quantity": 1996,
-      "description": "BERKSHIRE HATHWY INC(HLDG CO)B",
-      "price": 511.05
-    },
-    {
-      "date": "2026-10-09",
-      "symbol": "BA",
-      "quantity": 1589,
-      "description": "BOEING CO;COM USD5",
-      "price": 187.75
-    },
-    {
-      "date": "2026-10-09",
-      "symbol": "AVGO",
-      "quantity": 2522,
-      "description": "BROADCOM INC COM (DE)",
-      "price": 360.14
-    },
-    {
-      "date": "2026-10-09",
-      "symbol": "CVX",
-      "quantity": 7780,
-      "description": "CHEVRON CORPORATION",
-      "price": 211.55
-    },
-    {
-      "date": "2026-10-09",
-      "symbol": "KO",
-      "quantity": 4217,
-      "description": "COCA-COLA CO",
-      "price": 87.77
-    },
-    {
-      "date": "2026-10-09",
-      "symbol": "XOM",
-      "quantity": 4474,
-      "description": "EXXONMOBIL HLDGS CORPORATION",
-      "price": 168.5
-    },
-    {
-      "date": "2026-10-09",
-      "symbol": "META",
-      "quantity": 90,
-      "description": "META PLATFORMS, INC. CLASS A C",
-      "price": 720.89
-    },
-    {
-      "date": "2026-10-09",
-      "symbol": "HD",
-      "quantity": 1293,
-      "description": "HOME DEPOT INC",
-      "price": 295.47
-    },
-    {
-      "date": "2026-10-09",
-      "symbol": "QQQ",
-      "quantity": 300,
-      "description": "INVESCO QQQ TR",
-      "price": 747.58
-    },
-    {
-      "date": "2026-10-09",
-      "symbol": "TLT",
-      "quantity": 1710,
-      "description": "ISHARES BARCLAYS 20+ YEAR TREA",
-      "price": 77.87
-    },
-    {
-      "date": "2026-10-09",
-      "symbol": "IWM",
-      "quantity": 419165,
-      "description": "ISHARES RUSSELL 2000 ETF",
-      "price": 277.57
-    },
-    {
-      "date": "2026-10-09",
-      "symbol": "HYG",
-      "quantity": 773373,
-      "description": "ISHARES TR",
-      "price": 77.14
-    },
-    {
-      "date": "2026-10-09",
-      "symbol": "JPM",
-      "quantity": 2388,
-      "description": "JPMORGAN CHASE & CO COM STK",
-      "price": 331.42
-    },
-    {
-      "date": "2026-10-09",
-      "symbol": "JNJ",
-      "quantity": 766,
-      "description": "JOHNSON AND JOHNSON",
-      "price": 256.48
-    },
-    {
-      "date": "2026-10-09",
-      "symbol": "LLY",
-      "quantity": 135,
-      "description": "ELI LILLY AND CO;COM NPV",
-      "price": 1169.6
-    },
-    {
-      "date": "2026-10-09",
-      "symbol": "MA",
-      "quantity": 57,
-      "description": "MASTERCARD INCORPORATED CL A C",
-      "price": 574.76
-    },
-    {
-      "date": "2026-10-09",
-      "symbol": "MRK",
-      "quantity": 69948,
-      "description": "MERCK & CO INC;COM USD0.01",
-      "price": 142.38
-    },
-    {
-      "date": "2026-10-09",
-      "symbol": "MSFT",
-      "quantity": 1081,
-      "description": "MICROSOFT CORP;COM USD0.000012",
-      "price": 522.61
-    },
-    {
-      "date": "2026-10-09",
-      "symbol": "MSTR",
-      "quantity": 113,
-      "description": "STRATEGY INC COMMON STOCK CLAS",
-      "price": 151.47
-    },
-    {
-      "date": "2026-10-09",
-      "symbol": "NFLX",
-      "quantity": 4245,
-      "description": "NETFLIX COM INC",
-      "price": 71.57
-    },
-    {
-      "date": "2026-10-09",
-      "symbol": "NVDA",
-      "quantity": 1059,
-      "description": "NVIDIA CORP",
-      "price": 230.48
-    },
-    {
-      "date": "2026-10-09",
-      "symbol": "ORCL",
-      "quantity": 31446,
-      "description": "ORACLE CORPORATION",
-      "price": 135.69
-    },
-    {
-      "date": "2026-10-09",
-      "symbol": "PLTR",
-      "quantity": 190,
-      "description": "PALANTIR TECHNOLOGIES INC CL A",
-      "price": 198.78
-    },
-    {
-      "date": "2026-10-09",
-      "symbol": "PG",
-      "quantity": 637,
-      "description": "PROCTER & GAMBLE;COM NPV",
-      "price": 150.59
-    },
-    {
-      "date": "2026-10-09",
-      "symbol": "SPY",
-      "quantity": 85,
-      "description": "STATE STREET SPDR S&P 500 ETF",
-      "price": 773.93
-    },
-    {
-      "date": "2026-10-09",
-      "symbol": "GLD",
-      "quantity": 125821,
-      "description": "SPDR GOLD TR, SPDR GOLD SHS",
-      "price": 378.62
-    },
-    {
-      "date": "2026-10-09",
-      "symbol": "CRM",
-      "quantity": 1126,
-      "description": "SALESFORCE,INC",
-      "price": 227.8
-    },
-    {
-      "date": "2026-10-09",
-      "symbol": "XLB",
-      "quantity": 255690,
-      "description": "SELECT SECTOR SPDR TR STATE ST",
-      "price": 49.27
-    },
-    {
-      "date": "2026-10-09",
-      "symbol": "XLY",
-      "quantity": 45,
-      "description": "STATE STREET CONSUMER DISCRETI",
-      "price": 111.71
-    },
-    {
-      "date": "2026-10-09",
-      "symbol": "XLE",
-      "quantity": 218287,
-      "description": "SELECT SECTOR SPDR TR STATE ST",
-      "price": 65.24
-    },
-    {
-      "date": "2026-10-09",
-      "symbol": "XLF",
-      "quantity": 129472,
-      "description": "SELECT SECTOR SPDR TR STATE ST",
-      "price": 54.23
-    },
-    {
-      "date": "2026-10-09",
-      "symbol": "XLI",
-      "quantity": 67296,
-      "description": "SELECT SECTOR SPDR TR STATE ST",
-      "price": 168.4
-    },
-    {
-      "date": "2026-10-09",
-      "symbol": "XLC",
-      "quantity": 122,
-      "description": "SELECT SECTOR SPDR TR STATE ST",
-      "price": 112.07
-    },
-    {
-      "date": "2026-10-09",
-      "symbol": "XLRE",
-      "quantity": 3576,
-      "description": "SELECT SECTOR SPDR TR STATE ST",
-      "price": 40.85
-    },
-    {
-      "date": "2026-10-09",
-      "symbol": "TSLA",
-      "quantity": 24177,
-      "description": "TESLA INC COM STK (TX)",
-      "price": 375
-    },
-    {
-      "date": "2026-10-09",
-      "symbol": "UNH",
-      "quantity": 135,
-      "description": "UNITEDHEALTH GROUP INC",
-      "price": 370.95
-    },
-    {
-      "date": "2026-10-09",
+      "date": "2026-10-21",
       "symbol": "SMH",
-      "quantity": 162604,
+      "quantity": 1130,
       "description": "VANECK ETF TR SEMICONDUCTOR ET",
-      "price": 607.27
+      "price": 546.36
     },
     {
-      "date": "2026-10-09",
+      "date": "2026-10-21",
       "symbol": "V",
-      "quantity": 605,
+      "quantity": 6884,
       "description": "VISA INC CLASS A COM",
-      "price": 375.1
+      "price": 406.57
     },
     {
-      "date": "2026-10-09",
+      "date": "2026-10-21",
       "symbol": "WMT",
-      "quantity": 40346,
+      "quantity": 33639,
       "description": "WAL-MART INC (DE)",
-      "price": 110.56
+      "price": 117.85
     },
     {
-      "date": "2026-10-13",
+      "date": "2026-10-22",
       "symbol": "ABBV",
-      "quantity": 355,
+      "quantity": 91,
       "description": "ABBVIE INC COM STK (DE)",
-      "price": 281.12
+      "price": 284.8
     },
     {
-      "date": "2026-10-13",
+      "date": "2026-10-22",
       "symbol": "AMD",
-      "quantity": 61,
+      "quantity": 721,
       "description": "ADVANCED MICRO DEVICES",
-      "price": 594.24
+      "price": 552.72
     },
     {
-      "date": "2026-10-13",
+      "date": "2026-10-22",
       "symbol": "GOOGL",
-      "quantity": 6288,
-      "description": "ALPHABET INC CAP STK CL A",
-      "price": 352.72
-    },
-    {
-      "date": "2026-10-13",
-      "symbol": "AMZN",
-      "quantity": 1077,
-      "description": "AMAZON COM INC;COM USD0.01",
-      "price": 259.53
-    },
-    {
-      "date": "2026-10-13",
-      "symbol": "AAPL",
-      "quantity": 1,
-      "description": "APPLE INC;COM NPV",
-      "price": 340.97
-    },
-    {
-      "date": "2026-10-13",
-      "symbol": "BRKB",
-      "quantity": 3718,
-      "description": "BERKSHIRE HATHWY INC(HLDG CO)B",
-      "price": 517.6
-    },
-    {
-      "date": "2026-10-13",
-      "symbol": "BA",
-      "quantity": 16908,
-      "description": "BOEING CO;COM USD5",
-      "price": 189.5
-    },
-    {
-      "date": "2026-10-13",
-      "symbol": "AVGO",
-      "quantity": 955,
-      "description": "BROADCOM INC COM (DE)",
-      "price": 354.73
-    },
-    {
-      "date": "2026-10-13",
-      "symbol": "CVX",
-      "quantity": 17,
-      "description": "CHEVRON CORPORATION",
-      "price": 215
-    },
-    {
-      "date": "2026-10-13",
-      "symbol": "KO",
-      "quantity": 8479,
-      "description": "COCA-COLA CO",
-      "price": 89.79
-    },
-    {
-      "date": "2026-10-13",
-      "symbol": "COIN",
-      "quantity": 34324,
-      "description": "COINBASE GLOBAL INC COM CL A (",
-      "price": 180.39
-    },
-    {
-      "date": "2026-10-13",
-      "symbol": "COST",
-      "quantity": 7194,
-      "description": "COSTCO WHOLESALE CORP-NEW",
-      "price": 959.44
-    },
-    {
-      "date": "2026-10-13",
-      "symbol": "XOM",
-      "quantity": 1854,
-      "description": "EXXONMOBIL HLDGS CORPORATION",
-      "price": 172.15
-    },
-    {
-      "date": "2026-10-13",
-      "symbol": "META",
-      "quantity": 76235,
-      "description": "META PLATFORMS, INC. CLASS A C",
-      "price": 742.96
-    },
-    {
-      "date": "2026-10-13",
-      "symbol": "HD",
-      "quantity": 1870,
-      "description": "HOME DEPOT INC",
-      "price": 290.62
-    },
-    {
-      "date": "2026-10-13",
-      "symbol": "QQQ",
       "quantity": 10,
-      "description": "INVESCO QQQ TR",
-      "price": 746.04
-    },
-    {
-      "date": "2026-10-13",
-      "symbol": "TLT",
-      "quantity": 4743,
-      "description": "ISHARES BARCLAYS 20+ YEAR TREA",
-      "price": 78.05
-    },
-    {
-      "date": "2026-10-13",
-      "symbol": "HYG",
-      "quantity": 53475,
-      "description": "ISHARES TR",
-      "price": 77.29
-    },
-    {
-      "date": "2026-10-13",
-      "symbol": "LLY",
-      "quantity": 4130,
-      "description": "ELI LILLY AND CO;COM NPV",
-      "price": 1182.62
-    },
-    {
-      "date": "2026-10-13",
-      "symbol": "MA",
-      "quantity": 33125,
-      "description": "MASTERCARD INCORPORATED CL A C",
-      "price": 595.09
-    },
-    {
-      "date": "2026-10-13",
-      "symbol": "MRK",
-      "quantity": 6694,
-      "description": "MERCK & CO INC;COM USD0.01",
-      "price": 145.45
-    },
-    {
-      "date": "2026-10-13",
-      "symbol": "MSFT",
-      "quantity": 413,
-      "description": "MICROSOFT CORP;COM USD0.000012",
-      "price": 541.15
-    },
-    {
-      "date": "2026-10-13",
-      "symbol": "MSTR",
-      "quantity": 14470,
-      "description": "STRATEGY INC COMMON STOCK CLAS",
-      "price": 152.68
-    },
-    {
-      "date": "2026-10-13",
-      "symbol": "NFLX",
-      "quantity": 37699,
-      "description": "NETFLIX COM INC",
-      "price": 70.61
-    },
-    {
-      "date": "2026-10-13",
-      "symbol": "NVDA",
-      "quantity": 7747,
-      "description": "NVIDIA CORP",
-      "price": 226.32
-    },
-    {
-      "date": "2026-10-13",
-      "symbol": "ORCL",
-      "quantity": 3254,
-      "description": "ORACLE CORPORATION",
-      "price": 137.39
-    },
-    {
-      "date": "2026-10-13",
-      "symbol": "PLTR",
-      "quantity": 6065,
-      "description": "PALANTIR TECHNOLOGIES INC CL A",
-      "price": 209
-    },
-    {
-      "date": "2026-10-13",
-      "symbol": "SPY",
-      "quantity": 14192,
-      "description": "STATE STREET SPDR S&P 500 ETF",
-      "price": 778.1
-    },
-    {
-      "date": "2026-10-13",
-      "symbol": "CRM",
-      "quantity": 47448,
-      "description": "SALESFORCE,INC",
-      "price": 233.92
-    },
-    {
-      "date": "2026-10-13",
-      "symbol": "XLV",
-      "quantity": 2344,
-      "description": "SELECT SECTOR SPDR TR ST ST HE",
-      "price": 171.99
-    },
-    {
-      "date": "2026-10-13",
-      "symbol": "XLE",
-      "quantity": 631346,
-      "description": "SELECT SECTOR SPDR TR STATE ST",
-      "price": 66.01
-    },
-    {
-      "date": "2026-10-13",
-      "symbol": "XLF",
-      "quantity": 230673,
-      "description": "SELECT SECTOR SPDR TR STATE ST",
-      "price": 55.05
-    },
-    {
-      "date": "2026-10-13",
-      "symbol": "XLI",
-      "quantity": 25429,
-      "description": "SELECT SECTOR SPDR TR STATE ST",
-      "price": 169.15
-    },
-    {
-      "date": "2026-10-13",
-      "symbol": "XLC",
-      "quantity": 32012,
-      "description": "SELECT SECTOR SPDR TR STATE ST",
-      "price": 111.45
-    },
-    {
-      "date": "2026-10-13",
-      "symbol": "XLRE",
-      "quantity": 30730,
-      "description": "SELECT SECTOR SPDR TR STATE ST",
-      "price": 41.92
-    },
-    {
-      "date": "2026-10-13",
-      "symbol": "XLU",
-      "quantity": 5652,
-      "description": "SELECT SECTOR SPDR TR STATE ST",
-      "price": 41.63
-    },
-    {
-      "date": "2026-10-13",
-      "symbol": "TSLA",
-      "quantity": 3097,
-      "description": "TESLA INC COM STK (TX)",
-      "price": 378.03
-    },
-    {
-      "date": "2026-10-13",
-      "symbol": "UNH",
-      "quantity": 6770,
-      "description": "UNITEDHEALTH GROUP INC",
-      "price": 378.52
-    },
-    {
-      "date": "2026-10-13",
-      "symbol": "SMH",
-      "quantity": 6058,
-      "description": "VANECK ETF TR SEMICONDUCTOR ET",
-      "price": 590.99
-    },
-    {
-      "date": "2026-10-13",
-      "symbol": "V",
-      "quantity": 2025,
-      "description": "VISA INC CLASS A COM",
-      "price": 389.27
-    },
-    {
-      "date": "2026-10-13",
-      "symbol": "WMT",
-      "quantity": 127341,
-      "description": "WAL-MART INC (DE)",
-      "price": 113.08
-    },
-    {
-      "date": "2026-10-14",
-      "symbol": "GOOGL",
-      "quantity": 293,
       "description": "ALPHABET INC CAP STK CL A",
-      "price": 353.78
+      "price": 334.76
     },
     {
-      "date": "2026-10-14",
+      "date": "2026-10-22",
       "symbol": "AMZN",
-      "quantity": 224,
+      "quantity": 377,
       "description": "AMAZON COM INC;COM USD0.01",
-      "price": 258.58
+      "price": 262.37
     },
     {
-      "date": "2026-10-14",
-      "symbol": "AAPL",
-      "quantity": 5,
-      "description": "APPLE INC;COM NPV",
-      "price": 341.27
-    },
-    {
-      "date": "2026-10-14",
-      "symbol": "BRKB",
-      "quantity": 1547,
-      "description": "BERKSHIRE HATHWY INC(HLDG CO)B",
-      "price": 520.59
-    },
-    {
-      "date": "2026-10-14",
+      "date": "2026-10-22",
       "symbol": "BA",
-      "quantity": 1443,
+      "quantity": 774,
       "description": "BOEING CO;COM USD5",
-      "price": 186.49
+      "price": 192.28
     },
     {
-      "date": "2026-10-14",
-      "symbol": "AVGO",
-      "quantity": 10036,
-      "description": "BROADCOM INC COM (DE)",
-      "price": 357.31
-    },
-    {
-      "date": "2026-10-14",
+      "date": "2026-10-22",
       "symbol": "CVX",
-      "quantity": 152000,
+      "quantity": 11977,
       "description": "CHEVRON CORPORATION",
-      "price": 217.73
+      "price": 226.78
     },
     {
-      "date": "2026-10-14",
+      "date": "2026-10-22",
       "symbol": "KO",
-      "quantity": 17,
+      "quantity": 783,
       "description": "COCA-COLA CO",
-      "price": 90.11
+      "price": 92.68
     },
     {
-      "date": "2026-10-14",
+      "date": "2026-10-22",
       "symbol": "COIN",
-      "quantity": 1150,
+      "quantity": 36500,
       "description": "COINBASE GLOBAL INC COM CL A (",
-      "price": 181.79
+      "price": 177.08
     },
     {
-      "date": "2026-10-14",
+      "date": "2026-10-22",
+      "symbol": "COST",
+      "quantity": 10,
+      "description": "COSTCO WHOLESALE CORP-NEW",
+      "price": 998.31
+    },
+    {
+      "date": "2026-10-22",
       "symbol": "XOM",
-      "quantity": 6407,
+      "quantity": 281,
       "description": "EXXONMOBIL HLDGS CORPORATION",
-      "price": 174.08
+      "price": 178.09
     },
     {
-      "date": "2026-10-14",
+      "date": "2026-10-22",
       "symbol": "META",
-      "quantity": 796,
+      "quantity": 7806,
       "description": "META PLATFORMS, INC. CLASS A C",
-      "price": 762.5
+      "price": 697.52
     },
     {
-      "date": "2026-10-14",
+      "date": "2026-10-22",
       "symbol": "HD",
-      "quantity": 588,
+      "quantity": 693,
       "description": "HOME DEPOT INC",
-      "price": 293.92
+      "price": 314.14
     },
     {
-      "date": "2026-10-14",
+      "date": "2026-10-22",
+      "symbol": "QQQ",
+      "quantity": 557486,
+      "description": "INVESCO QQQ TR",
+      "price": 725.2
+    },
+    {
+      "date": "2026-10-22",
+      "symbol": "TLT",
+      "quantity": 8000,
+      "description": "ISHARES BARCLAYS 20+ YEAR TREA",
+      "price": 80.24
+    },
+    {
+      "date": "2026-10-22",
       "symbol": "IWM",
-      "quantity": 3889,
+      "quantity": 981019,
       "description": "ISHARES RUSSELL 2000 ETF",
-      "price": 276.7
+      "price": 276.48
     },
     {
-      "date": "2026-10-14",
+      "date": "2026-10-22",
       "symbol": "HYG",
-      "quantity": 118938,
+      "quantity": 21,
       "description": "ISHARES TR",
-      "price": 77.09
+      "price": 76.98
     },
     {
-      "date": "2026-10-14",
+      "date": "2026-10-22",
       "symbol": "JPM",
-      "quantity": 1,
+      "quantity": 247,
       "description": "JPMORGAN CHASE & CO COM STK",
-      "price": 331.43
+      "price": 335.19
     },
     {
-      "date": "2026-10-14",
+      "date": "2026-10-22",
       "symbol": "JNJ",
-      "quantity": 157,
+      "quantity": 50,
       "description": "JOHNSON AND JOHNSON",
-      "price": 248.61
+      "price": 257.78
     },
     {
-      "date": "2026-10-14",
+      "date": "2026-10-22",
       "symbol": "MSFT",
-      "quantity": 118,
+      "quantity": 1,
       "description": "MICROSOFT CORP;COM USD0.000012",
-      "price": 543.45
+      "price": 532.95
     },
     {
-      "date": "2026-10-14",
-      "symbol": "MSTR",
-      "quantity": 32003,
-      "description": "STRATEGY INC COMMON STOCK CLAS",
-      "price": 152.18
-    },
-    {
-      "date": "2026-10-14",
-      "symbol": "NFLX",
-      "quantity": 1173,
-      "description": "NETFLIX COM INC",
-      "price": 70.46
-    },
-    {
-      "date": "2026-10-14",
+      "date": "2026-10-22",
       "symbol": "NVDA",
-      "quantity": 876,
+      "quantity": 2848,
       "description": "NVIDIA CORP",
-      "price": 228.52
+      "price": 221.97
     },
     {
-      "date": "2026-10-14",
+      "date": "2026-10-22",
       "symbol": "ORCL",
-      "quantity": 440,
+      "quantity": 499,
       "description": "ORACLE CORPORATION",
-      "price": 143.2
+      "price": 129.13
     },
     {
-      "date": "2026-10-14",
+      "date": "2026-10-22",
       "symbol": "PLTR",
-      "quantity": 2,
+      "quantity": 177,
       "description": "PALANTIR TECHNOLOGIES INC CL A",
-      "price": 208.67
+      "price": 201.72
     },
     {
-      "date": "2026-10-14",
+      "date": "2026-10-22",
+      "symbol": "PG",
+      "quantity": 503,
+      "description": "PROCTER & GAMBLE;COM NPV",
+      "price": 156.84
+    },
+    {
+      "date": "2026-10-22",
       "symbol": "SPY",
-      "quantity": 2,
+      "quantity": 3644,
       "description": "STATE STREET SPDR S&P 500 ETF",
-      "price": 778.01
+      "price": 773.09
     },
     {
-      "date": "2026-10-14",
+      "date": "2026-10-22",
       "symbol": "GLD",
-      "quantity": 21622,
+      "quantity": 2143,
       "description": "SPDR GOLD TR, SPDR GOLD SHS",
-      "price": 381.67
+      "price": 378.95
     },
     {
-      "date": "2026-10-14",
+      "date": "2026-10-22",
       "symbol": "DIA",
-      "quantity": 21004,
+      "quantity": 52016,
       "description": "STATE STR SPDR DOW JONES INDL",
-      "price": 516.21
+      "price": 527.7
     },
     {
-      "date": "2026-10-14",
+      "date": "2026-10-22",
       "symbol": "CRM",
-      "quantity": 2294,
+      "quantity": 3696,
       "description": "SALESFORCE,INC",
-      "price": 238.01
+      "price": 241.78
     },
     {
-      "date": "2026-10-14",
-      "symbol": "XLB",
-      "quantity": 17542,
-      "description": "SELECT SECTOR SPDR TR STATE ST",
-      "price": 49.72
-    },
-    {
-      "date": "2026-10-14",
+      "date": "2026-10-22",
       "symbol": "XLV",
-      "quantity": 4,
+      "quantity": 2816,
       "description": "SELECT SECTOR SPDR TR ST ST HE",
-      "price": 169.66
+      "price": 178.94
     },
     {
-      "date": "2026-10-14",
+      "date": "2026-10-22",
       "symbol": "XLE",
-      "quantity": 8688,
+      "quantity": 421568,
       "description": "SELECT SECTOR SPDR TR STATE ST",
-      "price": 67.2
+      "price": 68.16
     },
     {
-      "date": "2026-10-14",
+      "date": "2026-10-22",
       "symbol": "XLI",
-      "quantity": 59,
+      "quantity": 2267,
       "description": "SELECT SECTOR SPDR TR STATE ST",
-      "price": 168.67
+      "price": 168.31
     },
     {
-      "date": "2026-10-14",
+      "date": "2026-10-22",
+      "symbol": "XLC",
+      "quantity": 2039,
+      "description": "SELECT SECTOR SPDR TR STATE ST",
+      "price": 108.97
+    },
+    {
+      "date": "2026-10-22",
       "symbol": "XLRE",
-      "quantity": 17,
+      "quantity": 33,
       "description": "SELECT SECTOR SPDR TR STATE ST",
-      "price": 41.83
+      "price": 42.06
     },
     {
-      "date": "2026-10-14",
+      "date": "2026-10-22",
+      "symbol": "XLU",
+      "quantity": 1643797,
+      "description": "SELECT SECTOR SPDR TR STATE ST",
+      "price": 42
+    },
+    {
+      "date": "2026-10-22",
       "symbol": "TSLA",
-      "quantity": 338,
+      "quantity": 4288,
       "description": "TESLA INC COM STK (TX)",
-      "price": 375.23
+      "price": 386.47
     },
     {
-      "date": "2026-10-14",
+      "date": "2026-10-22",
       "symbol": "SMH",
-      "quantity": 12319,
+      "quantity": 31486,
       "description": "VANECK ETF TR SEMICONDUCTOR ET",
-      "price": 588.12
+      "price": 556.7
     },
     {
-      "date": "2026-10-14",
+      "date": "2026-10-22",
       "symbol": "V",
-      "quantity": 252,
+      "quantity": 54876,
       "description": "VISA INC CLASS A COM",
-      "price": 396.06
+      "price": 407.85
     },
     {
-      "date": "2026-10-14",
+      "date": "2026-10-23",
+      "symbol": "ABBV",
+      "quantity": 10227,
+      "description": "ABBVIE INC COM STK (DE)",
+      "price": 285.19
+    },
+    {
+      "date": "2026-10-23",
+      "symbol": "AMD",
+      "quantity": 15032,
+      "description": "ADVANCED MICRO DEVICES",
+      "price": 507.93
+    },
+    {
+      "date": "2026-10-23",
+      "symbol": "GOOGL",
+      "quantity": 1552,
+      "description": "ALPHABET INC CAP STK CL A",
+      "price": 324.22
+    },
+    {
+      "date": "2026-10-23",
+      "symbol": "AAPL",
+      "quantity": 24,
+      "description": "APPLE INC;COM NPV",
+      "price": 348.22
+    },
+    {
+      "date": "2026-10-23",
+      "symbol": "BRKB",
+      "quantity": 4117,
+      "description": "BERKSHIRE HATHWY INC(HLDG CO)B",
+      "price": 546.97
+    },
+    {
+      "date": "2026-10-23",
+      "symbol": "BA",
+      "quantity": 1702,
+      "description": "BOEING CO;COM USD5",
+      "price": 187.55
+    },
+    {
+      "date": "2026-10-23",
+      "symbol": "AVGO",
+      "quantity": 10,
+      "description": "BROADCOM INC COM (DE)",
+      "price": 323.24
+    },
+    {
+      "date": "2026-10-23",
+      "symbol": "KO",
+      "quantity": 271,
+      "description": "COCA-COLA CO",
+      "price": 95.34
+    },
+    {
+      "date": "2026-10-23",
+      "symbol": "META",
+      "quantity": 283,
+      "description": "META PLATFORMS, INC. CLASS A C",
+      "price": 648.85
+    },
+    {
+      "date": "2026-10-23",
+      "symbol": "HD",
+      "quantity": 1,
+      "description": "HOME DEPOT INC",
+      "price": 327.73
+    },
+    {
+      "date": "2026-10-23",
+      "symbol": "TLT",
+      "quantity": 1222,
+      "description": "ISHARES BARCLAYS 20+ YEAR TREA",
+      "price": 81.74
+    },
+    {
+      "date": "2026-10-23",
+      "symbol": "IWM",
+      "quantity": 57916,
+      "description": "ISHARES RUSSELL 2000 ETF",
+      "price": 276.67
+    },
+    {
+      "date": "2026-10-23",
+      "symbol": "HYG",
+      "quantity": 97998,
+      "description": "ISHARES TR",
+      "price": 77.1
+    },
+    {
+      "date": "2026-10-23",
+      "symbol": "JPM",
+      "quantity": 874,
+      "description": "JPMORGAN CHASE & CO COM STK",
+      "price": 336.54
+    },
+    {
+      "date": "2026-10-23",
+      "symbol": "MSFT",
+      "quantity": 867,
+      "description": "MICROSOFT CORP;COM USD0.000012",
+      "price": 521.08
+    },
+    {
+      "date": "2026-10-23",
+      "symbol": "MSTR",
+      "quantity": 272,
+      "description": "STRATEGY INC COMMON STOCK CLAS",
+      "price": 145.8
+    },
+    {
+      "date": "2026-10-23",
+      "symbol": "NFLX",
+      "quantity": 1073893,
+      "description": "NETFLIX COM INC",
+      "price": 67.05
+    },
+    {
+      "date": "2026-10-23",
+      "symbol": "NVDA",
+      "quantity": 509,
+      "description": "NVIDIA CORP",
+      "price": 212.21
+    },
+    {
+      "date": "2026-10-23",
+      "symbol": "ORCL",
+      "quantity": 30069,
+      "description": "ORACLE CORPORATION",
+      "price": 125.54
+    },
+    {
+      "date": "2026-10-23",
+      "symbol": "PLTR",
+      "quantity": 193,
+      "description": "PALANTIR TECHNOLOGIES INC CL A",
+      "price": 196.19
+    },
+    {
+      "date": "2026-10-23",
+      "symbol": "PG",
+      "quantity": 71037,
+      "description": "PROCTER & GAMBLE;COM NPV",
+      "price": 165.59
+    },
+    {
+      "date": "2026-10-23",
+      "symbol": "SPY",
+      "quantity": 251901,
+      "description": "STATE STREET SPDR S&P 500 ETF",
+      "price": 763.96
+    },
+    {
+      "date": "2026-10-23",
+      "symbol": "CRM",
+      "quantity": 1043,
+      "description": "SALESFORCE,INC",
+      "price": 250.29
+    },
+    {
+      "date": "2026-10-23",
+      "symbol": "XLF",
+      "quantity": 154349,
+      "description": "SELECT SECTOR SPDR TR STATE ST",
+      "price": 56.65
+    },
+    {
+      "date": "2026-10-23",
+      "symbol": "XLI",
+      "quantity": 342754,
+      "description": "SELECT SECTOR SPDR TR STATE ST",
+      "price": 166.73
+    },
+    {
+      "date": "2026-10-23",
+      "symbol": "XLRE",
+      "quantity": 16021,
+      "description": "SELECT SECTOR SPDR TR STATE ST",
+      "price": 42.52
+    },
+    {
+      "date": "2026-10-23",
+      "symbol": "XLU",
+      "quantity": 8165,
+      "description": "SELECT SECTOR SPDR TR STATE ST",
+      "price": 42.87
+    },
+    {
+      "date": "2026-10-23",
+      "symbol": "V",
+      "quantity": 5,
+      "description": "VISA INC CLASS A COM",
+      "price": 414.34
+    },
+    {
+      "date": "2026-10-26",
+      "symbol": "ABBV",
+      "quantity": 96,
+      "description": "ABBVIE INC COM STK (DE)",
+      "price": 285.64
+    },
+    {
+      "date": "2026-10-26",
+      "symbol": "AMD",
+      "quantity": 200,
+      "description": "ADVANCED MICRO DEVICES",
+      "price": 516.79
+    },
+    {
+      "date": "2026-10-26",
+      "symbol": "GOOGL",
+      "quantity": 1823,
+      "description": "ALPHABET INC CAP STK CL A",
+      "price": 320.21
+    },
+    {
+      "date": "2026-10-26",
+      "symbol": "AMZN",
+      "quantity": 1039,
+      "description": "AMAZON COM INC;COM USD0.01",
+      "price": 248
+    },
+    {
+      "date": "2026-10-26",
+      "symbol": "AAPL",
+      "quantity": 224675,
+      "description": "APPLE INC;COM NPV",
+      "price": 347.73
+    },
+    {
+      "date": "2026-10-26",
+      "symbol": "BAC",
+      "quantity": 16115,
+      "description": "BANK OF AMERICA CORP",
+      "price": 50.56
+    },
+    {
+      "date": "2026-10-26",
+      "symbol": "BRKB",
+      "quantity": 200,
+      "description": "BERKSHIRE HATHWY INC(HLDG CO)B",
+      "price": 542.19
+    },
+    {
+      "date": "2026-10-26",
+      "symbol": "BA",
+      "quantity": 1181,
+      "description": "BOEING CO;COM USD5",
+      "price": 188.35
+    },
+    {
+      "date": "2026-10-26",
+      "symbol": "AVGO",
+      "quantity": 3,
+      "description": "BROADCOM INC COM (DE)",
+      "price": 321.68
+    },
+    {
+      "date": "2026-10-26",
+      "symbol": "CVX",
+      "quantity": 200,
+      "description": "CHEVRON CORPORATION",
+      "price": 233.21
+    },
+    {
+      "date": "2026-10-26",
+      "symbol": "COST",
+      "quantity": 5500,
+      "description": "COSTCO WHOLESALE CORP-NEW",
+      "price": 1003.32
+    },
+    {
+      "date": "2026-10-26",
+      "symbol": "XOM",
+      "quantity": 200,
+      "description": "EXXONMOBIL HLDGS CORPORATION",
+      "price": 183.21
+    },
+    {
+      "date": "2026-10-26",
+      "symbol": "META",
+      "quantity": 290,
+      "description": "META PLATFORMS, INC. CLASS A C",
+      "price": 642.62
+    },
+    {
+      "date": "2026-10-26",
+      "symbol": "HD",
+      "quantity": 484,
+      "description": "HOME DEPOT INC",
+      "price": 319.83
+    },
+    {
+      "date": "2026-10-26",
+      "symbol": "QQQ",
+      "quantity": 1159115,
+      "description": "INVESCO QQQ TR",
+      "price": 704.4
+    },
+    {
+      "date": "2026-10-26",
+      "symbol": "TLT",
+      "quantity": 119500,
+      "description": "ISHARES BARCLAYS 20+ YEAR TREA",
+      "price": 81.34
+    },
+    {
+      "date": "2026-10-26",
+      "symbol": "IWM",
+      "quantity": 13247,
+      "description": "ISHARES RUSSELL 2000 ETF",
+      "price": 275.75
+    },
+    {
+      "date": "2026-10-26",
+      "symbol": "HYG",
+      "quantity": 113387,
+      "description": "ISHARES TR",
+      "price": 77.05
+    },
+    {
+      "date": "2026-10-26",
+      "symbol": "JNJ",
+      "quantity": 4619,
+      "description": "JOHNSON AND JOHNSON",
+      "price": 263.81
+    },
+    {
+      "date": "2026-10-26",
+      "symbol": "LLY",
+      "quantity": 138,
+      "description": "ELI LILLY AND CO;COM NPV",
+      "price": 1273.46
+    },
+    {
+      "date": "2026-10-26",
+      "symbol": "MA",
+      "quantity": 160,
+      "description": "MASTERCARD INCORPORATED CL A C",
+      "price": 623.6
+    },
+    {
+      "date": "2026-10-26",
+      "symbol": "MSFT",
+      "quantity": 770,
+      "description": "MICROSOFT CORP;COM USD0.000012",
+      "price": 524.51
+    },
+    {
+      "date": "2026-10-26",
+      "symbol": "MSTR",
+      "quantity": 55110,
+      "description": "STRATEGY INC COMMON STOCK CLAS",
+      "price": 146.01
+    },
+    {
+      "date": "2026-10-26",
+      "symbol": "NFLX",
+      "quantity": 479,
+      "description": "NETFLIX COM INC",
+      "price": 65.85
+    },
+    {
+      "date": "2026-10-26",
+      "symbol": "NVDA",
+      "quantity": 88,
+      "description": "NVIDIA CORP",
+      "price": 210.96
+    },
+    {
+      "date": "2026-10-26",
+      "symbol": "ORCL",
+      "quantity": 1226,
+      "description": "ORACLE CORPORATION",
+      "price": 126.16
+    },
+    {
+      "date": "2026-10-26",
+      "symbol": "PLTR",
+      "quantity": 12214,
+      "description": "PALANTIR TECHNOLOGIES INC CL A",
+      "price": 196.75
+    },
+    {
+      "date": "2026-10-26",
+      "symbol": "PG",
+      "quantity": 4503,
+      "description": "PROCTER & GAMBLE;COM NPV",
+      "price": 161.02
+    },
+    {
+      "date": "2026-10-26",
+      "symbol": "SPY",
+      "quantity": 2324860,
+      "description": "STATE STREET SPDR S&P 500 ETF",
+      "price": 759.97
+    },
+    {
+      "date": "2026-10-26",
+      "symbol": "GLD",
+      "quantity": 228631,
+      "description": "SPDR GOLD TR, SPDR GOLD SHS",
+      "price": 366.61
+    },
+    {
+      "date": "2026-10-26",
+      "symbol": "CRM",
+      "quantity": 800,
+      "description": "SALESFORCE,INC",
+      "price": 248.57
+    },
+    {
+      "date": "2026-10-26",
+      "symbol": "XLV",
+      "quantity": 53,
+      "description": "SELECT SECTOR SPDR TR ST ST HE",
+      "price": 179.28
+    },
+    {
+      "date": "2026-10-26",
+      "symbol": "XLY",
+      "quantity": 6755,
+      "description": "STATE STREET CONSUMER DISCRETI",
+      "price": 113.1
+    },
+    {
+      "date": "2026-10-26",
+      "symbol": "XLE",
+      "quantity": 833461,
+      "description": "SELECT SECTOR SPDR TR STATE ST",
+      "price": 69.33
+    },
+    {
+      "date": "2026-10-26",
+      "symbol": "XLF",
+      "quantity": 19422,
+      "description": "SELECT SECTOR SPDR TR STATE ST",
+      "price": 55.9
+    },
+    {
+      "date": "2026-10-26",
+      "symbol": "XLC",
+      "quantity": 60958,
+      "description": "SELECT SECTOR SPDR TR STATE ST",
+      "price": 105.51
+    },
+    {
+      "date": "2026-10-26",
+      "symbol": "XLU",
+      "quantity": 186,
+      "description": "SELECT SECTOR SPDR TR STATE ST",
+      "price": 42.56
+    },
+    {
+      "date": "2026-10-26",
+      "symbol": "TSLA",
+      "quantity": 28498,
+      "description": "TESLA INC COM STK (TX)",
+      "price": 372.22
+    },
+    {
+      "date": "2026-10-26",
+      "symbol": "UNH",
+      "quantity": 8380,
+      "description": "UNITEDHEALTH GROUP INC",
+      "price": 418.09
+    },
+    {
+      "date": "2026-10-26",
+      "symbol": "SMH",
+      "quantity": 79459,
+      "description": "VANECK ETF TR SEMICONDUCTOR ET",
+      "price": 527.2
+    },
+    {
+      "date": "2026-10-26",
+      "symbol": "V",
+      "quantity": 158,
+      "description": "VISA INC CLASS A COM",
+      "price": 407.92
+    },
+    {
+      "date": "2026-10-26",
       "symbol": "WMT",
-      "quantity": 4407,
+      "quantity": 14294,
       "description": "WAL-MART INC (DE)",
-      "price": 112.28
+      "price": 119.89
+    },
+    {
+      "date": "2026-10-27",
+      "symbol": "ABBV",
+      "quantity": 89,
+      "description": "ABBVIE INC COM STK (DE)",
+      "price": 286.74
+    },
+    {
+      "date": "2026-10-27",
+      "symbol": "AMD",
+      "quantity": 200,
+      "description": "ADVANCED MICRO DEVICES",
+      "price": 531.28
+    },
+    {
+      "date": "2026-10-27",
+      "symbol": "GOOGL",
+      "quantity": 796,
+      "description": "ALPHABET INC CAP STK CL A",
+      "price": 316.8
+    },
+    {
+      "date": "2026-10-27",
+      "symbol": "AMZN",
+      "quantity": 804,
+      "description": "AMAZON COM INC;COM USD0.01",
+      "price": 249.09
+    },
+    {
+      "date": "2026-10-27",
+      "symbol": "BRKB",
+      "quantity": 616,
+      "description": "BERKSHIRE HATHWY INC(HLDG CO)B",
+      "price": 548.56
+    },
+    {
+      "date": "2026-10-27",
+      "symbol": "BA",
+      "quantity": 1198,
+      "description": "BOEING CO;COM USD5",
+      "price": 188.31
+    },
+    {
+      "date": "2026-10-27",
+      "symbol": "AVGO",
+      "quantity": 200,
+      "description": "BROADCOM INC COM (DE)",
+      "price": 329.17
+    },
+    {
+      "date": "2026-10-27",
+      "symbol": "KO",
+      "quantity": 783,
+      "description": "COCA-COLA CO",
+      "price": 92.7
+    },
+    {
+      "date": "2026-10-27",
+      "symbol": "XOM",
+      "quantity": 489,
+      "description": "EXXONMOBIL HLDGS CORPORATION",
+      "price": 184.54
+    },
+    {
+      "date": "2026-10-27",
+      "symbol": "META",
+      "quantity": 276,
+      "description": "META PLATFORMS, INC. CLASS A C",
+      "price": 630.56
+    },
+    {
+      "date": "2026-10-27",
+      "symbol": "HD",
+      "quantity": 728,
+      "description": "HOME DEPOT INC",
+      "price": 319.38
+    },
+    {
+      "date": "2026-10-27",
+      "symbol": "QQQ",
+      "quantity": 2409848,
+      "description": "INVESCO QQQ TR",
+      "price": 712.2
+    },
+    {
+      "date": "2026-10-27",
+      "symbol": "TLT",
+      "quantity": 15100,
+      "description": "ISHARES BARCLAYS 20+ YEAR TREA",
+      "price": 81.68
+    },
+    {
+      "date": "2026-10-27",
+      "symbol": "IWM",
+      "quantity": 788629,
+      "description": "ISHARES RUSSELL 2000 ETF",
+      "price": 276.99
+    },
+    {
+      "date": "2026-10-27",
+      "symbol": "JPM",
+      "quantity": 2820,
+      "description": "JPMORGAN CHASE & CO COM STK",
+      "price": 334.04
+    },
+    {
+      "date": "2026-10-27",
+      "symbol": "JNJ",
+      "quantity": 145,
+      "description": "JOHNSON AND JOHNSON",
+      "price": 266.3
+    },
+    {
+      "date": "2026-10-27",
+      "symbol": "MSFT",
+      "quantity": 1600,
+      "description": "MICROSOFT CORP;COM USD0.000012",
+      "price": 532.6
+    },
+    {
+      "date": "2026-10-27",
+      "symbol": "MSTR",
+      "quantity": 199,
+      "description": "STRATEGY INC COMMON STOCK CLAS",
+      "price": 139.82
+    },
+    {
+      "date": "2026-10-27",
+      "symbol": "NFLX",
+      "quantity": 1911,
+      "description": "NETFLIX COM INC",
+      "price": 63.9
+    },
+    {
+      "date": "2026-10-27",
+      "symbol": "NVDA",
+      "quantity": 8940,
+      "description": "NVIDIA CORP",
+      "price": 216
+    },
+    {
+      "date": "2026-10-27",
+      "symbol": "ORCL",
+      "quantity": 2290,
+      "description": "ORACLE CORPORATION",
+      "price": 126.06
+    },
+    {
+      "date": "2026-10-27",
+      "symbol": "PLTR",
+      "quantity": 68,
+      "description": "PALANTIR TECHNOLOGIES INC CL A",
+      "price": 198.84
+    },
+    {
+      "date": "2026-10-27",
+      "symbol": "PG",
+      "quantity": 1276,
+      "description": "PROCTER & GAMBLE;COM NPV",
+      "price": 159.92
+    },
+    {
+      "date": "2026-10-27",
+      "symbol": "SPY",
+      "quantity": 400,
+      "description": "STATE STREET SPDR S&P 500 ETF",
+      "price": 765.37
+    },
+    {
+      "date": "2026-10-27",
+      "symbol": "GLD",
+      "quantity": 74106,
+      "description": "SPDR GOLD TR, SPDR GOLD SHS",
+      "price": 367.82
+    },
+    {
+      "date": "2026-10-27",
+      "symbol": "XLV",
+      "quantity": 50299,
+      "description": "SELECT SECTOR SPDR TR ST ST HE",
+      "price": 179.28
+    },
+    {
+      "date": "2026-10-27",
+      "symbol": "XLY",
+      "quantity": 125,
+      "description": "STATE STREET CONSUMER DISCRETI",
+      "price": 114.26
+    },
+    {
+      "date": "2026-10-27",
+      "symbol": "XLE",
+      "quantity": 244547,
+      "description": "SELECT SECTOR SPDR TR STATE ST",
+      "price": 69.64
+    },
+    {
+      "date": "2026-10-27",
+      "symbol": "XLF",
+      "quantity": 8929,
+      "description": "SELECT SECTOR SPDR TR STATE ST",
+      "price": 56.02
+    },
+    {
+      "date": "2026-10-27",
+      "symbol": "XLRE",
+      "quantity": 1754,
+      "description": "SELECT SECTOR SPDR TR STATE ST",
+      "price": 42.8
+    },
+    {
+      "date": "2026-10-27",
+      "symbol": "TSLA",
+      "quantity": 672,
+      "description": "TESLA INC COM STK (TX)",
+      "price": 391.62
+    },
+    {
+      "date": "2026-10-27",
+      "symbol": "UNH",
+      "quantity": 154,
+      "description": "UNITEDHEALTH GROUP INC",
+      "price": 410.7
+    },
+    {
+      "date": "2026-10-27",
+      "symbol": "V",
+      "quantity": 121,
+      "description": "VISA INC CLASS A COM",
+      "price": 404.16
+    },
+    {
+      "date": "2026-10-28",
+      "symbol": "ABBV",
+      "quantity": 20724,
+      "description": "ABBVIE INC COM STK (DE)",
+      "price": 286.39
+    },
+    {
+      "date": "2026-10-28",
+      "symbol": "AMD",
+      "quantity": 7173,
+      "description": "ADVANCED MICRO DEVICES",
+      "price": 560.26
+    },
+    {
+      "date": "2026-10-28",
+      "symbol": "GOOGL",
+      "quantity": 1189,
+      "description": "ALPHABET INC CAP STK CL A",
+      "price": 320.58
+    },
+    {
+      "date": "2026-10-28",
+      "symbol": "AMZN",
+      "quantity": 40760,
+      "description": "AMAZON COM INC;COM USD0.01",
+      "price": 253.1
+    },
+    {
+      "date": "2026-10-28",
+      "symbol": "BA",
+      "quantity": 461,
+      "description": "BOEING CO;COM USD5",
+      "price": 168.18
+    },
+    {
+      "date": "2026-10-28",
+      "symbol": "CVX",
+      "quantity": 29,
+      "description": "CHEVRON CORPORATION",
+      "price": 228.23
+    },
+    {
+      "date": "2026-10-28",
+      "symbol": "KO",
+      "quantity": 786,
+      "description": "COCA-COLA CO",
+      "price": 91.18
+    },
+    {
+      "date": "2026-10-28",
+      "symbol": "XOM",
+      "quantity": 107,
+      "description": "EXXONMOBIL HLDGS CORPORATION",
+      "price": 179.91
+    },
+    {
+      "date": "2026-10-28",
+      "symbol": "META",
+      "quantity": 76680,
+      "description": "META PLATFORMS, INC. CLASS A C",
+      "price": 620.19
+    },
+    {
+      "date": "2026-10-28",
+      "symbol": "HD",
+      "quantity": 696,
+      "description": "HOME DEPOT INC",
+      "price": 318.5
+    },
+    {
+      "date": "2026-10-28",
+      "symbol": "QQQ",
+      "quantity": 19261,
+      "description": "INVESCO QQQ TR",
+      "price": 721.25
+    },
+    {
+      "date": "2026-10-28",
+      "symbol": "TLT",
+      "quantity": 167350,
+      "description": "ISHARES BARCLAYS 20+ YEAR TREA",
+      "price": 81.63
+    },
+    {
+      "date": "2026-10-28",
+      "symbol": "IWM",
+      "quantity": 93469,
+      "description": "ISHARES RUSSELL 2000 ETF",
+      "price": 280.18
+    },
+    {
+      "date": "2026-10-28",
+      "symbol": "JPM",
+      "quantity": 6405,
+      "description": "JPMORGAN CHASE & CO COM STK",
+      "price": 335.79
+    },
+    {
+      "date": "2026-10-28",
+      "symbol": "JNJ",
+      "quantity": 133,
+      "description": "JOHNSON AND JOHNSON",
+      "price": 268.73
+    },
+    {
+      "date": "2026-10-28",
+      "symbol": "MSTR",
+      "quantity": 188,
+      "description": "STRATEGY INC COMMON STOCK CLAS",
+      "price": 141.4
+    },
+    {
+      "date": "2026-10-28",
+      "symbol": "NFLX",
+      "quantity": 1793,
+      "description": "NETFLIX COM INC",
+      "price": 62.52
+    },
+    {
+      "date": "2026-10-28",
+      "symbol": "NVDA",
+      "quantity": 342927,
+      "description": "NVIDIA CORP",
+      "price": 217.94
+    },
+    {
+      "date": "2026-10-28",
+      "symbol": "ORCL",
+      "quantity": 2402,
+      "description": "ORACLE CORPORATION",
+      "price": 130.53
+    },
+    {
+      "date": "2026-10-28",
+      "symbol": "PLTR",
+      "quantity": 25,
+      "description": "PALANTIR TECHNOLOGIES INC CL A",
+      "price": 198.73
+    },
+    {
+      "date": "2026-10-28",
+      "symbol": "PG",
+      "quantity": 1082,
+      "description": "PROCTER & GAMBLE;COM NPV",
+      "price": 159.23
+    },
+    {
+      "date": "2026-10-28",
+      "symbol": "SPY",
+      "quantity": 13518,
+      "description": "STATE STREET SPDR S&P 500 ETF",
+      "price": 769.66
+    },
+    {
+      "date": "2026-10-28",
+      "symbol": "GLD",
+      "quantity": 70767,
+      "description": "SPDR GOLD TR, SPDR GOLD SHS",
+      "price": 372.28
+    },
+    {
+      "date": "2026-10-28",
+      "symbol": "XLY",
+      "quantity": 276,
+      "description": "STATE STREET CONSUMER DISCRETI",
+      "price": 115.45
+    },
+    {
+      "date": "2026-10-28",
+      "symbol": "XLE",
+      "quantity": 65413,
+      "description": "SELECT SECTOR SPDR TR STATE ST",
+      "price": 68.21
+    },
+    {
+      "date": "2026-10-28",
+      "symbol": "XLF",
+      "quantity": 26832,
+      "description": "SELECT SECTOR SPDR TR STATE ST",
+      "price": 55.88
+    },
+    {
+      "date": "2026-10-28",
+      "symbol": "XLU",
+      "quantity": 24745,
+      "description": "SELECT SECTOR SPDR TR STATE ST",
+      "price": 42.85
+    },
+    {
+      "date": "2026-10-28",
+      "symbol": "TSLA",
+      "quantity": 1,
+      "description": "TESLA INC COM STK (TX)",
+      "price": 407.46
+    },
+    {
+      "date": "2026-10-28",
+      "symbol": "UNH",
+      "quantity": 67,
+      "description": "UNITEDHEALTH GROUP INC",
+      "price": 410.39
+    },
+    {
+      "date": "2026-10-28",
+      "symbol": "V",
+      "quantity": 30,
+      "description": "VISA INC CLASS A COM",
+      "price": 401.86
+    },
+    {
+      "date": "2026-10-28",
+      "symbol": "WMT",
+      "quantity": 2872,
+      "description": "WAL-MART INC (DE)",
+      "price": 119.32
+    },
+    {
+      "date": "2026-10-29",
+      "symbol": "ABBV",
+      "quantity": 97,
+      "description": "ABBVIE INC COM STK (DE)",
+      "price": 285.99
+    },
+    {
+      "date": "2026-10-29",
+      "symbol": "AMD",
+      "quantity": 271,
+      "description": "ADVANCED MICRO DEVICES",
+      "price": 578.44
+    },
+    {
+      "date": "2026-10-29",
+      "symbol": "GOOGL",
+      "quantity": 1398,
+      "description": "ALPHABET INC CAP STK CL A",
+      "price": 324.89
+    },
+    {
+      "date": "2026-10-29",
+      "symbol": "AMZN",
+      "quantity": 1145,
+      "description": "AMAZON COM INC;COM USD0.01",
+      "price": 254.6
+    },
+    {
+      "date": "2026-10-29",
+      "symbol": "BA",
+      "quantity": 1461,
+      "description": "BOEING CO;COM USD5",
+      "price": 167.14
+    },
+    {
+      "date": "2026-10-29",
+      "symbol": "AVGO",
+      "quantity": 4,
+      "description": "BROADCOM INC COM (DE)",
+      "price": 351.81
+    },
+    {
+      "date": "2026-10-29",
+      "symbol": "KO",
+      "quantity": 153,
+      "description": "COCA-COLA CO",
+      "price": 91.73
+    },
+    {
+      "date": "2026-10-29",
+      "symbol": "COIN",
+      "quantity": 2714,
+      "description": "COINBASE GLOBAL INC COM CL A (",
+      "price": 162.32
+    },
+    {
+      "date": "2026-10-29",
+      "symbol": "XOM",
+      "quantity": 690,
+      "description": "EXXONMOBIL HLDGS CORPORATION",
+      "price": 182.02
+    },
+    {
+      "date": "2026-10-29",
+      "symbol": "META",
+      "quantity": 221735,
+      "description": "META PLATFORMS, INC. CLASS A C",
+      "price": 612.49
+    },
+    {
+      "date": "2026-10-29",
+      "symbol": "HD",
+      "quantity": 696,
+      "description": "HOME DEPOT INC",
+      "price": 317.56
+    },
+    {
+      "date": "2026-10-29",
+      "symbol": "QQQ",
+      "quantity": 22255,
+      "description": "INVESCO QQQ TR",
+      "price": 725.61
+    },
+    {
+      "date": "2026-10-29",
+      "symbol": "TLT",
+      "quantity": 249454,
+      "description": "ISHARES BARCLAYS 20+ YEAR TREA",
+      "price": 80.99
+    },
+    {
+      "date": "2026-10-29",
+      "symbol": "IWM",
+      "quantity": 47878,
+      "description": "ISHARES RUSSELL 2000 ETF",
+      "price": 281.29
+    },
+    {
+      "date": "2026-10-29",
+      "symbol": "HYG",
+      "quantity": 261379,
+      "description": "ISHARES TR",
+      "price": 77.59
+    },
+    {
+      "date": "2026-10-29",
+      "symbol": "JPM",
+      "quantity": 243,
+      "description": "JPMORGAN CHASE & CO COM STK",
+      "price": 339.3
+    },
+    {
+      "date": "2026-10-29",
+      "symbol": "JNJ",
+      "quantity": 1879,
+      "description": "JOHNSON AND JOHNSON",
+      "price": 271.04
+    },
+    {
+      "date": "2026-10-29",
+      "symbol": "MSTR",
+      "quantity": 620,
+      "description": "STRATEGY INC COMMON STOCK CLAS",
+      "price": 145.16
+    },
+    {
+      "date": "2026-10-29",
+      "symbol": "NFLX",
+      "quantity": 1148,
+      "description": "NETFLIX COM INC",
+      "price": 61.99
+    },
+    {
+      "date": "2026-10-29",
+      "symbol": "NVDA",
+      "quantity": 3345,
+      "description": "NVIDIA CORP",
+      "price": 215.38
+    },
+    {
+      "date": "2026-10-29",
+      "symbol": "ORCL",
+      "quantity": 1165,
+      "description": "ORACLE CORPORATION",
+      "price": 144.54
+    },
+    {
+      "date": "2026-10-29",
+      "symbol": "PLTR",
+      "quantity": 668,
+      "description": "PALANTIR TECHNOLOGIES INC CL A",
+      "price": 196.81
+    },
+    {
+      "date": "2026-10-29",
+      "symbol": "PG",
+      "quantity": 1082,
+      "description": "PROCTER & GAMBLE;COM NPV",
+      "price": 158.26
+    },
+    {
+      "date": "2026-10-29",
+      "symbol": "SPY",
+      "quantity": 35274,
+      "description": "STATE STREET SPDR S&P 500 ETF",
+      "price": 772.31
+    },
+    {
+      "date": "2026-10-29",
+      "symbol": "GLD",
+      "quantity": 42118,
+      "description": "SPDR GOLD TR, SPDR GOLD SHS",
+      "price": 373.51
+    },
+    {
+      "date": "2026-10-29",
+      "symbol": "DIA",
+      "quantity": 41,
+      "description": "STATE STR SPDR DOW JONES INDL",
+      "price": 524.68
+    },
+    {
+      "date": "2026-10-29",
+      "symbol": "XLV",
+      "quantity": 30589,
+      "description": "SELECT SECTOR SPDR TR ST ST HE",
+      "price": 179.72
+    },
+    {
+      "date": "2026-10-29",
+      "symbol": "XLY",
+      "quantity": 87,
+      "description": "STATE STREET CONSUMER DISCRETI",
+      "price": 115.33
+    },
+    {
+      "date": "2026-10-29",
+      "symbol": "XLF",
+      "quantity": 36628,
+      "description": "SELECT SECTOR SPDR TR STATE ST",
+      "price": 56.13
+    },
+    {
+      "date": "2026-10-29",
+      "symbol": "XLI",
+      "quantity": 31436,
+      "description": "SELECT SECTOR SPDR TR STATE ST",
+      "price": 168.49
+    },
+    {
+      "date": "2026-10-29",
+      "symbol": "XLK",
+      "quantity": 106,
+      "description": "SELECT SECTOR SPDR TR STATE ST",
+      "price": 191
+    },
+    {
+      "date": "2026-10-29",
+      "symbol": "XLC",
+      "quantity": 16,
+      "description": "SELECT SECTOR SPDR TR STATE ST",
+      "price": 103.14
+    },
+    {
+      "date": "2026-10-29",
+      "symbol": "XLRE",
+      "quantity": 1850,
+      "description": "SELECT SECTOR SPDR TR STATE ST",
+      "price": 42.13
+    },
+    {
+      "date": "2026-10-29",
+      "symbol": "XLU",
+      "quantity": 2700,
+      "description": "SELECT SECTOR SPDR TR STATE ST",
+      "price": 42.49
+    },
+    {
+      "date": "2026-10-29",
+      "symbol": "TSLA",
+      "quantity": 500,
+      "description": "TESLA INC COM STK (TX)",
+      "price": 404.22
+    },
+    {
+      "date": "2026-10-29",
+      "symbol": "V",
+      "quantity": 134,
+      "description": "VISA INC CLASS A COM",
+      "price": 400.6
+    },
+    {
+      "date": "2026-10-29",
+      "symbol": "WMT",
+      "quantity": 469,
+      "description": "WAL-MART INC (DE)",
+      "price": 118.77
+    },
+    {
+      "date": "2026-10-30",
+      "symbol": "ABBV",
+      "quantity": 381,
+      "description": "ABBVIE INC COM STK (DE)",
+      "price": 290.79
+    },
+    {
+      "date": "2026-10-30",
+      "symbol": "AMD",
+      "quantity": 4979,
+      "description": "ADVANCED MICRO DEVICES",
+      "price": 566.42
+    },
+    {
+      "date": "2026-10-30",
+      "symbol": "GOOGL",
+      "quantity": 458467,
+      "description": "ALPHABET INC CAP STK CL A",
+      "price": 283.82
+    },
+    {
+      "date": "2026-10-30",
+      "symbol": "AMZN",
+      "quantity": 582,
+      "description": "AMAZON COM INC;COM USD0.01",
+      "price": 243.79
+    },
+    {
+      "date": "2026-10-30",
+      "symbol": "AAPL",
+      "quantity": 8,
+      "description": "APPLE INC;COM NPV",
+      "price": 348.91
+    },
+    {
+      "date": "2026-10-30",
+      "symbol": "BRKB",
+      "quantity": 297519,
+      "description": "BERKSHIRE HATHWY INC(HLDG CO)B",
+      "price": 541.96
+    },
+    {
+      "date": "2026-10-30",
+      "symbol": "BA",
+      "quantity": 1815,
+      "description": "BOEING CO;COM USD5",
+      "price": 172.65
+    },
+    {
+      "date": "2026-10-30",
+      "symbol": "AVGO",
+      "quantity": 1480,
+      "description": "BROADCOM INC COM (DE)",
+      "price": 345
+    },
+    {
+      "date": "2026-10-30",
+      "symbol": "CVX",
+      "quantity": 35,
+      "description": "CHEVRON CORPORATION",
+      "price": 231.46
+    },
+    {
+      "date": "2026-10-30",
+      "symbol": "KO",
+      "quantity": 697,
+      "description": "COCA-COLA CO",
+      "price": 92.82
+    },
+    {
+      "date": "2026-10-30",
+      "symbol": "COIN",
+      "quantity": 845,
+      "description": "COINBASE GLOBAL INC COM CL A (",
+      "price": 160.59
+    },
+    {
+      "date": "2026-10-30",
+      "symbol": "COST",
+      "quantity": 10568,
+      "description": "COSTCO WHOLESALE CORP-NEW",
+      "price": 996.08
+    },
+    {
+      "date": "2026-10-30",
+      "symbol": "XOM",
+      "quantity": 190,
+      "description": "EXXONMOBIL HLDGS CORPORATION",
+      "price": 183.29
+    },
+    {
+      "date": "2026-10-30",
+      "symbol": "META",
+      "quantity": 2324,
+      "description": "META PLATFORMS, INC. CLASS A C",
+      "price": 624.52
+    },
+    {
+      "date": "2026-10-30",
+      "symbol": "HD",
+      "quantity": 465,
+      "description": "HOME DEPOT INC",
+      "price": 328.98
+    },
+    {
+      "date": "2026-10-30",
+      "symbol": "IWM",
+      "quantity": 13563,
+      "description": "ISHARES RUSSELL 2000 ETF",
+      "price": 284.01
+    },
+    {
+      "date": "2026-10-30",
+      "symbol": "JPM",
+      "quantity": 248,
+      "description": "JPMORGAN CHASE & CO COM STK",
+      "price": 343.58
+    },
+    {
+      "date": "2026-10-30",
+      "symbol": "MSTR",
+      "quantity": 403,
+      "description": "STRATEGY INC COMMON STOCK CLAS",
+      "price": 141.62
+    },
+    {
+      "date": "2026-10-30",
+      "symbol": "NFLX",
+      "quantity": 4300,
+      "description": "NETFLIX COM INC",
+      "price": 62.05
+    },
+    {
+      "date": "2026-10-30",
+      "symbol": "NVDA",
+      "quantity": 3106,
+      "description": "NVIDIA CORP",
+      "price": 213.66
+    },
+    {
+      "date": "2026-10-30",
+      "symbol": "ORCL",
+      "quantity": 202,
+      "description": "ORACLE CORPORATION",
+      "price": 139.56
+    },
+    {
+      "date": "2026-10-30",
+      "symbol": "PLTR",
+      "quantity": 352,
+      "description": "PALANTIR TECHNOLOGIES INC CL A",
+      "price": 196.42
+    },
+    {
+      "date": "2026-10-30",
+      "symbol": "PG",
+      "quantity": 327,
+      "description": "PROCTER & GAMBLE;COM NPV",
+      "price": 160.59
+    },
+    {
+      "date": "2026-10-30",
+      "symbol": "SPY",
+      "quantity": 437108,
+      "description": "STATE STREET SPDR S&P 500 ETF",
+      "price": 769.36
+    },
+    {
+      "date": "2026-10-30",
+      "symbol": "GLD",
+      "quantity": 306504,
+      "description": "SPDR GOLD TR, SPDR GOLD SHS",
+      "price": 368.57
+    },
+    {
+      "date": "2026-10-30",
+      "symbol": "XLV",
+      "quantity": 56733,
+      "description": "SELECT SECTOR SPDR TR ST ST HE",
+      "price": 184.04
+    },
+    {
+      "date": "2026-10-30",
+      "symbol": "XLE",
+      "quantity": 96103,
+      "description": "SELECT SECTOR SPDR TR STATE ST",
+      "price": 68.71
+    },
+    {
+      "date": "2026-10-30",
+      "symbol": "TSLA",
+      "quantity": 827,
+      "description": "TESLA INC COM STK (TX)",
+      "price": 403.3
+    },
+    {
+      "date": "2026-10-30",
+      "symbol": "SMH",
+      "quantity": 8635,
+      "description": "VANECK ETF TR SEMICONDUCTOR ET",
+      "price": 561.67
+    },
+    {
+      "date": "2026-10-30",
+      "symbol": "V",
+      "quantity": 160728,
+      "description": "VISA INC CLASS A COM",
+      "price": 410.54
     }
   ],
-  "note": "Half-month file, filtered to the liquid universe."
+  "note": "Half-month file cnsfails202610b, filtered to the liquid universe."
 }
