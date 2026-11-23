@@ -198,7 +198,10 @@ export async function postQueue(options = {}) {
     const batch = pending.slice(0, Number.isFinite(cap) && cap > 0 ? cap : 8);
     for (const story of batch) {
       for (const network of adapters) {
-        if ((ledger.posted[story.id] ?? []).includes(network)) continue;
+        if ((ledger.posted[story.id] ?? []).includes(network)) {
+          log(`social skip ${network} ${story.id}: already in ledger`);
+          continue;
+        }
         if (dry) {
           log(`social dry-run ${network} ${story.id}: ${network === "x" ? xText(story) : story.headline}`);
           results.push({ id: story.id, network, dryRun: true });

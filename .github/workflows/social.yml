@@ -20,23 +20,22 @@ on:
         type: string
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   post:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Setup Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v7
         with:
           node-version: 22
 
       - name: Checkout data branch
-        continue-on-error: true
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           ref: data
           path: data-branch
@@ -45,11 +44,12 @@ jobs:
         run: |
           if [ -f data-branch/data/news/stories.json ]; then
             export NEWS_FILE=data-branch/data/news/stories.json
-            export SOCIAL_LEDGER=data-branch/data/social-posted.json
           else
             export NEWS_FILE=content/news/stories.json
-            export SOCIAL_LEDGER=/tmp/social-posted.json
           fi
+          export SOCIAL_LEDGER=data-branch/data/social-posted.json
+          mkdir -p data-branch/data
+          node scripts/social/seed-ledger.mjs
           node scripts/social/post.mjs
         env:
           SOCIAL_AUTOPOST: "1"
@@ -63,3 +63,23 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+
+      - name: Persist ledger
+        run: |
+          git -C data-branch config user.name "tradehax-data-bot"
+          git -C data-branch config user.email "actions@users.noreply.github.com"
+          git -C data-branch add -f data/social-posted.json
+          if git -C data-branch diff --cached --quiet; then
+            echo "no ledger change"
+            exit 0
+          fi
+          git -C data-branch commit -m "social: record posted stories"
+          for attempt in 1 2 3; do
+            if git -C data-branch push origin HEAD:data; then
+              exit 0
+            fi
+            git -C data-branch fetch origin data
+            git -C data-branch rebase origin/data
+          done
+          echo "ledger push failed"
+          exit 1
