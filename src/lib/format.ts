@@ -11,8 +11,9 @@ export function formatPrice(price: number): string {
   }).format(price);
 }
 
+/** `percent` is already in percent units (1.25 means +1.25%), as Quote.changePercent is. */
 export function formatChange(percent: number | null): string {
-  return formatSignedPercent(percent, 2);
+  return formatSignedPercent(percent, 2, true);
 }
 
 /** Fixed digits. Components call this instead of `toFixed`. */

@@ -4,7 +4,7 @@ import { MarketDataError, type MarketDataProvider } from "./provider";
 import { aggregateBars } from "./resample";
 import type { Quote, SymbolSnapshot } from "./types";
 import { yahooVendorSymbol } from "./alpaca-bars";
-import { fetchWorkerChart } from "./worker-bars";
+import { fetchWorkerChart, withSessionChange } from "./worker-bars";
 
 const FOUR_HOURS_MS = 4 * 60 * 60 * 1000;
 const YAHOO_CHART_HOST = "https://query1.finance.yahoo.com";
@@ -204,7 +204,10 @@ export class YahooMarketData implements MarketDataProvider {
     if (needed.has("1h")) bars["1h"] = hourly;
     if (needed.has("4h")) bars["4h"] = aggregateBars(hourly, FOUR_HOURS_MS);
     if (needed.has("1d")) bars["1d"] = byId.get("1d")?.bars ?? [];
-    return { quote: { ...quote, symbol }, bars };
+    // The first request is usually 1-minute bars, whose "previous" is one minute ago.
+    // Re-base the day change on the prior session's daily close.
+    const daily = byId.get("1d")?.bars ?? [];
+    return { quote: { ...withSessionChange(quote, daily), symbol }, bars };
   }
 
   private async chart(symbol: string, interval: string, range: string): Promise<ChartPayload> {

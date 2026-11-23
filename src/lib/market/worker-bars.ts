@@ -33,6 +33,25 @@ export function quoteFromBars(symbol: string, bars: Bar[]): Quote {
   };
 }
 
+const nyDay = new Intl.DateTimeFormat("en-CA", { timeZone: "America/New_York", year: "numeric", month: "2-digit", day: "2-digit" });
+
+/**
+ * Day change against the prior session's daily close. Intraday bars only know the
+ * previous bar, so a quote built from them measures a one-minute move; daily bars fix
+ * the baseline. Returns the quote unchanged when no earlier session is available.
+ */
+export function withSessionChange(quote: Quote, daily: Bar[]): Quote {
+  if (!Number.isFinite(quote.price) || daily.length === 0) return quote;
+  const today = nyDay.format(new Date(quote.asOf || daily[daily.length - 1].time));
+  for (let index = daily.length - 1; index >= 0; index -= 1) {
+    const bar = daily[index];
+    if (nyDay.format(new Date(bar.time)) >= today) continue;
+    if (!Number.isFinite(bar.close) || bar.close === 0) return quote;
+    return { ...quote, previousClose: bar.close, changePercent: ((quote.price - bar.close) / bar.close) * 100 };
+  }
+  return quote;
+}
+
 export function workerBarsUrl(symbol: string, timeframe: BarTimeframe, limit: number): string {
   const params = new URLSearchParams({ tf: timeframe, limit: String(limit) });
   return `${workerUrl()}/v1/bars/${encodeURIComponent(symbol.toUpperCase())}?${params}`;
