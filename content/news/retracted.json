@@ -1,0 +1,8 @@
+{
+  "note": "Story ids removed from the published wire. generate.mjs drops them on every run. Add an id with the reason; never edit a published number by hand.",
+  "retracted": {
+    "DGS2|macro|2026-11-23": "Prior FRED print was blank and was read as 0.00, so the story claimed a +4.76 point move. Fixed in the engine.",
+    "DGS10|macro|2026-11-23": "Same blank-prior bug (claimed +5.04 points).",
+    "DGS30|macro|2026-11-23": "Same blank-prior bug (claimed +5.40 points)."
+  }
+}

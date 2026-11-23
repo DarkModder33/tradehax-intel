@@ -97,6 +97,9 @@ function dayOf(asOf, fallback) {
 }
 
 function finite(value) {
+  // Number(null) and Number("") are 0. A blank must stay blank, or a missing prior
+  // print turns into a "moved from 0.00" story.
+  if (value == null || (typeof value === "string" && value.trim() === "")) return null;
   const number = Number(value);
   return Number.isFinite(number) ? number : null;
 }

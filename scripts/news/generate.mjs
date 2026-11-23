@@ -34,7 +34,10 @@ const previous = await readJson(priorFile);
 // URLs alive (mergeStories still ages them out after its keep window).
 const seedFile = path.join(root, "content", "news", "stories.json");
 const seed = path.resolve(seedFile) === outFile ? null : await readJson(seedFile);
-const stories = mergeStories([...(seed?.stories ?? []), ...(previous?.stories ?? [])], fresh);
+// Retracted ids never come back, whichever file they were merged from.
+const retracted = new Set(Object.keys((await readJson(path.join(root, "content", "news", "retracted.json")))?.retracted ?? {}));
+const stories = mergeStories([...(seed?.stories ?? []), ...(previous?.stories ?? [])], fresh).filter((story) => !retracted.has(story.id));
+if (retracted.size) console.log(`news: ${retracted.size} retracted id(s) filtered`);
 const payload = {
   generatedAt: new Date().toISOString(),
   disclaimer: fresh[0]?.disclaimer ?? "Auto-generated from market data — not investment advice.",

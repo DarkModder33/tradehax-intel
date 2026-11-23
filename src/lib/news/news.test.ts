@@ -112,3 +112,13 @@ describe("story generator", () => {
     expect(stories.length).toBeLessThanOrEqual(THRESHOLDS.cap);
   });
 });
+
+describe("macro priors", () => {
+  it("does not treat a blank prior print as zero", () => {
+    const stories = buildStories({
+      macro: { meta: { asOf, source: "FRED public CSV" }, rows: [{ id: "DGS10", value: 5.04 }] },
+      macroPrevious: { rows: [{ id: "DGS10", value: null }] },
+    }) as Story[];
+    expect(stories.filter((story) => story.type === "macro")).toEqual([]);
+  });
+});
