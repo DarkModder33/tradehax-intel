@@ -77,6 +77,22 @@ jobs:
           NEWS_FILE: /tmp/tradehax-data/data/news/stories.json
           INDEXNOW: "1"
 
+      - name: Post stories
+        run: node scripts/social/post.mjs || echo "social post failed"
+        env:
+          SOCIAL_AUTOPOST: ${{ vars.SOCIAL_AUTOPOST || '1' }}
+          SOCIAL_DRYRUN: ${{ vars.SOCIAL_DRYRUN || '0' }}
+          SOCIAL_CAP: ${{ vars.SOCIAL_CAP || '8' }}
+          NEWS_FILE: /tmp/tradehax-data/data/news/stories.json
+          SOCIAL_LEDGER: /tmp/tradehax-data/data/social-posted.json
+          X_API_KEY: ${{ secrets.X_API_KEY }}
+          X_API_SECRET: ${{ secrets.X_API_SECRET }}
+          X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
+          X_ACCESS_SECRET: ${{ secrets.X_ACCESS_SECRET }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+
       - name: Publish data branch
         run: |
           cd /tmp/tradehax-data
