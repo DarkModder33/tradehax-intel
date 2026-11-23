@@ -94,17 +94,14 @@ export const LAYOUTS: Record<string, DatasetLayout> = {
   },
   congress: {
     columns: [
-      { label: "Filed", value: (row) => isoDay(row.filed) },
-      { label: "Member", value: (row) => text(row.name).replace(/^Hon\.\s*/, "") },
-      { label: "District", value: (row) => text(row.state) },
-      { label: "Report", value: (row) => (row.filingType === "P" ? "Periodic transaction report" : text(row.filingType)) },
-      {
-        label: "Filing",
-        value: (row) => (row.docId ? "PDF" : "—"),
-        href: (row) => (row.docId ? `https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/${isoDay(row.filed).slice(0, 4)}/${row.docId}.pdf` : null),
-      },
+      { label: "Traded", value: (row) => isoDay(row.transactionDate) },
+      { label: "Member", value: (row) => `${text(row.member)}${row.party ? ` (${String(row.party).slice(0, 1)})` : ""}` },
+      { label: "Ticker", value: (row) => text(row.ticker) },
+      { label: "Type", value: (row) => text(row.type) },
+      { label: "Amount", value: (row) => text(row.amount), numeric: true },
+      { label: "Filing", value: (row) => (row.url ? "PDF" : "—"), href: (row) => (typeof row.url === "string" ? row.url : null) },
     ],
-    sortKey: (row) => isoDay(row.filed),
+    sortKey: (row) => isoDay(row.transactionDate),
   },
   institutions: {
     columns: [

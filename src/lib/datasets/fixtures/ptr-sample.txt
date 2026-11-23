@@ -1,0 +1,80 @@
+                                                                                                                   Filing ID #20035788
+
+                         P                            T                                        R
+              Clerk of the House of Representatives • Legislative Resource Center • B81 Cannon Building • Washington, DC 20515
+
+
+F         I
+Name:                Hon. Gilbert Cisneros
+Status:              Member
+State/District: CA31
+
+
+T
+ID               Owner Asset                                  Transaction Date             Notification Amount                Cap.
+                                                              Type                         Date                               Gains >
+                                                                                                                              $200?
+
+                          Alexandria Real Estate Equities,    P               10/20/2026 11/09/2026        $1,001 - $15,000
+                          Inc. Common Stock (ARE) [ST]
+                          F      S     : New
+                          S           O : 150 Main Street Trust > Bank of America
+
+
+                          Alliant Energy Corporation (LNT)    P               10/20/2026 11/09/2026        $1,001 - $15,000
+                          [ST]
+                          F      S     : New
+                          S           O : 150 Main Street Trust > Bank of America
+
+
+                          Applovin Corporation - Class A      S (partial)     10/14/2026 11/09/2026        $15,001 -
+                          Common Stock (APP) [ST]                                                          $50,000
+                          F      S     : New
+                          S           O : 150 Main Street Trust > Bank of America
+
+
+                          Applovin Corporation - Class A      S               10/20/2026 11/09/2026        $1,001 - $15,000
+                          Common Stock (APP) [ST]
+                          F      S     : New
+                          S           O : 150 Main Street Trust > Bank of America
+
+
+                          argenx SE - American Depositary     P               10/15/2026 11/09/2026        $1,001 - $15,000
+                          Shares (ARGX) [ST]
+                          F      S     : New
+                          S           O : 150 Main Street Trust > Bank of America
+
+
+                          argenx SE - American Depositary     P               10/14/2026 11/09/2026        $15,001 -
+                          Shares (ARGX) [ST]                                                               $50,000
+                          F      S     : New
+                          S           O : 150 Main Street Trust > Bank of America
+ID   Owner Asset                                Transaction Date               Notification Amount             Cap.
+                                                Type                           Date                            Gains >
+                                                                                                               $200?
+
+           argenx SE - American Depositary      P                10/27/2026 11/09/2026      $1,001 - $15,000
+           Shares (ARGX) [ST]
+           F       S    : New
+           S           O : 150 Main Street Trust > Bank of America
+
+
+           Bank Nova Scotia Halifax Pfd 3       P                10/09/2026 11/09/2026      $1,001 - $15,000
+           Ordinary Shares (BNS) [ST]
+           F       S     : New
+           S            O : 150 Main Street Trust > Bank of America
+           D           : Ticker BNS CN
+
+
+           BNP PARIBAS ORD (BNPQF) [ST] S                        10/13/2026 11/09/2026      $1,001 - $15,000
+
+           F       S     : New
+           S            O : 150 Main Street Trust > Bank of America
+           D           : Ticker BNP FP
+
+
+           BridgeBio Pharma, Inc. - Common      P                10/27/2026 11/09/2026      $1,001 - $15,000
+           Stock (BBIO) [ST]
+           F       S    : New
+           S           O : 150 Main Street Trust > Bank of America
+

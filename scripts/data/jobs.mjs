@@ -1,5 +1,5 @@
 import { parseForm4 } from "../../src/lib/datasets/form4.ts";
-import { parseHouseIndex } from "../../src/lib/datasets/congress.ts";
+import { houseParties, parseHouseIndex, parsePtrText, splitDistrict } from "../../src/lib/datasets/congress.ts";
 import { parseFtd } from "../../src/lib/datasets/ftd.ts";
 import { parseNavHistory } from "../../src/lib/datasets/nav.ts";
 import { monthlyReturns } from "../../src/lib/datasets/seasonality.ts";
@@ -151,21 +151,146 @@ async function senateNote() {
   }
 }
 
+const PTR_WINDOW_DAYS = 120;
+const PTR_MAX_DOCS = 160;
+
+function usToIso(value) {
+  const [month, day, year] = String(value).split("/");
+  return year && month && day ? `${year}-${month.padStart(2, "0")}-${day.padStart(2, "0")}` : String(value);
+}
+
+async function houseIndex(year) {
+  const { execFileSync } = await import("node:child_process");
+  const { mkdtempSync, writeFileSync, rmSync } = await import("node:fs");
+  const { tmpdir } = await import("node:os");
+  const zip = await grab(`https://disclosures-clerk.house.gov/public_disc/financial-pdfs/${year}FD.zip`, {}, 20000);
+  const dir = mkdtempSync(`${tmpdir()}/house-`);
+  try {
+    const file = `${dir}/fd.zip`;
+    writeFileSync(file, Buffer.from(await zip.arrayBuffer()));
+    return parseHouseIndex(execFileSync("unzip", ["-p", file, `${year}FD.txt`], { encoding: "utf8" })).map((row) => ({ ...row, year }));
+  } finally {
+    rmSync(dir, { recursive: true, force: true });
+  }
+}
+
+async function ptrText(year, docId) {
+  const { execFileSync } = await import("node:child_process");
+  const { mkdtempSync, writeFileSync, rmSync } = await import("node:fs");
+  const { tmpdir } = await import("node:os");
+  const response = await grabRetry(`https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/${year}/${docId}.pdf`, { headers: { "user-agent": BROWSER, accept: "application/pdf" } }, 20000, 2);
+  const dir = mkdtempSync(`${tmpdir()}/ptr-`);
+  try {
+    const file = `${dir}/${docId}.pdf`;
+    writeFileSync(file, Buffer.from(await response.arrayBuffer()));
+    return execFileSync("pdftotext", ["-layout", file, "-"], { encoding: "utf8", maxBuffer: 16 * 1024 * 1024 });
+  } finally {
+    rmSync(dir, { recursive: true, force: true });
+  }
+}
+
+async function partyMap() {
+  try {
+    const response = await grabRetry("https://unitedstates.github.io/congress-legislators/legislators-current.json", {}, 20000, 2);
+    return houseParties(await response.json());
+  } catch {
+    return new Map();
+  }
+}
+
+/**
+ * House periodic transaction reports, parsed into trades. The clerk index lists the
+ * filings; each electronically filed PDF goes through pdftotext. Scanned paper filings
+ * have no text layer and are counted, not guessed. Parsed documents are reused from the
+ * last file so a run only reads new PDFs.
+ */
 export async function congress() {
   try {
-    const zip = await grab("https://disclosures-clerk.house.gov/public_disc/financial-pdfs/2026FD.zip", {}, 20000);
-    const bytes = Buffer.from(await zip.arrayBuffer());
-    const { execFileSync } = await import("node:child_process");
-    const { mkdtempSync, writeFileSync, rmSync } = await import("node:fs");
-    const { tmpdir } = await import("node:os");
-    const dir = mkdtempSync(`${tmpdir()}/house-`);
-    const file = `${dir}/fd.zip`;
-    writeFileSync(file, bytes);
-    const text = execFileSync("unzip", ["-p", file, "2026FD.txt"], { encoding: "utf8" });
-    rmSync(dir, { recursive: true, force: true });
-    const filings = parseHouseIndex(text).filter((row) => row.filingType === "P").slice(-40);
+    const now = new Date();
+    const years = [now.getUTCFullYear()];
+    if (now.getUTCMonth() < 4) years.push(now.getUTCFullYear() - 1);
+    const index = (await Promise.all(years.map((year) => houseIndex(year).catch(() => [])))).flat();
+    if (index.length === 0) throw new Error("House clerk index did not load");
+    const cutoff = new Date(now.getTime() - PTR_WINDOW_DAYS * 86_400_000).toISOString().slice(0, 10);
+    const filings = index
+      .filter((row) => row.filingType === "P")
+      .map((row) => ({ ...row, filed: usToIso(row.filed) }))
+      .filter((row) => row.filed >= cutoff)
+      .sort((a, b) => (a.filed < b.filed ? 1 : -1))
+      .slice(0, PTR_MAX_DOCS);
+
+    const prior = await readFile(`${process.env.DATA_DIR ?? "data"}/congress.json`, "utf8").then(JSON.parse).catch(() => null);
+    const cache = new Map();
+    for (const doc of prior?.docs ?? []) cache.set(String(doc.docId), doc);
+    for (const row of prior?.rows ?? []) {
+      if (!row?.docId || !row?.ticker) continue;
+      const doc = cache.get(String(row.docId));
+      if (doc) (doc.trades ??= []).push(row);
+    }
+
+    const parties = await partyMap();
+    const docs = [];
+    const queue = [...filings];
+    const worker = async () => {
+      while (queue.length) {
+        const filing = queue.shift();
+        const known = cache.get(filing.docId);
+        if (known && known.status !== "error") {
+          docs.push({ docId: filing.docId, status: known.status, trades: known.trades ?? [] });
+          continue;
+        }
+        try {
+          const text = await ptrText(filing.year, filing.docId);
+          const trades = parsePtrText(text);
+          const scanned = text.replace(/\s+/g, "").length < 200;
+          docs.push({ docId: filing.docId, status: scanned ? "scanned" : "parsed", trades });
+        } catch (error) {
+          docs.push({ docId: filing.docId, status: "error", error: error instanceof Error ? error.message : String(error), trades: [] });
+        }
+      }
+    };
+    await Promise.all(Array.from({ length: 6 }, worker));
+
+    const byDoc = new Map(filings.map((filing) => [filing.docId, filing]));
+    const rows = [];
+    for (const doc of docs) {
+      const filing = byDoc.get(doc.docId);
+      if (!filing) continue;
+      const { state, district } = splitDistrict(filing.state);
+      const party = parties.get(`${state}${district}`) ?? null;
+      for (const trade of doc.trades) {
+        rows.push({
+          ticker: trade.ticker,
+          asset: trade.asset,
+          assetType: trade.assetType,
+          type: trade.type,
+          owner: trade.owner,
+          transactionDate: trade.transactionDate,
+          notifiedDate: trade.notifiedDate,
+          amount: trade.amount,
+          amountLow: trade.amountLow,
+          amountHigh: trade.amountHigh,
+          member: filing.name.replace(/^Hon\.\s*/, ""),
+          party,
+          chamber: "House",
+          district: filing.state,
+          filed: filing.filed,
+          docId: filing.docId,
+          url: `https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/${filing.year}/${filing.docId}.pdf`,
+        });
+      }
+    }
+    rows.sort((a, b) => (a.transactionDate < b.transactionDate ? 1 : a.transactionDate > b.transactionDate ? -1 : a.member.localeCompare(b.member)));
+    const counts = { filings: filings.length, parsed: docs.filter((doc) => doc.status === "parsed").length, scanned: docs.filter((doc) => doc.status === "scanned").length, errors: docs.filter((doc) => doc.status === "error").length };
+    if (rows.length === 0) throw new Error(`No trades parsed from ${filings.length} House filings`);
     return {
-      ...pack("House Clerk PTR index", filings, { delay: "daily", note: "Transaction lines need pdftotext. This file is the filing index." }),
+      ...pack("House Clerk periodic transaction reports", rows, {
+        delay: "daily",
+        note: `${rows.length.toLocaleString("en-US")} trades parsed from ${counts.parsed} electronic House filings in the last ${PTR_WINDOW_DAYS} days. ${counts.scanned} scanned paper filings have no text and are linked, not parsed.`,
+      }),
+      counts,
+      docs: docs.map((doc) => ({ docId: doc.docId, status: doc.status })),
+      filings: filings.map(({ name, state, filed, docId, year }) => ({ name, state, filed, docId, year })),
       senate: { unavailable: true, error: await senateNote() },
     };
   } catch (error) {

@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { partyLetter } from "@/lib/datasets/congress-view";
 import { DEFAULT_UNIVERSE } from "@/lib/live/universe";
 import { useEffect, useState } from "react";
 import { LineChart } from "@/components/chart/series";
@@ -106,7 +107,8 @@ export function TickerOverview() {
           if (ticker === symbol) lines.push(`Insider ${row.trade.owner} ${row.trade.code} ${row.trade.shares}`);
         }
         for (const row of congress.rows ?? []) {
-          if (String(row.ticker ?? "") === symbol || String(row.name ?? "").includes(symbol)) lines.push(`Congress filing ${row.name ?? row.ticker}`);
+          if (String(row.ticker ?? "") !== symbol || !row.member) continue;
+          lines.push(`Congress: ${row.member} (${partyLetter(row.party)}-${row.district ?? "?"}) ${String(row.type ?? "").toLowerCase()} ${row.amount ?? ""} on ${row.transactionDate ?? "?"}`);
         }
         setFilings(lines.slice(0, 6));
       } catch {
@@ -161,7 +163,14 @@ export function TickerOverview() {
       {tab === "flow" ? <Section title="Net premium" body={net} /> : null}
       {tab === "flow" ? <Section title="Recent flow" body={prints.length ? prints.slice(0, 6).map((print) => `${formatEt(Date.parse(print.time))} ${print.right} ${print.strike} ${print.side} $${Math.round(print.premium)}`).join(" · ") : "No prints in the worker window."} /> : null}
       {tab === "flow" ? <Section title="Off-exchange" body={levels} /> : null}
-      {tab === "filings" ? <Section title="Insiders and Congress" body={filings.length ? filings.join(" · ") : "No matching rows in the latest precompute."} /> : null}
+      {tab === "filings" ? (
+        <>
+          <Section title="Insiders and Congress" body={filings.length ? filings.join(" · ") : "No matching rows in the latest precompute."} />
+          <Link href={`/congress/?ticker=${encodeURIComponent(symbol)}`} className="text-sm text-gold underline-offset-4 hover:underline">
+            Every Congress trade in {symbol}
+          </Link>
+        </>
+      ) : null}
       {tab === "shorts" ? <Section title="Short interest" body="Short volume is on the shorts page. Days-to-cover stays blank until FINRA includes this symbol." /> : null}
       {tab === "earnings" ? <Section title="Earnings" body={move ? `Current expected move ${move}. Past implied moves are not stored.` : "Earnings date is on the calendar when Nasdaq listed it."} /> : null}
       {tab === "overview" ? <Section title="News" body={news.length ? news.join(" · ") : "No headlines returned."} /> : null}
