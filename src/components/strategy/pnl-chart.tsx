@@ -18,7 +18,7 @@ export function PnlChart({ legs, hedge, spot, asOf, ivShift }: { legs: StrategyL
       layout: { background: { type: ColorType.Solid, color: "transparent" }, textColor: "#c4c4c4", attributionLogo: true },
       grid: { vertLines: { color: "rgba(255,255,255,0.05)" }, horzLines: { color: "rgba(255,255,255,0.05)" } },
     });
-    const colors = ["oklch(0.84 0.12 88)", "oklch(0.78 0.08 250)", "oklch(0.8 0.15 155)", "#d6d6d6"];
+    const colors = ["#ebc669", "#90bce9", "#61da92", "#d6d6d6"];
     marks.forEach((date, seriesIndex) => {
       const series = chart.addSeries(LineSeries, { color: colors[seriesIndex], lineWidth: 2 });
       series.setData(Array.from({ length: 61 }, (_, index) => {

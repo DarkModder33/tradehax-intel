@@ -145,18 +145,18 @@ export function ProChart() {
     chartRef.current = chart;
     const bars = loaded.bars;
     const candle = chart.addSeries(CandlestickSeries, {
-      upColor: "oklch(0.8 0.15 155)",
-      downColor: "oklch(0.72 0.16 22)",
+      upColor: "#61da92",
+      downColor: "#f97676",
       borderVisible: false,
-      wickUpColor: "oklch(0.8 0.15 155)",
-      wickDownColor: "oklch(0.72 0.16 22)",
+      wickUpColor: "#61da92",
+      wickDownColor: "#f97676",
     });
     candle.setData(bars.map((bar) => ({ time: stamp(bar.time), open: bar.open, high: bar.high, low: bar.low, close: bar.close })));
     const volume = chart.addSeries(HistogramSeries, { priceScaleId: "volume", priceFormat: { type: "volume" } });
     volume.setData(bars.map((bar) => ({
       time: stamp(bar.time),
       value: bar.volume,
-      color: bar.close >= bar.open ? "oklch(0.8 0.15 155 / 0.45)" : "oklch(0.72 0.16 22 / 0.45)",
+      color: bar.close >= bar.open ? "rgba(97, 218, 146, 0.45)" : "rgba(249, 118, 118, 0.45)",
     })));
     chart.priceScale("volume").applyOptions({ scaleMargins: { top: 0.8, bottom: 0 } });
 
@@ -169,27 +169,27 @@ export function ProChart() {
     };
     for (const token of query.indicators) {
       if (token.startsWith("sma")) addLine(sma(closes, indicatorPeriod(token, 20)), "#d6d6d6");
-      else if (token.startsWith("ema")) addLine(ema(closes, indicatorPeriod(token, 20)), "oklch(0.84 0.12 88)");
+      else if (token.startsWith("ema")) addLine(ema(closes, indicatorPeriod(token, 20)), "#ebc669");
       else if (token.startsWith("bb")) {
         const bands = bollinger(closes, indicatorPeriod(token, 20));
-        addLine(bands.map((point) => point.upper), "oklch(0.75 0.04 250)");
-        addLine(bands.map((point) => point.middle), "oklch(0.75 0.04 250)");
-        addLine(bands.map((point) => point.lower), "oklch(0.75 0.04 250)");
+        addLine(bands.map((point) => point.upper), "#9bb0c7");
+        addLine(bands.map((point) => point.middle), "#9bb0c7");
+        addLine(bands.map((point) => point.lower), "#9bb0c7");
       } else if (token === "vwap" || token.startsWith("vwap")) {
         const values = bars.map((bar) => sessionVwap(bars, sessionKey(bar.time)));
-        addLine(values, "oklch(0.86 0.14 200)");
+        addLine(values, "#2cecf5");
       } else if (token.startsWith("keltner")) {
         const bands = keltner(bars, indicatorPeriod(token, 20));
-        addLine(bands.map((point) => point.upper), "oklch(0.78 0.12 50)");
-        addLine(bands.map((point) => point.middle), "oklch(0.78 0.12 50)");
-        addLine(bands.map((point) => point.lower), "oklch(0.78 0.12 50)");
-      } else if (token.startsWith("rsi")) addLine(rsi(closes, indicatorPeriod(token, 14)), "oklch(0.84 0.12 88)", 1);
+        addLine(bands.map((point) => point.upper), "#f5a06f");
+        addLine(bands.map((point) => point.middle), "#f5a06f");
+        addLine(bands.map((point) => point.lower), "#f5a06f");
+      } else if (token.startsWith("rsi")) addLine(rsi(closes, indicatorPeriod(token, 14)), "#ebc669", 1);
       else if (token === "macd") {
         const points = macd(closes);
         addLine(points.map((point) => point.macd), "#d6d6d6", 1);
-        addLine(points.map((point) => point.histogram), "oklch(0.8 0.15 155)", 1);
-      } else if (token.startsWith("atr")) addLine(atr(bars, indicatorPeriod(token, 14)), "oklch(0.78 0.08 250)", 1);
-      else if (token.startsWith("stoch")) addLine(stoch(bars).map((point) => point.k), "oklch(0.84 0.12 88)", 1);
+        addLine(points.map((point) => point.histogram), "#61da92", 1);
+      } else if (token.startsWith("atr")) addLine(atr(bars, indicatorPeriod(token, 14)), "#90bce9", 1);
+      else if (token.startsWith("stoch")) addLine(stoch(bars).map((point) => point.k), "#ebc669", 1);
       else if (token === "obv") addLine(obv(bars), "#d6d6d6", 1);
     }
     if (query.anchor) addLine(anchoredVwap(bars, query.anchor), "#ffffff");
@@ -197,7 +197,7 @@ export function ProChart() {
       const base = loaded.compare[0].close;
       const first = bars[0].close;
       const byTime = new Map(loaded.compare.map((bar) => [stamp(bar.time), bar.close]));
-      const series = chart.addSeries(LineSeries, { color: "oklch(0.78 0.1 300)", lineWidth: 2, priceScaleId: "right" });
+      const series = chart.addSeries(LineSeries, { color: "#c1a9ee", lineWidth: 2, priceScaleId: "right" });
       series.setData(bars.flatMap((bar) => {
         const other = byTime.get(stamp(bar.time));
         if (other == null || base === 0) return [];

@@ -17,9 +17,9 @@ export interface FlowMarkerSpec {
   inferred: boolean;
 }
 
-const BULL = "oklch(0.8 0.15 155)";
-const BEAR = "oklch(0.72 0.16 22)";
-const GOLD = "oklch(0.84 0.12 88)";
+const BULL = "#61da92";
+const BEAR = "#f97676";
+const GOLD = "#ebc669";
 
 export function gexPriceLines(summary: ChainSummary): PriceLineSpec[] {
   const lines: PriceLineSpec[] = [];
@@ -30,7 +30,7 @@ export function gexPriceLines(summary: ChainSummary): PriceLineSpec[] {
   add(summary.levels.callWall, `Call wall ${summary.levels.callWall}`, BULL);
   add(summary.levels.putWall, `Put wall ${summary.levels.putWall}`, BEAR);
   add(summary.levels.flip, `Gamma flip ${summary.levels.flip?.toFixed(2)}`, GOLD);
-  add(summary.maxPain, `Max pain ${summary.maxPain}`, "oklch(0.75 0.04 250)");
+  add(summary.maxPain, `Max pain ${summary.maxPain}`, "#9bb0c7");
   if (summary.expectedMove) {
     add(summary.expectedMove.high, `+1σ ${summary.expectedMove.high.toFixed(2)}`, BULL);
     add(summary.expectedMove.low, `−1σ ${summary.expectedMove.low.toFixed(2)}`, BEAR);
@@ -82,6 +82,6 @@ export function offexLines(prints: { price: number; notional: number }[]): Price
     .map((print) => ({
       price: print.price,
       title: `Off-ex $${(print.notional / 1e6).toFixed(1)}M`,
-      color: "oklch(0.78 0.08 250)",
+      color: "#90bce9",
     }));
 }

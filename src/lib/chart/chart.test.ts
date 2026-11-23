@@ -75,10 +75,11 @@ describe("chart url and overlays", () => {
   });
 
   it("colours flow markers by side and buckets the premium", () => {
-    expect(flowMarkerColor({ right: "call", side: "ASK" })).toContain("155");
-    expect(flowMarkerColor({ right: "put", side: "BID" })).toContain("155");
-    expect(flowMarkerColor({ right: "call", side: "BID" })).toContain("22");
-    expect(flowMarkerColor({ right: "put", side: "ASK" })).toContain("22");
+    // lightweight-charts cannot parse oklch(), so chart colours are hex. #61da92 is the bullish green.
+    expect(flowMarkerColor({ right: "call", side: "ASK" })).toBe("#61da92");
+    expect(flowMarkerColor({ right: "put", side: "BID" })).toBe("#61da92");
+    expect(flowMarkerColor({ right: "call", side: "BID" })).toBe("#f97676");
+    expect(flowMarkerColor({ right: "put", side: "ASK" })).toBe("#f97676");
     expect(flowMarkerColor({ right: "call", side: "MID" })).toBeNull();
     expect(markerSize(200_000)).toBe(1);
     expect(markerSize(250_000)).toBe(1.4);
