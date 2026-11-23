@@ -7,6 +7,7 @@ import { PanelState } from "@/components/panel-state";
 import { SymbolForm } from "@/components/options/symbol-form";
 import { readSymbol } from "@/components/options/use-chain";
 import { fetchChainSummary } from "@/lib/options/load-summary";
+import { GexHeatmap } from "@/components/options/gex-heatmap";
 import type { ChainSummary } from "@/lib/options/summary";
 
 function billions(value: number): string {
@@ -43,9 +44,6 @@ export function GexBoard({ initial }: { initial?: string }) {
   }, [symbol]);
 
   const cells = summary?.heatmap ?? [];
-  const expiries = [...new Set(cells.map((cell) => cell.expiry))].slice(0, 8);
-  const strikes = [...new Set(cells.filter((cell) => expiries.includes(cell.expiry)).map((cell) => cell.strike))].sort((a, b) => a - b);
-  const max = Math.max(1, ...cells.map((cell) => Math.abs(cell.netGex)));
   const near = summary?.near ?? [];
   const span = Math.max(1, ...near.map((row) => Math.max(row.callGex, row.putGex)));
 
@@ -81,32 +79,10 @@ export function GexBoard({ initial }: { initial?: string }) {
             </div>
             <p className="mt-1 text-[11px] text-muted-foreground">Green is call gamma. Red is put gamma. The sign of net gamma is calls minus puts.</p>
           </section>
-          <section className="overflow-x-auto">
-            <h2 className="mb-2 text-sm font-medium">Strike by expiry</h2>
-            <table className="w-full border-collapse text-[11px]">
-              <thead>
-                <tr>
-                  <th className="p-1 text-left">Strike</th>
-                  {expiries.map((expiry) => (
-                    <th key={expiry} className="p-1 text-left font-normal">{expiry.slice(5)}</th>
-                  ))}
-                </tr>
-              </thead>
-              <tbody>
-                {strikes.map((strike) => (
-                  <tr key={strike}>
-                    <td className="p-1 font-mono">{strike}</td>
-                    {expiries.map((expiry) => {
-                      const cell = cells.find((item) => item.expiry === expiry && item.strike === strike);
-                      const value = cell?.netGex ?? 0;
-                      const alpha = Math.min(0.85, Math.abs(value) / max);
-                      const color = value >= 0 ? `oklch(0.8 0.15 155 / ${alpha})` : `oklch(0.72 0.16 22 / ${alpha})`;
-                      return <td key={expiry} className="p-1" style={{ background: color }} />;
-                    })}
-                  </tr>
-                ))}
-              </tbody>
-            </table>
+          <section>
+            <h2 className="mb-1 text-sm font-semibold">Gamma heatmap: strike by expiry</h2>
+            <p className="mb-2 text-xs text-muted-foreground">Where dealer gamma sits across the next expiries, within 5% of spot. The outlined row is spot.</p>
+            <GexHeatmap cells={cells} spot={summary.spot} flip={summary.levels.flip} callWall={summary.levels.callWall} putWall={summary.levels.putWall} />
           </section>
         </>
       ) : null}

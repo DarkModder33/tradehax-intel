@@ -4,7 +4,8 @@ import { formatDigits } from "@/lib/format";
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { StatusPill } from "@/components/live/status-pill";
-import { TideLines } from "@/components/live/tide-lines";
+import { TideChart } from "@/components/live/tide-chart";
+import { sessionSlice } from "@/lib/options/heat";
 import { useWorkerFeed } from "@/components/live/use-worker-feed";
 import { cumulativeTide } from "@/lib/flow/tape";
 import { workerUrl } from "@/lib/live/worker";
@@ -54,7 +55,7 @@ export function SymbolFlow({ initial = "SPY", title }: { initial?: string; title
       {error ? <p className="text-sm text-bearish">{error}</p> : null}
       {symbol === "SPX" ? <p className="text-sm text-muted-foreground">SPX itself is not in the polled universe. The chain is too large for a browser pull. This view is the worker net flow for the symbol you type. SPY is the liquid stand-in.</p> : null}
       <p className="text-sm">NOPE {detail?.nope == null ? "n/a" : formatDigits(detail.nope, 3)}. Net call ${formatDigits(((detail?.netCall ?? 0) / 1e6), 2)}M. Net put ${formatDigits(((detail?.netPut ?? 0) / 1e6), 2)}M.</p>
-      <TideLines points={cumulativeTide(mine)} />
+      <TideChart points={cumulativeTide(sessionSlice([...mine].sort((a, b) => (a.time < b.time ? -1 : 1))))} label="Session tide" />
     </div>
   );
 }
