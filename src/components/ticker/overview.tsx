@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { DEFAULT_UNIVERSE } from "@/lib/live/universe";
 import { useEffect, useState } from "react";
 import { LineChart } from "@/components/chart/series";
 import { DataBadge } from "@/components/data-badge";
@@ -164,7 +165,15 @@ export function TickerOverview() {
       {tab === "shorts" ? <Section title="Short interest" body="Short volume is on the shorts page. Days-to-cover stays blank until FINRA includes this symbol." /> : null}
       {tab === "earnings" ? <Section title="Earnings" body={move ? `Current expected move ${move}. Past implied moves are not stored.` : "Earnings date is on the calendar when Nasdaq listed it."} /> : null}
       {tab === "overview" ? <Section title="News" body={news.length ? news.join(" · ") : "No headlines returned."} /> : null}
-      {tab === "overview" ? <p className="text-sm"><Link href={`/news/t/${symbol}/`}>Desk stories for {symbol}</Link></p> : null}
+      {tab === "overview" ? (
+        <p className="text-sm">
+          {(DEFAULT_UNIVERSE as readonly string[]).includes(symbol) ? (
+            <Link href={`/news/t/${symbol}/`}>Desk stories for {symbol}</Link>
+          ) : (
+            <Link href="/news/">All desk stories</Link>
+          )}
+        </p>
+      ) : null}
     </div>
   );
 }

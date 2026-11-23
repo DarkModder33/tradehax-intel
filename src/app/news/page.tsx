@@ -17,9 +17,9 @@ export default function Page() {
   return (
     <ModuleFrame title="News" lede="Short notes from the files already on the desk. A story runs only when a stored number clears a fixed threshold.">
       <p className="text-sm text-muted-foreground">
-        <Link href="/news/feed.xml" className="underline">RSS</Link>
+        <a href="/news/feed.xml" className="underline">RSS</a>
         {" · "}
-        <Link href="/news/atom.xml" className="underline">Atom</Link>
+        <a href="/news/atom.xml" className="underline">Atom</a>
         {" · "}
         <Link href="/about/methodology/" className="underline">Methodology</Link>
       </p>

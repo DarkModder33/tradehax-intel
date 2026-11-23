@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { newsTypeLabel } from "@/lib/news/labels";
 import { storyHref, type Story } from "@/lib/news/load";
 
 export function NewsList({ stories, empty }: { stories: Story[]; empty: string }) {
@@ -7,7 +8,7 @@ export function NewsList({ stories, empty }: { stories: Story[]; empty: string }
     <ul className="flex flex-col gap-3">
       {stories.map((story) => (
         <li key={story.id} className="rounded-xl bg-card/70 px-3 py-3 ring-1 ring-foreground/10">
-          <p className="text-[11px] tracking-[0.14em] text-gold uppercase">{story.type} · {story.day}</p>
+          <p className="text-[11px] tracking-[0.14em] text-gold uppercase">{newsTypeLabel(story.type)} · {story.day}</p>
           <h2 className="text-lg font-semibold tracking-tight">
             <Link href={storyHref(story)} className="underline-offset-4 hover:underline">{story.headline}</Link>
           </h2>
