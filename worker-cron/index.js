@@ -31,7 +31,7 @@ async function tick(env, reason) {
   return { ok: d.status === 204, action: "dispatched", reason, status: d.status };
 }
 
-export default {
+const handler = {
   async scheduled(event, env, ctx) {
     ctx.waitUntil(tick(env, `cron ${event.cron}`).then((r) => console.log(JSON.stringify(r))));
   },
@@ -43,3 +43,5 @@ export default {
     return new Response("tradehax-cron", { status: 404 });
   },
 };
+
+export default handler;
