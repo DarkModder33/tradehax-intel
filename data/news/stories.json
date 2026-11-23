@@ -1,0 +1,592 @@
+{
+  "generatedAt": "2026-11-23T20:31:01.717Z",
+  "disclaimer": "Auto-generated from market data — not investment advice.",
+  "stories": [
+    {
+      "id": "XLF|ftd|2026-11-23",
+      "type": "ftd",
+      "ticker": "XLF",
+      "tickers": [
+        "XLF"
+      ],
+      "day": "2026-11-23",
+      "publishedAt": "2026-11-23T20:26:15.442Z",
+      "headline": "XLF fails-to-deliver $75.87M",
+      "dek": "1,420,782 shares of XLF failed on 2026-10-01 at $53.40.",
+      "body": [
+        "One SEC fails row for XLF is 1,420,782 shares at $53.40, or $75.87M. The same ticker, type, and day collapse to one story so a later run replaces the row instead of adding a twin. The filter is a threshold on stored data, not a forecast and not a rating.",
+        "Nothing on this page is a recommendation to buy, sell, or hold. The methodology page describes the other desk scores, which are separate from this write-up. Quantity times price is 1,420,782 times $53.40. That product is $75.87M. The article does not adjust for splits, corporate actions, or later corrections unless a newer file replaces the row. The threshold comparison uses $20.00M of notional on one row. XLF cleared it on 2026-10-01. A second symbol in the same file gets its own story only when its own largest row also clears the floor.",
+        "SEC fails-to-deliver arrive with a lag of about three weeks. The file timestamp is 2026-11-23T20:26:15.442Z. The row date is 2026-10-01. A fail is a settlement miss. It is not a count of naked shorts and it is not a signal by itself. The threshold is $20.00M. This print is 3.79 times that floor. Prints below the floor stay in the data file and do not become a story.",
+        "The file holds 8 rows for XLF. Only the largest notional is in the headline. The others are not summed. The row is 1,420,782 shares at $53.40, which multiplies to $75.87M. The description on the row is SELECT SECTOR SPDR TR STATE ST. Only the single largest print for XLF inside this file is used. Other days are not added together, so the figure is one settlement, not a monthly total.",
+        "Readers can open the shorts page for the FINRA series and the ticker page for the delayed tape. Those pages do not reuse this notional unless they load the same SEC file. Figures in this piece come from SEC fails-to-deliver as of 2026-11-23T20:26:15.442Z. A blank in that file stays blank here."
+      ],
+      "keyNumbers": [
+        {
+          "label": "Notional",
+          "value": "$75.87M",
+          "source": "SEC fails-to-deliver",
+          "asOf": "2026-11-23T20:26:15.442Z"
+        },
+        {
+          "label": "Quantity",
+          "value": "1,420,782",
+          "source": "SEC fails-to-deliver",
+          "asOf": "2026-11-23T20:26:15.442Z"
+        },
+        {
+          "label": "Price on the row",
+          "value": "$53.40",
+          "source": "SEC fails-to-deliver",
+          "asOf": "2026-11-23T20:26:15.442Z"
+        },
+        {
+          "label": "Row date",
+          "value": "2026-10-01",
+          "source": "SEC fails-to-deliver",
+          "asOf": "2026-11-23T20:26:15.442Z"
+        }
+      ],
+      "spark": [
+        75869758.8
+      ],
+      "sources": [
+        {
+          "name": "SEC fails-to-deliver",
+          "asOf": "2026-11-23T20:26:15.442Z"
+        }
+      ],
+      "materiality": 75.8697588,
+      "slug": "xlf-ftd-2026-11-23",
+      "passedMateriality": true,
+      "disclaimer": "Auto-generated from market data — not investment advice.",
+      "methodology": "/about/methodology/"
+    },
+    {
+      "id": "SPY|ftd|2026-11-23",
+      "type": "ftd",
+      "ticker": "SPY",
+      "tickers": [
+        "SPY"
+      ],
+      "day": "2026-11-23",
+      "publishedAt": "2026-11-23T20:26:15.442Z",
+      "headline": "SPY fails-to-deliver $78.53M",
+      "dek": "101,039 shares of SPY failed on 2026-10-08 at $777.22.",
+      "body": [
+        "SPY shows a fails-to-deliver print of $78.53M in the latest SEC file. Readers can open the shorts page for the FINRA series and the ticker page for the delayed tape. Those pages do not reuse this notional unless they load the same SEC file. Figures in this piece come from SEC fails-to-deliver as of 2026-11-23T20:26:15.442Z. A blank in that file stays blank here.",
+        "Quantity times price is 101,039 times $777.22. That product is $78.53M. The article does not adjust for splits, corporate actions, or later corrections unless a newer file replaces the row. The threshold comparison uses $20.00M of notional on one row. SPY cleared it on 2026-10-08. A second symbol in the same file gets its own story only when its own largest row also clears the floor. SEC fails-to-deliver arrive with a lag of about three weeks. The file timestamp is 2026-11-23T20:26:15.442Z. The row date is 2026-10-08.",
+        "A fail is a settlement miss. It is not a count of naked shorts and it is not a signal by itself. The threshold is $20.00M. This print is 3.93 times that floor. Prints below the floor stay in the data file and do not become a story. The file holds 8 rows for SPY. Only the largest notional is in the headline. The others are not summed.",
+        "The row is 101,039 shares at $777.22, which multiplies to $78.53M. The description on the row is STATE STREET SPDR S&P 500 ETF. Only the single largest print for SPY inside this file is used. Other days are not added together, so the figure is one settlement, not a monthly total. The same ticker, type, and day collapse to one story so a later run replaces the row instead of adding a twin.",
+        "The filter is a threshold on stored data, not a forecast and not a rating. Nothing on this page is a recommendation to buy, sell, or hold. The methodology page describes the other desk scores, which are separate from this write-up."
+      ],
+      "keyNumbers": [
+        {
+          "label": "Notional",
+          "value": "$78.53M",
+          "source": "SEC fails-to-deliver",
+          "asOf": "2026-11-23T20:26:15.442Z"
+        },
+        {
+          "label": "Quantity",
+          "value": "101,039",
+          "source": "SEC fails-to-deliver",
+          "asOf": "2026-11-23T20:26:15.442Z"
+        },
+        {
+          "label": "Price on the row",
+          "value": "$777.22",
+          "source": "SEC fails-to-deliver",
+          "asOf": "2026-11-23T20:26:15.442Z"
+        },
+        {
+          "label": "Row date",
+          "value": "2026-10-08",
+          "source": "SEC fails-to-deliver",
+          "asOf": "2026-11-23T20:26:15.442Z"
+        }
+      ],
+      "spark": [
+        78529531.58
+      ],
+      "sources": [
+        {
+          "name": "SEC fails-to-deliver",
+          "asOf": "2026-11-23T20:26:15.442Z"
+        }
+      ],
+      "materiality": 78.52953158,
+      "slug": "spy-ftd-2026-11-23",
+      "passedMateriality": true,
+      "disclaimer": "Auto-generated from market data — not investment advice.",
+      "methodology": "/about/methodology/"
+    },
+    {
+      "id": "TSLA|ftd|2026-11-23",
+      "type": "ftd",
+      "ticker": "TSLA",
+      "tickers": [
+        "TSLA"
+      ],
+      "day": "2026-11-23",
+      "publishedAt": "2026-11-23T20:26:15.442Z",
+      "headline": "TSLA fails-to-deliver $81.47M",
+      "dek": "219,841 shares of TSLA failed on 2026-10-05 at $370.59.",
+      "body": [
+        "TSLA shows a fails-to-deliver print of $81.47M in the latest SEC file. The filter is a threshold on stored data, not a forecast and not a rating. SEC fails-to-deliver arrive with a lag of about three weeks. The file timestamp is 2026-11-23T20:26:15.442Z. The row date is 2026-10-05.",
+        "A fail is a settlement miss. It is not a count of naked shorts and it is not a signal by itself. Quantity times price is 219,841 times $370.59. That product is $81.47M. The article does not adjust for splits, corporate actions, or later corrections unless a newer file replaces the row. The threshold comparison uses $20.00M of notional on one row. TSLA cleared it on 2026-10-05. A second symbol in the same file gets its own story only when its own largest row also clears the floor.",
+        "The row is 219,841 shares at $370.59, which multiplies to $81.47M. The description on the row is TESLA INC COM STK (TX). Only the single largest print for TSLA inside this file is used. Other days are not added together, so the figure is one settlement, not a monthly total. The threshold is $20.00M. This print is 4.07 times that floor. Prints below the floor stay in the data file and do not become a story.",
+        "The file holds 8 rows for TSLA. Only the largest notional is in the headline. The others are not summed. Readers can open the shorts page for the FINRA series and the ticker page for the delayed tape. Those pages do not reuse this notional unless they load the same SEC file. Figures in this piece come from SEC fails-to-deliver as of 2026-11-23T20:26:15.442Z. A blank in that file stays blank here.",
+        "Nothing on this page is a recommendation to buy, sell, or hold. The methodology page describes the other desk scores, which are separate from this write-up. The same ticker, type, and day collapse to one story so a later run replaces the row instead of adding a twin."
+      ],
+      "keyNumbers": [
+        {
+          "label": "Notional",
+          "value": "$81.47M",
+          "source": "SEC fails-to-deliver",
+          "asOf": "2026-11-23T20:26:15.442Z"
+        },
+        {
+          "label": "Quantity",
+          "value": "219,841",
+          "source": "SEC fails-to-deliver",
+          "asOf": "2026-11-23T20:26:15.442Z"
+        },
+        {
+          "label": "Price on the row",
+          "value": "$370.59",
+          "source": "SEC fails-to-deliver",
+          "asOf": "2026-11-23T20:26:15.442Z"
+        },
+        {
+          "label": "Row date",
+          "value": "2026-10-05",
+          "source": "SEC fails-to-deliver",
+          "asOf": "2026-11-23T20:26:15.442Z"
+        }
+      ],
+      "spark": [
+        81470876.19
+      ],
+      "sources": [
+        {
+          "name": "SEC fails-to-deliver",
+          "asOf": "2026-11-23T20:26:15.442Z"
+        }
+      ],
+      "materiality": 81.47087619,
+      "slug": "tsla-ftd-2026-11-23",
+      "passedMateriality": true,
+      "disclaimer": "Auto-generated from market data — not investment advice.",
+      "methodology": "/about/methodology/"
+    },
+    {
+      "id": "SMH|ftd|2026-11-23",
+      "type": "ftd",
+      "ticker": "SMH",
+      "tickers": [
+        "SMH"
+      ],
+      "day": "2026-11-23",
+      "publishedAt": "2026-11-23T20:26:15.442Z",
+      "headline": "SMH fails-to-deliver $98.74M",
+      "dek": "162,604 shares of SMH failed on 2026-10-09 at $607.27.",
+      "body": [
+        "Fails-to-deliver in SMH reached $98.74M on 2026-10-09. Nothing on this page is a recommendation to buy, sell, or hold. The methodology page describes the other desk scores, which are separate from this write-up. The same ticker, type, and day collapse to one story so a later run replaces the row instead of adding a twin.",
+        "The filter is a threshold on stored data, not a forecast and not a rating. SEC fails-to-deliver arrive with a lag of about three weeks. The file timestamp is 2026-11-23T20:26:15.442Z. The row date is 2026-10-09. A fail is a settlement miss. It is not a count of naked shorts and it is not a signal by itself.",
+        "Quantity times price is 162,604 times $607.27. That product is $98.74M. The article does not adjust for splits, corporate actions, or later corrections unless a newer file replaces the row. The threshold comparison uses $20.00M of notional on one row. SMH cleared it on 2026-10-09. A second symbol in the same file gets its own story only when its own largest row also clears the floor. The row is 162,604 shares at $607.27, which multiplies to $98.74M. The description on the row is VANECK ETF TR SEMICONDUCTOR ET.",
+        "Only the single largest print for SMH inside this file is used. Other days are not added together, so the figure is one settlement, not a monthly total. The threshold is $20.00M. This print is 4.94 times that floor. Prints below the floor stay in the data file and do not become a story. The file holds 7 rows for SMH. Only the largest notional is in the headline. The others are not summed.",
+        "Readers can open the shorts page for the FINRA series and the ticker page for the delayed tape. Those pages do not reuse this notional unless they load the same SEC file. Figures in this piece come from SEC fails-to-deliver as of 2026-11-23T20:26:15.442Z. A blank in that file stays blank here."
+      ],
+      "keyNumbers": [
+        {
+          "label": "Notional",
+          "value": "$98.74M",
+          "source": "SEC fails-to-deliver",
+          "asOf": "2026-11-23T20:26:15.442Z"
+        },
+        {
+          "label": "Quantity",
+          "value": "162,604",
+          "source": "SEC fails-to-deliver",
+          "asOf": "2026-11-23T20:26:15.442Z"
+        },
+        {
+          "label": "Price on the row",
+          "value": "$607.27",
+          "source": "SEC fails-to-deliver",
+          "asOf": "2026-11-23T20:26:15.442Z"
+        },
+        {
+          "label": "Row date",
+          "value": "2026-10-09",
+          "source": "SEC fails-to-deliver",
+          "asOf": "2026-11-23T20:26:15.442Z"
+        }
+      ],
+      "spark": [
+        98744531.08
+      ],
+      "sources": [
+        {
+          "name": "SEC fails-to-deliver",
+          "asOf": "2026-11-23T20:26:15.442Z"
+        }
+      ],
+      "materiality": 98.74453108,
+      "slug": "smh-ftd-2026-11-23",
+      "passedMateriality": true,
+      "disclaimer": "Auto-generated from market data — not investment advice.",
+      "methodology": "/about/methodology/"
+    },
+    {
+      "id": "IWM|ftd|2026-11-23",
+      "type": "ftd",
+      "ticker": "IWM",
+      "tickers": [
+        "IWM"
+      ],
+      "day": "2026-11-23",
+      "publishedAt": "2026-11-23T20:26:15.442Z",
+      "headline": "IWM fails-to-deliver $116.35M",
+      "dek": "419,165 shares of IWM failed on 2026-10-09 at $277.57.",
+      "body": [
+        "IWM shows a fails-to-deliver print of $116.35M in the latest SEC file. The file holds 8 rows for IWM. Only the largest notional is in the headline. The others are not summed. The threshold is $20.00M. This print is 5.82 times that floor. Prints below the floor stay in the data file and do not become a story.",
+        "Only the single largest print for IWM inside this file is used. Other days are not added together, so the figure is one settlement, not a monthly total. The row is 419,165 shares at $277.57, which multiplies to $116.35M. The description on the row is ISHARES RUSSELL 2000 ETF. The threshold comparison uses $20.00M of notional on one row. IWM cleared it on 2026-10-09. A second symbol in the same file gets its own story only when its own largest row also clears the floor.",
+        "Quantity times price is 419,165 times $277.57. That product is $116.35M. The article does not adjust for splits, corporate actions, or later corrections unless a newer file replaces the row. A fail is a settlement miss. It is not a count of naked shorts and it is not a signal by itself. SEC fails-to-deliver arrive with a lag of about three weeks. The file timestamp is 2026-11-23T20:26:15.442Z. The row date is 2026-10-09.",
+        "Nothing on this page is a recommendation to buy, sell, or hold. The methodology page describes the other desk scores, which are separate from this write-up. The filter is a threshold on stored data, not a forecast and not a rating. The same ticker, type, and day collapse to one story so a later run replaces the row instead of adding a twin.",
+        "Figures in this piece come from SEC fails-to-deliver as of 2026-11-23T20:26:15.442Z. A blank in that file stays blank here. Readers can open the shorts page for the FINRA series and the ticker page for the delayed tape. Those pages do not reuse this notional unless they load the same SEC file."
+      ],
+      "keyNumbers": [
+        {
+          "label": "Notional",
+          "value": "$116.35M",
+          "source": "SEC fails-to-deliver",
+          "asOf": "2026-11-23T20:26:15.442Z"
+        },
+        {
+          "label": "Quantity",
+          "value": "419,165",
+          "source": "SEC fails-to-deliver",
+          "asOf": "2026-11-23T20:26:15.442Z"
+        },
+        {
+          "label": "Price on the row",
+          "value": "$277.57",
+          "source": "SEC fails-to-deliver",
+          "asOf": "2026-11-23T20:26:15.442Z"
+        },
+        {
+          "label": "Row date",
+          "value": "2026-10-09",
+          "source": "SEC fails-to-deliver",
+          "asOf": "2026-11-23T20:26:15.442Z"
+        }
+      ],
+      "spark": [
+        116347629.05
+      ],
+      "sources": [
+        {
+          "name": "SEC fails-to-deliver",
+          "asOf": "2026-11-23T20:26:15.442Z"
+        }
+      ],
+      "materiality": 116.34762905,
+      "slug": "iwm-ftd-2026-11-23",
+      "passedMateriality": true,
+      "disclaimer": "Auto-generated from market data — not investment advice.",
+      "methodology": "/about/methodology/"
+    },
+    {
+      "id": "QQQ|ftd|2026-11-23",
+      "type": "ftd",
+      "ticker": "QQQ",
+      "tickers": [
+        "QQQ"
+      ],
+      "day": "2026-11-23",
+      "publishedAt": "2026-11-23T20:26:15.442Z",
+      "headline": "QQQ fails-to-deliver $160.72M",
+      "dek": "212,112 shares of QQQ failed on 2026-10-08 at $757.73.",
+      "body": [
+        "One SEC fails row for QQQ is 212,112 shares at $757.73, or $160.72M. A fail is a settlement miss. It is not a count of naked shorts and it is not a signal by itself. SEC fails-to-deliver arrive with a lag of about three weeks. The file timestamp is 2026-11-23T20:26:15.442Z. The row date is 2026-10-08.",
+        "The threshold comparison uses $20.00M of notional on one row. QQQ cleared it on 2026-10-08. A second symbol in the same file gets its own story only when its own largest row also clears the floor. Quantity times price is 212,112 times $757.73. That product is $160.72M. The article does not adjust for splits, corporate actions, or later corrections unless a newer file replaces the row. Only the single largest print for QQQ inside this file is used. Other days are not added together, so the figure is one settlement, not a monthly total.",
+        "The row is 212,112 shares at $757.73, which multiplies to $160.72M. The description on the row is INVESCO QQQ TR. The file holds 7 rows for QQQ. Only the largest notional is in the headline. The others are not summed. The threshold is $20.00M. This print is 8.04 times that floor. Prints below the floor stay in the data file and do not become a story.",
+        "Figures in this piece come from SEC fails-to-deliver as of 2026-11-23T20:26:15.442Z. A blank in that file stays blank here. Readers can open the shorts page for the FINRA series and the ticker page for the delayed tape. Those pages do not reuse this notional unless they load the same SEC file. The filter is a threshold on stored data, not a forecast and not a rating.",
+        "The same ticker, type, and day collapse to one story so a later run replaces the row instead of adding a twin. Nothing on this page is a recommendation to buy, sell, or hold. The methodology page describes the other desk scores, which are separate from this write-up."
+      ],
+      "keyNumbers": [
+        {
+          "label": "Notional",
+          "value": "$160.72M",
+          "source": "SEC fails-to-deliver",
+          "asOf": "2026-11-23T20:26:15.442Z"
+        },
+        {
+          "label": "Quantity",
+          "value": "212,112",
+          "source": "SEC fails-to-deliver",
+          "asOf": "2026-11-23T20:26:15.442Z"
+        },
+        {
+          "label": "Price on the row",
+          "value": "$757.73",
+          "source": "SEC fails-to-deliver",
+          "asOf": "2026-11-23T20:26:15.442Z"
+        },
+        {
+          "label": "Row date",
+          "value": "2026-10-08",
+          "source": "SEC fails-to-deliver",
+          "asOf": "2026-11-23T20:26:15.442Z"
+        }
+      ],
+      "spark": [
+        160723625.76
+      ],
+      "sources": [
+        {
+          "name": "SEC fails-to-deliver",
+          "asOf": "2026-11-23T20:26:15.442Z"
+        }
+      ],
+      "materiality": 160.72362576,
+      "slug": "qqq-ftd-2026-11-23",
+      "passedMateriality": true,
+      "disclaimer": "Auto-generated from market data — not investment advice.",
+      "methodology": "/about/methodology/"
+    },
+    {
+      "id": "AMD|ftd|2026-11-23",
+      "type": "ftd",
+      "ticker": "AMD",
+      "tickers": [
+        "AMD"
+      ],
+      "day": "2026-11-23",
+      "publishedAt": "2026-11-23T20:26:15.442Z",
+      "headline": "AMD fails-to-deliver $202.69M",
+      "dek": "319,749 shares of AMD failed on 2026-10-05 at $633.91.",
+      "body": [
+        "Fails-to-deliver in AMD reached $202.69M on 2026-10-05. The same ticker, type, and day collapse to one story so a later run replaces the row instead of adding a twin. The filter is a threshold on stored data, not a forecast and not a rating.",
+        "Nothing on this page is a recommendation to buy, sell, or hold. The methodology page describes the other desk scores, which are separate from this write-up. Quantity times price is 319,749 times $633.91. That product is $202.69M. The article does not adjust for splits, corporate actions, or later corrections unless a newer file replaces the row. The threshold comparison uses $20.00M of notional on one row. AMD cleared it on 2026-10-05. A second symbol in the same file gets its own story only when its own largest row also clears the floor.",
+        "SEC fails-to-deliver arrive with a lag of about three weeks. The file timestamp is 2026-11-23T20:26:15.442Z. The row date is 2026-10-05. A fail is a settlement miss. It is not a count of naked shorts and it is not a signal by itself. The threshold is $20.00M. This print is 10.13 times that floor. Prints below the floor stay in the data file and do not become a story.",
+        "The file holds 6 rows for AMD. Only the largest notional is in the headline. The others are not summed. The row is 319,749 shares at $633.91, which multiplies to $202.69M. The description on the row is ADVANCED MICRO DEVICES. Only the single largest print for AMD inside this file is used. Other days are not added together, so the figure is one settlement, not a monthly total.",
+        "Readers can open the shorts page for the FINRA series and the ticker page for the delayed tape. Those pages do not reuse this notional unless they load the same SEC file. Figures in this piece come from SEC fails-to-deliver as of 2026-11-23T20:26:15.442Z. A blank in that file stays blank here."
+      ],
+      "keyNumbers": [
+        {
+          "label": "Notional",
+          "value": "$202.69M",
+          "source": "SEC fails-to-deliver",
+          "asOf": "2026-11-23T20:26:15.442Z"
+        },
+        {
+          "label": "Quantity",
+          "value": "319,749",
+          "source": "SEC fails-to-deliver",
+          "asOf": "2026-11-23T20:26:15.442Z"
+        },
+        {
+          "label": "Price on the row",
+          "value": "$633.91",
+          "source": "SEC fails-to-deliver",
+          "asOf": "2026-11-23T20:26:15.442Z"
+        },
+        {
+          "label": "Row date",
+          "value": "2026-10-05",
+          "source": "SEC fails-to-deliver",
+          "asOf": "2026-11-23T20:26:15.442Z"
+        }
+      ],
+      "spark": [
+        202692088.59
+      ],
+      "sources": [
+        {
+          "name": "SEC fails-to-deliver",
+          "asOf": "2026-11-23T20:26:15.442Z"
+        }
+      ],
+      "materiality": 202.69208859,
+      "slug": "amd-ftd-2026-11-23",
+      "passedMateriality": true,
+      "disclaimer": "Auto-generated from market data — not investment advice.",
+      "methodology": "/about/methodology/"
+    },
+    {
+      "id": "XLC|ftd|2026-11-23",
+      "type": "ftd",
+      "ticker": "XLC",
+      "tickers": [
+        "XLC"
+      ],
+      "day": "2026-11-23",
+      "publishedAt": "2026-11-23T20:26:15.442Z",
+      "headline": "XLC fails-to-deliver $380.13M",
+      "dek": "3,445,659 shares of XLC failed on 2026-10-05 at $110.32.",
+      "body": [
+        "One SEC fails row for XLC is 3,445,659 shares at $110.32, or $380.13M. Figures in this piece come from SEC fails-to-deliver as of 2026-11-23T20:26:15.442Z. A blank in that file stays blank here. Readers can open the shorts page for the FINRA series and the ticker page for the delayed tape. Those pages do not reuse this notional unless they load the same SEC file.",
+        "Only the single largest print for XLC inside this file is used. Other days are not added together, so the figure is one settlement, not a monthly total. The row is 3,445,659 shares at $110.32, which multiplies to $380.13M. The description on the row is SELECT SECTOR SPDR TR STATE ST. The file holds 8 rows for XLC. Only the largest notional is in the headline. The others are not summed.",
+        "The threshold is $20.00M. This print is 19.01 times that floor. Prints below the floor stay in the data file and do not become a story. A fail is a settlement miss. It is not a count of naked shorts and it is not a signal by itself. SEC fails-to-deliver arrive with a lag of about three weeks. The file timestamp is 2026-11-23T20:26:15.442Z. The row date is 2026-10-05.",
+        "The threshold comparison uses $20.00M of notional on one row. XLC cleared it on 2026-10-05. A second symbol in the same file gets its own story only when its own largest row also clears the floor. Quantity times price is 3,445,659 times $110.32. That product is $380.13M. The article does not adjust for splits, corporate actions, or later corrections unless a newer file replaces the row. The filter is a threshold on stored data, not a forecast and not a rating.",
+        "The same ticker, type, and day collapse to one story so a later run replaces the row instead of adding a twin. Nothing on this page is a recommendation to buy, sell, or hold. The methodology page describes the other desk scores, which are separate from this write-up."
+      ],
+      "keyNumbers": [
+        {
+          "label": "Notional",
+          "value": "$380.13M",
+          "source": "SEC fails-to-deliver",
+          "asOf": "2026-11-23T20:26:15.442Z"
+        },
+        {
+          "label": "Quantity",
+          "value": "3,445,659",
+          "source": "SEC fails-to-deliver",
+          "asOf": "2026-11-23T20:26:15.442Z"
+        },
+        {
+          "label": "Price on the row",
+          "value": "$110.32",
+          "source": "SEC fails-to-deliver",
+          "asOf": "2026-11-23T20:26:15.442Z"
+        },
+        {
+          "label": "Row date",
+          "value": "2026-10-05",
+          "source": "SEC fails-to-deliver",
+          "asOf": "2026-11-23T20:26:15.442Z"
+        }
+      ],
+      "spark": [
+        380125100.88
+      ],
+      "sources": [
+        {
+          "name": "SEC fails-to-deliver",
+          "asOf": "2026-11-23T20:26:15.442Z"
+        }
+      ],
+      "materiality": 380.12510088,
+      "slug": "xlc-ftd-2026-11-23",
+      "passedMateriality": true,
+      "disclaimer": "Auto-generated from market data — not investment advice.",
+      "methodology": "/about/methodology/"
+    },
+    {
+      "id": "XLRE|short|2026-11-23",
+      "type": "short",
+      "ticker": "XLRE",
+      "tickers": [
+        "XLRE"
+      ],
+      "day": "2026-11-23",
+      "publishedAt": "2026-11-23T20:26:14.986Z",
+      "headline": "XLRE short interest -32.12%",
+      "dek": "XLRE short interest changed -32.12% as of settlement 2026-08-14.",
+      "body": [
+        "FINRA short interest in XLRE changed -32.12% from the prior report. Dividing the current position by the previous position gives a ratio of 0.679. The published change percent is -32.12%, and this article uses that published field rather than a recomputed percent. Issue name on the row: State Street Real Estate Selec. Market class ARCA. Accounting period 20260814.",
+        "Days to cover is 1.00. That is the position divided by average daily volume in the same FINRA row, which is 5,448,887 shares. Float is not in this file, so short interest as a percent of float is not stated. Current short position is 5,060,163 shares. The previous report was 7,454,300 shares. The change in shares is -2,394,137. Average daily volume on the row is 5,448,887. Days to cover of 1.00 is the position divided by that volume. A blank volume would leave days to cover blank, and this article would not invent it.",
+        "A rise in short interest is not by itself a bullish or bearish signal. It records shares borrowed and sold short, as FINRA consolidated them. The story threshold is a 10 percent change, or days to cover of at least 5. XLRE met that bar in this file. Settlement date on the row is 2026-08-14. FINRA publishes this series about twice a month, so the figure can be weeks older than the file timestamp 2026-11-23T20:26:14.986Z.",
+        "The filter is a threshold on stored data, not a forecast and not a rating. Figures in this piece come from FINRA consolidated short interest as of 2026-11-23T20:26:14.986Z. A blank in that file stays blank here. The same ticker, type, and day collapse to one story so a later run replaces the row instead of adding a twin.",
+        "Nothing on this page is a recommendation to buy, sell, or hold. The methodology page describes the other desk scores, which are separate from this write-up."
+      ],
+      "keyNumbers": [
+        {
+          "label": "Change versus prior report",
+          "value": "-32.12%",
+          "source": "FINRA consolidated short interest",
+          "asOf": "2026-11-23T20:26:14.986Z"
+        },
+        {
+          "label": "Current short position",
+          "value": "5,060,163",
+          "source": "FINRA consolidated short interest",
+          "asOf": "2026-11-23T20:26:14.986Z"
+        },
+        {
+          "label": "Previous short position",
+          "value": "7,454,300",
+          "source": "FINRA consolidated short interest",
+          "asOf": "2026-11-23T20:26:14.986Z"
+        },
+        {
+          "label": "Days to cover",
+          "value": "1.00",
+          "source": "FINRA consolidated short interest",
+          "asOf": "2026-11-23T20:26:14.986Z"
+        },
+        {
+          "label": "Settlement",
+          "value": "2026-08-14",
+          "source": "FINRA consolidated short interest",
+          "asOf": "2026-11-23T20:26:14.986Z"
+        }
+      ],
+      "spark": [
+        7454300,
+        5060163
+      ],
+      "sources": [
+        {
+          "name": "FINRA consolidated short interest",
+          "asOf": "2026-11-23T20:26:14.986Z"
+        }
+      ],
+      "materiality": 32.12,
+      "slug": "xlre-short-2026-11-23",
+      "passedMateriality": true,
+      "disclaimer": "Auto-generated from market data — not investment advice.",
+      "methodology": "/about/methodology/"
+    },
+    {
+      "id": "BULL|insider|2026-11-23",
+      "type": "insider",
+      "ticker": "BULL",
+      "tickers": [
+        "BULL"
+      ],
+      "day": "2026-11-23",
+      "publishedAt": "2026-11-23T20:24:53.551Z",
+      "headline": "2 insiders bought BULL in the open market",
+      "dek": "2 Form 4 code-P buyers in BULL from SEC EDGAR Form 4.",
+      "body": [
+        "2 different owners filed open-market purchases of BULL in this Form 4 batch. The cluster rule is at least 2 distinct owners in the same stored batch. One buyer, however large, does not qualify. The Shares on those rows cell reads 25,000. It is attributed to SEC EDGAR Form 4 as of 2026-11-23T20:24:53.551Z, and this paragraph does not replace it with a second vendor.",
+        "The Distinct buyers cell reads 2. It is attributed to SEC EDGAR Form 4 as of 2026-11-23T20:24:53.551Z, and this paragraph does not replace it with a second vendor. A cluster is a count of people in one batch. It is not a measure of how informed the buyers were, and it is not compared with their prior sales unless those sales are in a different story. Owners on the cluster: Wang Haichen, James Benjamin Worthy. Each name is the owner string on the Form 4, not a fund look-through.",
+        "Only transaction code P with acquired set is counted. Awards, gifts, and sales stay out of a cluster-buy story. Together those purchase rows list 25,000 shares. Prices are the values on each Form 4, not a blended average unless a reader computes one. The filings are Wang Haichen bought 20,000 shares at $4.50 filed 2026-11-23; James Benjamin Worthy bought 5,000 shares at $4.39 filed 2026-11-23.",
+        "Figures in this piece come from SEC EDGAR Form 4 as of 2026-11-23T20:24:53.551Z. A blank in that file stays blank here. Form 4 can be filed up to two business days after the trade. The filing date is not always the trade date. Nothing on this page is a recommendation to buy, sell, or hold. The methodology page describes the other desk scores, which are separate from this write-up.",
+        "The filter is a threshold on stored data, not a forecast and not a rating. The same ticker, type, and day collapse to one story so a later run replaces the row instead of adding a twin."
+      ],
+      "keyNumbers": [
+        {
+          "label": "Distinct buyers",
+          "value": "2",
+          "source": "SEC EDGAR Form 4",
+          "asOf": "2026-11-23T20:24:53.551Z"
+        },
+        {
+          "label": "Shares on those rows",
+          "value": "25,000",
+          "source": "SEC EDGAR Form 4",
+          "asOf": "2026-11-23T20:24:53.551Z"
+        }
+      ],
+      "spark": [
+        20000,
+        5000
+      ],
+      "sources": [
+        {
+          "name": "SEC EDGAR Form 4",
+          "asOf": "2026-11-23T20:24:53.551Z"
+        }
+      ],
+      "materiality": 20,
+      "slug": "bull-insider-2026-11-23",
+      "passedMateriality": true,
+      "disclaimer": "Auto-generated from market data — not investment advice.",
+      "methodology": "/about/methodology/"
+    }
+  ]
+}

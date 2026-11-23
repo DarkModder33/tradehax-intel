@@ -1,6 +1,6 @@
 {
   "meta": {
-    "asOf": "2026-11-22T18:12:57.274Z",
+    "asOf": "2026-11-23T20:24:54.681Z",
     "source": "SEC 13F-HR index",
     "rows": 20,
     "delay": "quarterly",
@@ -8,6 +8,48 @@
     "unavailable": false
   },
   "rows": [
+    {
+      "id": "0001979884-26-000009:primary_doc.xml",
+      "filed": "2026-09-30",
+      "names": [
+        "Kensington Asset Management, LLC  (CIK 0001979884)"
+      ]
+    },
+    {
+      "id": "0001800798-26-000008:primary_doc.xml",
+      "filed": "2026-09-30",
+      "names": [
+        "Arkadios Wealth Advisors  (CIK 0001800798)"
+      ]
+    },
+    {
+      "id": "0001625959-26-000004:primary_doc.xml",
+      "filed": "2026-09-30",
+      "names": [
+        "Arvest Bank Trust Division  (CIK 0001625959)"
+      ]
+    },
+    {
+      "id": "0001580642-26-007863:primary_doc.xml",
+      "filed": "2026-09-30",
+      "names": [
+        "CWM, LLC  (CIK 0001535847)"
+      ]
+    },
+    {
+      "id": "0001580642-26-007862:primary_doc.xml",
+      "filed": "2026-06-30",
+      "names": [
+        "CWM, LLC  (CIK 0001535847)"
+      ]
+    },
+    {
+      "id": "0001513227-26-000007:primary_doc.xml",
+      "filed": "2026-09-30",
+      "names": [
+        "Smart Portfolios, LLC  (CIK 0001513227)"
+      ]
+    },
     {
       "id": "0002085853-26-001418:primary_doc.xml",
       "filed": "2026-09-30",
@@ -104,48 +146,6 @@
       "filed": "2026-06-30",
       "names": [
         "49 WEALTH MANAGEMENT, LLC  (CIK 0002022291)"
-      ]
-    },
-    {
-      "id": "0001072613-26-000921:primary_doc.xml",
-      "filed": "2026-09-30",
-      "names": [
-        "NEA Management Company, LLC  (CIK 0001512848)"
-      ]
-    },
-    {
-      "id": "0000748054-26-000009:primary_doc.xml",
-      "filed": "2026-09-30",
-      "names": [
-        "AMERICAN CENTURY COMPANIES INC  (CIK 0000748054)"
-      ]
-    },
-    {
-      "id": "0002153041-26-000004:primary_doc.xml",
-      "filed": "2026-06-30",
-      "names": [
-        "Seven Hills Financial, LLC  (CIK 0002153041)"
-      ]
-    },
-    {
-      "id": "0002130487-26-000011:primary_doc.xml",
-      "filed": "2026-09-30",
-      "names": [
-        "Militia Capital Management LLC  (CIK 0002130487)"
-      ]
-    },
-    {
-      "id": "0002085853-26-001414:primary_doc.xml",
-      "filed": "2026-09-30",
-      "names": [
-        "Carolina Financial Advisors, Inc  (CIK 0001910288)"
-      ]
-    },
-    {
-      "id": "0002085853-26-001413:primary_doc.xml",
-      "filed": "2026-06-30",
-      "names": [
-        "Carolina Financial Advisors, Inc  (CIK 0001910288)"
       ]
     }
   ],

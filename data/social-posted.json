@@ -3,7 +3,39 @@
     "SECTORS|rotation|2026-11-16": [
       "discord",
       "telegram"
+    ],
+    "XLF|ftd|2026-11-23": [
+      "telegram",
+      "discord"
+    ],
+    "SPY|ftd|2026-11-23": [
+      "telegram",
+      "discord"
+    ],
+    "TSLA|ftd|2026-11-23": [
+      "telegram",
+      "discord"
+    ],
+    "SMH|ftd|2026-11-23": [
+      "telegram",
+      "discord"
+    ],
+    "IWM|ftd|2026-11-23": [
+      "telegram",
+      "discord"
+    ],
+    "QQQ|ftd|2026-11-23": [
+      "telegram",
+      "discord"
+    ],
+    "AMD|ftd|2026-11-23": [
+      "telegram",
+      "discord"
+    ],
+    "XLC|ftd|2026-11-23": [
+      "telegram",
+      "discord"
     ]
   },
-  "updatedAt": "2026-11-23T20:07:12.908Z"
+  "updatedAt": "2026-11-23T20:31:10.226Z"
 }
