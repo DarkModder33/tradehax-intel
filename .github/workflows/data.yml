@@ -77,6 +77,12 @@ jobs:
           NEWS_FILE: /tmp/tradehax-data/data/news/stories.json
           INDEXNOW: "1"
 
+      - name: Generate alerts
+        run: node --experimental-strip-types scripts/alerts/generate.mjs || echo "alerts generate failed"
+        env:
+          DATA_DIR: /tmp/tradehax-data/data
+          WORKER_URL: ${{ vars.WORKER_URL || 'https://tradehax-intel-worker-bf2f623ce81a.herokuapp.com' }}
+
       - name: Post stories
         run: node scripts/social/seed-ledger.mjs && node scripts/social/post.mjs || echo "social post failed"
         env:
@@ -89,6 +95,20 @@ jobs:
           X_API_SECRET: ${{ secrets.X_API_SECRET }}
           X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
           X_ACCESS_SECRET: ${{ secrets.X_ACCESS_SECRET }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+
+      - name: Post alerts
+        run: node --experimental-strip-types scripts/social/alerts.mjs || echo "alert post failed"
+        env:
+          SOCIAL_AUTOPOST: ${{ vars.SOCIAL_AUTOPOST || '1' }}
+          SOCIAL_ALERTS: ${{ vars.SOCIAL_ALERTS || '1' }}
+          SOCIAL_DRYRUN: ${{ vars.SOCIAL_DRYRUN || '0' }}
+          SOCIAL_ALERT_CAP: ${{ vars.SOCIAL_ALERT_CAP || '5' }}
+          SOCIAL_ALERT_DAY_CAP: ${{ vars.SOCIAL_ALERT_DAY_CAP || '30' }}
+          ALERTS_FILE: /tmp/tradehax-data/data/alerts.json
+          SOCIAL_LEDGER: /tmp/tradehax-data/data/social-posted.json
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
