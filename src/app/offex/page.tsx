@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { OffexBoard } from "@/components/live/offex-board";
 import { ModuleFrame } from "@/components/module-frame";
 
-export const metadata: Metadata = { title: "Off-exchange prints | TradeHax" };
+export const metadata: Metadata = { title: "Off-exchange prints" };
 
 export default function Page() {
   return (

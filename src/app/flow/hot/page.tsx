@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { ModuleFrame } from "@/components/module-frame";
 import { HotBoard } from "@/components/options/hot-board";
 
-export const metadata: Metadata = { title: "Hot Contracts | TradeHax" };
+export const metadata: Metadata = { title: "Hot Contracts" };
 
 export default function Page() {
   return (

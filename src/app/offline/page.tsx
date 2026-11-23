@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { ModuleFrame } from "@/components/module-frame";
 
-export const metadata: Metadata = { title: "Offline | TradeHax", description: "The shell is available without a network. Live quotes are not." };
+export const metadata: Metadata = { title: "Offline", description: "The shell is available without a network. Live quotes are not." };
 
 export default function Page() {
   return (

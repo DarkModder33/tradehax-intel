@@ -3,7 +3,7 @@ import { LabNotebook } from "@/components/lab/notebook";
 import { ModuleFrame } from "@/components/module-frame";
 
 export const metadata: Metadata = {
-  title: "Python lab | TradeHax",
+  title: "Python lab",
   description: "An in-browser notebook. Python loads only after you start it, about 10 MB from the public CDN.",
 };
 

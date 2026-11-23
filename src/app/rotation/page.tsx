@@ -3,7 +3,7 @@ import { RotationBoard } from "@/components/research/rotation-board";
 import { ModuleFrame } from "@/components/module-frame";
 
 export const metadata: Metadata = {
-  title: "Rotation | TradeHax",
+  title: "Rotation",
   description: "Relative strength versus SPY and a correlation matrix from daily log returns.",
 };
 

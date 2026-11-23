@@ -4,7 +4,7 @@ import { EarningsCompare } from "@/components/earnings/compare";
 import { EarningsMoves } from "@/components/earnings/moves";
 import { ModuleFrame } from "@/components/module-frame";
 
-export const metadata: Metadata = { title: "Earnings | TradeHax" };
+export const metadata: Metadata = { title: "Earnings" };
 
 export default function Page() {
   return (

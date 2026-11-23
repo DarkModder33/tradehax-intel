@@ -3,7 +3,7 @@ import { ContractDetail } from "@/components/flow/contract-detail";
 import { ModuleFrame } from "@/components/module-frame";
 
 export const metadata: Metadata = {
-  title: "Contract | TradeHax",
+  title: "Contract",
   description: "One option contract: prints, a score, and delayed bars when the worker has them.",
 };
 

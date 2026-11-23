@@ -3,7 +3,7 @@ import { DatasetView } from "@/components/datasets/dataset-view";
 import { FomcList } from "@/components/market/fomc-list";
 import { ModuleFrame } from "@/components/module-frame";
 
-export const metadata: Metadata = { title: "Calendar | TradeHax" };
+export const metadata: Metadata = { title: "Calendar" };
 
 export default function Page() {
   return (

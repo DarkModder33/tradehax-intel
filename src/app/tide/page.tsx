@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { TideBoard } from "@/components/live/tide-board";
 import { ModuleFrame } from "@/components/module-frame";
 
-export const metadata: Metadata = { title: "Options tide | TradeHax" };
+export const metadata: Metadata = { title: "Options tide" };
 
 export default function Page() {
   return (

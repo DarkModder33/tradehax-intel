@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { AlertsBoard } from "@/components/live/alerts-board";
 import { ModuleFrame } from "@/components/module-frame";
 
-export const metadata: Metadata = { title: "Flow signals | TradeHax" };
+export const metadata: Metadata = { title: "Flow signals" };
 
 export default function Page() {
   return (

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { HistoryBoard } from "@/components/flow/history-board";
 import { ModuleFrame } from "@/components/module-frame";
 
-export const metadata: Metadata = { title: "Flow history | TradeHax" };
+export const metadata: Metadata = { title: "Flow history" };
 
 export default function Page() {
   return (

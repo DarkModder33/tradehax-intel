@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { DatasetView } from "@/components/datasets/dataset-view";
 import { ModuleFrame } from "@/components/module-frame";
 
-export const metadata: Metadata = { title: "Seasonality | TradeHax" };
+export const metadata: Metadata = { title: "Seasonality" };
 
 export default function Page() {
   return (

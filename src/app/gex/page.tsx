@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { ModuleFrame } from "@/components/module-frame";
 import { GexBoard } from "@/components/options/gex-board";
 
-export const metadata: Metadata = { title: "Dealer Gamma Map | TradeHax" };
+export const metadata: Metadata = { title: "Dealer Gamma Map" };
 
 export default function Page() {
   return (

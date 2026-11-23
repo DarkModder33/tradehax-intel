@@ -3,7 +3,7 @@ import { BacktestLab } from "@/components/backtest/lab";
 import { ModuleFrame } from "@/components/module-frame";
 
 export const metadata: Metadata = {
-  title: "Backtest | TradeHax",
+  title: "Backtest",
   description: "Replay a rule on daily bars. Fills are the next open. The deflated Sharpe counts every run this session.",
 };
 

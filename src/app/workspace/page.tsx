@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { WorkspaceBoard } from "@/components/workspace/board";
 import { ModuleFrame } from "@/components/module-frame";
 
-export const metadata: Metadata = { title: "Workspace | TradeHax" };
+export const metadata: Metadata = { title: "Workspace" };
 
 export default function Page() {
   return (

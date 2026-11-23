@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { ModuleFrame } from "@/components/module-frame";
 import { ShortsBoard } from "@/components/options/shorts-board";
 
-export const metadata: Metadata = { title: "Short volume | TradeHax" };
+export const metadata: Metadata = { title: "Short volume" };
 
 export default function Page() {
   return (

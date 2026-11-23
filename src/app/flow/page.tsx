@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { FlowTape } from "@/components/live/flow-tape";
 import { ModuleFrame } from "@/components/module-frame";
 
-export const metadata: Metadata = { title: "Flow tape | TradeHax" };
+export const metadata: Metadata = { title: "Flow tape" };
 
 export default function Page() {
   return (

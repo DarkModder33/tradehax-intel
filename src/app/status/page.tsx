@@ -3,7 +3,7 @@ import { StatusBoard } from "@/components/status-board";
 import { ModuleFrame } from "@/components/module-frame";
 
 export const metadata: Metadata = {
-  title: "Status | TradeHax",
+  title: "Status",
   description: "Dataset as-of times, row counts, coverage, and the worker health check.",
 };
 

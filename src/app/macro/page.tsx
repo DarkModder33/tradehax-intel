@@ -3,7 +3,7 @@ import { MacroBoard } from "@/components/research/macro-board";
 import { ModuleFrame } from "@/components/module-frame";
 
 export const metadata: Metadata = {
-  title: "Macro | TradeHax",
+  title: "Macro",
   description: "Treasury yields, spreads, and volatility from public FRED and Cboe files when they are present.",
 };
 

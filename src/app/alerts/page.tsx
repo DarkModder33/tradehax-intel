@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { AlertDesk } from "@/components/alerts/desk";
 import { ModuleFrame } from "@/components/module-frame";
 
-export const metadata: Metadata = { title: "Alerts | TradeHax" };
+export const metadata: Metadata = { title: "Alerts" };
 
 export default function Page() {
   return (

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { MapBoard } from "@/components/market/map-board";
 import { ModuleFrame } from "@/components/module-frame";
 
-export const metadata: Metadata = { title: "Market map | TradeHax" };
+export const metadata: Metadata = { title: "Market map" };
 
 export default function Page() {
   return (

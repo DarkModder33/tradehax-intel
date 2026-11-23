@@ -3,7 +3,7 @@ import { ModuleFrame } from "@/components/module-frame";
 import { SCORE_WEIGHTS } from "@/lib/flow/score";
 
 export const metadata: Metadata = {
-  title: "Methodology | TradeHax",
+  title: "Methodology",
   description: "How the unusual-activity score is weighted. It is a description, not a forecast.",
 };
 

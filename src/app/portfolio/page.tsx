@@ -3,7 +3,7 @@ import { PortfolioDesk } from "@/components/portfolio/desk";
 import { ModuleFrame } from "@/components/module-frame";
 
 export const metadata: Metadata = {
-  title: "Portfolio | TradeHax",
+  title: "Portfolio",
   description: "A local book for real holdings and simulated paper fills. Orders never leave the browser.",
 };
 

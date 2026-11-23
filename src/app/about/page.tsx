@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { ModuleFrame } from "@/components/module-frame";
 
 export const metadata: Metadata = {
-  title: "About | TradeHax",
+  title: "About",
   description: "What TradeHax shows, where the data comes from, and the charting credit.",
 };
 

@@ -3,7 +3,7 @@ import { SymbolFlow } from "@/components/live/symbol-flow";
 import { GexBoard } from "@/components/options/gex-board";
 import { ModuleFrame } from "@/components/module-frame";
 
-export const metadata: Metadata = { title: "SPX | TradeHax" };
+export const metadata: Metadata = { title: "SPX" };
 
 export default function Page() {
   return (

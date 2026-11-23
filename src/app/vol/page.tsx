@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { ModuleFrame } from "@/components/module-frame";
 import { VolBoard } from "@/components/options/vol-board";
 
-export const metadata: Metadata = { title: "Volatility Lab | TradeHax" };
+export const metadata: Metadata = { title: "Volatility Lab" };
 
 export default function Page() {
   return (

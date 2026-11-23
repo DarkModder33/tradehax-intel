@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { ModuleFrame } from "@/components/module-frame";
 import { TickerOverview } from "@/components/ticker/overview";
 
-export const metadata: Metadata = { title: "Ticker | TradeHax" };
+export const metadata: Metadata = { title: "Ticker" };
 
 export default function Page() {
   return (

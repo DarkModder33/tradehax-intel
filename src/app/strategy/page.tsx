@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { ModuleFrame } from "@/components/module-frame";
 import { StrategyBuilder } from "@/components/strategy/builder";
 
-export const metadata: Metadata = { title: "Strategy Lab | TradeHax" };
+export const metadata: Metadata = { title: "Strategy Lab" };
 
 export default function Page() {
   return (
