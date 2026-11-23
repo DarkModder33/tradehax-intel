@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ModuleFrame } from "@/components/module-frame";
+import { AdSlot, Newsletter } from "@/components/monetization/slots";
 import { NewsList } from "@/components/news/list";
 import { loadNews } from "@/lib/news/load";
 
@@ -23,6 +24,8 @@ export default function Page() {
         <Link href="/about/methodology/" className="underline">Methodology</Link>
       </p>
       <NewsList stories={stories} empty="No story cleared the materiality filter in the latest run. Empty datasets stay empty." />
+      <Newsletter />
+      <AdSlot />
       <p className="text-xs text-muted-foreground">{news.disclaimer}</p>
     </ModuleFrame>
   );

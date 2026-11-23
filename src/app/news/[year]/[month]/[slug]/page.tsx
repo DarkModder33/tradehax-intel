@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ModuleFrame } from "@/components/module-frame";
+import { AdSlot, AffiliateBlock } from "@/components/monetization/slots";
 import { StorySpark } from "@/components/news/spark";
 import { findStory, loadNews, storyHref, type Story } from "@/lib/news/load";
 
@@ -108,6 +109,8 @@ export default async function Page({ params }: { params: Promise<{ year: string;
         {story.body.map((paragraph) => <p key={paragraph.slice(0, 48)}>{paragraph}</p>)}
       </div>
       <p className="text-sm">{story.disclaimer} <Link href={story.methodology} className="underline">Methodology</Link></p>
+      <AffiliateBlock />
+      <AdSlot />
     </ModuleFrame>
   );
 }
