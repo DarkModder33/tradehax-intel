@@ -60,6 +60,8 @@ jobs:
           FRED_KEY: ${{ secrets.FRED_KEY }}
           WORKER_URL: ${{ vars.WORKER_URL }}
           WORKER_PUBLISH_TOKEN: ${{ secrets.WORKER_PUBLISH_TOKEN }}
+          ALPACA_KEY_ID: ${{ secrets.ALPACA_KEY_ID }}
+          ALPACA_SECRET: ${{ secrets.ALPACA_SECRET }}
 
       - name: Publish data branch
         run: |

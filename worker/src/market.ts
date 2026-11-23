@@ -3,7 +3,8 @@ import { technicalsFromBars } from "../../src/lib/screener/technicals.ts";
 import { DEFAULT_UNIVERSE } from "../../src/lib/live/universe.ts";
 import { parseNews, yahooNewsUpstream } from "../../src/lib/market/news.ts";
 import { summarizeChain } from "../../src/lib/options/summary.ts";
-import { cboeChainUrl, parseCboeChain, type ChainSnapshot } from "../../src/lib/sources/cboe.ts";
+import { resolveChain } from "../../src/lib/sources/chain-feeds.ts";
+import type { ChainSnapshot } from "../../src/lib/sources/cboe.ts";
 import { alpacaConfigured, alpacaHeaders } from "./alpaca.ts";
 import { snapshotAt, state } from "./store.ts";
 
@@ -17,13 +18,13 @@ async function getJson(url: string, headers: Record<string, string> = {}): Promi
   return response.json();
 }
 
-/** Reuse a chain the poller stored in the last minute, otherwise fetch Cboe once for every route. */
+/** Reuse a chain stored in the last minute. Otherwise Cboe, then Alpaca indicative, then Yahoo. */
 export async function loadChain(symbol: string, now = Date.now()): Promise<ChainSnapshot> {
   const root = symbol.trim().toUpperCase();
   const storedAt = snapshotAt.get(root) ?? 0;
   const stored = state.snapshots.get(root);
   if (stored && now - storedAt < TTL_MS) return stored;
-  const snapshot = parseCboeChain(await getJson(cboeChainUrl(root)), root);
+  const snapshot = await resolveChain(root, { alpacaHeaders: alpacaConfigured() ? alpacaHeaders() : null });
   state.snapshots.set(root, snapshot);
   snapshotAt.set(root, now);
   for (const contract of snapshot.contracts) state.quotes.set(contract.symbol, contract);
@@ -48,7 +49,7 @@ export async function barsPayload(symbol: string, tf: string | null, limitRaw: s
 export async function chainPayload(symbol: string): Promise<{ status: number; body: unknown }> {
   try {
     const snapshot = await loadChain(symbol);
-    return { status: 200, body: { snapshot, source: "Cboe delayed via worker", delay: snapshot.delay } };
+    return { status: 200, body: { snapshot, source: `${snapshot.source} via worker`, delay: snapshot.delay } };
   } catch (error) {
     return { status: 502, body: { error: error instanceof Error ? error.message : "chain failed", source: "unavailable" } };
   }
@@ -60,7 +61,7 @@ export async function summaryPayload(symbol: string, now = Date.now()): Promise<
   if (hit && hit.expires > now) return { status: 200, body: hit.body };
   try {
     const snapshot = await loadChain(root);
-    const summary = summarizeChain(snapshot, new Date(now), "Cboe delayed via worker");
+    const summary = summarizeChain(snapshot, new Date(now), `${snapshot.source} via worker`);
     summaryCache.set(root, { expires: now + TTL_MS, body: summary });
     return { status: 200, body: summary };
   } catch (error) {

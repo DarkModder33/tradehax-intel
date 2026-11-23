@@ -27,8 +27,8 @@ export interface ChainSnapshot {
   asOf: string | null;
   volume: number | null;
   contracts: ChainContract[];
-  source: "Cboe delayed";
-  delay: "about 15 min";
+  source: "Cboe delayed" | "Alpaca indicative" | "Yahoo options";
+  delay: string;
 }
 
 export function cboeChainUrl(symbol: string): string {
