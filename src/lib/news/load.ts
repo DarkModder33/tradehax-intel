@@ -26,6 +26,12 @@ export interface Story {
   passedMateriality: boolean;
   disclaimer: string;
   methodology: string;
+  /** Desk-format stories (format "desk") carry a lede, context sections, a table and a watch list. */
+  format?: "desk";
+  lede?: string;
+  sections?: { heading: string; paragraphs: string[] }[];
+  table?: { caption: string; columns: string[]; rows: string[][] };
+  watch?: string[];
 }
 
 export interface NewsFile {

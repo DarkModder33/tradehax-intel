@@ -37,7 +37,13 @@ export function pickAlerts(alerts, ledger, options = {}) {
   if (!room) return [];
   const posted = ledger?.posted ?? {};
   const seenKeys = new Set();
-  const weight = (alert) => (TAPE.has(alert.type) ? Number(alert.amount) / 1e6 : 10);
+  const BASE = { "gamma-flip": 15, insider: 12, earnings: 12, "flow-spike": 12, congress: 8, short: 6 };
+  const weight = (alert) => {
+    if (TAPE.has(alert.type)) return Number(alert.amount) / 1e6;
+    if (alert.type === "mover") return Math.abs(parseFloat(String(alert.value))) || 0;
+    return BASE[alert.type] ?? 5;
+  };
+  const perType = new Map();
   const eligible = [...(alerts ?? [])].sort((a, b) => weight(b) - weight(a)).filter((alert) => {
     if (validateAlert(alert, now).length) return false;
     if ((posted[ledgerKey(alert)] ?? []).length) return false;
@@ -53,7 +59,10 @@ export function pickAlerts(alerts, ledger, options = {}) {
     // One line per ticker and type per run, so a burst of sweeps in one contract posts once.
     const key = `${alert.ticker}|${alert.type}`;
     if (seenKeys.has(key)) return false;
+    // At most two of one type per run, so a broad rally does not fill the channel with movers.
+    if ((perType.get(alert.type) ?? 0) >= 2) return false;
     seenKeys.add(key);
+    perType.set(alert.type, (perType.get(alert.type) ?? 0) + 1);
     return true;
   });
   return eligible.slice(0, room);

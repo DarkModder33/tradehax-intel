@@ -1,6 +1,7 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
-import { buildStories, mergeStories } from "./engine.mjs";
+import { mergeStories } from "./engine.mjs";
+import { buildDeskStories, headlineTickers } from "./desk.mjs";
 
 async function readJson(file) {
   try {
@@ -29,7 +30,55 @@ const input = {
   optionsHistory: await readJson(path.join(dataDir, "options-history.json")),
 };
 
-const fresh = buildStories(input, { cap: Number(process.env.NEWS_CAP ?? 10), log: (line) => console.log(line) });
+const workerBase = (process.env.WORKER_URL ?? "").replace(/\/$/, "");
+const DESK_SYMBOLS = ["SPY", "QQQ", "IWM", "DIA", "SMH", "GLD", "TLT", "HYG", "XLK", "XLF", "XLE", "XLV", "XLY", "XLI", "XLB", "XLU", "XLRE", "XLC",
+  "AAPL", "MSFT", "NVDA", "AMZN", "GOOGL", "META", "TSLA", "AVGO", "BRKB", "JPM", "V", "UNH", "XOM", "LLY", "MA", "COST", "HD", "PG", "JNJ",
+  "BAC", "AMD", "NFLX", "CRM", "ORCL", "KO", "WMT", "CVX", "MRK", "ABBV", "PLTR", "COIN", "MSTR", "BA"];
+
+async function getJson(url) {
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), 20000);
+  try {
+    const response = await fetch(url, { signal: controller.signal, headers: { accept: "application/json" } });
+    if (!response.ok) throw new Error(String(response.status));
+    return await response.json();
+  } finally {
+    clearTimeout(timer);
+  }
+}
+
+const nyDay = (ms) => new Intl.DateTimeFormat("en-CA", { timeZone: "America/New_York", year: "numeric", month: "2-digit", day: "2-digit" }).format(new Date(ms));
+
+async function loadBars() {
+  const bars = {};
+  if (!workerBase) return bars;
+  const queue = [...DESK_SYMBOLS];
+  await Promise.all(Array.from({ length: 6 }, async () => {
+    while (queue.length) {
+      const sym = queue.shift();
+      try {
+        const body = await getJson(`${workerBase}/v1/bars/${encodeURIComponent(sym === "BRKB" ? "BRK.B" : sym)}?tf=1Day&limit=260`);
+        bars[sym] = (body.bars ?? []).map((bar) => ({ date: nyDay(Number(bar.time)), close: Number(bar.close), volume: Number(bar.volume) }));
+      } catch {
+        // A missing symbol only removes its own story.
+      }
+    }
+  }));
+  return bars;
+}
+
+input.bars = await loadBars();
+input.headlines = {};
+for (const sym of headlineTickers(input.bars)) {
+  try {
+    const body = await getJson(`${workerBase}/v1/news?q=${encodeURIComponent(sym)}&newsCount=6`);
+    input.headlines[sym] = body.news ?? [];
+  } catch {
+    input.headlines[sym] = [];
+  }
+}
+console.log(`news: bars for ${Object.keys(input.bars).length} symbols, headlines for ${Object.keys(input.headlines).join(", ") || "none"}`);
+const fresh = buildDeskStories(input, { cap: Number(process.env.NEWS_CAP ?? 6), log: (line) => console.log(line) });
 const previous = await readJson(priorFile);
 // Stories that shipped in the repo seed file were already posted to social, so keep their
 // URLs alive (mergeStories still ages them out after its keep window).
