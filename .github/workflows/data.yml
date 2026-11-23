@@ -2,15 +2,15 @@ name: data
 
 on:
   schedule:
-    # 13:30 UTC is 08:30 ET on standard time and 09:30 ET on daylight time.
-    # 17:30 and 21:30 UTC are midday and 16:30 ET on standard time.
-    - cron: "15 12 * * 1-5"
-    - cron: "30 13 * * 1-5"
-    - cron: "*/30 14-21 * * 1-5"
-    - cron: "30 17 * * 1-5"
-    - cron: "30 21 * * 1-5"
-    - cron: "30 22 * * 1-5"
-    - cron: "0 13 * * 6"
+    # GitHub drops and delays scheduled runs, worst at :00 and :30 when every repo fires.
+    # Odd minutes get picked up more reliably. A Cloudflare Worker cron (worker-cron/)
+    # dispatches this workflow as a backup when no data run started in the last 25 minutes.
+    # Times are UTC. On standard time (Nov to Mar) 13:33 UTC is 08:33 ET.
+    - cron: "13 12 * * 1-5"
+    - cron: "33 13 * * 1-5"
+    - cron: "7,37 14-21 * * 1-5"
+    - cron: "47 22 * * 1-5"
+    - cron: "11 13 * * 6"
   workflow_dispatch: {}
 
 concurrency:
