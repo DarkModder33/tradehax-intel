@@ -1,6 +1,6 @@
 {
   "meta": {
-    "asOf": "2026-11-23T22:48:43.313Z",
+    "asOf": "2026-11-23T23:19:38.492Z",
     "source": "SEC EDGAR Form 4",
     "rows": 25,
     "delay": "hours",
@@ -8,6 +8,57 @@
     "unavailable": false
   },
   "rows": [
+    {
+      "id": "0002158120-26-000003:form4-11232026_101148.xml",
+      "filed": "2026-11-19",
+      "names": [
+        "Amodei Daniela  (CIK 0002158120)",
+        "Anthropic, PBC  (CIK 0002130357)"
+      ],
+      "trade": {
+        "owner": "Amodei Daniela",
+        "ticker": "ANT",
+        "code": "F",
+        "shares": 345011,
+        "price": 83,
+        "acquired": false,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002157947-26-000004:form4-11232026_101129.xml",
+      "filed": "2026-11-19",
+      "names": [
+        "Amodei Dario  (CIK 0002157947)",
+        "Anthropic, PBC  (CIK 0002130357)"
+      ],
+      "trade": {
+        "owner": "Amodei Dario",
+        "ticker": "ANT",
+        "code": "F",
+        "shares": 345011,
+        "price": 83,
+        "acquired": false,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002157445-26-000004:form4-11232026_111139.xml",
+      "filed": "2026-11-20",
+      "names": [
+        "Brous Michael Zachary  (CIK 0002157445)",
+        "Lyft, Inc.  (CIK 0001759509)"
+      ],
+      "trade": {
+        "owner": "Brous Michael Zachary",
+        "ticker": "LYFT",
+        "code": "F",
+        "shares": 21505,
+        "price": 16.91,
+        "acquired": false,
+        "form": "4"
+      }
+    },
     {
       "id": "0002152228-26-000006:wk-form4_1795468220.xml",
       "filed": "2026-11-20",
@@ -106,6 +157,23 @@
         "code": "C",
         "shares": 3681766,
         "price": null,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002135300-26-000004:form4-11232026_101100.xml",
+      "filed": "2026-11-19",
+      "names": [
+        "Hemphill Gregg  (CIK 0002135300)",
+        "Newton Golf Company, Inc.  (CIK 0001934245)"
+      ],
+      "trade": {
+        "owner": "Hemphill Gregg",
+        "ticker": "NWTG",
+        "code": "P",
+        "shares": 767,
+        "price": 0.6791,
         "acquired": true,
         "form": "4"
       }
@@ -230,6 +298,23 @@
       }
     },
     {
+      "id": "0002112883-26-000016:wk-form4_1795471081.xml",
+      "filed": "2026-11-20",
+      "names": [
+        "Stojanovic Danijela  (CIK 0002112883)",
+        "Gemini Space Station, Inc.  (CIK 0002055592)"
+      ],
+      "trade": {
+        "owner": "Stojanovic Danijela",
+        "ticker": "GEMI",
+        "code": "S",
+        "shares": 10241,
+        "price": 1.58,
+        "acquired": false,
+        "form": "4"
+      }
+    },
+    {
       "id": "0002110450-26-000014:wk-form4_1795468080.xml",
       "filed": "2026-11-20",
       "names": [
@@ -345,91 +430,6 @@
         "shares": 198,
         "price": null,
         "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002098854-26-000003:primary_doc.xml",
-      "filed": "2026-11-19",
-      "names": [
-        "Gertz Stephen Ralph  (CIK 0002098854)",
-        "QumulusAI, Inc.  (CIK 0002084026)"
-      ],
-      "trade": {
-        "owner": "Gertz Stephen Ralph",
-        "ticker": "QMLS",
-        "code": "S",
-        "shares": 5752,
-        "price": 2.55,
-        "acquired": false,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002098061-26-000002:section16.xml",
-      "filed": "2026-11-19",
-      "names": [
-        "STEVENSON JON  (CIK 0002098061)",
-        "PTC INC.  (CIK 0000857005)"
-      ],
-      "trade": {
-        "owner": "STEVENSON JON",
-        "ticker": "PTC",
-        "code": "A",
-        "shares": 4197,
-        "price": 0,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002097107-26-000006:primary_doc.xml",
-      "filed": "2026-11-01",
-      "names": [
-        "Siemiatkowski Sebastian  (CIK 0002097107)",
-        "Klarna Group plc  (CIK 0002003292)"
-      ],
-      "trade": {
-        "owner": "Siemiatkowski Sebastian",
-        "ticker": "KLAR",
-        "code": "A",
-        "shares": 1539863,
-        "price": null,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002096832-26-000002:primarydocument.xml",
-      "filed": "2026-11-19",
-      "names": [
-        "Lalov Boyan N.  (CIK 0002096832)",
-        "SPIRE INC  (CIK 0001126956)"
-      ],
-      "trade": {
-        "owner": "Lalov Boyan N.",
-        "ticker": "SR",
-        "code": "A",
-        "shares": 310,
-        "price": 85.63,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002095785-26-000004:primary_doc.xml",
-      "filed": "2026-11-19",
-      "names": [
-        "Chatterjee Ankur  (CIK 0002095785)",
-        "QumulusAI, Inc.  (CIK 0002084026)"
-      ],
-      "trade": {
-        "owner": "Chatterjee Ankur",
-        "ticker": "QMLS",
-        "code": "S",
-        "shares": 26117,
-        "price": 2.45,
-        "acquired": false,
         "form": "4"
       }
     }

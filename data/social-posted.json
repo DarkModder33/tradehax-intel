@@ -83,13 +83,64 @@
     "WMT|earnings|2026-11-19": [
       "telegram",
       "discord"
+    ],
+    "QQQ|mover|2026-11-23": [
+      "telegram",
+      "discord"
+    ],
+    "PLTR|mover|2026-11-23": [
+      "telegram",
+      "discord"
+    ],
+    "TSLA|mover|2026-11-23": [
+      "telegram",
+      "discord"
+    ],
+    "NVDA|mover|2026-11-23": [
+      "telegram",
+      "discord"
+    ],
+    "alert:mover|XLK|2026-11-23": [
+      "telegram",
+      "discord"
+    ],
+    "alert:mover|QQQ|2026-11-23": [
+      "telegram",
+      "discord"
     ]
   },
-  "updatedAt": "2026-11-23T21:53:42.916Z",
+  "updatedAt": "2026-11-23T23:21:49.970Z",
   "messages": {
     "WMT|earnings|2026-11-19": {
       "telegram": "23",
       "discord": "1574543494498746389"
+    },
+    "QQQ|mover|2026-11-23": {
+      "telegram": "24",
+      "discord": "1574565661399584789"
+    },
+    "PLTR|mover|2026-11-23": {
+      "telegram": "25",
+      "discord": "1574565664260362422"
+    },
+    "TSLA|mover|2026-11-23": {
+      "telegram": "26",
+      "discord": "1574565667028344934"
+    },
+    "NVDA|mover|2026-11-23": {
+      "telegram": "27",
+      "discord": "1574565669683331073"
+    },
+    "alert:mover|XLK|2026-11-23": {
+      "telegram": "28",
+      "discord": "1574565674586603531"
+    },
+    "alert:mover|QQQ|2026-11-23": {
+      "telegram": "29",
+      "discord": "1574565689832775721"
     }
+  },
+  "alertDays": {
+    "2026-11-23": 2
   }
 }
