@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useState, type ReactNode } from "react";
 import { createPortal } from "react-dom";
 import { RefreshCw } from "lucide-react";
 import { describeAgreement, rankSignals } from "@/lib/indicators/agreement";
@@ -30,7 +30,7 @@ import { cn } from "@/lib/utils";
 
 type BoardView = Timeframe | "board";
 
-export function Dashboard() {
+export function Dashboard({ intro }: { intro?: ReactNode } = {}) {
   const [symbols, setSymbols] = useWatchlist();
   const [selected, setSelected] = useState<string | null>(null);
   const [view, setView] = useState<BoardView>("15m");
@@ -117,15 +117,12 @@ export function Dashboard() {
   return (
     <div className="min-h-dvh">
       <SiteNav />
-      <header className="sticky top-0 z-30 border-b border-border/80 bg-background/80 backdrop-blur-md">
-        <div className="mx-auto flex max-w-[1400px] flex-wrap items-center justify-between gap-3 px-4 py-3 md:px-6">
-          <div className="flex items-center gap-3">
-            <Mark />
-            <div>
-              <p className="text-sm font-semibold tracking-[0.18em]">TRADEHAX</p>
-              <h1 className="text-xs text-muted-foreground">Statistical signals</h1>
-            </div>
-          </div>
+      {intro}
+      <section id="desk" aria-label="Signal desk toolbar" className="mx-auto mt-8 flex max-w-[1400px] flex-wrap items-end justify-between gap-3 px-4 md:px-6">
+        <div>
+          <p className="eyebrow">Signal desk</p>
+          <h2 className="text-xl font-semibold tracking-tight md:text-2xl">Your watchlist, scored on six timeframes</h2>
+        </div>
           <div className="flex flex-wrap items-center gap-2">
             {data ? (
               <Badge
@@ -161,11 +158,10 @@ export function Dashboard() {
               <RefreshCw className={refreshing ? "animate-spin" : undefined} />
             </Button>
           </div>
-        </div>
-      </header>
+      </section>
 
       <div className="mx-auto grid w-full max-w-[1400px] gap-6 px-4 py-4 md:grid-cols-[280px_minmax(0,1fr)] md:px-6 md:py-6">
-        <aside className="md:sticky md:top-[4.5rem] md:h-[calc(100dvh-5.5rem)]">
+        <aside className="min-w-0 md:sticky md:top-[4.5rem] md:h-[calc(100dvh-5.5rem)]">
           <Watchlist
             symbols={symbols}
             quotes={data?.quotes ?? []}
@@ -182,10 +178,9 @@ export function Dashboard() {
           <div className="flex flex-col gap-3">
             <div className="flex flex-wrap items-end justify-between gap-3">
               <div>
-                <p className="text-[11px] tracking-[0.18em] text-gold uppercase">Desk</p>
-                <h2 className="text-xl font-semibold tracking-tight md:text-2xl">
+                <h3 className="text-lg font-semibold tracking-tight">
                   {view === "board" ? "Where the timeframes agree" : `Ranked on the ${TIMEFRAME_LABEL[view]}`}
-                </h2>
+                </h3>
               </div>
               {latestBar ? (
                 <p className="text-xs text-muted-foreground">Last bar {formatEt(latestBar)}</p>
@@ -406,16 +401,6 @@ function DataHealthPanel({ data }: { data: NonNullable<ReturnType<typeof useDash
           : ""}
       </p>
     </section>
-  );
-}
-
-function Mark() {
-  return (
-    <svg viewBox="0 0 32 32" className="size-8" aria-hidden="true">
-      <rect width="32" height="32" rx="8" fill="oklch(0.84 0.12 88 / 0.16)" />
-      <path d="M9 23 L16 8.5 L23 23" fill="none" stroke="oklch(0.84 0.12 88)" strokeWidth="1.8" strokeLinejoin="round" />
-      <path d="M12.2 17.6 H19.8" stroke="oklch(0.84 0.12 88)" strokeWidth="1.8" />
-    </svg>
   );
 }
 

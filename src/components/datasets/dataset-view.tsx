@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { DataBadge } from "@/components/data-badge";
+import { PanelState } from "@/components/panel-state";
 import { datasetUrl, type DatasetMeta } from "@/lib/sources/manifest";
 import { LAYOUTS, genericLayout } from "./columns";
 
@@ -45,7 +46,7 @@ export function DatasetView({ file, title }: { file: string; title: string }) {
       {meta ? (
         <DataBadge source={meta.source} asOf={meta.asOf} delay={meta.delay} unavailable={meta.unavailable} stale={meta.stale} />
       ) : (
-        <p className="text-sm text-muted-foreground">{error ?? "Loading the precomputed file."}</p>
+        error ? <PanelState kind="unavailable" detail={error} /> : <PanelState kind="loading" detail="Loading the precomputed file." />
       )}
       {meta?.error ? <p className="text-sm text-muted-foreground">{meta.error}</p> : null}
       {typeof payload?.note === "string" && payload.note ? <p className="text-sm text-muted-foreground">{payload.note}</p> : null}
@@ -53,23 +54,23 @@ export function DatasetView({ file, title }: { file: string; title: string }) {
         <p className="text-sm text-muted-foreground">Senate: {String((payload.senate as { error?: string }).error ?? "unavailable")}</p>
       ) : null}
       {rows.length > 0 ? (
-        <div className="overflow-x-auto">
-          <table className="w-full text-xs">
+        <div className="surface overflow-x-auto">
+          <table className="w-full text-[13px]">
             <thead>
               <tr>
                 {layout.columns.map((column) => (
-                  <th key={column.label} scope="col" className={`px-2 py-1 font-normal text-muted-foreground ${column.numeric ? "text-right" : "text-left"}`}>{column.label}</th>
+                  <th key={column.label} scope="col" className={`px-3 py-2 font-medium ${column.numeric ? "text-right" : "text-left"}`}>{column.label}</th>
                 ))}
               </tr>
             </thead>
             <tbody>
               {sorted.slice(0, 50).map((row, index) => (
-                <tr key={index} className="border-t border-border/60">
+                <tr key={index} className="border-t border-white/[0.05]">
                   {layout.columns.map((column) => {
                     const href = column.href?.(row) ?? null;
                     const value = column.value(row);
                     return (
-                      <td key={column.label} className={`px-2 py-1 align-top ${column.numeric ? "text-right font-mono tabular-nums" : ""}`}>
+                      <td key={column.label} className={`px-3 py-2 align-top ${column.numeric ? "text-right font-mono tabular-nums" : ""}`}>
                         {href ? <a href={href} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{value}</a> : value}
                       </td>
                     );
@@ -81,7 +82,7 @@ export function DatasetView({ file, title }: { file: string; title: string }) {
           {sorted.length > 50 ? <p className="mt-2 text-xs text-muted-foreground">Showing 50 of {sorted.length.toLocaleString("en-US")} rows.</p> : null}
         </div>
       ) : meta && !meta.unavailable ? (
-        <p className="text-sm text-muted-foreground">No rows in the latest file.</p>
+        <PanelState kind="empty" detail="No rows in the latest file." />
       ) : null}
     </div>
   );
