@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { DataBadge } from "@/components/data-badge";
 import { datasetUrl, type DatasetMeta } from "@/lib/sources/manifest";
+import { LAYOUTS, genericLayout } from "./columns";
 
 export function DatasetView({ file, title }: { file: string; title: string }) {
   const [payload, setPayload] = useState<Record<string, unknown> | null>(null);
@@ -28,6 +29,16 @@ export function DatasetView({ file, title }: { file: string; title: string }) {
 
   const meta = (payload?.meta ?? null) as DatasetMeta | null;
   const rows = Array.isArray(payload?.rows) ? (payload.rows as Record<string, unknown>[]) : [];
+  const layout = LAYOUTS[file] ?? genericLayout(rows);
+  const sortKey = layout.sortKey;
+  const sorted = sortKey
+    ? [...rows].sort((a, b) => {
+        const left = sortKey(a);
+        const right = sortKey(b);
+        const order = left < right ? -1 : left > right ? 1 : 0;
+        return layout.ascending ? order : -order;
+      })
+    : rows;
 
   return (
     <div className="flex flex-col gap-3">
@@ -46,29 +57,32 @@ export function DatasetView({ file, title }: { file: string; title: string }) {
           <table className="w-full text-xs">
             <thead>
               <tr>
-                {Object.keys(rows[0]).slice(0, 6).map((key) => (
-                  <th key={key} className="px-2 py-1 text-left font-normal text-muted-foreground">{key}</th>
+                {layout.columns.map((column) => (
+                  <th key={column.label} scope="col" className={`px-2 py-1 font-normal text-muted-foreground ${column.numeric ? "text-right" : "text-left"}`}>{column.label}</th>
                 ))}
               </tr>
             </thead>
             <tbody>
-              {rows.slice(0, 40).map((row, index) => (
+              {sorted.slice(0, 50).map((row, index) => (
                 <tr key={index} className="border-t border-border/60">
-                  {Object.keys(rows[0]).slice(0, 6).map((key) => (
-                    <td key={key} className="px-2 py-1 align-top">{formatCell(row[key])}</td>
-                  ))}
+                  {layout.columns.map((column) => {
+                    const href = column.href?.(row) ?? null;
+                    const value = column.value(row);
+                    return (
+                      <td key={column.label} className={`px-2 py-1 align-top ${column.numeric ? "text-right font-mono tabular-nums" : ""}`}>
+                        {href ? <a href={href} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{value}</a> : value}
+                      </td>
+                    );
+                  })}
                 </tr>
               ))}
             </tbody>
           </table>
+          {sorted.length > 50 ? <p className="mt-2 text-xs text-muted-foreground">Showing 50 of {sorted.length.toLocaleString("en-US")} rows.</p> : null}
         </div>
+      ) : meta && !meta.unavailable ? (
+        <p className="text-sm text-muted-foreground">No rows in the latest file.</p>
       ) : null}
     </div>
   );
-}
-
-function formatCell(value: unknown): string {
-  if (value == null) return "—";
-  if (typeof value === "object") return JSON.stringify(value).slice(0, 80);
-  return String(value);
 }

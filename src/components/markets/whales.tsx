@@ -1,4 +1,5 @@
 "use client";
+import { formatCompact } from "@/lib/format";
 
 import { useEffect, useState } from "react";
 import { DataBadge } from "@/components/data-badge";
@@ -15,7 +16,7 @@ export function WhaleBoard() {
       .then((body) => {
         if (stopped) return;
         const rows = Array.isArray(body) ? body : [];
-        setMarkets(rows.map((row: { question?: string; volume?: number }) => `${row.question ?? "Market"} · vol ${row.volume ?? "n/a"}`).slice(0, 8));
+        setMarkets(rows.map((row: { question?: string; volume?: number }) => `${row.question ?? "Market"} · ${formatCompact(Number(row.volume))} traded`).slice(0, 8));
       })
       .catch(() => {
         if (!stopped) setError("Polymarket did not answer the browser.");
