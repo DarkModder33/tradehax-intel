@@ -127,6 +127,16 @@ async function postTelegram(story, env, fetcher) {
   return { status: response.status, messageId };
 }
 
+export function discordWaitUrl(raw) {
+  try {
+    const url = new URL(raw);
+    url.searchParams.set("wait", "true");
+    return url.toString();
+  } catch {
+    return raw;
+  }
+}
+
 async function postDiscord(story, env, fetcher) {
   const url = `${SITE}${storyPath(story)}`;
   const body = {
@@ -139,7 +149,9 @@ async function postDiscord(story, env, fetcher) {
       footer: { text: story.disclaimer ?? "Auto-generated from market data — not investment advice" },
     }],
   };
-  const response = await fetcher(env.DISCORD_WEBHOOK_URL, {
+  // ?wait=true makes Discord return the created message (with its id) instead of a bare
+  // 204, so a bad post can be found and deleted later through the same webhook.
+  const response = await fetcher(discordWaitUrl(env.DISCORD_WEBHOOK_URL), {
     method: "POST",
     headers: { "content-type": "application/json" },
     body: JSON.stringify(body),
@@ -218,6 +230,11 @@ export async function postQueue(options = {}) {
         try {
           const sent = await send(network, story, env, fetcher, sleep);
           ledger.posted[story.id] = [...new Set([...(ledger.posted[story.id] ?? []), network])];
+          if (sent?.messageId) {
+            // Message ids let a retracted story be deleted from each network later.
+            ledger.messages ??= {};
+            ledger.messages[story.id] = { ...(ledger.messages[story.id] ?? {}), [network]: sent.messageId };
+          }
           results.push({ id: story.id, network, ok: true, status: sent?.status, messageId: sent?.messageId });
           log(`social posted ${network} ${story.id} status ${sent?.status ?? "ok"}${sent?.messageId ? ` message_id ${sent.messageId}` : ""}`);
           if (network === "x") await sleep(1100);

@@ -112,7 +112,7 @@ describe("social posting", () => {
     expect(first.ok).toBe(true);
     expect(first.results.filter((row) => row.id === quiet.id)).toHaveLength(0);
     expect(new Set(first.results.map((row) => row.id))).toEqual(new Set([story.id]));
-    expect(calls.some((call) => call.url === "https://discord.test/webhook" && call.body.includes("/news/og/nvda-mover-2026-11-16.png"))).toBe(true);
+    expect(calls.some((call) => call.url === "https://discord.test/webhook?wait=true" && call.body.includes("/news/og/nvda-mover-2026-11-16.png"))).toBe(true);
     expect(calls.some((call) => call.url.includes("api.telegram.org/botbot/sendMessage"))).toBe(true);
     expect(waits).toContain(1000);
     const saved = JSON.parse(readFileSync(ledger, "utf8"));
@@ -163,5 +163,13 @@ describe("social freshness", () => {
     });
     expect(calls).toHaveLength(0);
     expect(result.results).toHaveLength(0);
+  });
+});
+
+describe("discord message ids", () => {
+  it("asks Discord to wait so the message id comes back", async () => {
+    const { discordWaitUrl } = await import("../../../scripts/social/post.mjs");
+    expect(discordWaitUrl("https://discord.com/api/webhooks/1/abc")).toBe("https://discord.com/api/webhooks/1/abc?wait=true");
+    expect(discordWaitUrl("https://discord.com/api/webhooks/1/abc?thread_id=9")).toBe("https://discord.com/api/webhooks/1/abc?thread_id=9&wait=true");
   });
 });
