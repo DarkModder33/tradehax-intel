@@ -54,7 +54,7 @@ export function ScreenerView() {
         for (const row of shortRows) {
           const symbol = row.symbolCode ?? row.symbol;
           if (!symbol) continue;
-          shortMap[symbol] = { si_pct_float: row.si_pct_float ?? null, dtc: row.daysToCover ?? row.dtc ?? null };
+          shortMap[symbol] = { si_pct_float: row.si_pct_float ?? null, dtc: row.daysToCoverQuantity ?? row.daysToCover ?? row.dtc ?? null };
         }
         setRows(joinRows(base, [technicals && !Array.isArray(technicals) ? technicals : {}, ivMap, shortMap]));
         setSources(loaded.map((item) => ({

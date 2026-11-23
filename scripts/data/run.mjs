@@ -1,4 +1,4 @@
-import { mkdir, writeFile } from "node:fs/promises";
+import { mkdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { JOBS } from "./jobs.mjs";
 
@@ -25,6 +25,18 @@ export async function buildDatasets(dir = root) {
     const payload = await job();
     datasets[name] = metaOf(payload);
     const file = path.join(dir, `${name}.json`);
+    // A failed source keeps the last good file instead of blanking the page. The manifest
+    // still records the failure so /status shows it.
+    if (datasets[name]?.unavailable) {
+      const prior = await readFile(file, "utf8").then(JSON.parse).catch(() => null);
+      const priorRows = prior?.rows;
+      const hasRows = Array.isArray(priorRows) ? priorRows.length > 0 : priorRows && typeof priorRows === "object" ? Object.keys(priorRows).length > 0 : false;
+      if (hasRows && !prior?.meta?.unavailable) {
+        datasets[name] = { ...prior.meta, stale: true, error: datasets[name].error ?? "source failed; kept the last good file" };
+        console.log(`${name}: unavailable, kept last good file from ${prior.meta?.asOf ?? "unknown"}`);
+        continue;
+      }
+    }
     await writeFile(file, JSON.stringify(payload, null, 2));
     if (payload.history) await writeFile(path.join(dir, "iv-history.json"), JSON.stringify(payload.history, null, 2));
     if (payload.snapshot) await writeFile(path.join(dir, "oi-snapshot.json"), JSON.stringify({ snapshot: payload.snapshot }));

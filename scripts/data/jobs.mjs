@@ -272,6 +272,10 @@ export async function ivHistory() {
 export async function shortInterest() {
   const rows = [];
   const errors = [];
+  // FINRA returns matches oldest first and cannot sort on settlementDate, so a fixed
+  // lower bound plus a small limit froze this file on an old settlement. Use a rolling
+  // 90-day window (about six settlements) and keep the latest row.
+  const since = new Date(Date.now() - 90 * 86_400_000).toISOString().slice(0, 10);
   for (const symbol of UNIVERSE) {
     try {
       const response = await grab("https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest", {
@@ -280,9 +284,9 @@ export async function shortInterest() {
         body: JSON.stringify({
           compareFilters: [
             { compareType: "EQUAL", fieldName: "symbolCode", fieldValue: symbol },
-            { compareType: "GREATER", fieldName: "settlementDate", fieldValue: "2026-06-01" },
+            { compareType: "GREATER", fieldName: "settlementDate", fieldValue: since },
           ],
-          limit: 5,
+          limit: 20,
         }),
       }, 20000);
       const parsed = parseJsonLoose(await response.text());
@@ -298,9 +302,40 @@ export async function shortInterest() {
   return packed;
 }
 
+/** Newest-first SEC half-month file names: cnsfails YYYYMM a (1st-15th) and b (16th-end). */
+export function ftdCandidates(now = new Date(), count = 4) {
+  const names = [];
+  let year = now.getUTCFullYear();
+  let month = now.getUTCMonth() + 1;
+  let half = now.getUTCDate() > 15 ? "b" : "a";
+  while (names.length < count) {
+    names.push(`cnsfails${year}${String(month).padStart(2, "0")}${half}`);
+    if (half === "b") half = "a";
+    else {
+      half = "b";
+      month -= 1;
+      if (month === 0) { month = 12; year -= 1; }
+    }
+  }
+  return names;
+}
+
 export async function ftd() {
   try {
-    const response = await grab("https://www.sec.gov/files/data/fails-deliver-data/cnsfails202610a.zip", {}, 20000);
+    // The file name used to be hard-coded to October's first half. SEC posts each half
+    // a few weeks late, so walk back from the current half until one exists.
+    let response = null;
+    let picked = null;
+    for (const name of ftdCandidates()) {
+      try {
+        response = await grab(`https://www.sec.gov/files/data/fails-deliver-data/${name}.zip`, {}, 20000);
+        picked = name;
+        break;
+      } catch {
+        response = null;
+      }
+    }
+    if (!response) throw new Error("No recent SEC fails-to-deliver file answered.");
     const bytes = Buffer.from(await response.arrayBuffer());
     const { execFileSync } = await import("node:child_process");
     const { mkdtempSync, writeFileSync, rmSync } = await import("node:fs");
@@ -314,7 +349,7 @@ export async function ftd() {
     rmSync(dir, { recursive: true, force: true });
     const universe = new Set(UNIVERSE);
     const rows = parseFtd(text).filter((row) => universe.has(row.symbol));
-    const packed = pack("SEC fails-to-deliver", rows, { delay: "about 3 weeks", note: "Half-month file, filtered to the liquid universe." });
+    const packed = pack("SEC fails-to-deliver", rows, { delay: "about 3 weeks", note: `Half-month file ${picked}, filtered to the liquid universe.` });
     packed.meta.coverage = UNIVERSE.length ? new Set(rows.map((row) => row.symbol)).size / UNIVERSE.length : 0;
     return packed;
   } catch (error) {
@@ -495,7 +530,13 @@ export async function technicals() {
     const body = parseJsonLoose(await response.text());
     const rows = body.rows && typeof body.rows === "object" ? body.rows : {};
     if (!Object.keys(rows).length) return failed("worker technicals", new Error(body.error ?? "The worker returned no technicals."));
-    return pack("worker /v1/technicals", Object.entries(rows).map(([symbol, stats]) => ({ symbol, ...stats })), { delay: "daily" });
+    // Keyed by symbol, the same shape as public/data/technicals.json, which the screener
+    // joins on and the news engine reads for movers and sector rotation.
+    const packed = pack(body.source ? `${body.source} via worker` : "worker /v1/technicals", [], { delay: "daily" });
+    packed.rows = rows;
+    packed.meta.rows = Object.keys(rows).length;
+    packed.meta.coverage = 1;
+    return packed;
   } catch (error) {
     return failed("worker technicals", error);
   }
@@ -561,9 +602,12 @@ export async function macro() {
   const ids = ["DGS3MO", "DGS2", "DGS5", "DGS10", "DGS30", "T10Y2Y", "T10Y3M", "BAMLH0A0HYM2", "DFF", "CPIAUCSL", "UNRATE", "ICSA", "WALCL"];
   const latest = {};
   const errors = [];
+  const since = new Date(Date.now() - 400 * 86_400_000).toISOString().slice(0, 10);
   for (const id of ids) {
     try {
-      const response = await grab(`https://fred.stlouisfed.org/graph/fredgraph.csv?id=${id}`, { headers: { "user-agent": BROWSER } }, 20000);
+      // FRED stalls requests that carry a browser User-Agent from datacenter IPs, which
+      // timed out every series. A plain tool UA answers in well under a second.
+      const response = await grabRetry(`https://fred.stlouisfed.org/graph/fredgraph.csv?id=${id}&cosd=${since}`, { headers: { "user-agent": "TradeHaxIntel/1.0 (+https://tradehaxai.tech)" } }, 15000, 2);
       const lines = (await response.text()).trim().split(/\r?\n/);
       const last = lines.at(-1)?.split(",") ?? [];
       const raw = (last[1] ?? "").trim();
@@ -611,4 +655,5 @@ export const JOBS = {
   universe,
   seasonality,
   "flow-history": flowHistory,
+  technicals,
 };
