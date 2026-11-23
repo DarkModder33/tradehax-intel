@@ -1,7 +1,7 @@
 "use client";
 import { formatDigits } from "@/lib/format";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, useSyncExternalStore } from "react";
 import { StatusPill } from "@/components/live/status-pill";
 import { useWorkerFeed } from "@/components/live/use-worker-feed";
 import { flowForward } from "@/lib/flow/backtest";
@@ -10,15 +10,28 @@ import { passesTapeFilter, OPEN_FILTER } from "@/lib/flow/tape";
 import { parseYahooChart, yahooChartRequestUrl } from "@/lib/market/yahoo";
 import { workerUrl } from "@/lib/live/worker";
 
+/** Today's session date in New York, as YYYY-MM-DD. */
+function todayInNewYork(): string {
+  return new Intl.DateTimeFormat("en-CA", { timeZone: "America/New_York", year: "numeric", month: "2-digit", day: "2-digit" }).format(new Date());
+}
+
+function subscribeNever(): () => void {
+  return () => {};
+}
+
 export function HistoryBoard() {
   const feed = useWorkerFeed();
-  const [date, setDate] = useState("2026-11-13");
+  // The page is a static export, so "today" is read on the client, not frozen at build time.
+  const today = useSyncExternalStore(subscribeNever, todayInNewYork, () => "");
+  const [picked, setDate] = useState<string | null>(null);
+  const date = picked ?? today;
   const [ticker, setTicker] = useState("SPY");
   const [prints, setPrints] = useState<FlowPrint[]>([]);
   const [result, setResult] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
+    if (!date) return;
     let stopped = false;
     fetch(`${workerUrl()}/v1/history?date=${date}&symbol=${ticker}`)
       .then((response) => response.json())
@@ -39,7 +52,7 @@ export function HistoryBoard() {
     <div className="flex flex-col gap-3">
       <StatusPill status={feed.status} replay={feed.replay} />
       <div className="flex gap-2">
-        <input type="date" value={date} onChange={(event) => setDate(event.target.value)} className="h-8 rounded-md border border-border bg-card px-2 text-sm" />
+        <input type="date" aria-label="History date" value={date} onChange={(event) => setDate(event.target.value)} className="h-8 rounded-md border border-border bg-card px-2 text-sm" />
         <input value={ticker} onChange={(event) => setTicker(event.target.value.toUpperCase())} className="h-8 w-24 rounded-md border border-border bg-card px-2 font-mono uppercase" aria-label="History ticker" />
       </div>
       {error ? <p className="text-sm text-bearish">{error}</p> : null}
