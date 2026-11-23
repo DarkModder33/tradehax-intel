@@ -1,6 +1,6 @@
 {
   "meta": {
-    "asOf": "2026-11-23T21:05:52.235Z",
+    "asOf": "2026-11-23T21:43:18.202Z",
     "source": "SEC EDGAR Form 4",
     "rows": 25,
     "delay": "hours",
@@ -8,6 +8,23 @@
     "unavailable": false
   },
   "rows": [
+    {
+      "id": "0002152228-26-000006:wk-form4_1795468220.xml",
+      "filed": "2026-11-20",
+      "names": [
+        "Waits Julian Wendell Sr.  (CIK 0002152228)",
+        "Rapid7, Inc.  (CIK 0001560327)"
+      ],
+      "trade": {
+        "owner": "Waits Julian Wendell Sr.",
+        "ticker": "RPD",
+        "code": "S",
+        "shares": 28924,
+        "price": 14.79,
+        "acquired": false,
+        "form": "4"
+      }
+    },
     {
       "id": "0002149159-26-000008:wk-form4_1795455780.xml",
       "filed": "2026-11-20",
@@ -21,6 +38,23 @@
         "code": "F",
         "shares": 1097,
         "price": 26.69,
+        "acquired": false,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002146790-26-000033:wk-form4_1795469599.xml",
+      "filed": "2026-11-19",
+      "names": [
+        "Narayanadas Vivek  (CIK 0002146790)",
+        "Oklo Inc.  (CIK 0001849056)"
+      ],
+      "trade": {
+        "owner": "Narayanadas Vivek",
+        "ticker": "OKLO",
+        "code": "S",
+        "shares": 89,
+        "price": 22.18,
         "acquired": false,
         "form": "4"
       }
@@ -162,6 +196,57 @@
       }
     },
     {
+      "id": "0002120008-26-000012:wk-form4_1795468050.xml",
+      "filed": "2026-11-20",
+      "names": [
+        "Denny Jordan M.  (CIK 0002120008)",
+        "VALVOLINE INC  (CIK 0001674910)"
+      ],
+      "trade": {
+        "owner": "Denny Jordan M.",
+        "ticker": "VVV",
+        "code": "M",
+        "shares": 503,
+        "price": null,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002113601-26-000006:wk-form4_1795469616.xml",
+      "filed": "2026-11-20",
+      "names": [
+        "Rammohan Karthikeyan  (CIK 0002113601)",
+        "LAM RESEARCH CORP  (CIK 0000707549)"
+      ],
+      "trade": {
+        "owner": "Rammohan Karthikeyan",
+        "ticker": "LRCX",
+        "code": "G",
+        "shares": 1524,
+        "price": 0,
+        "acquired": false,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002110450-26-000014:wk-form4_1795468080.xml",
+      "filed": "2026-11-20",
+      "names": [
+        "Worsham Adam C.  (CIK 0002110450)",
+        "VALVOLINE INC  (CIK 0001674910)"
+      ],
+      "trade": {
+        "owner": "Worsham Adam C.",
+        "ticker": "VVV",
+        "code": "M",
+        "shares": 603,
+        "price": null,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
       "id": "0002099428-26-000006:primary_doc.xml",
       "filed": "2026-11-04",
       "names": [
@@ -247,6 +332,40 @@
       }
     },
     {
+      "id": "0002098854-26-000003:primary_doc.xml",
+      "filed": "2026-11-19",
+      "names": [
+        "Gertz Stephen Ralph  (CIK 0002098854)",
+        "QumulusAI, Inc.  (CIK 0002084026)"
+      ],
+      "trade": {
+        "owner": "Gertz Stephen Ralph",
+        "ticker": "QMLS",
+        "code": "S",
+        "shares": 5752,
+        "price": 2.55,
+        "acquired": false,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002098061-26-000002:section16.xml",
+      "filed": "2026-11-19",
+      "names": [
+        "STEVENSON JON  (CIK 0002098061)",
+        "PTC INC.  (CIK 0000857005)"
+      ],
+      "trade": {
+        "owner": "STEVENSON JON",
+        "ticker": "PTC",
+        "code": "A",
+        "shares": 4197,
+        "price": 0,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
       "id": "0002097107-26-000006:primary_doc.xml",
       "filed": "2026-11-01",
       "names": [
@@ -298,138 +417,19 @@
       }
     },
     {
-      "id": "0002093135-26-000006:primary_doc.xml",
-      "filed": "2026-11-23",
-      "names": [
-        "Wang Haichen  (CIK 0002093135)",
-        "Webull Corp  (CIK 0001866364)"
-      ],
-      "trade": {
-        "owner": "Wang Haichen",
-        "ticker": "BULL",
-        "code": "P",
-        "shares": 20000,
-        "price": 4.5,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002093121-26-000010:primary_doc.xml",
-      "filed": "2026-11-23",
-      "names": [
-        "Denier Anthony Michael  (CIK 0002093121)",
-        "Webull Corp  (CIK 0001866364)"
-      ],
-      "trade": {
-        "owner": "Denier Anthony Michael",
-        "ticker": "BULL",
-        "code": "P",
-        "shares": 10000,
-        "price": 4.4687,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002092820-26-000004:primary_doc.xml",
-      "filed": "2026-11-23",
-      "names": [
-        "James Benjamin Worthy  (CIK 0002092820)",
-        "Webull Corp  (CIK 0001866364)"
-      ],
-      "trade": {
-        "owner": "James Benjamin Worthy",
-        "ticker": "BULL",
-        "code": "P",
-        "shares": 5000,
-        "price": 4.39,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002088767-26-000002:primarydocument.xml",
+      "id": "0002094859-26-000004:primary_doc.xml",
       "filed": "2026-11-19",
       "names": [
-        "Greenley Steven C.  (CIK 0002088767)",
-        "SPIRE INC  (CIK 0001126956)"
+        "Gahan Patrick Joseph  (CIK 0002094859)",
+        "QumulusAI, Inc.  (CIK 0002084026)"
       ],
       "trade": {
-        "owner": "Greenley Steven C.",
-        "ticker": "SR",
-        "code": "A",
-        "shares": 2110,
-        "price": 85.63,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002071271-26-000023:primary_doc.xml",
-      "filed": "2026-11-23",
-      "names": [
-        "BELL JACK W  (CIK 0001252881)",
-        "WILSON BANK HOLDING CO  (CIK 0000885275)"
-      ],
-      "trade": {
-        "owner": "BELL JACK W",
-        "ticker": "NONE",
-        "code": "P",
-        "shares": 671,
-        "price": 85,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002071271-26-000022:primary_doc.xml",
-      "filed": "2026-11-23",
-      "names": [
-        "BELL JACK W  (CIK 0001252881)",
-        "WILSON BANK HOLDING CO  (CIK 0000885275)"
-      ],
-      "trade": {
-        "owner": "BELL JACK W",
-        "ticker": "NONE",
-        "code": "G",
-        "shares": 671,
-        "price": 0.97,
+        "owner": "Gahan Patrick Joseph",
+        "ticker": "QMLS",
+        "code": "S",
+        "shares": 51904,
+        "price": 2.45,
         "acquired": false,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002058897-26-000351:wk-form4_1795465875.xml",
-      "filed": "2026-11-19",
-      "names": [
-        "Jaramillo Mejia Ricardo  (CIK 0002121522)",
-        "Grupo Cibest S.A.  (CIK 0002058897)"
-      ],
-      "trade": {
-        "owner": "Jaramillo Mejia Ricardo",
-        "ticker": "CIB",
-        "code": "A",
-        "shares": 266.09,
-        "price": 8.63,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002058897-26-000349:wk-form4_1795465521.xml",
-      "filed": "2026-11-19",
-      "names": [
-        "Toro Valencia Juan Esteban  (CIK 0002120846)",
-        "Grupo Cibest S.A.  (CIK 0002058897)"
-      ],
-      "trade": {
-        "owner": "Toro Valencia Juan Esteban",
-        "ticker": "CIB",
-        "code": "A",
-        "shares": 481.66,
-        "price": 8.63,
-        "acquired": true,
         "form": "4"
       }
     }

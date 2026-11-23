@@ -1,31 +1,31 @@
 {
   "meta": {
-    "asOf": "2026-11-23T21:06:57.791Z",
+    "asOf": "2026-11-23T21:44:21.347Z",
     "source": "Cboe iv30",
-    "rows": 48,
+    "rows": 46,
     "delay": "about 15 min",
     "stale": false,
     "unavailable": false,
-    "coverage": 0.9411764705882353
+    "coverage": 0.9019607843137255
   },
   "rows": [
     {
       "symbol": "SPY",
-      "iv30": 22.144,
-      "close": 722.5,
-      "asOf": "2026-11-23 21:06:13"
+      "iv30": 21.841,
+      "close": 723.4,
+      "asOf": "2026-11-23 21:43:14"
     },
     {
       "symbol": "QQQ",
-      "iv30": 31.133,
-      "close": 650.68,
-      "asOf": "2026-11-23 21:06:04"
+      "iv30": 31.13,
+      "close": 651.0351,
+      "asOf": "2026-11-23 21:43:05"
     },
     {
       "symbol": "IWM",
-      "iv30": 23.998,
-      "close": 265.11,
-      "asOf": "2026-11-23 21:06:01"
+      "iv30": 24.094,
+      "close": 265.7,
+      "asOf": "2026-11-23 21:43:02"
     },
     {
       "symbol": "DIA",
@@ -41,15 +41,15 @@
     },
     {
       "symbol": "XLF",
-      "iv30": 20.349,
-      "close": 55.66,
-      "asOf": "2026-11-23 21:06:00"
+      "iv30": 20.042,
+      "close": 55.73,
+      "asOf": "2026-11-23 21:43:02"
     },
     {
       "symbol": "XLE",
-      "iv30": 28.354,
-      "close": 59.815,
-      "asOf": "2026-11-23 21:06:06"
+      "iv30": 28.176,
+      "close": 59.96,
+      "asOf": "2026-11-23 21:43:07"
     },
     {
       "symbol": "XLV",
@@ -65,9 +65,9 @@
     },
     {
       "symbol": "XLI",
-      "iv30": 23.696,
-      "close": 162.455,
-      "asOf": "2026-11-23 21:06:12"
+      "iv30": 23.673,
+      "close": 162.1,
+      "asOf": "2026-11-23 21:43:13"
     },
     {
       "symbol": "XLB",
@@ -77,228 +77,216 @@
     },
     {
       "symbol": "XLU",
-      "iv30": 18.171,
-      "close": 42.99,
-      "asOf": "2026-11-23 15:43:44"
+      "iv30": 0.1494,
+      "close": 43.305,
+      "asOf": "2026-11-23T21:43:59.009Z"
     },
     {
       "symbol": "XLRE",
-      "iv30": 18.896,
-      "close": 42.975,
-      "asOf": "2026-11-23 15:43:34"
+      "iv30": 0.2561,
+      "close": 42.925,
+      "asOf": "2026-11-23T21:43:59.545Z"
     },
     {
       "symbol": "XLC",
-      "iv30": 29.253,
-      "close": 103.26,
-      "asOf": "2026-11-23 15:43:09"
-    },
-    {
-      "symbol": "GLD",
-      "iv30": 28.627,
-      "close": 332.82,
-      "asOf": "2026-11-23 21:06:14"
+      "iv30": 0.2422,
+      "close": 103.61,
+      "asOf": "2026-11-23T21:44:00.157Z"
     },
     {
       "symbol": "TLT",
-      "iv30": 11.488,
-      "close": 81.655,
-      "asOf": "2026-11-23 21:06:00"
+      "iv30": 0.0941,
+      "close": 81.64,
+      "asOf": "2026-11-23T21:44:01.296Z"
     },
     {
       "symbol": "HYG",
-      "iv30": 5.996,
-      "close": 76.56,
-      "asOf": "2026-11-23 21:06:11"
-    },
-    {
-      "symbol": "SMH",
-      "iv30": 58.284,
-      "close": 457.93,
-      "asOf": "2026-11-23 21:06:05"
+      "iv30": 0.1003,
+      "close": 76.58,
+      "asOf": "2026-11-23T21:44:01.827Z"
     },
     {
       "symbol": "AAPL",
-      "iv30": 24.213,
-      "close": 350.32,
-      "asOf": "2026-11-23 21:06:03"
+      "iv30": 0.2561,
+      "close": 349.74,
+      "asOf": "2026-11-23T21:44:02.959Z"
     },
     {
       "symbol": "MSFT",
-      "iv30": 32.822,
-      "close": 495.835,
-      "asOf": "2026-11-23 21:06:12"
+      "iv30": 0.3461,
+      "close": 492.95,
+      "asOf": "2026-11-23T21:44:03.549Z"
     },
     {
       "symbol": "NVDA",
-      "iv30": 61.961,
-      "close": 164.365,
-      "asOf": "2026-11-23 21:06:10"
+      "iv30": 0.7938,
+      "close": 164.64,
+      "asOf": "2026-11-23T21:44:04.111Z"
     },
     {
       "symbol": "AMZN",
-      "iv30": 37.011,
-      "close": 256.34,
-      "asOf": "2026-11-23 21:06:08"
+      "iv30": 0.3688,
+      "close": 255.205,
+      "asOf": "2026-11-23T21:44:04.676Z"
     },
     {
       "symbol": "GOOGL",
-      "iv30": 36.819,
-      "close": 283.09,
-      "asOf": "2026-11-23 21:06:05"
+      "iv30": 0.3541,
+      "close": 283,
+      "asOf": "2026-11-23T21:44:05.227Z"
     },
     {
       "symbol": "TSLA",
-      "iv30": 0.5046,
+      "iv30": 0.5055,
       "close": 385.19,
-      "asOf": "2026-11-23T21:06:41.030Z"
+      "asOf": "2026-11-23T21:44:06.375Z"
     },
     {
       "symbol": "AVGO",
-      "iv30": 0.6623,
-      "close": 313.44,
-      "asOf": "2026-11-23T21:06:41.670Z"
+      "iv30": 0.7026,
+      "close": 313.16,
+      "asOf": "2026-11-23T21:44:06.919Z"
     },
     {
       "symbol": "JPM",
-      "iv30": 0.2608,
+      "iv30": 0.2668,
       "close": 316.49,
-      "asOf": "2026-11-23T21:06:42.929Z"
+      "asOf": "2026-11-23T21:44:08.017Z"
     },
     {
       "symbol": "V",
-      "iv30": 0.236,
+      "iv30": 0.2293,
       "close": 409.535,
-      "asOf": "2026-11-23T21:06:43.557Z"
+      "asOf": "2026-11-23T21:44:08.643Z"
     },
     {
       "symbol": "UNH",
-      "iv30": 0.3941,
+      "iv30": 0.3977,
       "close": 336.2,
-      "asOf": "2026-11-23T21:06:44.211Z"
+      "asOf": "2026-11-23T21:44:09.273Z"
     },
     {
       "symbol": "XOM",
       "iv30": 0.3047,
       "close": 156.93,
-      "asOf": "2026-11-23T21:06:44.845Z"
+      "asOf": "2026-11-23T21:44:09.868Z"
     },
     {
       "symbol": "LLY",
-      "iv30": 0.3567,
+      "iv30": 0.3628,
       "close": 1366.85,
-      "asOf": "2026-11-23T21:06:45.475Z"
+      "asOf": "2026-11-23T21:44:10.428Z"
     },
     {
       "symbol": "MA",
       "iv30": 0.256,
       "close": 635.08,
-      "asOf": "2026-11-23T21:06:46.071Z"
+      "asOf": "2026-11-23T21:44:10.963Z"
     },
     {
       "symbol": "COST",
-      "iv30": 0.2718,
+      "iv30": 0.2622,
       "close": 1097.8,
-      "asOf": "2026-11-23T21:06:46.712Z"
+      "asOf": "2026-11-23T21:44:11.544Z"
     },
     {
       "symbol": "HD",
       "iv30": 0.255,
       "close": 346,
-      "asOf": "2026-11-23T21:06:47.359Z"
+      "asOf": "2026-11-23T21:44:12.093Z"
     },
     {
       "symbol": "PG",
       "iv30": 0.2166,
       "close": 169.82,
-      "asOf": "2026-11-23T21:06:47.989Z"
+      "asOf": "2026-11-23T21:44:12.637Z"
     },
     {
       "symbol": "JNJ",
-      "iv30": 0.2921,
+      "iv30": 0.2988,
       "close": 270.17,
-      "asOf": "2026-11-23T21:06:48.619Z"
+      "asOf": "2026-11-23T21:44:13.169Z"
     },
     {
       "symbol": "BAC",
       "iv30": 0.2724,
       "close": 48.18,
-      "asOf": "2026-11-23T21:06:49.251Z"
+      "asOf": "2026-11-23T21:44:13.736Z"
     },
     {
       "symbol": "NFLX",
-      "iv30": 0.38,
+      "iv30": 0.3897,
       "close": 58.09,
-      "asOf": "2026-11-23T21:06:50.463Z"
+      "asOf": "2026-11-23T21:44:14.840Z"
     },
     {
       "symbol": "CRM",
-      "iv30": 0.5882,
+      "iv30": 0.6226,
       "close": 185.465,
-      "asOf": "2026-11-23T21:06:51.092Z"
+      "asOf": "2026-11-23T21:44:15.390Z"
     },
     {
       "symbol": "ORCL",
-      "iv30": 0.8001,
-      "close": 113.8,
-      "asOf": "2026-11-23T21:06:51.727Z"
+      "iv30": 0.7888,
+      "close": 113.79,
+      "asOf": "2026-11-23T21:44:15.961Z"
     },
     {
       "symbol": "KO",
-      "iv30": 0.1968,
+      "iv30": 0.2252,
       "close": 95.99,
-      "asOf": "2026-11-23T21:06:52.362Z"
+      "asOf": "2026-11-23T21:44:16.553Z"
     },
     {
       "symbol": "WMT",
-      "iv30": 0.2161,
+      "iv30": 0.2418,
       "close": 129.95,
-      "asOf": "2026-11-23T21:06:52.997Z"
+      "asOf": "2026-11-23T21:44:17.126Z"
     },
     {
       "symbol": "CVX",
-      "iv30": 0.2867,
+      "iv30": 0.2886,
       "close": 206.12,
-      "asOf": "2026-11-23T21:06:53.601Z"
+      "asOf": "2026-11-23T21:44:17.666Z"
     },
     {
       "symbol": "MRK",
       "iv30": 0.3825,
       "close": 135.46,
-      "asOf": "2026-11-23T21:06:54.239Z"
+      "asOf": "2026-11-23T21:44:18.208Z"
     },
     {
       "symbol": "ABBV",
-      "iv30": 0.2463,
+      "iv30": 0.2589,
       "close": 288.33,
-      "asOf": "2026-11-23T21:06:54.817Z"
+      "asOf": "2026-11-23T21:44:18.747Z"
     },
     {
       "symbol": "PLTR",
-      "iv30": 0.5553,
+      "iv30": 0.5791,
       "close": 159.39,
-      "asOf": "2026-11-23T21:06:55.448Z"
+      "asOf": "2026-11-23T21:44:19.301Z"
     },
     {
       "symbol": "COIN",
-      "iv30": 0.7529,
+      "iv30": 0.7458,
       "close": 108.82,
-      "asOf": "2026-11-23T21:06:56.076Z"
+      "asOf": "2026-11-23T21:44:19.853Z"
     },
     {
       "symbol": "MSTR",
-      "iv30": 0.9539,
+      "iv30": 0.9757,
       "close": 84.435,
-      "asOf": "2026-11-23T21:06:56.740Z"
+      "asOf": "2026-11-23T21:44:20.410Z"
     },
     {
       "symbol": "BA",
-      "iv30": 0.3424,
+      "iv30": 0.3103,
       "close": 162.36,
-      "asOf": "2026-11-23T21:06:57.374Z"
+      "asOf": "2026-11-23T21:44:20.946Z"
     }
   ],
-  "note": "Universe 48/51. Rank stays blank until 20 stored sessions.",
+  "note": "Universe 46/51. Rank stays blank until 20 stored sessions.",
   "history": {
     "series": {
       "SPY": [
@@ -324,8 +312,8 @@
         ],
         [
           "2026-11-23",
-          0.22143999999999997,
-          722.5
+          0.21841000000000002,
+          723.4
         ]
       ],
       "QQQ": [
@@ -351,8 +339,8 @@
         ],
         [
           "2026-11-23",
-          0.31133,
-          650.68
+          0.31129999999999997,
+          651.0351
         ]
       ],
       "IWM": [
@@ -378,8 +366,8 @@
         ],
         [
           "2026-11-23",
-          0.23998,
-          265.11
+          0.24094000000000002,
+          265.7
         ]
       ],
       "DIA": [
@@ -459,8 +447,8 @@
         ],
         [
           "2026-11-23",
-          0.20349,
-          55.66
+          0.20042000000000001,
+          55.73
         ]
       ],
       "XLE": [
@@ -486,8 +474,8 @@
         ],
         [
           "2026-11-23",
-          0.28354,
-          59.815
+          0.28176,
+          59.96
         ]
       ],
       "XLV": [
@@ -567,8 +555,8 @@
         ],
         [
           "2026-11-23",
-          0.23696,
-          162.455
+          0.23673,
+          162.1
         ]
       ],
       "XLB": [
@@ -621,8 +609,8 @@
         ],
         [
           "2026-11-23",
-          0.18170999999999998,
-          42.99
+          0.1494,
+          43.305
         ]
       ],
       "XLRE": [
@@ -648,8 +636,8 @@
         ],
         [
           "2026-11-23",
-          0.18896000000000002,
-          42.975
+          0.2561,
+          42.925
         ]
       ],
       "XLC": [
@@ -675,8 +663,8 @@
         ],
         [
           "2026-11-23",
-          0.29253,
-          103.26
+          0.2422,
+          103.61
         ]
       ],
       "GLD": [
@@ -729,8 +717,8 @@
         ],
         [
           "2026-11-23",
-          0.11488,
-          81.655
+          0.0941,
+          81.64
         ]
       ],
       "HYG": [
@@ -756,8 +744,8 @@
         ],
         [
           "2026-11-23",
-          0.059960000000000006,
-          76.56
+          0.1003,
+          76.58
         ]
       ],
       "SMH": [
@@ -810,8 +798,8 @@
         ],
         [
           "2026-11-23",
-          0.24213,
-          350.32
+          0.2561,
+          349.74
         ]
       ],
       "MSFT": [
@@ -837,8 +825,8 @@
         ],
         [
           "2026-11-23",
-          0.32822,
-          495.835
+          0.3461,
+          492.95
         ]
       ],
       "NVDA": [
@@ -864,8 +852,8 @@
         ],
         [
           "2026-11-23",
-          0.61961,
-          164.365
+          0.7938,
+          164.64
         ]
       ],
       "AMZN": [
@@ -891,8 +879,8 @@
         ],
         [
           "2026-11-23",
-          0.37011000000000005,
-          256.34
+          0.3688,
+          255.205
         ]
       ],
       "GOOGL": [
@@ -918,8 +906,8 @@
         ],
         [
           "2026-11-23",
-          0.36819,
-          283.09
+          0.3541,
+          283
         ]
       ],
       "META": [
@@ -967,7 +955,7 @@
         ],
         [
           "2026-11-23",
-          0.5046,
+          0.5055,
           385.19
         ]
       ],
@@ -994,8 +982,8 @@
         ],
         [
           "2026-11-23",
-          0.6623,
-          313.44
+          0.7026,
+          313.16
         ]
       ],
       "JPM": [
@@ -1021,7 +1009,7 @@
         ],
         [
           "2026-11-23",
-          0.2608,
+          0.2668,
           316.49
         ]
       ],
@@ -1048,7 +1036,7 @@
         ],
         [
           "2026-11-23",
-          0.236,
+          0.2293,
           409.535
         ]
       ],
@@ -1075,7 +1063,7 @@
         ],
         [
           "2026-11-23",
-          0.3941,
+          0.3977,
           336.2
         ]
       ],
@@ -1129,7 +1117,7 @@
         ],
         [
           "2026-11-23",
-          0.3567,
+          0.3628,
           1366.85
         ]
       ],
@@ -1183,7 +1171,7 @@
         ],
         [
           "2026-11-23",
-          0.2718,
+          0.2622,
           1097.8
         ]
       ],
@@ -1264,7 +1252,7 @@
         ],
         [
           "2026-11-23",
-          0.2921,
+          0.2988,
           270.17
         ]
       ],
@@ -1340,7 +1328,7 @@
         ],
         [
           "2026-11-23",
-          0.38,
+          0.3897,
           58.09
         ]
       ],
@@ -1367,7 +1355,7 @@
         ],
         [
           "2026-11-23",
-          0.5882,
+          0.6226,
           185.465
         ]
       ],
@@ -1394,8 +1382,8 @@
         ],
         [
           "2026-11-23",
-          0.8001,
-          113.8
+          0.7888,
+          113.79
         ]
       ],
       "KO": [
@@ -1421,7 +1409,7 @@
         ],
         [
           "2026-11-23",
-          0.1968,
+          0.2252,
           95.99
         ]
       ],
@@ -1448,7 +1436,7 @@
         ],
         [
           "2026-11-23",
-          0.2161,
+          0.2418,
           129.95
         ]
       ],
@@ -1475,7 +1463,7 @@
         ],
         [
           "2026-11-23",
-          0.2867,
+          0.2886,
           206.12
         ]
       ],
@@ -1529,7 +1517,7 @@
         ],
         [
           "2026-11-23",
-          0.2463,
+          0.2589,
           288.33
         ]
       ],
@@ -1556,7 +1544,7 @@
         ],
         [
           "2026-11-23",
-          0.5553,
+          0.5791,
           159.39
         ]
       ],
@@ -1583,7 +1571,7 @@
         ],
         [
           "2026-11-23",
-          0.7529,
+          0.7458,
           108.82
         ]
       ],
@@ -1610,7 +1598,7 @@
         ],
         [
           "2026-11-23",
-          0.9539,
+          0.9757,
           84.435
         ]
       ],
@@ -1637,10 +1625,731 @@
         ],
         [
           "2026-11-23",
-          0.3424,
+          0.3103,
           162.36
         ]
       ]
+    }
+  },
+  "files": {
+    "options-history.json": {
+      "asOf": "2026-11-23T21:44:21.347Z",
+      "series": {
+        "SPY": [
+          {
+            "date": "2026-11-23",
+            "spot": 723.4,
+            "callVolume": 6264693,
+            "putVolume": 7558917,
+            "callPremium": 1804456885,
+            "putPremium": 1572616544,
+            "netGex": -6537900106,
+            "flip": 740.3129738998812,
+            "regime": "short",
+            "asOf": "2026-11-23 21:43:14"
+          }
+        ],
+        "QQQ": [
+          {
+            "date": "2026-11-23",
+            "spot": 651.0351,
+            "callVolume": 3972647,
+            "putVolume": 4996902,
+            "callPremium": 1546645235,
+            "putPremium": 1908593724,
+            "netGex": -2176697122,
+            "flip": 666.4588689067419,
+            "regime": "short",
+            "asOf": "2026-11-23 21:43:05"
+          }
+        ],
+        "IWM": [
+          {
+            "date": "2026-11-23",
+            "spot": 265.7,
+            "callVolume": 714089,
+            "putVolume": 1108943,
+            "callPremium": 136099752,
+            "putPremium": 177088236,
+            "netGex": -3513960926,
+            "flip": 292.3310979754744,
+            "regime": "short",
+            "asOf": "2026-11-23 21:43:02"
+          }
+        ],
+        "DIA": [
+          {
+            "date": "2026-11-23",
+            "spot": 494.01,
+            "callVolume": 13970,
+            "putVolume": 10631,
+            "callPremium": 6840720,
+            "putPremium": 7402035,
+            "netGex": -157082192,
+            "flip": 504.6781348331839,
+            "regime": "short",
+            "asOf": "2026-11-23 17:00:43"
+          }
+        ],
+        "XLK": [
+          {
+            "date": "2026-11-23",
+            "spot": 164.3601,
+            "callVolume": 7135,
+            "putVolume": 8962,
+            "callPremium": 4673607,
+            "putPremium": 4096826,
+            "netGex": -30609752,
+            "flip": 172.79886918011272,
+            "regime": "short",
+            "asOf": "2026-11-23 15:43:24"
+          }
+        ],
+        "XLF": [
+          {
+            "date": "2026-11-23",
+            "spot": 55.73,
+            "callVolume": 70873,
+            "putVolume": 314441,
+            "callPremium": 6409900,
+            "putPremium": 35303723,
+            "netGex": -304262433,
+            "flip": 60.616504409483724,
+            "regime": "short",
+            "asOf": "2026-11-23 21:43:02"
+          }
+        ],
+        "XLE": [
+          {
+            "date": "2026-11-23",
+            "spot": 59.96,
+            "callVolume": 44447,
+            "putVolume": 77512,
+            "callPremium": 6035628,
+            "putPremium": 10651916,
+            "netGex": -71017426,
+            "flip": 63.07324082672598,
+            "regime": "short",
+            "asOf": "2026-11-23 21:43:07"
+          }
+        ],
+        "XLV": [
+          {
+            "date": "2026-11-23",
+            "spot": 179.41,
+            "callVolume": 3304,
+            "putVolume": 7703,
+            "callPremium": 1379639,
+            "putPremium": 2057702,
+            "netGex": -58942355,
+            "flip": 192.79076910326424,
+            "regime": "short",
+            "asOf": "2026-11-23 15:43:54"
+          }
+        ],
+        "XLY": [
+          {
+            "date": "2026-11-23",
+            "spot": 117.32,
+            "callVolume": 5223,
+            "putVolume": 1296,
+            "callPremium": 941101,
+            "putPremium": 485816,
+            "netGex": -43120740,
+            "flip": 129.06240272826955,
+            "regime": "short",
+            "asOf": "2026-11-23 15:44:04"
+          }
+        ],
+        "XLI": [
+          {
+            "date": "2026-11-23",
+            "spot": 162.1,
+            "callVolume": 5922,
+            "putVolume": 20192,
+            "callPremium": 2229907,
+            "putPremium": 3733790,
+            "netGex": -100800587,
+            "flip": 176.78714773717596,
+            "regime": "short",
+            "asOf": "2026-11-23 21:43:13"
+          }
+        ],
+        "XLB": [
+          {
+            "date": "2026-11-23",
+            "spot": 49.52,
+            "callVolume": 422,
+            "putVolume": 211,
+            "callPremium": 69325,
+            "putPremium": 19058,
+            "netGex": -15689676,
+            "flip": 53.65914934069522,
+            "regime": "short",
+            "asOf": "2026-11-23 15:42:59"
+          }
+        ],
+        "XLU": [
+          {
+            "date": "2026-11-23",
+            "spot": 43.305,
+            "callVolume": 2210,
+            "putVolume": 3857,
+            "callPremium": 925084,
+            "putPremium": 918151,
+            "netGex": null,
+            "flip": null,
+            "regime": null,
+            "asOf": "2026-11-23T21:43:59.009Z"
+          }
+        ],
+        "XLRE": [
+          {
+            "date": "2026-11-23",
+            "spot": 42.925,
+            "callVolume": 513,
+            "putVolume": 295,
+            "callPremium": 55397,
+            "putPremium": 55411,
+            "netGex": null,
+            "flip": null,
+            "regime": null,
+            "asOf": "2026-11-23T21:43:59.545Z"
+          }
+        ],
+        "XLC": [
+          {
+            "date": "2026-11-23",
+            "spot": 103.61,
+            "callVolume": 5576,
+            "putVolume": 965,
+            "callPremium": 676216,
+            "putPremium": 569489,
+            "netGex": null,
+            "flip": null,
+            "regime": null,
+            "asOf": "2026-11-23T21:44:00.157Z"
+          }
+        ],
+        "GLD": [
+          {
+            "date": "2026-11-23",
+            "spot": 332.99,
+            "callVolume": 3691,
+            "putVolume": 917,
+            "callPremium": 773277,
+            "putPremium": 1395190,
+            "netGex": null,
+            "flip": null,
+            "regime": null,
+            "asOf": "2026-11-23T21:44:00.725Z"
+          }
+        ],
+        "TLT": [
+          {
+            "date": "2026-11-23",
+            "spot": 81.64,
+            "callVolume": 5937,
+            "putVolume": 6968,
+            "callPremium": 987450,
+            "putPremium": 842497,
+            "netGex": null,
+            "flip": null,
+            "regime": null,
+            "asOf": "2026-11-23T21:44:01.296Z"
+          }
+        ],
+        "HYG": [
+          {
+            "date": "2026-11-23",
+            "spot": 76.58,
+            "callVolume": 50697,
+            "putVolume": 89459,
+            "callPremium": 4672892,
+            "putPremium": 3965417,
+            "netGex": null,
+            "flip": null,
+            "regime": null,
+            "asOf": "2026-11-23T21:44:01.827Z"
+          }
+        ],
+        "SMH": [
+          {
+            "date": "2026-11-23",
+            "spot": 459.79,
+            "callVolume": 1390,
+            "putVolume": 2724,
+            "callPremium": 2672352,
+            "putPremium": 2780756,
+            "netGex": null,
+            "flip": null,
+            "regime": null,
+            "asOf": "2026-11-23T21:44:02.395Z"
+          }
+        ],
+        "AAPL": [
+          {
+            "date": "2026-11-23",
+            "spot": 349.74,
+            "callVolume": 2620,
+            "putVolume": 14126,
+            "callPremium": 11922442,
+            "putPremium": 1173676,
+            "netGex": null,
+            "flip": null,
+            "regime": null,
+            "asOf": "2026-11-23T21:44:02.959Z"
+          }
+        ],
+        "MSFT": [
+          {
+            "date": "2026-11-23",
+            "spot": 492.95,
+            "callVolume": 1313,
+            "putVolume": 1476,
+            "callPremium": 3699750,
+            "putPremium": 2904316,
+            "netGex": null,
+            "flip": null,
+            "regime": null,
+            "asOf": "2026-11-23T21:44:03.549Z"
+          }
+        ],
+        "NVDA": [
+          {
+            "date": "2026-11-23",
+            "spot": 164.64,
+            "callVolume": 2193,
+            "putVolume": 2068,
+            "callPremium": 2836838,
+            "putPremium": 1935821,
+            "netGex": null,
+            "flip": null,
+            "regime": null,
+            "asOf": "2026-11-23T21:44:04.111Z"
+          }
+        ],
+        "AMZN": [
+          {
+            "date": "2026-11-23",
+            "spot": 255.205,
+            "callVolume": 2375,
+            "putVolume": 2082,
+            "callPremium": 4832350,
+            "putPremium": 1755919,
+            "netGex": null,
+            "flip": null,
+            "regime": null,
+            "asOf": "2026-11-23T21:44:04.676Z"
+          }
+        ],
+        "GOOGL": [
+          {
+            "date": "2026-11-23",
+            "spot": 283,
+            "callVolume": 3112,
+            "putVolume": 3834,
+            "callPremium": 1668800,
+            "putPremium": 1897652,
+            "netGex": null,
+            "flip": null,
+            "regime": null,
+            "asOf": "2026-11-23T21:44:05.227Z"
+          }
+        ],
+        "META": [
+          {
+            "date": "2026-11-23",
+            "spot": 598.66,
+            "callVolume": 1090,
+            "putVolume": 1419,
+            "callPremium": 2657734,
+            "putPremium": 6719354,
+            "netGex": null,
+            "flip": null,
+            "regime": null,
+            "asOf": "2026-11-23T21:44:05.806Z"
+          }
+        ],
+        "TSLA": [
+          {
+            "date": "2026-11-23",
+            "spot": 385.19,
+            "callVolume": 1622,
+            "putVolume": 2868,
+            "callPremium": 10197888,
+            "putPremium": 4372719,
+            "netGex": null,
+            "flip": null,
+            "regime": null,
+            "asOf": "2026-11-23T21:44:06.375Z"
+          }
+        ],
+        "AVGO": [
+          {
+            "date": "2026-11-23",
+            "spot": 313.16,
+            "callVolume": 1150,
+            "putVolume": 933,
+            "callPremium": 1113230,
+            "putPremium": 2397812,
+            "netGex": null,
+            "flip": null,
+            "regime": null,
+            "asOf": "2026-11-23T21:44:06.919Z"
+          }
+        ],
+        "BRKB": [
+          {
+            "date": "2026-11-23",
+            "spot": 572.38,
+            "callVolume": 883,
+            "putVolume": 2083,
+            "callPremium": 4346777,
+            "putPremium": 790721,
+            "netGex": null,
+            "flip": null,
+            "regime": null,
+            "asOf": "2026-11-23T21:44:07.458Z"
+          }
+        ],
+        "JPM": [
+          {
+            "date": "2026-11-23",
+            "spot": 316.49,
+            "callVolume": 1680,
+            "putVolume": 1320,
+            "callPremium": 15186964,
+            "putPremium": 1611892,
+            "netGex": null,
+            "flip": null,
+            "regime": null,
+            "asOf": "2026-11-23T21:44:08.017Z"
+          }
+        ],
+        "V": [
+          {
+            "date": "2026-11-23",
+            "spot": 409.535,
+            "callVolume": 1032,
+            "putVolume": 1265,
+            "callPremium": 4171759,
+            "putPremium": 325188,
+            "netGex": null,
+            "flip": null,
+            "regime": null,
+            "asOf": "2026-11-23T21:44:08.643Z"
+          }
+        ],
+        "UNH": [
+          {
+            "date": "2026-11-23",
+            "spot": 336.2,
+            "callVolume": 1451,
+            "putVolume": 1846,
+            "callPremium": 3888777,
+            "putPremium": 6922524,
+            "netGex": null,
+            "flip": null,
+            "regime": null,
+            "asOf": "2026-11-23T21:44:09.273Z"
+          }
+        ],
+        "XOM": [
+          {
+            "date": "2026-11-23",
+            "spot": 156.93,
+            "callVolume": 3717,
+            "putVolume": 6294,
+            "callPremium": 12866967,
+            "putPremium": 1787171,
+            "netGex": null,
+            "flip": null,
+            "regime": null,
+            "asOf": "2026-11-23T21:44:09.868Z"
+          }
+        ],
+        "LLY": [
+          {
+            "date": "2026-11-23",
+            "spot": 1366.85,
+            "callVolume": 644,
+            "putVolume": 913,
+            "callPremium": 7029856,
+            "putPremium": 1533635,
+            "netGex": null,
+            "flip": null,
+            "regime": null,
+            "asOf": "2026-11-23T21:44:10.428Z"
+          }
+        ],
+        "MA": [
+          {
+            "date": "2026-11-23",
+            "spot": 635.08,
+            "callVolume": 633,
+            "putVolume": 464,
+            "callPremium": 2412928,
+            "putPremium": 407939,
+            "netGex": null,
+            "flip": null,
+            "regime": null,
+            "asOf": "2026-11-23T21:44:10.963Z"
+          }
+        ],
+        "COST": [
+          {
+            "date": "2026-11-23",
+            "spot": 1097.8,
+            "callVolume": 828,
+            "putVolume": 1441,
+            "callPremium": 9959240,
+            "putPremium": 1790145,
+            "netGex": null,
+            "flip": null,
+            "regime": null,
+            "asOf": "2026-11-23T21:44:11.544Z"
+          }
+        ],
+        "HD": [
+          {
+            "date": "2026-11-23",
+            "spot": 346,
+            "callVolume": 2230,
+            "putVolume": 948,
+            "callPremium": 2300444,
+            "putPremium": 1592648,
+            "netGex": null,
+            "flip": null,
+            "regime": null,
+            "asOf": "2026-11-23T21:44:12.093Z"
+          }
+        ],
+        "PG": [
+          {
+            "date": "2026-11-23",
+            "spot": 169.82,
+            "callVolume": 1398,
+            "putVolume": 1015,
+            "callPremium": 2920246,
+            "putPremium": 650900,
+            "netGex": null,
+            "flip": null,
+            "regime": null,
+            "asOf": "2026-11-23T21:44:12.637Z"
+          }
+        ],
+        "JNJ": [
+          {
+            "date": "2026-11-23",
+            "spot": 270.17,
+            "callVolume": 7328,
+            "putVolume": 1467,
+            "callPremium": 51438010,
+            "putPremium": 622031,
+            "netGex": null,
+            "flip": null,
+            "regime": null,
+            "asOf": "2026-11-23T21:44:13.169Z"
+          }
+        ],
+        "BAC": [
+          {
+            "date": "2026-11-23",
+            "spot": 48.18,
+            "callVolume": 2128,
+            "putVolume": 3922,
+            "callPremium": 702461,
+            "putPremium": 1372996,
+            "netGex": null,
+            "flip": null,
+            "regime": null,
+            "asOf": "2026-11-23T21:44:13.736Z"
+          }
+        ],
+        "AMD": [
+          {
+            "date": "2026-11-23",
+            "spot": 451.27,
+            "callVolume": 1742,
+            "putVolume": 1810,
+            "callPremium": 4264411,
+            "putPremium": 4273758,
+            "netGex": null,
+            "flip": null,
+            "regime": null,
+            "asOf": "2026-11-23T21:44:14.300Z"
+          }
+        ],
+        "NFLX": [
+          {
+            "date": "2026-11-23",
+            "spot": 58.09,
+            "callVolume": 3108,
+            "putVolume": 10712,
+            "callPremium": 7664864,
+            "putPremium": 35071253,
+            "netGex": null,
+            "flip": null,
+            "regime": null,
+            "asOf": "2026-11-23T21:44:14.840Z"
+          }
+        ],
+        "CRM": [
+          {
+            "date": "2026-11-23",
+            "spot": 185.465,
+            "callVolume": 1391,
+            "putVolume": 1285,
+            "callPremium": 2209956,
+            "putPremium": 4590471,
+            "netGex": null,
+            "flip": null,
+            "regime": null,
+            "asOf": "2026-11-23T21:44:15.390Z"
+          }
+        ],
+        "ORCL": [
+          {
+            "date": "2026-11-23",
+            "spot": 113.79,
+            "callVolume": 2223,
+            "putVolume": 5438,
+            "callPremium": 1161830,
+            "putPremium": 28559957,
+            "netGex": null,
+            "flip": null,
+            "regime": null,
+            "asOf": "2026-11-23T21:44:15.961Z"
+          }
+        ],
+        "KO": [
+          {
+            "date": "2026-11-23",
+            "spot": 95.99,
+            "callVolume": 1497,
+            "putVolume": 1495,
+            "callPremium": 1642510,
+            "putPremium": 547023,
+            "netGex": null,
+            "flip": null,
+            "regime": null,
+            "asOf": "2026-11-23T21:44:16.553Z"
+          }
+        ],
+        "WMT": [
+          {
+            "date": "2026-11-23",
+            "spot": 129.95,
+            "callVolume": 1731,
+            "putVolume": 2094,
+            "callPremium": 3138261,
+            "putPremium": 1962709,
+            "netGex": null,
+            "flip": null,
+            "regime": null,
+            "asOf": "2026-11-23T21:44:17.126Z"
+          }
+        ],
+        "CVX": [
+          {
+            "date": "2026-11-23",
+            "spot": 206.12,
+            "callVolume": 2607,
+            "putVolume": 1467,
+            "callPremium": 12469607,
+            "putPremium": 1616150,
+            "netGex": null,
+            "flip": null,
+            "regime": null,
+            "asOf": "2026-11-23T21:44:17.666Z"
+          }
+        ],
+        "MRK": [
+          {
+            "date": "2026-11-23",
+            "spot": 135.46,
+            "callVolume": 1320,
+            "putVolume": 1745,
+            "callPremium": 2287803,
+            "putPremium": 830794,
+            "netGex": null,
+            "flip": null,
+            "regime": null,
+            "asOf": "2026-11-23T21:44:18.208Z"
+          }
+        ],
+        "ABBV": [
+          {
+            "date": "2026-11-23",
+            "spot": 288.33,
+            "callVolume": 1233,
+            "putVolume": 1387,
+            "callPremium": 6550776,
+            "putPremium": 427300,
+            "netGex": null,
+            "flip": null,
+            "regime": null,
+            "asOf": "2026-11-23T21:44:18.747Z"
+          }
+        ],
+        "PLTR": [
+          {
+            "date": "2026-11-23",
+            "spot": 159.39,
+            "callVolume": 1763,
+            "putVolume": 3195,
+            "callPremium": 5725743,
+            "putPremium": 8073373,
+            "netGex": null,
+            "flip": null,
+            "regime": null,
+            "asOf": "2026-11-23T21:44:19.301Z"
+          }
+        ],
+        "COIN": [
+          {
+            "date": "2026-11-23",
+            "spot": 108.82,
+            "callVolume": 1627,
+            "putVolume": 2954,
+            "callPremium": 2335546,
+            "putPremium": 21620350,
+            "netGex": null,
+            "flip": null,
+            "regime": null,
+            "asOf": "2026-11-23T21:44:19.853Z"
+          }
+        ],
+        "MSTR": [
+          {
+            "date": "2026-11-23",
+            "spot": 84.435,
+            "callVolume": 8736,
+            "putVolume": 4267,
+            "callPremium": 26049525,
+            "putPremium": 20932410,
+            "netGex": null,
+            "flip": null,
+            "regime": null,
+            "asOf": "2026-11-23T21:44:20.410Z"
+          }
+        ],
+        "BA": [
+          {
+            "date": "2026-11-23",
+            "spot": 162.36,
+            "callVolume": 1935,
+            "putVolume": 17529,
+            "callPremium": 2081409,
+            "putPremium": 104029337,
+            "netGex": null,
+            "flip": null,
+            "regime": null,
+            "asOf": "2026-11-23T21:44:20.946Z"
+          }
+        ]
+      }
     }
   }
 }
