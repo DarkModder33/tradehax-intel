@@ -30,7 +30,11 @@ const input = {
 
 const fresh = buildStories(input, { cap: Number(process.env.NEWS_CAP ?? 10) });
 const previous = await readJson(priorFile);
-const stories = mergeStories(previous?.stories ?? [], fresh);
+// Stories that shipped in the repo seed file were already posted to social, so keep their
+// URLs alive (mergeStories still ages them out after its keep window).
+const seedFile = path.join(root, "content", "news", "stories.json");
+const seed = path.resolve(seedFile) === outFile ? null : await readJson(seedFile);
+const stories = mergeStories([...(seed?.stories ?? []), ...(previous?.stories ?? [])], fresh);
 const payload = {
   generatedAt: new Date().toISOString(),
   disclaimer: fresh[0]?.disclaimer ?? "Auto-generated from market data — not investment advice.",

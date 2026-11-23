@@ -4,7 +4,7 @@ import { DISCLAIMER, THRESHOLDS, buildStories, mergeStories, wordCount } from ".
 import { freshStories, xmlEscape } from "../../../scripts/news/feeds.mjs";
 import type { Story } from "./load";
 
-function built(input: unknown, options?: { cap: number }): Story[] {
+function built(input: unknown, options?: { cap: number; perType?: number }): Story[] {
   return buildStories(input, options) as Story[];
 }
 
@@ -39,7 +39,10 @@ describe("story generator", () => {
       rows[`N${index}`] = { ret5d: 0.08 + index / 100, ret1m: 0.02, ret3m: 0.03, rvol20: 2, rsi14: 60, atrPct: 0.02, pctFrom52wHigh: -0.1 };
     }
     const stories = built({ technicals: technicals(rows) }, { cap: THRESHOLDS.cap });
-    expect(stories.length).toBe(THRESHOLDS.cap);
+    // One busy type cannot fill the wire: at most THRESHOLDS.perType movers per run.
+    expect(stories.length).toBe(THRESHOLDS.perType);
+    const unlimited = built({ technicals: technicals(rows) }, { cap: THRESHOLDS.cap, perType: THRESHOLDS.cap });
+    expect(unlimited.length).toBe(THRESHOLDS.cap);
     expect(new Set(stories.map((story) => story.id)).size).toBe(stories.length);
     const leads = new Set(stories.map((story) => story.body[0].slice(0, 24)));
     expect(leads.size).toBeGreaterThan(1);

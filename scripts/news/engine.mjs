@@ -18,6 +18,8 @@ export const THRESHOLDS = {
   ivRankHigh: 0.9,
   ivRankLow: 0.1,
   cap: 10,
+  perType: 3,
+  staleShortDays: 45,
 };
 
 const SECTORS = ["XLK", "XLF", "XLE", "XLV", "XLY", "XLI", "XLB", "XLU", "XLRE", "XLC", "XLP"];
@@ -141,10 +143,10 @@ function median(values) {
 }
 
 function fitBody(seed, lead, sentences) {
-  const rest = sentences
-    .map((sentence, index) => ({ sentence, index }))
-    .sort((a, b) => hashSeed(`${seed}:${a.index}`) - hashSeed(`${seed}:${b.index}`));
-  const ordered = [lead, ...rest.map((item) => item.sentence)];
+  // Sentences are written in reading order: what happened, the numbers behind it, context,
+  // then sourcing. A hash shuffle used to scramble that order and made stories read as noise.
+  void seed;
+  const ordered = [lead, ...sentences].map(humanStamps);
   const paragraphs = [];
   let chunk = [];
   for (const sentence of ordered) {
@@ -161,6 +163,25 @@ function fitBody(seed, lead, sentences) {
 
 function cite(label, value, source, asOf) {
   return { label, value, source, asOf };
+}
+
+const ISO_STAMP = /\b(\d{4}-\d{2}-\d{2})T(\d{2}):(\d{2})(?::\d{2}(?:\.\d+)?)?Z\b/g;
+
+/** Prose shows "Nov 23, 2026, 3:26 PM ET", not a raw ISO stamp. Key numbers keep ISO. */
+export function humanStamps(text) {
+  return String(text).replace(ISO_STAMP, (match) => {
+    const date = new Date(match);
+    if (Number.isNaN(date.getTime())) return match;
+    const label = new Intl.DateTimeFormat("en-US", {
+      timeZone: "America/New_York",
+      month: "short",
+      day: "numeric",
+      year: "numeric",
+      hour: "numeric",
+      minute: "2-digit",
+    }).format(date);
+    return `${label} ET`;
+  });
 }
 
 function baseStory({ type, ticker, tickers, day, headline, dek, body, keyNumbers, spark, sources, materiality, asOf }) {
@@ -188,14 +209,14 @@ function baseStory({ type, ticker, tickers, day, headline, dek, body, keyNumbers
 }
 
 function measureBlock(items) {
-  return items.map((item) => `The ${item.label} cell reads ${item.value}. It is attributed to ${item.source} as of ${item.asOf}, and this paragraph does not replace it with a second vendor.`);
+  return items.map((item) => `${item.label} reads ${item.value}. The figure comes from ${item.source} as of ${item.asOf} and is shown exactly as published, without blending in a second data vendor.`);
 }
 
 function closer(source, asOf) {
   return [
     `Figures in this piece come from ${source} as of ${asOf}. A blank in that file stays blank here.`,
     "The filter is a threshold on stored data, not a forecast and not a rating.",
-    "The same ticker, type, and day collapse to one story so a later run replaces the row instead of adding a twin.",
+    "If a later file revises this figure, the note is updated in place under the same address rather than published twice.",
     "Nothing on this page is a recommendation to buy, sell, or hold. The methodology page describes the other desk scores, which are separate from this write-up.",
   ];
 }
@@ -342,6 +363,10 @@ function shortStories(file, fallbackDay) {
     const current = finite(row.currentShortPositionQuantity);
     const previous = finite(row.previousShortPositionQuantity);
     const settlement = String(row.settlementDate ?? asOf).slice(0, 10);
+    // An old settlement is not news. Skip rows more than STALE_SHORT_DAYS past settlement.
+    const settledAt = Date.parse(`${settlement}T00:00:00Z`);
+    const nowAt = Date.parse(`${fallbackDay}T00:00:00Z`);
+    if (Number.isFinite(settledAt) && Number.isFinite(nowAt) && nowAt - settledAt > THRESHOLDS.staleShortDays * 86_400_000) continue;
     const facts = { ticker, change: `${change > 0 ? "+" : ""}${plain(change, 2)}%`, settlement };
     const lead = OPENERS.short[hashSeed(`${ticker}|short|${day}`) % OPENERS.short.length](facts);
     const body = fitBody(`${ticker}|short|${day}`, lead, [
@@ -770,9 +795,14 @@ export function buildStories(input, options = {}) {
     types.add(story.type);
     picked.push(story);
   }
+  // At most PER_TYPE stories of one kind per run, so one busy file (fails-to-deliver,
+  // say) cannot fill the whole wire.
+  const perType = options.perType ?? THRESHOLDS.perType;
+  const count = (type) => picked.filter((item) => item.type === type).length;
   for (const story of unique) {
     if (picked.length >= cap) break;
     if (picked.some((item) => item.id === story.id)) continue;
+    if (count(story.type) >= perType) continue;
     picked.push(story);
   }
   return picked.slice(0, cap).sort((a, b) => b.materiality - a.materiality);
