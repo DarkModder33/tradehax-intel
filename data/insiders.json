@@ -1,6 +1,6 @@
 {
   "meta": {
-    "asOf": "2026-11-23T22:17:59.563Z",
+    "asOf": "2026-11-23T22:48:43.313Z",
     "source": "SEC EDGAR Form 4",
     "rows": 25,
     "delay": "hours",
@@ -106,23 +106,6 @@
         "code": "C",
         "shares": 3681766,
         "price": null,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002135300-26-000004:form4-11232026_101100.xml",
-      "filed": "2026-11-19",
-      "names": [
-        "Hemphill Gregg  (CIK 0002135300)",
-        "Newton Golf Company, Inc.  (CIK 0001934245)"
-      ],
-      "trade": {
-        "owner": "Hemphill Gregg",
-        "ticker": "NWTG",
-        "code": "P",
-        "shares": 767,
-        "price": 0.6791,
         "acquired": true,
         "form": "4"
       }
@@ -242,23 +225,6 @@
         "code": "G",
         "shares": 1524,
         "price": 0,
-        "acquired": false,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002112883-26-000016:wk-form4_1795471081.xml",
-      "filed": "2026-11-20",
-      "names": [
-        "Stojanovic Danijela  (CIK 0002112883)",
-        "Gemini Space Station, Inc.  (CIK 0002055592)"
-      ],
-      "trade": {
-        "owner": "Stojanovic Danijela",
-        "ticker": "GEMI",
-        "code": "S",
-        "shares": 10241,
-        "price": 1.58,
         "acquired": false,
         "form": "4"
       }
@@ -400,23 +366,6 @@
       }
     },
     {
-      "id": "0002098803-26-000003:primarydocument.xml",
-      "filed": "2026-11-20",
-      "names": [
-        "Sachs Alan Bruce  (CIK 0002098803)",
-        "Quanterix Corp  (CIK 0001503274)"
-      ],
-      "trade": {
-        "owner": "Sachs Alan Bruce",
-        "ticker": "QTRX",
-        "code": "M",
-        "shares": 15576,
-        "price": null,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
       "id": "0002098061-26-000002:section16.xml",
       "filed": "2026-11-19",
       "names": [
@@ -430,6 +379,57 @@
         "shares": 4197,
         "price": 0,
         "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002097107-26-000006:primary_doc.xml",
+      "filed": "2026-11-01",
+      "names": [
+        "Siemiatkowski Sebastian  (CIK 0002097107)",
+        "Klarna Group plc  (CIK 0002003292)"
+      ],
+      "trade": {
+        "owner": "Siemiatkowski Sebastian",
+        "ticker": "KLAR",
+        "code": "A",
+        "shares": 1539863,
+        "price": null,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002096832-26-000002:primarydocument.xml",
+      "filed": "2026-11-19",
+      "names": [
+        "Lalov Boyan N.  (CIK 0002096832)",
+        "SPIRE INC  (CIK 0001126956)"
+      ],
+      "trade": {
+        "owner": "Lalov Boyan N.",
+        "ticker": "SR",
+        "code": "A",
+        "shares": 310,
+        "price": 85.63,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002095785-26-000004:primary_doc.xml",
+      "filed": "2026-11-19",
+      "names": [
+        "Chatterjee Ankur  (CIK 0002095785)",
+        "QumulusAI, Inc.  (CIK 0002084026)"
+      ],
+      "trade": {
+        "owner": "Chatterjee Ankur",
+        "ticker": "QMLS",
+        "code": "S",
+        "shares": 26117,
+        "price": 2.45,
+        "acquired": false,
         "form": "4"
       }
     }
