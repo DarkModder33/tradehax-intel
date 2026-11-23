@@ -650,14 +650,14 @@ function earningsStories(file, fallbackDay) {
     if (!Number.isFinite(afterAt) || dayAt - afterAt > 3 * 86_400_000 || afterAt - dayAt > 86_400_000) continue;
     const gap = Math.abs(realized) - Math.abs(implied);
     if (Math.abs(gap) < THRESHOLDS.earningsGap) continue;
-    const facts = { ticker, implied: pct(implied), realized: pct(realized), gap: pct(gap) };
+    const facts = { ticker, implied: `±${pct(Math.abs(implied)).replace(/^[+-]/, "")}`, realized: pct(realized), gap: pct(gap) };
     const lead = OPENERS.earnings[hashSeed(`${ticker}|earnings|${day}`) % OPENERS.earnings.length](facts);
     const body = fitBody(`${ticker}|earnings|${day}`, lead, [
       `Implied move on the stored row is ${facts.implied}. Realized move is ${facts.realized}. The difference of absolute values is ${facts.gap}.`,
       `The story runs when that difference is at least ${plain(THRESHOLDS.earningsGap * 100, 0)} percentage points. Smaller gaps stay in the file.`,
-      "Past implied moves are not backfilled. If the earnings file is empty, there is no recap.",
+      `Implied came from ${row.impliedSource ?? "an at-the-money straddle"}${row.impliedExpiry ? ` for the ${row.impliedExpiry} expiry` : ""}, priced at the close on ${row.beforeDate ?? "the prior session"}.`,
       `The report date is ${row.reportDate ?? "not on the row"}. The move runs from the close on ${row.beforeDate ?? "the prior session"} to the close on ${after}, so it holds the reaction whether the report came before the open or after the close.`,
-      "Implied is the move that was stored from the chain before the event. Realized is the later close-to-close move saved with it. If either field is missing, the name is skipped.",
+      "Implied is the straddle price divided by the stock price, so it has no direction. Realized is the close-to-close move over the same window. If either field is missing, the name is skipped.",
       "The comparison uses absolute values, so a down realized move and an up implied move are measured by size. The sign of the realized move is still printed in the table.",
       ...measureBlock([
         cite("Implied move", facts.implied, source, asOf),
