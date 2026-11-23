@@ -194,7 +194,15 @@ export async function postQueue(options = {}) {
     }
     const cap = Number(options.cap ?? env.SOCIAL_CAP ?? 8);
     const dry = env.SOCIAL_DRYRUN === "1" || options.dryRun === true;
-    const pending = (payload.stories ?? []).filter((story) => story.passedMateriality === true && adapters.some((network) => !(ledger.posted[story.id] ?? []).includes(network)));
+    // Only fresh stories go out. Older ones (seed files, a re-merged archive) stay on the
+    // site but are never posted late.
+    const maxAgeHours = Number(options.maxAgeHours ?? env.SOCIAL_MAX_AGE_HOURS ?? 36);
+    const nowMs = options.now ? new Date(options.now).getTime() : Date.now();
+    const fresh = (story) => {
+      const at = Date.parse(story.publishedAt ?? "");
+      return !Number.isFinite(maxAgeHours) || maxAgeHours <= 0 || (Number.isFinite(at) && nowMs - at <= maxAgeHours * 3_600_000);
+    };
+    const pending = (payload.stories ?? []).filter((story) => story.passedMateriality === true && fresh(story) && adapters.some((network) => !(ledger.posted[story.id] ?? []).includes(network)));
     const batch = pending.slice(0, Number.isFinite(cap) && cap > 0 ? cap : 8);
     for (const story of batch) {
       for (const network of adapters) {

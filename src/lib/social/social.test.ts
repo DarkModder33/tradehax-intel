@@ -4,12 +4,16 @@ import path from "node:path";
 import { describe, expect, it } from "vitest";
 import { configuredAdapters, oauthHeader, percentEncode, postQueue, selectAdapters, xText } from "../../../scripts/social/post.mjs";
 
+// Stories older than SOCIAL_MAX_AGE_HOURS are not posted, so tests pin "now".
+const NOW = "2026-11-17T12:00:00Z";
+
 const story = {
   id: "NVDA|mover|2026-11-16",
   type: "mover",
   ticker: "NVDA",
   tickers: ["NVDA"],
   day: "2026-11-16",
+  publishedAt: "2026-11-16T21:00:00.000Z",
   slug: "nvda-mover-2026-11-16",
   headline: "NVDA -12.7% over five sessions",
   dek: "Five-day return from Yahoo daily bars.",
@@ -61,7 +65,7 @@ describe("social posting", () => {
   it("dry-run logs and does not post or record ids", async () => {
     const { news, ledger } = fixture();
     const logs: string[] = [];
-    const result = await postQueue({
+    const result = await postQueue({ now: NOW,
       env: { ...secrets, SOCIAL_DRYRUN: "1" },
       newsFile: news,
       ledger,
@@ -94,7 +98,7 @@ describe("social posting", () => {
       return new Response("{}", { status: 200 });
     };
     const waits: number[] = [];
-    const first = await postQueue({
+    const first = await postQueue({ now: NOW,
       env: secrets,
       newsFile: news,
       ledger,
@@ -114,7 +118,7 @@ describe("social posting", () => {
     const saved = JSON.parse(readFileSync(ledger, "utf8"));
     expect(saved.posted[story.id].sort()).toEqual(["discord", "x"]);
     const secondCalls = calls.length;
-    await postQueue({ env: secrets, newsFile: news, ledger, cap: 8, sleep: async () => {}, log: () => {}, fetcher: fetcher as typeof fetch });
+    await postQueue({ now: NOW, env: secrets, newsFile: news, ledger, cap: 8, sleep: async () => {}, log: () => {}, fetcher: fetcher as typeof fetch });
     const later = calls.slice(secondCalls);
     const xBodies = later.filter((call) => call.url.includes("api.x.com")).map((call) => call.body);
     expect(xBodies.some((body) => body.includes("NVDA"))).toBe(false);
@@ -123,7 +127,7 @@ describe("social posting", () => {
 
   it("stays quiet when posting is turned off", async () => {
     const { news, ledger } = fixture();
-    const result = await postQueue({
+    const result = await postQueue({ now: NOW,
       env: { SOCIAL_AUTOPOST: "0" },
       newsFile: news,
       ledger,
@@ -134,5 +138,30 @@ describe("social posting", () => {
     });
     expect(result.results).toEqual([]);
     expect(result.ok).toBe(true);
+  });
+});
+
+describe("social freshness", () => {
+  it("does not post a story older than the max age", async () => {
+    const dir = mkdtempSync(path.join(tmpdir(), "social-age-"));
+    const news = path.join(dir, "stories.json");
+    const ledger = path.join(dir, "ledger.json");
+    writeFileSync(news, JSON.stringify({ stories: [{ ...story, publishedAt: "2026-11-10T21:00:00.000Z" }] }));
+    const calls: string[] = [];
+    const fetcher = async (url: string) => {
+      calls.push(url);
+      return new Response(JSON.stringify({ ok: true, result: { message_id: 1 } }), { status: 200 });
+    };
+    const result = await postQueue({
+      now: NOW,
+      env: { TELEGRAM_BOT_TOKEN: "t", TELEGRAM_CHAT_ID: "1" },
+      newsFile: news,
+      ledger,
+      sleep: async () => {},
+      log: () => {},
+      fetcher: fetcher as unknown as typeof fetch,
+    });
+    expect(calls).toHaveLength(0);
+    expect(result.results).toHaveLength(0);
   });
 });
