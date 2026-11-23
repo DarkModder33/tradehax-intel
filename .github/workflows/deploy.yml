@@ -49,18 +49,31 @@ jobs:
       - name: Test
         run: npm test
 
-      - name: Build static export
-        run: npm run build && node scripts/build/sw-manifest.mjs out && node scripts/build/budget.mjs
-        env:
-          NEXT_PUBLIC_WORKER_URL: ${{ vars.WORKER_URL || 'https://tradehax-intel-worker-bf2f623ce81a.herokuapp.com' }}
-          NEXT_PUBLIC_BASE_PATH: ${{ vars.PAGES_BASE_PATH || '' }}
-
       - name: Checkout data branch
         continue-on-error: true
         uses: actions/checkout@v4
         with:
           ref: data
           path: data-branch
+
+      - name: Overlay published stories
+        run: |
+          if [ -f data-branch/data/news/stories.json ]; then
+            mkdir -p content/news
+            cp data-branch/data/news/stories.json content/news/stories.json
+          fi
+          node scripts/news/feeds.mjs
+          node scripts/news/og.mjs
+
+      - name: Build static export
+        run: node --experimental-strip-types scripts/build/ads-txt.mjs && npm run build && node scripts/build/sw-manifest.mjs out && node scripts/build/budget.mjs
+        env:
+          NEXT_PUBLIC_WORKER_URL: ${{ vars.WORKER_URL || 'https://tradehax-intel-worker-bf2f623ce81a.herokuapp.com' }}
+          NEXT_PUBLIC_BASE_PATH: ${{ vars.PAGES_BASE_PATH || '' }}
+          NEXT_PUBLIC_ADSENSE_CLIENT: ${{ vars.NEXT_PUBLIC_ADSENSE_CLIENT }}
+          NEXT_PUBLIC_ADSENSE_SLOT: ${{ vars.NEXT_PUBLIC_ADSENSE_SLOT }}
+          NEXT_PUBLIC_NEWSLETTER_URL: ${{ vars.NEXT_PUBLIC_NEWSLETTER_URL }}
+          NEXT_PUBLIC_GSC_VERIFICATION: ${{ vars.NEXT_PUBLIC_GSC_VERIFICATION }}
 
       - name: Copy precomputed data
         run: |

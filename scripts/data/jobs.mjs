@@ -7,6 +7,7 @@ import { DEFAULT_UNIVERSE } from "../../src/lib/live/universe.ts";
 import { appendIvHistory } from "../../src/lib/options/ivrank.ts";
 import { oiChanges } from "../../src/lib/datasets/oi.ts";
 import { readFile } from "node:fs/promises";
+import { loadOptionChain, nearestIv30 } from "./option-chain.mjs";
 
 const USER_AGENT = process.env.SEC_USER_AGENT || "TradeHaxIntel admin@tradehax.local";
 const BROWSER = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36";
@@ -195,12 +196,13 @@ export async function oiChange() {
   const previous = priorFile?.snapshot && typeof priorFile.snapshot === "object" ? priorFile.snapshot : {};
   const current = [];
   const snapshot = {};
+  const sources = new Set();
   let fetched = 0;
   for (const symbol of UNIVERSE) {
     try {
-      const response = await grab(`https://cdn.cboe.com/api/global/delayed_quotes/options/${symbol}.json`, {}, 20000);
-      const body = await response.json();
+      const body = await loadOptionChain(symbol, { fetcher: fetch, sleep: () => Promise.resolve() });
       fetched += 1;
+      if (body?.source) sources.add(body.source);
       for (const option of body?.data?.options ?? []) {
         const occ = option?.option;
         const openInterest = Number(option?.open_interest);
@@ -215,7 +217,8 @@ export async function oiChange() {
   }
   const priorRows = Object.entries(previous).map(([symbol, openInterest]) => ({ symbol, openInterest: Number(openInterest) }));
   const rows = priorRows.length ? oiChanges(priorRows, current).slice(0, 500) : [];
-  const packed = pack("Cboe open interest", rows, {
+  const feed = sources.size ? [...sources].join(", ") : "Cboe delayed";
+  const packed = pack(`${feed} open interest`, rows, {
     delay: "daily",
     note: priorRows.length ? `${rows.length} contracts changed.` : "Baseline stored. A change is computed on the next run.",
   });
@@ -244,10 +247,9 @@ export async function ivHistory() {
   const errors = [];
   for (const symbol of UNIVERSE) {
     try {
-      const response = await grab(`https://cdn.cboe.com/api/global/delayed_quotes/options/${symbol}.json`, {}, 20000);
-      const body = await response.json();
-      const iv30 = body?.data?.iv30;
+      const body = await loadOptionChain(symbol, { fetcher: fetch, sleep: () => Promise.resolve() });
       const close = body?.data?.current_price;
+      const iv30 = typeof body?.data?.iv30 === "number" ? body.data.iv30 : nearestIv30(body?.data?.options, close);
       if (typeof iv30 === "number") {
         updates.push({ sym: symbol, date, iv30, close: typeof close === "number" ? close : null, asOf: body?.timestamp ?? null });
       }

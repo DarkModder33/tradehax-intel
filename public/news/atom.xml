@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>TradeHax Intel news</title>
+  <link href="https://tradehaxai.tech/news/"/>
+  <updated>2026-11-23T18:28:39.689Z</updated>
+  <id>https://tradehaxai.tech/news/atom.xml</id>
+  <entry>
+    <title>XLE leads, XLB lags by +4.9%</title>
+    <link href="https://tradehaxai.tech/news/2026/11/sectors-rotation-2026-11-16/"/>
+    <id>https://tradehaxai.tech/news/2026/11/sectors-rotation-2026-11-16/</id>
+    <updated>2026-11-16T01:58:58.507Z</updated>
+    <summary>Sector ETF five-day gap +4.9% from Yahoo daily bars.</summary>
+  </entry>
+  <entry>
+    <title>TSLA +8.9% over five sessions</title>
+    <link href="https://tradehaxai.tech/news/2026/11/tsla-mover-2026-11-16/"/>
+    <id>https://tradehaxai.tech/news/2026/11/tsla-mover-2026-11-16/</id>
+    <updated>2026-11-16T01:58:58.507Z</updated>
+    <summary>TSLA five-day return +8.9%, relative volume 0.79x, from Yahoo daily bars.</summary>
+  </entry>
+  <entry>
+    <title>MSTR -13.4% over five sessions</title>
+    <link href="https://tradehaxai.tech/news/2026/11/mstr-mover-2026-11-16/"/>
+    <id>https://tradehaxai.tech/news/2026/11/mstr-mover-2026-11-16/</id>
+    <updated>2026-11-16T01:58:58.507Z</updated>
+    <summary>MSTR five-day return -13.4%, relative volume 1.00x, from Yahoo daily bars.</summary>
+  </entry>
+  <entry>
+    <title>NVDA -12.7% over five sessions</title>
+    <link href="https://tradehaxai.tech/news/2026/11/nvda-mover-2026-11-16/"/>
+    <id>https://tradehaxai.tech/news/2026/11/nvda-mover-2026-11-16/</id>
+    <updated>2026-11-16T01:58:58.507Z</updated>
+    <summary>NVDA five-day return -12.7%, relative volume 1.85x, from Yahoo daily bars.</summary>
+  </entry>
+  <entry>
+    <title>AVGO +18.2% over five sessions</title>
+    <link href="https://tradehaxai.tech/news/2026/11/avgo-mover-2026-11-16/"/>
+    <id>https://tradehaxai.tech/news/2026/11/avgo-mover-2026-11-16/</id>
+    <updated>2026-11-16T01:58:58.507Z</updated>
+    <summary>AVGO five-day return +18.2%, relative volume 1.18x, from Yahoo daily bars.</summary>
+  </entry>
+  <entry>
+    <title>AMD +18.9% over five sessions</title>
+    <link href="https://tradehaxai.tech/news/2026/11/amd-mover-2026-11-16/"/>
+    <id>https://tradehaxai.tech/news/2026/11/amd-mover-2026-11-16/</id>
+    <updated>2026-11-16T01:58:58.507Z</updated>
+    <summary>AMD five-day return +18.9%, relative volume 1.47x, from Yahoo daily bars.</summary>
+  </entry>
+  <entry>
+    <title>AAPL short interest +10.03%</title>
+    <link href="https://tradehaxai.tech/news/2026/11/aapl-short-2026-11-15/"/>
+    <id>https://tradehaxai.tech/news/2026/11/aapl-short-2026-11-15/</id>
+    <updated>2026-11-15T22:39:18.473Z</updated>
+    <summary>AAPL short interest changed +10.03% as of settlement 2026-10-30.</summary>
+  </entry>
+  <entry>
+    <title>AAPL fails-to-deliver $51.65M</title>
+    <link href="https://tradehaxai.tech/news/2026/11/aapl-ftd-2026-11-15/"/>
+    <id>https://tradehaxai.tech/news/2026/11/aapl-ftd-2026-11-15/</id>
+    <updated>2026-11-15T22:38:33.165Z</updated>
+    <summary>156,354 shares of AAPL failed on 2026-10-02 at $330.32.</summary>
+  </entry>
+  <entry>
+    <title>SPY fails-to-deliver $78.53M</title>
+    <link href="https://tradehaxai.tech/news/2026/11/spy-ftd-2026-11-15/"/>
+    <id>https://tradehaxai.tech/news/2026/11/spy-ftd-2026-11-15/</id>
+    <updated>2026-11-15T22:38:33.165Z</updated>
+    <summary>101,039 shares of SPY failed on 2026-10-08 at $777.22.</summary>
+  </entry>
+</feed>

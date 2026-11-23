@@ -1,8 +1,8 @@
-import { parseCboeChain, cboeChainUrl } from "../../src/lib/sources/cboe.ts";
+import { resolveChain } from "../../src/lib/sources/chain-feeds.ts";
 import { parseOcc } from "../../src/lib/sources/occ.ts";
 import { inferSide, sentiment, withFlags, type FlowPrint } from "../../src/lib/flow/classify.ts";
 import { alpacaSymbol } from "../../src/lib/market/alpaca-bars.ts";
-import { optionTradesUrl, stockTradesUrl, alpacaConfigured } from "./alpaca.ts";
+import { optionTradesUrl, stockTradesUrl, alpacaConfigured, alpacaHeaders } from "./alpaca.ts";
 import { printsFromHistory } from "./guard.ts";
 import { addPrints, ingestChain, noteError, state, type OffexPrint } from "./store.ts";
 import { parseUniverse } from "../../src/lib/live/universe.ts";
@@ -50,10 +50,10 @@ export async function pollChains(): Promise<void> {
   chainCursor = SYMBOLS.length ? (chainCursor + slice.length) % SYMBOLS.length : 0;
   for (const symbol of slice) {
     try {
-      const snapshot = parseCboeChain(await getJson(cboeChainUrl(symbol)), symbol);
+      const snapshot = await resolveChain(symbol, { alpacaHeaders: alpacaConfigured() ? alpacaHeaders() : null });
       ingestChain(snapshot, emit);
     } catch (error) {
-      noteError(`cboe ${symbol}`, error);
+      noteError(`chain ${symbol}`, error);
     }
   }
   state.lastChainPoll = new Date().toISOString();

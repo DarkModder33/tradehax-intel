@@ -39,6 +39,9 @@ export const metadata: Metadata = {
     title: "TradeHax Intel",
     description: "Delayed quotes, options flow, and a research desk. Not a recommendation.",
   },
+  ...(process.env.NEXT_PUBLIC_GSC_VERIFICATION?.trim()
+    ? { verification: { google: process.env.NEXT_PUBLIC_GSC_VERIFICATION.trim() } }
+    : {}),
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
@@ -63,6 +66,13 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
             }),
           }}
         />
+        {process.env.NEXT_PUBLIC_ADSENSE_CLIENT?.trim() ? (
+          <script
+            async
+            src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${process.env.NEXT_PUBLIC_ADSENSE_CLIENT.trim()}`}
+            crossOrigin="anonymous"
+          />
+        ) : null}
         {children}
       </body>
     </html>

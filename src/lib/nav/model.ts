@@ -10,7 +10,7 @@ export interface NavGroup {
 }
 
 export const NAV_GROUPS: NavGroup[] = [
-  { label: "Desk", items: [{ href: "/", label: "Desk" }, { href: "/t/", label: "Ticker" }, { href: "/alerts/", label: "Alerts" }, { href: "/screener/", label: "Screener" }] },
+  { label: "Desk", items: [{ href: "/", label: "Desk" }, { href: "/news/", label: "News" }, { href: "/t/", label: "Ticker" }, { href: "/alerts/", label: "Alerts" }, { href: "/screener/", label: "Screener" }] },
   {
     label: "Charts",
     items: [
@@ -83,7 +83,7 @@ export const NAV_RIGHT: NavItem[] = [
 export const NAV_HREFS = [...NAV_GROUPS.flatMap((group) => group.items.map((item) => item.href)), ...NAV_RIGHT.map((item) => item.href)];
 
 /** Routes that are tools, not sections. A new page must be added to the nav or this list. */
-export const UNLISTED_ROUTES = ["/popout/", "/offline/"];
+export const UNLISTED_ROUTES = ["/popout/", "/offline/", "/news/[year]/[month]/[slug]/", "/news/t/[ticker]/", "/news/type/[type]/"];
 
 export function routeFromPage(file: string): string {
   const cleaned = file.replace(/^src\/app/, "").replace(/\/page\.tsx$/, "") || "/";

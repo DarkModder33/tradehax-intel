@@ -140,6 +140,16 @@ The pack does not include a market-data vendor. Options flow, unusual options vo
 9. **Business intelligence.** Hit rate by setup, by timeframe confluence, and by ticker. That is the journal turned into a report, not a second product.
 10. **A licensed feed.** Keep `MarketDataProvider`. Point it at a keyed vendor when delayed Yahoo data is no longer good enough. Keys stay in environment variables.
 
+## News
+
+`node scripts/news/generate.mjs` writes `content/news/stories.json` from the files in `public/data` (or `DATA_DIR`). A story is kept only when a stored figure clears a fixed threshold. Earnings, IV rank, 13F, and insider cluster pages stay empty until those files have the rows the filter requires.
+
+Weekday data runs also generate stories around the open, midday, and the close. The Pages build copies `data/news/stories.json` from the data branch before `next build`, then writes RSS at `/news/feed.xml`, Atom at `/news/atom.xml`, a Google News sitemap of the last 48 hours at `/news-sitemap.xml`, and card images under `/news/og/`. IndexNow pings only when `INDEXNOW=1`, and a failed ping does not fail the job. The public key file is `public/a7c3e91b4d2f48e0a1b6c5d4e3f2a190.txt`.
+
+Ads, the affiliate list, the newsletter form, and the Search Console meta tag render nothing until `NEXT_PUBLIC_ADSENSE_CLIENT` plus `NEXT_PUBLIC_ADSENSE_SLOT`, rows in `content/affiliates.json`, `NEXT_PUBLIC_NEWSLETTER_URL`, or `NEXT_PUBLIC_GSC_VERIFICATION` are set. `ads.txt` is written only for a `ca-pub-` client. Affiliate links use `rel="sponsored nofollow"`. The affiliate file ships empty.
+
+The same data job posts each new material story to X, Telegram, and Discord. `SOCIAL_AUTOPOST` defaults to 1. An adapter runs only when its secrets are set: X needs `X_API_KEY`, `X_API_SECRET`, `X_ACCESS_TOKEN`, and `X_ACCESS_SECRET` (API v2, OAuth 1.0a user context); Telegram needs `TELEGRAM_BOT_TOKEN` and `TELEGRAM_CHAT_ID`; Discord needs `DISCORD_WEBHOOK_URL` and receives a rich embed with the card image. Posted ids are stored in `data/social-posted.json` on the data branch so a later run does not send the same story twice. The step caps each run (`SOCIAL_CAP`, default 8), backs off when X returns 429, and logs a failed post without failing the job. `SOCIAL_DRYRUN=1` logs the text and does not post. Bluesky and Mastodon are stubbed. Do not put these secrets in the repo.
+
 ## Disclaimer
 
 TradeHax is research software. It is not a broker, not investment advice, and not a promise that a high score will make money.

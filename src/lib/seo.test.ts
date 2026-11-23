@@ -17,7 +17,9 @@ describe("page titles", () => {
     const titles = pages(path.resolve("src/app")).map((file) => {
       const source = readFileSync(file, "utf8");
       const match = source.match(/title:\s*"([^"]+)"/);
-      return match?.[1] ?? (file.endsWith(`${path.sep}app${path.sep}page.tsx`) ? "TradeHax Intel" : "");
+      if (match) return match[1];
+      if (source.includes("generateMetadata")) return `generated:${path.relative(path.resolve("src/app"), file)}`;
+      return file.endsWith(`${path.sep}app${path.sep}page.tsx`) ? "TradeHax Intel" : "";
     });
     expect(titles.every(Boolean)).toBe(true);
     expect(new Set(titles).size).toBe(titles.length);

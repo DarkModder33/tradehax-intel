@@ -23,6 +23,9 @@
 # JSON published on the data branch, not on main
 /data/
 
+# Written at build time only when NEXT_PUBLIC_ADSENSE_CLIENT is a pub- id.
+/public/ads.txt
+
 # misc
 .DS_Store
 *.pem
