@@ -17,16 +17,36 @@ function nyDay(ms) {
   return new Intl.DateTimeFormat("en-CA", { timeZone: "America/New_York", year: "numeric", month: "2-digit", day: "2-digit" }).format(new Date(ms));
 }
 
-async function getJson(url, timeoutMs = 20000) {
+async function getJson(url, timeoutMs = 20000, retries = 2) {
   const controller = new AbortController();
   const timer = setTimeout(() => controller.abort(), timeoutMs);
   try {
     const response = await fetch(url, { signal: controller.signal, headers: { accept: "application/json" } });
+    if (response.status === 429 && retries > 0) {
+      await new Promise((resolve) => setTimeout(resolve, 20000));
+      return getJson(url, timeoutMs, retries - 1);
+    }
     if (!response.ok) throw new Error(`${response.status}`);
     return await response.json();
   } finally {
     clearTimeout(timer);
   }
+}
+
+/** Daily rows from the news job's bar cache: { SYM: [{ date, close, volume }] }. */
+export function closesFromCache(cache, symbols, now) {
+  const rows = [];
+  const today = Date.parse(`${nyDay(now.getTime())}T00:00:00Z`);
+  for (const sym of symbols) {
+    const bars = (cache?.[sym] ?? []).filter((bar) => Number(bar.close) > 0);
+    if (bars.length < 2) continue;
+    const last = bars.at(-1);
+    if (today - Date.parse(`${last.date}T00:00:00Z`) > 4 * 86_400_000) continue;
+    const volumes = bars.slice(0, -1).slice(-20).map((bar) => Number(bar.volume)).filter((value) => value > 0);
+    const avg = volumes.length ? volumes.reduce((sum, value) => sum + value, 0) / volumes.length : 0;
+    rows.push({ ticker: sym, date: last.date, close: Number(last.close), previous: Number(bars.at(-2).close), volumeRatio: avg > 0 ? Number(last.volume) / avg : null });
+  }
+  return rows;
 }
 
 export async function dailyCloses(base, symbols, now) {
@@ -86,7 +106,9 @@ export async function generate({ dataDir, base, now = new Date(), log = console.
     } catch (error) {
       log(`alerts: worker tape failed: ${error instanceof Error ? error.message : error}`);
     }
-    add("movers", moverAlerts(await dailyCloses(base, [...DEFAULT_UNIVERSE], now)));
+    const cache = process.env.BARS_CACHE ? await readJson(process.env.BARS_CACHE) : null;
+    const cached = cache ? closesFromCache(cache, [...DEFAULT_UNIVERSE], now) : [];
+    add("movers", moverAlerts(cached.length >= 20 ? cached : await dailyCloses(base, [...DEFAULT_UNIVERSE], now)));
   }
   const refused = fresh.filter((alert) => validateAlert(alert, now).length > 0);
   for (const alert of refused.slice(0, 10)) log(`alerts gate: refused ${alert.id}: ${validateAlert(alert, now).join("; ")}`);

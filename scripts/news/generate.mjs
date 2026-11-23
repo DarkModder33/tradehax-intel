@@ -35,11 +35,16 @@ const DESK_SYMBOLS = ["SPY", "QQQ", "IWM", "DIA", "SMH", "GLD", "TLT", "HYG", "X
   "AAPL", "MSFT", "NVDA", "AMZN", "GOOGL", "META", "TSLA", "AVGO", "BRKB", "JPM", "V", "UNH", "XOM", "LLY", "MA", "COST", "HD", "PG", "JNJ",
   "BAC", "AMD", "NFLX", "CRM", "ORCL", "KO", "WMT", "CVX", "MRK", "ABBV", "PLTR", "COIN", "MSTR", "BA"];
 
-async function getJson(url) {
+async function getJson(url, retries = 2) {
   const controller = new AbortController();
   const timer = setTimeout(() => controller.abort(), 20000);
   try {
     const response = await fetch(url, { signal: controller.signal, headers: { accept: "application/json" } });
+    // The worker allows 60 requests a minute per IP; wait out a 429 instead of dropping the symbol.
+    if (response.status === 429 && retries > 0) {
+      await new Promise((resolve) => setTimeout(resolve, 20000));
+      return getJson(url, retries - 1);
+    }
     if (!response.ok) throw new Error(String(response.status));
     return await response.json();
   } finally {
@@ -68,6 +73,8 @@ async function loadBars() {
 }
 
 input.bars = await loadBars();
+// The alert job reuses these bars instead of spending the worker's rate limit twice.
+if (process.env.BARS_CACHE) await writeFile(process.env.BARS_CACHE, JSON.stringify(input.bars)).catch(() => {});
 input.headlines = {};
 for (const sym of headlineTickers(input.bars)) {
   try {

@@ -76,12 +76,14 @@ jobs:
           NEWS_OUT: /tmp/tradehax-data/data/news/stories.json
           NEWS_FILE: /tmp/tradehax-data/data/news/stories.json
           INDEXNOW: "1"
+          BARS_CACHE: /tmp/tradehax-bars.json
           WORKER_URL: ${{ vars.WORKER_URL || 'https://tradehax-intel-worker-bf2f623ce81a.herokuapp.com' }}
 
       - name: Generate alerts
         run: node --experimental-strip-types scripts/alerts/generate.mjs || echo "alerts generate failed"
         env:
           DATA_DIR: /tmp/tradehax-data/data
+          BARS_CACHE: /tmp/tradehax-bars.json
           WORKER_URL: ${{ vars.WORKER_URL || 'https://tradehax-intel-worker-bf2f623ce81a.herokuapp.com' }}
 
       - name: Post stories
