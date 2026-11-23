@@ -153,3 +153,15 @@ Live checks (3:15 PM ET, through `curl --resolve`): `/`, `/news/`, `/news/feed.x
 | 4:54 PM | c3e47f9 | Earnings story wording: ± implied, states the straddle source and expiry, and drops the stale "not backfilled" line. The WMT story went out at 4:53 PM ET with the old wording. Its numbers are correct. |
 
 Data run 45273858568 ✅: congress 1002 rows, earnings-moves 128 rows (32 names, all with an implied), 6 upcoming. Before and after screenshots are on the box in `/workspace/tradehax-shots/{before,after}/`.
+
+**v2: menus, redesign, alerts vs news, Nov 23 (evening)**: from Mike's feedback that the site was cluttered, the menus stayed open, and the news read like templated blurbs. All commits are GitHub-only and **need an Origin backport**, in this order.
+
+| SHA | Change |
+|---|---|
+| 3433b80 | Menus: one state machine (`src/lib/nav/menu-state.ts`) for the dropdowns, the mobile drawer and ⌘K. Each closes on outside click, Escape, route change and item select. Only one is open at a time. Hover intent (90 ms open, 180 ms close) on desktop, tap on touch, `aria-expanded` on every trigger, and animated panels. Nav regrouped into Markets, Flow, Options, Research, News, Alerts. Flat near-black palette. The old `/alerts/` rules page moved to `/alerts/rules/`. |
+| d3b48a0 | Alerts: `src/lib/alerts/feed.ts` (9 types, validation gate, merge with first-seen times), `scripts/alerts/generate.mjs` builds `data/alerts.json`, the `/alerts/` page has filters and refreshes the tape from the worker every 30 s, and `scripts/social/alerts.mjs` posts one-liners to Telegram and Discord (5 per run, 30 per day, 2 per type, tape only at $1M or more, deduped as `alert:<id>` in the ledger, with message ids). |
+| 5afa3ce | Redesign: home is a hero line, a market strip bar, alerts, top stories, net premium leaders and dealer gamma. The signal desk moved to `/desk/`. Flat page frame, source lines replace badge pills, the ticker page gets an alerts column, quieter form controls, and touch targets are scoped to controls. |
+| 7ad5a32 | News: `scripts/news/desk.mjs` writes movers, sector rotation, earnings recaps and options positioning, each with a why-headline, lede, context, data table and what-to-watch, behind a substance gate plus `validateStory`. The templated types (short interest, FTD, OI, IV, macro) are left to alerts. Older stories stay online under "Earlier desk notes". |
+| b1661a3 | The alert job reuses the news job's bars (the worker allows 60 requests a minute per IP), with one retry after a 429. |
+
+Data run 45287777424 ✅: 6 desk stories, 52 alerts, 4 desk stories and 2 alert one-liners posted to Telegram (24–29) and Discord. Menu checks: 13/13 pass live (`/tmp/crawl/menus.mjs`). Screenshots are in `/workspace/tradehax-shots/v2/{before,after}/`.

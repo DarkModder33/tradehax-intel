@@ -178,6 +178,8 @@ The ledger (`data/social-posted.json`) records the networks posted per story id.
 | 6 | ~~Make the data and news schedule reliable~~ done Nov 23 (gotcha 9). Backport the Nov 23 evening GitHub-only commits listed in BUILD_LOG to Origin. | Origin agent |
 | 7 | **MIT LICENSE**: deferred by Mike. Do not add it until he says so. | Mike |
 | 9 | Delete the 3 false Treasury (DGS2/DGS10/DGS30) posts on Discord by hand. They predate message-id logging. | Mike |
+| 12 | Backport the v2 commits (3433b80, d3b48a0, 5afa3ce, 7ad5a32, b1661a3, and the docs commit) to Origin | Origin agent |
+| 13 | Alert posting knobs (repo variables): `SOCIAL_ALERTS=0` turns it off; `SOCIAL_ALERT_CAP` (5) and `SOCIAL_ALERT_DAY_CAP` (30) | — |
 | 10 | Backport the premium push (647d0dc, aca34c1, 1af13cd, 55364ee, 0b01476, f40a82c, 9a924bb, c3e47f9, and the docs commit) to Origin | Origin agent |
 | 11 | Senate trades: eFD needs the agreement cookie flow. Push alerts and 13F are deferred. | — |
 | 8 | Optional: `SEC_USER_AGENT` with a real contact, and rename the Telegram link to `tradehaxintel` | — |
