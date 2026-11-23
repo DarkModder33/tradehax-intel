@@ -638,10 +638,16 @@ function earningsStories(file, fallbackDay) {
   const day = dayOf(asOf, fallbackDay);
   const stories = [];
   for (const row of rowsOf(file)) {
-    const ticker = String(row.symbol ?? row.ticker ?? "").toUpperCase();
+    const ticker = String(row.sym ?? row.symbol ?? row.ticker ?? "").toUpperCase();
     const implied = asMove(row.implied ?? row.impliedMove);
     const realized = asMove(row.realized ?? row.realizedMove);
-    if (!ticker || implied == null || realized == null) continue;
+    if (!ticker || implied == null || realized == null || !(Math.abs(implied) > 0)) continue;
+    // Only a report whose reaction closed in the last few days is news. The history file
+    // holds four quarters per name, and an old quarter must not resurface as today's story.
+    const after = String(row.afterDate ?? "").slice(0, 10);
+    const afterAt = Date.parse(`${after}T00:00:00Z`);
+    const dayAt = Date.parse(`${day}T00:00:00Z`);
+    if (!Number.isFinite(afterAt) || dayAt - afterAt > 3 * 86_400_000 || afterAt - dayAt > 86_400_000) continue;
     const gap = Math.abs(realized) - Math.abs(implied);
     if (Math.abs(gap) < THRESHOLDS.earningsGap) continue;
     const facts = { ticker, implied: pct(implied), realized: pct(realized), gap: pct(gap) };
@@ -650,7 +656,7 @@ function earningsStories(file, fallbackDay) {
       `Implied move on the stored row is ${facts.implied}. Realized move is ${facts.realized}. The difference of absolute values is ${facts.gap}.`,
       `The story runs when that difference is at least ${plain(THRESHOLDS.earningsGap * 100, 0)} percentage points. Smaller gaps stay in the file.`,
       "Past implied moves are not backfilled. If the earnings file is empty, there is no recap.",
-      `The row date used for this story is ${row.date ?? row.asOf ?? day}. The source timestamp is ${asOf}.`,
+      `The report date is ${row.reportDate ?? "not on the row"}. The move runs from the close on ${row.beforeDate ?? "the prior session"} to the close on ${after}, so it holds the reaction whether the report came before the open or after the close.`,
       "Implied is the move that was stored from the chain before the event. Realized is the later close-to-close move saved with it. If either field is missing, the name is skipped.",
       "The comparison uses absolute values, so a down realized move and an up implied move are measured by size. The sign of the realized move is still printed in the table.",
       ...measureBlock([
@@ -664,8 +670,9 @@ function earningsStories(file, fallbackDay) {
       type: "earnings",
       ticker,
       tickers: [ticker],
-      day,
+      day: dayOf(row.reportDate, day),
       asOf,
+      dataDate: after,
       headline: `${ticker} realized ${facts.realized} versus implied ${facts.implied}`,
       dek: `Implied versus realized gap ${facts.gap} for ${ticker}.`,
       body,

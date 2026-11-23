@@ -79,7 +79,7 @@ describe("story generator", () => {
         meta: { asOf, source: "Cboe open interest", unavailable: false },
         rows: [{ symbol: "ZZ261218C00100000", previous: 1000, current: 1800, change: 800 }],
       },
-      earnings: { meta: { asOf, source: "Cboe straddle vs later close" }, rows: [{ symbol: "ZZ", implied: 0.04, realized: 0.09 }] },
+      earnings: { meta: { asOf, source: "Cboe straddle vs later close" }, rows: [{ sym: "ZZ", reportDate: "2026-11-13", beforeDate: "2026-11-12", afterDate: "2026-11-14", implied: 0.04, realized: 0.09 }] },
       iv: { meta: { asOf, source: "Cboe iv30" }, rows: [] },
       ivHistory: { series: { ZZ: history } },
     });

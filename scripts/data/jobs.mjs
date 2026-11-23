@@ -5,6 +5,7 @@ import { parseNavHistory } from "../../src/lib/datasets/nav.ts";
 import { monthlyReturns } from "../../src/lib/datasets/seasonality.ts";
 import { DEFAULT_UNIVERSE } from "../../src/lib/live/universe.ts";
 import { appendIvHistory } from "../../src/lib/options/ivrank.ts";
+import { averageAbsMove, candidateExpiries, candidateStrikes, mergeEarningsRows, occSymbol, parseSurprise, parseUpcoming, straddleFromBars, straddleImplied, windowMove } from "../../src/lib/datasets/earnings-history.ts";
 import { appendOptionsDays, optionsDay, sessionDate, toDayContracts } from "../../src/lib/datasets/options-day.ts";
 import { oiChanges } from "../../src/lib/datasets/oi.ts";
 import { readFile } from "node:fs/promises";
@@ -762,14 +763,145 @@ export async function macro() {
   return packed;
 }
 
+const NO_EARNINGS = new Set(["SPY", "QQQ", "IWM", "DIA", "GLD", "TLT", "HYG", "SMH", "XLK", "XLF", "XLE", "XLV", "XLY", "XLI", "XLB", "XLU", "XLRE", "XLC", "XLP", "SPX", "VIX", "ARKK", "SLV", "USO", "EEM", "EFA", "KRE", "XBI", "SOXL", "TQQQ", "SQQQ"]);
+const EARNINGS_REFRESH_HOURS = 6;
+
+async function nasdaqJson(url) {
+  const response = await grabRetry(url, {
+    headers: { "user-agent": BROWSER, accept: "application/json, text/plain, */*", origin: "https://www.nasdaq.com", referer: "https://www.nasdaq.com/" },
+  }, 20000, 2);
+  return parseJsonLoose(await response.text());
+}
+
+async function workerDaily(symbol) {
+  const base = (process.env.WORKER_URL ?? "https://tradehax-intel-worker-bf2f623ce81a.herokuapp.com").replace(/\/$/, "");
+  const response = await grabRetry(`${base}/v1/bars/${encodeURIComponent(symbol)}?tf=1Day&limit=400`, {}, 30000, 2);
+  const body = await response.json();
+  return Array.isArray(body?.bars) ? body.bars : [];
+}
+
+/** Historical ATM straddle from Alpaca daily option bars. Null without keys or data. */
+async function alpacaStraddle(symbol, window, reportDate) {
+  const key = process.env.ALPACA_KEY_ID;
+  const secret = process.env.ALPACA_SECRET;
+  if (!key || !secret) return null;
+  const symbols = [];
+  for (const expiry of candidateExpiries(reportDate, 2)) {
+    for (const strike of candidateStrikes(window.closeBefore).slice(0, 6)) {
+      symbols.push(occSymbol(symbol, expiry, "C", strike), occSymbol(symbol, expiry, "P", strike));
+    }
+  }
+  const start = new Date(Date.parse(`${window.beforeDate}T00:00:00Z`) - 3 * 86_400_000).toISOString().slice(0, 10);
+  const params = new URLSearchParams({ symbols: symbols.slice(0, 100).join(","), timeframe: "1Day", start, end: window.beforeDate, limit: "1000" });
+  try {
+    const response = await grab(`https://data.alpaca.markets/v1beta1/options/bars?${params}`, { headers: { "APCA-API-KEY-ID": key, "APCA-API-SECRET-KEY": secret } }, 20000);
+    const body = await response.json();
+    return straddleFromBars(body?.bars ?? {}, window.beforeDate, window.closeBefore);
+  } catch {
+    return null;
+  }
+}
+
+/**
+ * Implied vs actual earnings moves for the universe: the last four reports from Nasdaq's
+ * earnings-surprise table, the two-session close-to-close move from Alpaca SIP daily bars
+ * (via the worker), and the pre-report ATM straddle. Straddles are captured from the Cboe
+ * chain before each upcoming report and kept; older reports use Alpaca option bars when
+ * they answer, and otherwise stay blank rather than estimated.
+ */
 export async function earningsMoves() {
   const prior = await readPrior("earnings-moves.json");
-  const rows = Array.isArray(prior?.rows) ? prior.rows : [];
-  const packed = pack("Cboe straddle vs later close", rows, {
+  const priorAt = Date.parse(prior?.meta?.asOf ?? "");
+  const hasHistory = Array.isArray(prior?.rows) && prior.rows.some((row) => row?.realized != null);
+  if (hasHistory && Number.isFinite(priorAt) && Date.now() - priorAt < EARNINGS_REFRESH_HOURS * 3_600_000 && process.env.EARNINGS_FORCE !== "1") {
+    return prior;
+  }
+  const today = new Date().toISOString().slice(0, 10);
+  const captures = { ...(prior?.captures ?? {}) };
+  const priorRows = (prior?.rows ?? []).filter((row) => row && row.realized != null && row.closeBefore > 0);
+  const rows = [];
+  const upcoming = [];
+  const errors = [];
+  let alpacaHits = 0;
+  for (const symbol of UNIVERSE.filter((name) => !NO_EARNINGS.has(name))) {
+    try {
+      const [surprise, dateBody] = await Promise.all([
+        nasdaqJson(`https://api.nasdaq.com/api/company/${encodeURIComponent(symbol)}/earnings-surprise`).then(parseSurprise).catch(() => []),
+        nasdaqJson(`https://api.nasdaq.com/api/analyst/${encodeURIComponent(symbol)}/earnings-date`).catch(() => null),
+      ]);
+      const bars = surprise.length ? await workerDaily(symbol) : [];
+      const mine = [];
+      for (const report of surprise) {
+        const window = windowMove(bars, report.reportDate);
+        if (!window) continue;
+        const known = priorRows.find((row) => row.sym === symbol && row.reportDate === report.reportDate);
+        const captured = captures[`${symbol}|${report.reportDate}`];
+        let implied = captured?.implied ?? known?.implied ?? null;
+        let impliedSource = captured ? "Cboe straddle captured before the report" : (known?.impliedSource ?? null);
+        let impliedExpiry = captured?.expiry ?? known?.impliedExpiry ?? null;
+        if (implied == null && !known?.alpacaTried) {
+          const hist = await alpacaStraddle(symbol, window, report.reportDate);
+          if (hist) {
+            implied = hist.implied;
+            impliedSource = "Alpaca option bars, ATM straddle close";
+            impliedExpiry = hist.expiry;
+            alpacaHits += 1;
+          }
+        }
+        mine.push({
+          sym: symbol,
+          reportDate: report.reportDate,
+          fiscalQuarter: report.fiscalQuarter || null,
+          surprisePct: report.surprisePct,
+          ...window,
+          realized: window.move,
+          implied,
+          impliedSource,
+          impliedExpiry,
+          alpacaTried: implied == null ? true : undefined,
+        });
+      }
+      for (const row of mine) delete row.move;
+      rows.push(...mine);
+      const next = parseUpcoming(dateBody);
+      if (next && next >= today) {
+        const days = (Date.parse(`${next}T00:00:00Z`) - Date.parse(`${today}T00:00:00Z`)) / 86_400_000;
+        let implied = null;
+        let expiry = null;
+        let spot = null;
+        if (days <= 14) {
+          try {
+            const chain = await loadOptionChain(symbol, { fetcher: fetch, sleep: () => Promise.resolve() });
+            spot = typeof chain?.data?.current_price === "number" ? chain.data.current_price : null;
+            const straddle = straddleImplied(chain?.data?.options ?? [], spot, next);
+            if (straddle) {
+              implied = straddle.implied;
+              expiry = straddle.expiry;
+              // Captured on every run before the report day; the last one before the event is kept.
+              if (today < next) captures[`${symbol}|${next}`] = { implied, expiry, spot, at: new Date().toISOString() };
+            }
+          } catch (error) {
+            errors.push(`${symbol} chain: ${error instanceof Error ? error.message : error}`);
+          }
+        }
+        const avg = averageAbsMove(mine);
+        upcoming.push({ sym: symbol, reportDate: next, implied, impliedExpiry: expiry, spot, avgMove: avg, samples: mine.length, capturedAt: new Date().toISOString() });
+      }
+    } catch (error) {
+      errors.push(`${symbol}: ${error instanceof Error ? error.message : error}`);
+    }
+    await new Promise((resolve) => setTimeout(resolve, 250));
+  }
+  if (rows.length === 0) return failed("Nasdaq earnings surprise", new Error(errors[0] ?? "No report dates matched daily bars."));
+  const merged = mergeEarningsRows(priorRows, rows);
+  const withImplied = merged.filter((row) => row.implied != null).length;
+  const packed = pack("Nasdaq report dates, Alpaca SIP closes, Cboe/Alpaca straddles", merged, {
     delay: "daily",
-    note: "Building. Upcoming implied moves are stored when a calendar row and a Cboe chain both answer. Past implied moves are not invented. Nasdaq earnings-surprise is unverified and is not used to fill implied history.",
+    note: `${merged.length} reports across ${new Set(merged.map((row) => row.sym)).size} names. ${withImplied} have a pre-report straddle (${alpacaHits} filled from Alpaca option bars this run); the rest show the actual move only. Actual move is the close before the report date to the first close after it.`,
   });
-  packed.meta.unavailable = false;
+  packed.upcoming = upcoming.sort((a, b) => (a.reportDate < b.reportDate ? -1 : 1));
+  packed.captures = Object.fromEntries(Object.entries(captures).filter(([key]) => key.split("|")[1] >= new Date(Date.now() - 400 * 86_400_000).toISOString().slice(0, 10)));
+  if (errors.length) packed.errors = errors.slice(0, 10);
   return packed;
 }
 

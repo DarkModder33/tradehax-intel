@@ -122,3 +122,12 @@ describe("options day", () => {
     expect(sessionDate(new Date("2026-11-24T02:00:00Z"))).toBe("2026-11-23");
   });
 });
+
+describe("earnings recap recency", () => {
+  const file = (afterDate: string) => ({ meta: { asOf, source: "earnings" }, rows: [{ sym: "ZZ", reportDate: "2026-08-20", beforeDate: "2026-08-19", afterDate, implied: 0.05, realized: -0.11 }] });
+  it("writes a recap only for a reaction that closed in the last few days", () => {
+    expect(buildStories({ earnings: file("2026-11-21") }, { now: NOW }).map((story: { type: string }) => story.type)).toEqual(["earnings"]);
+    expect(buildStories({ earnings: file("2026-08-21") }, { now: NOW })).toEqual([]);
+    expect(buildStories({ earnings: file("") }, { now: NOW })).toEqual([]);
+  });
+});
