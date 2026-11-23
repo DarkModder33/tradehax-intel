@@ -1,6 +1,6 @@
 {
   "meta": {
-    "asOf": "2026-11-23T21:43:18.202Z",
+    "asOf": "2026-11-23T21:52:04.432Z",
     "source": "SEC EDGAR Form 4",
     "rows": 25,
     "delay": "hours",
@@ -247,6 +247,23 @@
       }
     },
     {
+      "id": "0002110097-26-000003:primary_doc.xml",
+      "filed": "2026-11-19",
+      "names": [
+        "DiRocco Ryan Anthony  (CIK 0002110097)",
+        "QumulusAI, Inc.  (CIK 0002084026)"
+      ],
+      "trade": {
+        "owner": "DiRocco Ryan Anthony",
+        "ticker": "QMLS",
+        "code": "S",
+        "shares": 6471,
+        "price": 2.52,
+        "acquired": false,
+        "form": "4"
+      }
+    },
+    {
       "id": "0002099428-26-000006:primary_doc.xml",
       "filed": "2026-11-04",
       "names": [
@@ -411,23 +428,6 @@
         "ticker": "QMLS",
         "code": "S",
         "shares": 26117,
-        "price": 2.45,
-        "acquired": false,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002094859-26-000004:primary_doc.xml",
-      "filed": "2026-11-19",
-      "names": [
-        "Gahan Patrick Joseph  (CIK 0002094859)",
-        "QumulusAI, Inc.  (CIK 0002084026)"
-      ],
-      "trade": {
-        "owner": "Gahan Patrick Joseph",
-        "ticker": "QMLS",
-        "code": "S",
-        "shares": 51904,
         "price": 2.45,
         "acquired": false,
         "form": "4"

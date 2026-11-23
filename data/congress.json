@@ -1,13 +1,51 @@
 {
   "meta": {
-    "asOf": "2026-11-23T21:43:21.161Z",
+    "asOf": "2026-11-23T21:52:04.700Z",
     "source": "House Clerk periodic transaction reports",
-    "rows": 1016,
+    "rows": 1002,
     "delay": "daily",
     "stale": false,
     "unavailable": false
   },
   "rows": [
+    {
+      "ticker": "VZ",
+      "asset": "Verizon Communications Inc. Common Stock (VZ)",
+      "assetType": "ST",
+      "type": "Partial sale",
+      "owner": "Self",
+      "transactionDate": "2026-11-19",
+      "notifiedDate": "2026-11-19",
+      "amount": "$50,001 - $100,000",
+      "amountLow": 50001,
+      "amountHigh": 100000,
+      "member": "Jennifer McClellan",
+      "party": "Democrat",
+      "chamber": "House",
+      "district": "VA04",
+      "filed": "2026-11-20",
+      "docId": "20036883",
+      "url": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20036883.pdf"
+    },
+    {
+      "ticker": "AAPL",
+      "asset": "Apple Inc. - Common Stock (AAPL)",
+      "assetType": "ST",
+      "type": "Purchase",
+      "owner": "SP",
+      "transactionDate": "2026-11-16",
+      "notifiedDate": "2026-11-21",
+      "amount": "$1,001 - $15,000",
+      "amountLow": 1001,
+      "amountHigh": 15000,
+      "member": "Ed Case",
+      "party": "Democrat",
+      "chamber": "House",
+      "district": "HI01",
+      "filed": "2026-11-21",
+      "docId": "20036891",
+      "url": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20036891.pdf"
+    },
     {
       "ticker": "COST",
       "asset": "Costco Wholesale Corporation - Common Stock (COST)",
@@ -16957,310 +16995,6 @@
       "url": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035147.pdf"
     },
     {
-      "ticker": "AMAT",
-      "asset": "Applied Materials, Inc. - Common Stock (AMAT)",
-      "assetType": "ST",
-      "type": "Purchase",
-      "owner": "DC",
-      "transactionDate": "2026-06-18",
-      "notifiedDate": "2026-06-30",
-      "amount": "$1,001 - $15,000",
-      "amountLow": 1001,
-      "amountHigh": 15000,
-      "member": "Jared Moskowitz",
-      "party": "Democrat",
-      "chamber": "House",
-      "district": "FL23",
-      "filed": "2026-07-26",
-      "docId": "20034963",
-      "url": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20034963.pdf"
-    },
-    {
-      "ticker": "AMAT",
-      "asset": "Applied Materials, Inc. - Common Stock (AMAT)",
-      "assetType": "ST",
-      "type": "Purchase",
-      "owner": "DC",
-      "transactionDate": "2026-06-18",
-      "notifiedDate": "2026-06-30",
-      "amount": "$1,001 - $15,000",
-      "amountLow": 1001,
-      "amountHigh": 15000,
-      "member": "Jared Moskowitz",
-      "party": "Democrat",
-      "chamber": "House",
-      "district": "FL23",
-      "filed": "2026-07-26",
-      "docId": "20034963",
-      "url": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20034963.pdf"
-    },
-    {
-      "ticker": "AMAT",
-      "asset": "Applied Materials, Inc. - Common Stock (AMAT)",
-      "assetType": "ST",
-      "type": "Purchase",
-      "owner": "Self",
-      "transactionDate": "2026-06-18",
-      "notifiedDate": "2026-06-30",
-      "amount": "$1,001 - $15,000",
-      "amountLow": 1001,
-      "amountHigh": 15000,
-      "member": "Jared Moskowitz",
-      "party": "Democrat",
-      "chamber": "House",
-      "district": "FL23",
-      "filed": "2026-07-26",
-      "docId": "20034963",
-      "url": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20034963.pdf"
-    },
-    {
-      "ticker": "HCA",
-      "asset": "HCA Healthcare, Inc. Common Stock (HCA)",
-      "assetType": "ST",
-      "type": "Purchase",
-      "owner": "DC",
-      "transactionDate": "2026-06-17",
-      "notifiedDate": "2026-06-30",
-      "amount": "$1,001 - $15,000",
-      "amountLow": 1001,
-      "amountHigh": 15000,
-      "member": "Jared Moskowitz",
-      "party": "Democrat",
-      "chamber": "House",
-      "district": "FL23",
-      "filed": "2026-07-26",
-      "docId": "20034963",
-      "url": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20034963.pdf"
-    },
-    {
-      "ticker": "HCA",
-      "asset": "HCA Healthcare, Inc. Common Stock (HCA)",
-      "assetType": "ST",
-      "type": "Purchase",
-      "owner": "Self",
-      "transactionDate": "2026-06-17",
-      "notifiedDate": "2026-06-30",
-      "amount": "$1,001 - $15,000",
-      "amountLow": 1001,
-      "amountHigh": 15000,
-      "member": "Jared Moskowitz",
-      "party": "Democrat",
-      "chamber": "House",
-      "district": "FL23",
-      "filed": "2026-07-26",
-      "docId": "20034963",
-      "url": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20034963.pdf"
-    },
-    {
-      "ticker": "HD",
-      "asset": "Home Depot, Inc. (HD)",
-      "assetType": "ST",
-      "type": "Purchase",
-      "owner": "Self",
-      "transactionDate": "2026-06-17",
-      "notifiedDate": "2026-06-30",
-      "amount": "$1,001 - $15,000",
-      "amountLow": 1001,
-      "amountHigh": 15000,
-      "member": "Jared Moskowitz",
-      "party": "Democrat",
-      "chamber": "House",
-      "district": "FL23",
-      "filed": "2026-07-26",
-      "docId": "20034963",
-      "url": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20034963.pdf"
-    },
-    {
-      "ticker": "META",
-      "asset": "Meta Platforms, Inc. - Class A Common Stock (META)",
-      "assetType": "ST",
-      "type": "Purchase",
-      "owner": "DC",
-      "transactionDate": "2026-06-17",
-      "notifiedDate": "2026-06-30",
-      "amount": "$1,001 - $15,000",
-      "amountLow": 1001,
-      "amountHigh": 15000,
-      "member": "Jared Moskowitz",
-      "party": "Democrat",
-      "chamber": "House",
-      "district": "FL23",
-      "filed": "2026-07-26",
-      "docId": "20034963",
-      "url": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20034963.pdf"
-    },
-    {
-      "ticker": "META",
-      "asset": "Meta Platforms, Inc. - Class A Common Stock (META)",
-      "assetType": "ST",
-      "type": "Purchase",
-      "owner": "Self",
-      "transactionDate": "2026-06-17",
-      "notifiedDate": "2026-06-30",
-      "amount": "$1,001 - $15,000",
-      "amountLow": 1001,
-      "amountHigh": 15000,
-      "member": "Jared Moskowitz",
-      "party": "Democrat",
-      "chamber": "House",
-      "district": "FL23",
-      "filed": "2026-07-26",
-      "docId": "20034963",
-      "url": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20034963.pdf"
-    },
-    {
-      "ticker": "MSFT",
-      "asset": "Microsoft Corporation - Common Stock (MSFT)",
-      "assetType": "ST",
-      "type": "Purchase",
-      "owner": "DC",
-      "transactionDate": "2026-06-17",
-      "notifiedDate": "2026-06-30",
-      "amount": "$1,001 - $15,000",
-      "amountLow": 1001,
-      "amountHigh": 15000,
-      "member": "Jared Moskowitz",
-      "party": "Democrat",
-      "chamber": "House",
-      "district": "FL23",
-      "filed": "2026-07-26",
-      "docId": "20034963",
-      "url": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20034963.pdf"
-    },
-    {
-      "ticker": "MSFT",
-      "asset": "Microsoft Corporation - Common Stock (MSFT)",
-      "assetType": "ST",
-      "type": "Purchase",
-      "owner": "Self",
-      "transactionDate": "2026-06-17",
-      "notifiedDate": "2026-06-30",
-      "amount": "$1,001 - $15,000",
-      "amountLow": 1001,
-      "amountHigh": 15000,
-      "member": "Jared Moskowitz",
-      "party": "Democrat",
-      "chamber": "House",
-      "district": "FL23",
-      "filed": "2026-07-26",
-      "docId": "20034963",
-      "url": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20034963.pdf"
-    },
-    {
-      "ticker": "MNST",
-      "asset": "Monster Beverage Corporation - Common Stock (MNST)",
-      "assetType": "ST",
-      "type": "Purchase",
-      "owner": "DC",
-      "transactionDate": "2026-06-17",
-      "notifiedDate": "2026-06-30",
-      "amount": "$1,001 - $15,000",
-      "amountLow": 1001,
-      "amountHigh": 15000,
-      "member": "Jared Moskowitz",
-      "party": "Democrat",
-      "chamber": "House",
-      "district": "FL23",
-      "filed": "2026-07-26",
-      "docId": "20034963",
-      "url": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20034963.pdf"
-    },
-    {
-      "ticker": "MNST",
-      "asset": "Monster Beverage Corporation - Common Stock (MNST)",
-      "assetType": "ST",
-      "type": "Purchase",
-      "owner": "Self",
-      "transactionDate": "2026-06-17",
-      "notifiedDate": "2026-06-30",
-      "amount": "$1,001 - $15,000",
-      "amountLow": 1001,
-      "amountHigh": 15000,
-      "member": "Jared Moskowitz",
-      "party": "Democrat",
-      "chamber": "House",
-      "district": "FL23",
-      "filed": "2026-07-26",
-      "docId": "20034963",
-      "url": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20034963.pdf"
-    },
-    {
-      "ticker": "SPGI",
-      "asset": "S&P Global Inc. Common Stock (SPGI)",
-      "assetType": "ST",
-      "type": "Sale",
-      "owner": "DC",
-      "transactionDate": "2026-06-17",
-      "notifiedDate": "2026-06-30",
-      "amount": "$1,001 - $15,000",
-      "amountLow": 1001,
-      "amountHigh": 15000,
-      "member": "Jared Moskowitz",
-      "party": "Democrat",
-      "chamber": "House",
-      "district": "FL23",
-      "filed": "2026-07-26",
-      "docId": "20034963",
-      "url": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20034963.pdf"
-    },
-    {
-      "ticker": "SPGI",
-      "asset": "S&P Global Inc. Common Stock (SPGI)",
-      "assetType": "ST",
-      "type": "Sale",
-      "owner": "DC",
-      "transactionDate": "2026-06-17",
-      "notifiedDate": "2026-06-30",
-      "amount": "$1,001 - $15,000",
-      "amountLow": 1001,
-      "amountHigh": 15000,
-      "member": "Jared Moskowitz",
-      "party": "Democrat",
-      "chamber": "House",
-      "district": "FL23",
-      "filed": "2026-07-26",
-      "docId": "20034963",
-      "url": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20034963.pdf"
-    },
-    {
-      "ticker": "SPGI",
-      "asset": "S&P Global Inc. Common Stock (SPGI)",
-      "assetType": "ST",
-      "type": "Sale",
-      "owner": "Self",
-      "transactionDate": "2026-06-17",
-      "notifiedDate": "2026-06-30",
-      "amount": "$1,001 - $15,000",
-      "amountLow": 1001,
-      "amountHigh": 15000,
-      "member": "Jared Moskowitz",
-      "party": "Democrat",
-      "chamber": "House",
-      "district": "FL23",
-      "filed": "2026-07-26",
-      "docId": "20034963",
-      "url": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20034963.pdf"
-    },
-    {
-      "ticker": "SPCX",
-      "asset": "Space Exploration Technologies Corp. - Class A Common Stock (SPCX)",
-      "assetType": "ST",
-      "type": "Purchase",
-      "owner": "Self",
-      "transactionDate": "2026-06-12",
-      "notifiedDate": "2026-06-30",
-      "amount": "$1,001 - $15,000",
-      "amountLow": 1001,
-      "amountHigh": 15000,
-      "member": "Jared Moskowitz",
-      "party": "Democrat",
-      "chamber": "House",
-      "district": "FL23",
-      "filed": "2026-07-26",
-      "docId": "20034963",
-      "url": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20034963.pdf"
-    },
-    {
       "ticker": "STRC",
       "asset": "2000164032 Strategy Inc - Variable Rate Series A Perpetual Stretch Preferred Stock (STRC)",
       "assetType": "ST",
@@ -19313,7 +19047,7 @@
       "url": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035147.pdf"
     }
   ],
-  "note": "1,016 trades parsed from 137 electronic House filings in the last 120 days. 23 scanned paper filings have no text and are linked, not parsed.",
+  "note": "1,002 trades parsed from 137 electronic House filings in the last 120 days. 23 scanned paper filings have no text and are linked, not parsed.",
   "counts": {
     "filings": 160,
     "parsed": 137,
@@ -19326,7 +19060,7 @@
       "status": "parsed"
     },
     {
-      "docId": "20036849",
+      "docId": "20036864",
       "status": "parsed"
     },
     {
@@ -19334,11 +19068,11 @@
       "status": "parsed"
     },
     {
-      "docId": "20035811",
+      "docId": "20036849",
       "status": "parsed"
     },
     {
-      "docId": "20036864",
+      "docId": "20035811",
       "status": "parsed"
     },
     {
@@ -19346,19 +19080,27 @@
       "status": "parsed"
     },
     {
-      "docId": "20035807",
-      "status": "parsed"
-    },
-    {
       "docId": "20035757",
       "status": "parsed"
     },
     {
-      "docId": "20035821",
+      "docId": "20035807",
       "status": "parsed"
     },
     {
       "docId": "20035779",
+      "status": "parsed"
+    },
+    {
+      "docId": "20035831",
+      "status": "parsed"
+    },
+    {
+      "docId": "20035826",
+      "status": "parsed"
+    },
+    {
+      "docId": "20035821",
       "status": "parsed"
     },
     {
@@ -19370,19 +19112,11 @@
       "status": "scanned"
     },
     {
-      "docId": "20035014",
-      "status": "parsed"
-    },
-    {
       "docId": "20035788",
       "status": "parsed"
     },
     {
-      "docId": "20035826",
-      "status": "parsed"
-    },
-    {
-      "docId": "20035831",
+      "docId": "20035014",
       "status": "parsed"
     },
     {
@@ -19402,11 +19136,15 @@
       "status": "parsed"
     },
     {
-      "docId": "20035770",
+      "docId": "20035662",
       "status": "parsed"
     },
     {
-      "docId": "20035662",
+      "docId": "9116399",
+      "status": "scanned"
+    },
+    {
+      "docId": "20035770",
       "status": "parsed"
     },
     {
@@ -19414,11 +19152,11 @@
       "status": "parsed"
     },
     {
-      "docId": "20035751",
+      "docId": "20035763",
       "status": "parsed"
     },
     {
-      "docId": "20035763",
+      "docId": "20035751",
       "status": "parsed"
     },
     {
@@ -19430,8 +19168,8 @@
       "status": "parsed"
     },
     {
-      "docId": "9116399",
-      "status": "scanned"
+      "docId": "20035734",
+      "status": "parsed"
     },
     {
       "docId": "20035591",
@@ -19439,10 +19177,6 @@
     },
     {
       "docId": "20035727",
-      "status": "parsed"
-    },
-    {
-      "docId": "20035734",
       "status": "parsed"
     },
     {
@@ -19462,7 +19196,7 @@
       "status": "parsed"
     },
     {
-      "docId": "9116389",
+      "docId": "9116391",
       "status": "scanned"
     },
     {
@@ -19470,15 +19204,15 @@
       "status": "scanned"
     },
     {
-      "docId": "9116391",
+      "docId": "9116389",
       "status": "scanned"
     },
     {
-      "docId": "20035714",
+      "docId": "20035525",
       "status": "parsed"
     },
     {
-      "docId": "20035525",
+      "docId": "20035714",
       "status": "parsed"
     },
     {
@@ -19486,7 +19220,7 @@
       "status": "parsed"
     },
     {
-      "docId": "20035551",
+      "docId": "20035669",
       "status": "parsed"
     },
     {
@@ -19498,15 +19232,23 @@
       "status": "parsed"
     },
     {
-      "docId": "20035669",
-      "status": "parsed"
-    },
-    {
       "docId": "20035671",
       "status": "parsed"
     },
     {
+      "docId": "20035551",
+      "status": "parsed"
+    },
+    {
       "docId": "20035490",
+      "status": "parsed"
+    },
+    {
+      "docId": "20035660",
+      "status": "parsed"
+    },
+    {
+      "docId": "20035637",
       "status": "parsed"
     },
     {
@@ -19518,14 +19260,6 @@
       "status": "parsed"
     },
     {
-      "docId": "20035637",
-      "status": "parsed"
-    },
-    {
-      "docId": "20035660",
-      "status": "parsed"
-    },
-    {
       "docId": "9116378",
       "status": "scanned"
     },
@@ -19534,11 +19268,11 @@
       "status": "parsed"
     },
     {
-      "docId": "20035648",
+      "docId": "20035627",
       "status": "parsed"
     },
     {
-      "docId": "20035627",
+      "docId": "20035648",
       "status": "parsed"
     },
     {
@@ -19550,11 +19284,11 @@
       "status": "parsed"
     },
     {
-      "docId": "20035622",
+      "docId": "20035635",
       "status": "parsed"
     },
     {
-      "docId": "20035635",
+      "docId": "20035622",
       "status": "parsed"
     },
     {
@@ -19562,11 +19296,15 @@
       "status": "parsed"
     },
     {
-      "docId": "20035539",
-      "status": "parsed"
+      "docId": "9116376",
+      "status": "scanned"
     },
     {
       "docId": "20035590",
+      "status": "parsed"
+    },
+    {
+      "docId": "20035539",
       "status": "parsed"
     },
     {
@@ -19574,15 +19312,11 @@
       "status": "parsed"
     },
     {
-      "docId": "20035558",
-      "status": "parsed"
-    },
-    {
       "docId": "9116361",
       "status": "scanned"
     },
     {
-      "docId": "20035549",
+      "docId": "20035558",
       "status": "parsed"
     },
     {
@@ -19590,11 +19324,15 @@
       "status": "parsed"
     },
     {
-      "docId": "9116356",
-      "status": "scanned"
+      "docId": "20035549",
+      "status": "parsed"
     },
     {
       "docId": "9116357",
+      "status": "scanned"
+    },
+    {
+      "docId": "9116356",
       "status": "scanned"
     },
     {
@@ -19602,15 +19340,11 @@
       "status": "scanned"
     },
     {
-      "docId": "20035555",
-      "status": "parsed"
-    },
-    {
-      "docId": "20035528",
-      "status": "parsed"
-    },
-    {
       "docId": "20035464",
+      "status": "parsed"
+    },
+    {
+      "docId": "20035555",
       "status": "parsed"
     },
     {
@@ -19618,12 +19352,12 @@
       "status": "parsed"
     },
     {
-      "docId": "20035491",
+      "docId": "20035528",
       "status": "parsed"
     },
     {
-      "docId": "9116376",
-      "status": "scanned"
+      "docId": "20035491",
+      "status": "parsed"
     },
     {
       "docId": "9116342",
@@ -19638,19 +19372,11 @@
       "status": "parsed"
     },
     {
-      "docId": "20035434",
-      "status": "parsed"
-    },
-    {
       "docId": "20035492",
       "status": "parsed"
     },
     {
-      "docId": "20035450",
-      "status": "parsed"
-    },
-    {
-      "docId": "20035420",
+      "docId": "20035434",
       "status": "parsed"
     },
     {
@@ -19662,15 +19388,23 @@
       "status": "parsed"
     },
     {
+      "docId": "20035450",
+      "status": "parsed"
+    },
+    {
+      "docId": "20035420",
+      "status": "parsed"
+    },
+    {
       "docId": "20035432",
       "status": "parsed"
     },
     {
-      "docId": "20035400",
+      "docId": "20035455",
       "status": "parsed"
     },
     {
-      "docId": "20035455",
+      "docId": "20035400",
       "status": "parsed"
     },
     {
@@ -19682,12 +19416,12 @@
       "status": "parsed"
     },
     {
-      "docId": "9116331",
-      "status": "scanned"
-    },
-    {
       "docId": "20035431",
       "status": "parsed"
+    },
+    {
+      "docId": "9116331",
+      "status": "scanned"
     },
     {
       "docId": "20035390",
@@ -19698,11 +19432,11 @@
       "status": "parsed"
     },
     {
-      "docId": "20035408",
+      "docId": "20035410",
       "status": "parsed"
     },
     {
-      "docId": "20035410",
+      "docId": "20035408",
       "status": "parsed"
     },
     {
@@ -19710,16 +19444,28 @@
       "status": "parsed"
     },
     {
+      "docId": "20035401",
+      "status": "parsed"
+    },
+    {
       "docId": "20035392",
       "status": "parsed"
     },
     {
-      "docId": "20035401",
+      "docId": "9116328",
+      "status": "scanned"
+    },
+    {
+      "docId": "20035190",
       "status": "parsed"
     },
     {
       "docId": "20035370",
       "status": "parsed"
+    },
+    {
+      "docId": "9116326",
+      "status": "scanned"
     },
     {
       "docId": "20035365",
@@ -19730,31 +19476,19 @@
       "status": "parsed"
     },
     {
-      "docId": "20035190",
-      "status": "parsed"
-    },
-    {
-      "docId": "9116328",
-      "status": "scanned"
-    },
-    {
       "docId": "20035345",
       "status": "parsed"
-    },
-    {
-      "docId": "9116326",
-      "status": "scanned"
     },
     {
       "docId": "20035326",
       "status": "parsed"
     },
     {
-      "docId": "20035349",
+      "docId": "20035350",
       "status": "parsed"
     },
     {
-      "docId": "20035350",
+      "docId": "20035349",
       "status": "parsed"
     },
     {
@@ -19770,10 +19504,6 @@
       "status": "parsed"
     },
     {
-      "docId": "20035274",
-      "status": "parsed"
-    },
-    {
       "docId": "20035293",
       "status": "parsed"
     },
@@ -19782,16 +19512,20 @@
       "status": "parsed"
     },
     {
-      "docId": "20035289",
+      "docId": "20035274",
       "status": "parsed"
     },
     {
-      "docId": "20035291",
+      "docId": "20035289",
       "status": "parsed"
     },
     {
       "docId": "9116311",
       "status": "scanned"
+    },
+    {
+      "docId": "20035291",
+      "status": "parsed"
     },
     {
       "docId": "9116308",
@@ -19806,10 +19540,6 @@
       "status": "parsed"
     },
     {
-      "docId": "20035235",
-      "status": "parsed"
-    },
-    {
       "docId": "20035260",
       "status": "parsed"
     },
@@ -19818,7 +19548,7 @@
       "status": "parsed"
     },
     {
-      "docId": "20035183",
+      "docId": "20035235",
       "status": "parsed"
     },
     {
@@ -19830,6 +19560,10 @@
       "status": "parsed"
     },
     {
+      "docId": "20035183",
+      "status": "parsed"
+    },
+    {
       "docId": "20033910",
       "status": "parsed"
     },
@@ -19838,15 +19572,19 @@
       "status": "parsed"
     },
     {
-      "docId": "20034898",
-      "status": "parsed"
-    },
-    {
       "docId": "9116292",
       "status": "scanned"
     },
     {
+      "docId": "20034898",
+      "status": "parsed"
+    },
+    {
       "docId": "20035209",
+      "status": "parsed"
+    },
+    {
+      "docId": "20035203",
       "status": "parsed"
     },
     {
@@ -19862,7 +19600,7 @@
       "status": "parsed"
     },
     {
-      "docId": "20035203",
+      "docId": "20035175",
       "status": "parsed"
     },
     {
@@ -19870,15 +19608,11 @@
       "status": "parsed"
     },
     {
-      "docId": "20035186",
-      "status": "parsed"
-    },
-    {
-      "docId": "20035175",
-      "status": "parsed"
-    },
-    {
       "docId": "20035134",
+      "status": "parsed"
+    },
+    {
+      "docId": "20035186",
       "status": "parsed"
     },
     {
@@ -19906,11 +19640,15 @@
       "status": "parsed"
     },
     {
-      "docId": "9116258",
-      "status": "scanned"
+      "docId": "20035035",
+      "status": "parsed"
     },
     {
-      "docId": "9116256",
+      "docId": "20035136",
+      "status": "parsed"
+    },
+    {
+      "docId": "9116258",
       "status": "scanned"
     },
     {
@@ -19918,12 +19656,8 @@
       "status": "scanned"
     },
     {
-      "docId": "20035035",
-      "status": "parsed"
-    },
-    {
-      "docId": "20035136",
-      "status": "parsed"
+      "docId": "9116256",
+      "status": "scanned"
     },
     {
       "docId": "20035118",
@@ -19942,7 +19676,7 @@
       "status": "parsed"
     },
     {
-      "docId": "20035007",
+      "docId": "20035067",
       "status": "parsed"
     },
     {
@@ -19950,19 +19684,33 @@
       "status": "parsed"
     },
     {
-      "docId": "20035067",
+      "docId": "20035007",
       "status": "parsed"
     },
     {
-      "docId": "20034963",
+      "docId": "20036891",
       "status": "parsed"
     },
     {
-      "docId": "20035075",
+      "docId": "20036883",
       "status": "parsed"
     }
   ],
   "filings": [
+    {
+      "name": "Hon. Ed Case",
+      "state": "HI01",
+      "filed": "2026-11-21",
+      "docId": "20036891",
+      "year": 2026
+    },
+    {
+      "name": "Hon. Jennifer McClellan",
+      "state": "VA04",
+      "filed": "2026-11-20",
+      "docId": "20036883",
+      "year": 2026
+    },
     {
       "name": "Hon. Thomas H. Kean Jr",
       "state": "NJ07",
@@ -21067,20 +20815,6 @@
       "state": "SC03",
       "filed": "2026-07-27",
       "docId": "20035007",
-      "year": 2026
-    },
-    {
-      "name": "Hon. Jared Moskowitz",
-      "state": "FL23",
-      "filed": "2026-07-26",
-      "docId": "20034963",
-      "year": 2026
-    },
-    {
-      "name": "Hon. Max Miller",
-      "state": "OH07",
-      "filed": "2026-07-26",
-      "docId": "20035075",
       "year": 2026
     }
   ],

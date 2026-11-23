@@ -79,7 +79,17 @@
     "BA|short|2026-11-23": [
       "telegram",
       "discord"
+    ],
+    "WMT|earnings|2026-11-19": [
+      "telegram",
+      "discord"
     ]
   },
-  "updatedAt": "2026-11-23T21:07:40.997Z"
+  "updatedAt": "2026-11-23T21:53:42.916Z",
+  "messages": {
+    "WMT|earnings|2026-11-19": {
+      "telegram": "23",
+      "discord": "1574543494498746389"
+    }
+  }
 }
