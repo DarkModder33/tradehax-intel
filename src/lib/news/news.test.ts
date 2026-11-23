@@ -4,8 +4,11 @@ import { DISCLAIMER, THRESHOLDS, buildStories, mergeStories, wordCount } from ".
 import { freshStories, xmlEscape } from "../../../scripts/news/feeds.mjs";
 import type { Story } from "./load";
 
-function built(input: unknown, options?: { cap: number; perType?: number }): Story[] {
-  return buildStories(input, options) as Story[];
+type BuildOptions = { cap?: number; perType?: number; now?: string; skipInputGate?: boolean };
+
+// Fixtures are dated 2026-11-16, so the gate runs as of the next morning.
+function built(input: unknown, options?: BuildOptions): Story[] {
+  return buildStories(input, { now: "2026-11-17T09:00:00.000Z", ...options }) as Story[];
 }
 
 const asOf = "2026-11-16T21:00:00.000Z";
@@ -77,6 +80,7 @@ describe("story generator", () => {
         rows: [{ symbol: "ZZ261218C00100000", previous: 1000, current: 1800, change: 800 }],
       },
       earnings: { meta: { asOf, source: "Cboe straddle vs later close" }, rows: [{ symbol: "ZZ", implied: 0.04, realized: 0.09 }] },
+      iv: { meta: { asOf, source: "Cboe iv30" }, rows: [] },
       ivHistory: { series: { ZZ: history } },
     });
     const types = stories.map((story) => story.type).sort();
@@ -103,7 +107,7 @@ describe("story generator", () => {
       earnings: load("earnings-moves.json"),
       iv: load("iv.json"),
       ivHistory: load("iv-history.json"),
-    });
+    }, { cap: THRESHOLDS.cap, skipInputGate: true, now: load("technicals.json").meta.asOf });
     expect(stories.some((story) => story.ticker === "NVDA" && story.type === "mover")).toBe(true);
     expect(stories.some((story) => story.type === "earnings" || story.type === "iv" || story.type === "insider")).toBe(false);
     expect(xmlEscape(`A&B < "C"`)).toBe("A&amp;B &lt; &quot;C&quot;");

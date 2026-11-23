@@ -26,9 +26,10 @@ const input = {
   ivHistory: await readJson(path.join(dataDir, "iv-history.json")),
   macro: await readJson(path.join(dataDir, "macro.json")),
   macroPrevious: await readJson(process.env.PREV_DIR ? path.join(process.env.PREV_DIR, "macro.json") : ""),
+  optionsHistory: await readJson(path.join(dataDir, "options-history.json")),
 };
 
-const fresh = buildStories(input, { cap: Number(process.env.NEWS_CAP ?? 10) });
+const fresh = buildStories(input, { cap: Number(process.env.NEWS_CAP ?? 10), log: (line) => console.log(line) });
 const previous = await readJson(priorFile);
 // Stories that shipped in the repo seed file were already posted to social, so keep their
 // URLs alive (mergeStories still ages them out after its keep window).

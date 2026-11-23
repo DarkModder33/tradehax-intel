@@ -5,6 +5,7 @@ import { parseNavHistory } from "../../src/lib/datasets/nav.ts";
 import { monthlyReturns } from "../../src/lib/datasets/seasonality.ts";
 import { DEFAULT_UNIVERSE } from "../../src/lib/live/universe.ts";
 import { appendIvHistory } from "../../src/lib/options/ivrank.ts";
+import { appendOptionsDays, optionsDay, sessionDate, toDayContracts } from "../../src/lib/datasets/options-day.ts";
 import { oiChanges } from "../../src/lib/datasets/oi.ts";
 import { readFile } from "node:fs/promises";
 import { loadOptionChain, nearestIv30 } from "./option-chain.mjs";
@@ -367,14 +368,22 @@ async function readPrior(name) {
 
 export async function ivHistory() {
   const prior = await readPrior("iv-history.json");
+  const priorDays = await readPrior("options-history.json");
   const date = new Date().toISOString().slice(0, 10);
   const updates = [];
+  const optionDays = [];
   const errors = [];
   for (const symbol of UNIVERSE) {
     try {
       const body = await loadOptionChain(symbol, { fetcher: fetch, sleep: () => Promise.resolve() });
       const close = body?.data?.current_price;
       const iv30 = typeof body?.data?.iv30 === "number" ? body.data.iv30 : nearestIv30(body?.data?.options, close);
+      // The same chain feeds the event stories: volume and premium by side, net gamma, flip.
+      const session = sessionDate(new Date());
+      if (session && typeof close === "number" && close > 0) {
+        const day = optionsDay(toDayContracts(body?.data?.options ?? []), close, session, new Date(), body?.timestamp ?? null);
+        if (day) optionDays.push({ symbol, day });
+      }
       if (typeof iv30 === "number") {
         updates.push({ sym: symbol, date, iv30, close: typeof close === "number" ? close : null, asOf: body?.timestamp ?? null });
       }
@@ -390,6 +399,7 @@ export async function ivHistory() {
     note: `Universe ${updates.length}/${UNIVERSE.length}. Rank stays blank until 20 stored sessions. ${errors.length ? errors.slice(0, 3).join("; ") : ""}`.trim(),
   });
   packed.history = { series: history };
+  packed.files = { "options-history.json": { asOf: new Date().toISOString(), series: appendOptionsDays(priorDays?.series, optionDays) } };
   packed.meta.coverage = updates.length / UNIVERSE.length;
   return packed;
 }

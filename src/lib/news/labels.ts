@@ -9,6 +9,8 @@ export const NEWS_TYPE_LABELS: Record<string, string> = {
   earnings: "Earnings moves",
   macro: "Macro and rates",
   iv: "Implied volatility",
+  flow: "Options flow spikes",
+  gamma: "Gamma flips",
 };
 
 export function newsTypeLabel(type: string): string {

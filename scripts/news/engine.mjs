@@ -20,7 +20,16 @@ export const THRESHOLDS = {
   cap: 10,
   perType: 3,
   staleShortDays: 45,
+  flowSpikeRatio: 2.5,
+  flowSpikeMinContracts: 250_000,
+  flowSpikeMinSessions: 5,
+  gammaMinAbs: 50_000_000,
+  insiderWindowDays: 14,
+  inputMaxAgeHours: 36,
 };
+
+/** Days a story's underlying data may age before it is no longer news, by type. */
+export const STALE_DAYS = { mover: 4, rotation: 4, short: 45, ftd: 60, insider: 21, unusual: 4, earnings: 10, macro: 10, iv: 4, flow: 3, gamma: 3 };
 
 const SECTORS = ["XLK", "XLF", "XLE", "XLV", "XLY", "XLI", "XLB", "XLU", "XLRE", "XLC", "XLP"];
 const BENCHMARKS = new Set(["SPY", "QQQ", "IWM", "DIA", "GLD", "TLT", "HYG", "SMH", ...SECTORS]);
@@ -65,6 +74,16 @@ const OPENERS = {
     (f) => `${f.label} moved ${f.change} points in the FRED file, from ${f.before} to ${f.after}.`,
     (f) => `The rates snapshot shows ${f.label} at ${f.after}, ${f.change} points from the prior stored print.`,
     (f) => `${f.label} changed ${f.change} points between the two FRED rows kept for this series.`,
+  ],
+  flow: [
+    (f) => `Options volume in ${f.ticker} hit ${f.volume} contracts, ${f.ratio} its recent median session.`,
+    (f) => `${f.ticker} options traded ${f.ratio} their usual volume on the delayed Cboe chain: ${f.volume} contracts.`,
+    (f) => `A volume spike in ${f.ticker} options: ${f.volume} contracts against a median of ${f.median}.`,
+  ],
+  gamma: [
+    (f) => `Dealer gamma in ${f.ticker} flipped from ${f.before} to ${f.after} between the last two stored sessions.`,
+    (f) => `${f.ticker} crossed its gamma flip: the naive dealer book moved from ${f.before} to ${f.after}.`,
+    (f) => `The open-interest gamma book for ${f.ticker} changed sign, from ${f.before} to ${f.after}.`,
   ],
   iv: [
     (f) => `${f.ticker} iv30 rank is ${f.rank} on ${f.sessions} stored sessions.`,
@@ -187,7 +206,7 @@ export function humanStamps(text) {
   });
 }
 
-function baseStory({ type, ticker, tickers, day, headline, dek, body, keyNumbers, spark, sources, materiality, asOf }) {
+function baseStory({ type, ticker, tickers, day, headline, dek, body, keyNumbers, spark, sources, materiality, asOf, dataDate }) {
   const slug = `${ticker.toLowerCase()}-${type}-${day}`;
   const id = `${ticker}|${type}|${day}`;
   return {
@@ -206,6 +225,7 @@ function baseStory({ type, ticker, tickers, day, headline, dek, body, keyNumbers
     materiality,
     slug,
     passedMateriality: true,
+    ...(dataDate ? { dataDate } : {}),
     disclaimer: DISCLAIMER,
     methodology: "/about/methodology/",
   };
@@ -476,8 +496,17 @@ function insiderStories(file, fallbackDay) {
     const trade = row.trade ?? row;
     const ticker = String(trade.ticker ?? "").toUpperCase();
     if (!ticker || trade.code !== "P" || trade.acquired === false) continue;
+    // A cluster has to be recent and fully priced: no blank or zero share counts or
+    // prices, and every filing inside the window before the file date.
+    const sharesBought = finite(trade.shares);
+    const price = finite(trade.price);
+    if (!(sharesBought > 0) || !(price > 0)) continue;
+    const filed = String(row.filed ?? "").slice(0, 10);
+    const filedAt = Date.parse(`${filed}T00:00:00Z`);
+    const fileAt = Date.parse(`${day}T00:00:00Z`);
+    if (!Number.isFinite(filedAt) || (Number.isFinite(fileAt) && fileAt - filedAt > THRESHOLDS.insiderWindowDays * 86_400_000)) continue;
     const bucket = groups.get(ticker) ?? [];
-    bucket.push({ owner: trade.owner ?? "unknown", shares: finite(trade.shares), price: finite(trade.price), filed: row.filed ?? null });
+    bucket.push({ owner: trade.owner ?? "unknown", shares: sharesBought, price, filed });
     groups.set(ticker, bucket);
   }
   const stories = [];
@@ -485,6 +514,8 @@ function insiderStories(file, fallbackDay) {
     const owners = [...new Set(trades.map((trade) => trade.owner))];
     if (owners.length < THRESHOLDS.insiderOwners) continue;
     const shareSum = trades.reduce((sum, trade) => sum + (trade.shares ?? 0), 0);
+    const dollars = trades.reduce((sum, trade) => sum + trade.shares * trade.price, 0);
+    const latestFiled = trades.map((trade) => trade.filed).sort().at(-1);
     const facts = { ticker, owners: String(owners.length) };
     const lead = OPENERS.insider[hashSeed(`${ticker}|insider|${day}`) % OPENERS.insider.length](facts);
     const lines = trades.map((trade) => `${trade.owner} bought ${shares(trade.shares)} shares at $${plain(trade.price, 2)} filed ${trade.filed ?? "on an undated row"}`);
@@ -508,12 +539,14 @@ function insiderStories(file, fallbackDay) {
       tickers: [ticker],
       day,
       asOf,
-      headline: `${owners.length} insiders bought ${ticker} in the open market`,
-      dek: `${owners.length} Form 4 code-P buyers in ${ticker} from ${source}.`,
+      headline: `${owners.length} insiders bought ${compact(dollars)} of ${ticker} in the open market`,
+      dek: `${owners.length} Form 4 code-P buyers in ${ticker} within ${THRESHOLDS.insiderWindowDays} days, ${compact(dollars)} in total, from ${source}.`,
+      dataDate: latestFiled,
       body,
       keyNumbers: [
         cite("Distinct buyers", String(owners.length), source, asOf),
         cite("Shares on those rows", shares(shareSum), source, asOf),
+        cite("Dollar value of the buys", compact(dollars), source, asOf),
       ],
       spark: trades.map((trade) => trade.shares).filter((value) => Number.isFinite(value)),
       sources: [{ name: source, asOf }],
@@ -769,21 +802,214 @@ function ivStories(file, historyFile, fallbackDay) {
   return stories;
 }
 
+
+function seriesOf(file) {
+  const series = file?.series;
+  return series && typeof series === "object" ? series : {};
+}
+
+/** Options volume at least flowSpikeRatio times the median of the prior sessions. */
+export function flowStories(file, fallbackDay) {
+  const source = "Cboe delayed option chain";
+  const stories = [];
+  for (const [ticker, rows] of Object.entries(seriesOf(file))) {
+    if (!Array.isArray(rows) || rows.length < THRESHOLDS.flowSpikeMinSessions + 1) continue;
+    const today = rows.at(-1);
+    const total = (row) => {
+      const calls = finite(row?.callVolume);
+      const puts = finite(row?.putVolume);
+      return calls != null && puts != null && calls + puts > 0 ? calls + puts : null;
+    };
+    const volume = total(today);
+    const prior = rows.slice(0, -1).slice(-20).map(total).filter((value) => value != null && value > 0);
+    if (volume == null || prior.length < THRESHOLDS.flowSpikeMinSessions) continue;
+    const base = median(prior);
+    if (!(base > 0) || volume < THRESHOLDS.flowSpikeMinContracts) continue;
+    const ratio = volume / base;
+    if (ratio < THRESHOLDS.flowSpikeRatio) continue;
+    const calls = finite(today.callVolume);
+    const puts = finite(today.putVolume);
+    const callPremium = finite(today.callPremium);
+    const putPremium = finite(today.putPremium);
+    const day = dayOf(today.date, fallbackDay);
+    const asOf = today.asOf ? `${String(today.asOf).replace(" ", "T").slice(0, 19)}Z` : `${day}T21:00:00Z`;
+    const facts = { ticker, volume: shares(volume), ratio: `${plain(ratio, 1)}x`, median: shares(base) };
+    const lead = OPENERS.flow[hashSeed(`${ticker}|flow|${day}`) % OPENERS.flow.length](facts);
+    const callShare = calls / volume;
+    const tilt = callShare >= 0.6 ? "call-heavy" : callShare <= 0.4 ? "put-heavy" : "balanced between calls and puts";
+    const body = fitBody(`${ticker}|flow|${day}`, lead, [
+      `Calls were ${shares(calls)} contracts and puts were ${shares(puts)}, so the session was ${tilt}. The call share is ${plain(callShare * 100, 1)} percent of the total.`,
+      callPremium != null && putPremium != null && callPremium + putPremium > 0
+        ? `Estimated premium, volume times the last trade price for each contract, was ${compact(callPremium)} in calls and ${compact(putPremium)} in puts.`
+        : "The chain did not carry enough last-trade prices to estimate premium, so no dollar figure is quoted.",
+      `The baseline is the median total volume of the previous ${prior.length} stored sessions, ${shares(base)} contracts. A median keeps one earlier spike from raising the bar for every later day.`,
+      `A story runs when the session reaches ${plain(THRESHOLDS.flowSpikeRatio, 1)} times that median and at least ${shares(THRESHOLDS.flowSpikeMinContracts)} contracts. Smaller names with thin chains do not qualify on ratio alone.`,
+      "Volume counts contracts traded, not positions opened. A spike can be opening, closing, or both, and it does not say which side was the buyer.",
+      `The stored spot price for ${ticker} on this session is $${plain(finite(today.spot), 2)}. The chain is delayed about 15 minutes, and an intraday reading can rise further before the close.`,
+      ...measureBlock([
+        cite("Option volume", shares(volume), source, asOf),
+        cite("Median of prior sessions", shares(base), source, asOf),
+        cite("Ratio to median", facts.ratio, source, asOf),
+      ]),
+      ...closer(source, asOf),
+    ]);
+    stories.push(baseStory({
+      type: "flow",
+      ticker,
+      tickers: [ticker],
+      day,
+      asOf,
+      dataDate: day,
+      headline: `${ticker} options volume ${facts.ratio} normal, ${tilt.startsWith("balanced") ? "split" : tilt}`,
+      dek: `${facts.volume} ${ticker} contracts traded against a ${facts.median} median, from the delayed Cboe chain.`,
+      body,
+      keyNumbers: [
+        cite("Option volume", shares(volume), source, asOf),
+        cite("Median of prior sessions", shares(base), source, asOf),
+        cite("Ratio to median", facts.ratio, source, asOf),
+        cite("Call share", `${plain(callShare * 100, 1)}%`, source, asOf),
+      ],
+      spark: [...prior.slice(-10), volume],
+      sources: [{ name: source, asOf }],
+      materiality: 30 + ratio * 10,
+    }));
+  }
+  return stories;
+}
+
+/** Dealer net gamma changed sign between the last two sessions, with size on both sides. */
+export function gammaStories(file, fallbackDay) {
+  const source = "Cboe delayed option chain, open-interest gamma";
+  const stories = [];
+  for (const [ticker, rows] of Object.entries(seriesOf(file))) {
+    if (!Array.isArray(rows) || rows.length < 2) continue;
+    const [before, after] = rows.slice(-2);
+    const prev = finite(before?.netGex);
+    const next = finite(after?.netGex);
+    if (prev == null || next == null || prev === 0 || next === 0) continue;
+    if (Math.sign(prev) === Math.sign(next)) continue;
+    if (Math.abs(prev) < THRESHOLDS.gammaMinAbs || Math.abs(next) < THRESHOLDS.gammaMinAbs) continue;
+    const gap = (Date.parse(`${after.date}T00:00:00Z`) - Date.parse(`${before.date}T00:00:00Z`)) / 86_400_000;
+    if (!(gap > 0 && gap <= 4)) continue;
+    const spot = finite(after.spot);
+    const flip = finite(after.flip);
+    if (!(spot > 0)) continue;
+    const day = dayOf(after.date, fallbackDay);
+    const asOf = after.asOf ? `${String(after.asOf).replace(" ", "T").slice(0, 19)}Z` : `${day}T21:00:00Z`;
+    const label = (value) => (value > 0 ? "long gamma" : "short gamma");
+    const facts = { ticker, before: label(prev), after: label(next) };
+    const lead = OPENERS.gamma[hashSeed(`${ticker}|gamma|${day}`) % OPENERS.gamma.length](facts);
+    const meaning = next < 0
+      ? "In a short-gamma book, dealer hedging tends to follow price, which can widen intraday ranges."
+      : "In a long-gamma book, dealer hedging tends to lean against price, which can damp intraday ranges.";
+    const body = fitBody(`${ticker}|gamma|${day}`, lead, [
+      `Net gamma per 1 percent move was ${compact(prev)} on ${before.date} and ${compact(next)} on ${after.date}.`,
+      flip != null ? `The stored flip level, where repriced net gamma crosses zero, is $${plain(flip, 2)} against a spot of $${plain(spot, 2)}.` : `Spot on the later session was $${plain(spot, 2)}. No zero crossing was found within 15 percent of spot.`,
+      meaning,
+      "The sign convention is naive: calls count as dealer long and puts as dealer short. Real dealer positioning is not published, so the level is an estimate, not a measurement.",
+      `Both sessions have to carry at least ${compact(THRESHOLDS.gammaMinAbs)} of net gamma, so a book hovering near zero does not flip a headline back and forth.`,
+      "Gamma is repriced with Black-Scholes from each contract's implied volatility and open interest. Open interest updates once a day, so the book moves mostly with spot and time.",
+      ...measureBlock([
+        cite("Net gamma, prior session", compact(prev), source, asOf),
+        cite("Net gamma, latest session", compact(next), source, asOf),
+        ...(flip != null ? [cite("Gamma flip level", `$${plain(flip, 2)}`, source, asOf)] : []),
+      ]),
+      ...closer(source, asOf),
+    ]);
+    stories.push(baseStory({
+      type: "gamma",
+      ticker,
+      tickers: [ticker],
+      day,
+      asOf,
+      dataDate: day,
+      headline: `${ticker} dealers flip to ${label(next)}${flip != null ? ` with the flip at $${plain(flip, 2)}` : ""}`,
+      dek: `Net gamma moved from ${compact(prev)} to ${compact(next)} on the delayed Cboe chain.`,
+      body,
+      keyNumbers: [
+        cite("Net gamma, prior session", compact(prev), source, asOf),
+        cite("Net gamma, latest session", compact(next), source, asOf),
+        cite("Spot", `$${plain(spot, 2)}`, source, asOf),
+        ...(flip != null ? [cite("Gamma flip level", `$${plain(flip, 2)}`, source, asOf)] : []),
+      ],
+      spark: rows.slice(-10).map((row) => finite(row.netGex)).filter((value) => value != null),
+      sources: [{ name: source, asOf }],
+      materiality: 45 + Math.min(30, Math.log10(Math.abs(next) + 1)),
+    }));
+  }
+  return stories;
+}
+
+const BLANKS = /\b(NaN|undefined|null|Infinity)\b|\bn\/a\b/;
+const ZERO_VALUE = /^[+-]?\$?0(?:[.,]0+)?(?:[%x]|[KMB])?$/;
+
+/**
+ * Last gate before a story ships, for every generator. A story is refused when any shown
+ * number is blank, zero, or not finite, when its text carries a placeholder, or when its
+ * data is older than the type allows. Returns the reasons, empty when the story passes.
+ */
+export function validateStory(story, now = new Date()) {
+  const reasons = [];
+  if (!story || typeof story !== "object") return ["not a story"];
+  for (const field of ["id", "type", "ticker", "headline", "dek", "day", "publishedAt"]) {
+    if (typeof story[field] !== "string" || !story[field].trim()) reasons.push(`missing ${field}`);
+  }
+  const text = [story.headline, story.dek, ...(Array.isArray(story.body) ? story.body : [])].join(" ");
+  if (BLANKS.test(String(story.headline ?? "")) || BLANKS.test(String(story.dek ?? ""))) reasons.push("placeholder in headline or dek");
+  if (/\b(NaN|undefined|Infinity)\b/.test(text)) reasons.push("placeholder in body");
+  const numbers = Array.isArray(story.keyNumbers) ? story.keyNumbers : [];
+  if (numbers.length === 0) reasons.push("no key numbers");
+  for (const item of numbers) {
+    const value = String(item?.value ?? "").trim();
+    if (!value || value === "—" || BLANKS.test(value)) reasons.push(`blank key number ${item?.label ?? "?"}`);
+    else if (ZERO_VALUE.test(value.replace(/,/g, ""))) reasons.push(`zero key number ${item?.label ?? "?"}`);
+  }
+  if (Array.isArray(story.spark) && story.spark.some((value) => !Number.isFinite(value))) reasons.push("non-finite spark");
+  const published = Date.parse(String(story.publishedAt ?? ""));
+  if (!Number.isFinite(published)) reasons.push("publishedAt is not a date");
+  else if (published > now.getTime() + 6 * 3_600_000) reasons.push("publishedAt is in the future");
+  const limit = STALE_DAYS[story.type];
+  const dataDate = Date.parse(`${String(story.dataDate ?? story.day ?? "").slice(0, 10)}T00:00:00Z`);
+  if (limit != null && Number.isFinite(dataDate) && now.getTime() - dataDate > limit * 86_400_000) reasons.push(`data older than ${limit} days`);
+  if (!Number.isFinite(dataDate)) reasons.push("no data date");
+  return reasons;
+}
+
+/** An input file is usable when it loaded, is not flagged unavailable, and is recent. */
+export function usableInput(file, now = new Date(), maxAgeHours = THRESHOLDS.inputMaxAgeHours) {
+  if (!file || typeof file !== "object") return false;
+  if (file.meta?.unavailable) return false;
+  const stamp = Date.parse(String(file.meta?.asOf ?? file.asOf ?? file.generatedAt ?? ""));
+  if (!Number.isFinite(stamp)) return false;
+  return now.getTime() - stamp <= maxAgeHours * 3_600_000;
+}
+
 export function buildStories(input, options = {}) {
   const fallbackDay = dayOf(options.now, new Date().toISOString().slice(0, 10));
   const cap = options.cap ?? THRESHOLDS.cap;
+  const now = options.now ? new Date(options.now) : new Date();
+  const log = options.log ?? (() => {});
+  // Stale or failed inputs write nothing. options.skipInputGate keeps old fixtures usable in tests.
+  const ok = (file) => options.skipInputGate === true || usableInput(file, now);
   const all = [
-    ...moverStories(input.technicals, fallbackDay),
-    ...rotationStories(input.technicals, fallbackDay),
-    ...shortStories(input.shorts, fallbackDay),
-    ...ftdStories(input.ftd, fallbackDay),
-    ...insiderStories(input.insiders, fallbackDay),
-    ...unusualStories(input.oiChange, fallbackDay),
-    ...earningsStories(input.earnings, fallbackDay),
-    ...macroStories(input.macro, input.macroPrevious, fallbackDay),
-    ...ivStories(input.iv, input.ivHistory, fallbackDay),
+    ...(ok(input.technicals) ? moverStories(input.technicals, fallbackDay) : []),
+    ...(ok(input.technicals) ? rotationStories(input.technicals, fallbackDay) : []),
+    ...(ok(input.shorts) ? shortStories(input.shorts, fallbackDay) : []),
+    ...(ok(input.ftd) ? ftdStories(input.ftd, fallbackDay) : []),
+    ...(ok(input.insiders) ? insiderStories(input.insiders, fallbackDay) : []),
+    ...(ok(input.oiChange) ? unusualStories(input.oiChange, fallbackDay) : []),
+    ...(ok(input.earnings) ? earningsStories(input.earnings, fallbackDay) : []),
+    ...(ok(input.macro) ? macroStories(input.macro, input.macroPrevious, fallbackDay) : []),
+    ...(ok(input.iv) ? ivStories(input.iv, input.ivHistory, fallbackDay) : []),
+    ...(ok(input.optionsHistory) ? flowStories(input.optionsHistory, fallbackDay) : []),
+    ...(ok(input.optionsHistory) ? gammaStories(input.optionsHistory, fallbackDay) : []),
   ];
-  const kept = all.filter((story) => story.passedMateriality && wordCount(story.body) >= 300 && wordCount(story.body) <= 600);
+  const valid = all.filter((story) => {
+    const reasons = options.skipValidation === true ? [] : validateStory(story, now);
+    if (reasons.length) log(`news gate: refused ${story?.id ?? "?"}: ${reasons.join("; ")}`);
+    return reasons.length === 0;
+  });
+  const kept = valid.filter((story) => story.passedMateriality && wordCount(story.body) >= 300 && wordCount(story.body) <= 600);
   const seen = new Set();
   const unique = [];
   for (const story of kept.sort((a, b) => b.materiality - a.materiality)) {

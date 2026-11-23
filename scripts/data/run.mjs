@@ -40,6 +40,7 @@ export async function buildDatasets(dir = root) {
     await writeFile(file, JSON.stringify(payload, null, 2));
     if (payload.history) await writeFile(path.join(dir, "iv-history.json"), JSON.stringify(payload.history, null, 2));
     if (payload.snapshot) await writeFile(path.join(dir, "oi-snapshot.json"), JSON.stringify({ snapshot: payload.snapshot }));
+    for (const [extra, body] of Object.entries(payload.files ?? {})) await writeFile(path.join(dir, extra), JSON.stringify(body));
     console.log(`${name}: ${datasets[name].unavailable ? "unavailable" : datasets[name].rows + " rows"}`);
   }
   const manifest = { generatedAt: new Date().toISOString(), datasets };
