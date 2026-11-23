@@ -1,6 +1,6 @@
 {
   "meta": {
-    "asOf": "2026-11-23T21:00:59.161Z",
+    "asOf": "2026-11-23T21:05:52.235Z",
     "source": "SEC EDGAR Form 4",
     "rows": 25,
     "delay": "hours",
@@ -281,6 +281,23 @@
       }
     },
     {
+      "id": "0002095785-26-000004:primary_doc.xml",
+      "filed": "2026-11-19",
+      "names": [
+        "Chatterjee Ankur  (CIK 0002095785)",
+        "QumulusAI, Inc.  (CIK 0002084026)"
+      ],
+      "trade": {
+        "owner": "Chatterjee Ankur",
+        "ticker": "QMLS",
+        "code": "S",
+        "shares": 26117,
+        "price": 2.45,
+        "acquired": false,
+        "form": "4"
+      }
+    },
+    {
       "id": "0002093135-26-000006:primary_doc.xml",
       "filed": "2026-11-23",
       "names": [
@@ -411,23 +428,6 @@
         "ticker": "CIB",
         "code": "A",
         "shares": 481.66,
-        "price": 8.63,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002058897-26-000347:wk-form4_1795465416.xml",
-      "filed": "2026-11-19",
-      "names": [
-        "Mejia Cardona Andres Felipe  (CIK 0002121260)",
-        "Grupo Cibest S.A.  (CIK 0002058897)"
-      ],
-      "trade": {
-        "owner": "Mejia Cardona Andres Felipe",
-        "ticker": "CIB",
-        "code": "A",
-        "shares": 682.18,
         "price": 8.63,
         "acquired": true,
         "form": "4"
