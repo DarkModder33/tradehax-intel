@@ -2,7 +2,7 @@ import { mkdtempSync, readFileSync, writeFileSync } from "node:fs";
 import { tmpdir } from "node:os";
 import path from "node:path";
 import { describe, expect, it } from "vitest";
-import { configuredAdapters, oauthHeader, percentEncode, postQueue, xText } from "../../../scripts/social/post.mjs";
+import { configuredAdapters, oauthHeader, percentEncode, postQueue, selectAdapters, xText } from "../../../scripts/social/post.mjs";
 
 const story = {
   id: "NVDA|mover|2026-11-16",
@@ -55,6 +55,7 @@ describe("social posting", () => {
     expect(text).toContain("https://tradehaxai.tech/news/2026/11/nvda-mover-2026-11-16/");
     expect(configuredAdapters({})).toEqual([]);
     expect(configuredAdapters(secrets)).toEqual(["x", "telegram", "discord"]);
+    expect(selectAdapters({ ...secrets, SOCIAL_PLATFORMS: "discord,telegram" })).toEqual(["telegram", "discord"]);
   });
 
   it("dry-run logs and does not post or record ids", async () => {

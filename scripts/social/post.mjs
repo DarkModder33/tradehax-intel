@@ -53,6 +53,25 @@ export function configuredAdapters(env = process.env) {
   return adapters;
 }
 
+/** @param {Record<string, string | undefined>} [env] */
+export function selectAdapters(env = process.env) {
+  const configured = configuredAdapters(env);
+  const raw = String(env.SOCIAL_PLATFORMS ?? "").trim();
+  if (!raw) return configured;
+  const allow = new Set(raw.split(",").map((item) => item.trim().toLowerCase()).filter(Boolean));
+  return configured.filter((name) => allow.has(name));
+}
+
+async function failureMessage(response, label) {
+  let detail = "";
+  try {
+    detail = (await response.text()).replace(/\s+/g, " ").trim().slice(0, 180);
+  } catch {
+    detail = "";
+  }
+  return detail ? `${label} ${response.status}: ${detail}` : `${label} ${response.status}`;
+}
+
 async function withBackoff(run, sleep) {
   let last = null;
   for (let attempt = 0; attempt < 3; attempt += 1) {
@@ -97,8 +116,15 @@ async function postTelegram(story, env, fetcher) {
     headers: { "content-type": "application/json" },
     body: JSON.stringify({ chat_id: env.TELEGRAM_CHAT_ID, text, disable_web_page_preview: false }),
   });
-  if (!response.ok) throw new Error(`telegram ${response.status}`);
-  return text;
+  if (!response.ok) throw new Error(await failureMessage(response, "telegram"));
+  let messageId = "";
+  try {
+    const body = await response.clone().json();
+    if (body?.result?.message_id != null) messageId = String(body.result.message_id);
+  } catch {
+    messageId = "";
+  }
+  return { status: response.status, messageId };
 }
 
 async function postDiscord(story, env, fetcher) {
@@ -118,8 +144,15 @@ async function postDiscord(story, env, fetcher) {
     headers: { "content-type": "application/json" },
     body: JSON.stringify(body),
   });
-  if (!response.ok) throw new Error(`discord ${response.status}`);
-  return body;
+  if (!response.ok) throw new Error(await failureMessage(response, "discord"));
+  let messageId = "";
+  try {
+    const parsed = await response.clone().json();
+    if (parsed?.id != null) messageId = String(parsed.id);
+  } catch {
+    messageId = "";
+  }
+  return { status: response.status, messageId };
 }
 
 async function send(network, story, env, fetcher, sleep) {
@@ -140,8 +173,11 @@ export async function postQueue(options = {}) {
       log("social: SOCIAL_AUTOPOST=0, nothing posted");
       return { ok: true, results };
     }
-    const adapters = options.adapters ?? configuredAdapters(env);
+    const detected = configuredAdapters(env);
+    const adapters = options.adapters ?? selectAdapters(env);
     log("social: bluesky stubbed, mastodon stubbed");
+    log(`social: detected ${detected.join(", ") || "none"}`);
+    if (env.SOCIAL_PLATFORMS) log(`social: platform filter ${env.SOCIAL_PLATFORMS}; using ${adapters.join(", ") || "none"}`);
     if (!adapters.length) {
       log("social: no X, Telegram, or Discord secrets, nothing posted");
       return { ok: true, results };
@@ -169,10 +205,10 @@ export async function postQueue(options = {}) {
           continue;
         }
         try {
-          await send(network, story, env, fetcher, sleep);
+          const sent = await send(network, story, env, fetcher, sleep);
           ledger.posted[story.id] = [...new Set([...(ledger.posted[story.id] ?? []), network])];
-          results.push({ id: story.id, network, ok: true });
-          log(`social posted ${network} ${story.id}`);
+          results.push({ id: story.id, network, ok: true, status: sent?.status, messageId: sent?.messageId });
+          log(`social posted ${network} ${story.id} status ${sent?.status ?? "ok"}${sent?.messageId ? ` message_id ${sent.messageId}` : ""}`);
           if (network === "x") await sleep(1100);
         } catch (error) {
           results.push({ id: story.id, network, ok: false, error: error instanceof Error ? error.message : String(error) });

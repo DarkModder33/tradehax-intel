@@ -1,0 +1,65 @@
+name: social
+
+on:
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "1 builds the post and does not send"
+        required: false
+        default: "0"
+        type: string
+      cap:
+        description: "Maximum stories to send"
+        required: false
+        default: "1"
+        type: string
+      platforms:
+        description: "Comma-separated platforms: discord,telegram,x"
+        required: false
+        default: "discord,telegram"
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Checkout data branch
+        continue-on-error: true
+        uses: actions/checkout@v4
+        with:
+          ref: data
+          path: data-branch
+
+      - name: Post stories
+        run: |
+          if [ -f data-branch/data/news/stories.json ]; then
+            export NEWS_FILE=data-branch/data/news/stories.json
+            export SOCIAL_LEDGER=data-branch/data/social-posted.json
+          else
+            export NEWS_FILE=content/news/stories.json
+            export SOCIAL_LEDGER=/tmp/social-posted.json
+          fi
+          node scripts/social/post.mjs
+        env:
+          SOCIAL_AUTOPOST: "1"
+          SOCIAL_DRYRUN: ${{ inputs.dry_run }}
+          SOCIAL_CAP: ${{ inputs.cap }}
+          SOCIAL_PLATFORMS: ${{ inputs.platforms }}
+          X_API_KEY: ${{ secrets.X_API_KEY }}
+          X_API_SECRET: ${{ secrets.X_API_SECRET }}
+          X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
+          X_ACCESS_SECRET: ${{ secrets.X_ACCESS_SECRET }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
