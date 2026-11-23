@@ -120,3 +120,21 @@ Goal (Mike): a site that writes high-interest stock news on its own, ranks in se
 Live checks (3:15 PM ET, through `curl --resolve`): `/`, `/news/`, `/news/feed.xml`, `/news-sitemap.xml`, `/sitemap.xml`, `/robots.txt`, `/data/manifest.json`, `/status/`, and `/flow/` all returned 200. Worker `/health` showed `ok:true`, `alpaca:true`, 51 symbols, 15-minute-delayed Alpaca prints with Cboe quotes.
 
 **Open at end of day:** no scheduled `data` run had fired yet on Nov 23, so the `data` branch has no `news/stories.json` and the site shows the 9 seed stories. X keys, push keys, monetization IDs, Search Console, backporting b10984d and 778595c to Origin, and the MIT license (deferred) are all still open. See [HANDOFF §7](HANDOFF.md#7-pending-and-next-tasks).
+
+**Scheduler and P0 audit fixes, Nov 23 (evening)** — full audit in `/workspace/tradehax-audit.md` on the Grok Bot box. All commits are GitHub-only and **need an Origin backport**.
+
+| Time (ET) | SHA | Change |
+|---|---|---|
+| 3:24 PM | — | Manual data run 45259066540 ✅: first `news/stories.json` on `data` (10 stories), news sitemap 0 → 10, 8 stories posted to Telegram and Discord |
+| 3:34 PM | 0b704d3 | Crons moved to odd minutes; `worker-cron/` Cloudflare Worker **tradehax-cron** (free cron, `17,47 12-22 * * 1-5` and `21 13 * * 6` UTC) dispatches `data.yml` when no run started in the last 25 min. Secret `GH_TOKEN` on the Worker. |
+| 4:00 PM | 67b2003 | `/chart/` crashed (lightweight-charts cannot parse `oklch()`); chart colours are hex |
+| 4:00 PM | c00646c | `/flow/history/` defaulted to 2026-11-13 (always 0 prints); now today in New York |
+| 4:00 PM | 9e7daa1 | Lint: named default export in the cron Worker |
+| 4:00 PM | c35ce67 | Short interest frozen on 2026-08-14 (rolling 90-day FINRA window), FTD file hard-coded (walk back to newest SEC half-month), FRED all timing out (plain UA), `technicals` job wired into `JOBS`, failed sources keep the last good file, screener DTC field |
+| 4:00 PM | d07d301 | Stories keep sentence order, readable ET stamps, no internal wording, max 3 per type per run, stale short rows skipped, seed stories merged so posted URLs stay live |
+| 4:00 PM | 5d87809 | News hubs for every type and universe ticker (empty ones noindex); RSS/Atom plain links |
+| 4:00 PM | 7d47121 | Doubled titles fixed, per-route canonical, keyword home title |
+| 4:00 PM | 8385100 | Dataset tables formatted per file (insiders, Congress, 13F, ETF flows, calendar, seasonality), Polymarket volume |
+| 4:04 PM | 74106d8 | `finite(null)` was 0, producing three bogus "+5 point" Treasury stories; fixed and retracted via `content/news/retracted.json` |
+| 4:04 PM | 6a49c95 | Social only posts stories from the last 36 h (`SOCIAL_MAX_AGE_HOURS`) |
+| 4:07 PM | — | Data run 45266075011 ✅ (2m14s, was 6m34s): 51 technicals, shorts settled 2026-10-30, all 13 FRED series, 25 stories, news sitemap 16 |
