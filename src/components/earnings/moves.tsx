@@ -91,7 +91,7 @@ export function EarningsMoves() {
           <h2 className="mb-1 text-base font-semibold">Upcoming: implied now vs the usual move</h2>
           <p className="mb-2 text-xs text-muted-foreground">Implied is today&apos;s at-the-money straddle for the first expiry after the report, shown within 14 days of the date. Usual is the average absolute move over the last four reports.</p>
           <div className="surface overflow-x-auto">
-            <table className="w-full min-w-[560px] text-[13px]">
+            <table className="w-full min-w-[600px] whitespace-nowrap text-[13px]">
               <thead>
                 <tr>
                   <th scope="col" className="px-3 py-2.5 text-left">Ticker</th>
@@ -137,7 +137,7 @@ export function EarningsMoves() {
           <PanelState kind="empty" detail="No stored reports for that ticker." />
         ) : (
           <div className="surface overflow-x-auto">
-            <table className="w-full min-w-[760px] text-[13px]">
+            <table className="w-full min-w-[760px] whitespace-nowrap text-[13px]">
               <thead>
                 <tr>
                   <th scope="col" className="px-3 py-2.5 text-left">Report</th>

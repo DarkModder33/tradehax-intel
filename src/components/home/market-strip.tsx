@@ -82,7 +82,7 @@ export function MarketStrip() {
 
   return (
     <section aria-label="Market strip" className="-mx-4 overflow-x-auto px-4 md:mx-0 md:px-0">
-      <div className="grid min-w-[600px] grid-cols-6 gap-2 md:min-w-0">
+      <div className="grid min-w-[780px] grid-cols-6 gap-2 md:min-w-0">
         {STRIP_SYMBOLS.map(({ symbol, label }) => {
           const row = rows[symbol];
           const loading = !(symbol in rows) && !failed;
