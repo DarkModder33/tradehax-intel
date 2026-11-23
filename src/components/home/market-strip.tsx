@@ -39,7 +39,7 @@ function Spark({ values, up }: { values: number[]; up: boolean }) {
   const span = max - min || 1;
   const points = values.map((value, index) => `${(index / (values.length - 1)) * 64},${20 - ((value - min) / span) * 18 - 1}`).join(" ");
   return (
-    <svg viewBox="0 0 64 20" className="h-5 w-16" aria-hidden="true">
+    <svg viewBox="0 0 64 20" className="hidden h-5 w-14 shrink-0 xl:block" aria-hidden="true">
       <polyline points={points} fill="none" stroke={up ? "#61da92" : "#f97676"} strokeWidth="1.5" strokeLinejoin="round" />
     </svg>
   );
@@ -82,7 +82,7 @@ export function MarketStrip() {
 
   return (
     <section aria-label="Market strip" className="-mx-4 overflow-x-auto px-4 md:mx-0 md:px-0">
-      <div className="grid min-w-[720px] grid-cols-6 gap-2 md:min-w-0">
+      <div className="grid min-w-[600px] grid-cols-6 gap-2 md:min-w-0">
         {STRIP_SYMBOLS.map(({ symbol, label }) => {
           const row = rows[symbol];
           const loading = !(symbol in rows) && !failed;
@@ -100,7 +100,7 @@ export function MarketStrip() {
               {loading ? (
                 <span className="h-8 w-20 animate-pulse rounded bg-white/[0.06]" />
               ) : row ? (
-                <span className="flex items-center gap-2">
+                <span className="flex shrink-0 items-center gap-2">
                   <Spark values={row.spark} up={up} />
                   <span className="text-right font-mono tabular-nums">
                     <span className="block text-xs">{formatDigits(row.price, 2)}</span>
