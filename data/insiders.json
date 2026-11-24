@@ -1,6 +1,6 @@
 {
   "meta": {
-    "asOf": "2026-11-24T19:47:43.316Z",
+    "asOf": "2026-11-24T20:18:17.254Z",
     "source": "SEC EDGAR Form 4",
     "rows": 25,
     "delay": "hours",
@@ -8,6 +8,40 @@
     "unavailable": false
   },
   "rows": [
+    {
+      "id": "0002119764-26-000040:primary_doc.xml",
+      "filed": "2026-11-20",
+      "names": [
+        "Elsztain Alejandro Gustavo  (CIK 0002119764)",
+        "BrasilAgro - Brazilian Agricultural Real Estate Co  (CIK 0001499849)"
+      ],
+      "trade": {
+        "owner": "Elsztain Alejandro Gustavo",
+        "ticker": "LND",
+        "code": "P",
+        "shares": 11800,
+        "price": 2.8768,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002119764-26-000039:primary_doc.xml",
+      "filed": "2026-11-12",
+      "names": [
+        "Elsztain Alejandro Gustavo  (CIK 0002119764)",
+        "IRSA INVESTMENTS & REPRESENTATIONS INC  (CIK 0000933267)"
+      ],
+      "trade": {
+        "owner": "Elsztain Alejandro Gustavo",
+        "ticker": "IRS",
+        "code": "J",
+        "shares": 26649,
+        "price": 0,
+        "acquired": true,
+        "form": "4"
+      }
+    },
     {
       "id": "0002109337-26-000020:primary_doc.xml",
       "filed": "2026-11-20",
@@ -26,6 +60,23 @@
       }
     },
     {
+      "id": "0002092805-26-000003:primarydocument.xml",
+      "filed": "2026-11-20",
+      "names": [
+        "Fichera Alfred  (CIK 0002092805)",
+        "Hercules Capital, Inc.  (CIK 0001280784)"
+      ],
+      "trade": {
+        "owner": "Fichera Alfred",
+        "ticker": "HTGC",
+        "code": "P",
+        "shares": 2000,
+        "price": 15.105,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
       "id": "0002069480-26-000012:wk-form4_1795521420.xml",
       "filed": "2026-11-20",
       "names": [
@@ -39,6 +90,23 @@
         "shares": 109,
         "price": 261.51,
         "acquired": false,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002051327-26-000022:form4-11242026_061100.xml",
+      "filed": "2026-11-23",
+      "names": [
+        "Canup Edward G  (CIK 0002051327)",
+        "COLONY BANKCORP INC  (CIK 0000711669)"
+      ],
+      "trade": {
+        "owner": "Canup Edward G",
+        "ticker": "CBAN",
+        "code": "P",
+        "shares": 500,
+        "price": 19.495,
+        "acquired": true,
         "form": "4"
       }
     },
@@ -94,6 +162,40 @@
       }
     },
     {
+      "id": "0001976408-26-000968:primary_doc.xml",
+      "filed": "2026-11-23",
+      "names": [
+        "Paz Amit  (CIK 0002108367)",
+        "Enlight Renewable Energy Ltd.  (CIK 0001922641)"
+      ],
+      "trade": {
+        "owner": "Paz Amit",
+        "ticker": "ENLT",
+        "code": "S",
+        "shares": 4761,
+        "price": 62.8178,
+        "acquired": false,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0001976408-26-000967:primary_doc.xml",
+      "filed": "2026-11-23",
+      "names": [
+        "BEN-HAMOU RONEN  (CIK 0002038089)",
+        "CERAGON NETWORKS LTD  (CIK 0001119769)"
+      ],
+      "trade": {
+        "owner": "BEN-HAMOU RONEN",
+        "ticker": "CRNT",
+        "code": "S",
+        "shares": 29765,
+        "price": 2.19,
+        "acquired": false,
+        "form": "4"
+      }
+    },
+    {
       "id": "0001959455-26-000143:wk-form4_1795519615.xml",
       "filed": "2026-11-23",
       "names": [
@@ -128,6 +230,23 @@
       }
     },
     {
+      "id": "0001841761-26-000129:form4.xml",
+      "filed": "2026-11-20",
+      "names": [
+        "Karp Jason H.  (CIK 0001832413)",
+        "Grove Collaborative Holdings, Inc.  (CIK 0001841761)"
+      ],
+      "trade": {
+        "owner": "Karp Jason H.",
+        "ticker": "GROV",
+        "code": "P",
+        "shares": 3350,
+        "price": 0.8,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
       "id": "0001841409-26-000009:wk-form4_1795529263.xml",
       "filed": "2026-11-20",
       "names": [
@@ -140,6 +259,23 @@
         "code": "P",
         "shares": 2250,
         "price": 19.8022,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0001828536-26-000125:wk-form4_1795540098.xml",
+      "filed": "2026-11-23",
+      "names": [
+        "Piconi Robert  (CIK 0001898769)",
+        "Energy Vault Holdings, Inc.  (CIK 0001828536)"
+      ],
+      "trade": {
+        "owner": "Piconi Robert",
+        "ticker": "NRGV",
+        "code": "P",
+        "shares": 15000,
+        "price": 2.6079,
         "acquired": true,
         "form": "4"
       }
@@ -213,6 +349,23 @@
       }
     },
     {
+      "id": "0001628280-26-075648:wk-form4_1795541601.xml",
+      "filed": "2026-11-20",
+      "names": [
+        "Hinojosa Javier  (CIK 0001953908)",
+        "BKV Corp  (CIK 0001838406)"
+      ],
+      "trade": {
+        "owner": "Hinojosa Javier",
+        "ticker": "BKV",
+        "code": "S",
+        "shares": 4952,
+        "price": 17.5355,
+        "acquired": false,
+        "form": "4"
+      }
+    },
+    {
       "id": "0001628280-26-075637:wk-form4_1795534782.xml",
       "filed": "2026-11-23",
       "names": [
@@ -277,159 +430,6 @@
         "shares": 15000,
         "price": 4.14,
         "acquired": false,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0001621383-26-000012:wk-form4_1795521436.xml",
-      "filed": "2026-11-20",
-      "names": [
-        "Dougherty Neil  (CIK 0001621383)",
-        "Keysight Technologies, Inc.  (CIK 0001601046)"
-      ],
-      "trade": {
-        "owner": "Dougherty Neil",
-        "ticker": "KEYS",
-        "code": "F",
-        "shares": 1549,
-        "price": 261.51,
-        "acquired": false,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0001621346-26-000014:wk-form4_1795521476.xml",
-      "filed": "2026-11-20",
-      "names": [
-        "Estrada Ingrid A  (CIK 0001621346)",
-        "Keysight Technologies, Inc.  (CIK 0001601046)"
-      ],
-      "trade": {
-        "owner": "Estrada Ingrid A",
-        "ticker": "KEYS",
-        "code": "F",
-        "shares": 959,
-        "price": 261.51,
-        "acquired": false,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0001510778-26-000004:form4-11242026_021101.xml",
-      "filed": "2026-11-23",
-      "names": [
-        "BEIRNE PATRICK  (CIK 0001510778)",
-        "PURE CYCLE CORP  (CIK 0000276720)"
-      ],
-      "trade": {
-        "owner": "BEIRNE PATRICK",
-        "ticker": "PCYO",
-        "code": "M",
-        "shares": 6500,
-        "price": 5.1,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0001493152-26-053928:ownership.xml",
-      "filed": "2026-11-20",
-      "names": [
-        "Hilmer Michael Anthony  (CIK 0002119422)",
-        "NOMAD POWER SOLUTIONS, INC.  (CIK 0001335105)"
-      ],
-      "trade": {
-        "owner": "Hilmer Michael Anthony",
-        "ticker": "NMAD",
-        "code": "P",
-        "shares": 500,
-        "price": 2.65,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0001493152-26-053925:ownership.xml",
-      "filed": "2026-11-23",
-      "names": [
-        "Dai Kun  (CIK 0001764279)",
-        "Uxin Ltd  (CIK 0001729173)"
-      ],
-      "trade": {
-        "owner": "Dai Kun",
-        "ticker": "UXIN",
-        "code": "P",
-        "shares": 5000,
-        "price": 0.6865,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0001493152-26-053882:ownership.xml",
-      "filed": "2026-11-20",
-      "names": [
-        "Korman Judah  (CIK 0002141833)",
-        "Reliance Global Group, Inc.  (CIK 0001812727)"
-      ],
-      "trade": {
-        "owner": "Korman Judah",
-        "ticker": "XGPU",
-        "code": "P",
-        "shares": 51737,
-        "price": 2.6,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0001493152-26-053878:ownership.xml",
-      "filed": "2026-11-20",
-      "names": [
-        "Beyman Mordechai Menachem  (CIK 0002143735)",
-        "Reliance Global Group, Inc.  (CIK 0001812727)"
-      ],
-      "trade": {
-        "owner": "Beyman Mordechai Menachem",
-        "ticker": "XGPU",
-        "code": "P",
-        "shares": 28783,
-        "price": 2.6,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0001493152-26-053875:ownership.xml",
-      "filed": "2026-11-20",
-      "names": [
-        "Beyman Ezra  (CIK 0001886817)",
-        "Reliance Global Group, Inc.  (CIK 0001812727)"
-      ],
-      "trade": {
-        "owner": "Beyman Ezra",
-        "ticker": "XGPU",
-        "code": "P",
-        "shares": 117385,
-        "price": 2.6,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0001437749-26-038140:rdgdoc.xml",
-      "filed": "2026-11-20",
-      "names": [
-        "Taylor Mike J  (CIK 0001692215)",
-        "FRIEDMAN INDUSTRIES INC  (CIK 0000039092)"
-      ],
-      "trade": {
-        "owner": "Taylor Mike J",
-        "ticker": "FRD",
-        "code": "P",
-        "shares": 4000,
-        "price": 33.52,
-        "acquired": true,
         "form": "4"
       }
     }
