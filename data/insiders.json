@@ -1,6 +1,6 @@
 {
   "meta": {
-    "asOf": "2026-11-24T12:17:46.000Z",
+    "asOf": "2026-11-24T12:48:29.468Z",
     "source": "SEC EDGAR Form 4",
     "rows": 25,
     "delay": "hours",
@@ -179,6 +179,23 @@
       }
     },
     {
+      "id": "0001628280-26-075609:wk-form4_1795523682.xml",
+      "filed": "2026-11-23",
+      "names": [
+        "Hansen Mathias  (CIK 0002114384)",
+        "trivago N.V.  (CIK 0001683825)"
+      ],
+      "trade": {
+        "owner": "Hansen Mathias",
+        "ticker": "TRVG",
+        "code": "S",
+        "shares": 15000,
+        "price": 4.14,
+        "acquired": false,
+        "form": "4"
+      }
+    },
+    {
       "id": "0001621383-26-000012:wk-form4_1795521436.xml",
       "filed": "2026-11-20",
       "names": [
@@ -276,6 +293,23 @@
         "code": "P",
         "shares": 25000,
         "price": 0.9059,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0001193125-26-473228:ownership.xml",
+      "filed": "2026-11-23",
+      "names": [
+        "Chen Jingye  (CIK 0001965706)",
+        "Sea Ltd  (CIK 0001703399)"
+      ],
+      "trade": {
+        "owner": "Chen Jingye",
+        "ticker": "SE",
+        "code": "X",
+        "shares": 100000,
+        "price": 15,
         "acquired": true,
         "form": "4"
       }
@@ -395,40 +429,6 @@
         "code": "F",
         "shares": 21505,
         "price": 16.91,
-        "acquired": false,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002152228-26-000006:wk-form4_1795468220.xml",
-      "filed": "2026-11-20",
-      "names": [
-        "Waits Julian Wendell Sr.  (CIK 0002152228)",
-        "Rapid7, Inc.  (CIK 0001560327)"
-      ],
-      "trade": {
-        "owner": "Waits Julian Wendell Sr.",
-        "ticker": "RPD",
-        "code": "S",
-        "shares": 28924,
-        "price": 14.79,
-        "acquired": false,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002149159-26-000008:wk-form4_1795455780.xml",
-      "filed": "2026-11-20",
-      "names": [
-        "Woods Todd Charles  (CIK 0002149159)",
-        "Waystar Holding Corp.  (CIK 0001990354)"
-      ],
-      "trade": {
-        "owner": "Woods Todd Charles",
-        "ticker": "WAY",
-        "code": "F",
-        "shares": 1097,
-        "price": 26.69,
         "acquired": false,
         "form": "4"
       }
