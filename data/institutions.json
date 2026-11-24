@@ -1,6 +1,6 @@
 {
   "meta": {
-    "asOf": "2026-11-24T16:47:54.383Z",
+    "asOf": "2026-11-24T17:17:46.919Z",
     "source": "SEC 13F-HR index",
     "rows": 20,
     "delay": "quarterly",
@@ -34,6 +34,13 @@
       "filed": "2026-09-30",
       "names": [
         "Sunbelt Securities, Inc.  (CIK 0001632932)"
+      ]
+    },
+    {
+      "id": "0000949853-26-000015:primary_doc.xml",
+      "filed": "2026-03-31",
+      "names": [
+        "P.A.W. CAPITAL CORP  (CIK 0000949853)"
       ]
     },
     {
@@ -137,13 +144,6 @@
     {
       "id": "0001942361-26-000007:primary_doc.xml",
       "filed": "2025-12-31",
-      "names": [
-        "PhiloSmith Capital Corp  (CIK 0001942361)"
-      ]
-    },
-    {
-      "id": "0001942361-26-000006:primary_doc.xml",
-      "filed": "2025-09-30",
       "names": [
         "PhiloSmith Capital Corp  (CIK 0001942361)"
       ]
