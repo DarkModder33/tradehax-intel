@@ -199,9 +199,29 @@
     "alert:block|SPX270917C07400000|2026-11-24T15:37:36.072657261Z": [
       "telegram",
       "discord"
+    ],
+    "alert:congress|20035776|LYB|2026-04-29|buy|15001": [
+      "telegram",
+      "discord"
+    ],
+    "alert:congress|20035776|PLD|2026-05-18|buy|15001": [
+      "telegram",
+      "discord"
+    ],
+    "alert:mover|ORCL|2026-11-24": [
+      "telegram",
+      "discord"
+    ],
+    "alert:mover|XLK|2026-11-24": [
+      "telegram",
+      "discord"
+    ],
+    "alert:block|SPX271119C08000000|2026-11-24T16:15:10.39638026Z": [
+      "telegram",
+      "discord"
     ]
   },
-  "updatedAt": "2026-11-24T16:19:27.424Z",
+  "updatedAt": "2026-11-24T16:49:11.922Z",
   "messages": {
     "WMT|earnings|2026-11-19": {
       "telegram": "23",
@@ -322,10 +342,30 @@
     "alert:block|SPX270917C07400000|2026-11-24T15:37:36.072657261Z": {
       "telegram": "52",
       "discord": "1574821788154859701"
+    },
+    "alert:congress|20035776|LYB|2026-04-29|buy|15001": {
+      "telegram": "53",
+      "discord": "1574829251746594918"
+    },
+    "alert:congress|20035776|PLD|2026-05-18|buy|15001": {
+      "telegram": "54",
+      "discord": "1574829253407805451"
+    },
+    "alert:mover|ORCL|2026-11-24": {
+      "telegram": "55",
+      "discord": "1574829255311761462"
+    },
+    "alert:mover|XLK|2026-11-24": {
+      "telegram": "56",
+      "discord": "1574829257266298890"
+    },
+    "alert:block|SPX271119C08000000|2026-11-24T16:15:10.39638026Z": {
+      "telegram": "57",
+      "discord": "1574829259099349046"
     }
   },
   "alertDays": {
     "2026-11-23": 2,
-    "2026-11-24": 19
+    "2026-11-24": 24
   }
 }

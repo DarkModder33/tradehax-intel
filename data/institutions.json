@@ -1,6 +1,6 @@
 {
   "meta": {
-    "asOf": "2026-11-24T16:17:49.959Z",
+    "asOf": "2026-11-24T16:47:54.383Z",
     "source": "SEC 13F-HR index",
     "rows": 20,
     "delay": "quarterly",
@@ -27,6 +27,13 @@
       "filed": "2026-09-30",
       "names": [
         "FAYEZ SAROFIM & CO  (CIK 0000937729)"
+      ]
+    },
+    {
+      "id": "0001062993-26-006245:primary_doc.xml",
+      "filed": "2026-09-30",
+      "names": [
+        "Sunbelt Securities, Inc.  (CIK 0001632932)"
       ]
     },
     {
@@ -137,13 +144,6 @@
     {
       "id": "0001942361-26-000006:primary_doc.xml",
       "filed": "2025-09-30",
-      "names": [
-        "PhiloSmith Capital Corp  (CIK 0001942361)"
-      ]
-    },
-    {
-      "id": "0001942361-26-000005:primary_doc.xml",
-      "filed": "2025-06-30",
       "names": [
         "PhiloSmith Capital Corp  (CIK 0001942361)"
       ]

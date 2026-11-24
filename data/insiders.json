@@ -1,6 +1,6 @@
 {
   "meta": {
-    "asOf": "2026-11-24T16:17:47.420Z",
+    "asOf": "2026-11-24T16:47:52.172Z",
     "source": "SEC EDGAR Form 4",
     "rows": 25,
     "delay": "hours",
@@ -192,6 +192,23 @@
         "shares": 4050,
         "price": 261.51,
         "acquired": false,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0001654954-26-010087:section16.xml",
+      "filed": "2026-11-20",
+      "names": [
+        "Saltiel Robert J.  (CIK 0001434402)",
+        "RPC INC  (CIK 0000742278)"
+      ],
+      "trade": {
+        "owner": "Saltiel Robert J.",
+        "ticker": "RES",
+        "code": "A",
+        "shares": 50000,
+        "price": null,
+        "acquired": true,
         "form": "4"
       }
     },
@@ -412,23 +429,6 @@
         "code": "P",
         "shares": 4000,
         "price": 33.52,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0001437749-26-038139:rdgdoc.xml",
-      "filed": "2026-11-23",
-      "names": [
-        "Dyer Richard E  (CIK 0001597317)",
-        "CSB Financial Inc.  (CIK 0002114521)"
-      ],
-      "trade": {
-        "owner": "Dyer Richard E",
-        "ticker": "CSBA",
-        "code": "P",
-        "shares": 700,
-        "price": 14.15,
         "acquired": true,
         "form": "4"
       }
