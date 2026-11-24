@@ -175,9 +175,33 @@
     "alert:block|SPX270319P06225000|2026-11-24T15:08:31.072903433Z": [
       "telegram",
       "discord"
+    ],
+    "NVDA|mover|2026-11-24": [
+      "telegram",
+      "discord"
+    ],
+    "alert:congress|20035776|DG|2026-06-01|sell|15001": [
+      "telegram",
+      "discord"
+    ],
+    "alert:congress|20035776|GIS|2026-05-06|buy|15001": [
+      "telegram",
+      "discord"
+    ],
+    "alert:mover|COIN|2026-11-24": [
+      "telegram",
+      "discord"
+    ],
+    "alert:mover|AVGO|2026-11-24": [
+      "telegram",
+      "discord"
+    ],
+    "alert:block|SPX270917C07400000|2026-11-24T15:37:36.072657261Z": [
+      "telegram",
+      "discord"
     ]
   },
-  "updatedAt": "2026-11-24T15:49:37.350Z",
+  "updatedAt": "2026-11-24T16:19:27.424Z",
   "messages": {
     "WMT|earnings|2026-11-19": {
       "telegram": "23",
@@ -274,10 +298,34 @@
     "alert:block|SPX270319P06225000|2026-11-24T15:08:31.072903433Z": {
       "telegram": "46",
       "discord": "1574814284247212153"
+    },
+    "NVDA|mover|2026-11-24": {
+      "telegram": "47",
+      "discord": "1574821762724659343"
+    },
+    "alert:congress|20035776|DG|2026-06-01|sell|15001": {
+      "telegram": "48",
+      "discord": "1574821767053312001"
+    },
+    "alert:congress|20035776|GIS|2026-05-06|buy|15001": {
+      "telegram": "49",
+      "discord": "1574821769049546834"
+    },
+    "alert:mover|COIN|2026-11-24": {
+      "telegram": "50",
+      "discord": "1574821770903425108"
+    },
+    "alert:mover|AVGO|2026-11-24": {
+      "telegram": "51",
+      "discord": "1574821773344510024"
+    },
+    "alert:block|SPX270917C07400000|2026-11-24T15:37:36.072657261Z": {
+      "telegram": "52",
+      "discord": "1574821788154859701"
     }
   },
   "alertDays": {
     "2026-11-23": 2,
-    "2026-11-24": 14
+    "2026-11-24": 19
   }
 }
