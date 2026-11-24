@@ -1,6 +1,6 @@
 {
   "meta": {
-    "asOf": "2026-11-24T06:27:48.961Z",
+    "asOf": "2026-11-24T12:19:14.613Z",
     "source": "Yahoo most actives",
     "rows": 25,
     "delay": "delayed",
@@ -86,18 +86,25 @@
       "name": "Super Micro Computer, Inc."
     },
     {
-      "symbol": "WULF",
-      "price": 10.91,
-      "change": 10.7614,
-      "volume": 58753021,
-      "name": "TeraWulf Inc."
-    },
-    {
       "symbol": "NIO",
       "price": 2.57,
       "change": 4.89795,
       "volume": 63445216,
       "name": "NIO Inc."
+    },
+    {
+      "symbol": "F",
+      "price": 11.65,
+      "change": 4.29722,
+      "volume": 59265646,
+      "name": "Ford Motor Company"
+    },
+    {
+      "symbol": "WULF",
+      "price": 10.91,
+      "change": 10.7614,
+      "volume": 58753021,
+      "name": "TeraWulf Inc."
     },
     {
       "symbol": "AAPL",
@@ -112,6 +119,13 @@
       "change": 14.0754,
       "volume": 54937794,
       "name": "Cipher Digital Inc."
+    },
+    {
+      "symbol": "NU",
+      "price": 11.8,
+      "change": 4.70275,
+      "volume": 54970633,
+      "name": "Nu Holdings Ltd."
     },
     {
       "symbol": "AMD",
@@ -142,11 +156,11 @@
       "name": "Nebius Group N.V."
     },
     {
-      "symbol": "NU",
-      "price": 11.8,
-      "change": 4.70275,
-      "volume": 54970633,
-      "name": "Nu Holdings Ltd."
+      "symbol": "MU",
+      "price": 707.7,
+      "change": 19.0392,
+      "volume": 49402564,
+      "name": "Micron Technology, Inc."
     },
     {
       "symbol": "NFLX",
@@ -168,20 +182,6 @@
       "change": 20.2785,
       "volume": 46236359,
       "name": "Applied Digital Corporation"
-    },
-    {
-      "symbol": "MU",
-      "price": 707.7,
-      "change": 19.0392,
-      "volume": 49402564,
-      "name": "Micron Technology, Inc."
-    },
-    {
-      "symbol": "MARA",
-      "price": 5.58,
-      "change": 9.73451,
-      "volume": 45061826,
-      "name": "MARA Holdings, Inc."
     }
   ],
   "note": "A predefined list, not the full nightly universe."

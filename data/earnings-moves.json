@@ -1,6 +1,6 @@
 {
   "meta": {
-    "asOf": "2026-11-24T05:00:25.983Z",
+    "asOf": "2026-11-24T12:19:12.221Z",
     "source": "Nasdaq report dates, Alpaca SIP closes, Cboe/Alpaca straddles",
     "rows": 128,
     "delay": "daily",
@@ -1806,12 +1806,12 @@
     {
       "sym": "CRM",
       "reportDate": "2026-12-02",
-      "implied": 0.11578975946136721,
+      "implied": 0.11651794139055886,
       "impliedExpiry": "2026-12-04",
-      "spot": 184.17,
+      "spot": 185.465,
       "avgMove": 0.09293342852418479,
       "samples": 4,
-      "capturedAt": "2026-11-24T05:00:19.583Z"
+      "capturedAt": "2026-11-24T12:19:08.801Z"
     },
     {
       "sym": "AVGO",
@@ -1821,7 +1821,7 @@
       "spot": null,
       "avgMove": 0.08818401143131988,
       "samples": 4,
-      "capturedAt": "2026-11-24T05:00:09.868Z"
+      "capturedAt": "2026-11-24T12:19:03.729Z"
     },
     {
       "sym": "COST",
@@ -1831,7 +1831,7 @@
       "spot": null,
       "avgMove": 0.021812712303123455,
       "samples": 4,
-      "capturedAt": "2026-11-24T05:00:14.967Z"
+      "capturedAt": "2026-11-24T12:19:06.404Z"
     },
     {
       "sym": "ORCL",
@@ -1841,7 +1841,7 @@
       "spot": null,
       "avgMove": 0.08859002192527357,
       "samples": 4,
-      "capturedAt": "2026-11-24T05:00:20.075Z"
+      "capturedAt": "2026-11-24T12:19:09.111Z"
     },
     {
       "sym": "JPM",
@@ -1851,7 +1851,7 @@
       "spot": null,
       "avgMove": 0.028966046547422075,
       "samples": 4,
-      "capturedAt": "2026-11-24T05:00:11.093Z"
+      "capturedAt": "2026-11-24T12:19:04.553Z"
     },
     {
       "sym": "BAC",
@@ -1861,15 +1861,15 @@
       "spot": null,
       "avgMove": 0.028940391193794185,
       "samples": 4,
-      "capturedAt": "2026-11-24T05:00:17.639Z"
+      "capturedAt": "2026-11-24T12:19:07.731Z"
     }
   ],
   "captures": {
     "CRM|2026-12-02": {
-      "implied": 0.11578975946136721,
+      "implied": 0.11651794139055886,
       "expiry": "2026-12-04",
-      "spot": 184.17,
-      "at": "2026-11-24T05:00:19.583Z"
+      "spot": 185.465,
+      "at": "2026-11-24T12:19:08.800Z"
     }
   }
 }
