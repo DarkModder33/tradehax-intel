@@ -131,9 +131,29 @@
     "AMD|mover|2026-11-24": [
       "telegram",
       "discord"
+    ],
+    "alert:mover|AMD|2026-11-24": [
+      "telegram",
+      "discord"
+    ],
+    "alert:congress|20035776|BAC|2026-08-26|sell|15001": [
+      "telegram",
+      "discord"
+    ],
+    "alert:congress|20035776|CLX|2026-05-06|sell|15001": [
+      "telegram",
+      "discord"
+    ],
+    "alert:mover|SMH|2026-11-24": [
+      "telegram",
+      "discord"
+    ],
+    "alert:block|SPY261218P00680000|2026-11-24T14:58:50.677905646Z": [
+      "telegram",
+      "discord"
     ]
   },
-  "updatedAt": "2026-11-24T14:49:44.241Z",
+  "updatedAt": "2026-11-24T15:19:55.284Z",
   "messages": {
     "WMT|earnings|2026-11-19": {
       "telegram": "23",
@@ -186,10 +206,30 @@
     "AMD|mover|2026-11-24": {
       "telegram": "35",
       "discord": "1574799184362737891"
+    },
+    "alert:mover|AMD|2026-11-24": {
+      "telegram": "36",
+      "discord": "1574806787880652882"
+    },
+    "alert:congress|20035776|BAC|2026-08-26|sell|15001": {
+      "telegram": "37",
+      "discord": "1574806790099570761"
+    },
+    "alert:congress|20035776|CLX|2026-05-06|sell|15001": {
+      "telegram": "38",
+      "discord": "1574806792293064765"
+    },
+    "alert:mover|SMH|2026-11-24": {
+      "telegram": "39",
+      "discord": "1574806794327298120"
+    },
+    "alert:block|SPY261218P00680000|2026-11-24T14:58:50.677905646Z": {
+      "telegram": "40",
+      "discord": "1574806796764446822"
     }
   },
   "alertDays": {
     "2026-11-23": 2,
-    "2026-11-24": 4
+    "2026-11-24": 9
   }
 }
