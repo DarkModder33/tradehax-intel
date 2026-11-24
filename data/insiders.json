@@ -1,6 +1,6 @@
 {
   "meta": {
-    "asOf": "2026-11-24T15:17:52.510Z",
+    "asOf": "2026-11-24T15:47:55.540Z",
     "source": "SEC EDGAR Form 4",
     "rows": 25,
     "delay": "hours",
@@ -196,6 +196,23 @@
       }
     },
     {
+      "id": "0001628280-26-075637:wk-form4_1795534782.xml",
+      "filed": "2026-11-23",
+      "names": [
+        "Kettler Ronald Kyle  (CIK 0002112743)",
+        "Granite Ridge Resources, Inc.  (CIK 0001928446)"
+      ],
+      "trade": {
+        "owner": "Kettler Ronald Kyle",
+        "ticker": "GRNT",
+        "code": "P",
+        "shares": 5000,
+        "price": 5.49,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
       "id": "0001628280-26-075620:wk-form4_1795528386.xml",
       "filed": "2026-11-20",
       "names": [
@@ -383,6 +400,23 @@
       }
     },
     {
+      "id": "0001437749-26-038140:rdgdoc.xml",
+      "filed": "2026-11-20",
+      "names": [
+        "Taylor Mike J  (CIK 0001692215)",
+        "FRIEDMAN INDUSTRIES INC  (CIK 0000039092)"
+      ],
+      "trade": {
+        "owner": "Taylor Mike J",
+        "ticker": "FRD",
+        "code": "P",
+        "shares": 4000,
+        "price": 33.52,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
       "id": "0001437749-26-038139:rdgdoc.xml",
       "filed": "2026-11-23",
       "names": [
@@ -395,40 +429,6 @@
         "code": "P",
         "shares": 700,
         "price": 14.15,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0001213900-26-123398:ownership.xml",
-      "filed": "2026-11-20",
-      "names": [
-        "Knoll Scott W.  (CIK 0002129435)",
-        "Elmet Group Co.  (CIK 0002101698)"
-      ],
-      "trade": {
-        "owner": "Knoll Scott W.",
-        "ticker": "ELMT",
-        "code": "S",
-        "shares": 13915,
-        "price": 18.33,
-        "acquired": false,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0001213900-26-123375:ownership.xml",
-      "filed": "2026-11-23",
-      "names": [
-        "Carmel Sharon  (CIK 0001981861)",
-        "Beamr Imaging Ltd.  (CIK 0001899005)"
-      ],
-      "trade": {
-        "owner": "Carmel Sharon",
-        "ticker": "BMR",
-        "code": "P",
-        "shares": 25000,
-        "price": 0.9059,
         "acquired": true,
         "form": "4"
       }
