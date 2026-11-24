@@ -1,6 +1,6 @@
 {
   "meta": {
-    "asOf": "2026-11-24T21:48:17.718Z",
+    "asOf": "2026-11-24T22:17:49.835Z",
     "source": "SEC EDGAR Form 4",
     "rows": 25,
     "delay": "hours",
@@ -94,6 +94,40 @@
       }
     },
     {
+      "id": "0002133947-26-000009:primarydocument.xml",
+      "filed": "2026-11-20",
+      "names": [
+        "Ge Xiaochuan  (CIK 0002133947)",
+        "AppLovin Corp  (CIK 0001751008)"
+      ],
+      "trade": {
+        "owner": "Ge Xiaochuan",
+        "ticker": "APP",
+        "code": "F",
+        "shares": 5459,
+        "price": 348.29,
+        "acquired": false,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002133938-26-000007:primarydocument.xml",
+      "filed": "2026-11-20",
+      "names": [
+        "Cacovean Corina I  (CIK 0002133938)",
+        "AppLovin Corp  (CIK 0001751008)"
+      ],
+      "trade": {
+        "owner": "Cacovean Corina I",
+        "ticker": "APP",
+        "code": "F",
+        "shares": 1540,
+        "price": 348.29,
+        "acquired": false,
+        "form": "4"
+      }
+    },
+    {
       "id": "0002130035-26-000011:primary_doc.xml",
       "filed": "2026-11-20",
       "names": [
@@ -123,6 +157,23 @@
         "code": "M",
         "shares": 100000,
         "price": null,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002122129-26-000002:primary_doc.xml",
+      "filed": "2026-11-16",
+      "names": [
+        "Daher Filho Tufi  (CIK 0002122129)",
+        "NATIONAL STEEL CO  (CIK 0001049659)"
+      ],
+      "trade": {
+        "owner": "Daher Filho Tufi",
+        "ticker": "SID",
+        "code": "P",
+        "shares": 30000,
+        "price": 0.6577,
         "acquired": true,
         "form": "4"
       }
@@ -174,6 +225,23 @@
         "code": "P",
         "shares": 22313,
         "price": 2.0326,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002099007-26-000008:wk-form4_1795558059.xml",
+      "filed": "2026-11-17",
+      "names": [
+        "Cragg Lee Ann  (CIK 0002099007)",
+        "Amerant Bancorp Inc.  (CIK 0001734342)"
+      ],
+      "trade": {
+        "owner": "Cragg Lee Ann",
+        "ticker": "AMTB",
+        "code": "M",
+        "shares": 1000,
+        "price": 0,
         "acquired": true,
         "form": "4"
       }
@@ -298,6 +366,23 @@
       }
     },
     {
+      "id": "0002050301-26-000011:form4-11242026_091153.xml",
+      "filed": "2026-11-20",
+      "names": [
+        "Venkatramani Srinivasan  (CIK 0002050301)",
+        "Blend Labs, Inc.  (CIK 0001855747)"
+      ],
+      "trade": {
+        "owner": "Venkatramani Srinivasan",
+        "ticker": "BLND",
+        "code": "M",
+        "shares": 81250,
+        "price": null,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
       "id": "0002044904-26-000005:wk-form4_1795556162.xml",
       "filed": "2026-11-23",
       "names": [
@@ -344,91 +429,6 @@
         "code": "F",
         "shares": 415,
         "price": 261.51,
-        "acquired": false,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002039852-26-000140:ownership.xml",
-      "filed": "2026-11-20",
-      "names": [
-        "McEntee James J III  (CIK 0001312746)",
-        "Bancorp, Inc.  (CIK 0001295401)"
-      ],
-      "trade": {
-        "owner": "McEntee James J III",
-        "ticker": "TBBK",
-        "code": "P",
-        "shares": 5000,
-        "price": null,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002037037-26-000007:wk-form4_1795556100.xml",
-      "filed": "2026-11-23",
-      "names": [
-        "Bruning Jill L  (CIK 0002037037)",
-        "Amentum Holdings, Inc.  (CIK 0002011286)"
-      ],
-      "trade": {
-        "owner": "Bruning Jill L",
-        "ticker": "AMTM",
-        "code": "A",
-        "shares": 15496,
-        "price": 0,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002034388-26-000007:wk-form4_1795555897.xml",
-      "filed": "2026-11-23",
-      "names": [
-        "Mullen Sean Thomas  (CIK 0002034388)",
-        "Amentum Holdings, Inc.  (CIK 0002011286)"
-      ],
-      "trade": {
-        "owner": "Mullen Sean Thomas",
-        "ticker": "AMTM",
-        "code": "A",
-        "shares": 15496,
-        "price": 0,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002032267-26-000003:wk-form4_1795555321.xml",
-      "filed": "2026-11-20",
-      "names": [
-        "CHUNG NICHOLAS  (CIK 0002032267)",
-        "MOOG INC.  (CIK 0000067887)"
-      ],
-      "trade": {
-        "owner": "CHUNG NICHOLAS",
-        "ticker": "MOGA/MOGB",
-        "code": "A",
-        "shares": 162,
-        "price": 0,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002027006-26-000034:wk-form4_1795554256.xml",
-      "filed": "2026-11-20",
-      "names": [
-        "Black Michael Scott  (CIK 0002027006)",
-        "Bark, Inc.  (CIK 0001819574)"
-      ],
-      "trade": {
-        "owner": "Black Michael Scott",
-        "ticker": "BARK",
-        "code": "F",
-        "shares": 187,
-        "price": 8.75,
         "acquired": false,
         "form": "4"
       }

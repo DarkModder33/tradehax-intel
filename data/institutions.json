@@ -1,6 +1,6 @@
 {
   "meta": {
-    "asOf": "2026-11-24T21:48:19.696Z",
+    "asOf": "2026-11-24T22:17:51.331Z",
     "source": "SEC 13F-HR index",
     "rows": 20,
     "delay": "quarterly",
@@ -16,6 +16,41 @@
       ]
     },
     {
+      "id": "0002137529-26-000002:primary_doc.xml",
+      "filed": "2026-09-30",
+      "names": [
+        "Regatta Research & Money Management  (CIK 0002137529)"
+      ]
+    },
+    {
+      "id": "0001971230-26-000004:primary_doc.xml",
+      "filed": "2026-09-30",
+      "names": [
+        "Ruggaard & Associates LLC  (CIK 0001971230)"
+      ]
+    },
+    {
+      "id": "0001849529-26-000017:primary_doc.xml",
+      "filed": "2026-09-30",
+      "names": [
+        "Revere Asset Management, Inc  (CIK 0001849529)"
+      ]
+    },
+    {
+      "id": "0001774207-26-000005:primary_doc.xml",
+      "filed": "2026-09-30",
+      "names": [
+        "Jupiter Wealth Management LLC  (CIK 0001774207)"
+      ]
+    },
+    {
+      "id": "0001666363-26-000006:primary_doc.xml",
+      "filed": "2026-09-30",
+      "names": [
+        "Venturi Wealth Management, LLC  (CIK 0001666363)"
+      ]
+    },
+    {
       "id": "0001450599-26-000018:primary_doc.xml",
       "filed": "2026-09-30",
       "names": [
@@ -27,6 +62,41 @@
       "filed": "2026-09-30",
       "names": [
         "FAYEZ SAROFIM & CO  (CIK 0000937729)"
+      ]
+    },
+    {
+      "id": "0001172661-26-005478:primary_doc.xml",
+      "filed": "2026-09-30",
+      "names": [
+        "Inspire Advisors, LLC  (CIK 0001810558)"
+      ]
+    },
+    {
+      "id": "0001085146-26-000955:primary_doc.xml",
+      "filed": "2026-09-30",
+      "names": [
+        "Janus Henderson Group Ltd.  (CIK 0001274173)"
+      ]
+    },
+    {
+      "id": "0001062993-26-006245:primary_doc.xml",
+      "filed": "2026-09-30",
+      "names": [
+        "Sunbelt Securities, Inc.  (CIK 0001632932)"
+      ]
+    },
+    {
+      "id": "0000949853-26-000016:primary_doc.xml",
+      "filed": "2026-03-31",
+      "names": [
+        "P.A.W. CAPITAL CORP  (CIK 0000949853)"
+      ]
+    },
+    {
+      "id": "0000949853-26-000015:primary_doc.xml",
+      "filed": "2026-03-31",
+      "names": [
+        "P.A.W. CAPITAL CORP  (CIK 0000949853)"
       ]
     },
     {
@@ -76,76 +146,6 @@
       "filed": "2026-09-30",
       "names": [
         "FINDELL CAPITAL MANAGEMENT LLC  (CIK 0001814465)"
-      ]
-    },
-    {
-      "id": "0002085853-26-001418:primary_doc.xml",
-      "filed": "2026-09-30",
-      "names": [
-        "AssuredPartners Investment Advisors, LLC  (CIK 0002055492)"
-      ]
-    },
-    {
-      "id": "0002085853-26-001417:primary_doc.xml",
-      "filed": "2026-09-30",
-      "names": [
-        "WNY Asset Management, LLC  (CIK 0001803296)"
-      ]
-    },
-    {
-      "id": "0002063364-26-000403:primary_doc.xml",
-      "filed": "2026-09-30",
-      "names": [
-        "Forefront Wealth Partners, LLC  (CIK 0002068112)"
-      ]
-    },
-    {
-      "id": "0002033312-26-000005:primary_doc.xml",
-      "filed": "2026-09-30",
-      "names": [
-        "Summit Wealth Partners, LLC  (CIK 0002033312)"
-      ]
-    },
-    {
-      "id": "0001942361-26-000010:primary_doc.xml",
-      "filed": "2026-09-30",
-      "names": [
-        "PhiloSmith Capital Corp  (CIK 0001942361)"
-      ]
-    },
-    {
-      "id": "0001942361-26-000009:primary_doc.xml",
-      "filed": "2026-06-30",
-      "names": [
-        "PhiloSmith Capital Corp  (CIK 0001942361)"
-      ]
-    },
-    {
-      "id": "0001942361-26-000008:primary_doc.xml",
-      "filed": "2026-03-31",
-      "names": [
-        "PhiloSmith Capital Corp  (CIK 0001942361)"
-      ]
-    },
-    {
-      "id": "0001942361-26-000007:primary_doc.xml",
-      "filed": "2025-12-31",
-      "names": [
-        "PhiloSmith Capital Corp  (CIK 0001942361)"
-      ]
-    },
-    {
-      "id": "0001942361-26-000006:primary_doc.xml",
-      "filed": "2025-09-30",
-      "names": [
-        "PhiloSmith Capital Corp  (CIK 0001942361)"
-      ]
-    },
-    {
-      "id": "0001942361-26-000005:primary_doc.xml",
-      "filed": "2025-06-30",
-      "names": [
-        "PhiloSmith Capital Corp  (CIK 0001942361)"
       ]
     }
   ],
