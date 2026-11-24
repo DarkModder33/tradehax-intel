@@ -115,9 +115,17 @@
     "alert:mover|SMH|2026-11-23": [
       "telegram",
       "discord"
+    ],
+    "alert:mover|ORCL|2026-11-23": [
+      "telegram",
+      "discord"
+    ],
+    "alert:mover|TSLA|2026-11-23": [
+      "telegram",
+      "discord"
     ]
   },
-  "updatedAt": "2026-11-24T05:01:35.333Z",
+  "updatedAt": "2026-11-24T06:27:55.594Z",
   "messages": {
     "WMT|earnings|2026-11-19": {
       "telegram": "23",
@@ -154,10 +162,18 @@
     "alert:mover|SMH|2026-11-23": {
       "telegram": "31",
       "discord": "1574651179479212133"
+    },
+    "alert:mover|ORCL|2026-11-23": {
+      "telegram": "32",
+      "discord": "1574672904942264332"
+    },
+    "alert:mover|TSLA|2026-11-23": {
+      "telegram": "33",
+      "discord": "1574672907513372686"
     }
   },
   "alertDays": {
     "2026-11-23": 2,
-    "2026-11-24": 2
+    "2026-11-24": 4
   }
 }
