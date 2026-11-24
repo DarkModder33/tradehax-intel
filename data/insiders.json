@@ -1,6 +1,6 @@
 {
   "meta": {
-    "asOf": "2026-11-24T13:17:45.368Z",
+    "asOf": "2026-11-24T13:47:55.857Z",
     "source": "SEC EDGAR Form 4",
     "rows": 25,
     "delay": "hours",
@@ -298,6 +298,23 @@
       }
     },
     {
+      "id": "0001213900-26-123398:ownership.xml",
+      "filed": "2026-11-20",
+      "names": [
+        "Knoll Scott W.  (CIK 0002129435)",
+        "Elmet Group Co.  (CIK 0002101698)"
+      ],
+      "trade": {
+        "owner": "Knoll Scott W.",
+        "ticker": "ELMT",
+        "code": "S",
+        "shares": 13915,
+        "price": 18.33,
+        "acquired": false,
+        "form": "4"
+      }
+    },
+    {
       "id": "0001213900-26-123375:ownership.xml",
       "filed": "2026-11-23",
       "names": [
@@ -310,6 +327,24 @@
         "code": "P",
         "shares": 25000,
         "price": 0.9059,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0001193125-26-473371:ownership.xml",
+      "filed": "2026-11-20",
+      "names": [
+        "BROOKFIELD Corp /ON/  (BN, BNH, BNJ, BAMGF, BAMKF, BKAMF, BKFAF, BKFDF, BKFOF, BRCFF, BRFAF, BRFCF, BROXF, BRPSF, BXDIF)  (CIK 0001001085)",
+        "Brookfield REIT Adviser LLC  (CIK 0001921485)",
+        "BROOKFIELD REAL ESTATE INCOME TRUST INC.  (CIK 0001713407)"
+      ],
+      "trade": {
+        "owner": "BROOKFIELD Corp /ON/",
+        "ticker": "N/A",
+        "code": "J",
+        "shares": 120992.889,
+        "price": 10.5563,
         "acquired": true,
         "form": "4"
       }
@@ -396,40 +431,6 @@
         "shares": 300000,
         "price": 0.8102,
         "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0001193125-26-473065:ownership.xml",
-      "filed": "2026-11-20",
-      "names": [
-        "VERGEL DE DIOS MELISSA VICENTE  (CIK 0002120287)",
-        "PLDT Inc.  (CIK 0000078150)"
-      ],
-      "trade": {
-        "owner": "VERGEL DE DIOS MELISSA VICENTE",
-        "ticker": "PHI",
-        "code": "S",
-        "shares": 100,
-        "price": 14.91,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0001193125-26-472982:ownership.xml",
-      "filed": "2026-11-20",
-      "names": [
-        "Wang Yanjun  (CIK 0002113214)",
-        "Sea Ltd  (CIK 0001703399)"
-      ],
-      "trade": {
-        "owner": "Wang Yanjun",
-        "ticker": "SE",
-        "code": "S",
-        "shares": 422,
-        "price": 63.22,
-        "acquired": false,
         "form": "4"
       }
     }
