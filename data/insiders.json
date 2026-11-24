@@ -1,6 +1,6 @@
 {
   "meta": {
-    "asOf": "2026-11-24T14:17:56.992Z",
+    "asOf": "2026-11-24T14:47:45.891Z",
     "source": "SEC EDGAR Form 4",
     "rows": 25,
     "delay": "hours",
@@ -383,6 +383,23 @@
       }
     },
     {
+      "id": "0001437749-26-038139:rdgdoc.xml",
+      "filed": "2026-11-23",
+      "names": [
+        "Dyer Richard E  (CIK 0001597317)",
+        "CSB Financial Inc.  (CIK 0002114521)"
+      ],
+      "trade": {
+        "owner": "Dyer Richard E",
+        "ticker": "CSBA",
+        "code": "P",
+        "shares": 700,
+        "price": 14.15,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
       "id": "0001213900-26-123398:ownership.xml",
       "filed": "2026-11-20",
       "names": [
@@ -412,24 +429,6 @@
         "code": "P",
         "shares": 25000,
         "price": 0.9059,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0001193125-26-473371:ownership.xml",
-      "filed": "2026-11-20",
-      "names": [
-        "BROOKFIELD Corp /ON/  (BN, BNH, BNJ, BAMGF, BAMKF, BKAMF, BKFAF, BKFDF, BKFOF, BRCFF, BRFAF, BRFCF, BROXF, BRPSF, BXDIF)  (CIK 0001001085)",
-        "Brookfield REIT Adviser LLC  (CIK 0001921485)",
-        "BROOKFIELD REAL ESTATE INCOME TRUST INC.  (CIK 0001713407)"
-      ],
-      "trade": {
-        "owner": "BROOKFIELD Corp /ON/",
-        "ticker": "N/A",
-        "code": "J",
-        "shares": 120992.889,
-        "price": 10.5563,
         "acquired": true,
         "form": "4"
       }
