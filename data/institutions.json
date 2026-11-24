@@ -1,6 +1,6 @@
 {
   "meta": {
-    "asOf": "2026-11-24T17:47:52.622Z",
+    "asOf": "2026-11-24T18:17:52.911Z",
     "source": "SEC 13F-HR index",
     "rows": 20,
     "delay": "quarterly",
@@ -16,13 +16,6 @@
       ]
     },
     {
-      "id": "0001666363-26-000006:primary_doc.xml",
-      "filed": "2026-09-30",
-      "names": [
-        "Venturi Wealth Management, LLC  (CIK 0001666363)"
-      ]
-    },
-    {
       "id": "0001450599-26-000018:primary_doc.xml",
       "filed": "2026-09-30",
       "names": [
@@ -34,27 +27,6 @@
       "filed": "2026-09-30",
       "names": [
         "FAYEZ SAROFIM & CO  (CIK 0000937729)"
-      ]
-    },
-    {
-      "id": "0001062993-26-006245:primary_doc.xml",
-      "filed": "2026-09-30",
-      "names": [
-        "Sunbelt Securities, Inc.  (CIK 0001632932)"
-      ]
-    },
-    {
-      "id": "0000949853-26-000016:primary_doc.xml",
-      "filed": "2026-03-31",
-      "names": [
-        "P.A.W. CAPITAL CORP  (CIK 0000949853)"
-      ]
-    },
-    {
-      "id": "0000949853-26-000015:primary_doc.xml",
-      "filed": "2026-03-31",
-      "names": [
-        "P.A.W. CAPITAL CORP  (CIK 0000949853)"
       ]
     },
     {
@@ -144,6 +116,34 @@
     {
       "id": "0001942361-26-000009:primary_doc.xml",
       "filed": "2026-06-30",
+      "names": [
+        "PhiloSmith Capital Corp  (CIK 0001942361)"
+      ]
+    },
+    {
+      "id": "0001942361-26-000008:primary_doc.xml",
+      "filed": "2026-03-31",
+      "names": [
+        "PhiloSmith Capital Corp  (CIK 0001942361)"
+      ]
+    },
+    {
+      "id": "0001942361-26-000007:primary_doc.xml",
+      "filed": "2025-12-31",
+      "names": [
+        "PhiloSmith Capital Corp  (CIK 0001942361)"
+      ]
+    },
+    {
+      "id": "0001942361-26-000006:primary_doc.xml",
+      "filed": "2025-09-30",
+      "names": [
+        "PhiloSmith Capital Corp  (CIK 0001942361)"
+      ]
+    },
+    {
+      "id": "0001942361-26-000005:primary_doc.xml",
+      "filed": "2025-06-30",
       "names": [
         "PhiloSmith Capital Corp  (CIK 0001942361)"
       ]
