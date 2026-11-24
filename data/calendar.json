@@ -1,6 +1,6 @@
 {
   "meta": {
-    "asOf": "2026-11-24T21:19:03.081Z",
+    "asOf": "2026-11-24T21:49:33.437Z",
     "source": "Nasdaq calendars",
     "rows": 80,
     "delay": "daily",
@@ -529,7 +529,7 @@
     },
     {
       "kind": "economic",
-      "date": "2026-11-24",
+      "date": "2026-11-23",
       "gmt": "24H",
       "country": "India",
       "eventName": "HSBC India Manufacturing PMI",
@@ -540,7 +540,7 @@
     },
     {
       "kind": "economic",
-      "date": "2026-11-24",
+      "date": "2026-11-23",
       "gmt": "24H",
       "country": "India",
       "eventName": "HSBC India Services PMI",
@@ -551,7 +551,7 @@
     },
     {
       "kind": "economic",
-      "date": "2026-11-24",
+      "date": "2026-11-23",
       "gmt": "24H",
       "country": "India",
       "eventName": "HSBC Manufacturing & Services PMI",
@@ -562,7 +562,7 @@
     },
     {
       "kind": "economic",
-      "date": "2026-11-24",
+      "date": "2026-11-23",
       "gmt": "24H",
       "country": "Singapore",
       "eventName": "Core CPI",
@@ -573,7 +573,7 @@
     },
     {
       "kind": "economic",
-      "date": "2026-11-24",
+      "date": "2026-11-23",
       "gmt": "24H",
       "country": "Singapore",
       "eventName": "CPI",
@@ -584,7 +584,7 @@
     },
     {
       "kind": "economic",
-      "date": "2026-11-24",
+      "date": "2026-11-23",
       "gmt": "24H",
       "country": "Singapore",
       "eventName": "CPI",
@@ -595,7 +595,7 @@
     },
     {
       "kind": "economic",
-      "date": "2026-11-24",
+      "date": "2026-11-23",
       "gmt": "03:00",
       "country": "Switzerland",
       "eventName": "M3 Money Supply",
@@ -606,7 +606,7 @@
     },
     {
       "kind": "economic",
-      "date": "2026-11-24",
+      "date": "2026-11-23",
       "gmt": "03:15",
       "country": "France",
       "eventName": "HCOB France Manufacturing PMI",
@@ -617,7 +617,7 @@
     },
     {
       "kind": "economic",
-      "date": "2026-11-24",
+      "date": "2026-11-23",
       "gmt": "03:15",
       "country": "France",
       "eventName": "HCOB France Composite PMI",
@@ -628,7 +628,7 @@
     },
     {
       "kind": "economic",
-      "date": "2026-11-24",
+      "date": "2026-11-23",
       "gmt": "03:15",
       "country": "France",
       "eventName": "HCOB France Services PMI",
@@ -639,7 +639,7 @@
     },
     {
       "kind": "economic",
-      "date": "2026-11-24",
+      "date": "2026-11-23",
       "gmt": "03:30",
       "country": "Germany",
       "eventName": "HCOB Germany Composite PMI",
@@ -650,7 +650,7 @@
     },
     {
       "kind": "economic",
-      "date": "2026-11-24",
+      "date": "2026-11-23",
       "gmt": "03:30",
       "country": "Germany",
       "eventName": "HCOB Germany Manufacturing PMI",
@@ -661,7 +661,7 @@
     },
     {
       "kind": "economic",
-      "date": "2026-11-24",
+      "date": "2026-11-23",
       "gmt": "03:30",
       "country": "Germany",
       "eventName": "HCOB Germany Services PMI",
@@ -672,7 +672,7 @@
     },
     {
       "kind": "economic",
-      "date": "2026-11-24",
+      "date": "2026-11-23",
       "gmt": "04:00",
       "country": "Euro Zone",
       "eventName": "HCOB Eurozone Manufacturing PMI",
@@ -683,7 +683,7 @@
     },
     {
       "kind": "economic",
-      "date": "2026-11-24",
+      "date": "2026-11-23",
       "gmt": "04:00",
       "country": "Euro Zone",
       "eventName": "HCOB Eurozone Composite PMI",
@@ -694,7 +694,7 @@
     },
     {
       "kind": "economic",
-      "date": "2026-11-24",
+      "date": "2026-11-23",
       "gmt": "04:00",
       "country": "Euro Zone",
       "eventName": "HCOB Eurozone Services PMI",
@@ -705,7 +705,7 @@
     },
     {
       "kind": "economic",
-      "date": "2026-11-24",
+      "date": "2026-11-23",
       "gmt": "04:30",
       "country": "United Kingdom",
       "eventName": "S&P Global Composite PMI",
@@ -716,7 +716,7 @@
     },
     {
       "kind": "economic",
-      "date": "2026-11-24",
+      "date": "2026-11-23",
       "gmt": "04:30",
       "country": "United Kingdom",
       "eventName": "S&P Global Manufacturing PMI",
@@ -727,7 +727,7 @@
     },
     {
       "kind": "economic",
-      "date": "2026-11-24",
+      "date": "2026-11-23",
       "gmt": "04:30",
       "country": "United Kingdom",
       "eventName": "S&P Global Services PMI",
@@ -738,7 +738,7 @@
     },
     {
       "kind": "economic",
-      "date": "2026-11-24",
+      "date": "2026-11-23",
       "gmt": "06:25",
       "country": "Brazil",
       "eventName": "BCB Focus Market Readout",
@@ -749,7 +749,7 @@
     },
     {
       "kind": "economic",
-      "date": "2026-11-24",
+      "date": "2026-11-23",
       "gmt": "08:00",
       "country": "United Kingdom",
       "eventName": "BoE MPC Member Pill Speaks",
@@ -760,7 +760,7 @@
     },
     {
       "kind": "economic",
-      "date": "2026-11-24",
+      "date": "2026-11-23",
       "gmt": "08:30",
       "country": "United States",
       "eventName": "Chicago Fed National Activity",
@@ -771,7 +771,7 @@
     },
     {
       "kind": "economic",
-      "date": "2026-11-24",
+      "date": "2026-11-23",
       "gmt": "08:30",
       "country": "Canada",
       "eventName": "Corporate Profits",
@@ -782,7 +782,7 @@
     },
     {
       "kind": "economic",
-      "date": "2026-11-24",
+      "date": "2026-11-23",
       "gmt": "08:30",
       "country": "Canada",
       "eventName": "Manufacturing Sales",
@@ -793,7 +793,7 @@
     },
     {
       "kind": "economic",
-      "date": "2026-11-24",
+      "date": "2026-11-23",
       "gmt": "09:30",
       "country": "France",
       "eventName": "French 12-Month BTF Auction",
@@ -804,7 +804,7 @@
     },
     {
       "kind": "economic",
-      "date": "2026-11-24",
+      "date": "2026-11-23",
       "gmt": "09:30",
       "country": "France",
       "eventName": "French 3-Month BTF Auction",
@@ -815,7 +815,7 @@
     },
     {
       "kind": "economic",
-      "date": "2026-11-24",
+      "date": "2026-11-23",
       "gmt": "09:30",
       "country": "France",
       "eventName": "French 6-Month BTF Auction",
@@ -826,7 +826,7 @@
     },
     {
       "kind": "economic",
-      "date": "2026-11-24",
+      "date": "2026-11-23",
       "gmt": "09:30",
       "country": "Euro Zone",
       "eventName": "ECB's Lane Speaks",
@@ -837,7 +837,7 @@
     },
     {
       "kind": "economic",
-      "date": "2026-11-24",
+      "date": "2026-11-23",
       "gmt": "09:45",
       "country": "United States",
       "eventName": "S&P Global Manufacturing PMI",
@@ -848,7 +848,7 @@
     },
     {
       "kind": "economic",
-      "date": "2026-11-24",
+      "date": "2026-11-23",
       "gmt": "09:45",
       "country": "United States",
       "eventName": "S&P Global Composite PMI",
@@ -859,7 +859,7 @@
     },
     {
       "kind": "economic",
-      "date": "2026-11-24",
+      "date": "2026-11-23",
       "gmt": "09:45",
       "country": "United States",
       "eventName": "S&P Global Services PMI",
@@ -870,7 +870,7 @@
     },
     {
       "kind": "economic",
-      "date": "2026-11-24",
+      "date": "2026-11-23",
       "gmt": "11:30",
       "country": "United States",
       "eventName": "3-Month Bill Auction",
@@ -881,7 +881,7 @@
     },
     {
       "kind": "economic",
-      "date": "2026-11-24",
+      "date": "2026-11-23",
       "gmt": "11:30",
       "country": "United States",
       "eventName": "6-Month Bill Auction",
@@ -892,7 +892,7 @@
     },
     {
       "kind": "economic",
-      "date": "2026-11-24",
+      "date": "2026-11-23",
       "gmt": "13:00",
       "country": "United States",
       "eventName": "2-Year Note Auction",
@@ -903,7 +903,7 @@
     },
     {
       "kind": "economic",
-      "date": "2026-11-24",
+      "date": "2026-11-23",
       "gmt": "16:00",
       "country": "United States",
       "eventName": "FOMC Member Williams Speaks",
@@ -914,7 +914,7 @@
     },
     {
       "kind": "economic",
-      "date": "2026-11-24",
+      "date": "2026-11-23",
       "gmt": "16:00",
       "country": "South Korea",
       "eventName": "Consumer Confidence",
@@ -925,7 +925,7 @@
     },
     {
       "kind": "economic",
-      "date": "2026-11-24",
+      "date": "2026-11-23",
       "gmt": "19:00",
       "country": "Singapore",
       "eventName": "GDP",
@@ -936,7 +936,7 @@
     },
     {
       "kind": "economic",
-      "date": "2026-11-24",
+      "date": "2026-11-23",
       "gmt": "19:00",
       "country": "Singapore",
       "eventName": "GDP",
@@ -947,7 +947,7 @@
     },
     {
       "kind": "economic",
-      "date": "2026-11-24",
+      "date": "2026-11-23",
       "gmt": "19:30",
       "country": "Japan",
       "eventName": "Manufacturing & Services PMI",
@@ -958,7 +958,7 @@
     },
     {
       "kind": "economic",
-      "date": "2026-11-24",
+      "date": "2026-11-23",
       "gmt": "19:30",
       "country": "Japan",
       "eventName": "S&P Global Manufacturing PMI",
@@ -970,7 +970,7 @@
   ],
   "parts": {
     "earnings": {
-      "asOf": "2026-11-24T21:19:03.081Z",
+      "asOf": "2026-11-24T21:49:33.437Z",
       "source": "Nasdaq calendar/earnings",
       "rows": 40,
       "delay": "daily",
@@ -978,7 +978,7 @@
       "unavailable": false
     },
     "economic": {
-      "asOf": "2026-11-24T21:19:03.103Z",
+      "asOf": "2026-11-24T21:49:36.525Z",
       "source": "Nasdaq calendar/economicevents",
       "rows": 40,
       "delay": "daily",

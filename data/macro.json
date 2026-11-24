@@ -1,6 +1,6 @@
 {
   "meta": {
-    "asOf": "2026-11-24T21:19:05.960Z",
+    "asOf": "2026-11-24T21:49:49.982Z",
     "source": "FRED public CSV",
     "rows": 13,
     "delay": "daily",
@@ -11,7 +11,7 @@
   "rows": [
     {
       "id": "DGS3MO",
-      "value": 4.32
+      "value": 4.37
     },
     {
       "id": "DGS2",
@@ -19,7 +19,7 @@
     },
     {
       "id": "DGS5",
-      "value": 4.71
+      "value": 4.74
     },
     {
       "id": "DGS10",
@@ -27,7 +27,7 @@
     },
     {
       "id": "DGS30",
-      "value": 5.31
+      "value": 5.29
     },
     {
       "id": "T10Y2Y",
@@ -64,11 +64,11 @@
   ],
   "note": "VIX futures CSV is unverified and is left unavailable until a file answers.",
   "latest": {
-    "DGS3MO": 4.32,
+    "DGS3MO": 4.37,
     "DGS2": 4.63,
-    "DGS5": 4.71,
+    "DGS5": 4.74,
     "DGS10": 4.92,
-    "DGS30": 5.31,
+    "DGS30": 5.29,
     "T10Y2Y": 0.29,
     "T10Y3M": 0.55,
     "BAMLH0A0HYM2": 3.63,
