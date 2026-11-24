@@ -1,6 +1,6 @@
 {
   "meta": {
-    "asOf": "2026-11-24T13:47:55.857Z",
+    "asOf": "2026-11-24T14:17:56.992Z",
     "source": "SEC EDGAR Form 4",
     "rows": 25,
     "delay": "hours",
@@ -128,6 +128,23 @@
       }
     },
     {
+      "id": "0001841409-26-000009:wk-form4_1795529263.xml",
+      "filed": "2026-11-20",
+      "names": [
+        "Dalton Travis  (CIK 0001841409)",
+        "Claritev Corp  (CIK 0001793229)"
+      ],
+      "trade": {
+        "owner": "Dalton Travis",
+        "ticker": "CTEV",
+        "code": "P",
+        "shares": 2250,
+        "price": 19.8022,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
       "id": "0001781319-26-000010:wk-form4_1795521452.xml",
       "filed": "2026-11-20",
       "names": [
@@ -175,6 +192,23 @@
         "shares": 4050,
         "price": 261.51,
         "acquired": false,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0001628280-26-075620:wk-form4_1795528386.xml",
+      "filed": "2026-11-20",
+      "names": [
+        "DIMITRIEF ALEXANDER  (CIK 0001614732)",
+        "Eos Energy Enterprises, Inc.  (CIK 0001805077)"
+      ],
+      "trade": {
+        "owner": "DIMITRIEF ALEXANDER",
+        "ticker": "EOSE",
+        "code": "P",
+        "shares": 25000,
+        "price": 1.45,
+        "acquired": true,
         "form": "4"
       }
     },
@@ -243,6 +277,57 @@
         "shares": 959,
         "price": 261.51,
         "acquired": false,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0001510778-26-000004:form4-11242026_021101.xml",
+      "filed": "2026-11-23",
+      "names": [
+        "BEIRNE PATRICK  (CIK 0001510778)",
+        "PURE CYCLE CORP  (CIK 0000276720)"
+      ],
+      "trade": {
+        "owner": "BEIRNE PATRICK",
+        "ticker": "PCYO",
+        "code": "M",
+        "shares": 6500,
+        "price": 5.1,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0001493152-26-053928:ownership.xml",
+      "filed": "2026-11-20",
+      "names": [
+        "Hilmer Michael Anthony  (CIK 0002119422)",
+        "NOMAD POWER SOLUTIONS, INC.  (CIK 0001335105)"
+      ],
+      "trade": {
+        "owner": "Hilmer Michael Anthony",
+        "ticker": "NMAD",
+        "code": "P",
+        "shares": 500,
+        "price": 2.65,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0001493152-26-053925:ownership.xml",
+      "filed": "2026-11-23",
+      "names": [
+        "Dai Kun  (CIK 0001764279)",
+        "Uxin Ltd  (CIK 0001729173)"
+      ],
+      "trade": {
+        "owner": "Dai Kun",
+        "ticker": "UXIN",
+        "code": "P",
+        "shares": 5000,
+        "price": 0.6865,
+        "acquired": true,
         "form": "4"
       }
     },
@@ -345,91 +430,6 @@
         "code": "J",
         "shares": 120992.889,
         "price": 10.5563,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0001193125-26-473330:ownership.xml",
-      "filed": "2026-11-20",
-      "names": [
-        "Smith Michael Bradley  (CIK 0001711988)",
-        "TPG RE Finance Trust, Inc.  (CIK 0001630472)"
-      ],
-      "trade": {
-        "owner": "Smith Michael Bradley",
-        "ticker": "TRTX",
-        "code": "P",
-        "shares": 10000,
-        "price": 6.4,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0001193125-26-473321:ownership.xml",
-      "filed": "2026-11-23",
-      "names": [
-        "Beilman Kyle  (CIK 0001889438)",
-        "Dave Inc./DE  (CIK 0001841408)"
-      ],
-      "trade": {
-        "owner": "Beilman Kyle",
-        "ticker": "DAVE",
-        "code": "M",
-        "shares": 8000,
-        "price": 1.42,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0001193125-26-473228:ownership.xml",
-      "filed": "2026-11-23",
-      "names": [
-        "Chen Jingye  (CIK 0001965706)",
-        "Sea Ltd  (CIK 0001703399)"
-      ],
-      "trade": {
-        "owner": "Chen Jingye",
-        "ticker": "SE",
-        "code": "X",
-        "shares": 100000,
-        "price": 15,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0001193125-26-473141:ownership.xml",
-      "filed": "2026-11-23",
-      "names": [
-        "Lucas Bruce  (CIK 0001552968)",
-        "Slide Insurance Holdings, Inc.  (CIK 0001886428)"
-      ],
-      "trade": {
-        "owner": "Lucas Bruce",
-        "ticker": "SLDE",
-        "code": "S",
-        "shares": 6580000,
-        "price": 24.35,
-        "acquired": false,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0001193125-26-473131:ownership.xml",
-      "filed": "2026-11-20",
-      "names": [
-        "Brady Todd C  (CIK 0001579179)",
-        "Aldeyra Therapeutics, Inc.  (CIK 0001341235)"
-      ],
-      "trade": {
-        "owner": "Brady Todd C",
-        "ticker": "ALDX",
-        "code": "P",
-        "shares": 300000,
-        "price": 0.8102,
         "acquired": true,
         "form": "4"
       }
