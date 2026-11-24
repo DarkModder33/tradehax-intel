@@ -1,6 +1,6 @@
 {
   "meta": {
-    "asOf": "2026-11-24T18:17:50.940Z",
+    "asOf": "2026-11-24T18:47:45.870Z",
     "source": "SEC EDGAR Form 4",
     "rows": 25,
     "delay": "hours",
@@ -26,6 +26,23 @@
       }
     },
     {
+      "id": "0002092805-26-000003:primarydocument.xml",
+      "filed": "2026-11-20",
+      "names": [
+        "Fichera Alfred  (CIK 0002092805)",
+        "Hercules Capital, Inc.  (CIK 0001280784)"
+      ],
+      "trade": {
+        "owner": "Fichera Alfred",
+        "ticker": "HTGC",
+        "code": "P",
+        "shares": 2000,
+        "price": 15.105,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
       "id": "0002069480-26-000012:wk-form4_1795521420.xml",
       "filed": "2026-11-20",
       "names": [
@@ -39,6 +56,23 @@
         "shares": 109,
         "price": 261.51,
         "acquired": false,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002051327-26-000022:form4-11242026_061100.xml",
+      "filed": "2026-11-23",
+      "names": [
+        "Canup Edward G  (CIK 0002051327)",
+        "COLONY BANKCORP INC  (CIK 0000711669)"
+      ],
+      "trade": {
+        "owner": "Canup Edward G",
+        "ticker": "CBAN",
+        "code": "P",
+        "shares": 500,
+        "price": 19.495,
+        "acquired": true,
         "form": "4"
       }
     },
@@ -158,6 +192,23 @@
         "shares": 966,
         "price": 261.51,
         "acquired": false,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0001841761-26-000129:form4.xml",
+      "filed": "2026-11-20",
+      "names": [
+        "Karp Jason H.  (CIK 0001832413)",
+        "Grove Collaborative Holdings, Inc.  (CIK 0001841761)"
+      ],
+      "trade": {
+        "owner": "Karp Jason H.",
+        "ticker": "GROV",
+        "code": "P",
+        "shares": 3350,
+        "price": 0.8,
+        "acquired": true,
         "form": "4"
       }
     },
@@ -379,57 +430,6 @@
         "shares": 959,
         "price": 261.51,
         "acquired": false,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0001584218-26-000014:form4-11242026_121101.xml",
-      "filed": "2026-11-22",
-      "names": [
-        "Okawa Cary M.  (CIK 0001584218)",
-        "OSI SYSTEMS INC  (CIK 0001039065)"
-      ],
-      "trade": {
-        "owner": "Okawa Cary M.",
-        "ticker": "OSIS",
-        "code": "F",
-        "shares": 26,
-        "price": 187,
-        "acquired": false,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0001510778-26-000004:form4-11242026_021101.xml",
-      "filed": "2026-11-23",
-      "names": [
-        "BEIRNE PATRICK  (CIK 0001510778)",
-        "PURE CYCLE CORP  (CIK 0000276720)"
-      ],
-      "trade": {
-        "owner": "BEIRNE PATRICK",
-        "ticker": "PCYO",
-        "code": "M",
-        "shares": 6500,
-        "price": 5.1,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0001493152-26-053943:ownership.xml",
-      "filed": "2026-11-20",
-      "names": [
-        "Boulette David  (CIK 0001653409)",
-        "Eva Live Inc  (CIK 0001983736)"
-      ],
-      "trade": {
-        "owner": "Boulette David",
-        "ticker": "GOAI",
-        "code": "P",
-        "shares": 4300,
-        "price": 0.5177,
-        "acquired": true,
         "form": "4"
       }
     }
