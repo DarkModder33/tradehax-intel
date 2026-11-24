@@ -1,6 +1,6 @@
 {
   "meta": {
-    "asOf": "2026-11-24T22:19:45.132Z",
+    "asOf": "2026-11-24T22:22:14.640Z",
     "source": "worker /v1/history",
     "rows": 2000,
     "delay": "about 15 min",
