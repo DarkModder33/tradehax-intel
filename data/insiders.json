@@ -1,6 +1,6 @@
 {
   "meta": {
-    "asOf": "2026-11-24T17:17:44.612Z",
+    "asOf": "2026-11-24T17:47:50.151Z",
     "source": "SEC EDGAR Form 4",
     "rows": 25,
     "delay": "hours",
@@ -94,6 +94,40 @@
       }
     },
     {
+      "id": "0001976408-26-000968:primary_doc.xml",
+      "filed": "2026-11-23",
+      "names": [
+        "Paz Amit  (CIK 0002108367)",
+        "Enlight Renewable Energy Ltd.  (CIK 0001922641)"
+      ],
+      "trade": {
+        "owner": "Paz Amit",
+        "ticker": "ENLT",
+        "code": "S",
+        "shares": 4761,
+        "price": 62.8178,
+        "acquired": false,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0001976408-26-000967:primary_doc.xml",
+      "filed": "2026-11-23",
+      "names": [
+        "BEN-HAMOU RONEN  (CIK 0002038089)",
+        "CERAGON NETWORKS LTD  (CIK 0001119769)"
+      ],
+      "trade": {
+        "owner": "BEN-HAMOU RONEN",
+        "ticker": "CRNT",
+        "code": "S",
+        "shares": 29765,
+        "price": 2.19,
+        "acquired": false,
+        "form": "4"
+      }
+    },
+    {
       "id": "0001959455-26-000143:wk-form4_1795519615.xml",
       "filed": "2026-11-23",
       "names": [
@@ -140,6 +174,23 @@
         "code": "P",
         "shares": 2250,
         "price": 19.8022,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0001828536-26-000125:wk-form4_1795540098.xml",
+      "filed": "2026-11-23",
+      "names": [
+        "Piconi Robert  (CIK 0001898769)",
+        "Energy Vault Holdings, Inc.  (CIK 0001828536)"
+      ],
+      "trade": {
+        "owner": "Piconi Robert",
+        "ticker": "NRGV",
+        "code": "P",
+        "shares": 15000,
+        "price": 2.6079,
         "acquired": true,
         "form": "4"
       }
@@ -209,6 +260,23 @@
         "shares": 50000,
         "price": null,
         "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0001628280-26-075648:wk-form4_1795541601.xml",
+      "filed": "2026-11-20",
+      "names": [
+        "Hinojosa Javier  (CIK 0001953908)",
+        "BKV Corp  (CIK 0001838406)"
+      ],
+      "trade": {
+        "owner": "Hinojosa Javier",
+        "ticker": "BKV",
+        "code": "S",
+        "shares": 4952,
+        "price": 17.5355,
+        "acquired": false,
         "form": "4"
       }
     },
@@ -315,6 +383,23 @@
       }
     },
     {
+      "id": "0001584218-26-000014:form4-11242026_121101.xml",
+      "filed": "2026-11-22",
+      "names": [
+        "Okawa Cary M.  (CIK 0001584218)",
+        "OSI SYSTEMS INC  (CIK 0001039065)"
+      ],
+      "trade": {
+        "owner": "Okawa Cary M.",
+        "ticker": "OSIS",
+        "code": "F",
+        "shares": 26,
+        "price": 187,
+        "acquired": false,
+        "form": "4"
+      }
+    },
+    {
       "id": "0001510778-26-000004:form4-11242026_021101.xml",
       "filed": "2026-11-23",
       "names": [
@@ -332,103 +417,18 @@
       }
     },
     {
-      "id": "0001493152-26-053928:ownership.xml",
+      "id": "0001493152-26-053943:ownership.xml",
       "filed": "2026-11-20",
       "names": [
-        "Hilmer Michael Anthony  (CIK 0002119422)",
-        "NOMAD POWER SOLUTIONS, INC.  (CIK 0001335105)"
+        "Boulette David  (CIK 0001653409)",
+        "Eva Live Inc  (CIK 0001983736)"
       ],
       "trade": {
-        "owner": "Hilmer Michael Anthony",
-        "ticker": "NMAD",
+        "owner": "Boulette David",
+        "ticker": "GOAI",
         "code": "P",
-        "shares": 500,
-        "price": 2.65,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0001493152-26-053925:ownership.xml",
-      "filed": "2026-11-23",
-      "names": [
-        "Dai Kun  (CIK 0001764279)",
-        "Uxin Ltd  (CIK 0001729173)"
-      ],
-      "trade": {
-        "owner": "Dai Kun",
-        "ticker": "UXIN",
-        "code": "P",
-        "shares": 5000,
-        "price": 0.6865,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0001493152-26-053882:ownership.xml",
-      "filed": "2026-11-20",
-      "names": [
-        "Korman Judah  (CIK 0002141833)",
-        "Reliance Global Group, Inc.  (CIK 0001812727)"
-      ],
-      "trade": {
-        "owner": "Korman Judah",
-        "ticker": "XGPU",
-        "code": "P",
-        "shares": 51737,
-        "price": 2.6,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0001493152-26-053878:ownership.xml",
-      "filed": "2026-11-20",
-      "names": [
-        "Beyman Mordechai Menachem  (CIK 0002143735)",
-        "Reliance Global Group, Inc.  (CIK 0001812727)"
-      ],
-      "trade": {
-        "owner": "Beyman Mordechai Menachem",
-        "ticker": "XGPU",
-        "code": "P",
-        "shares": 28783,
-        "price": 2.6,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0001493152-26-053875:ownership.xml",
-      "filed": "2026-11-20",
-      "names": [
-        "Beyman Ezra  (CIK 0001886817)",
-        "Reliance Global Group, Inc.  (CIK 0001812727)"
-      ],
-      "trade": {
-        "owner": "Beyman Ezra",
-        "ticker": "XGPU",
-        "code": "P",
-        "shares": 117385,
-        "price": 2.6,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0001437749-26-038140:rdgdoc.xml",
-      "filed": "2026-11-20",
-      "names": [
-        "Taylor Mike J  (CIK 0001692215)",
-        "FRIEDMAN INDUSTRIES INC  (CIK 0000039092)"
-      ],
-      "trade": {
-        "owner": "Taylor Mike J",
-        "ticker": "FRD",
-        "code": "P",
-        "shares": 4000,
-        "price": 33.52,
+        "shares": 4300,
+        "price": 0.5177,
         "acquired": true,
         "form": "4"
       }

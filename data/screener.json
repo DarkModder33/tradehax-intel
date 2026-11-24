@@ -1,6 +1,6 @@
 {
   "meta": {
-    "asOf": "2026-11-24T17:19:06.814Z",
+    "asOf": "2026-11-24T17:49:28.674Z",
     "source": "Yahoo most actives",
     "rows": 25,
     "delay": "delayed",
@@ -10,143 +10,171 @@
   "rows": [
     {
       "symbol": "NVDA",
-      "price": 152.84,
-      "change": -7.397763,
-      "volume": 219377547,
+      "price": 153.04,
+      "change": -7.2765884,
+      "volume": 238271344,
       "name": "NVIDIA Corporation"
     },
     {
       "symbol": "ANT",
-      "price": 78.3694,
-      "change": -10.577973,
-      "volume": 202354078,
+      "price": 80.53,
+      "change": -8.112735,
+      "volume": 226839709,
       "name": "Anthropic, PBC"
     },
     {
       "symbol": "INTC",
-      "price": 54.6434,
-      "change": -8.408651,
-      "volume": 63965601,
+      "price": 55.32,
+      "change": -7.2745557,
+      "volume": 70739411,
       "name": "Intel Corporation"
     },
     {
-      "symbol": "SNDK",
-      "price": 77.21,
-      "change": -11.970587,
-      "volume": 59910839,
-      "name": "Sandisk Corporation"
-    },
-    {
       "symbol": "SPCX",
-      "price": 125.895,
-      "change": -5.590558,
-      "volume": 59152831,
+      "price": 126.4,
+      "change": -5.211852,
+      "volume": 64590554,
       "name": "Space Exploration Technologies "
     },
     {
+      "symbol": "SNDK",
+      "price": 77.61,
+      "change": -11.51522,
+      "volume": 64510908,
+      "name": "Sandisk Corporation"
+    },
+    {
       "symbol": "INSM",
-      "price": 170.265,
-      "change": 14.203309,
-      "volume": 58940421,
+      "price": 170.225,
+      "change": 14.176008,
+      "volume": 62485719,
       "name": "Insmed Incorporated"
     },
     {
       "symbol": "IREN",
-      "price": 12.625,
-      "change": -13.763663,
-      "volume": 48611438,
+      "price": 12.66,
+      "change": -13.524593,
+      "volume": 51551612,
       "name": "IREN LIMITED"
     },
     {
       "symbol": "VALE",
-      "price": 9.38,
-      "change": -4.287903,
-      "volume": 44297505,
+      "price": 9.405,
+      "change": -4.0326743,
+      "volume": 47281313,
       "name": "VALE S.A."
     },
     {
-      "symbol": "CRWV",
-      "price": 42.49,
-      "change": -12.083591,
-      "volume": 36764998,
-      "name": "CoreWeave, Inc."
-    },
-    {
       "symbol": "NOK",
-      "price": 7.2706,
-      "change": -3.7006667,
-      "volume": 35668449,
+      "price": 7.3098,
+      "change": -3.1813734,
+      "volume": 39595144,
       "name": "Nokia Corporation Sponsored"
     },
     {
+      "symbol": "CRWV",
+      "price": 42.65,
+      "change": -11.752534,
+      "volume": 39063214,
+      "name": "CoreWeave, Inc."
+    },
+    {
       "symbol": "GRAB",
-      "price": 2.8323,
-      "change": 0.7928327,
-      "volume": 34524559,
+      "price": 2.8299,
+      "change": 0.70818806,
+      "volume": 38889579,
       "name": "Grab Holdings Limited"
     },
     {
-      "symbol": "BBD",
-      "price": 2.3274,
-      "change": 1.6349015,
-      "volume": 29874248,
-      "name": "Banco Bradesco Sa"
-    },
-    {
       "symbol": "RIG",
-      "price": 4.885,
-      "change": 4.157786,
-      "volume": 29453736,
+      "price": 4.905,
+      "change": 4.584225,
+      "volume": 33335307,
       "name": "Transocean Ltd (Switzerland)"
     },
     {
+      "symbol": "AAL",
+      "price": 12.58,
+      "change": -1.1006316,
+      "volume": 33240667,
+      "name": "American Airlines Group, Inc."
+    },
+    {
+      "symbol": "BBD",
+      "price": 2.3198,
+      "change": 1.3013073,
+      "volume": 32821974,
+      "name": "Banco Bradesco Sa"
+    },
+    {
       "symbol": "NIO",
-      "price": 2.55,
-      "change": -0.7782094,
-      "volume": 28667001,
+      "price": 2.56,
+      "change": -0.38986316,
+      "volume": 30579219,
       "name": "NIO Inc."
     },
     {
       "symbol": "BMNR",
-      "price": 13.34,
-      "change": -7.4895973,
-      "volume": 28145159,
+      "price": 13.3487,
+      "change": -7.4292684,
+      "volume": 30111525,
       "name": "BitMine Immersion Technologies,"
     },
     {
-      "symbol": "AAL",
-      "price": 12.575,
-      "change": -1.1399407,
-      "volume": 27733720,
-      "name": "American Airlines Group, Inc."
-    },
-    {
       "symbol": "CIFR",
-      "price": 5.405,
-      "change": -12.822575,
-      "volume": 26771240,
+      "price": 5.395,
+      "change": -12.983869,
+      "volume": 29426156,
       "name": "Cipher Digital Inc."
     },
     {
       "symbol": "WULF",
-      "price": 9.605,
-      "change": -11.961506,
-      "volume": 25958652,
+      "price": 9.635,
+      "change": -11.6865225,
+      "volume": 29001890,
       "name": "TeraWulf Inc."
     },
     {
-      "symbol": "AMD",
-      "price": 408.0092,
-      "change": -10.023112,
-      "volume": 25942340,
-      "name": "Advanced Micro Devices, Inc."
+      "symbol": "HL",
+      "price": 10.935,
+      "change": -2.3662984,
+      "volume": 28252826,
+      "name": "Hecla Mining Company"
     },
     {
       "symbol": "STLA",
-      "price": 3.455,
-      "change": -1.5669534,
-      "volume": 25838362,
+      "price": 3.465,
+      "change": -1.2820535,
+      "volume": 28043933,
       "name": "Stellantis N.V."
+    },
+    {
+      "symbol": "AMD",
+      "price": 412.29,
+      "change": -9.079077,
+      "volume": 28059690,
+      "name": "Advanced Micro Devices, Inc."
+    },
+    {
+      "symbol": "F",
+      "price": 11.9699,
+      "change": 2.7470827,
+      "volume": 27735701,
+      "name": "Ford Motor Company"
+    },
+    {
+      "symbol": "ONDS",
+      "price": 3.965,
+      "change": -1.614874,
+      "volume": 26196003,
+      "name": "Ondas Inc"
+    },
+    {
+      "symbol": "HPE",
+      "price": 40.16,
+      "change": -16.368181,
+      "volume": 25471487,
+      "name": "Hewlett Packard Enterprise Comp"
     },
     {
       "symbol": "UTZ",
@@ -154,34 +182,6 @@
       "change": 0.210377,
       "volume": 25284975,
       "name": "Utz Brands Inc"
-    },
-    {
-      "symbol": "F",
-      "price": 11.937,
-      "change": 2.4633982,
-      "volume": 23639227,
-      "name": "Ford Motor Company"
-    },
-    {
-      "symbol": "ONDS",
-      "price": 3.9266,
-      "change": -2.5657625,
-      "volume": 23085011,
-      "name": "Ondas Inc"
-    },
-    {
-      "symbol": "HL",
-      "price": 10.915,
-      "change": -2.5446415,
-      "volume": 23325617,
-      "name": "Hecla Mining Company"
-    },
-    {
-      "symbol": "HPE",
-      "price": 39.74,
-      "change": -17.242813,
-      "volume": 22706062,
-      "name": "Hewlett Packard Enterprise Comp"
     }
   ],
   "note": "A predefined list, not the full nightly universe."

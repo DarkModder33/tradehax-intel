@@ -1,6 +1,6 @@
 {
   "meta": {
-    "asOf": "2026-11-24T17:17:46.919Z",
+    "asOf": "2026-11-24T17:47:52.622Z",
     "source": "SEC 13F-HR index",
     "rows": 20,
     "delay": "quarterly",
@@ -13,6 +13,13 @@
       "filed": "2026-09-30",
       "names": [
         "CAVU Wealth Advisors, LLC  (CIK 0002166017)"
+      ]
+    },
+    {
+      "id": "0001666363-26-000006:primary_doc.xml",
+      "filed": "2026-09-30",
+      "names": [
+        "Venturi Wealth Management, LLC  (CIK 0001666363)"
       ]
     },
     {
@@ -34,6 +41,13 @@
       "filed": "2026-09-30",
       "names": [
         "Sunbelt Securities, Inc.  (CIK 0001632932)"
+      ]
+    },
+    {
+      "id": "0000949853-26-000016:primary_doc.xml",
+      "filed": "2026-03-31",
+      "names": [
+        "P.A.W. CAPITAL CORP  (CIK 0000949853)"
       ]
     },
     {
@@ -130,20 +144,6 @@
     {
       "id": "0001942361-26-000009:primary_doc.xml",
       "filed": "2026-06-30",
-      "names": [
-        "PhiloSmith Capital Corp  (CIK 0001942361)"
-      ]
-    },
-    {
-      "id": "0001942361-26-000008:primary_doc.xml",
-      "filed": "2026-03-31",
-      "names": [
-        "PhiloSmith Capital Corp  (CIK 0001942361)"
-      ]
-    },
-    {
-      "id": "0001942361-26-000007:primary_doc.xml",
-      "filed": "2025-12-31",
       "names": [
         "PhiloSmith Capital Corp  (CIK 0001942361)"
       ]
