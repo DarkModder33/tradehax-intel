@@ -1,6 +1,6 @@
 {
   "meta": {
-    "asOf": "2026-11-24T12:48:29.468Z",
+    "asOf": "2026-11-24T13:17:45.368Z",
     "source": "SEC EDGAR Form 4",
     "rows": 25,
     "delay": "hours",
@@ -179,6 +179,23 @@
       }
     },
     {
+      "id": "0001628280-26-075614:wk-form4_1795525570.xml",
+      "filed": "2026-11-20",
+      "names": [
+        "Rosin Brian J  (CIK 0001695607)",
+        "Prenetics Global Ltd  (CIK 0001876431)"
+      ],
+      "trade": {
+        "owner": "Rosin Brian J",
+        "ticker": "PRE",
+        "code": "P",
+        "shares": 30000,
+        "price": 10.14,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
       "id": "0001628280-26-075609:wk-form4_1795523682.xml",
       "filed": "2026-11-23",
       "names": [
@@ -298,6 +315,40 @@
       }
     },
     {
+      "id": "0001193125-26-473330:ownership.xml",
+      "filed": "2026-11-20",
+      "names": [
+        "Smith Michael Bradley  (CIK 0001711988)",
+        "TPG RE Finance Trust, Inc.  (CIK 0001630472)"
+      ],
+      "trade": {
+        "owner": "Smith Michael Bradley",
+        "ticker": "TRTX",
+        "code": "P",
+        "shares": 10000,
+        "price": 6.4,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0001193125-26-473321:ownership.xml",
+      "filed": "2026-11-23",
+      "names": [
+        "Beilman Kyle  (CIK 0001889438)",
+        "Dave Inc./DE  (CIK 0001841408)"
+      ],
+      "trade": {
+        "owner": "Beilman Kyle",
+        "ticker": "DAVE",
+        "code": "M",
+        "shares": 8000,
+        "price": 1.42,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
       "id": "0001193125-26-473228:ownership.xml",
       "filed": "2026-11-23",
       "names": [
@@ -378,57 +429,6 @@
         "code": "S",
         "shares": 422,
         "price": 63.22,
-        "acquired": false,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002158120-26-000003:form4-11232026_101148.xml",
-      "filed": "2026-11-19",
-      "names": [
-        "Amodei Daniela  (CIK 0002158120)",
-        "Anthropic, PBC  (CIK 0002130357)"
-      ],
-      "trade": {
-        "owner": "Amodei Daniela",
-        "ticker": "ANT",
-        "code": "F",
-        "shares": 345011,
-        "price": 83,
-        "acquired": false,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002157947-26-000004:form4-11232026_101129.xml",
-      "filed": "2026-11-19",
-      "names": [
-        "Amodei Dario  (CIK 0002157947)",
-        "Anthropic, PBC  (CIK 0002130357)"
-      ],
-      "trade": {
-        "owner": "Amodei Dario",
-        "ticker": "ANT",
-        "code": "F",
-        "shares": 345011,
-        "price": 83,
-        "acquired": false,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002157445-26-000004:form4-11232026_111139.xml",
-      "filed": "2026-11-20",
-      "names": [
-        "Brous Michael Zachary  (CIK 0002157445)",
-        "Lyft, Inc.  (CIK 0001759509)"
-      ],
-      "trade": {
-        "owner": "Brous Michael Zachary",
-        "ticker": "LYFT",
-        "code": "F",
-        "shares": 21505,
-        "price": 16.91,
         "acquired": false,
         "form": "4"
       }
