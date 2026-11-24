@@ -1,6 +1,6 @@
 {
   "meta": {
-    "asOf": "2026-11-24T22:47:49.193Z",
+    "asOf": "2026-11-24T23:13:50.305Z",
     "source": "SEC EDGAR Form 4",
     "rows": 25,
     "delay": "hours",
@@ -8,6 +8,176 @@
     "unavailable": false
   },
   "rows": [
+    {
+      "id": "0002161049-26-000002:primary_doc.xml",
+      "filed": "2026-11-24",
+      "names": [
+        "PATTON JAMES ANTHONY  (CIK 0001252886)",
+        "WILSON BANK HOLDING CO  (CIK 0000885275)"
+      ],
+      "trade": {
+        "owner": "PATTON JAMES ANTHONY",
+        "ticker": "NONE",
+        "code": "M",
+        "shares": 2000,
+        "price": 0,
+        "acquired": false,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002148694-26-000006:wk-form4_1795555738.xml",
+      "filed": "2026-11-20",
+      "names": [
+        "Kuduvalli Ramesh Akhil  (CIK 0002148694)",
+        "YELP INC  (CIK 0001345016)"
+      ],
+      "trade": {
+        "owner": "Kuduvalli Ramesh Akhil",
+        "ticker": "YELP",
+        "code": "F",
+        "shares": 2574,
+        "price": 18.19,
+        "acquired": false,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002148390-26-000015:wk-form4_1795554119.xml",
+      "filed": "2026-11-23",
+      "names": [
+        "McGogney Connor  (CIK 0002148390)",
+        "Criteo S.A.  (CIK 0001576427)"
+      ],
+      "trade": {
+        "owner": "McGogney Connor",
+        "ticker": "CRTO",
+        "code": "S",
+        "shares": 671,
+        "price": 17.88,
+        "acquired": false,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002147680-26-000020:wk-form4a_1795555540.xml",
+      "filed": "2026-10-13",
+      "names": [
+        "Renner Alexandra  (CIK 0002147680)",
+        "Oklo Inc.  (CIK 0001849056)"
+      ],
+      "trade": {
+        "owner": "Renner Alexandra",
+        "ticker": "OKLO",
+        "code": "M",
+        "shares": 1201,
+        "price": 0,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002137803-26-000009:wk-form4_1795555511.xml",
+      "filed": "2026-11-20",
+      "names": [
+        "Levy Alexander Coleman  (CIK 0002137803)",
+        "YELP INC  (CIK 0001345016)"
+      ],
+      "trade": {
+        "owner": "Levy Alexander Coleman",
+        "ticker": "YELP",
+        "code": "F",
+        "shares": 2477,
+        "price": 18.19,
+        "acquired": false,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002133947-26-000009:primarydocument.xml",
+      "filed": "2026-11-20",
+      "names": [
+        "Ge Xiaochuan  (CIK 0002133947)",
+        "AppLovin Corp  (CIK 0001751008)"
+      ],
+      "trade": {
+        "owner": "Ge Xiaochuan",
+        "ticker": "APP",
+        "code": "F",
+        "shares": 5459,
+        "price": 348.29,
+        "acquired": false,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002133938-26-000007:primarydocument.xml",
+      "filed": "2026-11-20",
+      "names": [
+        "Cacovean Corina I  (CIK 0002133938)",
+        "AppLovin Corp  (CIK 0001751008)"
+      ],
+      "trade": {
+        "owner": "Cacovean Corina I",
+        "ticker": "APP",
+        "code": "F",
+        "shares": 1540,
+        "price": 348.29,
+        "acquired": false,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002130035-26-000011:primary_doc.xml",
+      "filed": "2026-11-20",
+      "names": [
+        "MOORE H LYNN JR  (CIK 0001250902)",
+        "TYLER TECHNOLOGIES INC  (CIK 0000860731)"
+      ],
+      "trade": {
+        "owner": "MOORE H LYNN JR",
+        "ticker": "TYL",
+        "code": "M",
+        "shares": 20000,
+        "price": 205.66,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002124353-26-000010:form4-11242026_041111.xml",
+      "filed": "2026-11-20",
+      "names": [
+        "Thomson Matthew Christopher  (CIK 0002124353)",
+        "Blend Labs, Inc.  (CIK 0001855747)"
+      ],
+      "trade": {
+        "owner": "Thomson Matthew Christopher",
+        "ticker": "BLND",
+        "code": "M",
+        "shares": 100000,
+        "price": null,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002122129-26-000002:primary_doc.xml",
+      "filed": "2026-11-16",
+      "names": [
+        "Daher Filho Tufi  (CIK 0002122129)",
+        "NATIONAL STEEL CO  (CIK 0001049659)"
+      ],
+      "trade": {
+        "owner": "Daher Filho Tufi",
+        "ticker": "SID",
+        "code": "P",
+        "shares": 30000,
+        "price": 0.6577,
+        "acquired": true,
+        "form": "4"
+      }
+    },
     {
       "id": "0002119764-26-000040:primary_doc.xml",
       "filed": "2026-11-20",
@@ -60,6 +230,74 @@
       }
     },
     {
+      "id": "0002108080-26-000005:form4-11242026_101138.xml",
+      "filed": "2026-11-23",
+      "names": [
+        "Skelton Laurence Matthew  (CIK 0002108080)",
+        "Vera Therapeutics, Inc.  (CIK 0001831828)"
+      ],
+      "trade": {
+        "owner": "Skelton Laurence Matthew",
+        "ticker": "VERA",
+        "code": "S",
+        "shares": 2728,
+        "price": 26.7477,
+        "acquired": false,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002099007-26-000008:wk-form4_1795558059.xml",
+      "filed": "2026-11-17",
+      "names": [
+        "Cragg Lee Ann  (CIK 0002099007)",
+        "Amerant Bancorp Inc.  (CIK 0001734342)"
+      ],
+      "trade": {
+        "owner": "Cragg Lee Ann",
+        "ticker": "AMTB",
+        "code": "M",
+        "shares": 1000,
+        "price": 0,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002094759-26-000003:wk-form4_1795556340.xml",
+      "filed": "2026-11-23",
+      "names": [
+        "O'Leary Matthew C.  (CIK 0002094759)",
+        "Workhorse Group Inc.  (CIK 0001425287)"
+      ],
+      "trade": {
+        "owner": "O'Leary Matthew C.",
+        "ticker": "WKHS",
+        "code": "P",
+        "shares": 10000,
+        "price": 1.89,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002093121-26-000011:primary_doc.xml",
+      "filed": "2026-11-24",
+      "names": [
+        "Denier Anthony Michael  (CIK 0002093121)",
+        "Webull Corp  (CIK 0001866364)"
+      ],
+      "trade": {
+        "owner": "Denier Anthony Michael",
+        "ticker": "BULL",
+        "code": "P",
+        "shares": 5000,
+        "price": 4.2263,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
       "id": "0002092805-26-000003:primarydocument.xml",
       "filed": "2026-11-20",
       "names": [
@@ -72,6 +310,40 @@
         "code": "P",
         "shares": 2000,
         "price": 15.105,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002083284-26-000002:wk-form4_1795561420.xml",
+      "filed": "2026-11-20",
+      "names": [
+        "Qadir Faisal  (CIK 0002083284)",
+        "Spectrum Brands Holdings, Inc.  (CIK 0000109177)"
+      ],
+      "trade": {
+        "owner": "Qadir Faisal",
+        "ticker": "SPB",
+        "code": "A",
+        "shares": 3452,
+        "price": 0,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002077096-26-000366:ownership.xml",
+      "filed": "2026-11-23",
+      "names": [
+        "Patzwahl Nancy Koskey  (CIK 0001956423)",
+        "ESPEY MFG & ELECTRONICS CORP  (CIK 0000033533)"
+      ],
+      "trade": {
+        "owner": "Patzwahl Nancy Koskey",
+        "ticker": "ESP",
+        "code": "M",
+        "shares": 2300,
+        "price": 16.54,
         "acquired": true,
         "form": "4"
       }
@@ -94,6 +366,40 @@
       }
     },
     {
+      "id": "0002057569-26-000043:form4-11242026_101135.xml",
+      "filed": "2026-11-20",
+      "names": [
+        "Arora Tarun  (CIK 0002057569)",
+        "RingCentral, Inc.  (CIK 0001384905)"
+      ],
+      "trade": {
+        "owner": "Arora Tarun",
+        "ticker": "RNG",
+        "code": "F",
+        "shares": 3747,
+        "price": 66.61,
+        "acquired": false,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002057553-26-000005:wk-form4_1795555965.xml",
+      "filed": "2026-11-23",
+      "names": [
+        "St. Mary Michele T  (CIK 0002057553)",
+        "Amentum Holdings, Inc.  (CIK 0002011286)"
+      ],
+      "trade": {
+        "owner": "St. Mary Michele T",
+        "ticker": "AMTM",
+        "code": "A",
+        "shares": 24213,
+        "price": 0,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
       "id": "0002051327-26-000022:form4-11242026_061100.xml",
       "filed": "2026-11-23",
       "names": [
@@ -111,325 +417,19 @@
       }
     },
     {
-      "id": "0002042355-26-000008:wk-form4_1795521468.xml",
+      "id": "0002050301-26-000011:form4-11242026_091153.xml",
       "filed": "2026-11-20",
       "names": [
-        "YOON SUNG  (CIK 0002042355)",
-        "Keysight Technologies, Inc.  (CIK 0001601046)"
+        "Venkatramani Srinivasan  (CIK 0002050301)",
+        "Blend Labs, Inc.  (CIK 0001855747)"
       ],
       "trade": {
-        "owner": "YOON SUNG",
-        "ticker": "KEYS",
-        "code": "F",
-        "shares": 311,
-        "price": 261.51,
-        "acquired": false,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002041962-26-000006:wk-form4_1795521461.xml",
-      "filed": "2026-11-20",
-      "names": [
-        "KARY JASON ANDREW  (CIK 0002041962)",
-        "Keysight Technologies, Inc.  (CIK 0001601046)"
-      ],
-      "trade": {
-        "owner": "KARY JASON ANDREW",
-        "ticker": "KEYS",
-        "code": "F",
-        "shares": 415,
-        "price": 261.51,
-        "acquired": false,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0001987126-26-000010:wk-form4_1795521428.xml",
-      "filed": "2026-11-20",
-      "names": [
-        "POOLE LISA M.  (CIK 0001987126)",
-        "Keysight Technologies, Inc.  (CIK 0001601046)"
-      ],
-      "trade": {
-        "owner": "POOLE LISA M.",
-        "ticker": "KEYS",
-        "code": "F",
-        "shares": 176,
-        "price": 261.51,
-        "acquired": false,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0001976408-26-000968:primary_doc.xml",
-      "filed": "2026-11-23",
-      "names": [
-        "Paz Amit  (CIK 0002108367)",
-        "Enlight Renewable Energy Ltd.  (CIK 0001922641)"
-      ],
-      "trade": {
-        "owner": "Paz Amit",
-        "ticker": "ENLT",
-        "code": "S",
-        "shares": 4761,
-        "price": 62.8178,
-        "acquired": false,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0001976408-26-000967:primary_doc.xml",
-      "filed": "2026-11-23",
-      "names": [
-        "BEN-HAMOU RONEN  (CIK 0002038089)",
-        "CERAGON NETWORKS LTD  (CIK 0001119769)"
-      ],
-      "trade": {
-        "owner": "BEN-HAMOU RONEN",
-        "ticker": "CRNT",
-        "code": "S",
-        "shares": 29765,
-        "price": 2.19,
-        "acquired": false,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0001959455-26-000143:wk-form4_1795519615.xml",
-      "filed": "2026-11-23",
-      "names": [
-        "Svensen Lars-Christian  (CIK 0002120278)",
-        "Himalaya Shipping Ltd.  (CIK 0001959455)"
-      ],
-      "trade": {
-        "owner": "Svensen Lars-Christian",
-        "ticker": "HSHP",
-        "code": "P",
-        "shares": 6800,
-        "price": 15.16,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0001891656-26-000006:wk-form4_1795521412.xml",
-      "filed": "2026-11-20",
-      "names": [
-        "NARAYANAN KAILASH  (CIK 0001891656)",
-        "Keysight Technologies, Inc.  (CIK 0001601046)"
-      ],
-      "trade": {
-        "owner": "NARAYANAN KAILASH",
-        "ticker": "KEYS",
-        "code": "F",
-        "shares": 966,
-        "price": 261.51,
-        "acquired": false,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0001841761-26-000129:form4.xml",
-      "filed": "2026-11-20",
-      "names": [
-        "Karp Jason H.  (CIK 0001832413)",
-        "Grove Collaborative Holdings, Inc.  (CIK 0001841761)"
-      ],
-      "trade": {
-        "owner": "Karp Jason H.",
-        "ticker": "GROV",
-        "code": "P",
-        "shares": 3350,
-        "price": 0.8,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0001841409-26-000009:wk-form4_1795529263.xml",
-      "filed": "2026-11-20",
-      "names": [
-        "Dalton Travis  (CIK 0001841409)",
-        "Claritev Corp  (CIK 0001793229)"
-      ],
-      "trade": {
-        "owner": "Dalton Travis",
-        "ticker": "CTEV",
-        "code": "P",
-        "shares": 2250,
-        "price": 19.8022,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0001828536-26-000125:wk-form4_1795540098.xml",
-      "filed": "2026-11-23",
-      "names": [
-        "Piconi Robert  (CIK 0001898769)",
-        "Energy Vault Holdings, Inc.  (CIK 0001828536)"
-      ],
-      "trade": {
-        "owner": "Piconi Robert",
-        "ticker": "NRGV",
-        "code": "P",
-        "shares": 15000,
-        "price": 2.6079,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0001781319-26-000010:wk-form4_1795521452.xml",
-      "filed": "2026-11-20",
-      "names": [
-        "Li Jeffrey K  (CIK 0001781319)",
-        "Keysight Technologies, Inc.  (CIK 0001601046)"
-      ],
-      "trade": {
-        "owner": "Li Jeffrey K",
-        "ticker": "KEYS",
-        "code": "F",
-        "shares": 933,
-        "price": 261.51,
-        "acquired": false,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0001753926-26-002241:form4.xml",
-      "filed": "2026-11-20",
-      "names": [
-        "Williams Gregg  (CIK 0001624919)",
-        "Vivani Medical, Inc.  (CIK 0001266806)"
-      ],
-      "trade": {
-        "owner": "Williams Gregg",
-        "ticker": "VANI",
-        "code": "P",
-        "shares": 227959,
-        "price": 1.137,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0001712648-26-000015:wk-form4_1795521444.xml",
-      "filed": "2026-11-20",
-      "names": [
-        "Dhanasekaran Satish  (CIK 0001712648)",
-        "Keysight Technologies, Inc.  (CIK 0001601046)"
-      ],
-      "trade": {
-        "owner": "Dhanasekaran Satish",
-        "ticker": "KEYS",
-        "code": "F",
-        "shares": 4050,
-        "price": 261.51,
-        "acquired": false,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0001654954-26-010087:section16.xml",
-      "filed": "2026-11-20",
-      "names": [
-        "Saltiel Robert J.  (CIK 0001434402)",
-        "RPC INC  (CIK 0000742278)"
-      ],
-      "trade": {
-        "owner": "Saltiel Robert J.",
-        "ticker": "RES",
-        "code": "A",
-        "shares": 50000,
+        "owner": "Venkatramani Srinivasan",
+        "ticker": "BLND",
+        "code": "M",
+        "shares": 81250,
         "price": null,
         "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0001628280-26-075648:wk-form4_1795541601.xml",
-      "filed": "2026-11-20",
-      "names": [
-        "Hinojosa Javier  (CIK 0001953908)",
-        "BKV Corp  (CIK 0001838406)"
-      ],
-      "trade": {
-        "owner": "Hinojosa Javier",
-        "ticker": "BKV",
-        "code": "S",
-        "shares": 4952,
-        "price": 17.5355,
-        "acquired": false,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0001628280-26-075637:wk-form4_1795534782.xml",
-      "filed": "2026-11-23",
-      "names": [
-        "Kettler Ronald Kyle  (CIK 0002112743)",
-        "Granite Ridge Resources, Inc.  (CIK 0001928446)"
-      ],
-      "trade": {
-        "owner": "Kettler Ronald Kyle",
-        "ticker": "GRNT",
-        "code": "P",
-        "shares": 5000,
-        "price": 5.49,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0001628280-26-075620:wk-form4_1795528386.xml",
-      "filed": "2026-11-20",
-      "names": [
-        "DIMITRIEF ALEXANDER  (CIK 0001614732)",
-        "Eos Energy Enterprises, Inc.  (CIK 0001805077)"
-      ],
-      "trade": {
-        "owner": "DIMITRIEF ALEXANDER",
-        "ticker": "EOSE",
-        "code": "P",
-        "shares": 25000,
-        "price": 1.45,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0001628280-26-075614:wk-form4_1795525570.xml",
-      "filed": "2026-11-20",
-      "names": [
-        "Rosin Brian J  (CIK 0001695607)",
-        "Prenetics Global Ltd  (CIK 0001876431)"
-      ],
-      "trade": {
-        "owner": "Rosin Brian J",
-        "ticker": "PRE",
-        "code": "P",
-        "shares": 30000,
-        "price": 10.14,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0001628280-26-075609:wk-form4_1795523682.xml",
-      "filed": "2026-11-23",
-      "names": [
-        "Hansen Mathias  (CIK 0002114384)",
-        "trivago N.V.  (CIK 0001683825)"
-      ],
-      "trade": {
-        "owner": "Hansen Mathias",
-        "ticker": "TRVG",
-        "code": "S",
-        "shares": 15000,
-        "price": 4.14,
-        "acquired": false,
         "form": "4"
       }
     }
