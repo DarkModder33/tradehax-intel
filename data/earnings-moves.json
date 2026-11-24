@@ -1,6 +1,6 @@
 {
   "meta": {
-    "asOf": "2026-11-23T21:53:35.711Z",
+    "asOf": "2026-11-24T05:00:25.983Z",
     "source": "Nasdaq report dates, Alpaca SIP closes, Cboe/Alpaca straddles",
     "rows": 128,
     "delay": "daily",
@@ -1801,7 +1801,7 @@
       "impliedExpiry": "2025-12-05"
     }
   ],
-  "note": "128 reports across 32 names. 128 have a pre-report straddle (128 filled from Alpaca option bars this run); the rest show the actual move only. Actual move is the close before the report date to the first close after it.",
+  "note": "128 reports across 32 names. 128 have a pre-report straddle (0 filled from Alpaca option bars this run); the rest show the actual move only. Actual move is the close before the report date to the first close after it.",
   "upcoming": [
     {
       "sym": "CRM",
@@ -1811,7 +1811,7 @@
       "spot": 184.17,
       "avgMove": 0.09293342852418479,
       "samples": 4,
-      "capturedAt": "2026-11-23T21:53:31.387Z"
+      "capturedAt": "2026-11-24T05:00:19.583Z"
     },
     {
       "sym": "AVGO",
@@ -1821,7 +1821,7 @@
       "spot": null,
       "avgMove": 0.08818401143131988,
       "samples": 4,
-      "capturedAt": "2026-11-23T21:53:25.463Z"
+      "capturedAt": "2026-11-24T05:00:09.868Z"
     },
     {
       "sym": "COST",
@@ -1831,7 +1831,7 @@
       "spot": null,
       "avgMove": 0.021812712303123455,
       "samples": 4,
-      "capturedAt": "2026-11-23T21:53:28.472Z"
+      "capturedAt": "2026-11-24T05:00:14.967Z"
     },
     {
       "sym": "ORCL",
@@ -1841,7 +1841,7 @@
       "spot": null,
       "avgMove": 0.08859002192527357,
       "samples": 4,
-      "capturedAt": "2026-11-23T21:53:31.788Z"
+      "capturedAt": "2026-11-24T05:00:20.075Z"
     },
     {
       "sym": "JPM",
@@ -1851,7 +1851,7 @@
       "spot": null,
       "avgMove": 0.028966046547422075,
       "samples": 4,
-      "capturedAt": "2026-11-23T21:53:26.193Z"
+      "capturedAt": "2026-11-24T05:00:11.093Z"
     },
     {
       "sym": "BAC",
@@ -1861,7 +1861,7 @@
       "spot": null,
       "avgMove": 0.028940391193794185,
       "samples": 4,
-      "capturedAt": "2026-11-23T21:53:30.076Z"
+      "capturedAt": "2026-11-24T05:00:17.639Z"
     }
   ],
   "captures": {
@@ -1869,7 +1869,7 @@
       "implied": 0.11578975946136721,
       "expiry": "2026-12-04",
       "spot": 184.17,
-      "at": "2026-11-23T21:53:31.387Z"
+      "at": "2026-11-24T05:00:19.583Z"
     }
   }
 }

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "asOf": "2026-11-23T23:19:38.492Z",
+    "asOf": "2026-11-24T04:58:20.652Z",
     "source": "SEC EDGAR Form 4",
     "rows": 25,
     "delay": "hours",
@@ -349,6 +349,23 @@
       }
     },
     {
+      "id": "0002107823-26-000004:primary_doc.xml",
+      "filed": "2025-11-20",
+      "names": [
+        "Gupta Kapil Kumar  (CIK 0002107823)",
+        "Algorhythm Holdings, Inc.  (CIK 0000923601)"
+      ],
+      "trade": {
+        "owner": "Gupta Kapil Kumar",
+        "ticker": "RIME",
+        "code": "A",
+        "shares": 19532,
+        "price": 0,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
       "id": "0002099428-26-000006:primary_doc.xml",
       "filed": "2026-11-04",
       "names": [
@@ -411,23 +428,6 @@
         "ticker": "KLAR",
         "code": "M",
         "shares": 688,
-        "price": null,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002099104-26-000005:primary_doc.xml",
-      "filed": "2026-11-04",
-      "names": [
-        "Neglen Niclas  (CIK 0002099104)",
-        "Klarna Group plc  (CIK 0002003292)"
-      ],
-      "trade": {
-        "owner": "Neglen Niclas",
-        "ticker": "KLAR",
-        "code": "M",
-        "shares": 198,
         "price": null,
         "acquired": true,
         "form": "4"
