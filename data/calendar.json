@@ -1,12 +1,25 @@
 {
   "meta": {
-    "asOf": "2026-11-25T14:19:17.278Z",
+    "asOf": "2026-11-25T14:49:43.107Z",
     "source": "Nasdaq calendars",
-    "rows": 72,
+    "rows": 76,
     "delay": "daily",
     "unavailable": false
   },
   "rows": [
+    {
+      "kind": "earnings",
+      "date": "2026-11-25",
+      "lastYearRptDt": "N/A",
+      "lastYearEPS": "$3.93",
+      "time": "time-pre-market",
+      "symbol": "DE",
+      "name": "Deere & Company",
+      "marketCap": "$170,680,975,000",
+      "fiscalQuarterEnding": "Oct/2026",
+      "epsForecast": "$4.07",
+      "noOfEsts": "N/A"
+    },
     {
       "kind": "earnings",
       "date": "2026-11-25",
@@ -28,7 +41,7 @@
       "time": "time-pre-market",
       "symbol": "BZ",
       "name": "KANZHUN LIMITED",
-      "marketCap": "$6,010,986,000",
+      "marketCap": "$6,124,222,500",
       "fiscalQuarterEnding": "Sep/2026",
       "epsForecast": "($0.02)",
       "noOfEsts": "2"
@@ -41,7 +54,7 @@
       "time": "time-not-supplied",
       "symbol": "BMA",
       "name": "Macro Bank Inc.",
-      "marketCap": "$3,124,587,780",
+      "marketCap": "$3,225,018,880",
       "fiscalQuarterEnding": "Sep/2026",
       "epsForecast": "$1.44",
       "noOfEsts": "2"
@@ -54,9 +67,22 @@
       "time": "time-pre-market",
       "symbol": "GDS",
       "name": "GDS Holdings Limited",
-      "marketCap": "$2,763,207,170",
+      "marketCap": "$3,029,709,570",
       "fiscalQuarterEnding": "Sep/2026",
       "epsForecast": "$1.31",
+      "noOfEsts": "1"
+    },
+    {
+      "kind": "earnings",
+      "date": "2026-11-25",
+      "lastYearRptDt": "N/A",
+      "lastYearEPS": "$1.35",
+      "time": "time-not-supplied",
+      "symbol": "IMKTA",
+      "name": "Ingles Markets, Incorporated",
+      "marketCap": "$1,603,695,100",
+      "fiscalQuarterEnding": "Sep/2026",
+      "epsForecast": "",
       "noOfEsts": "1"
     },
     {
@@ -67,7 +93,7 @@
       "time": "time-not-supplied",
       "symbol": "NWCL",
       "name": "newcleo plc",
-      "marketCap": "$816,451,330",
+      "marketCap": "$920,619,260",
       "fiscalQuarterEnding": "Sep/2026",
       "epsForecast": "",
       "noOfEsts": "1"
@@ -93,10 +119,23 @@
       "time": "time-after-hours",
       "symbol": "FINV",
       "name": "FinVolution Group",
-      "marketCap": "$585,513,150",
+      "marketCap": "$590,235,010",
       "fiscalQuarterEnding": "Sep/2026",
       "epsForecast": "",
       "noOfEsts": "N/A"
+    },
+    {
+      "kind": "earnings",
+      "date": "2026-11-25",
+      "lastYearRptDt": "N/A",
+      "lastYearEPS": "($0.09)",
+      "time": "time-pre-market",
+      "symbol": "GOTU",
+      "name": "Gaotu Techedu Inc.",
+      "marketCap": "$491,190,208",
+      "fiscalQuarterEnding": "Sep/2026",
+      "epsForecast": "",
+      "noOfEsts": "1"
     },
     {
       "kind": "earnings",
@@ -106,20 +145,7 @@
       "time": "time-pre-market",
       "symbol": "PSNY",
       "name": "Polestar Automotive Holding UK Limited",
-      "marketCap": "$450,127,552",
-      "fiscalQuarterEnding": "Sep/2026",
-      "epsForecast": "",
-      "noOfEsts": "N/A"
-    },
-    {
-      "kind": "earnings",
-      "date": "2026-11-25",
-      "lastYearRptDt": "N/A",
-      "lastYearEPS": "$0.05",
-      "time": "time-pre-market",
-      "symbol": "DSX",
-      "name": "Diana Shipping inc.",
-      "marketCap": "$293,616,320",
+      "marketCap": "$420,557,120",
       "fiscalQuarterEnding": "Sep/2026",
       "epsForecast": "",
       "noOfEsts": "N/A"
@@ -141,11 +167,24 @@
       "kind": "earnings",
       "date": "2026-11-25",
       "lastYearRptDt": "N/A",
+      "lastYearEPS": "$0.05",
+      "time": "time-pre-market",
+      "symbol": "DSX",
+      "name": "Diana Shipping inc.",
+      "marketCap": "$284,907,360",
+      "fiscalQuarterEnding": "Sep/2026",
+      "epsForecast": "",
+      "noOfEsts": "N/A"
+    },
+    {
+      "kind": "earnings",
+      "date": "2026-11-25",
+      "lastYearRptDt": "N/A",
       "lastYearEPS": "$0.36",
       "time": "time-pre-market",
       "symbol": "GASS",
       "name": "StealthGas, Inc.",
-      "marketCap": "$279,264,512",
+      "marketCap": "$280,380,064",
       "fiscalQuarterEnding": "Sep/2026",
       "epsForecast": "",
       "noOfEsts": "1"
@@ -158,7 +197,7 @@
       "time": "time-not-supplied",
       "symbol": "EH",
       "name": "EHang Holdings Limited",
-      "marketCap": "$175,202,784",
+      "marketCap": "$185,821,136",
       "fiscalQuarterEnding": "Sep/2026",
       "epsForecast": "",
       "noOfEsts": "N/A"
@@ -171,10 +210,23 @@
       "time": "time-pre-market",
       "symbol": "OMSE",
       "name": "OMS Energy Technologies Inc.",
-      "marketCap": "$159,182,640",
+      "marketCap": "$163,427,504",
       "fiscalQuarterEnding": "Sep/2026",
       "epsForecast": "",
       "noOfEsts": "N/A"
+    },
+    {
+      "kind": "earnings",
+      "date": "2026-11-25",
+      "lastYearRptDt": "N/A",
+      "lastYearEPS": "($0.10)",
+      "time": "time-pre-market",
+      "symbol": "YSG",
+      "name": "Yatsen Holding Limited",
+      "marketCap": "$156,755,216",
+      "fiscalQuarterEnding": "Sep/2026",
+      "epsForecast": "",
+      "noOfEsts": "1"
     },
     {
       "kind": "earnings",
@@ -184,7 +236,7 @@
       "time": "time-not-supplied",
       "symbol": "LEE",
       "name": "Lee Enterprises, Incorporated",
-      "marketCap": "$138,879,440",
+      "marketCap": "$138,210,672",
       "fiscalQuarterEnding": "Sep/2026",
       "epsForecast": "",
       "noOfEsts": "N/A"
@@ -197,7 +249,7 @@
       "time": "time-not-supplied",
       "symbol": "CAAS",
       "name": "China Automotive Systems, Inc.",
-      "marketCap": "$117,665,736",
+      "marketCap": "$120,381,104",
       "fiscalQuarterEnding": "Sep/2026",
       "epsForecast": "",
       "noOfEsts": "1"
@@ -210,7 +262,7 @@
       "time": "time-not-supplied",
       "symbol": "DSC",
       "name": "DSC Holdings Ltd.",
-      "marketCap": "$99,143,536",
+      "marketCap": "$98,642,808",
       "fiscalQuarterEnding": "Sep/2026",
       "epsForecast": "($0.11)",
       "noOfEsts": "1"
@@ -223,7 +275,7 @@
       "time": "time-not-supplied",
       "symbol": "CMCM",
       "name": "Cheetah Mobile Inc.",
-      "marketCap": "$56,116,508",
+      "marketCap": "$55,804,752",
       "fiscalQuarterEnding": "Sep/2026",
       "epsForecast": "",
       "noOfEsts": "1"
@@ -236,7 +288,7 @@
       "time": "time-not-supplied",
       "symbol": "LITB",
       "name": "LightInTheBox Holding Co., Ltd.",
-      "marketCap": "$52,669,976",
+      "marketCap": "$52,867,240",
       "fiscalQuarterEnding": "Sep/2026",
       "epsForecast": "",
       "noOfEsts": "1"
@@ -249,7 +301,7 @@
       "time": "time-not-supplied",
       "symbol": "SJ",
       "name": "Scienjoy Holding Corporation",
-      "marketCap": "$45,010,536",
+      "marketCap": "$45,647,476",
       "fiscalQuarterEnding": "Sep/2026",
       "epsForecast": "",
       "noOfEsts": "N/A"
@@ -262,7 +314,7 @@
       "time": "time-not-supplied",
       "symbol": "AACG",
       "name": "ATA Creativity Global",
-      "marketCap": "$30,945,736",
+      "marketCap": "$32,575,180",
       "fiscalQuarterEnding": "Sep/2026",
       "epsForecast": "",
       "noOfEsts": "1"
@@ -275,7 +327,7 @@
       "time": "time-pre-market",
       "symbol": "NNOX",
       "name": "NANO-X IMAGING LTD",
-      "marketCap": "$17,064,476",
+      "marketCap": "$16,843,984",
       "fiscalQuarterEnding": "Sep/2026",
       "epsForecast": "",
       "noOfEsts": "N/A"
@@ -288,7 +340,7 @@
       "time": "time-not-supplied",
       "symbol": "BRLS",
       "name": "Borealis Foods Inc.",
-      "marketCap": "$16,312,113",
+      "marketCap": "$16,097,480",
       "fiscalQuarterEnding": "Sep/2026",
       "epsForecast": "",
       "noOfEsts": "N/A"
@@ -301,7 +353,7 @@
       "time": "time-not-supplied",
       "symbol": "CETY",
       "name": "Clean Energy Technologies, Inc.",
-      "marketCap": "$11,162,402",
+      "marketCap": "$11,596,732",
       "fiscalQuarterEnding": "Sep/2026",
       "epsForecast": "",
       "noOfEsts": "N/A"
@@ -314,7 +366,7 @@
       "time": "time-not-supplied",
       "symbol": "OPHI",
       "name": "CollPlant Biotechnologies Ltd.",
-      "marketCap": "$9,626,506",
+      "marketCap": "$9,934,062",
       "fiscalQuarterEnding": "Sep/2026",
       "epsForecast": "",
       "noOfEsts": "1"
@@ -327,7 +379,7 @@
       "time": "time-not-supplied",
       "symbol": "LEXX",
       "name": "Lexaria Bioscience Corp.",
-      "marketCap": "$9,121,266",
+      "marketCap": "$8,889,548",
       "fiscalQuarterEnding": "Aug/2026",
       "epsForecast": "($0.90)",
       "noOfEsts": "1"
@@ -340,7 +392,7 @@
       "time": "time-not-supplied",
       "symbol": "REBN",
       "name": "Reborn Coffee, Inc.",
-      "marketCap": "$7,500,368",
+      "marketCap": "$7,930,512",
       "fiscalQuarterEnding": "Sep/2026",
       "epsForecast": "",
       "noOfEsts": "1"
@@ -353,7 +405,7 @@
       "time": "time-not-supplied",
       "symbol": "ALAR",
       "name": "Alarum Technologies Ltd.",
-      "marketCap": "$7,014,106",
+      "marketCap": "$7,023,531",
       "fiscalQuarterEnding": "Sep/2026",
       "epsForecast": "",
       "noOfEsts": "N/A"
@@ -366,7 +418,7 @@
       "time": "time-pre-market",
       "symbol": "ADXN",
       "name": "Addex Therapeutics Ltd",
-      "marketCap": "$6,576,332",
+      "marketCap": "$5,962,996",
       "fiscalQuarterEnding": "Sep/2026",
       "epsForecast": "",
       "noOfEsts": "N/A"
@@ -379,7 +431,7 @@
       "time": "time-not-supplied",
       "symbol": "EOCN",
       "name": "Eocene Ltd.",
-      "marketCap": "$2,041,467",
+      "marketCap": "$1,885,233",
       "fiscalQuarterEnding": "Sep/2026",
       "epsForecast": "",
       "noOfEsts": "1"
@@ -392,7 +444,7 @@
       "time": "time-not-supplied",
       "symbol": "EDVA",
       "name": "Endovia Health Sciences, Inc.",
-      "marketCap": "$1,838,886",
+      "marketCap": "$1,740,414",
       "fiscalQuarterEnding": "Sep/2026",
       "epsForecast": "",
       "noOfEsts": "1"
@@ -405,7 +457,7 @@
       "time": "time-not-supplied",
       "symbol": "BRTX",
       "name": "BioRestorative Therapies, Inc.",
-      "marketCap": "$1,588,297",
+      "marketCap": "$1,347,705",
       "fiscalQuarterEnding": "Sep/2026",
       "epsForecast": "($2.60)",
       "noOfEsts": "1"
@@ -418,7 +470,7 @@
       "time": "time-not-supplied",
       "symbol": "SRTM",
       "name": "Stratum Holdings Corp.",
-      "marketCap": "$236,646",
+      "marketCap": "$519,491",
       "fiscalQuarterEnding": "Sep/2026",
       "epsForecast": "",
       "noOfEsts": "1"
@@ -868,15 +920,15 @@
   ],
   "parts": {
     "earnings": {
-      "asOf": "2026-11-25T14:19:17.278Z",
+      "asOf": "2026-11-25T14:49:43.107Z",
       "source": "Nasdaq calendar/earnings",
-      "rows": 33,
+      "rows": 37,
       "delay": "daily",
       "stale": false,
       "unavailable": false
     },
     "economic": {
-      "asOf": "2026-11-25T14:19:17.352Z",
+      "asOf": "2026-11-25T14:49:43.132Z",
       "source": "Nasdaq calendar/economicevents",
       "rows": 39,
       "delay": "daily",

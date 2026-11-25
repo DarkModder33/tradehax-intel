@@ -247,9 +247,17 @@
     "alert:insider|PRE|2026-11-23": [
       "telegram",
       "discord"
+    ],
+    "TSLA|mover|2026-11-25": [
+      "telegram",
+      "discord"
+    ],
+    "SECTORS|rotation|2026-11-25": [
+      "telegram",
+      "discord"
     ]
   },
-  "updatedAt": "2026-11-25T14:19:23.281Z",
+  "updatedAt": "2026-11-25T14:49:53.183Z",
   "messages": {
     "WMT|earnings|2026-11-19": {
       "telegram": "23",
@@ -418,6 +426,14 @@
     "alert:insider|PRE|2026-11-23": {
       "telegram": "64",
       "discord": "1575153938519298049"
+    },
+    "TSLA|mover|2026-11-25": {
+      "telegram": "65",
+      "discord": "1575161607267291147"
+    },
+    "SECTORS|rotation|2026-11-25": {
+      "telegram": "66",
+      "discord": "1575161610215882856"
     }
   },
   "alertDays": {

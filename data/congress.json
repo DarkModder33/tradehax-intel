@@ -1,6 +1,6 @@
 {
   "meta": {
-    "asOf": "2026-11-25T14:18:01.569Z",
+    "asOf": "2026-11-25T14:47:57.970Z",
     "source": "House Clerk periodic transaction reports",
     "rows": 1171,
     "delay": "daily",
@@ -22267,6 +22267,10 @@
   },
   "docs": [
     {
+      "docId": "20036848",
+      "status": "parsed"
+    },
+    {
       "docId": "20035776",
       "status": "parsed"
     },
@@ -22896,10 +22900,6 @@
     },
     {
       "docId": "20035023",
-      "status": "parsed"
-    },
-    {
-      "docId": "20036848",
       "status": "parsed"
     }
   ],
