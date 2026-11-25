@@ -1,6 +1,6 @@
 {
   "meta": {
-    "asOf": "2026-11-24T23:26:59.145Z",
+    "asOf": "2026-11-25T05:02:50.650Z",
     "source": "House Clerk periodic transaction reports",
     "rows": 1170,
     "delay": "daily",
@@ -22239,10 +22239,10 @@
       "url": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035147.pdf"
     }
   ],
-  "note": "1,170 trades parsed from 136 electronic House filings in the last 120 days. 23 scanned paper filings have no text and are linked, not parsed.",
+  "note": "1,170 trades parsed from 135 electronic House filings in the last 120 days. 23 scanned paper filings have no text and are linked, not parsed.",
   "counts": {
-    "filings": 160,
-    "parsed": 136,
+    "filings": 159,
+    "parsed": 135,
     "scanned": 23,
     "errors": 1
   },
@@ -22877,10 +22877,6 @@
     },
     {
       "docId": "20035023",
-      "status": "parsed"
-    },
-    {
-      "docId": "20035067",
       "status": "parsed"
     },
     {
@@ -24000,13 +23996,6 @@
       "state": "LA06",
       "filed": "2026-07-30",
       "docId": "20035023",
-      "year": 2026
-    },
-    {
-      "name": "Hon. Adrian Smith",
-      "state": "NE03",
-      "filed": "2026-07-27",
-      "docId": "20035067",
       "year": 2026
     }
   ],

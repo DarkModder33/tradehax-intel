@@ -1,6 +1,6 @@
 {
   "meta": {
-    "asOf": "2026-11-24T23:26:57.715Z",
+    "asOf": "2026-11-25T05:02:49.146Z",
     "source": "SEC EDGAR Form 4",
     "rows": 25,
     "delay": "hours",
@@ -315,6 +315,23 @@
       }
     },
     {
+      "id": "0002087850-26-000009:primarydocument.xml",
+      "filed": "2026-11-20",
+      "names": [
+        "Thompson Steve B  (CIK 0002087850)",
+        "Hilltop Holdings Inc.  (CIK 0001265131)"
+      ],
+      "trade": {
+        "owner": "Thompson Steve B",
+        "ticker": "HTH",
+        "code": "A",
+        "shares": 472.4416,
+        "price": 0,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
       "id": "0002083284-26-000002:wk-form4_1795561420.xml",
       "filed": "2026-11-20",
       "names": [
@@ -349,6 +366,23 @@
       }
     },
     {
+      "id": "0002070849-26-000088:wk-form4_1795563233.xml",
+      "filed": "2026-11-20",
+      "names": [
+        "ten Bosch John Roderick  (CIK 0002087126)",
+        "BillionToOne, Inc.  (CIK 0002070849)"
+      ],
+      "trade": {
+        "owner": "ten Bosch John Roderick",
+        "ticker": "BLLN",
+        "code": "G",
+        "shares": 910,
+        "price": 0,
+        "acquired": false,
+        "form": "4"
+      }
+    },
+    {
       "id": "0002069480-26-000012:wk-form4_1795521420.xml",
       "filed": "2026-11-20",
       "names": [
@@ -361,6 +395,23 @@
         "code": "F",
         "shares": 109,
         "price": 261.51,
+        "acquired": false,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002067233-26-000023:wk-form4_1795568787.xml",
+      "filed": "2026-11-23",
+      "names": [
+        "Stepien Thomas M  (CIK 0002067233)",
+        "Amprius Technologies, Inc.  (CIK 0001899287)"
+      ],
+      "trade": {
+        "owner": "Stepien Thomas M",
+        "ticker": "AMPX",
+        "code": "S",
+        "shares": 21281,
+        "price": 6.468,
         "acquired": false,
         "form": "4"
       }
@@ -379,57 +430,6 @@
         "shares": 3747,
         "price": 66.61,
         "acquired": false,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002057553-26-000005:wk-form4_1795555965.xml",
-      "filed": "2026-11-23",
-      "names": [
-        "St. Mary Michele T  (CIK 0002057553)",
-        "Amentum Holdings, Inc.  (CIK 0002011286)"
-      ],
-      "trade": {
-        "owner": "St. Mary Michele T",
-        "ticker": "AMTM",
-        "code": "A",
-        "shares": 24213,
-        "price": 0,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002051327-26-000022:form4-11242026_061100.xml",
-      "filed": "2026-11-23",
-      "names": [
-        "Canup Edward G  (CIK 0002051327)",
-        "COLONY BANKCORP INC  (CIK 0000711669)"
-      ],
-      "trade": {
-        "owner": "Canup Edward G",
-        "ticker": "CBAN",
-        "code": "P",
-        "shares": 500,
-        "price": 19.495,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002050301-26-000011:form4-11242026_091153.xml",
-      "filed": "2026-11-20",
-      "names": [
-        "Venkatramani Srinivasan  (CIK 0002050301)",
-        "Blend Labs, Inc.  (CIK 0001855747)"
-      ],
-      "trade": {
-        "owner": "Venkatramani Srinivasan",
-        "ticker": "BLND",
-        "code": "M",
-        "shares": 81250,
-        "price": null,
-        "acquired": true,
         "form": "4"
       }
     }
