@@ -318,9 +318,21 @@
     "alert:sweep|AMD261125P00380000|2026-11-25T16:43:44.384703238Z": [
       "telegram",
       "discord"
+    ],
+    "alert:block|QQQ281215P00500000|2026-11-25T16:24:34.94473101Z": [
+      "telegram",
+      "discord"
+    ],
+    "alert:block|NVDA270617C00170000|2026-11-25T17:19:11.52433971Z": [
+      "telegram",
+      "discord"
+    ],
+    "alert:mover|PLTR|2026-11-25": [
+      "telegram",
+      "discord"
     ]
   },
-  "updatedAt": "2026-11-25T17:19:30.148Z",
+  "updatedAt": "2026-11-25T17:49:06.762Z",
   "messages": {
     "WMT|earnings|2026-11-19": {
       "telegram": "23",
@@ -560,11 +572,23 @@
     "alert:sweep|AMD261125P00380000|2026-11-25T16:43:44.384703238Z": {
       "telegram": "81",
       "discord": "1575199278207344833"
+    },
+    "alert:block|QQQ281215P00500000|2026-11-25T16:24:34.94473101Z": {
+      "telegram": "82",
+      "discord": "1575206717485228092"
+    },
+    "alert:block|NVDA270617C00170000|2026-11-25T17:19:11.52433971Z": {
+      "telegram": "83",
+      "discord": "1575206719078797383"
+    },
+    "alert:mover|PLTR|2026-11-25": {
+      "telegram": "84",
+      "discord": "1575206721524076687"
     }
   },
   "alertDays": {
     "2026-11-23": 2,
     "2026-11-24": 30,
-    "2026-11-25": 15
+    "2026-11-25": 18
   }
 }

@@ -1,8 +1,8 @@
 {
   "meta": {
-    "asOf": "2026-11-25T17:19:22.208Z",
+    "asOf": "2026-11-25T17:48:59.864Z",
     "source": "Nasdaq calendars",
-    "rows": 70,
+    "rows": 71,
     "delay": "daily",
     "unavailable": false
   },
@@ -123,6 +123,19 @@
       "fiscalQuarterEnding": "Sep/2026",
       "epsForecast": "",
       "noOfEsts": "N/A"
+    },
+    {
+      "kind": "earnings",
+      "date": "2026-11-25",
+      "lastYearRptDt": "N/A",
+      "lastYearEPS": "$0.36",
+      "time": "time-pre-market",
+      "symbol": "GASS",
+      "name": "StealthGas, Inc.",
+      "marketCap": "$279,264,512",
+      "fiscalQuarterEnding": "Sep/2026",
+      "epsForecast": "",
+      "noOfEsts": "1"
     },
     {
       "kind": "earnings",
@@ -842,15 +855,15 @@
   ],
   "parts": {
     "earnings": {
-      "asOf": "2026-11-25T17:19:22.208Z",
+      "asOf": "2026-11-25T17:48:59.864Z",
       "source": "Nasdaq calendar/earnings",
-      "rows": 31,
+      "rows": 32,
       "delay": "daily",
       "stale": false,
       "unavailable": false
     },
     "economic": {
-      "asOf": "2026-11-25T17:19:22.235Z",
+      "asOf": "2026-11-25T17:49:00.030Z",
       "source": "Nasdaq calendar/economicevents",
       "rows": 39,
       "delay": "daily",
