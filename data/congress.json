@@ -1,8 +1,8 @@
 {
   "meta": {
-    "asOf": "2026-11-25T13:47:49.886Z",
+    "asOf": "2026-11-25T14:18:01.569Z",
     "source": "House Clerk periodic transaction reports",
-    "rows": 1170,
+    "rows": 1171,
     "delay": "daily",
     "stale": false,
     "unavailable": false
@@ -615,6 +615,25 @@
       "filed": "2026-10-27",
       "docId": "20035563",
       "url": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035563.pdf"
+    },
+    {
+      "ticker": "NVDA",
+      "asset": "NVIDIA Corporation - Common Stock (NVDA)",
+      "assetType": "ST",
+      "type": "Partial sale",
+      "owner": "SP",
+      "transactionDate": "2026-10-27",
+      "notifiedDate": "2026-11-13",
+      "amount": "$1,001 - $15,000",
+      "amountLow": 1001,
+      "amountHigh": 15000,
+      "member": "Daniel Meuser",
+      "party": "Republican",
+      "chamber": "House",
+      "district": "PA09",
+      "filed": "2026-11-24",
+      "docId": "20036848",
+      "url": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20036848.pdf"
     },
     {
       "ticker": "ARGX",
@@ -22239,12 +22258,12 @@
       "url": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035147.pdf"
     }
   ],
-  "note": "1,170 trades parsed from 135 electronic House filings in the last 120 days. 23 scanned paper filings have no text and are linked, not parsed.",
+  "note": "1,171 trades parsed from 136 electronic House filings in the last 120 days. 23 scanned paper filings have no text and are linked, not parsed.",
   "counts": {
     "filings": 159,
-    "parsed": 135,
+    "parsed": 136,
     "scanned": 23,
-    "errors": 1
+    "errors": 0
   },
   "docs": [
     {
@@ -22881,7 +22900,7 @@
     },
     {
       "docId": "20036848",
-      "status": "error"
+      "status": "parsed"
     }
   ],
   "filings": [

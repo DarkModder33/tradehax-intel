@@ -1,6 +1,6 @@
 {
   "meta": {
-    "asOf": "2026-11-25T13:47:48.099Z",
+    "asOf": "2026-11-25T14:18:01.128Z",
     "source": "SEC EDGAR Form 4",
     "rows": 25,
     "delay": "hours",
@@ -22,6 +22,23 @@
         "shares": 60000,
         "price": 1731429,
         "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002086800-26-000012:wk-form4_1795615999.xml",
+      "filed": "2026-11-24",
+      "names": [
+        "Kennedy David Alan  (CIK 0002086800)",
+        "Dell Technologies Inc.  (CIK 0001571996)"
+      ],
+      "trade": {
+        "owner": "Kennedy David Alan",
+        "ticker": "DELL",
+        "code": "F",
+        "shares": 3094,
+        "price": 334.91,
+        "acquired": false,
         "form": "4"
       }
     },
@@ -162,6 +179,23 @@
       }
     },
     {
+      "id": "0001804456-26-000004:wk-form4_1795614758.xml",
+      "filed": "2026-11-23",
+      "names": [
+        "Pearson David Todd  (CIK 0001804456)",
+        "SAUL CENTERS, INC.  (CIK 0000907254)"
+      ],
+      "trade": {
+        "owner": "Pearson David Todd",
+        "ticker": "BFS",
+        "code": "P",
+        "shares": 3716,
+        "price": 26.835,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
       "id": "0001753926-26-002250:form4.xml",
       "filed": "2026-11-24",
       "names": [
@@ -192,6 +226,74 @@
         "shares": 2022,
         "price": 31.14,
         "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0001628280-26-075888:wk-form4_1795616207.xml",
+      "filed": "2026-11-23",
+      "names": [
+        "Lo Hoi Chun  (CIK 0002117963)",
+        "Prenetics Global Ltd  (CIK 0001876431)"
+      ],
+      "trade": {
+        "owner": "Lo Hoi Chun",
+        "ticker": "PRE",
+        "code": "P",
+        "shares": 9200,
+        "price": 9.6,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0001628280-26-075886:wk-form4_1795615799.xml",
+      "filed": "2026-11-20",
+      "names": [
+        "Yeung Danny Sheng Wu  (CIK 0001930070)",
+        "Prenetics Global Ltd  (CIK 0001876431)"
+      ],
+      "trade": {
+        "owner": "Yeung Danny Sheng Wu",
+        "ticker": "PRE",
+        "code": "P",
+        "shares": 15000,
+        "price": 9.88,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0001628280-26-075880:wk-form4_1795614529.xml",
+      "filed": "2026-11-24",
+      "names": [
+        "Lin Lawrence Y.  (CIK 0002045844)",
+        "Azenta, Inc.  (CIK 0000933974)"
+      ],
+      "trade": {
+        "owner": "Lin Lawrence Y.",
+        "ticker": "AZTA",
+        "code": "F",
+        "shares": 5350,
+        "price": 47.54,
+        "acquired": false,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0001628280-26-075879:wk-form4_1795614446.xml",
+      "filed": "2026-11-24",
+      "names": [
+        "Starr Ephraim  (CIK 0002069816)",
+        "Azenta, Inc.  (CIK 0000933974)"
+      ],
+      "trade": {
+        "owner": "Starr Ephraim",
+        "ticker": "AZTA",
+        "code": "F",
+        "shares": 4956,
+        "price": 47.54,
+        "acquired": false,
         "form": "4"
       }
     },
@@ -264,6 +366,57 @@
       }
     },
     {
+      "id": "0001565687-26-000171:form4.xml",
+      "filed": "2026-11-24",
+      "names": [
+        "Sedgwick Dustin de Forest  (CIK 0002084374)",
+        "Intapp, Inc.  (CIK 0001565687)"
+      ],
+      "trade": {
+        "owner": "Sedgwick Dustin de Forest",
+        "ticker": "INTA",
+        "code": "S",
+        "shares": 5682,
+        "price": 44.7229,
+        "acquired": false,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0001565687-26-000170:form4.xml",
+      "filed": "2026-11-24",
+      "names": [
+        "Harrison David Benjamin  (CIK 0002028388)",
+        "Intapp, Inc.  (CIK 0001565687)"
+      ],
+      "trade": {
+        "owner": "Harrison David Benjamin",
+        "ticker": "INTA",
+        "code": "S",
+        "shares": 2272,
+        "price": 45,
+        "acquired": false,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0001565687-26-000169:form4.xml",
+      "filed": "2026-11-23",
+      "names": [
+        "HALL JOHN T  (CIK 0001106566)",
+        "Intapp, Inc.  (CIK 0001565687)"
+      ],
+      "trade": {
+        "owner": "HALL JOHN T",
+        "ticker": "INTA",
+        "code": "M",
+        "shares": 3000,
+        "price": 7.45,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
       "id": "0001555132-26-000012:form4-11252026_111157.xml",
       "filed": "2026-11-24",
       "names": [
@@ -276,159 +429,6 @@
         "code": "P",
         "shares": 10000,
         "price": 1.43,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0001530997-26-000014:wk-form4_1795609113.xml",
-      "filed": "2026-11-24",
-      "names": [
-        "WEIL MEREDITH S  (CIK 0001530997)",
-        "TFS Financial CORP  (CIK 0001381668)"
-      ],
-      "trade": {
-        "owner": "WEIL MEREDITH S",
-        "ticker": "TFSL",
-        "code": "A",
-        "shares": 28013,
-        "price": 0,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0001493152-26-054124:ownership.xml",
-      "filed": "2026-11-23",
-      "names": [
-        "Chin Kevin  (CIK 0001641024)",
-        "VivoPower PLC  (CIK 0001681348)"
-      ],
-      "trade": {
-        "owner": "Chin Kevin",
-        "ticker": "VIVO",
-        "code": "P",
-        "shares": 264693,
-        "price": 1.76,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0001493152-26-054094:ownership.xml",
-      "filed": "2026-11-19",
-      "names": [
-        "Gubin Moishe  (CIK 0001550934)",
-        "Strawberry Fields REIT, Inc.  (CIK 0001782430)"
-      ],
-      "trade": {
-        "owner": "Gubin Moishe",
-        "ticker": "STRW",
-        "code": "S",
-        "shares": 750000,
-        "price": 12,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0001493152-26-054093:ownership.xml",
-      "filed": "2026-11-20",
-      "names": [
-        "Lerman Ted  (CIK 0002057337)",
-        "Strawberry Fields REIT, Inc.  (CIK 0001782430)"
-      ],
-      "trade": {
-        "owner": "Lerman Ted",
-        "ticker": "STRW",
-        "code": "S",
-        "shares": 1500000,
-        "price": 12,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0001493152-26-054088:ownership.xml",
-      "filed": "2026-11-19",
-      "names": [
-        "Blisko Michael  (CIK 0001987861)",
-        "Strawberry Fields REIT, Inc.  (CIK 0001782430)"
-      ],
-      "trade": {
-        "owner": "Blisko Michael",
-        "ticker": "STRW",
-        "code": "P",
-        "shares": 750000,
-        "price": 12,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0001477932-26-007296:form4.xml",
-      "filed": "2026-11-24",
-      "names": [
-        "Reynolds Cameron John  (CIK 0001340610)",
-        "VOLITIONRX LTD  (CIK 0000093314)"
-      ],
-      "trade": {
-        "owner": "Reynolds Cameron John",
-        "ticker": "VNRX",
-        "code": "P",
-        "shares": 20000,
-        "price": 0.1703,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0001437749-26-038239:rdgdoc.xml",
-      "filed": "2026-11-24",
-      "names": [
-        "Schlorff Eric  (CIK 0001949738)",
-        "SeaStar Medical Holding Corp  (CIK 0001831868)"
-      ],
-      "trade": {
-        "owner": "Schlorff Eric",
-        "ticker": "ICU",
-        "code": "P",
-        "shares": 2000,
-        "price": 0.95,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0001437479-26-000042:form4.xml",
-      "filed": "2026-11-23",
-      "names": [
-        "Klein Nicholas D  (CIK 0001788010)",
-        "ENB Financial Corp  (CIK 0001437479)"
-      ],
-      "trade": {
-        "owner": "Klein Nicholas D",
-        "ticker": "ENBP",
-        "code": "S",
-        "shares": 102,
-        "price": 32.5,
-        "acquired": false,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0001388161-26-000010:wk-form4_1795609078.xml",
-      "filed": "2026-11-24",
-      "names": [
-        "Stefanski Marc A  (CIK 0001388161)",
-        "TFS Financial CORP  (CIK 0001381668)"
-      ],
-      "trade": {
-        "owner": "Stefanski Marc A",
-        "ticker": "TFSL",
-        "code": "A",
-        "shares": 68175,
-        "price": 0,
         "acquired": true,
         "form": "4"
       }

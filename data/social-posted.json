@@ -243,9 +243,13 @@
     "alert:block|GLD270617C00340000|2026-11-24T17:32:04.201950467Z": [
       "telegram",
       "discord"
+    ],
+    "alert:insider|PRE|2026-11-23": [
+      "telegram",
+      "discord"
     ]
   },
-  "updatedAt": "2026-11-24T17:49:33.292Z",
+  "updatedAt": "2026-11-25T14:19:23.281Z",
   "messages": {
     "WMT|earnings|2026-11-19": {
       "telegram": "23",
@@ -410,10 +414,15 @@
     "alert:block|GLD270617C00340000|2026-11-24T17:32:04.201950467Z": {
       "telegram": "63",
       "discord": "1574844441435447388"
+    },
+    "alert:insider|PRE|2026-11-23": {
+      "telegram": "64",
+      "discord": "1575153938519298049"
     }
   },
   "alertDays": {
     "2026-11-23": 2,
-    "2026-11-24": 30
+    "2026-11-24": 30,
+    "2026-11-25": 1
   }
 }
