@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-25T17:49:05.887Z",
+  "generatedAt": "2026-11-25T18:19:33.557Z",
   "disclaimer": "Auto-generated from market data — not investment advice.",
   "stories": [
     {
@@ -13,15 +13,15 @@
       ],
       "day": "2026-11-25",
       "dataDate": "2026-11-25",
-      "publishedAt": "2026-11-25T17:49:05.769Z",
-      "headline": "Health care leads, semiconductors lags: a 13.0-point gap over five sessions",
-      "dek": "XLV +1.7%, SMH -11.3% over five sessions; 4 of 11 sectors up.",
-      "lede": "Health care (XLV) returned +1.7% over the five sessions through Wednesday, while semiconductors (SMH) returned -11.3%. 4 of 11 sector funds finished the window higher, against -2.7% for the S&P 500 ETF.",
+      "publishedAt": "2026-11-25T18:19:33.446Z",
+      "headline": "Health care leads, semiconductors lags: a 12.0-point gap over five sessions",
+      "dek": "XLV +1.9%, SMH -10.1% over five sessions; 5 of 11 sectors up.",
+      "lede": "Health care (XLV) returned +1.9% over the five sessions through Wednesday, while semiconductors (SMH) returned -10.1%. 5 of 11 sector funds finished the window higher, against -2.2% for the S&P 500 ETF.",
       "sections": [
         {
           "heading": "Context",
           "paragraphs": [
-            "On the latest session alone, XLV lost 0.3% and SMH lost 4.4%. Over one month the order is XLV +2.8% and SMH -26.9%, which shows whether this week extends or reverses the month's trend."
+            "On the latest session alone, XLV lost 0.0% and SMH lost 3.2%. Over one month the order is XLV +3.1% and SMH -26.0%, which shows whether this week extends or reverses the month's trend."
           ]
         }
       ],
@@ -38,102 +38,102 @@
           [
             "health care",
             "XLV",
-            "-0.3%",
-            "+1.7%",
-            "+2.8%"
+            "-0.0%",
+            "+1.9%",
+            "+3.1%"
           ],
           [
             "materials",
             "XLB",
+            "+2.0%",
             "+1.4%",
-            "+0.8%",
-            "-1.7%"
+            "-1.2%"
           ],
           [
             "real estate",
             "XLRE",
-            "+1.1%",
-            "+0.7%",
-            "+3.5%"
+            "+1.3%",
+            "+0.9%",
+            "+3.7%"
           ],
           [
             "utilities",
             "XLU",
-            "+0.6%",
-            "+0.2%",
-            "+1.9%"
+            "+0.7%",
+            "+0.4%",
+            "+2.0%"
           ],
           [
             "financials",
             "XLF",
-            "+0.3%",
-            "-0.3%",
-            "+0.7%"
+            "+0.7%",
+            "+0.1%",
+            "+1.1%"
           ],
           [
             "energy",
             "XLE",
-            "+0.8%",
-            "-0.6%",
-            "-10.7%"
+            "+1.1%",
+            "-0.3%",
+            "-10.4%"
           ],
           [
             "communication services",
             "XLC",
-            "+0.3%",
-            "-0.8%",
-            "+1.1%"
+            "+0.7%",
+            "-0.4%",
+            "+1.5%"
           ],
           [
             "industrials",
             "XLI",
-            "0.0%",
-            "-1.9%",
-            "-3.8%"
+            "+0.6%",
+            "-1.3%",
+            "-3.2%"
           ],
           [
             "consumer discretionary",
             "XLY",
-            "-0.7%",
-            "-2.0%",
-            "+1.2%"
+            "-0.1%",
+            "-1.4%",
+            "+1.8%"
           ],
           [
             "technology",
             "XLK",
-            "-3.0%",
-            "-7.0%",
-            "-19.6%"
+            "-2.1%",
+            "-6.1%",
+            "-18.8%"
           ],
           [
             "semiconductors",
             "SMH",
-            "-4.4%",
-            "-11.3%",
-            "-26.9%"
+            "-3.2%",
+            "-10.1%",
+            "-26.0%"
           ]
         ]
       },
       "watch": [
         "Whether XLV holds above its 50-day average at $177.41; leadership that loses its trend line usually rotates out.",
-        "SMH against its 50-day average at $540.82: a laggard that reclaims trend often marks the end of a rotation.",
-        "The spread itself: a gap above 13 points next week would confirm the rotation; a narrowing gap would say it was a one-week shake-out."
+        "SMH against its 50-day average at $540.93: a laggard that reclaims trend often marks the end of a rotation.",
+        "The spread itself: a gap above 12 points next week would confirm the rotation; a narrowing gap would say it was a one-week shake-out."
       ],
       "body": [
-        "Health care (XLV) returned +1.7% over the five sessions through Wednesday, while semiconductors (SMH) returned -11.3%. 4 of 11 sector funds finished the window higher, against -2.7% for the S&P 500 ETF.",
-        "On the latest session alone, XLV lost 0.3% and SMH lost 4.4%. Over one month the order is XLV +2.8% and SMH -26.9%, which shows whether this week extends or reverses the month's trend.",
-        "What to watch: Whether XLV holds above its 50-day average at $177.41; leadership that loses its trend line usually rotates out. SMH against its 50-day average at $540.82: a laggard that reclaims trend often marks the end of a rotation. The spread itself: a gap above 13 points next week would confirm the rotation; a narrowing gap would say it was a one-week shake-out."
+        "Health care (XLV) returned +1.9% over the five sessions through Wednesday, while semiconductors (SMH) returned -10.1%. 5 of 11 sector funds finished the window higher, against -2.2% for the S&P 500 ETF.",
+        "On the latest session alone, XLV lost 0.0% and SMH lost 3.2%. Over one month the order is XLV +3.1% and SMH -26.0%, which shows whether this week extends or reverses the month's trend.",
+        "What to watch: Whether XLV holds above its 50-day average at $177.41; leadership that loses its trend line usually rotates out. SMH against its 50-day average at $540.93: a laggard that reclaims trend often marks the end of a rotation. The spread itself: a gap above 12 points next week would confirm the rotation; a narrowing gap would say it was a one-week shake-out."
       ],
       "keyNumbers": [
         {
           "label": "XLV five-day return",
-          "value": "+1.7%",
+          "value": "+1.9%",
           "source": "Alpaca SIP daily bars via worker",
           "asOf": "2026-11-25"
         },
         {
           "label": "SMH five-day return",
-          "value": "-11.3%",
+          "value": "-10.1%",
           "source": "Alpaca SIP daily bars via worker",
           "asOf": "2026-11-25"
         }
@@ -168,7 +168,7 @@
         177.24,
         179.42,
         184.72,
-        184.24
+        184.685
       ],
       "sources": [
         {
@@ -176,9 +176,9 @@
           "asOf": "2026-11-25"
         }
       ],
-      "materiality": 77.77398340477473,
+      "materiality": 72.23637815227278,
       "slug": "sectors-rotation-2026-11-25",
-      "titleSlug": "health-care-leads-semiconductors-lags-a-13-0-point-gap-over-five-sessions",
+      "titleSlug": "health-care-leads-semiconductors-lags-a-12-0-point-gap-over-five-sessions",
       "passedMateriality": true,
       "disclaimer": "Auto-generated from market data — not investment advice.",
       "methodology": "/about/methodology/"
@@ -671,160 +671,6 @@
       "methodology": "/about/methodology/"
     },
     {
-      "id": "AMD|mover|2026-11-24",
-      "format": "desk",
-      "type": "mover",
-      "ticker": "AMD",
-      "tickers": [
-        "AMD",
-        "SMH"
-      ],
-      "day": "2026-11-24",
-      "dataDate": "2026-11-24",
-      "publishedAt": "2026-11-25T14:19:22.525Z",
-      "headline": "AMD shares fall 8.9%, extending a -10.1% five-session run",
-      "dek": "AMD -8.9% to $413.27 on 1.0x volume; SMH -7.3%.",
-      "lede": "AMD (AMD) closed at $413.27 on Tuesday, down 8.9% from $453.46 the session before, on volume 1.0x its 20-day average. The S&P 500 ETF fell 0.5% on the day. Among the latest headlines on the name, Motley Fool reported: \"AMD Stock Would Need to Rise About 57% to Get Back to Its Record. History Says How Long Past Comebacks Took.\".",
-      "sections": [
-        {
-          "heading": "Context",
-          "paragraphs": [
-            "Its group, semiconductors (SMH), lost 7.3%, so AMD moved 1.6 points worse than its peers. Coming into the session, AMD was -10.1% over the prior five days and is now -22.2% over the past month. The close sits 36.4% below its 52-week closing high of $649.42. Trend levels: the 50-day average at $550.48 (below it by 24.9%), and the 200-day average at $432.00 (below by 4.3%)."
-          ]
-        }
-      ],
-      "table": {
-        "caption": "AMD on Nov 24",
-        "columns": [
-          "Measure",
-          "Value"
-        ],
-        "rows": [
-          [
-            "Close",
-            "$413.27"
-          ],
-          [
-            "One-day change",
-            "-8.9%"
-          ],
-          [
-            "Volume vs 20-day average",
-            "1.0x"
-          ],
-          [
-            "SMH one-day change",
-            "-7.3%"
-          ],
-          [
-            "SPY one-day change",
-            "-0.5%"
-          ],
-          [
-            "Prior five sessions",
-            "-10.1%"
-          ],
-          [
-            "One month",
-            "-22.2%"
-          ],
-          [
-            "Distance from closing high",
-            "-36.4%"
-          ],
-          [
-            "50-day average",
-            "$550.48"
-          ],
-          [
-            "200-day average",
-            "$432.00"
-          ]
-        ]
-      },
-      "watch": [
-        "Whether AMD holds below the prior close of $453.46: a move back through it would erase the session.",
-        "The 200-day average at $432.00."
-      ],
-      "body": [
-        "AMD (AMD) closed at $413.27 on Tuesday, down 8.9% from $453.46 the session before, on volume 1.0x its 20-day average. The S&P 500 ETF fell 0.5% on the day. Among the latest headlines on the name, Motley Fool reported: \"AMD Stock Would Need to Rise About 57% to Get Back to Its Record. History Says How Long Past Comebacks Took.\".",
-        "Its group, semiconductors (SMH), lost 7.3%, so AMD moved 1.6 points worse than its peers. Coming into the session, AMD was -10.1% over the prior five days and is now -22.2% over the past month. The close sits 36.4% below its 52-week closing high of $649.42. Trend levels: the 50-day average at $550.48 (below it by 24.9%), and the 200-day average at $432.00 (below by 4.3%).",
-        "What to watch: Whether AMD holds below the prior close of $453.46: a move back through it would erase the session. The 200-day average at $432.00."
-      ],
-      "keyNumbers": [
-        {
-          "label": "One-day change",
-          "value": "-8.9%",
-          "source": "Alpaca SIP daily bars via worker",
-          "asOf": "2026-11-24"
-        },
-        {
-          "label": "Close",
-          "value": "$413.27",
-          "source": "Alpaca SIP daily bars via worker",
-          "asOf": "2026-11-24"
-        },
-        {
-          "label": "Volume vs 20-day average",
-          "value": "1.0x",
-          "source": "Alpaca SIP daily bars via worker",
-          "asOf": "2026-11-24"
-        }
-      ],
-      "spark": [
-        570.82,
-        562.23,
-        528.75,
-        538.05,
-        534.74,
-        552.72,
-        507.93,
-        516.79,
-        531.28,
-        560.26,
-        578.44,
-        566.42,
-        504.8,
-        466.84,
-        483.9,
-        488.78,
-        404.4,
-        449.04,
-        508.58,
-        515.21,
-        552.9,
-        585.3,
-        534.06,
-        504.28,
-        503.41,
-        530.14,
-        489.19,
-        424.39,
-        453.46,
-        413.27
-      ],
-      "sources": [
-        {
-          "name": "Alpaca SIP daily bars via worker",
-          "asOf": "2026-11-24"
-        },
-        {
-          "name": "Cboe delayed option chain",
-          "asOf": "2026-11-25"
-        },
-        {
-          "name": "Motley Fool",
-          "asOf": "2026-11-25T14:19:22.525Z"
-        }
-      ],
-      "materiality": 88.62964759846514,
-      "slug": "amd-mover-2026-11-24",
-      "titleSlug": "amd-shares-fall-8-9-extending-a-10-1-five-session-run",
-      "passedMateriality": true,
-      "disclaimer": "Auto-generated from market data — not investment advice.",
-      "methodology": "/about/methodology/"
-    },
-    {
       "id": "SECTORS|rotation|2026-11-24",
       "format": "desk",
       "type": "rotation",
@@ -1001,6 +847,160 @@
       "materiality": 46.66731752333213,
       "slug": "sectors-rotation-2026-11-24",
       "titleSlug": "consumer-discretionary-leads-semiconductors-lags-a-7-8-point-gap-over-five-sessi",
+      "passedMateriality": true,
+      "disclaimer": "Auto-generated from market data — not investment advice.",
+      "methodology": "/about/methodology/"
+    },
+    {
+      "id": "AMD|mover|2026-11-24",
+      "format": "desk",
+      "type": "mover",
+      "ticker": "AMD",
+      "tickers": [
+        "AMD",
+        "SMH"
+      ],
+      "day": "2026-11-24",
+      "dataDate": "2026-11-24",
+      "publishedAt": "2026-11-25T14:19:22.525Z",
+      "headline": "AMD shares fall 8.9%, extending a -10.1% five-session run",
+      "dek": "AMD -8.9% to $413.27 on 1.0x volume; SMH -7.3%.",
+      "lede": "AMD (AMD) closed at $413.27 on Tuesday, down 8.9% from $453.46 the session before, on volume 1.0x its 20-day average. The S&P 500 ETF fell 0.5% on the day. Among the latest headlines on the name, Motley Fool reported: \"AMD Stock Would Need to Rise About 57% to Get Back to Its Record. History Says How Long Past Comebacks Took.\".",
+      "sections": [
+        {
+          "heading": "Context",
+          "paragraphs": [
+            "Its group, semiconductors (SMH), lost 7.3%, so AMD moved 1.6 points worse than its peers. Coming into the session, AMD was -10.1% over the prior five days and is now -22.2% over the past month. The close sits 36.4% below its 52-week closing high of $649.42. Trend levels: the 50-day average at $550.48 (below it by 24.9%), and the 200-day average at $432.00 (below by 4.3%)."
+          ]
+        }
+      ],
+      "table": {
+        "caption": "AMD on Nov 24",
+        "columns": [
+          "Measure",
+          "Value"
+        ],
+        "rows": [
+          [
+            "Close",
+            "$413.27"
+          ],
+          [
+            "One-day change",
+            "-8.9%"
+          ],
+          [
+            "Volume vs 20-day average",
+            "1.0x"
+          ],
+          [
+            "SMH one-day change",
+            "-7.3%"
+          ],
+          [
+            "SPY one-day change",
+            "-0.5%"
+          ],
+          [
+            "Prior five sessions",
+            "-10.1%"
+          ],
+          [
+            "One month",
+            "-22.2%"
+          ],
+          [
+            "Distance from closing high",
+            "-36.4%"
+          ],
+          [
+            "50-day average",
+            "$550.48"
+          ],
+          [
+            "200-day average",
+            "$432.00"
+          ]
+        ]
+      },
+      "watch": [
+        "Whether AMD holds below the prior close of $453.46: a move back through it would erase the session.",
+        "The 200-day average at $432.00."
+      ],
+      "body": [
+        "AMD (AMD) closed at $413.27 on Tuesday, down 8.9% from $453.46 the session before, on volume 1.0x its 20-day average. The S&P 500 ETF fell 0.5% on the day. Among the latest headlines on the name, Motley Fool reported: \"AMD Stock Would Need to Rise About 57% to Get Back to Its Record. History Says How Long Past Comebacks Took.\".",
+        "Its group, semiconductors (SMH), lost 7.3%, so AMD moved 1.6 points worse than its peers. Coming into the session, AMD was -10.1% over the prior five days and is now -22.2% over the past month. The close sits 36.4% below its 52-week closing high of $649.42. Trend levels: the 50-day average at $550.48 (below it by 24.9%), and the 200-day average at $432.00 (below by 4.3%).",
+        "What to watch: Whether AMD holds below the prior close of $453.46: a move back through it would erase the session. The 200-day average at $432.00."
+      ],
+      "keyNumbers": [
+        {
+          "label": "One-day change",
+          "value": "-8.9%",
+          "source": "Alpaca SIP daily bars via worker",
+          "asOf": "2026-11-24"
+        },
+        {
+          "label": "Close",
+          "value": "$413.27",
+          "source": "Alpaca SIP daily bars via worker",
+          "asOf": "2026-11-24"
+        },
+        {
+          "label": "Volume vs 20-day average",
+          "value": "1.0x",
+          "source": "Alpaca SIP daily bars via worker",
+          "asOf": "2026-11-24"
+        }
+      ],
+      "spark": [
+        570.82,
+        562.23,
+        528.75,
+        538.05,
+        534.74,
+        552.72,
+        507.93,
+        516.79,
+        531.28,
+        560.26,
+        578.44,
+        566.42,
+        504.8,
+        466.84,
+        483.9,
+        488.78,
+        404.4,
+        449.04,
+        508.58,
+        515.21,
+        552.9,
+        585.3,
+        534.06,
+        504.28,
+        503.41,
+        530.14,
+        489.19,
+        424.39,
+        453.46,
+        413.27
+      ],
+      "sources": [
+        {
+          "name": "Alpaca SIP daily bars via worker",
+          "asOf": "2026-11-24"
+        },
+        {
+          "name": "Cboe delayed option chain",
+          "asOf": "2026-11-25"
+        },
+        {
+          "name": "Motley Fool",
+          "asOf": "2026-11-25T14:19:22.525Z"
+        }
+      ],
+      "materiality": 88.62964759846514,
+      "slug": "amd-mover-2026-11-24",
+      "titleSlug": "amd-shares-fall-8-9-extending-a-10-1-five-session-run",
       "passedMateriality": true,
       "disclaimer": "Auto-generated from market data — not investment advice.",
       "methodology": "/about/methodology/"
@@ -1336,783 +1336,6 @@
       "methodology": "/about/methodology/"
     },
     {
-      "id": "QQQ|mover|2026-11-23",
-      "format": "desk",
-      "type": "mover",
-      "ticker": "QQQ",
-      "tickers": [
-        "QQQ"
-      ],
-      "day": "2026-11-23",
-      "dataDate": "2026-11-23",
-      "publishedAt": "2026-11-24T14:19:15.644Z",
-      "headline": "Nasdaq 100 ETF jumps 7.0%, its biggest one-day gain in at least 12 months",
-      "dek": "QQQ +7.0% to $651.03 on 1.5x volume.",
-      "lede": "The Nasdaq 100 ETF (QQQ) closed at $651.03 on Monday, up 7.0% from $608.45 the session before, on volume 1.5x its 20-day average. The S&P 500 ETF rose 4.7% on the day. Among the large-cap stocks the desk tracks, the biggest gains came from Nvidia (+31.5%), Oracle (+12.3%), Tesla (+11.5%). Among the latest headlines on the name, 24/7 Wall St. reported: \"QQQ Just Had Its Biggest Opening Jump Since It Launched in 1999\".",
-      "sections": [
-        {
-          "heading": "Context",
-          "paragraphs": [
-            "Coming into the session, QQQ was -10.5% over the prior five days and is now -7.6% over the past month. The close sits 14.3% below its 52-week closing high of $759.66. Trend levels: the 50-day average at $709.79 (below it by 8.3%), and the 200-day average at $683.27 (below by 4.7%)."
-          ]
-        },
-        {
-          "heading": "Positioning",
-          "paragraphs": [
-            "Options traded 8.97M contracts in the latest stored session, 44% of them calls. Open-interest gamma was -$4.30B per 1% move, a short-gamma book in which dealer hedging tends to add to moves, with the flip level near $662.58."
-          ]
-        }
-      ],
-      "table": {
-        "caption": "QQQ on Nov 23",
-        "columns": [
-          "Measure",
-          "Value"
-        ],
-        "rows": [
-          [
-            "Close",
-            "$651.03"
-          ],
-          [
-            "One-day change",
-            "+7.0%"
-          ],
-          [
-            "Volume vs 20-day average",
-            "1.5x"
-          ],
-          [
-            "SPY one-day change",
-            "+4.7%"
-          ],
-          [
-            "Prior five sessions",
-            "-10.5%"
-          ],
-          [
-            "One month",
-            "-7.6%"
-          ],
-          [
-            "Distance from closing high",
-            "-14.3%"
-          ],
-          [
-            "50-day average",
-            "$709.79"
-          ],
-          [
-            "200-day average",
-            "$683.27"
-          ],
-          [
-            "Net gamma per 1%",
-            "-$4.30B"
-          ],
-          [
-            "Gamma flip",
-            "$662.58"
-          ]
-        ]
-      },
-      "watch": [
-        "Whether QQQ holds above the prior close of $608.45: a move back through it would erase the session.",
-        "Follow-through volume. Today ran 1.5x normal; a quick fade toward average often means the move was a one-day repricing.",
-        "The 200-day average at $683.27.",
-        "The gamma flip near $662.58: a move above it would put dealers back to long gamma."
-      ],
-      "body": [
-        "The Nasdaq 100 ETF (QQQ) closed at $651.03 on Monday, up 7.0% from $608.45 the session before, on volume 1.5x its 20-day average. The S&P 500 ETF rose 4.7% on the day. Among the large-cap stocks the desk tracks, the biggest gains came from Nvidia (+31.5%), Oracle (+12.3%), Tesla (+11.5%). Among the latest headlines on the name, 24/7 Wall St. reported: \"QQQ Just Had Its Biggest Opening Jump Since It Launched in 1999\".",
-        "Coming into the session, QQQ was -10.5% over the prior five days and is now -7.6% over the past month. The close sits 14.3% below its 52-week closing high of $759.66. Trend levels: the 50-day average at $709.79 (below it by 8.3%), and the 200-day average at $683.27 (below by 4.7%).",
-        "Options traded 8.97M contracts in the latest stored session, 44% of them calls. Open-interest gamma was -$4.30B per 1% move, a short-gamma book in which dealer hedging tends to add to moves, with the flip level near $662.58.",
-        "What to watch: Whether QQQ holds above the prior close of $608.45: a move back through it would erase the session. Follow-through volume. Today ran 1.5x normal; a quick fade toward average often means the move was a one-day repricing. The 200-day average at $683.27. The gamma flip near $662.58: a move above it would put dealers back to long gamma."
-      ],
-      "keyNumbers": [
-        {
-          "label": "One-day change",
-          "value": "+7.0%",
-          "source": "Alpaca SIP daily bars via worker",
-          "asOf": "2026-11-23"
-        },
-        {
-          "label": "Close",
-          "value": "$651.03",
-          "source": "Alpaca SIP daily bars via worker",
-          "asOf": "2026-11-23"
-        },
-        {
-          "label": "Volume vs 20-day average",
-          "value": "1.5x",
-          "source": "Alpaca SIP daily bars via worker",
-          "asOf": "2026-11-23"
-        }
-      ],
-      "spark": [
-        743.57,
-        728.95,
-        728,
-        709.8,
-        718.36,
-        717.63,
-        725.2,
-        704.47,
-        704.4,
-        712.2,
-        721.25,
-        725.61,
-        715.34,
-        690.49,
-        681.09,
-        685.28,
-        691.95,
-        647.05,
-        656.1,
-        679.35,
-        674.76,
-        690.38,
-        688.17,
-        679.89,
-        661.75,
-        656.95,
-        659.51,
-        645.04,
-        608.45,
-        651.03
-      ],
-      "sources": [
-        {
-          "name": "Alpaca SIP daily bars via worker",
-          "asOf": "2026-11-23"
-        },
-        {
-          "name": "Cboe delayed option chain",
-          "asOf": "2026-11-24"
-        },
-        {
-          "name": "24/7 Wall St.",
-          "asOf": "2026-11-24T14:19:15.644Z"
-        }
-      ],
-      "materiality": 109.98109951516129,
-      "slug": "qqq-mover-2026-11-23",
-      "titleSlug": "nasdaq-100-etf-jumps-7-0-its-biggest-one-day-gain-in-at-least-12-months",
-      "passedMateriality": true,
-      "disclaimer": "Auto-generated from market data — not investment advice.",
-      "methodology": "/about/methodology/"
-    },
-    {
-      "id": "PLTR|mover|2026-11-23",
-      "format": "desk",
-      "type": "mover",
-      "ticker": "PLTR",
-      "tickers": [
-        "PLTR",
-        "XLK"
-      ],
-      "day": "2026-11-23",
-      "dataDate": "2026-11-23",
-      "publishedAt": "2026-11-24T14:19:15.644Z",
-      "headline": "Palantir shares surge 11.1%, their biggest one-day gain since Aug 4",
-      "dek": "PLTR +11.1% to $159.36 on 1.3x volume; XLK +9.0%.",
-      "lede": "Palantir (PLTR) closed at $159.36 on Monday, up 11.1% from $143.49 the session before, on volume 1.3x its 20-day average. The S&P 500 ETF rose 4.7% on the day. Among the latest headlines on the name, Trefis reported: \"Is Palantir Stock Priced Right Against Its Rivals?\".",
-      "sections": [
-        {
-          "heading": "Context",
-          "paragraphs": [
-            "Its group, technology (XLK), gained 9.0%, so PLTR moved 2.1 points better than its peers. Coming into the session, PLTR was -14.6% over the prior five days and is now -19.0% over the past month. The close sits 23.8% below its 52-week closing high of $209.05. Trend levels: the 50-day average at $182.98 (below it by 12.9%), and the 200-day average at $154.09 (above by 3.4%)."
-          ]
-        }
-      ],
-      "table": {
-        "caption": "PLTR on Nov 23",
-        "columns": [
-          "Measure",
-          "Value"
-        ],
-        "rows": [
-          [
-            "Close",
-            "$159.36"
-          ],
-          [
-            "One-day change",
-            "+11.1%"
-          ],
-          [
-            "Volume vs 20-day average",
-            "1.3x"
-          ],
-          [
-            "XLK one-day change",
-            "+9.0%"
-          ],
-          [
-            "SPY one-day change",
-            "+4.7%"
-          ],
-          [
-            "Prior five sessions",
-            "-14.6%"
-          ],
-          [
-            "One month",
-            "-19.0%"
-          ],
-          [
-            "Distance from closing high",
-            "-23.8%"
-          ],
-          [
-            "50-day average",
-            "$182.98"
-          ],
-          [
-            "200-day average",
-            "$154.09"
-          ]
-        ]
-      },
-      "watch": [
-        "Whether PLTR holds above the prior close of $143.49: a move back through it would erase the session.",
-        "The 200-day average at $154.09."
-      ],
-      "body": [
-        "Palantir (PLTR) closed at $159.36 on Monday, up 11.1% from $143.49 the session before, on volume 1.3x its 20-day average. The S&P 500 ETF rose 4.7% on the day. Among the latest headlines on the name, Trefis reported: \"Is Palantir Stock Priced Right Against Its Rivals?\".",
-        "Its group, technology (XLK), gained 9.0%, so PLTR moved 2.1 points better than its peers. Coming into the session, PLTR was -14.6% over the prior five days and is now -19.0% over the past month. The close sits 23.8% below its 52-week closing high of $209.05. Trend levels: the 50-day average at $182.98 (below it by 12.9%), and the 200-day average at $154.09 (above by 3.4%).",
-        "What to watch: Whether PLTR holds above the prior close of $143.49: a move back through it would erase the session. The 200-day average at $154.09."
-      ],
-      "keyNumbers": [
-        {
-          "label": "One-day change",
-          "value": "+11.1%",
-          "source": "Alpaca SIP daily bars via worker",
-          "asOf": "2026-11-23"
-        },
-        {
-          "label": "Close",
-          "value": "$159.36",
-          "source": "Alpaca SIP daily bars via worker",
-          "asOf": "2026-11-23"
-        },
-        {
-          "label": "Volume vs 20-day average",
-          "value": "1.3x",
-          "source": "Alpaca SIP daily bars via worker",
-          "asOf": "2026-11-23"
-        }
-      ],
-      "spark": [
-        208.67,
-        200.97,
-        200.5,
-        186.03,
-        194.15,
-        192.6,
-        201.72,
-        196.19,
-        196.75,
-        198.84,
-        198.73,
-        196.81,
-        196.42,
-        184.11,
-        178.34,
-        175.4,
-        171.7,
-        154.99,
-        160.38,
-        169.2,
-        168.82,
-        172.4,
-        171.58,
-        167.99,
-        160.39,
-        156.56,
-        156.67,
-        153.68,
-        143.49,
-        159.36
-      ],
-      "sources": [
-        {
-          "name": "Alpaca SIP daily bars via worker",
-          "asOf": "2026-11-23"
-        },
-        {
-          "name": "Cboe delayed option chain",
-          "asOf": "2026-11-24"
-        },
-        {
-          "name": "Trefis",
-          "asOf": "2026-11-24T14:19:15.644Z"
-        }
-      ],
-      "materiality": 110.60004181476057,
-      "slug": "pltr-mover-2026-11-23",
-      "titleSlug": "palantir-shares-surge-11-1-their-biggest-one-day-gain-since-aug-4",
-      "passedMateriality": true,
-      "disclaimer": "Auto-generated from market data — not investment advice.",
-      "methodology": "/about/methodology/"
-    },
-    {
-      "id": "TSLA|mover|2026-11-23",
-      "format": "desk",
-      "type": "mover",
-      "ticker": "TSLA",
-      "tickers": [
-        "TSLA",
-        "XLY"
-      ],
-      "day": "2026-11-23",
-      "dataDate": "2026-11-23",
-      "publishedAt": "2026-11-24T14:19:15.644Z",
-      "headline": "Tesla shares surge 11.5%, their biggest one-day gain in at least 12 months",
-      "dek": "TSLA +11.5% to $385.46 on 1.3x volume; XLY +4.0%.",
-      "lede": "Tesla (TSLA) closed at $385.46 on Monday, up 11.5% from $345.82 the session before, on volume 1.3x its 20-day average. The S&P 500 ETF rose 4.7% on the day. Among the latest headlines on the name, Trefis reported: \"Should You Trim Or Add To Your Tesla Position?\".",
-      "sections": [
-        {
-          "heading": "Context",
-          "paragraphs": [
-            "Its group, consumer discretionary (XLY), gained 4.0%, so TSLA moved 7.5 points better than its peers. Coming into the session, TSLA was -11.4% over the prior five days and is now +3.6% over the past month. The close sits 21.3% below its 52-week closing high of $489.88. Trend levels: the 50-day average at $376.17 (above it by 2.5%), and the 200-day average at $381.53 (above by 1.0%)."
-          ]
-        }
-      ],
-      "table": {
-        "caption": "TSLA on Nov 23",
-        "columns": [
-          "Measure",
-          "Value"
-        ],
-        "rows": [
-          [
-            "Close",
-            "$385.46"
-          ],
-          [
-            "One-day change",
-            "+11.5%"
-          ],
-          [
-            "Volume vs 20-day average",
-            "1.3x"
-          ],
-          [
-            "XLY one-day change",
-            "+4.0%"
-          ],
-          [
-            "SPY one-day change",
-            "+4.7%"
-          ],
-          [
-            "Prior five sessions",
-            "-11.4%"
-          ],
-          [
-            "One month",
-            "+3.6%"
-          ],
-          [
-            "Distance from closing high",
-            "-21.3%"
-          ],
-          [
-            "50-day average",
-            "$376.17"
-          ],
-          [
-            "200-day average",
-            "$381.53"
-          ]
-        ]
-      },
-      "watch": [
-        "Whether TSLA holds above the prior close of $345.82: a move back through it would erase the session.",
-        "The 50-day average at $376.17, the nearest trend level."
-      ],
-      "body": [
-        "Tesla (TSLA) closed at $385.46 on Monday, up 11.5% from $345.82 the session before, on volume 1.3x its 20-day average. The S&P 500 ETF rose 4.7% on the day. Among the latest headlines on the name, Trefis reported: \"Should You Trim Or Add To Your Tesla Position?\".",
-        "Its group, consumer discretionary (XLY), gained 4.0%, so TSLA moved 7.5 points better than its peers. Coming into the session, TSLA was -11.4% over the prior five days and is now +3.6% over the past month. The close sits 21.3% below its 52-week closing high of $489.88. Trend levels: the 50-day average at $376.17 (above it by 2.5%), and the 200-day average at $381.53 (above by 1.0%).",
-        "What to watch: Whether TSLA holds above the prior close of $345.82: a move back through it would erase the session. The 50-day average at $376.17, the nearest trend level."
-      ],
-      "keyNumbers": [
-        {
-          "label": "One-day change",
-          "value": "+11.5%",
-          "source": "Alpaca SIP daily bars via worker",
-          "asOf": "2026-11-23"
-        },
-        {
-          "label": "Close",
-          "value": "$385.46",
-          "source": "Alpaca SIP daily bars via worker",
-          "asOf": "2026-11-23"
-        },
-        {
-          "label": "Volume vs 20-day average",
-          "value": "1.3x",
-          "source": "Alpaca SIP daily bars via worker",
-          "asOf": "2026-11-23"
-        }
-      ],
-      "spark": [
-        375.23,
-        367.16,
-        362.44,
-        354.72,
-        368.06,
-        373.71,
-        386.47,
-        374.58,
-        372.22,
-        391.62,
-        407.46,
-        404.22,
-        403.3,
-        399.81,
-        403.82,
-        398.5,
-        385.19,
-        343.69,
-        358.22,
-        378.05,
-        379.78,
-        390.84,
-        397.45,
-        390.22,
-        379.74,
-        380.11,
-        383.72,
-        374.41,
-        345.82,
-        385.46
-      ],
-      "sources": [
-        {
-          "name": "Alpaca SIP daily bars via worker",
-          "asOf": "2026-11-23"
-        },
-        {
-          "name": "Cboe delayed option chain",
-          "asOf": "2026-11-24"
-        },
-        {
-          "name": "Trefis",
-          "asOf": "2026-11-24T14:19:15.644Z"
-        }
-      ],
-      "materiality": 114.62610606673995,
-      "slug": "tsla-mover-2026-11-23",
-      "titleSlug": "tesla-shares-surge-11-5-their-biggest-one-day-gain-in-at-least-12-months",
-      "passedMateriality": true,
-      "disclaimer": "Auto-generated from market data — not investment advice.",
-      "methodology": "/about/methodology/"
-    },
-    {
-      "id": "NVDA|mover|2026-11-23",
-      "format": "desk",
-      "type": "mover",
-      "ticker": "NVDA",
-      "tickers": [
-        "NVDA",
-        "SMH"
-      ],
-      "day": "2026-11-23",
-      "dataDate": "2026-11-23",
-      "publishedAt": "2026-11-24T14:19:15.644Z",
-      "headline": "Nvidia shares surge 31.5%, their biggest one-day gain in at least 12 months",
-      "dek": "NVDA +31.5% to $165.05 on 2.7x volume; SMH +15.0%.",
-      "lede": "Nvidia (NVDA) closed at $165.05 on Monday, up 31.5% from $125.53 the session before, on volume 2.7x its 20-day average. The S&P 500 ETF rose 4.7% on the day. Among the latest headlines on the name, Yahoo Finance reported: \"Stock market today: Dow, S&P 500, Nasdaq futures fall as chip stocks fall, investors test Nvidia-fueled rally\".",
-      "sections": [
-        {
-          "heading": "Context",
-          "paragraphs": [
-            "Its group, semiconductors (SMH), gained 15.0%, so NVDA moved 16.5 points better than its peers. Coming into the session, NVDA was -22.9% over the prior five days and is now -21.8% over the past month. The close sits 31.0% below its 52-week closing high of $239.24. Trend levels: the 50-day average at $206.08 (below it by 19.9%), and the 200-day average at $203.24 (below by 18.8%)."
-          ]
-        }
-      ],
-      "table": {
-        "caption": "NVDA on Nov 23",
-        "columns": [
-          "Measure",
-          "Value"
-        ],
-        "rows": [
-          [
-            "Close",
-            "$165.05"
-          ],
-          [
-            "One-day change",
-            "+31.5%"
-          ],
-          [
-            "Volume vs 20-day average",
-            "2.7x"
-          ],
-          [
-            "SMH one-day change",
-            "+15.0%"
-          ],
-          [
-            "SPY one-day change",
-            "+4.7%"
-          ],
-          [
-            "Prior five sessions",
-            "-22.9%"
-          ],
-          [
-            "One month",
-            "-21.8%"
-          ],
-          [
-            "Distance from closing high",
-            "-31.0%"
-          ],
-          [
-            "50-day average",
-            "$206.08"
-          ],
-          [
-            "200-day average",
-            "$203.24"
-          ]
-        ]
-      },
-      "watch": [
-        "Whether NVDA holds above the prior close of $125.53: a move back through it would erase the session.",
-        "Follow-through volume. Today ran 2.7x normal; a quick fade toward average often means the move was a one-day repricing."
-      ],
-      "body": [
-        "Nvidia (NVDA) closed at $165.05 on Monday, up 31.5% from $125.53 the session before, on volume 2.7x its 20-day average. The S&P 500 ETF rose 4.7% on the day. Among the latest headlines on the name, Yahoo Finance reported: \"Stock market today: Dow, S&P 500, Nasdaq futures fall as chip stocks fall, investors test Nvidia-fueled rally\".",
-        "Its group, semiconductors (SMH), gained 15.0%, so NVDA moved 16.5 points better than its peers. Coming into the session, NVDA was -22.9% over the prior five days and is now -21.8% over the past month. The close sits 31.0% below its 52-week closing high of $239.24. Trend levels: the 50-day average at $206.08 (below it by 19.9%), and the 200-day average at $203.24 (below by 18.8%).",
-        "What to watch: Whether NVDA holds above the prior close of $125.53: a move back through it would erase the session. Follow-through volume. Today ran 2.7x normal; a quick fade toward average often means the move was a one-day repricing."
-      ],
-      "keyNumbers": [
-        {
-          "label": "One-day change",
-          "value": "+31.5%",
-          "source": "Alpaca SIP daily bars via worker",
-          "asOf": "2026-11-23"
-        },
-        {
-          "label": "Close",
-          "value": "$165.05",
-          "source": "Alpaca SIP daily bars via worker",
-          "asOf": "2026-11-23"
-        },
-        {
-          "label": "Volume vs 20-day average",
-          "value": "2.7x",
-          "source": "Alpaca SIP daily bars via worker",
-          "asOf": "2026-11-23"
-        }
-      ],
-      "spark": [
-        228.52,
-        221.3,
-        217.23,
-        214.13,
-        217.09,
-        216.47,
-        221.97,
-        212.21,
-        210.96,
-        216,
-        217.94,
-        215.38,
-        213.66,
-        204.64,
-        202.06,
-        206.69,
-        200.13,
-        181.6,
-        186.64,
-        178.67,
-        168.89,
-        173.73,
-        166.19,
-        162.85,
-        156.14,
-        155.46,
-        150.96,
-        145.98,
-        125.53,
-        165.05
-      ],
-      "sources": [
-        {
-          "name": "Alpaca SIP daily bars via worker",
-          "asOf": "2026-11-23"
-        },
-        {
-          "name": "Cboe delayed option chain",
-          "asOf": "2026-11-24"
-        },
-        {
-          "name": "Yahoo Finance",
-          "asOf": "2026-11-24T14:19:15.644Z"
-        }
-      ],
-      "materiality": 314.82514140046214,
-      "slug": "nvda-mover-2026-11-23",
-      "titleSlug": "nvidia-shares-surge-31-5-their-biggest-one-day-gain-in-at-least-12-months",
-      "passedMateriality": true,
-      "disclaimer": "Auto-generated from market data — not investment advice.",
-      "methodology": "/about/methodology/"
-    },
-    {
-      "id": "MSTR|mover|2026-11-23",
-      "format": "desk",
-      "type": "mover",
-      "ticker": "MSTR",
-      "tickers": [
-        "MSTR"
-      ],
-      "day": "2026-11-23",
-      "dataDate": "2026-11-23",
-      "publishedAt": "2026-11-24T14:19:15.644Z",
-      "headline": "Strategy (MSTR) shares jump 8.5%, their biggest one-day gain since Sep 21",
-      "dek": "MSTR +8.5% to $84.40 on 1.4x volume.",
-      "lede": "Strategy (MSTR) closed at $84.40 on Monday, up 8.5% from $77.80 the session before, on volume 1.4x its 20-day average. The S&P 500 ETF rose 4.7% on the day. Among the latest headlines on the name, Zacks reported: \"Strategy Inc (MSTR) Is a Trending Stock: Facts to Know Before Betting on It\".",
-      "sections": [
-        {
-          "heading": "Context",
-          "paragraphs": [
-            "Coming into the session, MSTR was -30.3% over the prior five days and is now -42.2% over the past month. The close sits 56.9% below its 52-week closing high of $195.94. Trend levels: the 50-day average at $137.86 (below it by 38.8%), and the 200-day average at $131.51 (below by 35.8%)."
-          ]
-        }
-      ],
-      "table": {
-        "caption": "MSTR on Nov 23",
-        "columns": [
-          "Measure",
-          "Value"
-        ],
-        "rows": [
-          [
-            "Close",
-            "$84.40"
-          ],
-          [
-            "One-day change",
-            "+8.5%"
-          ],
-          [
-            "Volume vs 20-day average",
-            "1.4x"
-          ],
-          [
-            "SPY one-day change",
-            "+4.7%"
-          ],
-          [
-            "Prior five sessions",
-            "-30.3%"
-          ],
-          [
-            "One month",
-            "-42.2%"
-          ],
-          [
-            "Distance from closing high",
-            "-56.9%"
-          ],
-          [
-            "50-day average",
-            "$137.86"
-          ],
-          [
-            "200-day average",
-            "$131.51"
-          ]
-        ]
-      },
-      "watch": [
-        "Whether MSTR holds above the prior close of $77.80: a move back through it would erase the session.",
-        "Follow-through volume. Today ran 1.4x normal; a quick fade toward average often means the move was a one-day repricing."
-      ],
-      "body": [
-        "Strategy (MSTR) closed at $84.40 on Monday, up 8.5% from $77.80 the session before, on volume 1.4x its 20-day average. The S&P 500 ETF rose 4.7% on the day. Among the latest headlines on the name, Zacks reported: \"Strategy Inc (MSTR) Is a Trending Stock: Facts to Know Before Betting on It\".",
-        "Coming into the session, MSTR was -30.3% over the prior five days and is now -42.2% over the past month. The close sits 56.9% below its 52-week closing high of $195.94. Trend levels: the 50-day average at $137.86 (below it by 38.8%), and the 200-day average at $131.51 (below by 35.8%).",
-        "What to watch: Whether MSTR holds above the prior close of $77.80: a move back through it would erase the session. Follow-through volume. Today ran 1.4x normal; a quick fade toward average often means the move was a one-day repricing."
-      ],
-      "keyNumbers": [
-        {
-          "label": "One-day change",
-          "value": "+8.5%",
-          "source": "Alpaca SIP daily bars via worker",
-          "asOf": "2026-11-23"
-        },
-        {
-          "label": "Close",
-          "value": "$84.40",
-          "source": "Alpaca SIP daily bars via worker",
-          "asOf": "2026-11-23"
-        },
-        {
-          "label": "Volume vs 20-day average",
-          "value": "1.4x",
-          "source": "Alpaca SIP daily bars via worker",
-          "asOf": "2026-11-23"
-        }
-      ],
-      "spark": [
-        152.18,
-        143.24,
-        151.29,
-        136.83,
-        136.02,
-        142.72,
-        153.48,
-        145.8,
-        146.01,
-        139.82,
-        141.4,
-        145.16,
-        141.62,
-        130.51,
-        130.76,
-        135.63,
-        142.54,
-        129.3,
-        128.93,
-        125.59,
-        121.07,
-        122.35,
-        114.41,
-        111.62,
-        103.03,
-        96.5,
-        90.32,
-        86.13,
-        77.8,
-        84.4
-      ],
-      "sources": [
-        {
-          "name": "Alpaca SIP daily bars via worker",
-          "asOf": "2026-11-23"
-        },
-        {
-          "name": "Cboe delayed option chain",
-          "asOf": "2026-11-24"
-        },
-        {
-          "name": "Zacks",
-          "asOf": "2026-11-24T14:19:15.644Z"
-        }
-      ],
-      "materiality": 84.83290488431882,
-      "slug": "mstr-mover-2026-11-23",
-      "titleSlug": "strategy-mstr-shares-jump-8-5-their-biggest-one-day-gain-since-sep-21",
-      "passedMateriality": true,
-      "disclaimer": "Auto-generated from market data — not investment advice.",
-      "methodology": "/about/methodology/"
-    },
-    {
       "id": "SECTORS|rotation|2026-11-23",
       "format": "desk",
       "type": "rotation",
@@ -2289,6 +1512,783 @@
       "materiality": 33.752561278717664,
       "slug": "sectors-rotation-2026-11-23",
       "titleSlug": "semiconductors-leads-energy-lags-a-5-6-point-gap-over-five-sessions",
+      "passedMateriality": true,
+      "disclaimer": "Auto-generated from market data — not investment advice.",
+      "methodology": "/about/methodology/"
+    },
+    {
+      "id": "MSTR|mover|2026-11-23",
+      "format": "desk",
+      "type": "mover",
+      "ticker": "MSTR",
+      "tickers": [
+        "MSTR"
+      ],
+      "day": "2026-11-23",
+      "dataDate": "2026-11-23",
+      "publishedAt": "2026-11-24T14:19:15.644Z",
+      "headline": "Strategy (MSTR) shares jump 8.5%, their biggest one-day gain since Sep 21",
+      "dek": "MSTR +8.5% to $84.40 on 1.4x volume.",
+      "lede": "Strategy (MSTR) closed at $84.40 on Monday, up 8.5% from $77.80 the session before, on volume 1.4x its 20-day average. The S&P 500 ETF rose 4.7% on the day. Among the latest headlines on the name, Zacks reported: \"Strategy Inc (MSTR) Is a Trending Stock: Facts to Know Before Betting on It\".",
+      "sections": [
+        {
+          "heading": "Context",
+          "paragraphs": [
+            "Coming into the session, MSTR was -30.3% over the prior five days and is now -42.2% over the past month. The close sits 56.9% below its 52-week closing high of $195.94. Trend levels: the 50-day average at $137.86 (below it by 38.8%), and the 200-day average at $131.51 (below by 35.8%)."
+          ]
+        }
+      ],
+      "table": {
+        "caption": "MSTR on Nov 23",
+        "columns": [
+          "Measure",
+          "Value"
+        ],
+        "rows": [
+          [
+            "Close",
+            "$84.40"
+          ],
+          [
+            "One-day change",
+            "+8.5%"
+          ],
+          [
+            "Volume vs 20-day average",
+            "1.4x"
+          ],
+          [
+            "SPY one-day change",
+            "+4.7%"
+          ],
+          [
+            "Prior five sessions",
+            "-30.3%"
+          ],
+          [
+            "One month",
+            "-42.2%"
+          ],
+          [
+            "Distance from closing high",
+            "-56.9%"
+          ],
+          [
+            "50-day average",
+            "$137.86"
+          ],
+          [
+            "200-day average",
+            "$131.51"
+          ]
+        ]
+      },
+      "watch": [
+        "Whether MSTR holds above the prior close of $77.80: a move back through it would erase the session.",
+        "Follow-through volume. Today ran 1.4x normal; a quick fade toward average often means the move was a one-day repricing."
+      ],
+      "body": [
+        "Strategy (MSTR) closed at $84.40 on Monday, up 8.5% from $77.80 the session before, on volume 1.4x its 20-day average. The S&P 500 ETF rose 4.7% on the day. Among the latest headlines on the name, Zacks reported: \"Strategy Inc (MSTR) Is a Trending Stock: Facts to Know Before Betting on It\".",
+        "Coming into the session, MSTR was -30.3% over the prior five days and is now -42.2% over the past month. The close sits 56.9% below its 52-week closing high of $195.94. Trend levels: the 50-day average at $137.86 (below it by 38.8%), and the 200-day average at $131.51 (below by 35.8%).",
+        "What to watch: Whether MSTR holds above the prior close of $77.80: a move back through it would erase the session. Follow-through volume. Today ran 1.4x normal; a quick fade toward average often means the move was a one-day repricing."
+      ],
+      "keyNumbers": [
+        {
+          "label": "One-day change",
+          "value": "+8.5%",
+          "source": "Alpaca SIP daily bars via worker",
+          "asOf": "2026-11-23"
+        },
+        {
+          "label": "Close",
+          "value": "$84.40",
+          "source": "Alpaca SIP daily bars via worker",
+          "asOf": "2026-11-23"
+        },
+        {
+          "label": "Volume vs 20-day average",
+          "value": "1.4x",
+          "source": "Alpaca SIP daily bars via worker",
+          "asOf": "2026-11-23"
+        }
+      ],
+      "spark": [
+        152.18,
+        143.24,
+        151.29,
+        136.83,
+        136.02,
+        142.72,
+        153.48,
+        145.8,
+        146.01,
+        139.82,
+        141.4,
+        145.16,
+        141.62,
+        130.51,
+        130.76,
+        135.63,
+        142.54,
+        129.3,
+        128.93,
+        125.59,
+        121.07,
+        122.35,
+        114.41,
+        111.62,
+        103.03,
+        96.5,
+        90.32,
+        86.13,
+        77.8,
+        84.4
+      ],
+      "sources": [
+        {
+          "name": "Alpaca SIP daily bars via worker",
+          "asOf": "2026-11-23"
+        },
+        {
+          "name": "Cboe delayed option chain",
+          "asOf": "2026-11-24"
+        },
+        {
+          "name": "Zacks",
+          "asOf": "2026-11-24T14:19:15.644Z"
+        }
+      ],
+      "materiality": 84.83290488431882,
+      "slug": "mstr-mover-2026-11-23",
+      "titleSlug": "strategy-mstr-shares-jump-8-5-their-biggest-one-day-gain-since-sep-21",
+      "passedMateriality": true,
+      "disclaimer": "Auto-generated from market data — not investment advice.",
+      "methodology": "/about/methodology/"
+    },
+    {
+      "id": "NVDA|mover|2026-11-23",
+      "format": "desk",
+      "type": "mover",
+      "ticker": "NVDA",
+      "tickers": [
+        "NVDA",
+        "SMH"
+      ],
+      "day": "2026-11-23",
+      "dataDate": "2026-11-23",
+      "publishedAt": "2026-11-24T14:19:15.644Z",
+      "headline": "Nvidia shares surge 31.5%, their biggest one-day gain in at least 12 months",
+      "dek": "NVDA +31.5% to $165.05 on 2.7x volume; SMH +15.0%.",
+      "lede": "Nvidia (NVDA) closed at $165.05 on Monday, up 31.5% from $125.53 the session before, on volume 2.7x its 20-day average. The S&P 500 ETF rose 4.7% on the day. Among the latest headlines on the name, Yahoo Finance reported: \"Stock market today: Dow, S&P 500, Nasdaq futures fall as chip stocks fall, investors test Nvidia-fueled rally\".",
+      "sections": [
+        {
+          "heading": "Context",
+          "paragraphs": [
+            "Its group, semiconductors (SMH), gained 15.0%, so NVDA moved 16.5 points better than its peers. Coming into the session, NVDA was -22.9% over the prior five days and is now -21.8% over the past month. The close sits 31.0% below its 52-week closing high of $239.24. Trend levels: the 50-day average at $206.08 (below it by 19.9%), and the 200-day average at $203.24 (below by 18.8%)."
+          ]
+        }
+      ],
+      "table": {
+        "caption": "NVDA on Nov 23",
+        "columns": [
+          "Measure",
+          "Value"
+        ],
+        "rows": [
+          [
+            "Close",
+            "$165.05"
+          ],
+          [
+            "One-day change",
+            "+31.5%"
+          ],
+          [
+            "Volume vs 20-day average",
+            "2.7x"
+          ],
+          [
+            "SMH one-day change",
+            "+15.0%"
+          ],
+          [
+            "SPY one-day change",
+            "+4.7%"
+          ],
+          [
+            "Prior five sessions",
+            "-22.9%"
+          ],
+          [
+            "One month",
+            "-21.8%"
+          ],
+          [
+            "Distance from closing high",
+            "-31.0%"
+          ],
+          [
+            "50-day average",
+            "$206.08"
+          ],
+          [
+            "200-day average",
+            "$203.24"
+          ]
+        ]
+      },
+      "watch": [
+        "Whether NVDA holds above the prior close of $125.53: a move back through it would erase the session.",
+        "Follow-through volume. Today ran 2.7x normal; a quick fade toward average often means the move was a one-day repricing."
+      ],
+      "body": [
+        "Nvidia (NVDA) closed at $165.05 on Monday, up 31.5% from $125.53 the session before, on volume 2.7x its 20-day average. The S&P 500 ETF rose 4.7% on the day. Among the latest headlines on the name, Yahoo Finance reported: \"Stock market today: Dow, S&P 500, Nasdaq futures fall as chip stocks fall, investors test Nvidia-fueled rally\".",
+        "Its group, semiconductors (SMH), gained 15.0%, so NVDA moved 16.5 points better than its peers. Coming into the session, NVDA was -22.9% over the prior five days and is now -21.8% over the past month. The close sits 31.0% below its 52-week closing high of $239.24. Trend levels: the 50-day average at $206.08 (below it by 19.9%), and the 200-day average at $203.24 (below by 18.8%).",
+        "What to watch: Whether NVDA holds above the prior close of $125.53: a move back through it would erase the session. Follow-through volume. Today ran 2.7x normal; a quick fade toward average often means the move was a one-day repricing."
+      ],
+      "keyNumbers": [
+        {
+          "label": "One-day change",
+          "value": "+31.5%",
+          "source": "Alpaca SIP daily bars via worker",
+          "asOf": "2026-11-23"
+        },
+        {
+          "label": "Close",
+          "value": "$165.05",
+          "source": "Alpaca SIP daily bars via worker",
+          "asOf": "2026-11-23"
+        },
+        {
+          "label": "Volume vs 20-day average",
+          "value": "2.7x",
+          "source": "Alpaca SIP daily bars via worker",
+          "asOf": "2026-11-23"
+        }
+      ],
+      "spark": [
+        228.52,
+        221.3,
+        217.23,
+        214.13,
+        217.09,
+        216.47,
+        221.97,
+        212.21,
+        210.96,
+        216,
+        217.94,
+        215.38,
+        213.66,
+        204.64,
+        202.06,
+        206.69,
+        200.13,
+        181.6,
+        186.64,
+        178.67,
+        168.89,
+        173.73,
+        166.19,
+        162.85,
+        156.14,
+        155.46,
+        150.96,
+        145.98,
+        125.53,
+        165.05
+      ],
+      "sources": [
+        {
+          "name": "Alpaca SIP daily bars via worker",
+          "asOf": "2026-11-23"
+        },
+        {
+          "name": "Cboe delayed option chain",
+          "asOf": "2026-11-24"
+        },
+        {
+          "name": "Yahoo Finance",
+          "asOf": "2026-11-24T14:19:15.644Z"
+        }
+      ],
+      "materiality": 314.82514140046214,
+      "slug": "nvda-mover-2026-11-23",
+      "titleSlug": "nvidia-shares-surge-31-5-their-biggest-one-day-gain-in-at-least-12-months",
+      "passedMateriality": true,
+      "disclaimer": "Auto-generated from market data — not investment advice.",
+      "methodology": "/about/methodology/"
+    },
+    {
+      "id": "TSLA|mover|2026-11-23",
+      "format": "desk",
+      "type": "mover",
+      "ticker": "TSLA",
+      "tickers": [
+        "TSLA",
+        "XLY"
+      ],
+      "day": "2026-11-23",
+      "dataDate": "2026-11-23",
+      "publishedAt": "2026-11-24T14:19:15.644Z",
+      "headline": "Tesla shares surge 11.5%, their biggest one-day gain in at least 12 months",
+      "dek": "TSLA +11.5% to $385.46 on 1.3x volume; XLY +4.0%.",
+      "lede": "Tesla (TSLA) closed at $385.46 on Monday, up 11.5% from $345.82 the session before, on volume 1.3x its 20-day average. The S&P 500 ETF rose 4.7% on the day. Among the latest headlines on the name, Trefis reported: \"Should You Trim Or Add To Your Tesla Position?\".",
+      "sections": [
+        {
+          "heading": "Context",
+          "paragraphs": [
+            "Its group, consumer discretionary (XLY), gained 4.0%, so TSLA moved 7.5 points better than its peers. Coming into the session, TSLA was -11.4% over the prior five days and is now +3.6% over the past month. The close sits 21.3% below its 52-week closing high of $489.88. Trend levels: the 50-day average at $376.17 (above it by 2.5%), and the 200-day average at $381.53 (above by 1.0%)."
+          ]
+        }
+      ],
+      "table": {
+        "caption": "TSLA on Nov 23",
+        "columns": [
+          "Measure",
+          "Value"
+        ],
+        "rows": [
+          [
+            "Close",
+            "$385.46"
+          ],
+          [
+            "One-day change",
+            "+11.5%"
+          ],
+          [
+            "Volume vs 20-day average",
+            "1.3x"
+          ],
+          [
+            "XLY one-day change",
+            "+4.0%"
+          ],
+          [
+            "SPY one-day change",
+            "+4.7%"
+          ],
+          [
+            "Prior five sessions",
+            "-11.4%"
+          ],
+          [
+            "One month",
+            "+3.6%"
+          ],
+          [
+            "Distance from closing high",
+            "-21.3%"
+          ],
+          [
+            "50-day average",
+            "$376.17"
+          ],
+          [
+            "200-day average",
+            "$381.53"
+          ]
+        ]
+      },
+      "watch": [
+        "Whether TSLA holds above the prior close of $345.82: a move back through it would erase the session.",
+        "The 50-day average at $376.17, the nearest trend level."
+      ],
+      "body": [
+        "Tesla (TSLA) closed at $385.46 on Monday, up 11.5% from $345.82 the session before, on volume 1.3x its 20-day average. The S&P 500 ETF rose 4.7% on the day. Among the latest headlines on the name, Trefis reported: \"Should You Trim Or Add To Your Tesla Position?\".",
+        "Its group, consumer discretionary (XLY), gained 4.0%, so TSLA moved 7.5 points better than its peers. Coming into the session, TSLA was -11.4% over the prior five days and is now +3.6% over the past month. The close sits 21.3% below its 52-week closing high of $489.88. Trend levels: the 50-day average at $376.17 (above it by 2.5%), and the 200-day average at $381.53 (above by 1.0%).",
+        "What to watch: Whether TSLA holds above the prior close of $345.82: a move back through it would erase the session. The 50-day average at $376.17, the nearest trend level."
+      ],
+      "keyNumbers": [
+        {
+          "label": "One-day change",
+          "value": "+11.5%",
+          "source": "Alpaca SIP daily bars via worker",
+          "asOf": "2026-11-23"
+        },
+        {
+          "label": "Close",
+          "value": "$385.46",
+          "source": "Alpaca SIP daily bars via worker",
+          "asOf": "2026-11-23"
+        },
+        {
+          "label": "Volume vs 20-day average",
+          "value": "1.3x",
+          "source": "Alpaca SIP daily bars via worker",
+          "asOf": "2026-11-23"
+        }
+      ],
+      "spark": [
+        375.23,
+        367.16,
+        362.44,
+        354.72,
+        368.06,
+        373.71,
+        386.47,
+        374.58,
+        372.22,
+        391.62,
+        407.46,
+        404.22,
+        403.3,
+        399.81,
+        403.82,
+        398.5,
+        385.19,
+        343.69,
+        358.22,
+        378.05,
+        379.78,
+        390.84,
+        397.45,
+        390.22,
+        379.74,
+        380.11,
+        383.72,
+        374.41,
+        345.82,
+        385.46
+      ],
+      "sources": [
+        {
+          "name": "Alpaca SIP daily bars via worker",
+          "asOf": "2026-11-23"
+        },
+        {
+          "name": "Cboe delayed option chain",
+          "asOf": "2026-11-24"
+        },
+        {
+          "name": "Trefis",
+          "asOf": "2026-11-24T14:19:15.644Z"
+        }
+      ],
+      "materiality": 114.62610606673995,
+      "slug": "tsla-mover-2026-11-23",
+      "titleSlug": "tesla-shares-surge-11-5-their-biggest-one-day-gain-in-at-least-12-months",
+      "passedMateriality": true,
+      "disclaimer": "Auto-generated from market data — not investment advice.",
+      "methodology": "/about/methodology/"
+    },
+    {
+      "id": "PLTR|mover|2026-11-23",
+      "format": "desk",
+      "type": "mover",
+      "ticker": "PLTR",
+      "tickers": [
+        "PLTR",
+        "XLK"
+      ],
+      "day": "2026-11-23",
+      "dataDate": "2026-11-23",
+      "publishedAt": "2026-11-24T14:19:15.644Z",
+      "headline": "Palantir shares surge 11.1%, their biggest one-day gain since Aug 4",
+      "dek": "PLTR +11.1% to $159.36 on 1.3x volume; XLK +9.0%.",
+      "lede": "Palantir (PLTR) closed at $159.36 on Monday, up 11.1% from $143.49 the session before, on volume 1.3x its 20-day average. The S&P 500 ETF rose 4.7% on the day. Among the latest headlines on the name, Trefis reported: \"Is Palantir Stock Priced Right Against Its Rivals?\".",
+      "sections": [
+        {
+          "heading": "Context",
+          "paragraphs": [
+            "Its group, technology (XLK), gained 9.0%, so PLTR moved 2.1 points better than its peers. Coming into the session, PLTR was -14.6% over the prior five days and is now -19.0% over the past month. The close sits 23.8% below its 52-week closing high of $209.05. Trend levels: the 50-day average at $182.98 (below it by 12.9%), and the 200-day average at $154.09 (above by 3.4%)."
+          ]
+        }
+      ],
+      "table": {
+        "caption": "PLTR on Nov 23",
+        "columns": [
+          "Measure",
+          "Value"
+        ],
+        "rows": [
+          [
+            "Close",
+            "$159.36"
+          ],
+          [
+            "One-day change",
+            "+11.1%"
+          ],
+          [
+            "Volume vs 20-day average",
+            "1.3x"
+          ],
+          [
+            "XLK one-day change",
+            "+9.0%"
+          ],
+          [
+            "SPY one-day change",
+            "+4.7%"
+          ],
+          [
+            "Prior five sessions",
+            "-14.6%"
+          ],
+          [
+            "One month",
+            "-19.0%"
+          ],
+          [
+            "Distance from closing high",
+            "-23.8%"
+          ],
+          [
+            "50-day average",
+            "$182.98"
+          ],
+          [
+            "200-day average",
+            "$154.09"
+          ]
+        ]
+      },
+      "watch": [
+        "Whether PLTR holds above the prior close of $143.49: a move back through it would erase the session.",
+        "The 200-day average at $154.09."
+      ],
+      "body": [
+        "Palantir (PLTR) closed at $159.36 on Monday, up 11.1% from $143.49 the session before, on volume 1.3x its 20-day average. The S&P 500 ETF rose 4.7% on the day. Among the latest headlines on the name, Trefis reported: \"Is Palantir Stock Priced Right Against Its Rivals?\".",
+        "Its group, technology (XLK), gained 9.0%, so PLTR moved 2.1 points better than its peers. Coming into the session, PLTR was -14.6% over the prior five days and is now -19.0% over the past month. The close sits 23.8% below its 52-week closing high of $209.05. Trend levels: the 50-day average at $182.98 (below it by 12.9%), and the 200-day average at $154.09 (above by 3.4%).",
+        "What to watch: Whether PLTR holds above the prior close of $143.49: a move back through it would erase the session. The 200-day average at $154.09."
+      ],
+      "keyNumbers": [
+        {
+          "label": "One-day change",
+          "value": "+11.1%",
+          "source": "Alpaca SIP daily bars via worker",
+          "asOf": "2026-11-23"
+        },
+        {
+          "label": "Close",
+          "value": "$159.36",
+          "source": "Alpaca SIP daily bars via worker",
+          "asOf": "2026-11-23"
+        },
+        {
+          "label": "Volume vs 20-day average",
+          "value": "1.3x",
+          "source": "Alpaca SIP daily bars via worker",
+          "asOf": "2026-11-23"
+        }
+      ],
+      "spark": [
+        208.67,
+        200.97,
+        200.5,
+        186.03,
+        194.15,
+        192.6,
+        201.72,
+        196.19,
+        196.75,
+        198.84,
+        198.73,
+        196.81,
+        196.42,
+        184.11,
+        178.34,
+        175.4,
+        171.7,
+        154.99,
+        160.38,
+        169.2,
+        168.82,
+        172.4,
+        171.58,
+        167.99,
+        160.39,
+        156.56,
+        156.67,
+        153.68,
+        143.49,
+        159.36
+      ],
+      "sources": [
+        {
+          "name": "Alpaca SIP daily bars via worker",
+          "asOf": "2026-11-23"
+        },
+        {
+          "name": "Cboe delayed option chain",
+          "asOf": "2026-11-24"
+        },
+        {
+          "name": "Trefis",
+          "asOf": "2026-11-24T14:19:15.644Z"
+        }
+      ],
+      "materiality": 110.60004181476057,
+      "slug": "pltr-mover-2026-11-23",
+      "titleSlug": "palantir-shares-surge-11-1-their-biggest-one-day-gain-since-aug-4",
+      "passedMateriality": true,
+      "disclaimer": "Auto-generated from market data — not investment advice.",
+      "methodology": "/about/methodology/"
+    },
+    {
+      "id": "QQQ|mover|2026-11-23",
+      "format": "desk",
+      "type": "mover",
+      "ticker": "QQQ",
+      "tickers": [
+        "QQQ"
+      ],
+      "day": "2026-11-23",
+      "dataDate": "2026-11-23",
+      "publishedAt": "2026-11-24T14:19:15.644Z",
+      "headline": "Nasdaq 100 ETF jumps 7.0%, its biggest one-day gain in at least 12 months",
+      "dek": "QQQ +7.0% to $651.03 on 1.5x volume.",
+      "lede": "The Nasdaq 100 ETF (QQQ) closed at $651.03 on Monday, up 7.0% from $608.45 the session before, on volume 1.5x its 20-day average. The S&P 500 ETF rose 4.7% on the day. Among the large-cap stocks the desk tracks, the biggest gains came from Nvidia (+31.5%), Oracle (+12.3%), Tesla (+11.5%). Among the latest headlines on the name, 24/7 Wall St. reported: \"QQQ Just Had Its Biggest Opening Jump Since It Launched in 1999\".",
+      "sections": [
+        {
+          "heading": "Context",
+          "paragraphs": [
+            "Coming into the session, QQQ was -10.5% over the prior five days and is now -7.6% over the past month. The close sits 14.3% below its 52-week closing high of $759.66. Trend levels: the 50-day average at $709.79 (below it by 8.3%), and the 200-day average at $683.27 (below by 4.7%)."
+          ]
+        },
+        {
+          "heading": "Positioning",
+          "paragraphs": [
+            "Options traded 8.97M contracts in the latest stored session, 44% of them calls. Open-interest gamma was -$4.30B per 1% move, a short-gamma book in which dealer hedging tends to add to moves, with the flip level near $662.58."
+          ]
+        }
+      ],
+      "table": {
+        "caption": "QQQ on Nov 23",
+        "columns": [
+          "Measure",
+          "Value"
+        ],
+        "rows": [
+          [
+            "Close",
+            "$651.03"
+          ],
+          [
+            "One-day change",
+            "+7.0%"
+          ],
+          [
+            "Volume vs 20-day average",
+            "1.5x"
+          ],
+          [
+            "SPY one-day change",
+            "+4.7%"
+          ],
+          [
+            "Prior five sessions",
+            "-10.5%"
+          ],
+          [
+            "One month",
+            "-7.6%"
+          ],
+          [
+            "Distance from closing high",
+            "-14.3%"
+          ],
+          [
+            "50-day average",
+            "$709.79"
+          ],
+          [
+            "200-day average",
+            "$683.27"
+          ],
+          [
+            "Net gamma per 1%",
+            "-$4.30B"
+          ],
+          [
+            "Gamma flip",
+            "$662.58"
+          ]
+        ]
+      },
+      "watch": [
+        "Whether QQQ holds above the prior close of $608.45: a move back through it would erase the session.",
+        "Follow-through volume. Today ran 1.5x normal; a quick fade toward average often means the move was a one-day repricing.",
+        "The 200-day average at $683.27.",
+        "The gamma flip near $662.58: a move above it would put dealers back to long gamma."
+      ],
+      "body": [
+        "The Nasdaq 100 ETF (QQQ) closed at $651.03 on Monday, up 7.0% from $608.45 the session before, on volume 1.5x its 20-day average. The S&P 500 ETF rose 4.7% on the day. Among the large-cap stocks the desk tracks, the biggest gains came from Nvidia (+31.5%), Oracle (+12.3%), Tesla (+11.5%). Among the latest headlines on the name, 24/7 Wall St. reported: \"QQQ Just Had Its Biggest Opening Jump Since It Launched in 1999\".",
+        "Coming into the session, QQQ was -10.5% over the prior five days and is now -7.6% over the past month. The close sits 14.3% below its 52-week closing high of $759.66. Trend levels: the 50-day average at $709.79 (below it by 8.3%), and the 200-day average at $683.27 (below by 4.7%).",
+        "Options traded 8.97M contracts in the latest stored session, 44% of them calls. Open-interest gamma was -$4.30B per 1% move, a short-gamma book in which dealer hedging tends to add to moves, with the flip level near $662.58.",
+        "What to watch: Whether QQQ holds above the prior close of $608.45: a move back through it would erase the session. Follow-through volume. Today ran 1.5x normal; a quick fade toward average often means the move was a one-day repricing. The 200-day average at $683.27. The gamma flip near $662.58: a move above it would put dealers back to long gamma."
+      ],
+      "keyNumbers": [
+        {
+          "label": "One-day change",
+          "value": "+7.0%",
+          "source": "Alpaca SIP daily bars via worker",
+          "asOf": "2026-11-23"
+        },
+        {
+          "label": "Close",
+          "value": "$651.03",
+          "source": "Alpaca SIP daily bars via worker",
+          "asOf": "2026-11-23"
+        },
+        {
+          "label": "Volume vs 20-day average",
+          "value": "1.5x",
+          "source": "Alpaca SIP daily bars via worker",
+          "asOf": "2026-11-23"
+        }
+      ],
+      "spark": [
+        743.57,
+        728.95,
+        728,
+        709.8,
+        718.36,
+        717.63,
+        725.2,
+        704.47,
+        704.4,
+        712.2,
+        721.25,
+        725.61,
+        715.34,
+        690.49,
+        681.09,
+        685.28,
+        691.95,
+        647.05,
+        656.1,
+        679.35,
+        674.76,
+        690.38,
+        688.17,
+        679.89,
+        661.75,
+        656.95,
+        659.51,
+        645.04,
+        608.45,
+        651.03
+      ],
+      "sources": [
+        {
+          "name": "Alpaca SIP daily bars via worker",
+          "asOf": "2026-11-23"
+        },
+        {
+          "name": "Cboe delayed option chain",
+          "asOf": "2026-11-24"
+        },
+        {
+          "name": "24/7 Wall St.",
+          "asOf": "2026-11-24T14:19:15.644Z"
+        }
+      ],
+      "materiality": 109.98109951516129,
+      "slug": "qqq-mover-2026-11-23",
+      "titleSlug": "nasdaq-100-etf-jumps-7-0-its-biggest-one-day-gain-in-at-least-12-months",
       "passedMateriality": true,
       "disclaimer": "Auto-generated from market data — not investment advice.",
       "methodology": "/about/methodology/"
@@ -2475,51 +2475,51 @@
       "methodology": "/about/methodology/"
     },
     {
-      "id": "QQQ|ftd|2026-11-23",
+      "id": "SPY|ftd|2026-11-23",
       "type": "ftd",
-      "ticker": "QQQ",
+      "ticker": "SPY",
       "tickers": [
-        "QQQ"
+        "SPY"
       ],
       "day": "2026-11-23",
       "publishedAt": "2026-11-23T22:50:13.533Z",
-      "headline": "QQQ fails-to-deliver $1.72B",
-      "dek": "2,409,848 shares of QQQ failed on 2026-10-27 at $712.20.",
+      "headline": "SPY fails-to-deliver $1.77B",
+      "dek": "2,324,860 shares of SPY failed on 2026-10-26 at $759.97.",
       "body": [
-        "One SEC fails row for QQQ is 2,409,848 shares at $712.20, or $1.72B. The row is 2,409,848 shares at $712.20, which multiplies to $1.72B. The description on the row is INVESCO QQQ TR. Only the single largest print for QQQ inside this file is used. Other days are not added together, so the figure is one settlement, not a monthly total.",
-        "The threshold is $20.00M. This print is 85.81 times that floor. Prints below the floor stay in the data file and do not become a story. The file holds 9 rows for QQQ. Only the largest notional is in the headline. The others are not summed. SEC fails-to-deliver arrive with a lag of about three weeks. The file timestamp is Nov 23, 2026, 5:50 PM ET. The row date is 2026-10-27.",
-        "A fail is a settlement miss. It is not a count of naked shorts and it is not a signal by itself. Quantity times price is 2,409,848 times $712.20. That product is $1.72B. The article does not adjust for splits, corporate actions, or later corrections unless a newer file replaces the row. The threshold comparison uses $20.00M of notional on one row. QQQ cleared it on 2026-10-27. A second symbol in the same file gets its own story only when its own largest row also clears the floor.",
+        "SPY shows a fails-to-deliver print of $1.77B in the latest SEC file. The row is 2,324,860 shares at $759.97, which multiplies to $1.77B. The description on the row is STATE STREET SPDR S&P 500 ETF. Only the single largest print for SPY inside this file is used. Other days are not added together, so the figure is one settlement, not a monthly total.",
+        "The threshold is $20.00M. This print is 88.34 times that floor. Prints below the floor stay in the data file and do not become a story. The file holds 12 rows for SPY. Only the largest notional is in the headline. The others are not summed. SEC fails-to-deliver arrive with a lag of about three weeks. The file timestamp is Nov 23, 2026, 5:50 PM ET. The row date is 2026-10-26.",
+        "A fail is a settlement miss. It is not a count of naked shorts and it is not a signal by itself. Quantity times price is 2,324,860 times $759.97. That product is $1.77B. The article does not adjust for splits, corporate actions, or later corrections unless a newer file replaces the row. The threshold comparison uses $20.00M of notional on one row. SPY cleared it on 2026-10-26. A second symbol in the same file gets its own story only when its own largest row also clears the floor.",
         "Readers can open the shorts page for the FINRA series and the ticker page for the delayed tape. Those pages do not reuse this notional unless they load the same SEC file. Figures in this piece come from SEC fails-to-deliver as of Nov 23, 2026, 5:50 PM ET. A blank in that file stays blank here. The filter is a threshold on stored data, not a forecast and not a rating.",
         "If a later file revises this figure, the note is updated in place under the same address rather than published twice. Nothing on this page is a recommendation to buy, sell, or hold. The methodology page describes the other desk scores, which are separate from this write-up."
       ],
       "keyNumbers": [
         {
           "label": "Notional",
-          "value": "$1.72B",
+          "value": "$1.77B",
           "source": "SEC fails-to-deliver",
           "asOf": "2026-11-23T22:50:13.533Z"
         },
         {
           "label": "Quantity",
-          "value": "2,409,848",
+          "value": "2,324,860",
           "source": "SEC fails-to-deliver",
           "asOf": "2026-11-23T22:50:13.533Z"
         },
         {
           "label": "Price on the row",
-          "value": "$712.20",
+          "value": "$759.97",
           "source": "SEC fails-to-deliver",
           "asOf": "2026-11-23T22:50:13.533Z"
         },
         {
           "label": "Row date",
-          "value": "2026-10-27",
+          "value": "2026-10-26",
           "source": "SEC fails-to-deliver",
           "asOf": "2026-11-23T22:50:13.533Z"
         }
       ],
       "spark": [
-        1716293745.6000001
+        1766823854.2
       ],
       "sources": [
         {
@@ -2527,8 +2527,8 @@
           "asOf": "2026-11-23T22:50:13.533Z"
         }
       ],
-      "materiality": 1716.2937456000002,
-      "slug": "qqq-ftd-2026-11-23",
+      "materiality": 1766.8238542000001,
+      "slug": "spy-ftd-2026-11-23",
       "passedMateriality": true,
       "disclaimer": "Auto-generated from market data — not investment advice.",
       "methodology": "/about/methodology/"
@@ -2593,51 +2593,51 @@
       "methodology": "/about/methodology/"
     },
     {
-      "id": "SPY|ftd|2026-11-23",
+      "id": "QQQ|ftd|2026-11-23",
       "type": "ftd",
-      "ticker": "SPY",
+      "ticker": "QQQ",
       "tickers": [
-        "SPY"
+        "QQQ"
       ],
       "day": "2026-11-23",
       "publishedAt": "2026-11-23T22:50:13.533Z",
-      "headline": "SPY fails-to-deliver $1.77B",
-      "dek": "2,324,860 shares of SPY failed on 2026-10-26 at $759.97.",
+      "headline": "QQQ fails-to-deliver $1.72B",
+      "dek": "2,409,848 shares of QQQ failed on 2026-10-27 at $712.20.",
       "body": [
-        "SPY shows a fails-to-deliver print of $1.77B in the latest SEC file. The row is 2,324,860 shares at $759.97, which multiplies to $1.77B. The description on the row is STATE STREET SPDR S&P 500 ETF. Only the single largest print for SPY inside this file is used. Other days are not added together, so the figure is one settlement, not a monthly total.",
-        "The threshold is $20.00M. This print is 88.34 times that floor. Prints below the floor stay in the data file and do not become a story. The file holds 12 rows for SPY. Only the largest notional is in the headline. The others are not summed. SEC fails-to-deliver arrive with a lag of about three weeks. The file timestamp is Nov 23, 2026, 5:50 PM ET. The row date is 2026-10-26.",
-        "A fail is a settlement miss. It is not a count of naked shorts and it is not a signal by itself. Quantity times price is 2,324,860 times $759.97. That product is $1.77B. The article does not adjust for splits, corporate actions, or later corrections unless a newer file replaces the row. The threshold comparison uses $20.00M of notional on one row. SPY cleared it on 2026-10-26. A second symbol in the same file gets its own story only when its own largest row also clears the floor.",
+        "One SEC fails row for QQQ is 2,409,848 shares at $712.20, or $1.72B. The row is 2,409,848 shares at $712.20, which multiplies to $1.72B. The description on the row is INVESCO QQQ TR. Only the single largest print for QQQ inside this file is used. Other days are not added together, so the figure is one settlement, not a monthly total.",
+        "The threshold is $20.00M. This print is 85.81 times that floor. Prints below the floor stay in the data file and do not become a story. The file holds 9 rows for QQQ. Only the largest notional is in the headline. The others are not summed. SEC fails-to-deliver arrive with a lag of about three weeks. The file timestamp is Nov 23, 2026, 5:50 PM ET. The row date is 2026-10-27.",
+        "A fail is a settlement miss. It is not a count of naked shorts and it is not a signal by itself. Quantity times price is 2,409,848 times $712.20. That product is $1.72B. The article does not adjust for splits, corporate actions, or later corrections unless a newer file replaces the row. The threshold comparison uses $20.00M of notional on one row. QQQ cleared it on 2026-10-27. A second symbol in the same file gets its own story only when its own largest row also clears the floor.",
         "Readers can open the shorts page for the FINRA series and the ticker page for the delayed tape. Those pages do not reuse this notional unless they load the same SEC file. Figures in this piece come from SEC fails-to-deliver as of Nov 23, 2026, 5:50 PM ET. A blank in that file stays blank here. The filter is a threshold on stored data, not a forecast and not a rating.",
         "If a later file revises this figure, the note is updated in place under the same address rather than published twice. Nothing on this page is a recommendation to buy, sell, or hold. The methodology page describes the other desk scores, which are separate from this write-up."
       ],
       "keyNumbers": [
         {
           "label": "Notional",
-          "value": "$1.77B",
+          "value": "$1.72B",
           "source": "SEC fails-to-deliver",
           "asOf": "2026-11-23T22:50:13.533Z"
         },
         {
           "label": "Quantity",
-          "value": "2,324,860",
+          "value": "2,409,848",
           "source": "SEC fails-to-deliver",
           "asOf": "2026-11-23T22:50:13.533Z"
         },
         {
           "label": "Price on the row",
-          "value": "$759.97",
+          "value": "$712.20",
           "source": "SEC fails-to-deliver",
           "asOf": "2026-11-23T22:50:13.533Z"
         },
         {
           "label": "Row date",
-          "value": "2026-10-26",
+          "value": "2026-10-27",
           "source": "SEC fails-to-deliver",
           "asOf": "2026-11-23T22:50:13.533Z"
         }
       ],
       "spark": [
-        1766823854.2
+        1716293745.6000001
       ],
       "sources": [
         {
@@ -2645,140 +2645,8 @@
           "asOf": "2026-11-23T22:50:13.533Z"
         }
       ],
-      "materiality": 1766.8238542000001,
-      "slug": "spy-ftd-2026-11-23",
-      "passedMateriality": true,
-      "disclaimer": "Auto-generated from market data — not investment advice.",
-      "methodology": "/about/methodology/"
-    },
-    {
-      "id": "META|short|2026-11-23",
-      "type": "short",
-      "ticker": "META",
-      "tickers": [
-        "META"
-      ],
-      "day": "2026-11-23",
-      "publishedAt": "2026-11-23T22:50:12.908Z",
-      "headline": "META short interest +165.62%",
-      "dek": "META short interest changed +165.62% as of settlement 2026-10-30.",
-      "body": [
-        "The consolidated short-interest file shows META +165.62% versus the previous quantity. Current short position is 75,483,549 shares. The previous report was 28,417,942 shares. The change in shares is 47,065,607. Days to cover is 2.71. That is the position divided by average daily volume in the same FINRA row, which is 27,812,646 shares. Float is not in this file, so short interest as a percent of float is not stated.",
-        "Issue name on the row: Meta Platforms, Inc. Class A C. Market class NNM. Accounting period 20261030. Dividing the current position by the previous position gives a ratio of 2.656. The published change percent is +165.62%, and this article uses that published field rather than a recomputed percent. Settlement date on the row is 2026-10-30. FINRA publishes this series about twice a month, so the figure can be weeks older than the file timestamp Nov 23, 2026, 5:50 PM ET.",
-        "The story threshold is a 10 percent change, or days to cover of at least 5. META met that bar in this file. A rise in short interest is not by itself a bullish or bearish signal. It records shares borrowed and sold short, as FINRA consolidated them. Average daily volume on the row is 27,812,646. Days to cover of 2.71 is the position divided by that volume. A blank volume would leave days to cover blank, and this article would not invent it.",
-        "Figures in this piece come from FINRA consolidated short interest as of Nov 23, 2026, 5:50 PM ET. A blank in that file stays blank here. The filter is a threshold on stored data, not a forecast and not a rating. If a later file revises this figure, the note is updated in place under the same address rather than published twice.",
-        "Nothing on this page is a recommendation to buy, sell, or hold. The methodology page describes the other desk scores, which are separate from this write-up."
-      ],
-      "keyNumbers": [
-        {
-          "label": "Change versus prior report",
-          "value": "+165.62%",
-          "source": "FINRA consolidated short interest",
-          "asOf": "2026-11-23T22:50:12.908Z"
-        },
-        {
-          "label": "Current short position",
-          "value": "75,483,549",
-          "source": "FINRA consolidated short interest",
-          "asOf": "2026-11-23T22:50:12.908Z"
-        },
-        {
-          "label": "Previous short position",
-          "value": "28,417,942",
-          "source": "FINRA consolidated short interest",
-          "asOf": "2026-11-23T22:50:12.908Z"
-        },
-        {
-          "label": "Days to cover",
-          "value": "2.71",
-          "source": "FINRA consolidated short interest",
-          "asOf": "2026-11-23T22:50:12.908Z"
-        },
-        {
-          "label": "Settlement",
-          "value": "2026-10-30",
-          "source": "FINRA consolidated short interest",
-          "asOf": "2026-11-23T22:50:12.908Z"
-        }
-      ],
-      "spark": [
-        28417942,
-        75483549
-      ],
-      "sources": [
-        {
-          "name": "FINRA consolidated short interest",
-          "asOf": "2026-11-23T22:50:12.908Z"
-        }
-      ],
-      "materiality": 165.62,
-      "slug": "meta-short-2026-11-23",
-      "passedMateriality": true,
-      "disclaimer": "Auto-generated from market data — not investment advice.",
-      "methodology": "/about/methodology/"
-    },
-    {
-      "id": "BA|short|2026-11-23",
-      "type": "short",
-      "ticker": "BA",
-      "tickers": [
-        "BA"
-      ],
-      "day": "2026-11-23",
-      "publishedAt": "2026-11-23T22:50:12.908Z",
-      "headline": "BA short interest +19.95%",
-      "dek": "BA short interest changed +19.95% as of settlement 2026-10-30.",
-      "body": [
-        "The consolidated short-interest file shows BA +19.95% versus the previous quantity. Current short position is 17,569,846 shares. The previous report was 14,647,292 shares. The change in shares is 2,922,554. Days to cover is 1.37. That is the position divided by average daily volume in the same FINRA row, which is 12,792,295 shares. Float is not in this file, so short interest as a percent of float is not stated.",
-        "Issue name on the row: Boeing Company. Market class NYSE. Accounting period 20261030. Dividing the current position by the previous position gives a ratio of 1.200. The published change percent is +19.95%, and this article uses that published field rather than a recomputed percent. Settlement date on the row is 2026-10-30. FINRA publishes this series about twice a month, so the figure can be weeks older than the file timestamp Nov 23, 2026, 5:50 PM ET.",
-        "The story threshold is a 10 percent change, or days to cover of at least 5. BA met that bar in this file. A rise in short interest is not by itself a bullish or bearish signal. It records shares borrowed and sold short, as FINRA consolidated them. Average daily volume on the row is 12,792,295. Days to cover of 1.37 is the position divided by that volume. A blank volume would leave days to cover blank, and this article would not invent it.",
-        "Figures in this piece come from FINRA consolidated short interest as of Nov 23, 2026, 5:50 PM ET. A blank in that file stays blank here. The filter is a threshold on stored data, not a forecast and not a rating. If a later file revises this figure, the note is updated in place under the same address rather than published twice.",
-        "Nothing on this page is a recommendation to buy, sell, or hold. The methodology page describes the other desk scores, which are separate from this write-up."
-      ],
-      "keyNumbers": [
-        {
-          "label": "Change versus prior report",
-          "value": "+19.95%",
-          "source": "FINRA consolidated short interest",
-          "asOf": "2026-11-23T22:50:12.908Z"
-        },
-        {
-          "label": "Current short position",
-          "value": "17,569,846",
-          "source": "FINRA consolidated short interest",
-          "asOf": "2026-11-23T22:50:12.908Z"
-        },
-        {
-          "label": "Previous short position",
-          "value": "14,647,292",
-          "source": "FINRA consolidated short interest",
-          "asOf": "2026-11-23T22:50:12.908Z"
-        },
-        {
-          "label": "Days to cover",
-          "value": "1.37",
-          "source": "FINRA consolidated short interest",
-          "asOf": "2026-11-23T22:50:12.908Z"
-        },
-        {
-          "label": "Settlement",
-          "value": "2026-10-30",
-          "source": "FINRA consolidated short interest",
-          "asOf": "2026-11-23T22:50:12.908Z"
-        }
-      ],
-      "spark": [
-        14647292,
-        17569846
-      ],
-      "sources": [
-        {
-          "name": "FINRA consolidated short interest",
-          "asOf": "2026-11-23T22:50:12.908Z"
-        }
-      ],
-      "materiality": 19.95,
-      "slug": "ba-short-2026-11-23",
+      "materiality": 1716.2937456000002,
+      "slug": "qqq-ftd-2026-11-23",
       "passedMateriality": true,
       "disclaimer": "Auto-generated from market data — not investment advice.",
       "methodology": "/about/methodology/"
@@ -2850,6 +2718,138 @@
       "methodology": "/about/methodology/"
     },
     {
+      "id": "BA|short|2026-11-23",
+      "type": "short",
+      "ticker": "BA",
+      "tickers": [
+        "BA"
+      ],
+      "day": "2026-11-23",
+      "publishedAt": "2026-11-23T22:50:12.908Z",
+      "headline": "BA short interest +19.95%",
+      "dek": "BA short interest changed +19.95% as of settlement 2026-10-30.",
+      "body": [
+        "The consolidated short-interest file shows BA +19.95% versus the previous quantity. Current short position is 17,569,846 shares. The previous report was 14,647,292 shares. The change in shares is 2,922,554. Days to cover is 1.37. That is the position divided by average daily volume in the same FINRA row, which is 12,792,295 shares. Float is not in this file, so short interest as a percent of float is not stated.",
+        "Issue name on the row: Boeing Company. Market class NYSE. Accounting period 20261030. Dividing the current position by the previous position gives a ratio of 1.200. The published change percent is +19.95%, and this article uses that published field rather than a recomputed percent. Settlement date on the row is 2026-10-30. FINRA publishes this series about twice a month, so the figure can be weeks older than the file timestamp Nov 23, 2026, 5:50 PM ET.",
+        "The story threshold is a 10 percent change, or days to cover of at least 5. BA met that bar in this file. A rise in short interest is not by itself a bullish or bearish signal. It records shares borrowed and sold short, as FINRA consolidated them. Average daily volume on the row is 12,792,295. Days to cover of 1.37 is the position divided by that volume. A blank volume would leave days to cover blank, and this article would not invent it.",
+        "Figures in this piece come from FINRA consolidated short interest as of Nov 23, 2026, 5:50 PM ET. A blank in that file stays blank here. The filter is a threshold on stored data, not a forecast and not a rating. If a later file revises this figure, the note is updated in place under the same address rather than published twice.",
+        "Nothing on this page is a recommendation to buy, sell, or hold. The methodology page describes the other desk scores, which are separate from this write-up."
+      ],
+      "keyNumbers": [
+        {
+          "label": "Change versus prior report",
+          "value": "+19.95%",
+          "source": "FINRA consolidated short interest",
+          "asOf": "2026-11-23T22:50:12.908Z"
+        },
+        {
+          "label": "Current short position",
+          "value": "17,569,846",
+          "source": "FINRA consolidated short interest",
+          "asOf": "2026-11-23T22:50:12.908Z"
+        },
+        {
+          "label": "Previous short position",
+          "value": "14,647,292",
+          "source": "FINRA consolidated short interest",
+          "asOf": "2026-11-23T22:50:12.908Z"
+        },
+        {
+          "label": "Days to cover",
+          "value": "1.37",
+          "source": "FINRA consolidated short interest",
+          "asOf": "2026-11-23T22:50:12.908Z"
+        },
+        {
+          "label": "Settlement",
+          "value": "2026-10-30",
+          "source": "FINRA consolidated short interest",
+          "asOf": "2026-11-23T22:50:12.908Z"
+        }
+      ],
+      "spark": [
+        14647292,
+        17569846
+      ],
+      "sources": [
+        {
+          "name": "FINRA consolidated short interest",
+          "asOf": "2026-11-23T22:50:12.908Z"
+        }
+      ],
+      "materiality": 19.95,
+      "slug": "ba-short-2026-11-23",
+      "passedMateriality": true,
+      "disclaimer": "Auto-generated from market data — not investment advice.",
+      "methodology": "/about/methodology/"
+    },
+    {
+      "id": "META|short|2026-11-23",
+      "type": "short",
+      "ticker": "META",
+      "tickers": [
+        "META"
+      ],
+      "day": "2026-11-23",
+      "publishedAt": "2026-11-23T22:50:12.908Z",
+      "headline": "META short interest +165.62%",
+      "dek": "META short interest changed +165.62% as of settlement 2026-10-30.",
+      "body": [
+        "The consolidated short-interest file shows META +165.62% versus the previous quantity. Current short position is 75,483,549 shares. The previous report was 28,417,942 shares. The change in shares is 47,065,607. Days to cover is 2.71. That is the position divided by average daily volume in the same FINRA row, which is 27,812,646 shares. Float is not in this file, so short interest as a percent of float is not stated.",
+        "Issue name on the row: Meta Platforms, Inc. Class A C. Market class NNM. Accounting period 20261030. Dividing the current position by the previous position gives a ratio of 2.656. The published change percent is +165.62%, and this article uses that published field rather than a recomputed percent. Settlement date on the row is 2026-10-30. FINRA publishes this series about twice a month, so the figure can be weeks older than the file timestamp Nov 23, 2026, 5:50 PM ET.",
+        "The story threshold is a 10 percent change, or days to cover of at least 5. META met that bar in this file. A rise in short interest is not by itself a bullish or bearish signal. It records shares borrowed and sold short, as FINRA consolidated them. Average daily volume on the row is 27,812,646. Days to cover of 2.71 is the position divided by that volume. A blank volume would leave days to cover blank, and this article would not invent it.",
+        "Figures in this piece come from FINRA consolidated short interest as of Nov 23, 2026, 5:50 PM ET. A blank in that file stays blank here. The filter is a threshold on stored data, not a forecast and not a rating. If a later file revises this figure, the note is updated in place under the same address rather than published twice.",
+        "Nothing on this page is a recommendation to buy, sell, or hold. The methodology page describes the other desk scores, which are separate from this write-up."
+      ],
+      "keyNumbers": [
+        {
+          "label": "Change versus prior report",
+          "value": "+165.62%",
+          "source": "FINRA consolidated short interest",
+          "asOf": "2026-11-23T22:50:12.908Z"
+        },
+        {
+          "label": "Current short position",
+          "value": "75,483,549",
+          "source": "FINRA consolidated short interest",
+          "asOf": "2026-11-23T22:50:12.908Z"
+        },
+        {
+          "label": "Previous short position",
+          "value": "28,417,942",
+          "source": "FINRA consolidated short interest",
+          "asOf": "2026-11-23T22:50:12.908Z"
+        },
+        {
+          "label": "Days to cover",
+          "value": "2.71",
+          "source": "FINRA consolidated short interest",
+          "asOf": "2026-11-23T22:50:12.908Z"
+        },
+        {
+          "label": "Settlement",
+          "value": "2026-10-30",
+          "source": "FINRA consolidated short interest",
+          "asOf": "2026-11-23T22:50:12.908Z"
+        }
+      ],
+      "spark": [
+        28417942,
+        75483549
+      ],
+      "sources": [
+        {
+          "name": "FINRA consolidated short interest",
+          "asOf": "2026-11-23T22:50:12.908Z"
+        }
+      ],
+      "materiality": 165.62,
+      "slug": "meta-short-2026-11-23",
+      "passedMateriality": true,
+      "disclaimer": "Auto-generated from market data — not investment advice.",
+      "methodology": "/about/methodology/"
+    },
+    {
       "id": "BULL|insider|2026-11-23",
       "type": "insider",
       "ticker": "BULL",
@@ -2899,110 +2899,51 @@
       "methodology": "/about/methodology/"
     },
     {
-      "id": "XLC|ftd|2026-11-23",
+      "id": "XLF|ftd|2026-11-23",
       "type": "ftd",
-      "ticker": "XLC",
+      "ticker": "XLF",
       "tickers": [
-        "XLC"
+        "XLF"
       ],
       "day": "2026-11-23",
       "publishedAt": "2026-11-23T20:26:15.442Z",
-      "headline": "XLC fails-to-deliver $380.13M",
-      "dek": "3,445,659 shares of XLC failed on 2026-10-05 at $110.32.",
+      "headline": "XLF fails-to-deliver $75.87M",
+      "dek": "1,420,782 shares of XLF failed on 2026-10-01 at $53.40.",
       "body": [
-        "One SEC fails row for XLC is 3,445,659 shares at $110.32, or $380.13M. Figures in this piece come from SEC fails-to-deliver as of 2026-11-23T20:26:15.442Z. A blank in that file stays blank here. Readers can open the shorts page for the FINRA series and the ticker page for the delayed tape. Those pages do not reuse this notional unless they load the same SEC file.",
-        "Only the single largest print for XLC inside this file is used. Other days are not added together, so the figure is one settlement, not a monthly total. The row is 3,445,659 shares at $110.32, which multiplies to $380.13M. The description on the row is SELECT SECTOR SPDR TR STATE ST. The file holds 8 rows for XLC. Only the largest notional is in the headline. The others are not summed.",
-        "The threshold is $20.00M. This print is 19.01 times that floor. Prints below the floor stay in the data file and do not become a story. A fail is a settlement miss. It is not a count of naked shorts and it is not a signal by itself. SEC fails-to-deliver arrive with a lag of about three weeks. The file timestamp is 2026-11-23T20:26:15.442Z. The row date is 2026-10-05.",
-        "The threshold comparison uses $20.00M of notional on one row. XLC cleared it on 2026-10-05. A second symbol in the same file gets its own story only when its own largest row also clears the floor. Quantity times price is 3,445,659 times $110.32. That product is $380.13M. The article does not adjust for splits, corporate actions, or later corrections unless a newer file replaces the row. The filter is a threshold on stored data, not a forecast and not a rating.",
-        "The same ticker, type, and day collapse to one story so a later run replaces the row instead of adding a twin. Nothing on this page is a recommendation to buy, sell, or hold. The methodology page describes the other desk scores, which are separate from this write-up."
-      ],
-      "keyNumbers": [
-        {
-          "label": "Notional",
-          "value": "$380.13M",
-          "source": "SEC fails-to-deliver",
-          "asOf": "2026-11-23T20:26:15.442Z"
-        },
-        {
-          "label": "Quantity",
-          "value": "3,445,659",
-          "source": "SEC fails-to-deliver",
-          "asOf": "2026-11-23T20:26:15.442Z"
-        },
-        {
-          "label": "Price on the row",
-          "value": "$110.32",
-          "source": "SEC fails-to-deliver",
-          "asOf": "2026-11-23T20:26:15.442Z"
-        },
-        {
-          "label": "Row date",
-          "value": "2026-10-05",
-          "source": "SEC fails-to-deliver",
-          "asOf": "2026-11-23T20:26:15.442Z"
-        }
-      ],
-      "spark": [
-        380125100.88
-      ],
-      "sources": [
-        {
-          "name": "SEC fails-to-deliver",
-          "asOf": "2026-11-23T20:26:15.442Z"
-        }
-      ],
-      "materiality": 380.12510088,
-      "slug": "xlc-ftd-2026-11-23",
-      "passedMateriality": true,
-      "disclaimer": "Auto-generated from market data — not investment advice.",
-      "methodology": "/about/methodology/"
-    },
-    {
-      "id": "AMD|ftd|2026-11-23",
-      "type": "ftd",
-      "ticker": "AMD",
-      "tickers": [
-        "AMD"
-      ],
-      "day": "2026-11-23",
-      "publishedAt": "2026-11-23T20:26:15.442Z",
-      "headline": "AMD fails-to-deliver $202.69M",
-      "dek": "319,749 shares of AMD failed on 2026-10-05 at $633.91.",
-      "body": [
-        "Fails-to-deliver in AMD reached $202.69M on 2026-10-05. The same ticker, type, and day collapse to one story so a later run replaces the row instead of adding a twin. The filter is a threshold on stored data, not a forecast and not a rating.",
-        "Nothing on this page is a recommendation to buy, sell, or hold. The methodology page describes the other desk scores, which are separate from this write-up. Quantity times price is 319,749 times $633.91. That product is $202.69M. The article does not adjust for splits, corporate actions, or later corrections unless a newer file replaces the row. The threshold comparison uses $20.00M of notional on one row. AMD cleared it on 2026-10-05. A second symbol in the same file gets its own story only when its own largest row also clears the floor.",
-        "SEC fails-to-deliver arrive with a lag of about three weeks. The file timestamp is 2026-11-23T20:26:15.442Z. The row date is 2026-10-05. A fail is a settlement miss. It is not a count of naked shorts and it is not a signal by itself. The threshold is $20.00M. This print is 10.13 times that floor. Prints below the floor stay in the data file and do not become a story.",
-        "The file holds 6 rows for AMD. Only the largest notional is in the headline. The others are not summed. The row is 319,749 shares at $633.91, which multiplies to $202.69M. The description on the row is ADVANCED MICRO DEVICES. Only the single largest print for AMD inside this file is used. Other days are not added together, so the figure is one settlement, not a monthly total.",
+        "One SEC fails row for XLF is 1,420,782 shares at $53.40, or $75.87M. The same ticker, type, and day collapse to one story so a later run replaces the row instead of adding a twin. The filter is a threshold on stored data, not a forecast and not a rating.",
+        "Nothing on this page is a recommendation to buy, sell, or hold. The methodology page describes the other desk scores, which are separate from this write-up. Quantity times price is 1,420,782 times $53.40. That product is $75.87M. The article does not adjust for splits, corporate actions, or later corrections unless a newer file replaces the row. The threshold comparison uses $20.00M of notional on one row. XLF cleared it on 2026-10-01. A second symbol in the same file gets its own story only when its own largest row also clears the floor.",
+        "SEC fails-to-deliver arrive with a lag of about three weeks. The file timestamp is 2026-11-23T20:26:15.442Z. The row date is 2026-10-01. A fail is a settlement miss. It is not a count of naked shorts and it is not a signal by itself. The threshold is $20.00M. This print is 3.79 times that floor. Prints below the floor stay in the data file and do not become a story.",
+        "The file holds 8 rows for XLF. Only the largest notional is in the headline. The others are not summed. The row is 1,420,782 shares at $53.40, which multiplies to $75.87M. The description on the row is SELECT SECTOR SPDR TR STATE ST. Only the single largest print for XLF inside this file is used. Other days are not added together, so the figure is one settlement, not a monthly total.",
         "Readers can open the shorts page for the FINRA series and the ticker page for the delayed tape. Those pages do not reuse this notional unless they load the same SEC file. Figures in this piece come from SEC fails-to-deliver as of 2026-11-23T20:26:15.442Z. A blank in that file stays blank here."
       ],
       "keyNumbers": [
         {
           "label": "Notional",
-          "value": "$202.69M",
+          "value": "$75.87M",
           "source": "SEC fails-to-deliver",
           "asOf": "2026-11-23T20:26:15.442Z"
         },
         {
           "label": "Quantity",
-          "value": "319,749",
+          "value": "1,420,782",
           "source": "SEC fails-to-deliver",
           "asOf": "2026-11-23T20:26:15.442Z"
         },
         {
           "label": "Price on the row",
-          "value": "$633.91",
+          "value": "$53.40",
           "source": "SEC fails-to-deliver",
           "asOf": "2026-11-23T20:26:15.442Z"
         },
         {
           "label": "Row date",
-          "value": "2026-10-05",
+          "value": "2026-10-01",
           "source": "SEC fails-to-deliver",
           "asOf": "2026-11-23T20:26:15.442Z"
         }
       ],
       "spark": [
-        202692088.59
+        75869758.8
       ],
       "sources": [
         {
@@ -3010,67 +2951,8 @@
           "asOf": "2026-11-23T20:26:15.442Z"
         }
       ],
-      "materiality": 202.69208859,
-      "slug": "amd-ftd-2026-11-23",
-      "passedMateriality": true,
-      "disclaimer": "Auto-generated from market data — not investment advice.",
-      "methodology": "/about/methodology/"
-    },
-    {
-      "id": "IWM|ftd|2026-11-23",
-      "type": "ftd",
-      "ticker": "IWM",
-      "tickers": [
-        "IWM"
-      ],
-      "day": "2026-11-23",
-      "publishedAt": "2026-11-23T20:26:15.442Z",
-      "headline": "IWM fails-to-deliver $116.35M",
-      "dek": "419,165 shares of IWM failed on 2026-10-09 at $277.57.",
-      "body": [
-        "IWM shows a fails-to-deliver print of $116.35M in the latest SEC file. The file holds 8 rows for IWM. Only the largest notional is in the headline. The others are not summed. The threshold is $20.00M. This print is 5.82 times that floor. Prints below the floor stay in the data file and do not become a story.",
-        "Only the single largest print for IWM inside this file is used. Other days are not added together, so the figure is one settlement, not a monthly total. The row is 419,165 shares at $277.57, which multiplies to $116.35M. The description on the row is ISHARES RUSSELL 2000 ETF. The threshold comparison uses $20.00M of notional on one row. IWM cleared it on 2026-10-09. A second symbol in the same file gets its own story only when its own largest row also clears the floor.",
-        "Quantity times price is 419,165 times $277.57. That product is $116.35M. The article does not adjust for splits, corporate actions, or later corrections unless a newer file replaces the row. A fail is a settlement miss. It is not a count of naked shorts and it is not a signal by itself. SEC fails-to-deliver arrive with a lag of about three weeks. The file timestamp is 2026-11-23T20:26:15.442Z. The row date is 2026-10-09.",
-        "Nothing on this page is a recommendation to buy, sell, or hold. The methodology page describes the other desk scores, which are separate from this write-up. The filter is a threshold on stored data, not a forecast and not a rating. The same ticker, type, and day collapse to one story so a later run replaces the row instead of adding a twin.",
-        "Figures in this piece come from SEC fails-to-deliver as of 2026-11-23T20:26:15.442Z. A blank in that file stays blank here. Readers can open the shorts page for the FINRA series and the ticker page for the delayed tape. Those pages do not reuse this notional unless they load the same SEC file."
-      ],
-      "keyNumbers": [
-        {
-          "label": "Notional",
-          "value": "$116.35M",
-          "source": "SEC fails-to-deliver",
-          "asOf": "2026-11-23T20:26:15.442Z"
-        },
-        {
-          "label": "Quantity",
-          "value": "419,165",
-          "source": "SEC fails-to-deliver",
-          "asOf": "2026-11-23T20:26:15.442Z"
-        },
-        {
-          "label": "Price on the row",
-          "value": "$277.57",
-          "source": "SEC fails-to-deliver",
-          "asOf": "2026-11-23T20:26:15.442Z"
-        },
-        {
-          "label": "Row date",
-          "value": "2026-10-09",
-          "source": "SEC fails-to-deliver",
-          "asOf": "2026-11-23T20:26:15.442Z"
-        }
-      ],
-      "spark": [
-        116347629.05
-      ],
-      "sources": [
-        {
-          "name": "SEC fails-to-deliver",
-          "asOf": "2026-11-23T20:26:15.442Z"
-        }
-      ],
-      "materiality": 116.34762905,
-      "slug": "iwm-ftd-2026-11-23",
+      "materiality": 75.8697588,
+      "slug": "xlf-ftd-2026-11-23",
       "passedMateriality": true,
       "disclaimer": "Auto-generated from market data — not investment advice.",
       "methodology": "/about/methodology/"
@@ -3135,51 +3017,51 @@
       "methodology": "/about/methodology/"
     },
     {
-      "id": "XLF|ftd|2026-11-23",
+      "id": "IWM|ftd|2026-11-23",
       "type": "ftd",
-      "ticker": "XLF",
+      "ticker": "IWM",
       "tickers": [
-        "XLF"
+        "IWM"
       ],
       "day": "2026-11-23",
       "publishedAt": "2026-11-23T20:26:15.442Z",
-      "headline": "XLF fails-to-deliver $75.87M",
-      "dek": "1,420,782 shares of XLF failed on 2026-10-01 at $53.40.",
+      "headline": "IWM fails-to-deliver $116.35M",
+      "dek": "419,165 shares of IWM failed on 2026-10-09 at $277.57.",
       "body": [
-        "One SEC fails row for XLF is 1,420,782 shares at $53.40, or $75.87M. The same ticker, type, and day collapse to one story so a later run replaces the row instead of adding a twin. The filter is a threshold on stored data, not a forecast and not a rating.",
-        "Nothing on this page is a recommendation to buy, sell, or hold. The methodology page describes the other desk scores, which are separate from this write-up. Quantity times price is 1,420,782 times $53.40. That product is $75.87M. The article does not adjust for splits, corporate actions, or later corrections unless a newer file replaces the row. The threshold comparison uses $20.00M of notional on one row. XLF cleared it on 2026-10-01. A second symbol in the same file gets its own story only when its own largest row also clears the floor.",
-        "SEC fails-to-deliver arrive with a lag of about three weeks. The file timestamp is 2026-11-23T20:26:15.442Z. The row date is 2026-10-01. A fail is a settlement miss. It is not a count of naked shorts and it is not a signal by itself. The threshold is $20.00M. This print is 3.79 times that floor. Prints below the floor stay in the data file and do not become a story.",
-        "The file holds 8 rows for XLF. Only the largest notional is in the headline. The others are not summed. The row is 1,420,782 shares at $53.40, which multiplies to $75.87M. The description on the row is SELECT SECTOR SPDR TR STATE ST. Only the single largest print for XLF inside this file is used. Other days are not added together, so the figure is one settlement, not a monthly total.",
-        "Readers can open the shorts page for the FINRA series and the ticker page for the delayed tape. Those pages do not reuse this notional unless they load the same SEC file. Figures in this piece come from SEC fails-to-deliver as of 2026-11-23T20:26:15.442Z. A blank in that file stays blank here."
+        "IWM shows a fails-to-deliver print of $116.35M in the latest SEC file. The file holds 8 rows for IWM. Only the largest notional is in the headline. The others are not summed. The threshold is $20.00M. This print is 5.82 times that floor. Prints below the floor stay in the data file and do not become a story.",
+        "Only the single largest print for IWM inside this file is used. Other days are not added together, so the figure is one settlement, not a monthly total. The row is 419,165 shares at $277.57, which multiplies to $116.35M. The description on the row is ISHARES RUSSELL 2000 ETF. The threshold comparison uses $20.00M of notional on one row. IWM cleared it on 2026-10-09. A second symbol in the same file gets its own story only when its own largest row also clears the floor.",
+        "Quantity times price is 419,165 times $277.57. That product is $116.35M. The article does not adjust for splits, corporate actions, or later corrections unless a newer file replaces the row. A fail is a settlement miss. It is not a count of naked shorts and it is not a signal by itself. SEC fails-to-deliver arrive with a lag of about three weeks. The file timestamp is 2026-11-23T20:26:15.442Z. The row date is 2026-10-09.",
+        "Nothing on this page is a recommendation to buy, sell, or hold. The methodology page describes the other desk scores, which are separate from this write-up. The filter is a threshold on stored data, not a forecast and not a rating. The same ticker, type, and day collapse to one story so a later run replaces the row instead of adding a twin.",
+        "Figures in this piece come from SEC fails-to-deliver as of 2026-11-23T20:26:15.442Z. A blank in that file stays blank here. Readers can open the shorts page for the FINRA series and the ticker page for the delayed tape. Those pages do not reuse this notional unless they load the same SEC file."
       ],
       "keyNumbers": [
         {
           "label": "Notional",
-          "value": "$75.87M",
+          "value": "$116.35M",
           "source": "SEC fails-to-deliver",
           "asOf": "2026-11-23T20:26:15.442Z"
         },
         {
           "label": "Quantity",
-          "value": "1,420,782",
+          "value": "419,165",
           "source": "SEC fails-to-deliver",
           "asOf": "2026-11-23T20:26:15.442Z"
         },
         {
           "label": "Price on the row",
-          "value": "$53.40",
+          "value": "$277.57",
           "source": "SEC fails-to-deliver",
           "asOf": "2026-11-23T20:26:15.442Z"
         },
         {
           "label": "Row date",
-          "value": "2026-10-01",
+          "value": "2026-10-09",
           "source": "SEC fails-to-deliver",
           "asOf": "2026-11-23T20:26:15.442Z"
         }
       ],
       "spark": [
-        75869758.8
+        116347629.05
       ],
       "sources": [
         {
@@ -3187,8 +3069,126 @@
           "asOf": "2026-11-23T20:26:15.442Z"
         }
       ],
-      "materiality": 75.8697588,
-      "slug": "xlf-ftd-2026-11-23",
+      "materiality": 116.34762905,
+      "slug": "iwm-ftd-2026-11-23",
+      "passedMateriality": true,
+      "disclaimer": "Auto-generated from market data — not investment advice.",
+      "methodology": "/about/methodology/"
+    },
+    {
+      "id": "AMD|ftd|2026-11-23",
+      "type": "ftd",
+      "ticker": "AMD",
+      "tickers": [
+        "AMD"
+      ],
+      "day": "2026-11-23",
+      "publishedAt": "2026-11-23T20:26:15.442Z",
+      "headline": "AMD fails-to-deliver $202.69M",
+      "dek": "319,749 shares of AMD failed on 2026-10-05 at $633.91.",
+      "body": [
+        "Fails-to-deliver in AMD reached $202.69M on 2026-10-05. The same ticker, type, and day collapse to one story so a later run replaces the row instead of adding a twin. The filter is a threshold on stored data, not a forecast and not a rating.",
+        "Nothing on this page is a recommendation to buy, sell, or hold. The methodology page describes the other desk scores, which are separate from this write-up. Quantity times price is 319,749 times $633.91. That product is $202.69M. The article does not adjust for splits, corporate actions, or later corrections unless a newer file replaces the row. The threshold comparison uses $20.00M of notional on one row. AMD cleared it on 2026-10-05. A second symbol in the same file gets its own story only when its own largest row also clears the floor.",
+        "SEC fails-to-deliver arrive with a lag of about three weeks. The file timestamp is 2026-11-23T20:26:15.442Z. The row date is 2026-10-05. A fail is a settlement miss. It is not a count of naked shorts and it is not a signal by itself. The threshold is $20.00M. This print is 10.13 times that floor. Prints below the floor stay in the data file and do not become a story.",
+        "The file holds 6 rows for AMD. Only the largest notional is in the headline. The others are not summed. The row is 319,749 shares at $633.91, which multiplies to $202.69M. The description on the row is ADVANCED MICRO DEVICES. Only the single largest print for AMD inside this file is used. Other days are not added together, so the figure is one settlement, not a monthly total.",
+        "Readers can open the shorts page for the FINRA series and the ticker page for the delayed tape. Those pages do not reuse this notional unless they load the same SEC file. Figures in this piece come from SEC fails-to-deliver as of 2026-11-23T20:26:15.442Z. A blank in that file stays blank here."
+      ],
+      "keyNumbers": [
+        {
+          "label": "Notional",
+          "value": "$202.69M",
+          "source": "SEC fails-to-deliver",
+          "asOf": "2026-11-23T20:26:15.442Z"
+        },
+        {
+          "label": "Quantity",
+          "value": "319,749",
+          "source": "SEC fails-to-deliver",
+          "asOf": "2026-11-23T20:26:15.442Z"
+        },
+        {
+          "label": "Price on the row",
+          "value": "$633.91",
+          "source": "SEC fails-to-deliver",
+          "asOf": "2026-11-23T20:26:15.442Z"
+        },
+        {
+          "label": "Row date",
+          "value": "2026-10-05",
+          "source": "SEC fails-to-deliver",
+          "asOf": "2026-11-23T20:26:15.442Z"
+        }
+      ],
+      "spark": [
+        202692088.59
+      ],
+      "sources": [
+        {
+          "name": "SEC fails-to-deliver",
+          "asOf": "2026-11-23T20:26:15.442Z"
+        }
+      ],
+      "materiality": 202.69208859,
+      "slug": "amd-ftd-2026-11-23",
+      "passedMateriality": true,
+      "disclaimer": "Auto-generated from market data — not investment advice.",
+      "methodology": "/about/methodology/"
+    },
+    {
+      "id": "XLC|ftd|2026-11-23",
+      "type": "ftd",
+      "ticker": "XLC",
+      "tickers": [
+        "XLC"
+      ],
+      "day": "2026-11-23",
+      "publishedAt": "2026-11-23T20:26:15.442Z",
+      "headline": "XLC fails-to-deliver $380.13M",
+      "dek": "3,445,659 shares of XLC failed on 2026-10-05 at $110.32.",
+      "body": [
+        "One SEC fails row for XLC is 3,445,659 shares at $110.32, or $380.13M. Figures in this piece come from SEC fails-to-deliver as of 2026-11-23T20:26:15.442Z. A blank in that file stays blank here. Readers can open the shorts page for the FINRA series and the ticker page for the delayed tape. Those pages do not reuse this notional unless they load the same SEC file.",
+        "Only the single largest print for XLC inside this file is used. Other days are not added together, so the figure is one settlement, not a monthly total. The row is 3,445,659 shares at $110.32, which multiplies to $380.13M. The description on the row is SELECT SECTOR SPDR TR STATE ST. The file holds 8 rows for XLC. Only the largest notional is in the headline. The others are not summed.",
+        "The threshold is $20.00M. This print is 19.01 times that floor. Prints below the floor stay in the data file and do not become a story. A fail is a settlement miss. It is not a count of naked shorts and it is not a signal by itself. SEC fails-to-deliver arrive with a lag of about three weeks. The file timestamp is 2026-11-23T20:26:15.442Z. The row date is 2026-10-05.",
+        "The threshold comparison uses $20.00M of notional on one row. XLC cleared it on 2026-10-05. A second symbol in the same file gets its own story only when its own largest row also clears the floor. Quantity times price is 3,445,659 times $110.32. That product is $380.13M. The article does not adjust for splits, corporate actions, or later corrections unless a newer file replaces the row. The filter is a threshold on stored data, not a forecast and not a rating.",
+        "The same ticker, type, and day collapse to one story so a later run replaces the row instead of adding a twin. Nothing on this page is a recommendation to buy, sell, or hold. The methodology page describes the other desk scores, which are separate from this write-up."
+      ],
+      "keyNumbers": [
+        {
+          "label": "Notional",
+          "value": "$380.13M",
+          "source": "SEC fails-to-deliver",
+          "asOf": "2026-11-23T20:26:15.442Z"
+        },
+        {
+          "label": "Quantity",
+          "value": "3,445,659",
+          "source": "SEC fails-to-deliver",
+          "asOf": "2026-11-23T20:26:15.442Z"
+        },
+        {
+          "label": "Price on the row",
+          "value": "$110.32",
+          "source": "SEC fails-to-deliver",
+          "asOf": "2026-11-23T20:26:15.442Z"
+        },
+        {
+          "label": "Row date",
+          "value": "2026-10-05",
+          "source": "SEC fails-to-deliver",
+          "asOf": "2026-11-23T20:26:15.442Z"
+        }
+      ],
+      "spark": [
+        380125100.88
+      ],
+      "sources": [
+        {
+          "name": "SEC fails-to-deliver",
+          "asOf": "2026-11-23T20:26:15.442Z"
+        }
+      ],
+      "materiality": 380.12510088,
+      "slug": "xlc-ftd-2026-11-23",
       "passedMateriality": true,
       "disclaimer": "Auto-generated from market data — not investment advice.",
       "methodology": "/about/methodology/"
