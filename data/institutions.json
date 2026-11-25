@@ -1,6 +1,6 @@
 {
   "meta": {
-    "asOf": "2026-11-25T19:17:47.621Z",
+    "asOf": "2026-11-25T19:47:44.029Z",
     "source": "SEC 13F-HR index",
     "rows": 20,
     "delay": "quarterly",
@@ -8,6 +8,13 @@
     "unavailable": false
   },
   "rows": [
+    {
+      "id": "0002137529-26-000003:primary_doc.xml",
+      "filed": "2025-12-31",
+      "names": [
+        "Regatta Research & Money Management  (CIK 0002137529)"
+      ]
+    },
     {
       "id": "0002132253-26-000002:primary_doc.xml",
       "filed": "2026-09-30",
@@ -62,6 +69,20 @@
       "filed": "2026-09-30",
       "names": [
         "Baader Bank Aktiengesellschaft  (CIK 0001542629)"
+      ]
+    },
+    {
+      "id": "0001062993-26-006287:primary_doc.xml",
+      "filed": "2026-09-30",
+      "names": [
+        "FARMERS TRUST CO  (CIK 0001318055)"
+      ]
+    },
+    {
+      "id": "0001062993-26-006286:primary_doc.xml",
+      "filed": "2026-06-30",
+      "names": [
+        "FARMERS TRUST CO  (CIK 0001318055)"
       ]
     },
     {
@@ -125,27 +146,6 @@
       "filed": "2026-09-30",
       "names": [
         "Venturi Wealth Management, LLC  (CIK 0001666363)"
-      ]
-    },
-    {
-      "id": "0001450599-26-000018:primary_doc.xml",
-      "filed": "2026-09-30",
-      "names": [
-        "Intesa Sanpaolo Wealth Management SA  (CIK 0001450599)"
-      ]
-    },
-    {
-      "id": "0001193125-26-472774:primary_doc.xml",
-      "filed": "2026-09-30",
-      "names": [
-        "FAYEZ SAROFIM & CO  (CIK 0000937729)"
-      ]
-    },
-    {
-      "id": "0001172661-26-005478:primary_doc.xml",
-      "filed": "2026-09-30",
-      "names": [
-        "Inspire Advisors, LLC  (CIK 0001810558)"
       ]
     }
   ],

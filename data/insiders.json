@@ -1,6 +1,6 @@
 {
   "meta": {
-    "asOf": "2026-11-25T19:17:46.327Z",
+    "asOf": "2026-11-25T19:47:42.972Z",
     "source": "SEC EDGAR Form 4",
     "rows": 25,
     "delay": "hours",
@@ -8,6 +8,23 @@
     "unavailable": false
   },
   "rows": [
+    {
+      "id": "0002128637-26-000011:form4-11252026_021102.xml",
+      "filed": "2026-11-25",
+      "names": [
+        "Girod Jon Louis  (CIK 0002128637)",
+        "RIVERVIEW BANCORP INC  (CIK 0001041368)"
+      ],
+      "trade": {
+        "owner": "Girod Jon Louis",
+        "ticker": "RVSB",
+        "code": "P",
+        "shares": 1500,
+        "price": 6.54,
+        "acquired": true,
+        "form": "4"
+      }
+    },
     {
       "id": "0002125667-26-000005:primary_doc.xml",
       "filed": "2026-11-24",
@@ -411,23 +428,6 @@
         "ticker": "ZIM",
         "code": "S",
         "shares": 5029,
-        "price": 30,
-        "acquired": false,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0001976408-26-000971:primary_doc.xml",
-      "filed": "2026-11-23",
-      "names": [
-        "SEROUSSI YAIR  (CIK 0001217656)",
-        "ZIM Integrated Shipping Services Ltd.  (CIK 0001654126)"
-      ],
-      "trade": {
-        "owner": "SEROUSSI YAIR",
-        "ticker": "ZIM",
-        "code": "S",
-        "shares": 2235,
         "price": 30,
         "acquired": false,
         "form": "4"
