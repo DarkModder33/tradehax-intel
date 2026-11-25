@@ -1,6 +1,6 @@
 {
   "meta": {
-    "asOf": "2026-11-25T12:47:55.857Z",
+    "asOf": "2026-11-25T13:17:45.608Z",
     "source": "SEC EDGAR Form 4",
     "rows": 25,
     "delay": "hours",
@@ -73,6 +73,40 @@
         "shares": 7313,
         "price": 0,
         "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0001853874-26-000020:wk-form4_1795610953.xml",
+      "filed": "2026-11-24",
+      "names": [
+        "McLaughlin Matthew F.  (CIK 0001853874)",
+        "COMSCORE, INC.  (CIK 0001158172)"
+      ],
+      "trade": {
+        "owner": "McLaughlin Matthew F.",
+        "ticker": "SCOR",
+        "code": "P",
+        "shares": 25907,
+        "price": 3.43,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0001828057-26-000022:wk-form4_1795611159.xml",
+      "filed": "2026-11-24",
+      "names": [
+        "GOETTER GINA M  (CIK 0001828057)",
+        "HASBRO, INC.  (CIK 0000046080)"
+      ],
+      "trade": {
+        "owner": "GOETTER GINA M",
+        "ticker": "HAS",
+        "code": "S",
+        "shares": 2240,
+        "price": 112.2482,
+        "acquired": false,
         "form": "4"
       }
     },
@@ -264,6 +298,57 @@
       }
     },
     {
+      "id": "0001333822-26-000007:primary_doc.xml",
+      "filed": "2026-11-23",
+      "names": [
+        "Gough Walter Michael  (CIK 0001671071)",
+        "SemiLEDs Corp  (CIK 0001333822)"
+      ],
+      "trade": {
+        "owner": "Gough Walter Michael",
+        "ticker": "LEDS",
+        "code": "A",
+        "shares": 5000,
+        "price": 0,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0001333822-26-000006:primary_doc.xml",
+      "filed": "2026-11-23",
+      "names": [
+        "Hsieh Edward Kuan Hsiung  (CIK 0001541193)",
+        "SemiLEDs Corp  (CIK 0001333822)"
+      ],
+      "trade": {
+        "owner": "Hsieh Edward Kuan Hsiung",
+        "ticker": "LEDS",
+        "code": "A",
+        "shares": 5000,
+        "price": 0,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0001193125-26-476880:ownership.xml",
+      "filed": "2026-11-23",
+      "names": [
+        "RICHARDSON EDWARD J  (CIK 0000918270)",
+        "RICHARDSON ELECTRONICS, LTD.  (CIK 0000355948)"
+      ],
+      "trade": {
+        "owner": "RICHARDSON EDWARD J",
+        "ticker": "RELL",
+        "code": "G",
+        "shares": 36000,
+        "price": 0,
+        "acquired": false,
+        "form": "4"
+      }
+    },
+    {
       "id": "0001193125-26-476734:ownership.xml",
       "filed": "2026-11-24",
       "names": [
@@ -345,91 +430,6 @@
         "shares": 1623,
         "price": 239.38,
         "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002161049-26-000002:primary_doc.xml",
-      "filed": "2026-11-24",
-      "names": [
-        "PATTON JAMES ANTHONY  (CIK 0001252886)",
-        "WILSON BANK HOLDING CO  (CIK 0000885275)"
-      ],
-      "trade": {
-        "owner": "PATTON JAMES ANTHONY",
-        "ticker": "NONE",
-        "code": "M",
-        "shares": 2000,
-        "price": 0,
-        "acquired": false,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002148694-26-000006:wk-form4_1795555738.xml",
-      "filed": "2026-11-20",
-      "names": [
-        "Kuduvalli Ramesh Akhil  (CIK 0002148694)",
-        "YELP INC  (CIK 0001345016)"
-      ],
-      "trade": {
-        "owner": "Kuduvalli Ramesh Akhil",
-        "ticker": "YELP",
-        "code": "F",
-        "shares": 2574,
-        "price": 18.19,
-        "acquired": false,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002148390-26-000015:wk-form4_1795554119.xml",
-      "filed": "2026-11-23",
-      "names": [
-        "McGogney Connor  (CIK 0002148390)",
-        "Criteo S.A.  (CIK 0001576427)"
-      ],
-      "trade": {
-        "owner": "McGogney Connor",
-        "ticker": "CRTO",
-        "code": "S",
-        "shares": 671,
-        "price": 17.88,
-        "acquired": false,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002147680-26-000020:wk-form4a_1795555540.xml",
-      "filed": "2026-10-13",
-      "names": [
-        "Renner Alexandra  (CIK 0002147680)",
-        "Oklo Inc.  (CIK 0001849056)"
-      ],
-      "trade": {
-        "owner": "Renner Alexandra",
-        "ticker": "OKLO",
-        "code": "M",
-        "shares": 1201,
-        "price": 0,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002137803-26-000009:wk-form4_1795555511.xml",
-      "filed": "2026-11-20",
-      "names": [
-        "Levy Alexander Coleman  (CIK 0002137803)",
-        "YELP INC  (CIK 0001345016)"
-      ],
-      "trade": {
-        "owner": "Levy Alexander Coleman",
-        "ticker": "YELP",
-        "code": "F",
-        "shares": 2477,
-        "price": 18.19,
-        "acquired": false,
         "form": "4"
       }
     }

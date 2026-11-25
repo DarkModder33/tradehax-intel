@@ -1,6 +1,6 @@
 {
   "meta": {
-    "asOf": "2026-11-25T12:47:58.291Z",
+    "asOf": "2026-11-25T13:17:48.129Z",
     "source": "SEC 13F-HR index",
     "rows": 20,
     "delay": "quarterly",
@@ -20,6 +20,13 @@
       "filed": "2026-09-30",
       "names": [
         "Baader Bank Aktiengesellschaft  (CIK 0001542629)"
+      ]
+    },
+    {
+      "id": "0000902219-26-000399:primary_doc.xml",
+      "filed": "2026-09-30",
+      "names": [
+        "WELLINGTON MANAGEMENT GROUP LLP  (CIK 0000902219)"
       ]
     },
     {
@@ -139,13 +146,6 @@
       "filed": "2026-09-30",
       "names": [
         "Arvest Bank Trust Division  (CIK 0001625959)"
-      ]
-    },
-    {
-      "id": "0001580642-26-007863:primary_doc.xml",
-      "filed": "2026-09-30",
-      "names": [
-        "CWM, LLC  (CIK 0001535847)"
       ]
     }
   ],
