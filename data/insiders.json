@@ -1,6 +1,6 @@
 {
   "meta": {
-    "asOf": "2026-11-25T20:47:51.419Z",
+    "asOf": "2026-11-25T21:17:48.294Z",
     "source": "SEC EDGAR Form 4",
     "rows": 25,
     "delay": "hours",
@@ -43,6 +43,23 @@
       }
     },
     {
+      "id": "0002120008-26-000014:wk-form4_1795640618.xml",
+      "filed": "2026-11-23",
+      "names": [
+        "Denny Jordan M.  (CIK 0002120008)",
+        "VALVOLINE INC  (CIK 0001674910)"
+      ],
+      "trade": {
+        "owner": "Denny Jordan M.",
+        "ticker": "VVV",
+        "code": "A",
+        "shares": 2530,
+        "price": 0,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
       "id": "0002117905-26-000052:primary_doc.xml",
       "filed": "2026-11-24",
       "names": [
@@ -56,6 +73,40 @@
         "shares": 47982,
         "price": 20.38,
         "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002116135-26-000003:primarydocument.xml",
+      "filed": "2026-11-23",
+      "names": [
+        "Brown Robert Todd  (CIK 0002116135)",
+        "Lincoln International, Inc.  (CIK 0001925283)"
+      ],
+      "trade": {
+        "owner": "Brown Robert Todd",
+        "ticker": "LCLN",
+        "code": "G",
+        "shares": 325000,
+        "price": 0,
+        "acquired": false,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002115511-26-000001:primarydocument.xml",
+      "filed": "2026-11-23",
+      "names": [
+        "Barr Robert Bruce  (CIK 0002115511)",
+        "Lincoln International, Inc.  (CIK 0001925283)"
+      ],
+      "trade": {
+        "owner": "Barr Robert Bruce",
+        "ticker": "LCLN",
+        "code": "G",
+        "shares": 195000,
+        "price": 0,
+        "acquired": false,
         "form": "4"
       }
     },
@@ -247,6 +298,40 @@
       }
     },
     {
+      "id": "0002114357-26-000001:primarydocument.xml",
+      "filed": "2026-11-23",
+      "names": [
+        "Lawson Lawrence James III  (CIK 0002114357)",
+        "Lincoln International, Inc.  (CIK 0001925283)"
+      ],
+      "trade": {
+        "owner": "Lawson Lawrence James III",
+        "ticker": "LCLN",
+        "code": "G",
+        "shares": 332800,
+        "price": 0,
+        "acquired": false,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002110450-26-000016:wk-form4_1795640623.xml",
+      "filed": "2026-11-23",
+      "names": [
+        "Worsham Adam C.  (CIK 0002110450)",
+        "VALVOLINE INC  (CIK 0001674910)"
+      ],
+      "trade": {
+        "owner": "Worsham Adam C.",
+        "ticker": "VVV",
+        "code": "A",
+        "shares": 4700,
+        "price": 0,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
       "id": "0002106572-26-000007:primary_doc.xml",
       "filed": "2026-11-11",
       "names": [
@@ -259,6 +344,23 @@
         "code": "A",
         "shares": 1335462,
         "price": 0.1785,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002096014-26-000002:form4-11252026_041113.xml",
+      "filed": "2026-11-20",
+      "names": [
+        "Trapp Kevin Michael  (CIK 0002096014)",
+        "DBV Technologies S.A.  (CIK 0001613780)"
+      ],
+      "trade": {
+        "owner": "Trapp Kevin Michael",
+        "ticker": "DBVT",
+        "code": "A",
+        "shares": 430000,
+        "price": 0,
         "acquired": true,
         "form": "4"
       }
@@ -298,137 +400,35 @@
       }
     },
     {
-      "id": "0002029299-26-000002:primary_doc.xml",
-      "filed": "2026-11-23",
+      "id": "0002073591-26-000040:form4-11252026_041106.xml",
+      "filed": "2026-11-24",
       "names": [
-        "Yu Chris Chang  (CIK 0002029299)",
-        "SemiLEDs Corp  (CIK 0001333822)"
+        "Voskanian Shaunt  (CIK 0002073591)",
+        "Figma, Inc.  (CIK 0001579878)"
       ],
       "trade": {
-        "owner": "Yu Chris Chang",
-        "ticker": "LEDS",
-        "code": "A",
-        "shares": 5000,
+        "owner": "Voskanian Shaunt",
+        "ticker": "FIG",
+        "code": "S",
+        "shares": 21453,
+        "price": 17.1768,
+        "acquired": false,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002073586-26-000016:form4-11252026_041102.xml",
+      "filed": "2026-11-23",
+      "names": [
+        "Field Dylan  (CIK 0002073586)",
+        "Figma, Inc.  (CIK 0001579878)"
+      ],
+      "trade": {
+        "owner": "Field Dylan",
+        "ticker": "FIG",
+        "code": "G",
+        "shares": 80000,
         "price": 0,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002028304-26-000005:wk-form4_1795618675.xml",
-      "filed": "2026-11-23",
-      "names": [
-        "Bunch Charles Alexander  (CIK 0002028304)",
-        "TWFG, Inc.  (CIK 0002007596)"
-      ],
-      "trade": {
-        "owner": "Bunch Charles Alexander",
-        "ticker": "TWFG",
-        "code": "S",
-        "shares": 5200,
-        "price": 25.5,
-        "acquired": false,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0001995565-26-000004:primary_doc.xml",
-      "filed": "2026-11-20",
-      "names": [
-        "Capralos Spyridon  (CIK 0001995565)",
-        "Star Bulk Carriers Corp.  (CIK 0001386716)"
-      ],
-      "trade": {
-        "owner": "Capralos Spyridon",
-        "ticker": "SBLK",
-        "code": "P",
-        "shares": 1000,
-        "price": 25.59,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0001976408-26-000977:primary_doc.xml",
-      "filed": "2026-11-24",
-      "names": [
-        "Metanes Abdallah  (CIK 0002112373)",
-        "ZIM Integrated Shipping Services Ltd.  (CIK 0001654126)"
-      ],
-      "trade": {
-        "owner": "Metanes Abdallah",
-        "ticker": "ZIM",
-        "code": "S",
-        "shares": 1249,
-        "price": 30.5,
-        "acquired": false,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0001976408-26-000976:primary_doc.xml",
-      "filed": "2026-11-24",
-      "names": [
-        "Dotan Saar  (CIK 0001966890)",
-        "ZIM Integrated Shipping Services Ltd.  (CIK 0001654126)"
-      ],
-      "trade": {
-        "owner": "Dotan Saar",
-        "ticker": "ZIM",
-        "code": "S",
-        "shares": 67200,
-        "price": 30.1489,
-        "acquired": false,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0001976408-26-000975:primary_doc.xml",
-      "filed": "2026-11-23",
-      "names": [
-        "Shaul William  (CIK 0001966870)",
-        "ZIM Integrated Shipping Services Ltd.  (CIK 0001654126)"
-      ],
-      "trade": {
-        "owner": "Shaul William",
-        "ticker": "ZIM",
-        "code": "S",
-        "shares": 2235,
-        "price": 29.84,
-        "acquired": false,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0001976408-26-000974:primary_doc.xml",
-      "filed": "2026-11-23",
-      "names": [
-        "Epstein Nir  (CIK 0001966889)",
-        "ZIM Integrated Shipping Services Ltd.  (CIK 0001654126)"
-      ],
-      "trade": {
-        "owner": "Epstein Nir",
-        "ticker": "ZIM",
-        "code": "S",
-        "shares": 2235,
-        "price": 30,
-        "acquired": false,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0001976408-26-000973:primary_doc.xml",
-      "filed": "2026-11-23",
-      "names": [
-        "Kalinski Hani  (CIK 0001966882)",
-        "ZIM Integrated Shipping Services Ltd.  (CIK 0001654126)"
-      ],
-      "trade": {
-        "owner": "Kalinski Hani",
-        "ticker": "ZIM",
-        "code": "S",
-        "shares": 5029,
-        "price": 30,
         "acquired": false,
         "form": "4"
       }
