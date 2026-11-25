@@ -1,6 +1,6 @@
 {
   "meta": {
-    "asOf": "2026-11-25T12:17:47.972Z",
+    "asOf": "2026-11-25T12:47:55.857Z",
     "source": "SEC EDGAR Form 4",
     "rows": 25,
     "delay": "hours",
@@ -8,6 +8,125 @@
     "unavailable": false
   },
   "rows": [
+    {
+      "id": "0002125667-26-000005:primary_doc.xml",
+      "filed": "2026-11-24",
+      "names": [
+        "Schuetz Arthur Josef Hermann  (CIK 0002125667)",
+        "SCHMID Group N.V.  (CIK 0001987240)"
+      ],
+      "trade": {
+        "owner": "Schuetz Arthur Josef Hermann",
+        "ticker": "SHMD",
+        "code": "P",
+        "shares": 60000,
+        "price": 1731429,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002029299-26-000002:primary_doc.xml",
+      "filed": "2026-11-23",
+      "names": [
+        "Yu Chris Chang  (CIK 0002029299)",
+        "SemiLEDs Corp  (CIK 0001333822)"
+      ],
+      "trade": {
+        "owner": "Yu Chris Chang",
+        "ticker": "LEDS",
+        "code": "A",
+        "shares": 5000,
+        "price": 0,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0001921253-26-000006:wk-form4_1795609299.xml",
+      "filed": "2026-11-24",
+      "names": [
+        "Stefanski Gavin B  (CIK 0001921253)",
+        "TFS Financial CORP  (CIK 0001381668)"
+      ],
+      "trade": {
+        "owner": "Stefanski Gavin B",
+        "ticker": "TFSL",
+        "code": "A",
+        "shares": 7313,
+        "price": 0,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0001921069-26-000005:wk-form4_1795609257.xml",
+      "filed": "2026-11-24",
+      "names": [
+        "Stefanski Bradley T  (CIK 0001921069)",
+        "TFS Financial CORP  (CIK 0001381668)"
+      ],
+      "trade": {
+        "owner": "Stefanski Bradley T",
+        "ticker": "TFSL",
+        "code": "A",
+        "shares": 7313,
+        "price": 0,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0001820740-26-000006:wk-form4_1795609212.xml",
+      "filed": "2026-11-24",
+      "names": [
+        "Rubino Andrew J  (CIK 0001820740)",
+        "TFS Financial CORP  (CIK 0001381668)"
+      ],
+      "trade": {
+        "owner": "Rubino Andrew J",
+        "ticker": "TFSL",
+        "code": "A",
+        "shares": 14625,
+        "price": 0,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0001753926-26-002250:form4.xml",
+      "filed": "2026-11-24",
+      "names": [
+        "Williams Gregg  (CIK 0001624919)",
+        "Vivani Medical, Inc.  (CIK 0001266806)"
+      ],
+      "trade": {
+        "owner": "Williams Gregg",
+        "ticker": "VANI",
+        "code": "P",
+        "shares": 124285,
+        "price": 1.288,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0001662205-26-000025:wk-form4_1795609639.xml",
+      "filed": "2026-11-23",
+      "names": [
+        "Radakovich Lynn Vojvodich  (CIK 0001662205)",
+        "Dell Technologies Inc.  (CIK 0001571996)"
+      ],
+      "trade": {
+        "owner": "Radakovich Lynn Vojvodich",
+        "ticker": "DELL",
+        "code": "M",
+        "shares": 2022,
+        "price": 31.14,
+        "acquired": true,
+        "form": "4"
+      }
+    },
     {
       "id": "0001628280-26-075863:wk-form4_1795606866.xml",
       "filed": "2026-11-24",
@@ -26,6 +145,23 @@
       }
     },
     {
+      "id": "0001566345-26-000010:wk-form4_1795609158.xml",
+      "filed": "2026-11-24",
+      "names": [
+        "Zbanek Cathy W  (CIK 0001566345)",
+        "TFS Financial CORP  (CIK 0001381668)"
+      ],
+      "trade": {
+        "owner": "Zbanek Cathy W",
+        "ticker": "TFSL",
+        "code": "A",
+        "shares": 26775,
+        "price": 0,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
       "id": "0001555132-26-000012:form4-11252026_111157.xml",
       "filed": "2026-11-24",
       "names": [
@@ -38,6 +174,23 @@
         "code": "P",
         "shares": 10000,
         "price": 1.43,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0001530997-26-000014:wk-form4_1795609113.xml",
+      "filed": "2026-11-24",
+      "names": [
+        "WEIL MEREDITH S  (CIK 0001530997)",
+        "TFS Financial CORP  (CIK 0001381668)"
+      ],
+      "trade": {
+        "owner": "WEIL MEREDITH S",
+        "ticker": "TFSL",
+        "code": "A",
+        "shares": 28013,
+        "price": 0,
         "acquired": true,
         "form": "4"
       }
@@ -89,6 +242,23 @@
         "code": "P",
         "shares": 750000,
         "price": 12,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0001388161-26-000010:wk-form4_1795609078.xml",
+      "filed": "2026-11-24",
+      "names": [
+        "Stefanski Marc A  (CIK 0001388161)",
+        "TFS Financial CORP  (CIK 0001381668)"
+      ],
+      "trade": {
+        "owner": "Stefanski Marc A",
+        "ticker": "TFSL",
+        "code": "A",
+        "shares": 68175,
+        "price": 0,
         "acquired": true,
         "form": "4"
       }
@@ -260,176 +430,6 @@
         "shares": 2477,
         "price": 18.19,
         "acquired": false,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002133947-26-000009:primarydocument.xml",
-      "filed": "2026-11-20",
-      "names": [
-        "Ge Xiaochuan  (CIK 0002133947)",
-        "AppLovin Corp  (CIK 0001751008)"
-      ],
-      "trade": {
-        "owner": "Ge Xiaochuan",
-        "ticker": "APP",
-        "code": "F",
-        "shares": 5459,
-        "price": 348.29,
-        "acquired": false,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002133938-26-000007:primarydocument.xml",
-      "filed": "2026-11-20",
-      "names": [
-        "Cacovean Corina I  (CIK 0002133938)",
-        "AppLovin Corp  (CIK 0001751008)"
-      ],
-      "trade": {
-        "owner": "Cacovean Corina I",
-        "ticker": "APP",
-        "code": "F",
-        "shares": 1540,
-        "price": 348.29,
-        "acquired": false,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002130035-26-000011:primary_doc.xml",
-      "filed": "2026-11-20",
-      "names": [
-        "MOORE H LYNN JR  (CIK 0001250902)",
-        "TYLER TECHNOLOGIES INC  (CIK 0000860731)"
-      ],
-      "trade": {
-        "owner": "MOORE H LYNN JR",
-        "ticker": "TYL",
-        "code": "M",
-        "shares": 20000,
-        "price": 205.66,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002124353-26-000010:form4-11242026_041111.xml",
-      "filed": "2026-11-20",
-      "names": [
-        "Thomson Matthew Christopher  (CIK 0002124353)",
-        "Blend Labs, Inc.  (CIK 0001855747)"
-      ],
-      "trade": {
-        "owner": "Thomson Matthew Christopher",
-        "ticker": "BLND",
-        "code": "M",
-        "shares": 100000,
-        "price": null,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002122129-26-000002:primary_doc.xml",
-      "filed": "2026-11-16",
-      "names": [
-        "Daher Filho Tufi  (CIK 0002122129)",
-        "NATIONAL STEEL CO  (CIK 0001049659)"
-      ],
-      "trade": {
-        "owner": "Daher Filho Tufi",
-        "ticker": "SID",
-        "code": "P",
-        "shares": 30000,
-        "price": 0.6577,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002119764-26-000040:primary_doc.xml",
-      "filed": "2026-11-20",
-      "names": [
-        "Elsztain Alejandro Gustavo  (CIK 0002119764)",
-        "BrasilAgro - Brazilian Agricultural Real Estate Co  (CIK 0001499849)"
-      ],
-      "trade": {
-        "owner": "Elsztain Alejandro Gustavo",
-        "ticker": "LND",
-        "code": "P",
-        "shares": 11800,
-        "price": 2.8768,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002119764-26-000039:primary_doc.xml",
-      "filed": "2026-11-12",
-      "names": [
-        "Elsztain Alejandro Gustavo  (CIK 0002119764)",
-        "IRSA INVESTMENTS & REPRESENTATIONS INC  (CIK 0000933267)"
-      ],
-      "trade": {
-        "owner": "Elsztain Alejandro Gustavo",
-        "ticker": "IRS",
-        "code": "J",
-        "shares": 26649,
-        "price": 0,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002109337-26-000020:primary_doc.xml",
-      "filed": "2026-11-20",
-      "names": [
-        "WANG CHUN KAI  (CIK 0002109337)",
-        "OBOOK HOLDINGS INC.  (CIK 0002025416)"
-      ],
-      "trade": {
-        "owner": "WANG CHUN KAI",
-        "ticker": "OWLS",
-        "code": "P",
-        "shares": 22313,
-        "price": 2.0326,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002108080-26-000005:form4-11242026_101138.xml",
-      "filed": "2026-11-23",
-      "names": [
-        "Skelton Laurence Matthew  (CIK 0002108080)",
-        "Vera Therapeutics, Inc.  (CIK 0001831828)"
-      ],
-      "trade": {
-        "owner": "Skelton Laurence Matthew",
-        "ticker": "VERA",
-        "code": "S",
-        "shares": 2728,
-        "price": 26.7477,
-        "acquired": false,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002099007-26-000008:wk-form4_1795558059.xml",
-      "filed": "2026-11-17",
-      "names": [
-        "Cragg Lee Ann  (CIK 0002099007)",
-        "Amerant Bancorp Inc.  (CIK 0001734342)"
-      ],
-      "trade": {
-        "owner": "Cragg Lee Ann",
-        "ticker": "AMTB",
-        "code": "M",
-        "shares": 1000,
-        "price": 0,
-        "acquired": true,
         "form": "4"
       }
     }
