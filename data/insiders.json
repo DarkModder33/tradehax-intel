@@ -1,6 +1,6 @@
 {
   "meta": {
-    "asOf": "2026-11-25T22:17:46.476Z",
+    "asOf": "2026-11-25T22:41:28.567Z",
     "source": "SEC EDGAR Form 4",
     "rows": 25,
     "delay": "hours",
@@ -8,6 +8,23 @@
     "unavailable": false
   },
   "rows": [
+    {
+      "id": "0002166516-26-000004:ownership.xml",
+      "filed": "2026-11-20",
+      "names": [
+        "Wilcoxen Lauren Michelle  (CIK 0002166516)",
+        "CytoDyn Inc.  (CIK 0001175680)"
+      ],
+      "trade": {
+        "owner": "Wilcoxen Lauren Michelle",
+        "ticker": "CYDY",
+        "code": "A",
+        "shares": 4500000,
+        "price": 0,
+        "acquired": true,
+        "form": "4"
+      }
+    },
     {
       "id": "0002154593-26-000005:wk-form4_1795643975.xml",
       "filed": "2026-11-25",
@@ -38,6 +55,23 @@
         "code": "A",
         "shares": 103,
         "price": 0,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002135300-26-000006:form4-11252026_101100.xml",
+      "filed": "2026-11-24",
+      "names": [
+        "Hemphill Gregg  (CIK 0002135300)",
+        "Newton Golf Company, Inc.  (CIK 0001934245)"
+      ],
+      "trade": {
+        "owner": "Hemphill Gregg",
+        "ticker": "NWTG",
+        "code": "P",
+        "shares": 10000,
+        "price": 0.8607,
         "acquired": true,
         "form": "4"
       }
@@ -395,40 +429,6 @@
         "code": "A",
         "shares": 1335462,
         "price": 0.1785,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002097457-26-000009:wk-form4_1795642528.xml",
-      "filed": "2026-11-24",
-      "names": [
-        "Busia Kojo Osei Frimpong  (CIK 0002097457)",
-        "AngloGold Ashanti PLC  (CIK 0001973832)"
-      ],
-      "trade": {
-        "owner": "Busia Kojo Osei Frimpong",
-        "ticker": "AU",
-        "code": "S",
-        "shares": 400,
-        "price": 76.78,
-        "acquired": false,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002096014-26-000002:form4-11252026_041113.xml",
-      "filed": "2026-11-20",
-      "names": [
-        "Trapp Kevin Michael  (CIK 0002096014)",
-        "DBV Technologies S.A.  (CIK 0001613780)"
-      ],
-      "trade": {
-        "owner": "Trapp Kevin Michael",
-        "ticker": "DBVT",
-        "code": "A",
-        "shares": 430000,
-        "price": 0,
         "acquired": true,
         "form": "4"
       }
