@@ -1,6 +1,6 @@
 {
   "meta": {
-    "asOf": "2026-11-25T13:19:15.913Z",
+    "asOf": "2026-11-25T13:49:06.450Z",
     "source": "FRED public CSV",
     "rows": 13,
     "delay": "daily",
@@ -55,7 +55,7 @@
     },
     {
       "id": "ICSA",
-      "value": 203000
+      "value": 189000
     },
     {
       "id": "WALCL",
@@ -75,7 +75,7 @@
     "DFF": 3.88,
     "CPIAUCSL": 337.476,
     "UNRATE": 4.1,
-    "ICSA": 203000,
+    "ICSA": 189000,
     "WALCL": 6741452
   }
 }

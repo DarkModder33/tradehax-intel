@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-25T13:19:17.664Z",
+  "generatedAt": "2026-11-25T13:49:08.294Z",
   "datasets": {
     "insiders": {
-      "asOf": "2026-11-25T13:17:45.608Z",
+      "asOf": "2026-11-25T13:47:48.099Z",
       "source": "SEC EDGAR Form 4",
       "rows": 25,
       "delay": "hours",
@@ -10,7 +10,7 @@
       "unavailable": false
     },
     "congress": {
-      "asOf": "2026-11-25T13:17:47.240Z",
+      "asOf": "2026-11-25T13:47:49.886Z",
       "source": "House Clerk periodic transaction reports",
       "rows": 1170,
       "delay": "daily",
@@ -18,7 +18,7 @@
       "unavailable": false
     },
     "institutions": {
-      "asOf": "2026-11-25T13:17:48.129Z",
+      "asOf": "2026-11-25T13:47:50.688Z",
       "source": "SEC 13F-HR index",
       "rows": 20,
       "delay": "quarterly",
@@ -26,7 +26,7 @@
       "unavailable": false
     },
     "oi-change": {
-      "asOf": "2026-11-25T13:18:11.034Z",
+      "asOf": "2026-11-25T13:48:05.413Z",
       "source": "Cboe delayed, Alpaca indicative open interest",
       "rows": 0,
       "delay": "daily",
@@ -35,16 +35,16 @@
       "coverage": 1
     },
     "iv": {
-      "asOf": "2026-11-25T13:18:39.724Z",
+      "asOf": "2026-11-25T13:48:32.285Z",
       "source": "Cboe iv30",
-      "rows": 48,
+      "rows": 50,
       "delay": "about 15 min",
       "stale": false,
       "unavailable": false,
-      "coverage": 0.9411764705882353
+      "coverage": 0.9803921568627451
     },
     "shorts": {
-      "asOf": "2026-11-25T13:18:53.115Z",
+      "asOf": "2026-11-25T13:48:45.742Z",
       "source": "FINRA consolidated short interest",
       "rows": 51,
       "delay": "twice monthly",
@@ -53,7 +53,7 @@
       "coverage": 1
     },
     "ftd": {
-      "asOf": "2026-11-25T13:18:53.888Z",
+      "asOf": "2026-11-25T13:48:48.075Z",
       "source": "SEC fails-to-deliver",
       "rows": 421,
       "delay": "about 3 weeks",
@@ -62,7 +62,7 @@
       "coverage": 1
     },
     "ats": {
-      "asOf": "2026-11-25T13:19:14.157Z",
+      "asOf": "2026-11-25T13:49:03.150Z",
       "source": "FINRA ATS weekly",
       "rows": 100,
       "delay": "2 to 4 weeks",
@@ -71,9 +71,9 @@
       "coverage": 0.9803921568627451
     },
     "calendar": {
-      "asOf": "2026-11-25T13:19:14.349Z",
+      "asOf": "2026-11-25T13:49:03.243Z",
       "source": "Nasdaq calendars",
-      "rows": 77,
+      "rows": 76,
       "delay": "daily",
       "unavailable": false
     },
@@ -86,7 +86,7 @@
       "unavailable": false
     },
     "macro": {
-      "asOf": "2026-11-25T13:19:15.913Z",
+      "asOf": "2026-11-25T13:49:06.450Z",
       "source": "FRED public CSV",
       "rows": 13,
       "delay": "daily",
@@ -95,7 +95,7 @@
       "coverage": 1
     },
     "etf-flows": {
-      "asOf": "2026-11-25T13:19:16.133Z",
+      "asOf": "2026-11-25T13:49:06.727Z",
       "source": "SPDR NAV history",
       "rows": 20,
       "delay": "daily",
@@ -104,7 +104,7 @@
       "coverage": 0.08333333333333333
     },
     "screener": {
-      "asOf": "2026-11-25T13:19:16.356Z",
+      "asOf": "2026-11-25T13:49:06.850Z",
       "source": "Yahoo most actives",
       "rows": 25,
       "delay": "delayed",
@@ -112,7 +112,7 @@
       "unavailable": false
     },
     "universe": {
-      "asOf": "2026-11-25T13:19:16.471Z",
+      "asOf": "2026-11-25T13:49:06.944Z",
       "source": "Nasdaq screener",
       "rows": 3547,
       "delay": "daily",
@@ -121,7 +121,7 @@
       "coverage": 1
     },
     "seasonality": {
-      "asOf": "2026-11-25T13:19:17.351Z",
+      "asOf": "2026-11-25T13:49:07.987Z",
       "source": "Yahoo monthly closes",
       "rows": 144,
       "delay": "daily",
@@ -130,7 +130,7 @@
       "coverage": 1
     },
     "flow-history": {
-      "asOf": "2026-11-25T13:19:17.632Z",
+      "asOf": "2026-11-25T13:49:08.100Z",
       "source": "worker /v1/history",
       "rows": 2000,
       "delay": "about 15 min",
@@ -138,7 +138,7 @@
       "unavailable": false
     },
     "technicals": {
-      "asOf": "2026-11-25T13:19:17.663Z",
+      "asOf": "2026-11-25T13:49:08.294Z",
       "source": "Alpaca SIP daily bars via worker",
       "rows": 51,
       "delay": "daily",
