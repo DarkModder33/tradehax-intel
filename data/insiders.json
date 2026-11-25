@@ -1,6 +1,6 @@
 {
   "meta": {
-    "asOf": "2026-11-25T05:02:49.146Z",
+    "asOf": "2026-11-25T12:17:47.972Z",
     "source": "SEC EDGAR Form 4",
     "rows": 25,
     "delay": "hours",
@@ -8,6 +8,176 @@
     "unavailable": false
   },
   "rows": [
+    {
+      "id": "0001628280-26-075863:wk-form4_1795606866.xml",
+      "filed": "2026-11-24",
+      "names": [
+        "GEE DAVID NICHOLAS  (CIK 0001547134)",
+        "Cellebrite DI Ltd.  (CIK 0001854587)"
+      ],
+      "trade": {
+        "owner": "GEE DAVID NICHOLAS",
+        "ticker": "CLBT",
+        "code": "S",
+        "shares": 4002,
+        "price": 11.6164,
+        "acquired": false,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0001555132-26-000012:form4-11252026_111157.xml",
+      "filed": "2026-11-24",
+      "names": [
+        "Sohn Catherine A.  (CIK 0001555132)",
+        "Altimmune, Inc.  (CIK 0001326190)"
+      ],
+      "trade": {
+        "owner": "Sohn Catherine A.",
+        "ticker": "ALT",
+        "code": "P",
+        "shares": 10000,
+        "price": 1.43,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0001493152-26-054094:ownership.xml",
+      "filed": "2026-11-19",
+      "names": [
+        "Gubin Moishe  (CIK 0001550934)",
+        "Strawberry Fields REIT, Inc.  (CIK 0001782430)"
+      ],
+      "trade": {
+        "owner": "Gubin Moishe",
+        "ticker": "STRW",
+        "code": "S",
+        "shares": 750000,
+        "price": 12,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0001493152-26-054093:ownership.xml",
+      "filed": "2026-11-20",
+      "names": [
+        "Lerman Ted  (CIK 0002057337)",
+        "Strawberry Fields REIT, Inc.  (CIK 0001782430)"
+      ],
+      "trade": {
+        "owner": "Lerman Ted",
+        "ticker": "STRW",
+        "code": "S",
+        "shares": 1500000,
+        "price": 12,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0001493152-26-054088:ownership.xml",
+      "filed": "2026-11-19",
+      "names": [
+        "Blisko Michael  (CIK 0001987861)",
+        "Strawberry Fields REIT, Inc.  (CIK 0001782430)"
+      ],
+      "trade": {
+        "owner": "Blisko Michael",
+        "ticker": "STRW",
+        "code": "P",
+        "shares": 750000,
+        "price": 12,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0001193125-26-476734:ownership.xml",
+      "filed": "2026-11-24",
+      "names": [
+        "LEE CHAE  (CIK 0001548322)",
+        "MAGNACHIP SEMICONDUCTOR Corp  (CIK 0001325702)"
+      ],
+      "trade": {
+        "owner": "LEE CHAE",
+        "ticker": "MX",
+        "code": "P",
+        "shares": 20000,
+        "price": 2.159,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0001193125-26-476705:ownership.xml",
+      "filed": "2026-11-23",
+      "names": [
+        "HO LAWRENCE YAU LUNG  (CIK 0001958709)",
+        "STUDIO CITY INTERNATIONAL HOLDINGS Ltd  (CIK 0001713334)"
+      ],
+      "trade": {
+        "owner": "HO LAWRENCE YAU LUNG",
+        "ticker": "MSC",
+        "code": "P",
+        "shares": 2624,
+        "price": 0.29,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0001178913-26-005347:ownership.xml",
+      "filed": "2026-11-23",
+      "names": [
+        "Nissan Yitzhak  (CIK 0001970576)",
+        "ELTEK LTD  (CIK 0001024672)"
+      ],
+      "trade": {
+        "owner": "Nissan Yitzhak",
+        "ticker": "ELTK",
+        "code": "P",
+        "shares": 1200,
+        "price": 5.2744,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0001104659-26-131761:tm2630633-1_4seq1.xml",
+      "filed": "2026-11-23",
+      "names": [
+        "Tang Grace Hui  (CIK 0002111556)",
+        "NetEase, Inc.  (CIK 0001110646)"
+      ],
+      "trade": {
+        "owner": "Tang Grace Hui",
+        "ticker": "NTES",
+        "code": "P",
+        "shares": 300,
+        "price": 102.7325,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0000943819-26-000142:form4.xml",
+      "filed": "2026-11-23",
+      "names": [
+        "DelOrefice Christopher  (CIK 0001881430)",
+        "RESMED INC  (CIK 0000943819)"
+      ],
+      "trade": {
+        "owner": "DelOrefice Christopher",
+        "ticker": "RMD",
+        "code": "A",
+        "shares": 1623,
+        "price": 239.38,
+        "acquired": true,
+        "form": "4"
+      }
+    },
     {
       "id": "0002161049-26-000002:primary_doc.xml",
       "filed": "2026-11-24",
@@ -260,176 +430,6 @@
         "shares": 1000,
         "price": 0,
         "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002094759-26-000003:wk-form4_1795556340.xml",
-      "filed": "2026-11-23",
-      "names": [
-        "O'Leary Matthew C.  (CIK 0002094759)",
-        "Workhorse Group Inc.  (CIK 0001425287)"
-      ],
-      "trade": {
-        "owner": "O'Leary Matthew C.",
-        "ticker": "WKHS",
-        "code": "P",
-        "shares": 10000,
-        "price": 1.89,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002093121-26-000011:primary_doc.xml",
-      "filed": "2026-11-24",
-      "names": [
-        "Denier Anthony Michael  (CIK 0002093121)",
-        "Webull Corp  (CIK 0001866364)"
-      ],
-      "trade": {
-        "owner": "Denier Anthony Michael",
-        "ticker": "BULL",
-        "code": "P",
-        "shares": 5000,
-        "price": 4.2263,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002092805-26-000003:primarydocument.xml",
-      "filed": "2026-11-20",
-      "names": [
-        "Fichera Alfred  (CIK 0002092805)",
-        "Hercules Capital, Inc.  (CIK 0001280784)"
-      ],
-      "trade": {
-        "owner": "Fichera Alfred",
-        "ticker": "HTGC",
-        "code": "P",
-        "shares": 2000,
-        "price": 15.105,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002087850-26-000009:primarydocument.xml",
-      "filed": "2026-11-20",
-      "names": [
-        "Thompson Steve B  (CIK 0002087850)",
-        "Hilltop Holdings Inc.  (CIK 0001265131)"
-      ],
-      "trade": {
-        "owner": "Thompson Steve B",
-        "ticker": "HTH",
-        "code": "A",
-        "shares": 472.4416,
-        "price": 0,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002083284-26-000002:wk-form4_1795561420.xml",
-      "filed": "2026-11-20",
-      "names": [
-        "Qadir Faisal  (CIK 0002083284)",
-        "Spectrum Brands Holdings, Inc.  (CIK 0000109177)"
-      ],
-      "trade": {
-        "owner": "Qadir Faisal",
-        "ticker": "SPB",
-        "code": "A",
-        "shares": 3452,
-        "price": 0,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002077096-26-000366:ownership.xml",
-      "filed": "2026-11-23",
-      "names": [
-        "Patzwahl Nancy Koskey  (CIK 0001956423)",
-        "ESPEY MFG & ELECTRONICS CORP  (CIK 0000033533)"
-      ],
-      "trade": {
-        "owner": "Patzwahl Nancy Koskey",
-        "ticker": "ESP",
-        "code": "M",
-        "shares": 2300,
-        "price": 16.54,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002070849-26-000088:wk-form4_1795563233.xml",
-      "filed": "2026-11-20",
-      "names": [
-        "ten Bosch John Roderick  (CIK 0002087126)",
-        "BillionToOne, Inc.  (CIK 0002070849)"
-      ],
-      "trade": {
-        "owner": "ten Bosch John Roderick",
-        "ticker": "BLLN",
-        "code": "G",
-        "shares": 910,
-        "price": 0,
-        "acquired": false,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002069480-26-000012:wk-form4_1795521420.xml",
-      "filed": "2026-11-20",
-      "names": [
-        "JUSKIE JO ANN  (CIK 0002069480)",
-        "Keysight Technologies, Inc.  (CIK 0001601046)"
-      ],
-      "trade": {
-        "owner": "JUSKIE JO ANN",
-        "ticker": "KEYS",
-        "code": "F",
-        "shares": 109,
-        "price": 261.51,
-        "acquired": false,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002067233-26-000023:wk-form4_1795568787.xml",
-      "filed": "2026-11-23",
-      "names": [
-        "Stepien Thomas M  (CIK 0002067233)",
-        "Amprius Technologies, Inc.  (CIK 0001899287)"
-      ],
-      "trade": {
-        "owner": "Stepien Thomas M",
-        "ticker": "AMPX",
-        "code": "S",
-        "shares": 21281,
-        "price": 6.468,
-        "acquired": false,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002057569-26-000043:form4-11242026_101135.xml",
-      "filed": "2026-11-20",
-      "names": [
-        "Arora Tarun  (CIK 0002057569)",
-        "RingCentral, Inc.  (CIK 0001384905)"
-      ],
-      "trade": {
-        "owner": "Arora Tarun",
-        "ticker": "RNG",
-        "code": "F",
-        "shares": 3747,
-        "price": 66.61,
-        "acquired": false,
         "form": "4"
       }
     }

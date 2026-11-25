@@ -1,6 +1,6 @@
 {
   "meta": {
-    "asOf": "2026-11-25T05:02:51.604Z",
+    "asOf": "2026-11-25T12:17:51.201Z",
     "source": "SEC 13F-HR index",
     "rows": 20,
     "delay": "quarterly",
@@ -8,6 +8,27 @@
     "unavailable": false
   },
   "rows": [
+    {
+      "id": "0001577774-26-000011:primary_doc.xml",
+      "filed": "2026-06-30",
+      "names": [
+        "Regal Partners Ltd  (CIK 0001577774)"
+      ]
+    },
+    {
+      "id": "0001213900-26-123876:primary_doc.xml",
+      "filed": "2026-09-30",
+      "names": [
+        "Baader Bank Aktiengesellschaft  (CIK 0001542629)"
+      ]
+    },
+    {
+      "id": "0000895421-26-000360:primary_doc.xml",
+      "filed": "2026-09-30",
+      "names": [
+        "MORGAN STANLEY  (MS, MS-PA, MS-PE, MS-PF, MS-PI, MS-PK, MS-PL, MS-PO, MS-PP, MS-PQ)  (CIK 0000895421)"
+      ]
+    },
     {
       "id": "0002166017-26-000001:primary_doc.xml",
       "filed": "2026-09-30",
@@ -125,27 +146,6 @@
       "filed": "2026-09-30",
       "names": [
         "CWM, LLC  (CIK 0001535847)"
-      ]
-    },
-    {
-      "id": "0001580642-26-007862:primary_doc.xml",
-      "filed": "2026-06-30",
-      "names": [
-        "CWM, LLC  (CIK 0001535847)"
-      ]
-    },
-    {
-      "id": "0001513227-26-000007:primary_doc.xml",
-      "filed": "2026-09-30",
-      "names": [
-        "Smart Portfolios, LLC  (CIK 0001513227)"
-      ]
-    },
-    {
-      "id": "0000921895-26-003243:primary_doc.xml",
-      "filed": "2026-09-30",
-      "names": [
-        "FINDELL CAPITAL MANAGEMENT LLC  (CIK 0001814465)"
       ]
     }
   ],
