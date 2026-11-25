@@ -1,6 +1,6 @@
 {
   "meta": {
-    "asOf": "2026-11-25T21:39:09.134Z",
+    "asOf": "2026-11-25T22:19:28.915Z",
     "source": "FRED public CSV",
     "rows": 13,
     "delay": "daily",
@@ -31,11 +31,11 @@
     },
     {
       "id": "T10Y2Y",
-      "value": 0.28
+      "value": 0.24
     },
     {
       "id": "T10Y3M",
-      "value": 0.55
+      "value": 0.51
     },
     {
       "id": "BAMLH0A0HYM2",
@@ -69,8 +69,8 @@
     "DGS5": 4.69,
     "DGS10": 4.91,
     "DGS30": 5.3,
-    "T10Y2Y": 0.28,
-    "T10Y3M": 0.55,
+    "T10Y2Y": 0.24,
+    "T10Y3M": 0.51,
     "BAMLH0A0HYM2": 3.72,
     "DFF": 3.88,
     "CPIAUCSL": 337.476,

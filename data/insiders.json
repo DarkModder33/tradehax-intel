@@ -1,6 +1,6 @@
 {
   "meta": {
-    "asOf": "2026-11-25T21:37:34.756Z",
+    "asOf": "2026-11-25T22:17:46.476Z",
     "source": "SEC EDGAR Form 4",
     "rows": 25,
     "delay": "hours",
@@ -8,6 +8,40 @@
     "unavailable": false
   },
   "rows": [
+    {
+      "id": "0002154593-26-000005:wk-form4_1795643975.xml",
+      "filed": "2026-11-25",
+      "names": [
+        "Muneka Dritan  (CIK 0002154593)",
+        "Galaxy Digital Inc.  (CIK 0001859392)"
+      ],
+      "trade": {
+        "owner": "Muneka Dritan",
+        "ticker": "GLXY",
+        "code": "M",
+        "shares": 3483,
+        "price": 4.83,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002143781-26-000009:wk-form4_1795644391.xml",
+      "filed": "2026-11-23",
+      "names": [
+        "Heinzelman Kate Elizabeth  (CIK 0002143781)",
+        "Carlyle Group Inc.  (CIK 0001527166)"
+      ],
+      "trade": {
+        "owner": "Heinzelman Kate Elizabeth",
+        "ticker": "CG",
+        "code": "A",
+        "shares": 103,
+        "price": 0,
+        "acquired": true,
+        "form": "4"
+      }
+    },
     {
       "id": "0002128637-26-000011:form4-11252026_021102.xml",
       "filed": "2026-11-25",
@@ -396,40 +430,6 @@
         "shares": 430000,
         "price": 0,
         "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002090710-26-000008:wk-form4_1795641906.xml",
-      "filed": "2026-11-24",
-      "names": [
-        "Shepler Christopher L.  (CIK 0002090710)",
-        "FIRST INTERSTATE BANCSYSTEM INC  (CIK 0000860413)"
-      ],
-      "trade": {
-        "owner": "Shepler Christopher L.",
-        "ticker": "FIBK",
-        "code": "F",
-        "shares": 153,
-        "price": 36.5,
-        "acquired": false,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002086800-26-000012:wk-form4_1795615999.xml",
-      "filed": "2026-11-24",
-      "names": [
-        "Kennedy David Alan  (CIK 0002086800)",
-        "Dell Technologies Inc.  (CIK 0001571996)"
-      ],
-      "trade": {
-        "owner": "Kennedy David Alan",
-        "ticker": "DELL",
-        "code": "F",
-        "shares": 3094,
-        "price": 334.91,
-        "acquired": false,
         "form": "4"
       }
     }
