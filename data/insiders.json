@@ -1,6 +1,6 @@
 {
   "meta": {
-    "asOf": "2026-11-25T21:17:48.294Z",
+    "asOf": "2026-11-25T21:37:34.756Z",
     "source": "SEC EDGAR Form 4",
     "rows": 25,
     "delay": "hours",
@@ -315,6 +315,23 @@
       }
     },
     {
+      "id": "0002110643-26-000023:wk-form4_1795641814.xml",
+      "filed": "2026-11-23",
+      "names": [
+        "Milum Dwayne M  (CIK 0002110643)",
+        "Walmart Inc.  (CIK 0000104169)"
+      ],
+      "trade": {
+        "owner": "Milum Dwayne M",
+        "ticker": "WMT",
+        "code": "S",
+        "shares": 5808,
+        "price": 129.265,
+        "acquired": false,
+        "form": "4"
+      }
+    },
+    {
       "id": "0002110450-26-000016:wk-form4_1795640623.xml",
       "filed": "2026-11-23",
       "names": [
@@ -349,6 +366,23 @@
       }
     },
     {
+      "id": "0002097457-26-000009:wk-form4_1795642528.xml",
+      "filed": "2026-11-24",
+      "names": [
+        "Busia Kojo Osei Frimpong  (CIK 0002097457)",
+        "AngloGold Ashanti PLC  (CIK 0001973832)"
+      ],
+      "trade": {
+        "owner": "Busia Kojo Osei Frimpong",
+        "ticker": "AU",
+        "code": "S",
+        "shares": 400,
+        "price": 76.78,
+        "acquired": false,
+        "form": "4"
+      }
+    },
+    {
       "id": "0002096014-26-000002:form4-11252026_041113.xml",
       "filed": "2026-11-20",
       "names": [
@@ -366,6 +400,23 @@
       }
     },
     {
+      "id": "0002090710-26-000008:wk-form4_1795641906.xml",
+      "filed": "2026-11-24",
+      "names": [
+        "Shepler Christopher L.  (CIK 0002090710)",
+        "FIRST INTERSTATE BANCSYSTEM INC  (CIK 0000860413)"
+      ],
+      "trade": {
+        "owner": "Shepler Christopher L.",
+        "ticker": "FIBK",
+        "code": "F",
+        "shares": 153,
+        "price": 36.5,
+        "acquired": false,
+        "form": "4"
+      }
+    },
+    {
       "id": "0002086800-26-000012:wk-form4_1795615999.xml",
       "filed": "2026-11-24",
       "names": [
@@ -378,57 +429,6 @@
         "code": "F",
         "shares": 3094,
         "price": 334.91,
-        "acquired": false,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002080471-26-000003:form4-11252026_081102.xml",
-      "filed": "2026-11-24",
-      "names": [
-        "Burnette Donald L.  (CIK 0002080471)",
-        "Kodiak AI, Inc.  (CIK 0001853138)"
-      ],
-      "trade": {
-        "owner": "Burnette Donald L.",
-        "ticker": "KDK",
-        "code": "P",
-        "shares": 2000000,
-        "price": 1.1067,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002073591-26-000040:form4-11252026_041106.xml",
-      "filed": "2026-11-24",
-      "names": [
-        "Voskanian Shaunt  (CIK 0002073591)",
-        "Figma, Inc.  (CIK 0001579878)"
-      ],
-      "trade": {
-        "owner": "Voskanian Shaunt",
-        "ticker": "FIG",
-        "code": "S",
-        "shares": 21453,
-        "price": 17.1768,
-        "acquired": false,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002073586-26-000016:form4-11252026_041102.xml",
-      "filed": "2026-11-23",
-      "names": [
-        "Field Dylan  (CIK 0002073586)",
-        "Figma, Inc.  (CIK 0001579878)"
-      ],
-      "trade": {
-        "owner": "Field Dylan",
-        "ticker": "FIG",
-        "code": "G",
-        "shares": 80000,
-        "price": 0,
         "acquired": false,
         "form": "4"
       }

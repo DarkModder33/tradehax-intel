@@ -1,6 +1,6 @@
 {
   "meta": {
-    "asOf": "2026-11-25T21:19:06.946Z",
+    "asOf": "2026-11-25T21:39:09.684Z",
     "source": "Yahoo most actives",
     "rows": 25,
     "delay": "delayed",
@@ -151,8 +151,8 @@
     {
       "symbol": "NIO",
       "price": 2.69,
-      "change": 4.2635713,
-      "volume": 48791868,
+      "change": 4.26357,
+      "volume": 49286488,
       "name": "NIO Inc."
     },
     {
@@ -165,8 +165,8 @@
     {
       "symbol": "F",
       "price": 12.17,
-      "change": 1.8410064,
-      "volume": 48346780,
+      "change": 1.84101,
+      "volume": 49041940,
       "name": "Ford Motor Company"
     },
     {
