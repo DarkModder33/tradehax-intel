@@ -1,6 +1,6 @@
 {
   "meta": {
-    "asOf": "2026-11-25T16:48:00.932Z",
+    "asOf": "2026-11-25T17:17:47.622Z",
     "source": "SEC EDGAR Form 4",
     "rows": 25,
     "delay": "hours",
@@ -38,57 +38,6 @@
         "code": "P",
         "shares": 47982,
         "price": 20.38,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002115436-26-000042:form4.xml",
-      "filed": "2026-11-23",
-      "names": [
-        "Woods Darren W  (CIK 0001555145)",
-        "ExxonMobil Holdings Corp  (CIK 0002115436)"
-      ],
-      "trade": {
-        "owner": "Woods Darren W",
-        "ticker": "XOM",
-        "code": "F",
-        "shares": 42302,
-        "price": 158.16,
-        "acquired": false,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002115436-26-000040:form4.xml",
-      "filed": "2026-11-23",
-      "names": [
-        "Williams Jack P Jr  (CIK 0001495010)",
-        "ExxonMobil Holdings Corp  (CIK 0002115436)"
-      ],
-      "trade": {
-        "owner": "Williams Jack P Jr",
-        "ticker": "XOM",
-        "code": "F",
-        "shares": 20935,
-        "price": 158.16,
-        "acquired": false,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002115436-26-000038:form4.xml",
-      "filed": "2026-11-24",
-      "names": [
-        "Taylor Jeffrey Allen  (CIK 0002027175)",
-        "ExxonMobil Holdings Corp  (CIK 0002115436)"
-      ],
-      "trade": {
-        "owner": "Taylor Jeffrey Allen",
-        "ticker": "XOM",
-        "code": "A",
-        "shares": 65300,
-        "price": 0,
         "acquired": true,
         "form": "4"
       }
@@ -298,23 +247,6 @@
       }
     },
     {
-      "id": "0001995565-26-000004:primary_doc.xml",
-      "filed": "2026-11-20",
-      "names": [
-        "Capralos Spyridon  (CIK 0001995565)",
-        "Star Bulk Carriers Corp.  (CIK 0001386716)"
-      ],
-      "trade": {
-        "owner": "Capralos Spyridon",
-        "ticker": "SBLK",
-        "code": "P",
-        "shares": 1000,
-        "price": 25.59,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
       "id": "0001976408-26-000977:primary_doc.xml",
       "filed": "2026-11-24",
       "names": [
@@ -430,6 +362,74 @@
         "shares": 70000,
         "price": 8.0703,
         "acquired": false,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0001940494-26-000010:wk-form4_1795613333.xml",
+      "filed": "2026-11-23",
+      "names": [
+        "Moldovan Kristopher E.  (CIK 0001940494)",
+        "Vistra Corp.  (CIK 0001692819)"
+      ],
+      "trade": {
+        "owner": "Moldovan Kristopher E.",
+        "ticker": "VST",
+        "code": "F",
+        "shares": 750,
+        "price": 130.16,
+        "acquired": false,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0001921253-26-000006:wk-form4_1795609299.xml",
+      "filed": "2026-11-24",
+      "names": [
+        "Stefanski Gavin B  (CIK 0001921253)",
+        "TFS Financial CORP  (CIK 0001381668)"
+      ],
+      "trade": {
+        "owner": "Stefanski Gavin B",
+        "ticker": "TFSL",
+        "code": "A",
+        "shares": 7313,
+        "price": 0,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0001921069-26-000005:wk-form4_1795609257.xml",
+      "filed": "2026-11-24",
+      "names": [
+        "Stefanski Bradley T  (CIK 0001921069)",
+        "TFS Financial CORP  (CIK 0001381668)"
+      ],
+      "trade": {
+        "owner": "Stefanski Bradley T",
+        "ticker": "TFSL",
+        "code": "A",
+        "shares": 7313,
+        "price": 0,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0001898769-26-000011:wk-form4_1795624419.xml",
+      "filed": "2026-11-24",
+      "names": [
+        "Piconi Robert  (CIK 0001898769)",
+        "Energy Vault Holdings, Inc.  (CIK 0001828536)"
+      ],
+      "trade": {
+        "owner": "Piconi Robert",
+        "ticker": "NRGV",
+        "code": "P",
+        "shares": 25000,
+        "price": 2.43,
+        "acquired": true,
         "form": "4"
       }
     }
