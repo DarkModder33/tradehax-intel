@@ -1,6 +1,6 @@
 {
   "meta": {
-    "asOf": "2026-11-25T18:17:50.411Z",
+    "asOf": "2026-11-25T18:47:47.377Z",
     "source": "SEC 13F-HR index",
     "rows": 20,
     "delay": "quarterly",
@@ -9,6 +9,41 @@
   },
   "rows": [
     {
+      "id": "0002132253-26-000002:primary_doc.xml",
+      "filed": "2026-09-30",
+      "names": [
+        "Allied Private Wealth LLC  (CIK 0002132253)"
+      ]
+    },
+    {
+      "id": "0002058915-26-000007:primary_doc.xml",
+      "filed": "2026-09-30",
+      "names": [
+        "Kilter Group LLC  (CIK 0002058915)"
+      ]
+    },
+    {
+      "id": "0002058426-26-000008:primary_doc.xml",
+      "filed": "2026-09-30",
+      "names": [
+        "Corient IA LP  (CIK 0002058426)"
+      ]
+    },
+    {
+      "id": "0002058426-26-000007:primary_doc.xml",
+      "filed": "2026-06-30",
+      "names": [
+        "Corient IA LP  (CIK 0002058426)"
+      ]
+    },
+    {
+      "id": "0001641761-26-000004:primary_doc.xml",
+      "filed": "2026-09-30",
+      "names": [
+        "1 NORTH WEALTH SERVICES LLC  (CIK 0001641761)"
+      ]
+    },
+    {
       "id": "0001577774-26-000011:primary_doc.xml",
       "filed": "2026-06-30",
       "names": [
@@ -16,10 +51,24 @@
       ]
     },
     {
+      "id": "0001471265-26-000054:primary_doc.xml",
+      "filed": "2026-09-30",
+      "names": [
+        "Northwest Bancshares, Inc.  (NWBI)  (CIK 0001471265)"
+      ]
+    },
+    {
       "id": "0001213900-26-123876:primary_doc.xml",
       "filed": "2026-09-30",
       "names": [
         "Baader Bank Aktiengesellschaft  (CIK 0001542629)"
+      ]
+    },
+    {
+      "id": "0001056559-26-000004:primary_doc.xml",
+      "filed": "2026-09-30",
+      "names": [
+        "NORTH STAR ASSET MANAGEMENT INC  (CIK 0001056559)"
       ]
     },
     {
@@ -97,55 +146,6 @@
       "filed": "2026-09-30",
       "names": [
         "Inspire Advisors, LLC  (CIK 0001810558)"
-      ]
-    },
-    {
-      "id": "0001085146-26-000955:primary_doc.xml",
-      "filed": "2026-09-30",
-      "names": [
-        "Janus Henderson Group Ltd.  (CIK 0001274173)"
-      ]
-    },
-    {
-      "id": "0001062993-26-006245:primary_doc.xml",
-      "filed": "2026-09-30",
-      "names": [
-        "Sunbelt Securities, Inc.  (CIK 0001632932)"
-      ]
-    },
-    {
-      "id": "0000949853-26-000016:primary_doc.xml",
-      "filed": "2026-03-31",
-      "names": [
-        "P.A.W. CAPITAL CORP  (CIK 0000949853)"
-      ]
-    },
-    {
-      "id": "0000949853-26-000015:primary_doc.xml",
-      "filed": "2026-03-31",
-      "names": [
-        "P.A.W. CAPITAL CORP  (CIK 0000949853)"
-      ]
-    },
-    {
-      "id": "0001979884-26-000009:primary_doc.xml",
-      "filed": "2026-09-30",
-      "names": [
-        "Kensington Asset Management, LLC  (CIK 0001979884)"
-      ]
-    },
-    {
-      "id": "0001800798-26-000008:primary_doc.xml",
-      "filed": "2026-09-30",
-      "names": [
-        "Arkadios Wealth Advisors  (CIK 0001800798)"
-      ]
-    },
-    {
-      "id": "0001625959-26-000004:primary_doc.xml",
-      "filed": "2026-09-30",
-      "names": [
-        "Arvest Bank Trust Division  (CIK 0001625959)"
       ]
     }
   ],
