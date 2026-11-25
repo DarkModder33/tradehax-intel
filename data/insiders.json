@@ -1,6 +1,6 @@
 {
   "meta": {
-    "asOf": "2026-11-25T14:47:57.695Z",
+    "asOf": "2026-11-25T15:17:45.639Z",
     "source": "SEC EDGAR Form 4",
     "rows": 25,
     "delay": "hours",
@@ -21,6 +21,23 @@
         "code": "P",
         "shares": 60000,
         "price": 1731429,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002117905-26-000052:primary_doc.xml",
+      "filed": "2026-11-24",
+      "names": [
+        "Sousa Mauad Bruno  (CIK 0002117905)",
+        "Aura Minerals Inc.  (CIK 0001468642)"
+      ],
+      "trade": {
+        "owner": "Sousa Mauad Bruno",
+        "ticker": "AUGO",
+        "code": "P",
+        "shares": 47982,
+        "price": 20.38,
         "acquired": true,
         "form": "4"
       }
@@ -73,6 +90,40 @@
         "shares": 5000,
         "price": 0,
         "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002028304-26-000005:wk-form4_1795618675.xml",
+      "filed": "2026-11-23",
+      "names": [
+        "Bunch Charles Alexander  (CIK 0002028304)",
+        "TWFG, Inc.  (CIK 0002007596)"
+      ],
+      "trade": {
+        "owner": "Bunch Charles Alexander",
+        "ticker": "TWFG",
+        "code": "S",
+        "shares": 5200,
+        "price": 25.5,
+        "acquired": false,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0001976408-26-000970:primary_doc.xml",
+      "filed": "2026-11-23",
+      "names": [
+        "Offer Or  (CIK 0001910424)",
+        "SIMILARWEB LTD.  (CIK 0001842731)"
+      ],
+      "trade": {
+        "owner": "Offer Or",
+        "ticker": "SMWB",
+        "code": "S",
+        "shares": 70000,
+        "price": 8.0703,
+        "acquired": false,
         "form": "4"
       }
     },
@@ -379,57 +430,6 @@
         "shares": 5682,
         "price": 44.7229,
         "acquired": false,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0001565687-26-000170:form4.xml",
-      "filed": "2026-11-24",
-      "names": [
-        "Harrison David Benjamin  (CIK 0002028388)",
-        "Intapp, Inc.  (CIK 0001565687)"
-      ],
-      "trade": {
-        "owner": "Harrison David Benjamin",
-        "ticker": "INTA",
-        "code": "S",
-        "shares": 2272,
-        "price": 45,
-        "acquired": false,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0001565687-26-000169:form4.xml",
-      "filed": "2026-11-23",
-      "names": [
-        "HALL JOHN T  (CIK 0001106566)",
-        "Intapp, Inc.  (CIK 0001565687)"
-      ],
-      "trade": {
-        "owner": "HALL JOHN T",
-        "ticker": "INTA",
-        "code": "M",
-        "shares": 3000,
-        "price": 7.45,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0001555132-26-000012:form4-11252026_111157.xml",
-      "filed": "2026-11-24",
-      "names": [
-        "Sohn Catherine A.  (CIK 0001555132)",
-        "Altimmune, Inc.  (CIK 0001326190)"
-      ],
-      "trade": {
-        "owner": "Sohn Catherine A.",
-        "ticker": "ALT",
-        "code": "P",
-        "shares": 10000,
-        "price": 1.43,
-        "acquired": true,
         "form": "4"
       }
     }

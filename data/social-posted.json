@@ -255,9 +255,32 @@
     "SECTORS|rotation|2026-11-25": [
       "telegram",
       "discord"
+    ],
+    "NVDA|mover|2026-11-25": [
+      "discord"
+    ],
+    "QQQ|mover|2026-11-25": [
+      "telegram",
+      "discord"
+    ],
+    "alert:mover|AMD|2026-11-25": [
+      "telegram",
+      "discord"
+    ],
+    "alert:mover|MSTR|2026-11-25": [
+      "telegram",
+      "discord"
+    ],
+    "alert:block|SPY261218P00700000|2026-11-25T14:41:05.440924096Z": [
+      "telegram",
+      "discord"
+    ],
+    "alert:sweep|SPY261203P00685000|2026-11-25T14:58:39.193487549Z": [
+      "telegram",
+      "discord"
     ]
   },
-  "updatedAt": "2026-11-25T14:49:53.183Z",
+  "updatedAt": "2026-11-25T15:19:41.311Z",
   "messages": {
     "WMT|earnings|2026-11-19": {
       "telegram": "23",
@@ -434,11 +457,34 @@
     "SECTORS|rotation|2026-11-25": {
       "telegram": "66",
       "discord": "1575161610215882856"
+    },
+    "NVDA|mover|2026-11-25": {
+      "discord": "1575169105835589745"
+    },
+    "QQQ|mover|2026-11-25": {
+      "telegram": "67",
+      "discord": "1575169109568790632"
+    },
+    "alert:mover|AMD|2026-11-25": {
+      "telegram": "68",
+      "discord": "1575169114329063435"
+    },
+    "alert:mover|MSTR|2026-11-25": {
+      "telegram": "69",
+      "discord": "1575169116162101380"
+    },
+    "alert:block|SPY261218P00700000|2026-11-25T14:41:05.440924096Z": {
+      "telegram": "70",
+      "discord": "1575169118989189251"
+    },
+    "alert:sweep|SPY261203P00685000|2026-11-25T14:58:39.193487549Z": {
+      "telegram": "71",
+      "discord": "1575169121182818449"
     }
   },
   "alertDays": {
     "2026-11-23": 2,
     "2026-11-24": 30,
-    "2026-11-25": 1
+    "2026-11-25": 5
   }
 }
