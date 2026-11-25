@@ -1,6 +1,6 @@
 {
   "meta": {
-    "asOf": "2026-11-25T15:17:45.639Z",
+    "asOf": "2026-11-25T16:48:00.932Z",
     "source": "SEC EDGAR Form 4",
     "rows": 25,
     "delay": "hours",
@@ -38,6 +38,193 @@
         "code": "P",
         "shares": 47982,
         "price": 20.38,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002115436-26-000042:form4.xml",
+      "filed": "2026-11-23",
+      "names": [
+        "Woods Darren W  (CIK 0001555145)",
+        "ExxonMobil Holdings Corp  (CIK 0002115436)"
+      ],
+      "trade": {
+        "owner": "Woods Darren W",
+        "ticker": "XOM",
+        "code": "F",
+        "shares": 42302,
+        "price": 158.16,
+        "acquired": false,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002115436-26-000040:form4.xml",
+      "filed": "2026-11-23",
+      "names": [
+        "Williams Jack P Jr  (CIK 0001495010)",
+        "ExxonMobil Holdings Corp  (CIK 0002115436)"
+      ],
+      "trade": {
+        "owner": "Williams Jack P Jr",
+        "ticker": "XOM",
+        "code": "F",
+        "shares": 20935,
+        "price": 158.16,
+        "acquired": false,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002115436-26-000038:form4.xml",
+      "filed": "2026-11-24",
+      "names": [
+        "Taylor Jeffrey Allen  (CIK 0002027175)",
+        "ExxonMobil Holdings Corp  (CIK 0002115436)"
+      ],
+      "trade": {
+        "owner": "Taylor Jeffrey Allen",
+        "ticker": "XOM",
+        "code": "A",
+        "shares": 65300,
+        "price": 0,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002115436-26-000036:form4.xml",
+      "filed": "2026-11-23",
+      "names": [
+        "Talley Darrin L  (CIK 0001918108)",
+        "ExxonMobil Holdings Corp  (CIK 0002115436)"
+      ],
+      "trade": {
+        "owner": "Talley Darrin L",
+        "ticker": "XOM",
+        "code": "F",
+        "shares": 6731,
+        "price": 158.16,
+        "acquired": false,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002115436-26-000034:form4.xml",
+      "filed": "2026-11-23",
+      "names": [
+        "Gibbs Jon M.  (CIK 0001853120)",
+        "ExxonMobil Holdings Corp  (CIK 0002115436)"
+      ],
+      "trade": {
+        "owner": "Gibbs Jon M.",
+        "ticker": "XOM",
+        "code": "F",
+        "shares": 6946,
+        "price": 158.16,
+        "acquired": false,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002115436-26-000032:form4.xml",
+      "filed": "2026-11-23",
+      "names": [
+        "Hansen Neil A  (CIK 0001744695)",
+        "ExxonMobil Holdings Corp  (CIK 0002115436)"
+      ],
+      "trade": {
+        "owner": "Hansen Neil A",
+        "ticker": "XOM",
+        "code": "F",
+        "shares": 17650,
+        "price": 158.16,
+        "acquired": false,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002115436-26-000030:form4.xml",
+      "filed": "2026-11-23",
+      "names": [
+        "Gjervik Staale  (CIK 0002098746)",
+        "ExxonMobil Holdings Corp  (CIK 0002115436)"
+      ],
+      "trade": {
+        "owner": "Gjervik Staale",
+        "ticker": "XOM",
+        "code": "F",
+        "shares": 6859,
+        "price": 158.16,
+        "acquired": false,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002115436-26-000028:form4.xml",
+      "filed": "2026-11-24",
+      "names": [
+        "Crocker Matthew Richard  (CIK 0002068398)",
+        "ExxonMobil Holdings Corp  (CIK 0002115436)"
+      ],
+      "trade": {
+        "owner": "Crocker Matthew Richard",
+        "ticker": "XOM",
+        "code": "A",
+        "shares": 76400,
+        "price": 0,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002115436-26-000026:form4.xml",
+      "filed": "2026-11-24",
+      "names": [
+        "Buchanan Susan Elaine  (CIK 0002133453)",
+        "ExxonMobil Holdings Corp  (CIK 0002115436)"
+      ],
+      "trade": {
+        "owner": "Buchanan Susan Elaine",
+        "ticker": "XOM",
+        "code": "A",
+        "shares": 24100,
+        "price": 0,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002115436-26-000024:form4.xml",
+      "filed": "2026-11-24",
+      "names": [
+        "Ammann Daniel  (CIK 0001492931)",
+        "ExxonMobil Holdings Corp  (CIK 0002115436)"
+      ],
+      "trade": {
+        "owner": "Ammann Daniel",
+        "ticker": "XOM",
+        "code": "A",
+        "shares": 102800,
+        "price": 0,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002106572-26-000007:primary_doc.xml",
+      "filed": "2026-11-11",
+      "names": [
+        "EEME Energy SPV I, LLC  (CIK 0002106572)",
+        "XCF Global, Inc.  (CIK 0002019793)"
+      ],
+      "trade": {
+        "owner": "EEME Energy SPV I, LLC",
+        "ticker": "SAFX",
+        "code": "A",
+        "shares": 1335462,
+        "price": 0.1785,
         "acquired": true,
         "form": "4"
       }
@@ -111,6 +298,125 @@
       }
     },
     {
+      "id": "0001995565-26-000004:primary_doc.xml",
+      "filed": "2026-11-20",
+      "names": [
+        "Capralos Spyridon  (CIK 0001995565)",
+        "Star Bulk Carriers Corp.  (CIK 0001386716)"
+      ],
+      "trade": {
+        "owner": "Capralos Spyridon",
+        "ticker": "SBLK",
+        "code": "P",
+        "shares": 1000,
+        "price": 25.59,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0001976408-26-000977:primary_doc.xml",
+      "filed": "2026-11-24",
+      "names": [
+        "Metanes Abdallah  (CIK 0002112373)",
+        "ZIM Integrated Shipping Services Ltd.  (CIK 0001654126)"
+      ],
+      "trade": {
+        "owner": "Metanes Abdallah",
+        "ticker": "ZIM",
+        "code": "S",
+        "shares": 1249,
+        "price": 30.5,
+        "acquired": false,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0001976408-26-000976:primary_doc.xml",
+      "filed": "2026-11-24",
+      "names": [
+        "Dotan Saar  (CIK 0001966890)",
+        "ZIM Integrated Shipping Services Ltd.  (CIK 0001654126)"
+      ],
+      "trade": {
+        "owner": "Dotan Saar",
+        "ticker": "ZIM",
+        "code": "S",
+        "shares": 67200,
+        "price": 30.1489,
+        "acquired": false,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0001976408-26-000975:primary_doc.xml",
+      "filed": "2026-11-23",
+      "names": [
+        "Shaul William  (CIK 0001966870)",
+        "ZIM Integrated Shipping Services Ltd.  (CIK 0001654126)"
+      ],
+      "trade": {
+        "owner": "Shaul William",
+        "ticker": "ZIM",
+        "code": "S",
+        "shares": 2235,
+        "price": 29.84,
+        "acquired": false,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0001976408-26-000974:primary_doc.xml",
+      "filed": "2026-11-23",
+      "names": [
+        "Epstein Nir  (CIK 0001966889)",
+        "ZIM Integrated Shipping Services Ltd.  (CIK 0001654126)"
+      ],
+      "trade": {
+        "owner": "Epstein Nir",
+        "ticker": "ZIM",
+        "code": "S",
+        "shares": 2235,
+        "price": 30,
+        "acquired": false,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0001976408-26-000973:primary_doc.xml",
+      "filed": "2026-11-23",
+      "names": [
+        "Kalinski Hani  (CIK 0001966882)",
+        "ZIM Integrated Shipping Services Ltd.  (CIK 0001654126)"
+      ],
+      "trade": {
+        "owner": "Kalinski Hani",
+        "ticker": "ZIM",
+        "code": "S",
+        "shares": 5029,
+        "price": 30,
+        "acquired": false,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0001976408-26-000971:primary_doc.xml",
+      "filed": "2026-11-23",
+      "names": [
+        "SEROUSSI YAIR  (CIK 0001217656)",
+        "ZIM Integrated Shipping Services Ltd.  (CIK 0001654126)"
+      ],
+      "trade": {
+        "owner": "SEROUSSI YAIR",
+        "ticker": "ZIM",
+        "code": "S",
+        "shares": 2235,
+        "price": 30,
+        "acquired": false,
+        "form": "4"
+      }
+    },
+    {
       "id": "0001976408-26-000970:primary_doc.xml",
       "filed": "2026-11-23",
       "names": [
@@ -123,312 +429,6 @@
         "code": "S",
         "shares": 70000,
         "price": 8.0703,
-        "acquired": false,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0001940494-26-000010:wk-form4_1795613333.xml",
-      "filed": "2026-11-23",
-      "names": [
-        "Moldovan Kristopher E.  (CIK 0001940494)",
-        "Vistra Corp.  (CIK 0001692819)"
-      ],
-      "trade": {
-        "owner": "Moldovan Kristopher E.",
-        "ticker": "VST",
-        "code": "F",
-        "shares": 750,
-        "price": 130.16,
-        "acquired": false,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0001921253-26-000006:wk-form4_1795609299.xml",
-      "filed": "2026-11-24",
-      "names": [
-        "Stefanski Gavin B  (CIK 0001921253)",
-        "TFS Financial CORP  (CIK 0001381668)"
-      ],
-      "trade": {
-        "owner": "Stefanski Gavin B",
-        "ticker": "TFSL",
-        "code": "A",
-        "shares": 7313,
-        "price": 0,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0001921069-26-000005:wk-form4_1795609257.xml",
-      "filed": "2026-11-24",
-      "names": [
-        "Stefanski Bradley T  (CIK 0001921069)",
-        "TFS Financial CORP  (CIK 0001381668)"
-      ],
-      "trade": {
-        "owner": "Stefanski Bradley T",
-        "ticker": "TFSL",
-        "code": "A",
-        "shares": 7313,
-        "price": 0,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0001853874-26-000020:wk-form4_1795610953.xml",
-      "filed": "2026-11-24",
-      "names": [
-        "McLaughlin Matthew F.  (CIK 0001853874)",
-        "COMSCORE, INC.  (CIK 0001158172)"
-      ],
-      "trade": {
-        "owner": "McLaughlin Matthew F.",
-        "ticker": "SCOR",
-        "code": "P",
-        "shares": 25907,
-        "price": 3.43,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0001828057-26-000022:wk-form4_1795611159.xml",
-      "filed": "2026-11-24",
-      "names": [
-        "GOETTER GINA M  (CIK 0001828057)",
-        "HASBRO, INC.  (CIK 0000046080)"
-      ],
-      "trade": {
-        "owner": "GOETTER GINA M",
-        "ticker": "HAS",
-        "code": "S",
-        "shares": 2240,
-        "price": 112.2482,
-        "acquired": false,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0001820740-26-000006:wk-form4_1795609212.xml",
-      "filed": "2026-11-24",
-      "names": [
-        "Rubino Andrew J  (CIK 0001820740)",
-        "TFS Financial CORP  (CIK 0001381668)"
-      ],
-      "trade": {
-        "owner": "Rubino Andrew J",
-        "ticker": "TFSL",
-        "code": "A",
-        "shares": 14625,
-        "price": 0,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0001804456-26-000004:wk-form4_1795614758.xml",
-      "filed": "2026-11-23",
-      "names": [
-        "Pearson David Todd  (CIK 0001804456)",
-        "SAUL CENTERS, INC.  (CIK 0000907254)"
-      ],
-      "trade": {
-        "owner": "Pearson David Todd",
-        "ticker": "BFS",
-        "code": "P",
-        "shares": 3716,
-        "price": 26.835,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0001753926-26-002250:form4.xml",
-      "filed": "2026-11-24",
-      "names": [
-        "Williams Gregg  (CIK 0001624919)",
-        "Vivani Medical, Inc.  (CIK 0001266806)"
-      ],
-      "trade": {
-        "owner": "Williams Gregg",
-        "ticker": "VANI",
-        "code": "P",
-        "shares": 124285,
-        "price": 1.288,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0001662205-26-000025:wk-form4_1795609639.xml",
-      "filed": "2026-11-23",
-      "names": [
-        "Radakovich Lynn Vojvodich  (CIK 0001662205)",
-        "Dell Technologies Inc.  (CIK 0001571996)"
-      ],
-      "trade": {
-        "owner": "Radakovich Lynn Vojvodich",
-        "ticker": "DELL",
-        "code": "M",
-        "shares": 2022,
-        "price": 31.14,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0001628280-26-075888:wk-form4_1795616207.xml",
-      "filed": "2026-11-23",
-      "names": [
-        "Lo Hoi Chun  (CIK 0002117963)",
-        "Prenetics Global Ltd  (CIK 0001876431)"
-      ],
-      "trade": {
-        "owner": "Lo Hoi Chun",
-        "ticker": "PRE",
-        "code": "P",
-        "shares": 9200,
-        "price": 9.6,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0001628280-26-075886:wk-form4_1795615799.xml",
-      "filed": "2026-11-20",
-      "names": [
-        "Yeung Danny Sheng Wu  (CIK 0001930070)",
-        "Prenetics Global Ltd  (CIK 0001876431)"
-      ],
-      "trade": {
-        "owner": "Yeung Danny Sheng Wu",
-        "ticker": "PRE",
-        "code": "P",
-        "shares": 15000,
-        "price": 9.88,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0001628280-26-075880:wk-form4_1795614529.xml",
-      "filed": "2026-11-24",
-      "names": [
-        "Lin Lawrence Y.  (CIK 0002045844)",
-        "Azenta, Inc.  (CIK 0000933974)"
-      ],
-      "trade": {
-        "owner": "Lin Lawrence Y.",
-        "ticker": "AZTA",
-        "code": "F",
-        "shares": 5350,
-        "price": 47.54,
-        "acquired": false,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0001628280-26-075879:wk-form4_1795614446.xml",
-      "filed": "2026-11-24",
-      "names": [
-        "Starr Ephraim  (CIK 0002069816)",
-        "Azenta, Inc.  (CIK 0000933974)"
-      ],
-      "trade": {
-        "owner": "Starr Ephraim",
-        "ticker": "AZTA",
-        "code": "F",
-        "shares": 4956,
-        "price": 47.54,
-        "acquired": false,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0001628280-26-075878:wk-form4_1795614335.xml",
-      "filed": "2026-11-24",
-      "names": [
-        "Pirogova Olga  (CIK 0002000496)",
-        "Azenta, Inc.  (CIK 0000933974)"
-      ],
-      "trade": {
-        "owner": "Pirogova Olga",
-        "ticker": "AZTA",
-        "code": "F",
-        "shares": 2677,
-        "price": 47.54,
-        "acquired": false,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0001628280-26-075874:wk-form4_1795614115.xml",
-      "filed": "2026-11-24",
-      "names": [
-        "Troim Tor Olav  (CIK 0001709630)",
-        "Borr Drilling Ltd  (CIK 0001715497)"
-      ],
-      "trade": {
-        "owner": "Troim Tor Olav",
-        "ticker": "BORR",
-        "code": "P",
-        "shares": 1000000,
-        "price": 3.9373,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0001628280-26-075863:wk-form4_1795606866.xml",
-      "filed": "2026-11-24",
-      "names": [
-        "GEE DAVID NICHOLAS  (CIK 0001547134)",
-        "Cellebrite DI Ltd.  (CIK 0001854587)"
-      ],
-      "trade": {
-        "owner": "GEE DAVID NICHOLAS",
-        "ticker": "CLBT",
-        "code": "S",
-        "shares": 4002,
-        "price": 11.6164,
-        "acquired": false,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0001566345-26-000010:wk-form4_1795609158.xml",
-      "filed": "2026-11-24",
-      "names": [
-        "Zbanek Cathy W  (CIK 0001566345)",
-        "TFS Financial CORP  (CIK 0001381668)"
-      ],
-      "trade": {
-        "owner": "Zbanek Cathy W",
-        "ticker": "TFSL",
-        "code": "A",
-        "shares": 26775,
-        "price": 0,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0001565687-26-000171:form4.xml",
-      "filed": "2026-11-24",
-      "names": [
-        "Sedgwick Dustin de Forest  (CIK 0002084374)",
-        "Intapp, Inc.  (CIK 0001565687)"
-      ],
-      "trade": {
-        "owner": "Sedgwick Dustin de Forest",
-        "ticker": "INTA",
-        "code": "S",
-        "shares": 5682,
-        "price": 44.7229,
         "acquired": false,
         "form": "4"
       }

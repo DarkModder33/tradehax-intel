@@ -257,7 +257,8 @@
       "discord"
     ],
     "NVDA|mover|2026-11-25": [
-      "discord"
+      "discord",
+      "telegram"
     ],
     "QQQ|mover|2026-11-25": [
       "telegram",
@@ -278,9 +279,28 @@
     "alert:sweep|SPY261203P00685000|2026-11-25T14:58:39.193487549Z": [
       "telegram",
       "discord"
+    ],
+    "alert:block|QQQ261130P00610000|2026-11-25T15:53:30.011611418Z": [
+      "discord"
+    ],
+    "alert:mover|NVDA|2026-11-25": [
+      "telegram",
+      "discord"
+    ],
+    "alert:mover|ORCL|2026-11-25": [
+      "telegram",
+      "discord"
+    ],
+    "alert:block|MSTR271217P00095000|2026-11-25T15:55:30.407794005Z": [
+      "telegram",
+      "discord"
+    ],
+    "alert:sweep|NVDA271217C00210000|2026-11-25T15:57:26.848738146Z": [
+      "telegram",
+      "discord"
     ]
   },
-  "updatedAt": "2026-11-25T15:19:41.311Z",
+  "updatedAt": "2026-11-25T16:50:05.071Z",
   "messages": {
     "WMT|earnings|2026-11-19": {
       "telegram": "23",
@@ -459,7 +479,8 @@
       "discord": "1575161610215882856"
     },
     "NVDA|mover|2026-11-25": {
-      "discord": "1575169105835589745"
+      "discord": "1575169105835589745",
+      "telegram": "72"
     },
     "QQQ|mover|2026-11-25": {
       "telegram": "67",
@@ -480,11 +501,30 @@
     "alert:sweep|SPY261203P00685000|2026-11-25T14:58:39.193487549Z": {
       "telegram": "71",
       "discord": "1575169121182818449"
+    },
+    "alert:block|QQQ261130P00610000|2026-11-25T15:53:30.011611418Z": {
+      "discord": "1575191861880954961"
+    },
+    "alert:mover|NVDA|2026-11-25": {
+      "telegram": "73",
+      "discord": "1575191866519855215"
+    },
+    "alert:mover|ORCL|2026-11-25": {
+      "telegram": "74",
+      "discord": "1575191869040758838"
+    },
+    "alert:block|MSTR271217P00095000|2026-11-25T15:55:30.407794005Z": {
+      "telegram": "75",
+      "discord": "1575191871729442951"
+    },
+    "alert:sweep|NVDA271217C00210000|2026-11-25T15:57:26.848738146Z": {
+      "telegram": "76",
+      "discord": "1575191874367393955"
     }
   },
   "alertDays": {
     "2026-11-23": 2,
     "2026-11-24": 30,
-    "2026-11-25": 5
+    "2026-11-25": 10
   }
 }
