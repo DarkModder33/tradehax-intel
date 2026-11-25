@@ -1,6 +1,6 @@
 {
   "meta": {
-    "asOf": "2026-11-25T19:47:44.029Z",
+    "asOf": "2026-11-25T20:18:22.189Z",
     "source": "SEC 13F-HR index",
     "rows": 20,
     "delay": "quarterly",
@@ -8,6 +8,13 @@
     "unavailable": false
   },
   "rows": [
+    {
+      "id": "0002137529-26-000004:primary_doc.xml",
+      "filed": "2026-03-31",
+      "names": [
+        "Regatta Research & Money Management  (CIK 0002137529)"
+      ]
+    },
     {
       "id": "0002137529-26-000003:primary_doc.xml",
       "filed": "2025-12-31",
@@ -41,6 +48,13 @@
       "filed": "2026-06-30",
       "names": [
         "Corient IA LP  (CIK 0002058426)"
+      ]
+    },
+    {
+      "id": "0001729254-26-000004:primary_doc.xml",
+      "filed": "2026-09-30",
+      "names": [
+        "Front Row Advisors LLC  (CIK 0001729254)"
       ]
     },
     {
@@ -132,20 +146,6 @@
       "filed": "2026-09-30",
       "names": [
         "Revere Asset Management, Inc  (CIK 0001849529)"
-      ]
-    },
-    {
-      "id": "0001774207-26-000005:primary_doc.xml",
-      "filed": "2026-09-30",
-      "names": [
-        "Jupiter Wealth Management LLC  (CIK 0001774207)"
-      ]
-    },
-    {
-      "id": "0001666363-26-000006:primary_doc.xml",
-      "filed": "2026-09-30",
-      "names": [
-        "Venturi Wealth Management, LLC  (CIK 0001666363)"
       ]
     }
   ],
