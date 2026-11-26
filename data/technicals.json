@@ -1,6 +1,6 @@
 {
   "meta": {
-    "asOf": "2026-11-26T19:49:14.813Z",
+    "asOf": "2026-11-26T20:19:08.471Z",
     "source": "Alpaca SIP daily bars via worker",
     "rows": 51,
     "delay": "daily",
