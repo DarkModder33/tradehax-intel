@@ -1,6 +1,6 @@
 {
   "meta": {
-    "asOf": "2026-11-25T18:49:53.373Z",
+    "asOf": "2026-11-26T04:26:45.615Z",
     "source": "Nasdaq report dates, Alpaca SIP closes, Cboe/Alpaca straddles",
     "rows": 128,
     "delay": "daily",
@@ -1811,27 +1811,27 @@
       "spot": 184.17,
       "avgMove": 0.09293342852418479,
       "samples": 4,
-      "capturedAt": "2026-11-25T18:49:48.472Z"
+      "capturedAt": "2026-11-26T04:26:42.364Z"
     },
     {
       "sym": "AVGO",
       "reportDate": "2026-12-09",
-      "implied": null,
-      "impliedExpiry": null,
-      "spot": 295.365,
+      "implied": 0.1411376751854905,
+      "impliedExpiry": "2026-12-11",
+      "spot": 303.25,
       "avgMove": 0.08818401143131988,
       "samples": 4,
-      "capturedAt": "2026-11-25T18:49:40.950Z"
+      "capturedAt": "2026-11-26T04:26:37.691Z"
     },
     {
       "sym": "COST",
       "reportDate": "2026-12-10",
-      "implied": null,
-      "impliedExpiry": null,
-      "spot": null,
+      "implied": 0.05374430358286537,
+      "impliedExpiry": "2026-12-11",
+      "spot": 1095.9301,
       "avgMove": 0.021812712303123455,
       "samples": 4,
-      "capturedAt": "2026-11-25T18:49:44.927Z"
+      "capturedAt": "2026-11-26T04:26:40.189Z"
     },
     {
       "sym": "ORCL",
@@ -1841,7 +1841,7 @@
       "spot": null,
       "avgMove": 0.08859002192527357,
       "samples": 4,
-      "capturedAt": "2026-11-25T18:49:49.016Z"
+      "capturedAt": "2026-11-26T04:26:42.656Z"
     },
     {
       "sym": "JPM",
@@ -1851,7 +1851,7 @@
       "spot": null,
       "avgMove": 0.028966046547422075,
       "samples": 4,
-      "capturedAt": "2026-11-25T18:49:41.921Z"
+      "capturedAt": "2026-11-26T04:26:38.323Z"
     },
     {
       "sym": "BAC",
@@ -1861,7 +1861,7 @@
       "spot": null,
       "avgMove": 0.028940391193794185,
       "samples": 4,
-      "capturedAt": "2026-11-25T18:49:46.795Z"
+      "capturedAt": "2026-11-26T04:26:41.410Z"
     },
     {
       "sym": "NFLX",
@@ -1871,7 +1871,7 @@
       "spot": null,
       "avgMove": 0.06490348455041686,
       "samples": 4,
-      "capturedAt": "2026-11-25T18:49:47.613Z"
+      "capturedAt": "2026-11-26T04:26:41.996Z"
     }
   ],
   "captures": {
@@ -1879,13 +1879,19 @@
       "implied": 0.11578975946136721,
       "expiry": "2026-12-04",
       "spot": 184.17,
-      "at": "2026-11-25T18:49:48.472Z"
+      "at": "2026-11-26T04:26:42.364Z"
     },
     "AVGO|2026-12-09": {
-      "implied": 0.13970479454334161,
+      "implied": 0.1411376751854905,
       "expiry": "2026-12-11",
-      "spot": 303.4971,
-      "at": "2026-11-25T12:19:37.638Z"
+      "spot": 303.25,
+      "at": "2026-11-26T04:26:37.691Z"
+    },
+    "COST|2026-12-10": {
+      "implied": 0.05374430358286537,
+      "expiry": "2026-12-11",
+      "spot": 1095.9301,
+      "at": "2026-11-26T04:26:40.189Z"
     }
   }
 }
