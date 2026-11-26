@@ -1,6 +1,6 @@
 {
   "meta": {
-    "asOf": "2026-11-26T20:17:50.441Z",
+    "asOf": "2026-11-26T20:47:44.054Z",
     "source": "House Clerk periodic transaction reports",
     "rows": 1191,
     "delay": "daily",
@@ -24411,6 +24411,6 @@
   ],
   "senate": {
     "unavailable": true,
-    "error": "403 https://efdsearch.senate.gov/search/"
+    "error": "Senate eFD answered, but the report table needs the agreement cookie. Rows were not parsed."
   }
 }
