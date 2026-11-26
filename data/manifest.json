@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-26T16:49:48.395Z",
+  "generatedAt": "2026-11-26T17:19:02.374Z",
   "datasets": {
     "insiders": {
-      "asOf": "2026-11-26T16:47:58.845Z",
+      "asOf": "2026-11-26T17:17:45.403Z",
       "source": "SEC EDGAR Form 4",
       "rows": 25,
       "delay": "hours",
@@ -10,7 +10,7 @@
       "unavailable": false
     },
     "congress": {
-      "asOf": "2026-11-26T16:47:59.379Z",
+      "asOf": "2026-11-26T17:17:45.625Z",
       "source": "House Clerk periodic transaction reports",
       "rows": 1191,
       "delay": "daily",
@@ -18,7 +18,7 @@
       "unavailable": false
     },
     "institutions": {
-      "asOf": "2026-11-26T16:48:00.993Z",
+      "asOf": "2026-11-26T17:17:46.032Z",
       "source": "SEC 13F-HR index",
       "rows": 20,
       "delay": "quarterly",
@@ -26,7 +26,7 @@
       "unavailable": false
     },
     "oi-change": {
-      "asOf": "2026-11-26T16:48:29.660Z",
+      "asOf": "2026-11-26T17:18:01.797Z",
       "source": "Cboe delayed, Alpaca indicative open interest",
       "rows": 0,
       "delay": "daily",
@@ -35,16 +35,16 @@
       "coverage": 1
     },
     "iv": {
-      "asOf": "2026-11-26T16:49:04.161Z",
+      "asOf": "2026-11-26T17:18:28.129Z",
       "source": "Cboe iv30",
-      "rows": 47,
+      "rows": 48,
       "delay": "about 15 min",
       "stale": false,
       "unavailable": false,
-      "coverage": 0.9215686274509803
+      "coverage": 0.9411764705882353
     },
     "shorts": {
-      "asOf": "2026-11-26T16:49:20.654Z",
+      "asOf": "2026-11-26T17:18:41.778Z",
       "source": "FINRA consolidated short interest",
       "rows": 51,
       "delay": "twice monthly",
@@ -53,7 +53,7 @@
       "coverage": 1
     },
     "ftd": {
-      "asOf": "2026-11-26T16:49:21.683Z",
+      "asOf": "2026-11-26T17:18:42.627Z",
       "source": "SEC fails-to-deliver",
       "rows": 421,
       "delay": "about 3 weeks",
@@ -62,7 +62,7 @@
       "coverage": 1
     },
     "ats": {
-      "asOf": "2026-11-26T16:49:43.736Z",
+      "asOf": "2026-11-26T17:18:57.737Z",
       "source": "FINRA ATS weekly",
       "rows": 100,
       "delay": "2 to 4 weeks",
@@ -71,7 +71,7 @@
       "coverage": 0.9803921568627451
     },
     "calendar": {
-      "asOf": "2026-11-26T16:49:43.853Z",
+      "asOf": "2026-11-26T17:18:57.826Z",
       "source": "Nasdaq calendars",
       "rows": 54,
       "delay": "daily",
@@ -86,7 +86,7 @@
       "unavailable": false
     },
     "macro": {
-      "asOf": "2026-11-26T16:49:46.253Z",
+      "asOf": "2026-11-26T17:19:00.622Z",
       "source": "FRED public CSV",
       "rows": 13,
       "delay": "daily",
@@ -95,7 +95,7 @@
       "coverage": 1
     },
     "etf-flows": {
-      "asOf": "2026-11-26T16:49:46.607Z",
+      "asOf": "2026-11-26T17:19:00.879Z",
       "source": "SPDR NAV history",
       "rows": 20,
       "delay": "daily",
@@ -104,7 +104,7 @@
       "coverage": 0.08333333333333333
     },
     "screener": {
-      "asOf": "2026-11-26T16:49:46.826Z",
+      "asOf": "2026-11-26T17:19:01.112Z",
       "source": "Yahoo most actives",
       "rows": 25,
       "delay": "delayed",
@@ -112,7 +112,7 @@
       "unavailable": false
     },
     "universe": {
-      "asOf": "2026-11-26T16:49:46.993Z",
+      "asOf": "2026-11-26T17:19:01.247Z",
       "source": "Nasdaq screener",
       "rows": 3550,
       "delay": "daily",
@@ -121,7 +121,7 @@
       "coverage": 1
     },
     "seasonality": {
-      "asOf": "2026-11-26T16:49:47.658Z",
+      "asOf": "2026-11-26T17:19:02.245Z",
       "source": "Yahoo monthly closes",
       "rows": 144,
       "delay": "daily",
@@ -130,7 +130,7 @@
       "coverage": 1
     },
     "flow-history": {
-      "asOf": "2026-11-26T16:49:48.321Z",
+      "asOf": "2026-11-26T17:19:02.359Z",
       "source": "worker /v1/history",
       "rows": 2000,
       "delay": "about 15 min",
@@ -138,7 +138,7 @@
       "unavailable": false
     },
     "technicals": {
-      "asOf": "2026-11-26T16:49:48.395Z",
+      "asOf": "2026-11-26T17:19:02.373Z",
       "source": "Alpaca SIP daily bars via worker",
       "rows": 51,
       "delay": "daily",
