@@ -1,6 +1,6 @@
 {
   "meta": {
-    "asOf": "2026-11-27T21:08:42.961Z",
+    "asOf": "2026-11-27T22:16:25.099Z",
     "source": "SEC EDGAR Form 4",
     "rows": 25,
     "delay": "hours",
@@ -55,6 +55,91 @@
         "code": "M",
         "shares": 1446,
         "price": 0,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002130035-26-000012:primary_doc.xml",
+      "filed": "2026-11-24",
+      "names": [
+        "Diaz-Pedrosa Abigail Marshall  (CIK 0002069267)",
+        "TYLER TECHNOLOGIES INC  (CIK 0000860731)"
+      ],
+      "trade": {
+        "owner": "Diaz-Pedrosa Abigail Marshall",
+        "ticker": "TYL",
+        "code": "M",
+        "shares": 1600,
+        "price": 345.87,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002124082-26-000006:primary_doc.xml",
+      "filed": "2026-11-24",
+      "names": [
+        "Stein James D.  (CIK 0002124082)",
+        "SOUTH PLAINS FINANCIAL, INC.  (CIK 0001163668)"
+      ],
+      "trade": {
+        "owner": "Stein James D.",
+        "ticker": "SPFI",
+        "code": "J",
+        "shares": 60000,
+        "price": null,
+        "acquired": false,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002119764-26-000043:primary_doc.xml",
+      "filed": "2026-11-26",
+      "names": [
+        "Elsztain Alejandro Gustavo  (CIK 0002119764)",
+        "IRSA INVESTMENTS & REPRESENTATIONS INC  (CIK 0000933267)"
+      ],
+      "trade": {
+        "owner": "Elsztain Alejandro Gustavo",
+        "ticker": "IRS",
+        "code": "S",
+        "shares": 5149,
+        "price": 1.1,
+        "acquired": false,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002119764-26-000042:primary_doc.xml",
+      "filed": "2026-11-26",
+      "names": [
+        "Elsztain Alejandro Gustavo  (CIK 0002119764)",
+        "CRESUD INC  (CIK 0001034957)"
+      ],
+      "trade": {
+        "owner": "Elsztain Alejandro Gustavo",
+        "ticker": "CRESY",
+        "code": "P",
+        "shares": 6730,
+        "price": 0.84,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002119764-26-000041:primary_doc.xml",
+      "filed": "2026-11-24",
+      "names": [
+        "Elsztain Alejandro Gustavo  (CIK 0002119764)",
+        "BrasilAgro - Brazilian Agricultural Real Estate Co  (CIK 0001499849)"
+      ],
+      "trade": {
+        "owner": "Elsztain Alejandro Gustavo",
+        "ticker": "LND",
+        "code": "P",
+        "shares": 6310,
+        "price": 2.8688,
         "acquired": true,
         "form": "4"
       }
@@ -213,6 +298,23 @@
       }
     },
     {
+      "id": "0002024169-26-000027:form4-11272026_041101.xml",
+      "filed": "2026-11-24",
+      "names": [
+        "Polovin Andrew  (CIK 0002024169)",
+        "Tempus AI, Inc.  (CIK 0001717115)"
+      ],
+      "trade": {
+        "owner": "Polovin Andrew",
+        "ticker": "TEM",
+        "code": "S",
+        "shares": 2643,
+        "price": 56.07,
+        "acquired": false,
+        "form": "4"
+      }
+    },
+    {
       "id": "0002015089-26-000008:wk-form4_1795805106.xml",
       "filed": "2026-11-24",
       "names": [
@@ -328,108 +430,6 @@
         "shares": 6611,
         "price": 0,
         "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0001934850-26-000131:form4.xml",
-      "filed": "2026-11-24",
-      "names": [
-        "FOLEY WILLIAM P II  (CIK 0000903213)",
-        "F&G Annuities & Life, Inc.  (CIK 0001934850)"
-      ],
-      "trade": {
-        "owner": "FOLEY WILLIAM P II",
-        "ticker": "FG",
-        "code": "A",
-        "shares": 143235,
-        "price": 0,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0001934850-26-000129:form4.xml",
-      "filed": "2026-11-24",
-      "names": [
-        "Blunt Christopher O  (CIK 0001662378)",
-        "F&G Annuities & Life, Inc.  (CIK 0001934850)"
-      ],
-      "trade": {
-        "owner": "Blunt Christopher O",
-        "ticker": "FG",
-        "code": "A",
-        "shares": 110181,
-        "price": 0,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0001934850-26-000127:form4.xml",
-      "filed": "2026-11-24",
-      "names": [
-        "Bailey Michael H  (CIK 0002146319)",
-        "F&G Annuities & Life, Inc.  (CIK 0001934850)"
-      ],
-      "trade": {
-        "owner": "Bailey Michael H",
-        "ticker": "FG",
-        "code": "A",
-        "shares": 45175,
-        "price": 0,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0001899688-26-000020:form4-11272026_041107.xml",
-      "filed": "2026-11-24",
-      "names": [
-        "Sherringham Tia  (CIK 0001899688)",
-        "DoorDash, Inc.  (CIK 0001792789)"
-      ],
-      "trade": {
-        "owner": "Sherringham Tia",
-        "ticker": "DASH",
-        "code": "S",
-        "shares": 1196,
-        "price": 160.307,
-        "acquired": false,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0001872886-26-000011:wk-form4_1795803043.xml",
-      "filed": "2026-11-25",
-      "names": [
-        "Mehta Vikas D  (CIK 0001872886)",
-        "Remitly Global, Inc.  (CIK 0001782170)"
-      ],
-      "trade": {
-        "owner": "Mehta Vikas D",
-        "ticker": "RELY",
-        "code": "F",
-        "shares": 31190,
-        "price": 21.46,
-        "acquired": false,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0001872870-26-000021:wk-form4_1795813332.xml",
-      "filed": "2026-11-24",
-      "names": [
-        "Singisetti Ravi Kumar  (CIK 0001872870)",
-        "COGNIZANT TECHNOLOGY SOLUTIONS CORP  (CIK 0001058290)"
-      ],
-      "trade": {
-        "owner": "Singisetti Ravi Kumar",
-        "ticker": "CTSH",
-        "code": "S",
-        "shares": 8333,
-        "price": 60.3962,
-        "acquired": false,
         "form": "4"
       }
     }

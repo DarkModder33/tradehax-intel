@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-27T21:10:19.786Z",
+  "generatedAt": "2026-11-27T22:18:31.080Z",
   "datasets": {
     "insiders": {
-      "asOf": "2026-11-27T21:08:42.961Z",
+      "asOf": "2026-11-27T22:16:25.099Z",
       "source": "SEC EDGAR Form 4",
       "rows": 25,
       "delay": "hours",
@@ -10,7 +10,7 @@
       "unavailable": false
     },
     "congress": {
-      "asOf": "2026-11-27T21:08:43.174Z",
+      "asOf": "2026-11-27T22:16:25.614Z",
       "source": "House Clerk periodic transaction reports",
       "rows": 1191,
       "delay": "daily",
@@ -18,7 +18,7 @@
       "unavailable": false
     },
     "institutions": {
-      "asOf": "2026-11-27T21:08:43.712Z",
+      "asOf": "2026-11-27T22:16:26.987Z",
       "source": "SEC 13F-HR index",
       "rows": 20,
       "delay": "quarterly",
@@ -26,16 +26,16 @@
       "unavailable": false
     },
     "oi-change": {
-      "asOf": "2026-11-27T21:09:00.486Z",
+      "asOf": "2026-11-27T22:17:04.454Z",
       "source": "Cboe delayed, Alpaca indicative open interest",
-      "rows": 500,
+      "rows": 0,
       "delay": "daily",
       "stale": false,
       "unavailable": false,
       "coverage": 1
     },
     "iv": {
-      "asOf": "2026-11-27T21:09:26.193Z",
+      "asOf": "2026-11-27T22:17:41.651Z",
       "source": "Cboe iv30",
       "rows": 49,
       "delay": "about 15 min",
@@ -44,7 +44,7 @@
       "coverage": 0.9607843137254902
     },
     "shorts": {
-      "asOf": "2026-11-27T21:09:40.627Z",
+      "asOf": "2026-11-27T22:17:57.821Z",
       "source": "FINRA consolidated short interest",
       "rows": 51,
       "delay": "twice monthly",
@@ -53,7 +53,7 @@
       "coverage": 1
     },
     "ftd": {
-      "asOf": "2026-11-27T21:09:41.315Z",
+      "asOf": "2026-11-27T22:17:59.314Z",
       "source": "SEC fails-to-deliver",
       "rows": 421,
       "delay": "about 3 weeks",
@@ -62,7 +62,7 @@
       "coverage": 1
     },
     "ats": {
-      "asOf": "2026-11-27T21:10:02.112Z",
+      "asOf": "2026-11-27T22:18:22.579Z",
       "source": "FINRA ATS weekly",
       "rows": 100,
       "delay": "2 to 4 weeks",
@@ -71,7 +71,7 @@
       "coverage": 0.9803921568627451
     },
     "calendar": {
-      "asOf": "2026-11-27T21:10:02.176Z",
+      "asOf": "2026-11-27T22:18:22.764Z",
       "source": "Nasdaq calendars",
       "rows": 51,
       "delay": "daily",
@@ -86,7 +86,7 @@
       "unavailable": false
     },
     "macro": {
-      "asOf": "2026-11-27T21:10:18.109Z",
+      "asOf": "2026-11-27T22:18:28.551Z",
       "source": "FRED public CSV",
       "rows": 13,
       "delay": "daily",
@@ -95,7 +95,7 @@
       "coverage": 1
     },
     "etf-flows": {
-      "asOf": "2026-11-27T21:10:18.211Z",
+      "asOf": "2026-11-27T22:18:28.870Z",
       "source": "SPDR NAV history",
       "rows": 20,
       "delay": "daily",
@@ -104,7 +104,7 @@
       "coverage": 0.08333333333333333
     },
     "screener": {
-      "asOf": "2026-11-27T21:10:18.455Z",
+      "asOf": "2026-11-27T22:18:29.034Z",
       "source": "Yahoo most actives",
       "rows": 25,
       "delay": "delayed",
@@ -112,7 +112,7 @@
       "unavailable": false
     },
     "universe": {
-      "asOf": "2026-11-27T21:10:18.555Z",
+      "asOf": "2026-11-27T22:18:29.505Z",
       "source": "Nasdaq screener",
       "rows": 3551,
       "delay": "daily",
@@ -121,7 +121,7 @@
       "coverage": 1
     },
     "seasonality": {
-      "asOf": "2026-11-27T21:10:19.488Z",
+      "asOf": "2026-11-27T22:18:30.167Z",
       "source": "Yahoo monthly closes",
       "rows": 144,
       "delay": "daily",
@@ -130,7 +130,7 @@
       "coverage": 1
     },
     "flow-history": {
-      "asOf": "2026-11-27T21:10:19.580Z",
+      "asOf": "2026-11-27T22:18:30.796Z",
       "source": "worker /v1/history",
       "rows": 2000,
       "delay": "about 15 min",
@@ -138,7 +138,7 @@
       "unavailable": false
     },
     "technicals": {
-      "asOf": "2026-11-27T21:10:19.786Z",
+      "asOf": "2026-11-27T22:18:31.079Z",
       "source": "Alpaca SIP daily bars via worker",
       "rows": 51,
       "delay": "daily",

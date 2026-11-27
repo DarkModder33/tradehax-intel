@@ -1,3016 +1,15 @@
 {
   "meta": {
-    "asOf": "2026-11-27T21:09:00.486Z",
+    "asOf": "2026-11-27T22:17:04.454Z",
     "source": "Cboe delayed, Alpaca indicative open interest",
-    "rows": 500,
+    "rows": 0,
     "delay": "daily",
     "stale": false,
     "unavailable": false,
     "coverage": 1
   },
-  "rows": [
-    {
-      "symbol": "SPY261218P00480000",
-      "previous": 192819,
-      "current": 102785,
-      "change": -90034
-    },
-    {
-      "symbol": "SPY261218C00800000",
-      "previous": 151454,
-      "current": 65748,
-      "change": -85706
-    },
-    {
-      "symbol": "SPY261218C00775000",
-      "previous": 123499,
-      "current": 44090,
-      "change": -79409
-    },
-    {
-      "symbol": "HYG261204P00075500",
-      "previous": 6792,
-      "current": 60024,
-      "change": 53232
-    },
-    {
-      "symbol": "NVDA270219C00165000",
-      "previous": 14237,
-      "current": 67279,
-      "change": 53042
-    },
-    {
-      "symbol": "NVDA270219C00215000",
-      "previous": 6330,
-      "current": 59249,
-      "change": 52919
-    },
-    {
-      "symbol": "NVDA270219C00175000",
-      "previous": 89200,
-      "current": 36793,
-      "change": -52407
-    },
-    {
-      "symbol": "QQQ270219P00450000",
-      "previous": 17669,
-      "current": 67372,
-      "change": 49703
-    },
-    {
-      "symbol": "NVDA270115C00170000",
-      "previous": 119854,
-      "current": 165924,
-      "change": 46070
-    },
-    {
-      "symbol": "SPY261218P00350000",
-      "previous": 96381,
-      "current": 51374,
-      "change": -45007
-    },
-    {
-      "symbol": "SPY261218P00610000",
-      "previous": 94337,
-      "current": 49392,
-      "change": -44945
-    },
-    {
-      "symbol": "SPY261209P00685000",
-      "previous": 0,
-      "current": 44656,
-      "change": 44656
-    },
-    {
-      "symbol": "SPY261209P00660000",
-      "previous": 0,
-      "current": 44596,
-      "change": 44596
-    },
-    {
-      "symbol": "SPY261211P00660000",
-      "previous": 7796,
-      "current": 51556,
-      "change": 43760
-    },
-    {
-      "symbol": "SPY261211P00685000",
-      "previous": 1920,
-      "current": 45484,
-      "change": 43564
-    },
-    {
-      "symbol": "HYG270115C00077000",
-      "previous": 78096,
-      "current": 121190,
-      "change": 43094
-    },
-    {
-      "symbol": "SPY261207P00700000",
-      "previous": 45059,
-      "current": 6800,
-      "change": -38259
-    },
-    {
-      "symbol": "SPY261207P00675000",
-      "previous": 44726,
-      "current": 6568,
-      "change": -38158
-    },
-    {
-      "symbol": "SPY261211P00675000",
-      "previous": 48322,
-      "current": 10466,
-      "change": -37856
-    },
-    {
-      "symbol": "XLF261218P00053000",
-      "previous": 71748,
-      "current": 108758,
-      "change": 37010
-    },
-    {
-      "symbol": "SMH261130P00295000",
-      "previous": 103,
-      "current": 36720,
-      "change": 36617
-    },
-    {
-      "symbol": "HYG270115P00072000",
-      "previous": 215419,
-      "current": 251514,
-      "change": 36095
-    },
-    {
-      "symbol": "SPY261211P00700000",
-      "previous": 49087,
-      "current": 13783,
-      "change": -35304
-    },
-    {
-      "symbol": "HYG270115P00076000",
-      "previous": 328243,
-      "current": 362539,
-      "change": 34296
-    },
-    {
-      "symbol": "SPY270115P00605000",
-      "previous": 80947,
-      "current": 47223,
-      "change": -33724
-    },
-    {
-      "symbol": "SPY261231C00775000",
-      "previous": 64105,
-      "current": 96460,
-      "change": 32355
-    },
-    {
-      "symbol": "SPY270115P00535000",
-      "previous": 78048,
-      "current": 46074,
-      "change": -31974
-    },
-    {
-      "symbol": "IWM261218P00256000",
-      "previous": 31469,
-      "current": 62722,
-      "change": 31253
-    },
-    {
-      "symbol": "IWM270115P00240000",
-      "previous": 54470,
-      "current": 83691,
-      "change": 29221
-    },
-    {
-      "symbol": "HYG261218P00073000",
-      "previous": 171845,
-      "current": 146931,
-      "change": -24914
-    },
-    {
-      "symbol": "TLT270219C00083000",
-      "previous": 81446,
-      "current": 57762,
-      "change": -23684
-    },
-    {
-      "symbol": "NVDA261204C00152500",
-      "previous": 2393,
-      "current": 26070,
-      "change": 23677
-    },
-    {
-      "symbol": "QQQ261204P00545000",
-      "previous": 637,
-      "current": 24134,
-      "change": 23497
-    },
-    {
-      "symbol": "QQQ261204P00590000",
-      "previous": 4629,
-      "current": 27998,
-      "change": 23369
-    },
-    {
-      "symbol": "QQQ270115C00680000",
-      "previous": 19376,
-      "current": 42578,
-      "change": 23202
-    },
-    {
-      "symbol": "NVDA261204C00160000",
-      "previous": 16121,
-      "current": 39283,
-      "change": 23162
-    },
-    {
-      "symbol": "QQQ261130P00610000",
-      "previous": 5006,
-      "current": 27900,
-      "change": 22894
-    },
-    {
-      "symbol": "SPY261127P00690000",
-      "previous": 27132,
-      "current": 49873,
-      "change": 22741
-    },
-    {
-      "symbol": "XLF261218P00051000",
-      "previous": 24476,
-      "current": 46530,
-      "change": 22054
-    },
-    {
-      "symbol": "NVDA261204P00075000",
-      "previous": 6973,
-      "current": 28823,
-      "change": 21850
-    },
-    {
-      "symbol": "IWM261218P00253000",
-      "previous": 27480,
-      "current": 48184,
-      "change": 20704
-    },
-    {
-      "symbol": "TLT270115C00084000",
-      "previous": 46653,
-      "current": 66781,
-      "change": 20128
-    },
-    {
-      "symbol": "NVDA271217C00210000",
-      "previous": 23334,
-      "current": 42577,
-      "change": 19243
-    },
-    {
-      "symbol": "MSFT270219C00635000",
-      "previous": 98,
-      "current": 19142,
-      "change": 19044
-    },
-    {
-      "symbol": "MSFT270219C00535000",
-      "previous": 421,
-      "current": 19393,
-      "change": 18972
-    },
-    {
-      "symbol": "QQQ261218P00580000",
-      "previous": 67327,
-      "current": 86057,
-      "change": 18730
-    },
-    {
-      "symbol": "HYG261218C00077000",
-      "previous": 77028,
-      "current": 95001,
-      "change": 17973
-    },
-    {
-      "symbol": "MSTR261204P00040000",
-      "previous": 2063,
-      "current": 19574,
-      "change": 17511
-    },
-    {
-      "symbol": "NVDA270617P00140000",
-      "previous": 111749,
-      "current": 94946,
-      "change": -16803
-    },
-    {
-      "symbol": "QQQ261218P00600000",
-      "previous": 68681,
-      "current": 84692,
-      "change": 16011
-    },
-    {
-      "symbol": "NVDA261204C00155000",
-      "previous": 6382,
-      "current": 22074,
-      "change": 15692
-    },
-    {
-      "symbol": "QQQ261204P00635000",
-      "previous": 42672,
-      "current": 27032,
-      "change": -15640
-    },
-    {
-      "symbol": "QQQ261202P00630000",
-      "previous": 305,
-      "current": 15782,
-      "change": 15477
-    },
-    {
-      "symbol": "NVDA270617P00100000",
-      "previous": 42871,
-      "current": 58340,
-      "change": 15469
-    },
-    {
-      "symbol": "QQQ261218P00565000",
-      "previous": 42325,
-      "current": 26868,
-      "change": -15457
-    },
-    {
-      "symbol": "AMZN270115C00295000",
-      "previous": 9136,
-      "current": 24540,
-      "change": 15404
-    },
-    {
-      "symbol": "IWM261127P00264000",
-      "previous": 3232,
-      "current": 18463,
-      "change": 15231
-    },
-    {
-      "symbol": "NVDA261204C00148000",
-      "previous": 1071,
-      "current": 16025,
-      "change": 14954
-    },
-    {
-      "symbol": "AMZN270115C00255000",
-      "previous": 7342,
-      "current": 22262,
-      "change": 14920
-    },
-    {
-      "symbol": "MSFT270219C00570000",
-      "previous": 24507,
-      "current": 9643,
-      "change": -14864
-    },
-    {
-      "symbol": "AMZN270115C00275000",
-      "previous": 85911,
-      "current": 71317,
-      "change": -14594
-    },
-    {
-      "symbol": "QQQ261218P00530000",
-      "previous": 29272,
-      "current": 43765,
-      "change": 14493
-    },
-    {
-      "symbol": "QQQ261130C00675000",
-      "previous": 20710,
-      "current": 34573,
-      "change": 13863
-    },
-    {
-      "symbol": "TLT270115C00083000",
-      "previous": 204240,
-      "current": 190516,
-      "change": -13724
-    },
-    {
-      "symbol": "SPY261127C00725000",
-      "previous": 6206,
-      "current": 19773,
-      "change": 13567
-    },
-    {
-      "symbol": "SPY261127P00700000",
-      "previous": 35063,
-      "current": 48626,
-      "change": 13563
-    },
-    {
-      "symbol": "AMZN270115C00320000",
-      "previous": 25808,
-      "current": 12405,
-      "change": -13403
-    },
-    {
-      "symbol": "NVDA261204P00065000",
-      "previous": 292,
-      "current": 13660,
-      "change": 13368
-    },
-    {
-      "symbol": "MSTR261127C00086000",
-      "previous": 19327,
-      "current": 6024,
-      "change": -13303
-    },
-    {
-      "symbol": "MSTR261127C00090000",
-      "previous": 40953,
-      "current": 27781,
-      "change": -13172
-    },
-    {
-      "symbol": "MSTR261204C00082000",
-      "previous": 273,
-      "current": 13165,
-      "change": 12892
-    },
-    {
-      "symbol": "TLT261218C00088000",
-      "previous": 42998,
-      "current": 55773,
-      "change": 12775
-    },
-    {
-      "symbol": "NVDA270115P00150000",
-      "previous": 185777,
-      "current": 173163,
-      "change": -12614
-    },
-    {
-      "symbol": "HYG261218P00075000",
-      "previous": 728100,
-      "current": 740701,
-      "change": 12601
-    },
-    {
-      "symbol": "QQQ261130P00680000",
-      "previous": 17192,
-      "current": 4636,
-      "change": -12556
-    },
-    {
-      "symbol": "MSTR261204C00087000",
-      "previous": 701,
-      "current": 13191,
-      "change": 12490
-    },
-    {
-      "symbol": "PLTR261204P00095000",
-      "previous": 210,
-      "current": 12280,
-      "change": 12070
-    },
-    {
-      "symbol": "IWM261218P00250000",
-      "previous": 79011,
-      "current": 90759,
-      "change": 11748
-    },
-    {
-      "symbol": "QQQ261130C00680000",
-      "previous": 19013,
-      "current": 30552,
-      "change": 11539
-    },
-    {
-      "symbol": "NVDA261127C00210000",
-      "previous": 13235,
-      "current": 24757,
-      "change": 11522
-    },
-    {
-      "symbol": "SMH261127P00350000",
-      "previous": 3074,
-      "current": 14474,
-      "change": 11400
-    },
-    {
-      "symbol": "HYG270115P00074000",
-      "previous": 129561,
-      "current": 140959,
-      "change": 11398
-    },
-    {
-      "symbol": "SPY261127P00705000",
-      "previous": 9740,
-      "current": 20978,
-      "change": 11238
-    },
-    {
-      "symbol": "MSTR261204C00090000",
-      "previous": 1101,
-      "current": 12296,
-      "change": 11195
-    },
-    {
-      "symbol": "QQQ261130P00580000",
-      "previous": 28475,
-      "current": 39487,
-      "change": 11012
-    },
-    {
-      "symbol": "SPY261203P00635000",
-      "previous": 231,
-      "current": 11208,
-      "change": 10977
-    },
-    {
-      "symbol": "SPY261127P00695000",
-      "previous": 13775,
-      "current": 24623,
-      "change": 10848
-    },
-    {
-      "symbol": "QQQ261218P00540000",
-      "previous": 51884,
-      "current": 62434,
-      "change": 10550
-    },
-    {
-      "symbol": "TLT270319C00080000",
-      "previous": 58693,
-      "current": 69051,
-      "change": 10358
-    },
-    {
-      "symbol": "MSTR261204C00085000",
-      "previous": 1853,
-      "current": 12120,
-      "change": 10267
-    },
-    {
-      "symbol": "TLT261130C00083000",
-      "previous": 99922,
-      "current": 110183,
-      "change": 10261
-    },
-    {
-      "symbol": "AAPL270115P00300000",
-      "previous": 36396,
-      "current": 46654,
-      "change": 10258
-    },
-    {
-      "symbol": "SPY261127P00680000",
-      "previous": 26782,
-      "current": 37033,
-      "change": 10251
-    },
-    {
-      "symbol": "HYG270319P00071000",
-      "previous": 2472,
-      "current": 12598,
-      "change": 10126
-    },
-    {
-      "symbol": "TSLA261130P00260000",
-      "previous": 54,
-      "current": 10121,
-      "change": 10067
-    },
-    {
-      "symbol": "AMD261204P00210000",
-      "previous": 161,
-      "current": 10223,
-      "change": 10062
-    },
-    {
-      "symbol": "TSLA261204P00210000",
-      "previous": 676,
-      "current": 10726,
-      "change": 10050
-    },
-    {
-      "symbol": "XLF281215P00056000",
-      "previous": 8323,
-      "current": 18323,
-      "change": 10000
-    },
-    {
-      "symbol": "HYG270115P00071000",
-      "previous": 25401,
-      "current": 35401,
-      "change": 10000
-    },
-    {
-      "symbol": "QQQ261204C00705000",
-      "previous": 11525,
-      "current": 1583,
-      "change": -9942
-    },
-    {
-      "symbol": "HYG270319P00073000",
-      "previous": 58970,
-      "current": 68853,
-      "change": 9883
-    },
-    {
-      "symbol": "AMZN261218P00210000",
-      "previous": 10407,
-      "current": 20230,
-      "change": 9823
-    },
-    {
-      "symbol": "HYG270319P00070000",
-      "previous": 166887,
-      "current": 176637,
-      "change": 9750
-    },
-    {
-      "symbol": "IWM261130P00262000",
-      "previous": 1334,
-      "current": 11024,
-      "change": 9690
-    },
-    {
-      "symbol": "SMH270219P00350000",
-      "previous": 13277,
-      "current": 3779,
-      "change": -9498
-    },
-    {
-      "symbol": "NVDA270115C00175000",
-      "previous": 62931,
-      "current": 72383,
-      "change": 9452
-    },
-    {
-      "symbol": "TLT270115P00081000",
-      "previous": 14315,
-      "current": 23656,
-      "change": 9341
-    },
-    {
-      "symbol": "TLT261130C00082000",
-      "previous": 25959,
-      "current": 16686,
-      "change": -9273
-    },
-    {
-      "symbol": "SPY261218P00680000",
-      "previous": 49856,
-      "current": 59109,
-      "change": 9253
-    },
-    {
-      "symbol": "TLT261218C00080000",
-      "previous": 145831,
-      "current": 136695,
-      "change": -9136
-    },
-    {
-      "symbol": "SPY261127C00720000",
-      "previous": 11938,
-      "current": 20928,
-      "change": 8990
-    },
-    {
-      "symbol": "SPY261204C00740000",
-      "previous": 17099,
-      "current": 26062,
-      "change": 8963
-    },
-    {
-      "symbol": "TLT261127C00082500",
-      "previous": 16616,
-      "current": 25572,
-      "change": 8956
-    },
-    {
-      "symbol": "NVDA270617C00170000",
-      "previous": 16429,
-      "current": 25346,
-      "change": 8917
-    },
-    {
-      "symbol": "HYG261218P00077000",
-      "previous": 299056,
-      "current": 290266,
-      "change": -8790
-    },
-    {
-      "symbol": "QQQ261204C00700000",
-      "previous": 15640,
-      "current": 6872,
-      "change": -8768
-    },
-    {
-      "symbol": "NVDA261202C00155000",
-      "previous": 1683,
-      "current": 10434,
-      "change": 8751
-    },
-    {
-      "symbol": "SPY261127P00685000",
-      "previous": 8771,
-      "current": 17454,
-      "change": 8683
-    },
-    {
-      "symbol": "SPY261202C00715000",
-      "previous": 309,
-      "current": 8979,
-      "change": 8670
-    },
-    {
-      "symbol": "TLT270617C00090000",
-      "previous": 87331,
-      "current": 95942,
-      "change": 8611
-    },
-    {
-      "symbol": "AMZN261218P00200000",
-      "previous": 19989,
-      "current": 28553,
-      "change": 8564
-    },
-    {
-      "symbol": "SPY261204C00715000",
-      "previous": 1157,
-      "current": 9655,
-      "change": 8498
-    },
-    {
-      "symbol": "QQQ270319C00765000",
-      "previous": 3654,
-      "current": 12114,
-      "change": 8460
-    },
-    {
-      "symbol": "QQQ261218C00690000",
-      "previous": 63129,
-      "current": 54799,
-      "change": -8330
-    },
-    {
-      "symbol": "TLT270115C00082000",
-      "previous": 50191,
-      "current": 41905,
-      "change": -8286
-    },
-    {
-      "symbol": "SPY261218P00685000",
-      "previous": 33558,
-      "current": 25347,
-      "change": -8211
-    },
-    {
-      "symbol": "GLD270115C00380000",
-      "previous": 14031,
-      "current": 22208,
-      "change": 8177
-    },
-    {
-      "symbol": "NVDA261127C00167500",
-      "previous": 25347,
-      "current": 17226,
-      "change": -8121
-    },
-    {
-      "symbol": "NVDA270115C00200000",
-      "previous": 387987,
-      "current": 396060,
-      "change": 8073
-    },
-    {
-      "symbol": "SPY261127P00645000",
-      "previous": 2523,
-      "current": 10527,
-      "change": 8004
-    },
-    {
-      "symbol": "TLT261218C00083500",
-      "previous": 899,
-      "current": 8869,
-      "change": 7970
-    },
-    {
-      "symbol": "PLTR261204C00170000",
-      "previous": 1433,
-      "current": 9299,
-      "change": 7866
-    },
-    {
-      "symbol": "NVDA261127C00155000",
-      "previous": 14077,
-      "current": 21934,
-      "change": 7857
-    },
-    {
-      "symbol": "QQQ270115P00600000",
-      "previous": 37752,
-      "current": 45558,
-      "change": 7806
-    },
-    {
-      "symbol": "QQQ261204P00600000",
-      "previous": 3609,
-      "current": 11312,
-      "change": 7703
-    },
-    {
-      "symbol": "IWM270319C00270000",
-      "previous": 4184,
-      "current": 11883,
-      "change": 7699
-    },
-    {
-      "symbol": "NVDA261202C00167500",
-      "previous": 16386,
-      "current": 8693,
-      "change": -7693
-    },
-    {
-      "symbol": "QQQ270617P00315000",
-      "previous": 439,
-      "current": 8063,
-      "change": 7624
-    },
-    {
-      "symbol": "TLT261218C00087000",
-      "previous": 68719,
-      "current": 61097,
-      "change": -7622
-    },
-    {
-      "symbol": "QQQ261209C00665000",
-      "previous": 0,
-      "current": 7620,
-      "change": 7620
-    },
-    {
-      "symbol": "NVDA261127C00150000",
-      "previous": 10080,
-      "current": 17695,
-      "change": 7615
-    },
-    {
-      "symbol": "MSTR261204C00083000",
-      "previous": 236,
-      "current": 7832,
-      "change": 7596
-    },
-    {
-      "symbol": "PLTR261204C00175000",
-      "previous": 1894,
-      "current": 9441,
-      "change": 7547
-    },
-    {
-      "symbol": "MSTR261204C00088000",
-      "previous": 587,
-      "current": 8118,
-      "change": 7531
-    },
-    {
-      "symbol": "NVDA261211P00060000",
-      "previous": 1671,
-      "current": 9197,
-      "change": 7526
-    },
-    {
-      "symbol": "QQQ261207C00680000",
-      "previous": 8187,
-      "current": 723,
-      "change": -7464
-    },
-    {
-      "symbol": "SPY261218P00640000",
-      "previous": 18765,
-      "current": 26208,
-      "change": 7443
-    },
-    {
-      "symbol": "HYG261211P00076000",
-      "previous": 24172,
-      "current": 31606,
-      "change": 7434
-    },
-    {
-      "symbol": "NVDA261127C00134000",
-      "previous": 442,
-      "current": 7776,
-      "change": 7334
-    },
-    {
-      "symbol": "IWM261218P00254000",
-      "previous": 35400,
-      "current": 28094,
-      "change": -7306
-    },
-    {
-      "symbol": "COIN261204C00105000",
-      "previous": 139,
-      "current": 7418,
-      "change": 7279
-    },
-    {
-      "symbol": "AAPL261127P00345000",
-      "previous": 4631,
-      "current": 11896,
-      "change": 7265
-    },
-    {
-      "symbol": "COIN261204C00101000",
-      "previous": 7,
-      "current": 7268,
-      "change": 7261
-    },
-    {
-      "symbol": "NVDA270617C00175000",
-      "previous": 17238,
-      "current": 9991,
-      "change": -7247
-    },
-    {
-      "symbol": "QQQ261209C00650000",
-      "previous": 0,
-      "current": 7241,
-      "change": 7241
-    },
-    {
-      "symbol": "NVDA270219P00140000",
-      "previous": 15371,
-      "current": 22604,
-      "change": 7233
-    },
-    {
-      "symbol": "NVDA261130P00085000",
-      "previous": 1375,
-      "current": 8499,
-      "change": 7124
-    },
-    {
-      "symbol": "SPY261204C00745000",
-      "previous": 2088,
-      "current": 9204,
-      "change": 7116
-    },
-    {
-      "symbol": "GLD270115P00290000",
-      "previous": 1949,
-      "current": 8972,
-      "change": 7023
-    },
-    {
-      "symbol": "SPY261130P00727000",
-      "previous": 23193,
-      "current": 16185,
-      "change": -7008
-    },
-    {
-      "symbol": "TLT261218C00086000",
-      "previous": 65125,
-      "current": 58229,
-      "change": -6896
-    },
-    {
-      "symbol": "TLT261127P00082000",
-      "previous": 2425,
-      "current": 9318,
-      "change": 6893
-    },
-    {
-      "symbol": "NVDA270617P00090000",
-      "previous": 23659,
-      "current": 30538,
-      "change": 6879
-    },
-    {
-      "symbol": "HYG270115P00075000",
-      "previous": 201377,
-      "current": 194511,
-      "change": -6866
-    },
-    {
-      "symbol": "SPY261203P00640000",
-      "previous": 121,
-      "current": 6913,
-      "change": 6792
-    },
-    {
-      "symbol": "QQQ261218C00675000",
-      "previous": 21923,
-      "current": 28709,
-      "change": 6786
-    },
-    {
-      "symbol": "IWM270219C00285000",
-      "previous": 2081,
-      "current": 8796,
-      "change": 6715
-    },
-    {
-      "symbol": "QQQ261130P00590000",
-      "previous": 3778,
-      "current": 10439,
-      "change": 6661
-    },
-    {
-      "symbol": "QQQ261203P00535000",
-      "previous": 64,
-      "current": 6675,
-      "change": 6611
-    },
-    {
-      "symbol": "NVDA270115C00205000",
-      "previous": 18099,
-      "current": 24627,
-      "change": 6528
-    },
-    {
-      "symbol": "SPY261218P00700000",
-      "previous": 66794,
-      "current": 60285,
-      "change": -6509
-    },
-    {
-      "symbol": "SPY261130P00620000",
-      "previous": 1901,
-      "current": 8363,
-      "change": 6462
-    },
-    {
-      "symbol": "AAPL261204P00340000",
-      "previous": 3617,
-      "current": 10037,
-      "change": 6420
-    },
-    {
-      "symbol": "QQQ261218C00670000",
-      "previous": 32822,
-      "current": 39234,
-      "change": 6412
-    },
-    {
-      "symbol": "QQQ261211P00450000",
-      "previous": 0,
-      "current": 6361,
-      "change": 6361
-    },
-    {
-      "symbol": "MSTR261127C00091000",
-      "previous": 9235,
-      "current": 2915,
-      "change": -6320
-    },
-    {
-      "symbol": "TLT261211P00078000",
-      "previous": 20389,
-      "current": 14098,
-      "change": -6291
-    },
-    {
-      "symbol": "IWM270319P00240000",
-      "previous": 33384,
-      "current": 39666,
-      "change": 6282
-    },
-    {
-      "symbol": "SPY261127P00650000",
-      "previous": 3722,
-      "current": 9998,
-      "change": 6276
-    },
-    {
-      "symbol": "QQQ261204P00480000",
-      "previous": 2171,
-      "current": 8433,
-      "change": 6262
-    },
-    {
-      "symbol": "SPY261218P00660000",
-      "previous": 39569,
-      "current": 45788,
-      "change": 6219
-    },
-    {
-      "symbol": "XLF261218P00056000",
-      "previous": 93253,
-      "current": 87075,
-      "change": -6178
-    },
-    {
-      "symbol": "SMH270115P00350000",
-      "previous": 35964,
-      "current": 42060,
-      "change": 6096
-    },
-    {
-      "symbol": "AAPL261218C00365000",
-      "previous": 21764,
-      "current": 27831,
-      "change": 6067
-    },
-    {
-      "symbol": "SPY261127P00658000",
-      "previous": 490,
-      "current": 6556,
-      "change": 6066
-    },
-    {
-      "symbol": "SPY261127C00730000",
-      "previous": 23868,
-      "current": 29816,
-      "change": 5948
-    },
-    {
-      "symbol": "QQQ261218P00720000",
-      "previous": 12996,
-      "current": 7101,
-      "change": -5895
-    },
-    {
-      "symbol": "GLD261127P00265000",
-      "previous": 226,
-      "current": 6081,
-      "change": 5855
-    },
-    {
-      "symbol": "MSFT270219C00700000",
-      "previous": 23919,
-      "current": 18071,
-      "change": -5848
-    },
-    {
-      "symbol": "IWM261218C00275000",
-      "previous": 31770,
-      "current": 37607,
-      "change": 5837
-    },
-    {
-      "symbol": "SPY261211P00665000",
-      "previous": 1229,
-      "current": 7062,
-      "change": 5833
-    },
-    {
-      "symbol": "NVDA261218P00140000",
-      "previous": 33372,
-      "current": 39191,
-      "change": 5819
-    },
-    {
-      "symbol": "TSLA261130C00420000",
-      "previous": 10840,
-      "current": 5124,
-      "change": -5716
-    },
-    {
-      "symbol": "MSTR261204P00070000",
-      "previous": 5448,
-      "current": 11130,
-      "change": 5682
-    },
-    {
-      "symbol": "AMZN261218C00250000",
-      "previous": 17317,
-      "current": 22943,
-      "change": 5626
-    },
-    {
-      "symbol": "NVDA261130C00160000",
-      "previous": 5152,
-      "current": 10742,
-      "change": 5590
-    },
-    {
-      "symbol": "QQQ261127P00610000",
-      "previous": 4249,
-      "current": 9827,
-      "change": 5578
-    },
-    {
-      "symbol": "NVDA261127C00175000",
-      "previous": 17401,
-      "current": 22869,
-      "change": 5468
-    },
-    {
-      "symbol": "TSLA261204P00220000",
-      "previous": 680,
-      "current": 6109,
-      "change": 5429
-    },
-    {
-      "symbol": "MSTR261204C00084000",
-      "previous": 516,
-      "current": 5934,
-      "change": 5418
-    },
-    {
-      "symbol": "SPY261127P00653000",
-      "previous": 887,
-      "current": 6279,
-      "change": 5392
-    },
-    {
-      "symbol": "IWM261218P00230000",
-      "previous": 59253,
-      "current": 64642,
-      "change": 5389
-    },
-    {
-      "symbol": "IWM261204P00253000",
-      "previous": 3678,
-      "current": 9050,
-      "change": 5372
-    },
-    {
-      "symbol": "SMH270219C00570000",
-      "previous": 1536,
-      "current": 6873,
-      "change": 5337
-    },
-    {
-      "symbol": "MSTR261218P00030000",
-      "previous": 3504,
-      "current": 8800,
-      "change": 5296
-    },
-    {
-      "symbol": "QQQ261204P00525000",
-      "previous": 2027,
-      "current": 7316,
-      "change": 5289
-    },
-    {
-      "symbol": "SPY261218P00675000",
-      "previous": 20644,
-      "current": 25921,
-      "change": 5277
-    },
-    {
-      "symbol": "HYG261218P00074000",
-      "previous": 257461,
-      "current": 262699,
-      "change": 5238
-    },
-    {
-      "symbol": "ORCL270115C00140000",
-      "previous": 13583,
-      "current": 18812,
-      "change": 5229
-    },
-    {
-      "symbol": "NVDA261127P00130000",
-      "previous": 13879,
-      "current": 19095,
-      "change": 5216
-    },
-    {
-      "symbol": "SPY261202P00550000",
-      "previous": 454,
-      "current": 5646,
-      "change": 5192
-    },
-    {
-      "symbol": "AAPL261209P00325000",
-      "previous": 0,
-      "current": 5161,
-      "change": 5161
-    },
-    {
-      "symbol": "SPY261127P00710000",
-      "previous": 14377,
-      "current": 19522,
-      "change": 5145
-    },
-    {
-      "symbol": "HYG270416P00071000",
-      "previous": 64200,
-      "current": 69332,
-      "change": 5132
-    },
-    {
-      "symbol": "SPY261127P00698000",
-      "previous": 957,
-      "current": 6077,
-      "change": 5120
-    },
-    {
-      "symbol": "XLF270115P00050000",
-      "previous": 200286,
-      "current": 205400,
-      "change": 5114
-    },
-    {
-      "symbol": "NVDA261127C00145000",
-      "previous": 3867,
-      "current": 8941,
-      "change": 5074
-    },
-    {
-      "symbol": "KO261204C00101000",
-      "previous": 581,
-      "current": 5620,
-      "change": 5039
-    },
-    {
-      "symbol": "SPY270115P00560000",
-      "previous": 3997,
-      "current": 9028,
-      "change": 5031
-    },
-    {
-      "symbol": "MSTR261204C00089000",
-      "previous": 415,
-      "current": 5446,
-      "change": 5031
-    },
-    {
-      "symbol": "KO261204C00099000",
-      "previous": 359,
-      "current": 5388,
-      "change": 5029
-    },
-    {
-      "symbol": "IWM270319P00255000",
-      "previous": 27703,
-      "current": 32721,
-      "change": 5018
-    },
-    {
-      "symbol": "NVDA261130P00128000",
-      "previous": 935,
-      "current": 5953,
-      "change": 5018
-    },
-    {
-      "symbol": "HYG261211C00076500",
-      "previous": 4,
-      "current": 5011,
-      "change": 5007
-    },
-    {
-      "symbol": "NVDA270115C00210000",
-      "previous": 58501,
-      "current": 63467,
-      "change": 4966
-    },
-    {
-      "symbol": "QQQ261231P00425000",
-      "previous": 534,
-      "current": 5498,
-      "change": 4964
-    },
-    {
-      "symbol": "NVDA261127C00152500",
-      "previous": 4416,
-      "current": 9368,
-      "change": 4952
-    },
-    {
-      "symbol": "NVDA261127C00157500",
-      "previous": 19970,
-      "current": 15018,
-      "change": -4952
-    },
-    {
-      "symbol": "AMD261218P00350000",
-      "previous": 16404,
-      "current": 11461,
-      "change": -4943
-    },
-    {
-      "symbol": "SPY261211P00725000",
-      "previous": 9629,
-      "current": 14563,
-      "change": 4934
-    },
-    {
-      "symbol": "TLT261204P00082500",
-      "previous": 369,
-      "current": 5275,
-      "change": 4906
-    },
-    {
-      "symbol": "SPY261127C00726000",
-      "previous": 4931,
-      "current": 9834,
-      "change": 4903
-    },
-    {
-      "symbol": "TLT261209C00088000",
-      "previous": 0,
-      "current": 4900,
-      "change": 4900
-    },
-    {
-      "symbol": "GLD270115C00350000",
-      "previous": 17965,
-      "current": 22859,
-      "change": 4894
-    },
-    {
-      "symbol": "TLT261218C00083000",
-      "previous": 152725,
-      "current": 157601,
-      "change": 4876
-    },
-    {
-      "symbol": "NVDA261204P00113000",
-      "previous": 185,
-      "current": 5049,
-      "change": 4864
-    },
-    {
-      "symbol": "QQQ261211P00500000",
-      "previous": 711,
-      "current": 5565,
-      "change": 4854
-    },
-    {
-      "symbol": "HYG270115P00077000",
-      "previous": 201297,
-      "current": 206129,
-      "change": 4832
-    },
-    {
-      "symbol": "NVDA261204C00149000",
-      "previous": 778,
-      "current": 5572,
-      "change": 4794
-    },
-    {
-      "symbol": "AAPL261202P00335000",
-      "previous": 80,
-      "current": 4868,
-      "change": 4788
-    },
-    {
-      "symbol": "QQQ270917P00580000",
-      "previous": 5326,
-      "current": 10102,
-      "change": 4776
-    },
-    {
-      "symbol": "AAPL261202C00355000",
-      "previous": 540,
-      "current": 5310,
-      "change": 4770
-    },
-    {
-      "symbol": "QQQ261218P00625000",
-      "previous": 48716,
-      "current": 43990,
-      "change": -4726
-    },
-    {
-      "symbol": "SMH261130C00465000",
-      "previous": 353,
-      "current": 5068,
-      "change": 4715
-    },
-    {
-      "symbol": "TLT261218C00084000",
-      "previous": 210073,
-      "current": 205387,
-      "change": -4686
-    },
-    {
-      "symbol": "AAPL261218P00340000",
-      "previous": 24982,
-      "current": 20300,
-      "change": -4682
-    },
-    {
-      "symbol": "TLT261218C00085000",
-      "previous": 75967,
-      "current": 80605,
-      "change": 4638
-    },
-    {
-      "symbol": "NVDA261204C00150000",
-      "previous": 5340,
-      "current": 9963,
-      "change": 4623
-    },
-    {
-      "symbol": "QQQ261127C00641000",
-      "previous": 535,
-      "current": 5147,
-      "change": 4612
-    },
-    {
-      "symbol": "QQQ261218P00500000",
-      "previous": 45609,
-      "current": 50198,
-      "change": 4589
-    },
-    {
-      "symbol": "QQQ261218C00650000",
-      "previous": 24243,
-      "current": 28830,
-      "change": 4587
-    },
-    {
-      "symbol": "XLF261218P00054000",
-      "previous": 168672,
-      "current": 173238,
-      "change": 4566
-    },
-    {
-      "symbol": "SPY261127C00721000",
-      "previous": 3668,
-      "current": 8232,
-      "change": 4564
-    },
-    {
-      "symbol": "AAPL270115P00235000",
-      "previous": 1527,
-      "current": 6068,
-      "change": 4541
-    },
-    {
-      "symbol": "SPY261204P00695000",
-      "previous": 7241,
-      "current": 11741,
-      "change": 4500
-    },
-    {
-      "symbol": "QQQ270617C00700000",
-      "previous": 12065,
-      "current": 16541,
-      "change": 4476
-    },
-    {
-      "symbol": "NVDA270115C00190000",
-      "previous": 66721,
-      "current": 62275,
-      "change": -4446
-    },
-    {
-      "symbol": "TSLA261204C00392500",
-      "previous": 588,
-      "current": 5026,
-      "change": 4438
-    },
-    {
-      "symbol": "NVDA261218C00150000",
-      "previous": 22950,
-      "current": 27382,
-      "change": 4432
-    },
-    {
-      "symbol": "MSTR261204P00065000",
-      "previous": 7297,
-      "current": 11728,
-      "change": 4431
-    },
-    {
-      "symbol": "NVDA261204C00180000",
-      "previous": 16611,
-      "current": 21031,
-      "change": 4420
-    },
-    {
-      "symbol": "MSTR261127C00093000",
-      "previous": 7189,
-      "current": 2782,
-      "change": -4407
-    },
-    {
-      "symbol": "GLD270617C00400000",
-      "previous": 19366,
-      "current": 23751,
-      "change": 4385
-    },
-    {
-      "symbol": "ORCL270115P00055000",
-      "previous": 63,
-      "current": 4444,
-      "change": 4381
-    },
-    {
-      "symbol": "AAPL261202P00345000",
-      "previous": 373,
-      "current": 4745,
-      "change": 4372
-    },
-    {
-      "symbol": "TLT261127C00083000",
-      "previous": 14134,
-      "current": 18500,
-      "change": 4366
-    },
-    {
-      "symbol": "XLE270115P00056000",
-      "previous": 2581,
-      "current": 6934,
-      "change": 4353
-    },
-    {
-      "symbol": "SPY261218P00665000",
-      "previous": 17447,
-      "current": 21747,
-      "change": 4300
-    },
-    {
-      "symbol": "NVDA270219P00145000",
-      "previous": 12018,
-      "current": 16314,
-      "change": 4296
-    },
-    {
-      "symbol": "QQQ270115P00640000",
-      "previous": 20923,
-      "current": 16629,
-      "change": -4294
-    },
-    {
-      "symbol": "PLTR261204P00085000",
-      "previous": 419,
-      "current": 4705,
-      "change": 4286
-    },
-    {
-      "symbol": "TLT261127C00082000",
-      "previous": 22305,
-      "current": 18035,
-      "change": -4270
-    },
-    {
-      "symbol": "QQQ270115P00545000",
-      "previous": 3168,
-      "current": 7416,
-      "change": 4248
-    },
-    {
-      "symbol": "NVDA270115C00180000",
-      "previous": 103713,
-      "current": 99483,
-      "change": -4230
-    },
-    {
-      "symbol": "QQQ261202P00500000",
-      "previous": 958,
-      "current": 5153,
-      "change": 4195
-    },
-    {
-      "symbol": "SPY261127P00651000",
-      "previous": 242,
-      "current": 4420,
-      "change": 4178
-    },
-    {
-      "symbol": "AMD261204C00410000",
-      "previous": 173,
-      "current": 4351,
-      "change": 4178
-    },
-    {
-      "symbol": "QQQ261204P00620000",
-      "previous": 4019,
-      "current": 8181,
-      "change": 4162
-    },
-    {
-      "symbol": "MSTR261127C00098000",
-      "previous": 15522,
-      "current": 11367,
-      "change": -4155
-    },
-    {
-      "symbol": "GLD261218C00340000",
-      "previous": 2386,
-      "current": 6536,
-      "change": 4150
-    },
-    {
-      "symbol": "SPY261130P00685000",
-      "previous": 22879,
-      "current": 18731,
-      "change": -4148
-    },
-    {
-      "symbol": "QQQ261130C00660000",
-      "previous": 8763,
-      "current": 12896,
-      "change": 4133
-    },
-    {
-      "symbol": "QQQ261218P00605000",
-      "previous": 43649,
-      "current": 47780,
-      "change": 4131
-    },
-    {
-      "symbol": "SPY270115P00750000",
-      "previous": 16386,
-      "current": 20506,
-      "change": 4120
-    },
-    {
-      "symbol": "TSLA261127P00265000",
-      "previous": 1644,
-      "current": 5725,
-      "change": 4081
-    },
-    {
-      "symbol": "MSTR261127P00095000",
-      "previous": 4930,
-      "current": 853,
-      "change": -4077
-    },
-    {
-      "symbol": "MSTR261218C00100000",
-      "previous": 4308,
-      "current": 8385,
-      "change": 4077
-    },
-    {
-      "symbol": "QQQ261204P00550000",
-      "previous": 4261,
-      "current": 8284,
-      "change": 4023
-    },
-    {
-      "symbol": "SPY261130C00722000",
-      "previous": 1098,
-      "current": 5115,
-      "change": 4017
-    },
-    {
-      "symbol": "NVDA261204P00055000",
-      "previous": 238,
-      "current": 4252,
-      "change": 4014
-    },
-    {
-      "symbol": "TSLA261204C00407500",
-      "previous": 286,
-      "current": 4296,
-      "change": 4010
-    },
-    {
-      "symbol": "BAC270617C00045000",
-      "previous": 5271,
-      "current": 9275,
-      "change": 4004
-    },
-    {
-      "symbol": "SPY261202P00565000",
-      "previous": 103,
-      "current": 4104,
-      "change": 4001
-    },
-    {
-      "symbol": "TLT270319P00050000",
-      "previous": 25100,
-      "current": 29100,
-      "change": 4000
-    },
-    {
-      "symbol": "SPY261204C00710000",
-      "previous": 646,
-      "current": 4637,
-      "change": 3991
-    },
-    {
-      "symbol": "AAPL261127P00350000",
-      "previous": 5940,
-      "current": 9931,
-      "change": 3991
-    },
-    {
-      "symbol": "TLT261204C00082500",
-      "previous": 1483,
-      "current": 5470,
-      "change": 3987
-    },
-    {
-      "symbol": "QQQ261203C00665000",
-      "previous": 518,
-      "current": 4485,
-      "change": 3967
-    },
-    {
-      "symbol": "SPY261201C00724000",
-      "previous": 591,
-      "current": 4555,
-      "change": 3964
-    },
-    {
-      "symbol": "AMZN261204C00250000",
-      "previous": 1511,
-      "current": 5471,
-      "change": 3960
-    },
-    {
-      "symbol": "NVDA261127P00125000",
-      "previous": 12979,
-      "current": 16934,
-      "change": 3955
-    },
-    {
-      "symbol": "NVDA270115C00150000",
-      "previous": 41569,
-      "current": 45510,
-      "change": 3941
-    },
-    {
-      "symbol": "NVDA261130P00135000",
-      "previous": 3670,
-      "current": 7604,
-      "change": 3934
-    },
-    {
-      "symbol": "NVDA261204P00100000",
-      "previous": 6871,
-      "current": 10751,
-      "change": 3880
-    },
-    {
-      "symbol": "NVDA270115C00185000",
-      "previous": 32474,
-      "current": 36354,
-      "change": 3880
-    },
-    {
-      "symbol": "SPY270219P00650000",
-      "previous": 59050,
-      "current": 55198,
-      "change": -3852
-    },
-    {
-      "symbol": "IWM261218P00257000",
-      "previous": 35238,
-      "current": 39071,
-      "change": 3833
-    },
-    {
-      "symbol": "SPY261218C00717000",
-      "previous": 1467,
-      "current": 5298,
-      "change": 3831
-    },
-    {
-      "symbol": "NVDA261231P00090000",
-      "previous": 10439,
-      "current": 6619,
-      "change": -3820
-    },
-    {
-      "symbol": "QQQ261203C00655000",
-      "previous": 325,
-      "current": 4142,
-      "change": 3817
-    },
-    {
-      "symbol": "GOOGL261218C00330000",
-      "previous": 14722,
-      "current": 10908,
-      "change": -3814
-    },
-    {
-      "symbol": "SPY261130P00693000",
-      "previous": 2280,
-      "current": 6088,
-      "change": 3808
-    },
-    {
-      "symbol": "SPY261127P00699000",
-      "previous": 907,
-      "current": 4693,
-      "change": 3786
-    },
-    {
-      "symbol": "IWM261218C00285000",
-      "previous": 40619,
-      "current": 44393,
-      "change": 3774
-    },
-    {
-      "symbol": "TSLA261127C00425000",
-      "previous": 5338,
-      "current": 9073,
-      "change": 3735
-    },
-    {
-      "symbol": "AMD270219C00650000",
-      "previous": 15347,
-      "current": 19061,
-      "change": 3714
-    },
-    {
-      "symbol": "QQQ270219C00690000",
-      "previous": 8302,
-      "current": 12008,
-      "change": 3706
-    },
-    {
-      "symbol": "QQQ270319C00700000",
-      "previous": 17432,
-      "current": 21137,
-      "change": 3705
-    },
-    {
-      "symbol": "NVDA270319C00250000",
-      "previous": 70636,
-      "current": 74341,
-      "change": 3705
-    },
-    {
-      "symbol": "SPY261130P00696000",
-      "previous": 14551,
-      "current": 10861,
-      "change": -3690
-    },
-    {
-      "symbol": "TSLA261204P00170000",
-      "previous": 168,
-      "current": 3856,
-      "change": 3688
-    },
-    {
-      "symbol": "SPY261207C00727000",
-      "previous": 79,
-      "current": 3738,
-      "change": 3659
-    },
-    {
-      "symbol": "SPY261207C00733000",
-      "previous": 129,
-      "current": 3780,
-      "change": 3651
-    },
-    {
-      "symbol": "SPY261127P00702000",
-      "previous": 659,
-      "current": 4280,
-      "change": 3621
-    },
-    {
-      "symbol": "GLD261202C00355000",
-      "previous": 45,
-      "current": 3665,
-      "change": 3620
-    },
-    {
-      "symbol": "IWM261127P00254000",
-      "previous": 3156,
-      "current": 6759,
-      "change": 3603
-    },
-    {
-      "symbol": "BAC270219C00057500",
-      "previous": 2114,
-      "current": 5705,
-      "change": 3591
-    },
-    {
-      "symbol": "SPY261201C00719000",
-      "previous": 245,
-      "current": 3829,
-      "change": 3584
-    },
-    {
-      "symbol": "TLT261127C00081500",
-      "previous": 31480,
-      "current": 27902,
-      "change": -3578
-    },
-    {
-      "symbol": "GOOGL261127C00290000",
-      "previous": 12275,
-      "current": 8710,
-      "change": -3565
-    },
-    {
-      "symbol": "SPY261204C00734000",
-      "previous": 720,
-      "current": 4281,
-      "change": 3561
-    },
-    {
-      "symbol": "QQQ261218P00610000",
-      "previous": 56295,
-      "current": 52735,
-      "change": -3560
-    },
-    {
-      "symbol": "QQQ271217P00530000",
-      "previous": 1008,
-      "current": 4554,
-      "change": 3546
-    },
-    {
-      "symbol": "WMT270115P00095000",
-      "previous": 5424,
-      "current": 8963,
-      "change": 3539
-    },
-    {
-      "symbol": "MSTR270115C00130000",
-      "previous": 2179,
-      "current": 5718,
-      "change": 3539
-    },
-    {
-      "symbol": "SPY261201P00640000",
-      "previous": 193,
-      "current": 3731,
-      "change": 3538
-    },
-    {
-      "symbol": "SPY261130C00769000",
-      "previous": 2086,
-      "current": 5621,
-      "change": 3535
-    },
-    {
-      "symbol": "AAPL270115P00350000",
-      "previous": 18613,
-      "current": 22146,
-      "change": 3533
-    },
-    {
-      "symbol": "TLT261218P00079000",
-      "previous": 62045,
-      "current": 65575,
-      "change": 3530
-    },
-    {
-      "symbol": "QQQ261127C00650000",
-      "previous": 11339,
-      "current": 14851,
-      "change": 3512
-    },
-    {
-      "symbol": "QQQ261218C00660000",
-      "previous": 40751,
-      "current": 37264,
-      "change": -3487
-    },
-    {
-      "symbol": "SPY261127C00734000",
-      "previous": 2569,
-      "current": 6050,
-      "change": 3481
-    },
-    {
-      "symbol": "TLT261218C00082500",
-      "previous": 256,
-      "current": 3734,
-      "change": 3478
-    },
-    {
-      "symbol": "AAPL261218P00350000",
-      "previous": 10626,
-      "current": 14097,
-      "change": 3471
-    },
-    {
-      "symbol": "QQQ270115C00660000",
-      "previous": 9912,
-      "current": 13373,
-      "change": 3461
-    },
-    {
-      "symbol": "SPY270617C00805000",
-      "previous": 6924,
-      "current": 3464,
-      "change": -3460
-    },
-    {
-      "symbol": "NVDA261218C00165000",
-      "previous": 23057,
-      "current": 26508,
-      "change": 3451
-    },
-    {
-      "symbol": "SPY261127C00722000",
-      "previous": 2679,
-      "current": 6100,
-      "change": 3421
-    },
-    {
-      "symbol": "MSTR261127P00093000",
-      "previous": 5681,
-      "current": 2277,
-      "change": -3404
-    },
-    {
-      "symbol": "SPY270416P00430000",
-      "previous": 130,
-      "current": 3525,
-      "change": 3395
-    },
-    {
-      "symbol": "NFLX261204C00059000",
-      "previous": 1120,
-      "current": 4506,
-      "change": 3386
-    },
-    {
-      "symbol": "SPY261202P00640000",
-      "previous": 533,
-      "current": 3918,
-      "change": 3385
-    },
-    {
-      "symbol": "MSTR261127C00085000",
-      "previous": 28506,
-      "current": 25123,
-      "change": -3383
-    },
-    {
-      "symbol": "XLF270617P00040000",
-      "previous": 1048,
-      "current": 4412,
-      "change": 3364
-    },
-    {
-      "symbol": "SPY261218C00740000",
-      "previous": 13296,
-      "current": 16648,
-      "change": 3352
-    },
-    {
-      "symbol": "SPY261130P00680000",
-      "previous": 19608,
-      "current": 16268,
-      "change": -3340
-    },
-    {
-      "symbol": "NVDA261127P00145000",
-      "previous": 17073,
-      "current": 20404,
-      "change": 3331
-    },
-    {
-      "symbol": "SPY270219P00600000",
-      "previous": 13326,
-      "current": 9998,
-      "change": -3328
-    },
-    {
-      "symbol": "NVDA261127P00150000",
-      "previous": 21309,
-      "current": 17981,
-      "change": -3328
-    },
-    {
-      "symbol": "SPY261130P00690000",
-      "previous": 13645,
-      "current": 16970,
-      "change": 3325
-    },
-    {
-      "symbol": "AMZN261204C00245000",
-      "previous": 1789,
-      "current": 5107,
-      "change": 3318
-    },
-    {
-      "symbol": "AAPL261127C00350000",
-      "previous": 4319,
-      "current": 7610,
-      "change": 3291
-    },
-    {
-      "symbol": "TSLA261130P00305000",
-      "previous": 83,
-      "current": 3369,
-      "change": 3286
-    },
-    {
-      "symbol": "MSTR261127P00087000",
-      "previous": 5885,
-      "current": 2599,
-      "change": -3286
-    },
-    {
-      "symbol": "ORCL270115P00090000",
-      "previous": 17686,
-      "current": 14413,
-      "change": -3273
-    },
-    {
-      "symbol": "SPY261204C00727000",
-      "previous": 1258,
-      "current": 4519,
-      "change": 3261
-    },
-    {
-      "symbol": "SPY261218P00150000",
-      "previous": 37348,
-      "current": 40606,
-      "change": 3258
-    },
-    {
-      "symbol": "COIN261204C00107000",
-      "previous": 249,
-      "current": 3506,
-      "change": 3257
-    },
-    {
-      "symbol": "NVDA261218C00160000",
-      "previous": 38081,
-      "current": 41331,
-      "change": 3250
-    },
-    {
-      "symbol": "ORCL270115C00150000",
-      "previous": 23158,
-      "current": 26406,
-      "change": 3248
-    },
-    {
-      "symbol": "TLT261211C00085500",
-      "previous": 299,
-      "current": 3535,
-      "change": 3236
-    },
-    {
-      "symbol": "MSTR271217P00095000",
-      "previous": 12928,
-      "current": 9699,
-      "change": -3229
-    },
-    {
-      "symbol": "HYG270115C00076000",
-      "previous": 5421,
-      "current": 8648,
-      "change": 3227
-    },
-    {
-      "symbol": "QQQ261204C00640000",
-      "previous": 1358,
-      "current": 4581,
-      "change": 3223
-    },
-    {
-      "symbol": "HYG270319C00077000",
-      "previous": 16507,
-      "current": 19727,
-      "change": 3220
-    },
-    {
-      "symbol": "SPY261203P00630000",
-      "previous": 221,
-      "current": 3436,
-      "change": 3215
-    },
-    {
-      "symbol": "QQQ270617C00775000",
-      "previous": 9020,
-      "current": 12225,
-      "change": 3205
-    },
-    {
-      "symbol": "GOOGL261127C00330000",
-      "previous": 3291,
-      "current": 6490,
-      "change": 3199
-    },
-    {
-      "symbol": "NVDA261127C00162500",
-      "previous": 19711,
-      "current": 22908,
-      "change": 3197
-    },
-    {
-      "symbol": "META261211P00480000",
-      "previous": 28,
-      "current": 3225,
-      "change": 3197
-    },
-    {
-      "symbol": "NVDA270319C00190000",
-      "previous": 17406,
-      "current": 20592,
-      "change": 3186
-    },
-    {
-      "symbol": "SPY261127P00684000",
-      "previous": 331,
-      "current": 3516,
-      "change": 3185
-    },
-    {
-      "symbol": "QQQ270115C00700000",
-      "previous": 46878,
-      "current": 50061,
-      "change": 3183
-    },
-    {
-      "symbol": "NVDA271217C00165000",
-      "previous": 4592,
-      "current": 7775,
-      "change": 3183
-    },
-    {
-      "symbol": "COIN261127C00114000",
-      "previous": 7257,
-      "current": 4078,
-      "change": -3179
-    },
-    {
-      "symbol": "SPY261204C00714000",
-      "previous": 846,
-      "current": 4022,
-      "change": 3176
-    },
-    {
-      "symbol": "IWM270219P00235000",
-      "previous": 4913,
-      "current": 8072,
-      "change": 3159
-    },
-    {
-      "symbol": "QQQ261218P00560000",
-      "previous": 28253,
-      "current": 25095,
-      "change": -3158
-    },
-    {
-      "symbol": "SPY261130C00717000",
-      "previous": 691,
-      "current": 3845,
-      "change": 3154
-    },
-    {
-      "symbol": "QQQ261211C00630000",
-      "previous": 105,
-      "current": 3259,
-      "change": 3154
-    },
-    {
-      "symbol": "QQQ270219P00375000",
-      "previous": 193,
-      "current": 3347,
-      "change": 3154
-    },
-    {
-      "symbol": "QQQ270219C00755000",
-      "previous": 913,
-      "current": 4061,
-      "change": 3148
-    },
-    {
-      "symbol": "QQQ271217P00550000",
-      "previous": 21903,
-      "current": 25047,
-      "change": 3144
-    },
-    {
-      "symbol": "SPY261127C00717000",
-      "previous": 1888,
-      "current": 5028,
-      "change": 3140
-    },
-    {
-      "symbol": "SPY261130P00707000",
-      "previous": 4622,
-      "current": 1486,
-      "change": -3136
-    },
-    {
-      "symbol": "SPY261204P00699000",
-      "previous": 235,
-      "current": 3363,
-      "change": 3128
-    },
-    {
-      "symbol": "SPY261127C00699000",
-      "previous": 444,
-      "current": 3549,
-      "change": 3105
-    },
-    {
-      "symbol": "TLT261130P00082000",
-      "previous": 2401,
-      "current": 5498,
-      "change": 3097
-    },
-    {
-      "symbol": "QQQ261204P00495000",
-      "previous": 176,
-      "current": 3263,
-      "change": 3087
-    },
-    {
-      "symbol": "AAPL261204P00330000",
-      "previous": 5440,
-      "current": 8521,
-      "change": 3081
-    },
-    {
-      "symbol": "SPY261127P00655000",
-      "previous": 1798,
-      "current": 4878,
-      "change": 3080
-    },
-    {
-      "symbol": "QQQ261218P00650000",
-      "previous": 58432,
-      "current": 55357,
-      "change": -3075
-    },
-    {
-      "symbol": "NVDA261127P00142000",
-      "previous": 2628,
-      "current": 5702,
-      "change": 3074
-    },
-    {
-      "symbol": "QQQ261218P00620000",
-      "previous": 52686,
-      "current": 49619,
-      "change": -3067
-    },
-    {
-      "symbol": "QQQ270917C00700000",
-      "previous": 3345,
-      "current": 6408,
-      "change": 3063
-    },
-    {
-      "symbol": "MSTR281215C00195000",
-      "previous": 219,
-      "current": 3272,
-      "change": 3053
-    },
-    {
-      "symbol": "SPY261130P00702000",
-      "previous": 7950,
-      "current": 4901,
-      "change": -3049
-    },
-    {
-      "symbol": "SPY261231P00700000",
-      "previous": 24251,
-      "current": 21204,
-      "change": -3047
-    },
-    {
-      "symbol": "ORCL270115C00145000",
-      "previous": 3902,
-      "current": 6945,
-      "change": 3043
-    },
-    {
-      "symbol": "QQQ261202P00495000",
-      "previous": 0,
-      "current": 3030,
-      "change": 3030
-    },
-    {
-      "symbol": "QQQ261218C00633000",
-      "previous": 138,
-      "current": 3166,
-      "change": 3028
-    },
-    {
-      "symbol": "AMZN261204C00252500",
-      "previous": 1167,
-      "current": 4193,
-      "change": 3026
-    },
-    {
-      "symbol": "QQQ270115C00685000",
-      "previous": 5378,
-      "current": 8400,
-      "change": 3022
-    },
-    {
-      "symbol": "XLE270319C00060000",
-      "previous": 20290,
-      "current": 23307,
-      "change": 3017
-    },
-    {
-      "symbol": "AMZN280121C00310000",
-      "previous": 2926,
-      "current": 5942,
-      "change": 3016
-    },
-    {
-      "symbol": "NVDA261130C00185000",
-      "previous": 3886,
-      "current": 6901,
-      "change": 3015
-    },
-    {
-      "symbol": "AAPL270115P00275000",
-      "previous": 10217,
-      "current": 13229,
-      "change": 3012
-    },
-    {
-      "symbol": "XLF261204C00057000",
-      "previous": 848,
-      "current": 3858,
-      "change": 3010
-    },
-    {
-      "symbol": "IWM270319C00305000",
-      "previous": 6628,
-      "current": 9629,
-      "change": 3001
-    },
-    {
-      "symbol": "SPY270319P00650000",
-      "previous": 13470,
-      "current": 16461,
-      "change": 2991
-    },
-    {
-      "symbol": "NVDA261127C00132000",
-      "previous": 1184,
-      "current": 4168,
-      "change": 2984
-    },
-    {
-      "symbol": "SPY261127C00716000",
-      "previous": 1555,
-      "current": 4509,
-      "change": 2954
-    },
-    {
-      "symbol": "COIN261204P00096000",
-      "previous": 127,
-      "current": 3080,
-      "change": 2953
-    },
-    {
-      "symbol": "SMH270115P00375000",
-      "previous": 10110,
-      "current": 7163,
-      "change": -2947
-    },
-    {
-      "symbol": "IWM270115P00275000",
-      "previous": 35281,
-      "current": 32343,
-      "change": -2938
-    },
-    {
-      "symbol": "GOOGL261218C00300000",
-      "previous": 29496,
-      "current": 32424,
-      "change": 2928
-    },
-    {
-      "symbol": "GLD270115P00320000",
-      "previous": 25319,
-      "current": 28242,
-      "change": 2923
-    },
-    {
-      "symbol": "NVDA261130C00155000",
-      "previous": 3098,
-      "current": 6014,
-      "change": 2916
-    },
-    {
-      "symbol": "SPY270115P00730000",
-      "previous": 22153,
-      "current": 19242,
-      "change": -2911
-    },
-    {
-      "symbol": "NFLX261204C00061000",
-      "previous": 1805,
-      "current": 4711,
-      "change": 2906
-    },
-    {
-      "symbol": "GOOGL261204C00287500",
-      "previous": 180,
-      "current": 3071,
-      "change": 2891
-    },
-    {
-      "symbol": "META270115C00650000",
-      "previous": 7773,
-      "current": 10647,
-      "change": 2874
-    },
-    {
-      "symbol": "QQQ261127C00640000",
-      "previous": 5865,
-      "current": 8734,
-      "change": 2869
-    },
-    {
-      "symbol": "SMH261231P00245000",
-      "previous": 93,
-      "current": 2958,
-      "change": 2865
-    },
-    {
-      "symbol": "AVGO261204P00180000",
-      "previous": 0,
-      "current": 2861,
-      "change": 2861
-    },
-    {
-      "symbol": "IWM261127P00260000",
-      "previous": 10003,
-      "current": 12857,
-      "change": 2854
-    },
-    {
-      "symbol": "SPY270319P00700000",
-      "previous": 138720,
-      "current": 135878,
-      "change": -2842
-    },
-    {
-      "symbol": "SPY261127C00729000",
-      "previous": 3108,
-      "current": 5937,
-      "change": 2829
-    },
-    {
-      "symbol": "SPY270115P00685000",
-      "previous": 15921,
-      "current": 18749,
-      "change": 2828
-    },
-    {
-      "symbol": "SPY261127P00681000",
-      "previous": 714,
-      "current": 3531,
-      "change": 2817
-    },
-    {
-      "symbol": "SPY270219P00400000",
-      "previous": 5246,
-      "current": 8055,
-      "change": 2809
-    },
-    {
-      "symbol": "SPY261130C00730000",
-      "previous": 6365,
-      "current": 9165,
-      "change": 2800
-    },
-    {
-      "symbol": "SPY261204C00717000",
-      "previous": 455,
-      "current": 3255,
-      "change": 2800
-    },
-    {
-      "symbol": "QQQ261127C00660000",
-      "previous": 7839,
-      "current": 10634,
-      "change": 2795
-    },
-    {
-      "symbol": "IWM261130P00264000",
-      "previous": 5247,
-      "current": 8042,
-      "change": 2795
-    },
-    {
-      "symbol": "QQQ270115P00620000",
-      "previous": 37497,
-      "current": 34710,
-      "change": -2787
-    },
-    {
-      "symbol": "BAC261211P00045000",
-      "previous": 249,
-      "current": 3010,
-      "change": 2761
-    },
-    {
-      "symbol": "AMZN261127C00250000",
-      "previous": 5562,
-      "current": 8321,
-      "change": 2759
-    },
-    {
-      "symbol": "QQQ261127C00635000",
-      "previous": 2483,
-      "current": 5241,
-      "change": 2758
-    },
-    {
-      "symbol": "AAPL261218P00335000",
-      "previous": 11231,
-      "current": 13985,
-      "change": 2754
-    },
-    {
-      "symbol": "SPY261218C00720000",
-      "previous": 14224,
-      "current": 16974,
-      "change": 2750
-    },
-    {
-      "symbol": "QQQ270115P00585000",
-      "previous": 17801,
-      "current": 20543,
-      "change": 2742
-    },
-    {
-      "symbol": "GLD270319C00350000",
-      "previous": 6048,
-      "current": 8783,
-      "change": 2735
-    },
-    {
-      "symbol": "QQQ261130P00585000",
-      "previous": 5091,
-      "current": 7824,
-      "change": 2733
-    },
-    {
-      "symbol": "QQQ261202C00650000",
-      "previous": 1285,
-      "current": 4016,
-      "change": 2731
-    },
-    {
-      "symbol": "QQQ261127P00580000",
-      "previous": 4534,
-      "current": 7263,
-      "change": 2729
-    },
-    {
-      "symbol": "NVDA270219P00130000",
-      "previous": 14126,
-      "current": 16851,
-      "change": 2725
-    },
-    {
-      "symbol": "SPY261127C00735000",
-      "previous": 26423,
-      "current": 29143,
-      "change": 2720
-    },
-    {
-      "symbol": "NVDA261127C00141000",
-      "previous": 5953,
-      "current": 3234,
-      "change": -2719
-    },
-    {
-      "symbol": "MSTR261218C00090000",
-      "previous": 1472,
-      "current": 4185,
-      "change": 2713
-    },
-    {
-      "symbol": "NVDA261204C00170000",
-      "previous": 19741,
-      "current": 22453,
-      "change": 2712
-    },
-    {
-      "symbol": "SPY261218P00615000",
-      "previous": 12738,
-      "current": 15443,
-      "change": 2705
-    },
-    {
-      "symbol": "SPY270115C00780000",
-      "previous": 21859,
-      "current": 24554,
-      "change": 2695
-    },
-    {
-      "symbol": "SPY261218P00690000",
-      "previous": 41172,
-      "current": 43863,
-      "change": 2691
-    },
-    {
-      "symbol": "SPY261203P00685000",
-      "previous": 980,
-      "current": 3670,
-      "change": 2690
-    },
-    {
-      "symbol": "SPY261218C00710000",
-      "previous": 8231,
-      "current": 10912,
-      "change": 2681
-    },
-    {
-      "symbol": "SMH270115P00400000",
-      "previous": 43854,
-      "current": 41179,
-      "change": -2675
-    },
-    {
-      "symbol": "QQQ261127C00630000",
-      "previous": 2684,
-      "current": 5337,
-      "change": 2653
-    },
-    {
-      "symbol": "AMD270917C01120000",
-      "previous": 7618,
-      "current": 4965,
-      "change": -2653
-    },
-    {
-      "symbol": "SPY261127C00706000",
-      "previous": 101,
-      "current": 2753,
-      "change": 2652
-    },
-    {
-      "symbol": "TSLA261204C00385000",
-      "previous": 1441,
-      "current": 4076,
-      "change": 2635
-    },
-    {
-      "symbol": "NVDA261127C00149000",
-      "previous": 5513,
-      "current": 2882,
-      "change": -2631
-    },
-    {
-      "symbol": "SPY261127C00711000",
-      "previous": 178,
-      "current": 2806,
-      "change": 2628
-    },
-    {
-      "symbol": "AMD261127C00467500",
-      "previous": 3240,
-      "current": 614,
-      "change": -2626
-    },
-    {
-      "symbol": "SPY261127P00692000",
-      "previous": 814,
-      "current": 3431,
-      "change": 2617
-    },
-    {
-      "symbol": "QQQ270115C00725000",
-      "previous": 40127,
-      "current": 37515,
-      "change": -2612
-    },
-    {
-      "symbol": "SPY261218C00698000",
-      "previous": 12,
-      "current": 2623,
-      "change": 2611
-    },
-    {
-      "symbol": "SPY261127C00715000",
-      "previous": 10259,
-      "current": 12869,
-      "change": 2610
-    },
-    {
-      "symbol": "SPY261207C00746000",
-      "previous": 168,
-      "current": 2775,
-      "change": 2607
-    },
-    {
-      "symbol": "SPY261203P00650000",
-      "previous": 291,
-      "current": 2896,
-      "change": 2605
-    },
-    {
-      "symbol": "AMD261204C00395000",
-      "previous": 67,
-      "current": 2670,
-      "change": 2603
-    },
-    {
-      "symbol": "SPY261127P00696000",
-      "previous": 785,
-      "current": 3382,
-      "change": 2597
-    },
-    {
-      "symbol": "QQQ270219C00685000",
-      "previous": 2927,
-      "current": 5522,
-      "change": 2595
-    },
-    {
-      "symbol": "MSTR261127P00072000",
-      "previous": 923,
-      "current": 3508,
-      "change": 2585
-    },
-    {
-      "symbol": "NVDA261127C00165000",
-      "previous": 38916,
-      "current": 36356,
-      "change": -2560
-    },
-    {
-      "symbol": "TLT261218P00078000",
-      "previous": 106673,
-      "current": 104120,
-      "change": -2553
-    },
-    {
-      "symbol": "AMZN261218C00285000",
-      "previous": 28454,
-      "current": 25904,
-      "change": -2550
-    },
-    {
-      "symbol": "QQQ261127C00651000",
-      "previous": 983,
-      "current": 3531,
-      "change": 2548
-    },
-    {
-      "symbol": "SPY261127P00679000",
-      "previous": 774,
-      "current": 3321,
-      "change": 2547
-    },
-    {
-      "symbol": "SPY261207P00696000",
-      "previous": 37,
-      "current": 2578,
-      "change": 2541
-    },
-    {
-      "symbol": "QQQ270115P00590000",
-      "previous": 26086,
-      "current": 23547,
-      "change": -2539
-    },
-    {
-      "symbol": "IWM261130P00255000",
-      "previous": 6747,
-      "current": 9286,
-      "change": 2539
-    },
-    {
-      "symbol": "QQQ261127P00630000",
-      "previous": 9993,
-      "current": 7458,
-      "change": -2535
-    },
-    {
-      "symbol": "GLD270617C00340000",
-      "previous": 2631,
-      "current": 5163,
-      "change": 2532
-    },
-    {
-      "symbol": "TLT270115P00080000",
-      "previous": 117205,
-      "current": 119727,
-      "change": 2522
-    },
-    {
-      "symbol": "QQQ261127P00595000",
-      "previous": 8796,
-      "current": 11315,
-      "change": 2519
-    },
-    {
-      "symbol": "IWM261204C00265000",
-      "previous": 6592,
-      "current": 9108,
-      "change": 2516
-    },
-    {
-      "symbol": "SPY261207P00692000",
-      "previous": 24,
-      "current": 2539,
-      "change": 2515
-    },
-    {
-      "symbol": "AMZN261204P00222500",
-      "previous": 3036,
-      "current": 5547,
-      "change": 2511
-    },
-    {
-      "symbol": "QQQ270115P00750000",
-      "previous": 3242,
-      "current": 738,
-      "change": -2504
-    }
-  ],
-  "note": "500 contracts changed.",
+  "rows": [],
+  "note": "0 contracts changed.",
   "snapshot": {
     "B1SPY261127C00695000": 0,
     "B1SPY261127P00695000": 0,
@@ -108146,1006 +105145,1006 @@
     "AVGO290119P00540000": 58,
     "AVGO290119C00560000": 958,
     "AVGO290119P00560000": 41,
-    "BRKB261218C00480000": 0,
-    "BRKB261231P00375000": 0,
-    "BRKB261218P00350000": 0,
-    "BRKB261211P00450000": 0,
-    "BRKB261204P00675000": 0,
-    "BRKB261204C00475000": 0,
-    "BRKB261211P00610000": 0,
-    "BRKB261127C00610000": 0,
-    "BRKB261204C00430000": 0,
-    "BRKB261127C00515000": 0,
-    "BRKB261211C00475000": 0,
-    "BRKB261231C00565000": 0,
-    "BRKB261231P00420000": 0,
-    "BRKB261231C00555000": 0,
-    "BRKB261224C00685000": 0,
-    "BRKB261211P00465000": 0,
-    "BRKB261127P00400000": 0,
-    "BRKB261211C00605000": 0,
-    "BRKB261224P00320000": 0,
-    "BRKB261224P00375000": 0,
-    "BRKB261127P00562500": 0,
-    "BRKB261224C00430000": 0,
-    "BRKB261231P00365000": 0,
-    "BRKB261127C00520000": 0,
-    "BRKB261204P00550000": 0,
-    "BRKB261218P00405000": 0,
-    "BRKB261204P00560000": 0,
-    "BRKB261231P00500000": 0,
-    "BRKB261218C00572500": 0,
-    "BRKB261127P00525000": 0,
-    "BRKB261224C00535000": 0,
-    "BRKB261204P00670000": 0,
-    "BRKB261211C00560000": 0,
-    "BRKB261218C00415000": 0,
-    "BRKB261224P00630000": 0,
-    "BRKB261224P00675000": 0,
-    "BRKB261127C00557500": 0,
-    "BRKB261218C00560000": 0,
-    "BRKB261204C00690000": 0,
-    "BRKB261127P00680000": 0,
-    "BRKB261231P00555000": 0,
-    "BRKB261218C00577500": 0,
-    "BRKB261231P00410000": 0,
-    "BRKB261204C00340000": 0,
-    "BRKB261211C00610000": 0,
-    "BRKB261224C00420000": 0,
-    "BRKB261231P00385000": 0,
-    "BRKB261218P00465000": 0,
-    "BRKB261127P00455000": 0,
-    "BRKB261211C00525000": 0,
-    "BRKB261204P00540000": 0,
-    "BRKB261224C00330000": 0,
-    "BRKB261218C00720000": 0,
-    "BRKB261127P00690000": 0,
-    "BRKB261211C00425000": 0,
-    "BRKB261218C00605000": 0,
-    "BRKB261127C00585000": 0,
-    "BRKB261218P00660000": 0,
-    "BRKB261127P00270000": 0,
-    "BRKB261204P00505000": 0,
-    "BRKB261127C00500000": 0,
-    "BRKB261224C00365000": 0,
-    "BRKB261127P00550000": 0,
-    "BRKB261127P00587500": 0,
-    "BRKB261204C00410000": 0,
-    "BRKB261211C00490000": 0,
-    "BRKB261211C00445000": 0,
-    "BRKB261218P00525000": 0,
-    "BRKB261204C00330000": 0,
-    "BRKB261224P00380000": 0,
-    "BRKB261224C00675000": 0,
-    "BRKB261127P00490000": 0,
-    "BRKB261211C00510000": 0,
-    "BRKB261224C00620000": 0,
-    "BRKB261211P00640000": 0,
-    "BRKB261211C00495000": 0,
-    "BRKB261127C00605000": 0,
-    "BRKB261127P00570000": 0,
-    "BRKB261127C00375000": 0,
-    "BRKB261204C00555000": 0,
-    "BRKB261211P00577500": 0,
-    "BRKB261231P00510000": 0,
-    "BRKB261127C00595000": 0,
-    "BRKB261224C00580000": 0,
-    "BRKB261224P00700000": 0,
-    "BRKB261218P00445000": 0,
-    "BRKB261224C00415000": 0,
-    "BRKB261211P00592500": 0,
-    "BRKB261218P00650000": 0,
-    "BRKB261224P00425000": 0,
-    "BRKB261211P00690000": 0,
-    "BRKB261204P00365000": 0,
-    "BRKB261211C00485000": 0,
-    "BRKB261204P00567500": 0,
-    "BRKB261218P00600000": 0,
-    "BRKB261224P00410000": 0,
-    "BRKB261218P00680000": 0,
-    "BRKB261211P00435000": 0,
-    "BRKB261204C00635000": 0,
-    "BRKB261211P00290000": 0,
-    "BRKB261204P00605000": 0,
-    "BRKB261224P00570000": 0,
-    "BRKB261211C00655000": 0,
-    "BRKB261204P00625000": 0,
-    "BRKB261204C00625000": 0,
-    "BRKB261224P00640000": 0,
-    "BRKB261211P00410000": 0,
-    "BRKB261204C00630000": 0,
-    "BRKB261211C00600000": 0,
-    "BRKB261211P00460000": 0,
-    "BRKB261211P00510000": 0,
-    "BRKB261211C00460000": 0,
-    "BRKB261218P00395000": 0,
-    "BRKB261218P00490000": 0,
-    "BRKB261204C00565000": 0,
-    "BRKB261218P00330000": 0,
-    "BRKB261211C00420000": 0,
-    "BRKB261127P00375000": 0,
-    "BRKB261218P00690000": 0,
-    "BRKB261231P00710000": 0,
-    "BRKB261231C00690000": 0,
-    "BRKB261231C00505000": 0,
-    "BRKB261127P00355000": 0,
-    "BRKB261127C00660000": 0,
-    "BRKB261127P00670000": 0,
-    "BRKB261127C00710000": 0,
-    "BRKB261211C00585000": 0,
-    "BRKB261211C00710000": 0,
-    "BRKB261224P00440000": 0,
-    "BRKB261211P00585000": 0,
-    "BRKB261204C00550000": 0,
-    "BRKB261204C00567500": 0,
-    "BRKB261218P00320000": 0,
-    "BRKB261211P00582500": 0,
-    "BRKB261204P00565000": 0,
-    "BRKB261204C00400000": 0,
-    "BRKB261218P00240000": 0,
-    "BRKB261204C00575000": 0,
-    "BRKB261224P00505000": 0,
-    "BRKB261127C00435000": 0,
-    "BRKB261204P00445000": 0,
-    "BRKB261211C00545000": 0,
-    "BRKB261204C00385000": 0,
-    "BRKB261204C00450000": 0,
-    "BRKB261211P00475000": 0,
-    "BRKB261218P00210000": 0,
-    "BRKB261127P00290000": 0,
-    "BRKB261224C00655000": 0,
-    "BRKB261127P00577500": 0,
-    "BRKB261127C00480000": 0,
-    "BRKB261218P00485000": 0,
-    "BRKB261211P00405000": 0,
-    "BRKB261218P00730000": 0,
-    "BRKB261211C00680000": 0,
-    "BRKB261204P00410000": 0,
-    "BRKB261231P00460000": 0,
-    "BRKB261204P00310000": 0,
-    "BRKB261218P00340000": 0,
-    "BRKB261211P00520000": 0,
-    "BRKB261211C00365000": 0,
-    "BRKB261211P00480000": 0,
-    "BRKB261204C00615000": 0,
-    "BRKB261211C00375000": 0,
-    "BRKB261231C00495000": 0,
-    "BRKB261231C00620000": 0,
-    "BRKB261127C00330000": 0,
-    "BRKB261231P00400000": 0,
-    "BRKB261127C00405000": 0,
-    "BRKB261218C00470000": 0,
-    "BRKB261224C00585000": 0,
-    "BRKB261204P00680000": 0,
-    "BRKB261211P00587500": 0,
-    "BRKB261231C00425000": 0,
-    "BRKB261218P00540000": 0,
-    "BRKB261204C00665000": 0,
-    "BRKB261204C00300000": 0,
-    "BRKB261218C00440000": 0,
-    "BRKB261231P00665000": 0,
-    "BRKB261127P00310000": 0,
-    "BRKB261204P00610000": 0,
-    "BRKB261127C00420000": 0,
-    "BRKB261204C00585000": 0,
-    "BRKB261218C00535000": 0,
-    "BRKB261204C00490000": 0,
-    "BRKB261231P00685000": 0,
-    "BRKB261204C00495000": 0,
-    "BRKB261224C00395000": 0,
-    "BRKB261127C00690000": 0,
-    "BRKB261224C00505000": 0,
-    "BRKB261204P00640000": 0,
-    "BRKB261211P00567500": 0,
-    "BRKB261224C00560000": 0,
-    "BRKB261231P00330000": 0,
-    "BRKB261211P00630000": 0,
-    "BRKB261218P00700000": 0,
-    "BRKB261231C00610000": 0,
-    "BRKB261231P00395000": 0,
-    "BRKB261127P00585000": 0,
-    "BRKB261231P00380000": 0,
-    "BRKB261231P00580000": 0,
-    "BRKB261127C00320000": 0,
-    "BRKB261224P00415000": 0,
-    "BRKB261224C00700000": 0,
-    "BRKB261127C00370000": 0,
-    "BRKB261224P00510000": 0,
-    "BRKB261127C00555000": 0,
-    "BRKB261224C00520000": 0,
-    "BRKB261231C00430000": 0,
-    "BRKB261204C00675000": 0,
-    "BRKB261127P00495000": 0,
-    "BRKB261127P00460000": 0,
-    "BRKB261224C00710000": 0,
-    "BRKB261127P00420000": 0,
-    "BRKB261204P00582500": 0,
-    "BRKB261218P00590000": 0,
-    "BRKB261218P00480000": 0,
-    "BRKB261224P00605000": 0,
-    "BRKB261211P00395000": 0,
-    "BRKB261231P00525000": 0,
-    "BRKB261127C00510000": 0,
-    "BRKB261211P00300000": 0,
-    "BRKB261231C00290000": 0,
-    "BRKB261211P00445000": 0,
-    "BRKB261218P00605000": 0,
-    "BRKB261231P00615000": 0,
-    "BRKB261218C00375000": 0,
-    "BRKB261211C00300000": 0,
-    "BRKB261127C00270000": 0,
-    "BRKB261127P00435000": 0,
-    "BRKB261127P00500000": 0,
-    "BRKB261218C00525000": 0,
-    "BRKB261218C00300000": 0,
-    "BRKB261231P00320000": 0,
-    "BRKB261224P00615000": 0,
-    "BRKB261127C00450000": 0,
-    "BRKB261218P00515000": 0,
-    "BRKB261231P00515000": 0,
-    "BRKB261204C00577500": 0,
-    "BRKB261211P00280000": 0,
-    "BRKB261218C00510000": 0,
-    "BRKB261224C00645000": 0,
-    "BRKB261211P00655000": 0,
-    "BRKB261204P00685000": 0,
-    "BRKB261204C00595000": 0,
-    "BRKB261204C00355000": 0,
-    "BRKB261231C00370000": 0,
-    "BRKB261211P00350000": 0,
-    "BRKB261224P00355000": 0,
-    "BRKB261224C00500000": 0,
-    "BRKB261127C00465000": 0,
-    "BRKB261127P00480000": 0,
-    "BRKB261211P00670000": 0,
-    "BRKB261211C00440000": 0,
-    "BRKB261127C00495000": 0,
-    "BRKB261218P00535000": 0,
-    "BRKB261218P00365000": 0,
-    "BRKB261218C00610000": 0,
-    "BRKB261218C00490000": 0,
-    "BRKB261127C00310000": 0,
-    "BRKB261211P00495000": 0,
-    "BRKB261127P00530000": 0,
-    "BRKB261204P00460000": 0,
-    "BRKB261224C00625000": 0,
-    "BRKB261218C00635000": 0,
-    "BRKB261204P00587500": 0,
-    "BRKB261218P00587500": 0,
-    "BRKB261218P00560000": 0,
-    "BRKB261218P00450000": 0,
-    "BRKB261211C00572500": 0,
-    "BRKB261224C00600000": 0,
-    "BRKB261211C00290000": 0,
-    "BRKB261204P00455000": 0,
-    "BRKB261218C00505000": 0,
-    "BRKB261127C00700000": 0,
-    "BRKB261211P00380000": 0,
-    "BRKB261224P00460000": 0,
-    "BRKB261224P00420000": 0,
-    "BRKB261231P00535000": 0,
-    "BRKB261211C00390000": 0,
-    "BRKB261127C00390000": 0,
-    "BRKB261218P00620000": 0,
-    "BRKB261218C00240000": 0,
-    "BRKB261211P00540000": 0,
-    "BRKB261211P00360000": 0,
-    "BRKB261204P00480000": 0,
-    "BRKB261127P00700000": 0,
-    "BRKB261218C00425000": 0,
-    "BRKB261218C00320000": 0,
-    "BRKB261231P00650000": 0,
-    "BRKB261211C00665000": 0,
-    "BRKB261218P00545000": 0,
-    "BRKB261224C00480000": 0,
-    "BRKB261218C00587500": 0,
-    "BRKB261204P00580000": 0,
-    "BRKB261211P00575000": 0,
-    "BRKB261211C00505000": 0,
-    "BRKB261204P00535000": 0,
-    "BRKB261127C00340000": 0,
-    "BRKB261224C00565000": 0,
-    "BRKB261211P00385000": 0,
-    "BRKB261218C00640000": 0,
-    "BRKB261127C00620000": 0,
-    "BRKB261211C00355000": 0,
-    "BRKB261224P00600000": 0,
-    "BRKB261218P00495000": 0,
-    "BRKB261231C00585000": 0,
-    "BRKB261231C00450000": 0,
-    "BRKB261204P00530000": 0,
-    "BRKB261218P00420000": 0,
-    "BRKB261204P00290000": 0,
-    "BRKB261211C00320000": 0,
-    "BRKB261224C00290000": 0,
-    "BRKB261218C00645000": 0,
-    "BRKB261218P00260000": 0,
-    "BRKB261127P00425000": 0,
-    "BRKB261127P00475000": 0,
-    "BRKB261211C00565000": 0,
-    "BRKB261211P00710000": 0,
-    "BRKB261231C00310000": 0,
-    "BRKB261127C00572500": 0,
-    "BRKB261204P00490000": 0,
-    "BRKB261211P00570000": 0,
-    "BRKB261224P00550000": 0,
-    "BRKB261224P00405000": 0,
-    "BRKB261204P00425000": 0,
-    "BRKB261127P00665000": 0,
-    "BRKB261127C00475000": 0,
-    "BRKB261127C00445000": 0,
-    "BRKB261127P00330000": 0,
-    "BRKB261204C00360000": 0,
-    "BRKB261218C00540000": 0,
-    "BRKB261204P00380000": 0,
-    "BRKB261231P00485000": 0,
-    "BRKB261204P00630000": 0,
-    "BRKB261127C00685000": 0,
-    "BRKB261211C00630000": 0,
-    "BRKB261127C00665000": 0,
-    "BRKB261231P00545000": 0,
-    "BRKB261204P00655000": 0,
-    "BRKB261211C00620000": 0,
-    "BRKB261218P00470000": 0,
-    "BRKB261218P00500000": 0,
-    "BRKB261127C00655000": 0,
-    "BRKB261204C00680000": 0,
-    "BRKB261224P00690000": 0,
-    "BRKB261204C00350000": 0,
-    "BRKB261218C00710000": 0,
-    "BRKB261231P00470000": 0,
-    "BRKB261211P00455000": 0,
-    "BRKB261204C00280000": 0,
-    "BRKB261127P00625000": 0,
-    "BRKB261231C00665000": 0,
-    "BRKB261218P00510000": 0,
-    "BRKB261127P00547500": 0,
-    "BRKB261204P00555000": 0,
-    "BRKB261127P00415000": 0,
-    "BRKB261231C00645000": 0,
-    "BRKB261204C00670000": 0,
-    "BRKB261218C00250000": 0,
-    "BRKB261224P00610000": 0,
-    "BRKB261218P00625000": 0,
-    "BRKB261231P00530000": 0,
-    "BRKB261231C00535000": 0,
-    "BRKB261231C00575000": 0,
-    "BRKB261231C00375000": 0,
-    "BRKB261211C00580000": 0,
-    "BRKB261231C00615000": 0,
-    "BRKB261224C00545000": 0,
-    "BRKB261127C00670000": 0,
-    "BRKB261224C00515000": 0,
-    "BRKB261204P00340000": 0,
-    "BRKB261127P00595000": 0,
-    "BRKB261211P00390000": 0,
-    "BRKB261204P00375000": 0,
-    "BRKB261224P00485000": 0,
-    "BRKB261218C00565000": 0,
-    "BRKB261211P00505000": 0,
-    "BRKB261127C00490000": 0,
-    "BRKB261231C00625000": 0,
-    "BRKB261218C00210000": 0,
-    "BRKB261224P00620000": 0,
-    "BRKB261218C00340000": 0,
-    "BRKB261224C00310000": 0,
-    "BRKB261231P00310000": 0,
-    "BRKB261204C00640000": 0,
-    "BRKB261231C00685000": 0,
-    "BRKB261204C00660000": 0,
-    "BRKB261218P00270000": 0,
-    "BRKB261204C00380000": 0,
-    "BRKB261127C00592500": 0,
-    "BRKB261204C00600000": 0,
-    "BRKB261127P00450000": 0,
-    "BRKB261204P00420000": 0,
-    "BRKB261204C00605000": 0,
-    "BRKB261204P00465000": 0,
-    "BRKB261204C00505000": 0,
-    "BRKB261224C00390000": 0,
-    "BRKB261231C00600000": 0,
-    "BRKB261231C00385000": 0,
-    "BRKB261218P00530000": 0,
-    "BRKB261224P00365000": 0,
-    "BRKB261224P00310000": 0,
-    "BRKB261218C00485000": 0,
-    "BRKB261224C00525000": 0,
-    "BRKB261127C00640000": 0,
-    "BRKB261211C00455000": 0,
-    "BRKB261211C00582500": 0,
-    "BRKB261211P00665000": 0,
-    "BRKB261224C00630000": 0,
-    "BRKB261218P00720000": 0,
-    "BRKB261127P00545000": 0,
-    "BRKB261204P00700000": 0,
-    "BRKB261204P00595000": 0,
-    "BRKB261204P00665000": 0,
-    "BRKB261204C00525000": 0,
-    "BRKB261127C00675000": 0,
-    "BRKB261204P00485000": 0,
-    "BRKB261218C00230000": 0,
-    "BRKB261224C00575000": 0,
-    "BRKB261211C00567500": 0,
-    "BRKB261231P00550000": 0,
-    "BRKB261224C00680000": 0,
-    "BRKB261231C00490000": 0,
-    "BRKB261211P00355000": 0,
-    "BRKB261204P00600000": 0,
-    "BRKB261204P00350000": 0,
-    "BRKB261218C00390000": 0,
-    "BRKB261204P00575000": 0,
-    "BRKB261204C00465000": 0,
-    "BRKB261224C00425000": 0,
-    "BRKB261211P00660000": 0,
-    "BRKB261231P00570000": 0,
-    "BRKB261204P00500000": 0,
-    "BRKB261204P00615000": 0,
-    "BRKB261224C00555000": 0,
-    "BRKB261224P00340000": 0,
-    "BRKB261231C00680000": 0,
-    "BRKB261231P00490000": 0,
-    "BRKB261224C00385000": 0,
-    "BRKB261224P00595000": 0,
-    "BRKB261204C00645000": 0,
-    "BRKB261211C00530000": 0,
-    "BRKB261218P00280000": 0,
-    "BRKB261218P00640000": 0,
-    "BRKB261231C00360000": 0,
-    "BRKB261127P00640000": 0,
-    "BRKB261204P00330000": 0,
-    "BRKB261218C00455000": 0,
-    "BRKB261127P00565000": 0,
-    "BRKB261211C00360000": 0,
-    "BRKB261231C00480000": 0,
-    "BRKB261231P00370000": 0,
-    "BRKB261211P00415000": 0,
-    "BRKB261218C00592500": 0,
-    "BRKB261224P00520000": 0,
-    "BRKB261211C00615000": 0,
-    "BRKB261224P00480000": 0,
-    "BRKB261204P00470000": 0,
-    "BRKB261231C00465000": 0,
-    "BRKB261127P00590000": 0,
-    "BRKB261211P00680000": 0,
-    "BRKB261127P00555000": 0,
-    "BRKB261211P00485000": 0,
-    "BRKB261127P00505000": 0,
-    "BRKB261231C00550000": 0,
-    "BRKB261224P00625000": 0,
-    "BRKB261231P00290000": 0,
-    "BRKB261211C00555000": 0,
-    "BRKB261204P00475000": 0,
-    "BRKB261218P00520000": 0,
-    "BRKB261127C00567500": 0,
-    "BRKB261127C00680000": 0,
-    "BRKB261231C00455000": 0,
-    "BRKB261231C00570000": 0,
-    "BRKB261211C00330000": 0,
-    "BRKB261211C00595000": 0,
-    "BRKB261211C00515000": 0,
-    "BRKB261204C00535000": 0,
-    "BRKB261211C00465000": 0,
-    "BRKB261127C00360000": 0,
-    "BRKB261231C00540000": 0,
-    "BRKB261218P00592500": 0,
-    "BRKB261231C00355000": 0,
-    "BRKB261204P00430000": 0,
-    "BRKB261211P00515000": 0,
-    "BRKB261231P00590000": 0,
-    "BRKB261218C00410000": 0,
-    "BRKB261204C00582500": 0,
-    "BRKB261218P00410000": 0,
-    "BRKB261211C00570000": 0,
-    "BRKB261211P00700000": 0,
-    "BRKB261218C00280000": 0,
-    "BRKB261224P00500000": 0,
-    "BRKB261211P00572500": 0,
-    "BRKB261231C00330000": 0,
-    "BRKB261218P00565000": 0,
-    "BRKB261224C00440000": 0,
-    "BRKB261204C00370000": 0,
-    "BRKB261127C00545000": 0,
-    "BRKB261204C00540000": 0,
-    "BRKB261231C00655000": 0,
-    "BRKB261127C00582500": 0,
-    "BRKB261127P00515000": 0,
-    "BRKB261218C00570000": 0,
-    "BRKB261211C00520000": 0,
-    "BRKB261127C00650000": 0,
-    "BRKB261127C00525000": 0,
-    "BRKB261204C00435000": 0,
-    "BRKB261204C00460000": 0,
     "BRKB261224C00375000": 0,
-    "BRKB261218P00440000": 0,
-    "BRKB261204P00660000": 0,
-    "BRKB261224P00535000": 0,
-    "BRKB261224P00670000": 0,
-    "BRKB261204P00400000": 0,
-    "BRKB261204P00650000": 0,
-    "BRKB261224C00610000": 0,
-    "BRKB261224C00380000": 0,
-    "BRKB261211C00587500": 0,
-    "BRKB261211C00350000": 0,
-    "BRKB261127C00547500": 0,
-    "BRKB261204C00515000": 0,
-    "BRKB261211P00530000": 0,
-    "BRKB261231C00590000": 0,
-    "BRKB261204C00592500": 0,
-    "BRKB261204C00415000": 0,
-    "BRKB261231C00605000": 0,
-    "BRKB261204C00320000": 0,
-    "BRKB261218P00610000": 0,
-    "BRKB261218C00550000": 0,
-    "BRKB261224C00510000": 0,
-    "BRKB261127C00645000": 0,
-    "BRKB261127P00605000": 0,
-    "BRKB261231C00340000": 0,
-    "BRKB261218C00270000": 0,
-    "BRKB261211P00645000": 0,
-    "BRKB261218C00385000": 0,
-    "BRKB261204P00320000": 0,
-    "BRKB261127C00530000": 0,
-    "BRKB261224P00465000": 0,
-    "BRKB261211C00395000": 0,
-    "BRKB261127C00385000": 0,
-    "BRKB261218C00630000": 0,
-    "BRKB261231C00640000": 0,
-    "BRKB261224C00450000": 0,
-    "BRKB261211C00450000": 0,
-    "BRKB261218C00400000": 0,
-    "BRKB261211P00590000": 0,
-    "BRKB261211C00380000": 0,
-    "BRKB261211P00340000": 0,
-    "BRKB261218P00220000": 0,
-    "BRKB261204P00585000": 0,
-    "BRKB261127C00560000": 0,
-    "BRKB261231C00545000": 0,
-    "BRKB261204C00500000": 0,
-    "BRKB261211C00592500": 0,
-    "BRKB261231C00420000": 0,
-    "BRKB261127C00600000": 0,
-    "BRKB261211C00660000": 0,
-    "BRKB261218C00435000": 0,
-    "BRKB261127C00580000": 0,
-    "BRKB261204P00645000": 0,
-    "BRKB261231C00470000": 0,
-    "BRKB261224C00460000": 0,
-    "BRKB261127P00535000": 0,
-    "BRKB261127P00410000": 0,
-    "BRKB261211P00365000": 0,
-    "BRKB261211C00635000": 0,
-    "BRKB261218P00670000": 0,
-    "BRKB261218P00400000": 0,
-    "BRKB261224P00475000": 0,
-    "BRKB261224P00590000": 0,
-    "BRKB261127P00685000": 0,
-    "BRKB261211C00370000": 0,
-    "BRKB261204C00375000": 0,
-    "BRKB261218C00465000": 0,
-    "BRKB261211C00685000": 0,
-    "BRKB261211P00370000": 0,
-    "BRKB261218C00615000": 0,
-    "BRKB261211P00685000": 0,
-    "BRKB261224C00570000": 0,
-    "BRKB261231P00495000": 0,
-    "BRKB261231P00430000": 0,
-    "BRKB261218P00355000": 0,
-    "BRKB261224P00470000": 0,
-    "BRKB261218C00395000": 0,
-    "BRKB261127C00590000": 0,
-    "BRKB261218C00700000": 0,
-    "BRKB261127P00540000": 0,
-    "BRKB261224C00410000": 0,
-    "BRKB261231P00355000": 0,
-    "BRKB261231P00670000": 0,
-    "BRKB261211P00650000": 0,
-    "BRKB261218C00582500": 0,
-    "BRKB261224C00665000": 0,
-    "BRKB261204C00420000": 0,
-    "BRKB261204C00587500": 0,
-    "BRKB261127C00562500": 0,
-    "BRKB261127C00400000": 0,
-    "BRKB261204C00310000": 0,
-    "BRKB261231P00575000": 0,
-    "BRKB261224P00350000": 0,
-    "BRKB261231P00635000": 0,
-    "BRKB261127P00660000": 0,
-    "BRKB261218C00515000": 0,
-    "BRKB261224C00355000": 0,
-    "BRKB261204P00415000": 0,
-    "BRKB261211P00375000": 0,
-    "BRKB261218P00300000": 0,
-    "BRKB261127C00415000": 0,
-    "BRKB261211P00625000": 0,
-    "BRKB261204P00280000": 0,
-    "BRKB261127C00635000": 0,
-    "BRKB261218C00330000": 0,
-    "BRKB261204P00635000": 0,
-    "BRKB261224P00430000": 0,
-    "BRKB261218C00350000": 0,
-    "BRKB261204C00700000": 0,
-    "BRKB261127P00440000": 0,
-    "BRKB261218C00495000": 0,
-    "BRKB261127P00610000": 0,
-    "BRKB261224P00360000": 0,
-    "BRKB261211P00330000": 0,
-    "BRKB261204C00710000": 0,
-    "BRKB261231C00410000": 0,
-    "BRKB261224P00680000": 0,
-    "BRKB261224P00545000": 0,
-    "BRKB261204C00572500": 0,
-    "BRKB261127C00355000": 0,
-    "BRKB261224C00540000": 0,
-    "BRKB261231C00365000": 0,
-    "BRKB261231P00690000": 0,
-    "BRKB261231P00390000": 0,
-    "BRKB261231P00655000": 0,
-    "BRKB261231P00340000": 0,
-    "BRKB261204C00425000": 0,
-    "BRKB261224C00670000": 0,
-    "BRKB261211C00675000": 0,
-    "BRKB261211C00700000": 0,
-    "BRKB261127P00380000": 0,
-    "BRKB261127C00630000": 0,
-    "BRKB261127C00365000": 0,
-    "BRKB261218C00450000": 0,
-    "BRKB261218P00380000": 0,
-    "BRKB261211C00310000": 0,
-    "BRKB261127P00650000": 0,
-    "BRKB261224C00400000": 0,
-    "BRKB261231P00450000": 0,
-    "BRKB261127C00290000": 0,
-    "BRKB261211C00625000": 0,
-    "BRKB261224P00575000": 0,
-    "BRKB261204C00590000": 0,
-    "BRKB261204P00435000": 0,
-    "BRKB261231C00650000": 0,
-    "BRKB261218C00520000": 0,
-    "BRKB261218P00375000": 0,
-    "BRKB261204C00650000": 0,
-    "BRKB261218P00572500": 0,
-    "BRKB261127P00575000": 0,
-    "BRKB261204P00520000": 0,
-    "BRKB261231P00415000": 0,
-    "BRKB261224P00330000": 0,
-    "BRKB261127C00280000": 0,
-    "BRKB261204C00440000": 0,
-    "BRKB261211P00675000": 0,
-    "BRKB261211P00595000": 0,
-    "BRKB261231P00300000": 0,
-    "BRKB261127P00445000": 0,
-    "BRKB261224C00590000": 0,
-    "BRKB261204C00580000": 0,
-    "BRKB261127P00395000": 0,
-    "BRKB261204P00690000": 0,
-    "BRKB261231C00415000": 0,
-    "BRKB261231C00630000": 0,
-    "BRKB261204C00545000": 0,
-    "BRKB261218P00455000": 0,
-    "BRKB261218P00630000": 0,
-    "BRKB261231P00605000": 0,
-    "BRKB261211C00280000": 0,
-    "BRKB261218C00475000": 0,
-    "BRKB261218P00710000": 0,
-    "BRKB261231C00700000": 0,
-    "BRKB261218C00430000": 0,
-    "BRKB261127P00320000": 0,
-    "BRKB261127P00600000": 0,
-    "BRKB261211C00385000": 0,
-    "BRKB261127C00625000": 0,
-    "BRKB261231C00500000": 0,
-    "BRKB261224P00300000": 0,
-    "BRKB261231P00595000": 0,
-    "BRKB261127P00615000": 0,
-    "BRKB261211P00500000": 0,
-    "BRKB261218P00580000": 0,
-    "BRKB261127P00370000": 0,
-    "BRKB261218P00435000": 0,
-    "BRKB261218P00740000": 0,
-    "BRKB261204P00355000": 0,
-    "BRKB261218P00575000": 0,
-    "BRKB261224C00340000": 0,
-    "BRKB261127P00710000": 0,
-    "BRKB261204C00560000": 0,
-    "BRKB261218C00420000": 0,
-    "BRKB261224P00455000": 0,
-    "BRKB261224P00580000": 0,
-    "BRKB261127C00615000": 0,
-    "BRKB261218P00550000": 0,
-    "BRKB261218C00500000": 0,
-    "BRKB261218C00260000": 0,
-    "BRKB261127C00455000": 0,
-    "BRKB261127C00395000": 0,
-    "BRKB261211P00555000": 0,
-    "BRKB261231P00520000": 0,
-    "BRKB261218P00290000": 0,
-    "BRKB261224C00320000": 0,
-    "BRKB261218C00445000": 0,
-    "BRKB261204C00480000": 0,
-    "BRKB261127P00520000": 0,
-    "BRKB261224C00445000": 0,
-    "BRKB261231C00580000": 0,
-    "BRKB261204C00290000": 0,
-    "BRKB261218P00475000": 0,
-    "BRKB261127C00485000": 0,
-    "BRKB261211P00400000": 0,
-    "BRKB261231P00425000": 0,
-    "BRKB261127P00630000": 0,
-    "BRKB261211C00690000": 0,
-    "BRKB261231C00595000": 0,
-    "BRKB261231C00320000": 0,
-    "BRKB261127C00505000": 0,
-    "BRKB261204P00405000": 0,
-    "BRKB261224C00605000": 0,
-    "BRKB261211P00420000": 0,
-    "BRKB261218C00355000": 0,
-    "BRKB261218P00582500": 0,
-    "BRKB261127C00470000": 0,
-    "BRKB261127P00567500": 0,
-    "BRKB261224P00585000": 0,
-    "BRKB261204P00495000": 0,
-    "BRKB261211C00430000": 0,
-    "BRKB261127C00550000": 0,
-    "BRKB261218P00310000": 0,
-    "BRKB261231C00380000": 0,
-    "BRKB261127C00565000": 0,
-    "BRKB261224P00490000": 0,
-    "BRKB261218P00595000": 0,
-    "BRKB261231C00525000": 0,
-    "BRKB261231P00610000": 0,
-    "BRKB261211C00405000": 0,
-    "BRKB261204C00620000": 0,
-    "BRKB261211C00650000": 0,
-    "BRKB261224C00360000": 0,
-    "BRKB261127C00300000": 0,
-    "BRKB261224P00540000": 0,
-    "BRKB261211P00310000": 0,
-    "BRKB261218C00365000": 0,
-    "BRKB261218C00460000": 0,
-    "BRKB261218P00460000": 0,
-    "BRKB261211P00525000": 0,
-    "BRKB261204P00572500": 0,
-    "BRKB261224P00400000": 0,
-    "BRKB261231P00680000": 0,
-    "BRKB261127P00572500": 0,
-    "BRKB261231P00600000": 0,
-    "BRKB261218C00690000": 0,
-    "BRKB261224P00710000": 0,
-    "BRKB261224P00370000": 0,
-    "BRKB261127P00465000": 0,
-    "BRKB261231P00645000": 0,
-    "BRKB261211C00435000": 0,
-    "BRKB261218P00385000": 0,
-    "BRKB261218P00585000": 0,
-    "BRKB261224C00470000": 0,
-    "BRKB261204P00300000": 0,
-    "BRKB261204P00570000": 0,
-    "BRKB261218P00615000": 0,
-    "BRKB261127P00645000": 0,
-    "BRKB261224C00690000": 0,
-    "BRKB261127P00365000": 0,
-    "BRKB261211C00640000": 0,
-    "BRKB261231P00560000": 0,
-    "BRKB261204C00470000": 0,
-    "BRKB261218C00310000": 0,
-    "BRKB261218C00545000": 0,
-    "BRKB261231C00520000": 0,
-    "BRKB261231P00350000": 0,
-    "BRKB261204P00515000": 0,
-    "BRKB261127P00300000": 0,
-    "BRKB261211P00425000": 0,
-    "BRKB261127P00510000": 0,
-    "BRKB261211C00577500": 0,
-    "BRKB261218C00405000": 0,
-    "BRKB261127C00440000": 0,
-    "BRKB261211C00400000": 0,
-    "BRKB261231C00660000": 0,
-    "BRKB261127P00350000": 0,
-    "BRKB261127P00470000": 0,
-    "BRKB261218P00645000": 0,
-    "BRKB261204C00520000": 0,
-    "BRKB261127P00340000": 0,
-    "BRKB261224P00450000": 0,
-    "BRKB261218P00360000": 0,
-    "BRKB261224C00595000": 0,
-    "BRKB261224C00640000": 0,
-    "BRKB261204P00510000": 0,
-    "BRKB261224C00635000": 0,
-    "BRKB261127P00582500": 0,
-    "BRKB261218C00730000": 0,
-    "BRKB261231C00400000": 0,
-    "BRKB261127C00552500": 0,
-    "BRKB261218C00740000": 0,
-    "BRKB261204C00405000": 0,
-    "BRKB261224C00370000": 0,
-    "BRKB261204P00360000": 0,
-    "BRKB261224C00530000": 0,
-    "BRKB261204P00710000": 0,
-    "BRKB261231P00625000": 0,
-    "BRKB261218C00660000": 0,
-    "BRKB261127P00580000": 0,
-    "BRKB261231P00660000": 0,
-    "BRKB261218P00230000": 0,
-    "BRKB261218P00570000": 0,
-    "BRKB261231P00455000": 0,
-    "BRKB261231P00565000": 0,
-    "BRKB261231P00475000": 0,
-    "BRKB261204C00655000": 0,
-    "BRKB261218C00620000": 0,
-    "BRKB261127P00385000": 0,
-    "BRKB261204P00390000": 0,
-    "BRKB261204C00685000": 0,
-    "BRKB261127P00390000": 0,
-    "BRKB261231C00510000": 0,
-    "BRKB261231C00460000": 0,
-    "BRKB261224C00650000": 0,
-    "BRKB261204C00455000": 0,
-    "BRKB261231P00540000": 0,
-    "BRKB261204C00510000": 0,
-    "BRKB261224C00485000": 0,
-    "BRKB261231C00435000": 0,
-    "BRKB261127C00587500": 0,
-    "BRKB261204P00370000": 0,
-    "BRKB261127C00575000": 0,
-    "BRKB261211P00440000": 0,
-    "BRKB261211C00470000": 0,
-    "BRKB261211P00620000": 0,
-    "BRKB261224P00655000": 0,
-    "BRKB261211C00590000": 0,
-    "BRKB261218P00425000": 0,
-    "BRKB261224P00495000": 0,
-    "BRKB261211C00410000": 0,
-    "BRKB261218C00370000": 0,
-    "BRKB261204C00395000": 0,
-    "BRKB261224C00495000": 0,
-    "BRKB261204C00570000": 0,
-    "BRKB261127P00485000": 0,
-    "BRKB261204P00545000": 0,
-    "BRKB261224P00390000": 0,
-    "BRKB261127P00430000": 0,
-    "BRKB261224C00660000": 0,
-    "BRKB261211P00580000": 0,
-    "BRKB261224C00465000": 0,
-    "BRKB261224C00350000": 0,
-    "BRKB261218C00575000": 0,
-    "BRKB261204P00577500": 0,
-    "BRKB261224P00685000": 0,
-    "BRKB261224P00530000": 0,
-    "BRKB261127P00280000": 0,
-    "BRKB261231P00440000": 0,
-    "BRKB261211P00605000": 0,
-    "BRKB261231P00405000": 0,
-    "BRKB261224P00515000": 0,
-    "BRKB261218C00650000": 0,
-    "BRKB261218P00577500": 0,
-    "BRKB261211P00600000": 0,
-    "BRKB261127P00560000": 0,
-    "BRKB261224C00435000": 0,
-    "BRKB261211C00540000": 0,
-    "BRKB261204C00610000": 0,
-    "BRKB261224C00550000": 0,
-    "BRKB261204C00365000": 0,
-    "BRKB261204P00592500": 0,
-    "BRKB261224P00660000": 0,
-    "BRKB261211P00615000": 0,
-    "BRKB261211P00560000": 0,
-    "BRKB261204C00445000": 0,
-    "BRKB261224C00405000": 0,
-    "BRKB261218C00290000": 0,
-    "BRKB261224P00635000": 0,
-    "BRKB261211C00535000": 0,
-    "BRKB261218C00590000": 0,
-    "BRKB261231P00700000": 0,
-    "BRKB261231C00390000": 0,
-    "BRKB261218C00600000": 0,
-    "BRKB261127P00620000": 0,
-    "BRKB261218P00415000": 0,
-    "BRKB261127C00410000": 0,
-    "BRKB261204P00590000": 0,
-    "BRKB261231C00485000": 0,
-    "BRKB261211P00430000": 0,
-    "BRKB261211C00340000": 0,
-    "BRKB261218C00580000": 0,
-    "BRKB261218C00360000": 0,
-    "BRKB261224P00555000": 0,
-    "BRKB261127P00675000": 0,
-    "BRKB261211C00415000": 0,
-    "BRKB261218C00530000": 0,
-    "BRKB261211P00565000": 0,
-    "BRKB261231P00675000": 0,
-    "BRKB261218C00670000": 0,
-    "BRKB261231C00515000": 0,
-    "BRKB261231C00635000": 0,
-    "BRKB261231C00475000": 0,
-    "BRKB261224P00565000": 0,
-    "BRKB261211C00550000": 0,
-    "BRKB261218C00220000": 0,
-    "BRKB261211P00320000": 0,
-    "BRKB261204P00450000": 0,
-    "BRKB261224C00455000": 0,
-    "BRKB261218C00555000": 0,
-    "BRKB261211P00550000": 0,
-    "BRKB261231C00675000": 0,
-    "BRKB261218P00635000": 0,
-    "BRKB261127C00570000": 0,
-    "BRKB261224P00525000": 0,
-    "BRKB261127C00350000": 0,
-    "BRKB261127C00577500": 0,
-    "BRKB261204P00395000": 0,
-    "BRKB261231C00405000": 0,
-    "BRKB261231P00435000": 0,
-    "BRKB261127P00557500": 0,
-    "BRKB261218P00430000": 0,
-    "BRKB261218P00505000": 0,
-    "BRKB261231P00585000": 0,
-    "BRKB261127P00552500": 0,
     "BRKB261224P00395000": 0,
-    "BRKB261127C00460000": 0,
-    "BRKB261218C00585000": 0,
-    "BRKB261127C00430000": 0,
-    "BRKB261204P00525000": 0,
-    "BRKB261231C00395000": 0,
-    "BRKB261231C00670000": 0,
-    "BRKB261218P00370000": 0,
-    "BRKB261231P00620000": 0,
-    "BRKB261224P00435000": 0,
-    "BRKB261231C00350000": 0,
-    "BRKB261127P00592500": 0,
-    "BRKB261224P00560000": 0,
-    "BRKB261231P00480000": 0,
-    "BRKB261231C00440000": 0,
-    "BRKB261204C00530000": 0,
-    "BRKB261218C00595000": 0,
-    "BRKB261127P00360000": 0,
-    "BRKB261224P00665000": 0,
-    "BRKB261211C00670000": 0,
-    "BRKB261231P00445000": 0,
-    "BRKB261218P00250000": 0,
-    "BRKB261218P00390000": 0,
-    "BRKB261224P00385000": 0,
-    "BRKB261224C00490000": 0,
-    "BRKB261231P00640000": 0,
-    "BRKB261127C00380000": 0,
-    "BRKB261224C00475000": 0,
-    "BRKB261211P00545000": 0,
-    "BRKB261211P00535000": 0,
-    "BRKB261218C00680000": 0,
-    "BRKB261231C00560000": 0,
-    "BRKB261211C00645000": 0,
-    "BRKB261204P00385000": 0,
-    "BRKB261211C00575000": 0,
-    "BRKB261127P00635000": 0,
-    "BRKB261231P00360000": 0,
+    "BRKB261204C00370000": 0,
+    "BRKB261231P00535000": 0,
+    "BRKB261127C00470000": 0,
+    "BRKB261204P00310000": 0,
+    "BRKB261218C00550000": 0,
+    "BRKB261211C00450000": 0,
+    "BRKB261218C00415000": 0,
+    "BRKB261224P00625000": 0,
+    "BRKB261218C00580000": 0,
+    "BRKB261204C00660000": 0,
+    "BRKB261127P00557500": 0,
+    "BRKB261218C00410000": 0,
+    "BRKB261224P00350000": 0,
+    "BRKB261231P00555000": 0,
+    "BRKB261231P00645000": 0,
+    "BRKB261211C00600000": 0,
+    "BRKB261224C00605000": 0,
+    "BRKB261211P00675000": 0,
+    "BRKB261211C00505000": 0,
+    "BRKB261204C00655000": 0,
+    "BRKB261204P00600000": 0,
+    "BRKB261218P00700000": 0,
+    "BRKB261224P00540000": 0,
+    "BRKB261224C00320000": 0,
+    "BRKB261224P00490000": 0,
+    "BRKB261211C00640000": 0,
+    "BRKB261224P00600000": 0,
     "BRKB261224P00645000": 0,
-    "BRKB261127P00405000": 0,
-    "BRKB261211P00470000": 0,
-    "BRKB261127C00535000": 0,
-    "BRKB261218P00555000": 0,
-    "BRKB261211C00480000": 0,
-    "BRKB261231C00445000": 0,
-    "BRKB261231P00505000": 0,
-    "BRKB261127C00425000": 0,
-    "BRKB261224P00650000": 0,
-    "BRKB261204C00485000": 0,
-    "BRKB261204C00390000": 0,
-    "BRKB261211C00500000": 0,
-    "BRKB261211P00490000": 0,
-    "BRKB261218C00380000": 0,
-    "BRKB261224P00445000": 0,
-    "BRKB261224C00300000": 0,
-    "BRKB261211P00635000": 0,
-    "BRKB261224P00290000": 0,
-    "BRKB261204P00620000": 0,
-    "BRKB261231C00300000": 0,
-    "BRKB261224C00615000": 0,
-    "BRKB261231P00465000": 0,
-    "BRKB261231C00530000": 0,
-    "BRKB261127P00655000": 0,
-    "BRKB261231P00630000": 0,
-    "BRKB261218C00625000": 0,
-    "BRKB261127C00540000": 0,
-    "BRKB261204P00440000": 0,
+    "BRKB261224C00600000": 0,
+    "BRKB261231C00560000": 0,
+    "BRKB261211P00560000": 0,
+    "BRKB261231P00570000": 0,
+    "BRKB261224C00585000": 0,
+    "BRKB261127C00410000": 0,
+    "BRKB261218C00565000": 0,
+    "BRKB261204C00620000": 0,
+    "BRKB261211C00405000": 0,
+    "BRKB261127C00330000": 0,
+    "BRKB261218P00390000": 0,
+    "BRKB261224C00510000": 0,
+    "BRKB261231P00490000": 0,
+    "BRKB261211C00445000": 0,
+    "BRKB261231C00450000": 0,
+    "BRKB261211C00615000": 0,
+    "BRKB261218P00670000": 0,
+    "BRKB261211P00465000": 0,
+    "BRKB261231P00595000": 0,
+    "BRKB261211C00685000": 0,
+    "BRKB261211C00510000": 0,
+    "BRKB261218C00260000": 0,
+    "BRKB261231C00415000": 0,
+    "BRKB261127P00580000": 0,
+    "BRKB261218P00445000": 0,
+    "BRKB261224P00690000": 0,
+    "BRKB261204P00675000": 0,
+    "BRKB261224P00455000": 0,
+    "BRKB261218P00210000": 0,
+    "BRKB261211C00645000": 0,
+    "BRKB261224C00520000": 0,
+    "BRKB261127P00375000": 0,
+    "BRKB261224P00550000": 0,
+    "BRKB261231P00420000": 0,
+    "BRKB261231P00500000": 0,
+    "BRKB261204C00700000": 0,
+    "BRKB261224P00485000": 0,
+    "BRKB261218C00592500": 0,
+    "BRKB261204C00590000": 0,
+    "BRKB261127P00610000": 0,
+    "BRKB261211P00575000": 0,
+    "BRKB261231P00575000": 0,
+    "BRKB261218P00550000": 0,
+    "BRKB261211P00375000": 0,
+    "BRKB261211C00555000": 0,
+    "BRKB261224P00440000": 0,
+    "BRKB261211C00425000": 0,
+    "BRKB261218P00410000": 0,
+    "BRKB261204C00640000": 0,
+    "BRKB261204P00435000": 0,
+    "BRKB261211C00330000": 0,
+    "BRKB261204P00425000": 0,
+    "BRKB261211P00580000": 0,
+    "BRKB261211C00585000": 0,
+    "BRKB261218P00650000": 0,
+    "BRKB261127P00552500": 0,
+    "BRKB261127P00572500": 0,
+    "BRKB261224C00675000": 0,
+    "BRKB261204P00445000": 0,
     "BRKB261231C00710000": 0,
+    "BRKB261211C00530000": 0,
+    "BRKB261204P00670000": 0,
+    "BRKB261127P00365000": 0,
+    "BRKB261224C00710000": 0,
+    "BRKB261224P00360000": 0,
+    "BRKB261127P00547500": 0,
+    "BRKB261127P00625000": 0,
+    "BRKB261231P00495000": 0,
+    "BRKB261127P00290000": 0,
+    "BRKB261204P00582500": 0,
+    "BRKB261224C00645000": 0,
+    "BRKB261231P00640000": 0,
+    "BRKB261127C00425000": 0,
+    "BRKB261204C00505000": 0,
+    "BRKB261218C00595000": 0,
+    "BRKB261218P00520000": 0,
+    "BRKB261127P00505000": 0,
+    "BRKB261211C00290000": 0,
+    "BRKB261204C00690000": 0,
+    "BRKB261224C00435000": 0,
+    "BRKB261231C00445000": 0,
+    "BRKB261211P00455000": 0,
+    "BRKB261231C00670000": 0,
+    "BRKB261218P00570000": 0,
+    "BRKB261211C00435000": 0,
+    "BRKB261231P00415000": 0,
+    "BRKB261127P00385000": 0,
+    "BRKB261218C00460000": 0,
+    "BRKB261224P00525000": 0,
+    "BRKB261211P00460000": 0,
+    "BRKB261127C00610000": 0,
+    "BRKB261127P00485000": 0,
+    "BRKB261127C00685000": 0,
+    "BRKB261231C00585000": 0,
+    "BRKB261211C00320000": 0,
+    "BRKB261127C00370000": 0,
+    "BRKB261218P00577500": 0,
+    "BRKB261218P00515000": 0,
+    "BRKB261224C00395000": 0,
+    "BRKB261127C00545000": 0,
+    "BRKB261218C00230000": 0,
+    "BRKB261224P00405000": 0,
+    "BRKB261127C00440000": 0,
+    "BRKB261204P00280000": 0,
+    "BRKB261224P00710000": 0,
+    "BRKB261218C00240000": 0,
+    "BRKB261231C00470000": 0,
+    "BRKB261211C00420000": 0,
+    "BRKB261231P00635000": 0,
+    "BRKB261211P00380000": 0,
+    "BRKB261224C00420000": 0,
+    "BRKB261224C00385000": 0,
+    "BRKB261204P00360000": 0,
+    "BRKB261211C00280000": 0,
+    "BRKB261218C00572500": 0,
+    "BRKB261224P00570000": 0,
+    "BRKB261231C00435000": 0,
+    "BRKB261127P00395000": 0,
+    "BRKB261204C00470000": 0,
+    "BRKB261127P00535000": 0,
+    "BRKB261204P00570000": 0,
+    "BRKB261231C00600000": 0,
+    "BRKB261224P00375000": 0,
+    "BRKB261211P00710000": 0,
+    "BRKB261127C00625000": 0,
+    "BRKB261127C00562500": 0,
+    "BRKB261231C00485000": 0,
+    "BRKB261211C00385000": 0,
+    "BRKB261211C00565000": 0,
+    "BRKB261224P00365000": 0,
+    "BRKB261211C00670000": 0,
+    "BRKB261224C00390000": 0,
+    "BRKB261224P00670000": 0,
+    "BRKB261231C00400000": 0,
+    "BRKB261211C00520000": 0,
+    "BRKB261127P00310000": 0,
+    "BRKB261127P00455000": 0,
+    "BRKB261211P00567500": 0,
+    "BRKB261224C00650000": 0,
+    "BRKB261211C00475000": 0,
+    "BRKB261127C00575000": 0,
+    "BRKB261211P00435000": 0,
+    "BRKB261211P00545000": 0,
+    "BRKB261231P00440000": 0,
+    "BRKB261218P00340000": 0,
+    "BRKB261224P00355000": 0,
+    "BRKB261224C00550000": 0,
+    "BRKB261127P00360000": 0,
+    "BRKB261204C00635000": 0,
+    "BRKB261211C00375000": 0,
+    "BRKB261231C00690000": 0,
+    "BRKB261224C00685000": 0,
+    "BRKB261127P00567500": 0,
+    "BRKB261231P00540000": 0,
+    "BRKB261211C00660000": 0,
+    "BRKB261211P00582500": 0,
+    "BRKB261218C00690000": 0,
+    "BRKB261231P00660000": 0,
+    "BRKB261231C00605000": 0,
+    "BRKB261204C00580000": 0,
+    "BRKB261231P00610000": 0,
+    "BRKB261224P00545000": 0,
+    "BRKB261211P00625000": 0,
+    "BRKB261218P00425000": 0,
+    "BRKB261211P00550000": 0,
+    "BRKB261218P00575000": 0,
+    "BRKB261224P00700000": 0,
+    "BRKB261218C00730000": 0,
+    "BRKB261211C00655000": 0,
+    "BRKB261127C00645000": 0,
+    "BRKB261204C00490000": 0,
+    "BRKB261204C00592500": 0,
+    "BRKB261218P00620000": 0,
+    "BRKB261218C00545000": 0,
+    "BRKB261211P00505000": 0,
+    "BRKB261127P00680000": 0,
+    "BRKB261231C00680000": 0,
+    "BRKB261127C00587500": 0,
+    "BRKB261211P00470000": 0,
+    "BRKB261204P00380000": 0,
+    "BRKB261204P00690000": 0,
+    "BRKB261218P00395000": 0,
+    "BRKB261127P00460000": 0,
+    "BRKB261204C00455000": 0,
+    "BRKB261231C00340000": 0,
+    "BRKB261231C00465000": 0,
+    "BRKB261231P00670000": 0,
+    "BRKB261218C00420000": 0,
+    "BRKB261218P00645000": 0,
+    "BRKB261218P00470000": 0,
+    "BRKB261224C00595000": 0,
+    "BRKB261218P00220000": 0,
+    "BRKB261204P00405000": 0,
+    "BRKB261224P00435000": 0,
+    "BRKB261218P00535000": 0,
+    "BRKB261211C00572500": 0,
+    "BRKB261218C00220000": 0,
+    "BRKB261224C00500000": 0,
+    "BRKB261218C00350000": 0,
+    "BRKB261231P00370000": 0,
+    "BRKB261127P00515000": 0,
+    "BRKB261127C00577500": 0,
+    "BRKB261224C00610000": 0,
+    "BRKB261224P00310000": 0,
+    "BRKB261211P00290000": 0,
+    "BRKB261211P00700000": 0,
+    "BRKB261204P00620000": 0,
+    "BRKB261127P00400000": 0,
+    "BRKB261218P00495000": 0,
+    "BRKB261218C00640000": 0,
+    "BRKB261127C00552500": 0,
+    "BRKB261231C00700000": 0,
+    "BRKB261127C00700000": 0,
+    "BRKB261127P00405000": 0,
+    "BRKB261211P00615000": 0,
+    "BRKB261218P00580000": 0,
+    "BRKB261204P00440000": 0,
+    "BRKB261204C00380000": 0,
+    "BRKB261127C00550000": 0,
+    "BRKB261127C00540000": 0,
+    "BRKB261224P00520000": 0,
+    "BRKB261231P00460000": 0,
+    "BRKB261204P00515000": 0,
+    "BRKB261211C00310000": 0,
+    "BRKB261127P00615000": 0,
+    "BRKB261231P00320000": 0,
+    "BRKB261204P00420000": 0,
+    "BRKB261211P00410000": 0,
+    "BRKB261224P00460000": 0,
+    "BRKB261231P00390000": 0,
+    "BRKB261204P00595000": 0,
+    "BRKB261231C00460000": 0,
+    "BRKB261218C00590000": 0,
+    "BRKB261127C00505000": 0,
+    "BRKB261218C00250000": 0,
+    "BRKB261231C00610000": 0,
+    "BRKB261231P00620000": 0,
+    "BRKB261231P00425000": 0,
+    "BRKB261224C00330000": 0,
+    "BRKB261218P00590000": 0,
+    "BRKB261127C00490000": 0,
+    "BRKB261224P00660000": 0,
+    "BRKB261218P00290000": 0,
+    "BRKB261231C00370000": 0,
+    "BRKB261231P00520000": 0,
+    "BRKB261211C00610000": 0,
+    "BRKB261211P00645000": 0,
+    "BRKB261127C00605000": 0,
+    "BRKB261204P00350000": 0,
+    "BRKB261224P00530000": 0,
+    "BRKB261204C00500000": 0,
+    "BRKB261224P00400000": 0,
+    "BRKB261224C00360000": 0,
+    "BRKB261218C00490000": 0,
+    "BRKB261204P00510000": 0,
+    "BRKB261204C00485000": 0,
+    "BRKB261127C00340000": 0,
+    "BRKB261218P00710000": 0,
+    "BRKB261218C00440000": 0,
+    "BRKB261231P00700000": 0,
+    "BRKB261211P00420000": 0,
+    "BRKB261127C00320000": 0,
+    "BRKB261204C00400000": 0,
+    "BRKB261211C00470000": 0,
+    "BRKB261127C00405000": 0,
+    "BRKB261231C00620000": 0,
+    "BRKB261127P00495000": 0,
+    "BRKB261231C00365000": 0,
+    "BRKB261127C00615000": 0,
+    "BRKB261211P00490000": 0,
+    "BRKB261218C00465000": 0,
+    "BRKB261127C00460000": 0,
+    "BRKB261211C00485000": 0,
+    "BRKB261218P00555000": 0,
+    "BRKB261218P00435000": 0,
+    "BRKB261224C00370000": 0,
+    "BRKB261231C00590000": 0,
+    "BRKB261211P00280000": 0,
+    "BRKB261218P00330000": 0,
+    "BRKB261218P00280000": 0,
+    "BRKB261127P00592500": 0,
+    "BRKB261218P00610000": 0,
+    "BRKB261211C00680000": 0,
+    "BRKB261127C00560000": 0,
+    "BRKB261204C00685000": 0,
+    "BRKB261127C00500000": 0,
+    "BRKB261211P00310000": 0,
+    "BRKB261231P00350000": 0,
+    "BRKB261224C00575000": 0,
+    "BRKB261204C00540000": 0,
+    "BRKB261204P00330000": 0,
+    "BRKB261204P00410000": 0,
+    "BRKB261211P00590000": 0,
+    "BRKB261211P00405000": 0,
+    "BRKB261231C00625000": 0,
+    "BRKB261224C00480000": 0,
+    "BRKB261211P00360000": 0,
+    "BRKB261218P00490000": 0,
+    "BRKB261204C00530000": 0,
+    "BRKB261211C00525000": 0,
+    "BRKB261127P00490000": 0,
+    "BRKB261218C00577500": 0,
+    "BRKB261127C00630000": 0,
+    "BRKB261231P00360000": 0,
+    "BRKB261231C00480000": 0,
+    "BRKB261204C00320000": 0,
+    "BRKB261127P00665000": 0,
+    "BRKB261127P00340000": 0,
+    "BRKB261127P00525000": 0,
+    "BRKB261224C00445000": 0,
+    "BRKB261218P00310000": 0,
+    "BRKB261204P00540000": 0,
+    "BRKB261218C00380000": 0,
+    "BRKB261127C00530000": 0,
+    "BRKB261218C00700000": 0,
+    "BRKB261211C00400000": 0,
+    "BRKB261218C00430000": 0,
+    "BRKB261231P00475000": 0,
+    "BRKB261224P00590000": 0,
+    "BRKB261231C00525000": 0,
+    "BRKB261127C00655000": 0,
+    "BRKB261127C00635000": 0,
+    "BRKB261211P00670000": 0,
+    "BRKB261127C00547500": 0,
+    "BRKB261218C00620000": 0,
+    "BRKB261211C00630000": 0,
+    "BRKB261127C00582500": 0,
+    "BRKB261204C00350000": 0,
+    "BRKB261204P00650000": 0,
+    "BRKB261218C00555000": 0,
+    "BRKB261224C00540000": 0,
+    "BRKB261224C00290000": 0,
+    "BRKB261211C00380000": 0,
+    "BRKB261231C00495000": 0,
+    "BRKB261204P00580000": 0,
+    "BRKB261231C00520000": 0,
+    "BRKB261224P00675000": 0,
+    "BRKB261204C00665000": 0,
+    "BRKB261204C00425000": 0,
+    "BRKB261204P00535000": 0,
+    "BRKB261218P00572500": 0,
+    "BRKB261231P00400000": 0,
+    "BRKB261204C00550000": 0,
+    "BRKB261218P00635000": 0,
+    "BRKB261218C00600000": 0,
+    "BRKB261211C00595000": 0,
+    "BRKB261127P00582500": 0,
+    "BRKB261127C00350000": 0,
+    "BRKB261204P00370000": 0,
+    "BRKB261204P00625000": 0,
+    "BRKB261127C00555000": 0,
+    "BRKB261224P00300000": 0,
+    "BRKB261127C00565000": 0,
+    "BRKB261218P00530000": 0,
+    "BRKB261204P00592500": 0,
+    "BRKB261127C00515000": 0,
+    "BRKB261218P00730000": 0,
+    "BRKB261204C00465000": 0,
+    "BRKB261127C00455000": 0,
+    "BRKB261204C00572500": 0,
+    "BRKB261127P00475000": 0,
+    "BRKB261211P00475000": 0,
+    "BRKB261211P00430000": 0,
+    "BRKB261127C00675000": 0,
+    "BRKB261231C00405000": 0,
+    "BRKB261231P00485000": 0,
+    "BRKB261231P00690000": 0,
+    "BRKB261218P00365000": 0,
+    "BRKB261211C00440000": 0,
+    "BRKB261204P00480000": 0,
+    "BRKB261204C00510000": 0,
+    "BRKB261231C00645000": 0,
+    "BRKB261218P00260000": 0,
+    "BRKB261204C00430000": 0,
+    "BRKB261218C00615000": 0,
+    "BRKB261127C00300000": 0,
+    "BRKB261204P00585000": 0,
+    "BRKB261218C00330000": 0,
+    "BRKB261231P00585000": 0,
+    "BRKB261204C00615000": 0,
+    "BRKB261231C00530000": 0,
+    "BRKB261127C00557500": 0,
+    "BRKB261204C00405000": 0,
+    "BRKB261127P00425000": 0,
+    "BRKB261127P00595000": 0,
+    "BRKB261231P00435000": 0,
+    "BRKB261224C00630000": 0,
+    "BRKB261127P00270000": 0,
+    "BRKB261231P00605000": 0,
+    "BRKB261231C00565000": 0,
+    "BRKB261211P00570000": 0,
+    "BRKB261218P00380000": 0,
+    "BRKB261224P00650000": 0,
+    "BRKB261127P00575000": 0,
+    "BRKB261127P00550000": 0,
+    "BRKB261204C00600000": 0,
+    "BRKB261127C00415000": 0,
+    "BRKB261231C00300000": 0,
+    "BRKB261224P00555000": 0,
+    "BRKB261211P00540000": 0,
+    "BRKB261224P00565000": 0,
+    "BRKB261204P00635000": 0,
+    "BRKB261224P00425000": 0,
+    "BRKB261231P00450000": 0,
+    "BRKB261204P00545000": 0,
+    "BRKB261127P00690000": 0,
+    "BRKB261224C00680000": 0,
+    "BRKB261224P00380000": 0,
+    "BRKB261204C00280000": 0,
+    "BRKB261211C00700000": 0,
+    "BRKB261211P00515000": 0,
+    "BRKB261224C00670000": 0,
+    "BRKB261224P00370000": 0,
+    "BRKB261224C00570000": 0,
+    "BRKB261218C00450000": 0,
+    "BRKB261127C00535000": 0,
+    "BRKB261127P00540000": 0,
+    "BRKB261204C00535000": 0,
+    "BRKB261218C00425000": 0,
+    "BRKB261127P00445000": 0,
+    "BRKB261224C00475000": 0,
+    "BRKB261211C00665000": 0,
+    "BRKB261231P00505000": 0,
+    "BRKB261231C00575000": 0,
+    "BRKB261218P00250000": 0,
+    "BRKB261224C00415000": 0,
+    "BRKB261211C00500000": 0,
+    "BRKB261127P00645000": 0,
+    "BRKB261218C00530000": 0,
+    "BRKB261127C00595000": 0,
+    "BRKB261218C00560000": 0,
+    "BRKB261218P00592500": 0,
+    "BRKB261231P00480000": 0,
+    "BRKB261224P00655000": 0,
+    "BRKB261211C00535000": 0,
+    "BRKB261127P00430000": 0,
+    "BRKB261211C00570000": 0,
+    "BRKB261204P00520000": 0,
+    "BRKB261204P00470000": 0,
+    "BRKB261211P00350000": 0,
+    "BRKB261211C00480000": 0,
+    "BRKB261218P00360000": 0,
+    "BRKB261231C00685000": 0,
+    "BRKB261224C00470000": 0,
+    "BRKB261127C00270000": 0,
+    "BRKB261218P00630000": 0,
+    "BRKB261224P00560000": 0,
+    "BRKB261218C00510000": 0,
+    "BRKB261127P00320000": 0,
+    "BRKB261231P00510000": 0,
+    "BRKB261224P00580000": 0,
+    "BRKB261211C00605000": 0,
+    "BRKB261218P00615000": 0,
+    "BRKB261204C00355000": 0,
+    "BRKB261211P00650000": 0,
+    "BRKB261211C00710000": 0,
+    "BRKB261211C00635000": 0,
+    "BRKB261211C00550000": 0,
+    "BRKB261231C00660000": 0,
+    "BRKB261218P00355000": 0,
+    "BRKB261218P00450000": 0,
+    "BRKB261218C00505000": 0,
+    "BRKB261127P00520000": 0,
+    "BRKB261204P00610000": 0,
+    "BRKB261204C00670000": 0,
+    "BRKB261231C00380000": 0,
+    "BRKB261224C00310000": 0,
+    "BRKB261218C00400000": 0,
+    "BRKB261231C00320000": 0,
+    "BRKB261218C00500000": 0,
+    "BRKB261127P00470000": 0,
+    "BRKB261218C00625000": 0,
+    "BRKB261224P00320000": 0,
+    "BRKB261224C00560000": 0,
+    "BRKB261204C00555000": 0,
+    "BRKB261127P00480000": 0,
+    "BRKB261211C00590000": 0,
+    "BRKB261231P00650000": 0,
+    "BRKB261231C00515000": 0,
+    "BRKB261231P00395000": 0,
+    "BRKB261218P00500000": 0,
+    "BRKB261204C00480000": 0,
+    "BRKB261231C00375000": 0,
+    "BRKB261211C00465000": 0,
+    "BRKB261231C00330000": 0,
+    "BRKB261231C00570000": 0,
+    "BRKB261218C00375000": 0,
+    "BRKB261127C00650000": 0,
+    "BRKB261211P00480000": 0,
+    "BRKB261127P00630000": 0,
+    "BRKB261218P00370000": 0,
+    "BRKB261127P00530000": 0,
+    "BRKB261218P00375000": 0,
+    "BRKB261218P00545000": 0,
+    "BRKB261204C00570000": 0,
+    "BRKB261218P00400000": 0,
+    "BRKB261211P00525000": 0,
+    "BRKB261127C00585000": 0,
+    "BRKB261127C00420000": 0,
+    "BRKB261211P00655000": 0,
+    "BRKB261231P00310000": 0,
+    "BRKB261204P00355000": 0,
+    "BRKB261224C00545000": 0,
+    "BRKB261127C00430000": 0,
+    "BRKB261224P00635000": 0,
+    "BRKB261211P00592500": 0,
+    "BRKB261211C00625000": 0,
+    "BRKB261204P00500000": 0,
+    "BRKB261224C00590000": 0,
+    "BRKB261224P00610000": 0,
+    "BRKB261224C00405000": 0,
+    "BRKB261211P00450000": 0,
+    "BRKB261211C00567500": 0,
+    "BRKB261127C00290000": 0,
+    "BRKB261231P00560000": 0,
+    "BRKB261224P00415000": 0,
+    "BRKB261204P00572500": 0,
+    "BRKB261218C00525000": 0,
+    "BRKB261218P00605000": 0,
+    "BRKB261224C00580000": 0,
+    "BRKB261204C00310000": 0,
+    "BRKB261127C00670000": 0,
+    "BRKB261127C00680000": 0,
+    "BRKB261204C00450000": 0,
+    "BRKB261218C00610000": 0,
+    "BRKB261204C00565000": 0,
+    "BRKB261211P00320000": 0,
+    "BRKB261224P00685000": 0,
+    "BRKB261231C00555000": 0,
+    "BRKB261204P00587500": 0,
+    "BRKB261231C00425000": 0,
+    "BRKB261127P00710000": 0,
+    "BRKB261211P00370000": 0,
+    "BRKB261127P00577500": 0,
+    "BRKB261218C00290000": 0,
+    "BRKB261204C00390000": 0,
+    "BRKB261204P00365000": 0,
+    "BRKB261127C00525000": 0,
+    "BRKB261127P00560000": 0,
+    "BRKB261127C00710000": 0,
+    "BRKB261231C00580000": 0,
+    "BRKB261211P00565000": 0,
+    "BRKB261204C00445000": 0,
+    "BRKB261204P00615000": 0,
+    "BRKB261127C00475000": 0,
+    "BRKB261224P00510000": 0,
+    "BRKB261127P00300000": 0,
+    "BRKB261211P00587500": 0,
+    "BRKB261211C00620000": 0,
+    "BRKB261218P00585000": 0,
+    "BRKB261218C00635000": 0,
+    "BRKB261127P00330000": 0,
+    "BRKB261204P00655000": 0,
+    "BRKB261224C00440000": 0,
+    "BRKB261127P00420000": 0,
+    "BRKB261231C00355000": 0,
+    "BRKB261218P00270000": 0,
+    "BRKB261204C00395000": 0,
+    "BRKB261231P00590000": 0,
+    "BRKB261231C00385000": 0,
+    "BRKB261231P00630000": 0,
+    "BRKB261231C00640000": 0,
+    "BRKB261231P00550000": 0,
+    "BRKB261224P00665000": 0,
+    "BRKB261231C00440000": 0,
+    "BRKB261211C00580000": 0,
+    "BRKB261127C00310000": 0,
+    "BRKB261224C00365000": 0,
+    "BRKB261127P00465000": 0,
+    "BRKB261127P00415000": 0,
+    "BRKB261231C00545000": 0,
+    "BRKB261204C00605000": 0,
+    "BRKB261231P00410000": 0,
+    "BRKB261211C00410000": 0,
+    "BRKB261204C00410000": 0,
+    "BRKB261211P00610000": 0,
+    "BRKB261231P00600000": 0,
+    "BRKB261127P00355000": 0,
+    "BRKB261218P00240000": 0,
+    "BRKB261231C00455000": 0,
+    "BRKB261218P00430000": 0,
+    "BRKB261231C00410000": 0,
+    "BRKB261231P00355000": 0,
+    "BRKB261218P00560000": 0,
+    "BRKB261224P00385000": 0,
+    "BRKB261204C00475000": 0,
+    "BRKB261127P00380000": 0,
+    "BRKB261211P00510000": 0,
+    "BRKB261127P00410000": 0,
+    "BRKB261218P00587500": 0,
+    "BRKB261218P00440000": 0,
+    "BRKB261231P00710000": 0,
+    "BRKB261127P00605000": 0,
+    "BRKB261127C00360000": 0,
+    "BRKB261218C00445000": 0,
+    "BRKB261224C00660000": 0,
+    "BRKB261224C00400000": 0,
+    "BRKB261231C00615000": 0,
+    "BRKB261218C00520000": 0,
+    "BRKB261204P00485000": 0,
+    "BRKB261224C00655000": 0,
+    "BRKB261211C00415000": 0,
+    "BRKB261127C00280000": 0,
+    "BRKB261127C00390000": 0,
+    "BRKB261204C00300000": 0,
+    "BRKB261211C00395000": 0,
+    "BRKB261211C00350000": 0,
+    "BRKB261204P00665000": 0,
+    "BRKB261127P00590000": 0,
+    "BRKB261218C00485000": 0,
+    "BRKB261211C00650000": 0,
+    "BRKB261127C00572500": 0,
+    "BRKB261218P00525000": 0,
+    "BRKB261231P00300000": 0,
+    "BRKB261224C00495000": 0,
+    "BRKB261127C00590000": 0,
+    "BRKB261218C00405000": 0,
+    "BRKB261127P00650000": 0,
+    "BRKB261218C00605000": 0,
+    "BRKB261218P00460000": 0,
+    "BRKB261211P00520000": 0,
+    "BRKB261231C00290000": 0,
+    "BRKB261204C00560000": 0,
+    "BRKB261127P00640000": 0,
+    "BRKB261211P00440000": 0,
+    "BRKB261127C00510000": 0,
+    "BRKB261211C00592500": 0,
+    "BRKB261204C00385000": 0,
+    "BRKB261218P00485000": 0,
+    "BRKB261218P00625000": 0,
+    "BRKB261211P00340000": 0,
+    "BRKB261224P00500000": 0,
+    "BRKB261218C00300000": 0,
+    "BRKB261224C00615000": 0,
+    "BRKB261224P00620000": 0,
+    "BRKB261204P00700000": 0,
+    "BRKB261224P00445000": 0,
+    "BRKB261224C00620000": 0,
+    "BRKB261224P00450000": 0,
+    "BRKB261224C00380000": 0,
+    "BRKB261127P00587500": 0,
+    "BRKB261211C00300000": 0,
+    "BRKB261224P00480000": 0,
+    "BRKB261204P00505000": 0,
+    "BRKB261211C00575000": 0,
+    "BRKB261224C00505000": 0,
+    "BRKB261204C00515000": 0,
+    "BRKB261211P00425000": 0,
+    "BRKB261218P00480000": 0,
+    "BRKB261127C00365000": 0,
+    "BRKB261231P00545000": 0,
+    "BRKB261218C00495000": 0,
+    "BRKB261224C00525000": 0,
+    "BRKB261218P00690000": 0,
+    "BRKB261224P00290000": 0,
+    "BRKB261127P00635000": 0,
+    "BRKB261204P00555000": 0,
+    "BRKB261218C00475000": 0,
+    "BRKB261204P00530000": 0,
+    "BRKB261218C00480000": 0,
+    "BRKB261211P00365000": 0,
+    "BRKB261211C00582500": 0,
+    "BRKB261127C00445000": 0,
+    "BRKB261211P00630000": 0,
+    "BRKB261218P00230000": 0,
+    "BRKB261204C00365000": 0,
+    "BRKB261204C00520000": 0,
+    "BRKB261218C00660000": 0,
+    "BRKB261204C00545000": 0,
+    "BRKB261224C00425000": 0,
+    "BRKB261218P00385000": 0,
+    "BRKB261218P00640000": 0,
+    "BRKB261218C00280000": 0,
+    "BRKB261204C00675000": 0,
+    "BRKB261127P00620000": 0,
+    "BRKB261204C00495000": 0,
+    "BRKB261211C00490000": 0,
+    "BRKB261224C00635000": 0,
+    "BRKB261224P00595000": 0,
+    "BRKB261127P00370000": 0,
+    "BRKB261224P00535000": 0,
+    "BRKB261204P00685000": 0,
+    "BRKB261211P00685000": 0,
+    "BRKB261127P00660000": 0,
+    "BRKB261127P00450000": 0,
+    "BRKB261218C00435000": 0,
+    "BRKB261224C00410000": 0,
+    "BRKB261127P00500000": 0,
+    "BRKB261231P00405000": 0,
+    "BRKB261231P00340000": 0,
+    "BRKB261127C00640000": 0,
+    "BRKB261211P00445000": 0,
+    "BRKB261204C00567500": 0,
+    "BRKB261211C00370000": 0,
+    "BRKB261231C00655000": 0,
+    "BRKB261127P00700000": 0,
+    "BRKB261127C00665000": 0,
+    "BRKB261127C00660000": 0,
+    "BRKB261127C00380000": 0,
+    "BRKB261204P00390000": 0,
+    "BRKB261224P00330000": 0,
+    "BRKB261204P00455000": 0,
+    "BRKB261127P00562500": 0,
+    "BRKB261204P00575000": 0,
+    "BRKB261211P00555000": 0,
+    "BRKB261204P00680000": 0,
+    "BRKB261204P00590000": 0,
+    "BRKB261204C00440000": 0,
+    "BRKB261204P00605000": 0,
+    "BRKB261218P00415000": 0,
+    "BRKB261231P00365000": 0,
+    "BRKB261204C00420000": 0,
+    "BRKB261211P00572500": 0,
+    "BRKB261204P00660000": 0,
+    "BRKB261231P00465000": 0,
+    "BRKB261224C00450000": 0,
+    "BRKB261127C00690000": 0,
+    "BRKB261204P00320000": 0,
+    "BRKB261211C00360000": 0,
+    "BRKB261127C00355000": 0,
+    "BRKB261127P00655000": 0,
+    "BRKB261204P00475000": 0,
+    "BRKB261204P00495000": 0,
+    "BRKB261204P00567500": 0,
+    "BRKB261218C00395000": 0,
+    "BRKB261218C00535000": 0,
+    "BRKB261127C00400000": 0,
+    "BRKB261224C00530000": 0,
+    "BRKB261224C00355000": 0,
+    "BRKB261231P00530000": 0,
+    "BRKB261218C00710000": 0,
+    "BRKB261204P00630000": 0,
+    "BRKB261218C00210000": 0,
+    "BRKB261224C00625000": 0,
+    "BRKB261224P00495000": 0,
+    "BRKB261224C00535000": 0,
+    "BRKB261211P00680000": 0,
+    "BRKB261127P00280000": 0,
+    "BRKB261211C00545000": 0,
+    "BRKB261231C00350000": 0,
+    "BRKB261127P00440000": 0,
+    "BRKB261211P00577500": 0,
+    "BRKB261204C00460000": 0,
+    "BRKB261218C00630000": 0,
+    "BRKB261218C00680000": 0,
+    "BRKB261231C00475000": 0,
+    "BRKB261231C00540000": 0,
+    "BRKB261231C00650000": 0,
+    "BRKB261204C00575000": 0,
+    "BRKB261224C00490000": 0,
+    "BRKB261211P00620000": 0,
+    "BRKB261127C00395000": 0,
+    "BRKB261231P00290000": 0,
+    "BRKB261211C00430000": 0,
+    "BRKB261127C00580000": 0,
+    "BRKB261127P00435000": 0,
+    "BRKB261224P00470000": 0,
+    "BRKB261127C00385000": 0,
+    "BRKB261127P00565000": 0,
+    "BRKB261204P00560000": 0,
+    "BRKB261204C00585000": 0,
+    "BRKB261211P00585000": 0,
+    "BRKB261224P00515000": 0,
+    "BRKB261204C00645000": 0,
+    "BRKB261224P00465000": 0,
+    "BRKB261231P00580000": 0,
+    "BRKB261204P00465000": 0,
+    "BRKB261224P00680000": 0,
+    "BRKB261204C00360000": 0,
+    "BRKB261231C00390000": 0,
+    "BRKB261218P00510000": 0,
+    "BRKB261127P00600000": 0,
+    "BRKB261211P00640000": 0,
+    "BRKB261211P00500000": 0,
+    "BRKB261218C00320000": 0,
+    "BRKB261224P00615000": 0,
+    "BRKB261218C00340000": 0,
+    "BRKB261231C00630000": 0,
+    "BRKB261127P00670000": 0,
+    "BRKB261231P00375000": 0,
+    "BRKB261204C00340000": 0,
+    "BRKB261211P00600000": 0,
+    "BRKB261204C00650000": 0,
+    "BRKB261127C00600000": 0,
+    "BRKB261204C00415000": 0,
+    "BRKB261224C00485000": 0,
+    "BRKB261127P00585000": 0,
+    "BRKB261218P00505000": 0,
+    "BRKB261204C00610000": 0,
+    "BRKB261218C00390000": 0,
+    "BRKB261204P00290000": 0,
+    "BRKB261231C00505000": 0,
+    "BRKB261224P00430000": 0,
+    "BRKB261211C00340000": 0,
+    "BRKB261204C00577500": 0,
+    "BRKB261218C00650000": 0,
+    "BRKB261127C00465000": 0,
+    "BRKB261231P00615000": 0,
+    "BRKB261224P00390000": 0,
+    "BRKB261231P00525000": 0,
+    "BRKB261224P00575000": 0,
+    "BRKB261218P00455000": 0,
+    "BRKB261211P00330000": 0,
+    "BRKB261218C00540000": 0,
+    "BRKB261127P00390000": 0,
+    "BRKB261231P00515000": 0,
+    "BRKB261211C00365000": 0,
+    "BRKB261211P00400000": 0,
+    "BRKB261231C00595000": 0,
+    "BRKB261218C00355000": 0,
+    "BRKB261231C00635000": 0,
+    "BRKB261218C00570000": 0,
+    "BRKB261127C00485000": 0,
+    "BRKB261218P00420000": 0,
+    "BRKB261211P00355000": 0,
+    "BRKB261218C00310000": 0,
+    "BRKB261204P00430000": 0,
+    "BRKB261211C00560000": 0,
+    "BRKB261218C00515000": 0,
+    "BRKB261127C00495000": 0,
+    "BRKB261218C00365000": 0,
+    "BRKB261224P00340000": 0,
+    "BRKB261218P00405000": 0,
+    "BRKB261204P00640000": 0,
+    "BRKB261218C00270000": 0,
+    "BRKB261218P00350000": 0,
+    "BRKB261211P00660000": 0,
+    "BRKB261231P00685000": 0,
+    "BRKB261204C00680000": 0,
+    "BRKB261211P00530000": 0,
+    "BRKB261231P00445000": 0,
+    "BRKB261218P00582500": 0,
+    "BRKB261211P00595000": 0,
+    "BRKB261218P00595000": 0,
+    "BRKB261204P00460000": 0,
+    "BRKB261231P00565000": 0,
+    "BRKB261231P00385000": 0,
+    "BRKB261204C00710000": 0,
+    "BRKB261231C00550000": 0,
+    "BRKB261231P00380000": 0,
+    "BRKB261218C00370000": 0,
+    "BRKB261224C00430000": 0,
+    "BRKB261218P00465000": 0,
+    "BRKB261204C00290000": 0,
+    "BRKB261211C00460000": 0,
+    "BRKB261211P00395000": 0,
+    "BRKB261231C00360000": 0,
+    "BRKB261231C00310000": 0,
+    "BRKB261224C00690000": 0,
+    "BRKB261218P00600000": 0,
+    "BRKB261127P00350000": 0,
+    "BRKB261224C00460000": 0,
+    "BRKB261224C00565000": 0,
+    "BRKB261211P00415000": 0,
+    "BRKB261218C00470000": 0,
+    "BRKB261231C00510000": 0,
+    "BRKB261224C00455000": 0,
+    "BRKB261224P00640000": 0,
+    "BRKB261211C00577500": 0,
+    "BRKB261231P00655000": 0,
+    "BRKB261224P00605000": 0,
+    "BRKB261224P00585000": 0,
+    "BRKB261211P00495000": 0,
+    "BRKB261211C00355000": 0,
+    "BRKB261204P00375000": 0,
+    "BRKB261127C00620000": 0,
+    "BRKB261127P00570000": 0,
+    "BRKB261127C00570000": 0,
+    "BRKB261231P00455000": 0,
+    "BRKB261218C00720000": 0,
+    "BRKB261204P00395000": 0,
+    "BRKB261211C00515000": 0,
+    "BRKB261231P00470000": 0,
+    "BRKB261127P00675000": 0,
+    "BRKB261127P00545000": 0,
+    "BRKB261231C00420000": 0,
+    "BRKB261204P00525000": 0,
+    "BRKB261218P00565000": 0,
+    "BRKB261231P00625000": 0,
+    "BRKB261127P00685000": 0,
+    "BRKB261127C00480000": 0,
+    "BRKB261204P00490000": 0,
+    "BRKB261224C00350000": 0,
+    "BRKB261211P00635000": 0,
+    "BRKB261204P00450000": 0,
+    "BRKB261231C00430000": 0,
+    "BRKB261218C00585000": 0,
+    "BRKB261231P00675000": 0,
+    "BRKB261211P00485000": 0,
+    "BRKB261211C00390000": 0,
+    "BRKB261218C00740000": 0,
+    "BRKB261224C00340000": 0,
+    "BRKB261224P00505000": 0,
+    "BRKB261224C00515000": 0,
+    "BRKB261204C00587500": 0,
+    "BRKB261231C00675000": 0,
+    "BRKB261204P00415000": 0,
+    "BRKB261204C00330000": 0,
+    "BRKB261204C00435000": 0,
+    "BRKB261204P00565000": 0,
+    "BRKB261211P00665000": 0,
+    "BRKB261204C00582500": 0,
+    "BRKB261211C00495000": 0,
+    "BRKB261218P00740000": 0,
+    "BRKB261224C00700000": 0,
+    "BRKB261211C00540000": 0,
+    "BRKB261218C00587500": 0,
+    "BRKB261218P00660000": 0,
+    "BRKB261204P00577500": 0,
+    "BRKB261218P00720000": 0,
+    "BRKB261218C00385000": 0,
+    "BRKB261224C00640000": 0,
+    "BRKB261127C00375000": 0,
+    "BRKB261218P00540000": 0,
+    "BRKB261127P00510000": 0,
+    "BRKB261211P00605000": 0,
+    "BRKB261224C00465000": 0,
+    "BRKB261224P00420000": 0,
+    "BRKB261204C00525000": 0,
+    "BRKB261204C00625000": 0,
+    "BRKB261231C00490000": 0,
+    "BRKB261204P00710000": 0,
+    "BRKB261204P00385000": 0,
+    "BRKB261204P00300000": 0,
+    "BRKB261211C00675000": 0,
+    "BRKB261218P00320000": 0,
+    "BRKB261231C00665000": 0,
+    "BRKB261211P00385000": 0,
+    "BRKB261218C00360000": 0,
+    "BRKB261224C00665000": 0,
+    "BRKB261231P00680000": 0,
+    "BRKB261224P00410000": 0,
+    "BRKB261127C00520000": 0,
+    "BRKB261231C00395000": 0,
+    "BRKB261211P00390000": 0,
+    "BRKB261127C00592500": 0,
+    "BRKB261211P00300000": 0,
+    "BRKB261224P00475000": 0,
+    "BRKB261218C00670000": 0,
+    "BRKB261211C00455000": 0,
+    "BRKB261224C00555000": 0,
+    "BRKB261211C00587500": 0,
+    "BRKB261211P00535000": 0,
+    "BRKB261218C00582500": 0,
+    "BRKB261204C00595000": 0,
+    "BRKB261211C00690000": 0,
+    "BRKB261127C00450000": 0,
+    "BRKB261218C00575000": 0,
+    "BRKB261127P00555000": 0,
+    "BRKB261204P00400000": 0,
+    "BRKB261204P00340000": 0,
+    "BRKB261231P00430000": 0,
+    "BRKB261211P00690000": 0,
+    "BRKB261218P00300000": 0,
+    "BRKB261204C00375000": 0,
+    "BRKB261218C00455000": 0,
+    "BRKB261204P00645000": 0,
+    "BRKB261127C00435000": 0,
+    "BRKB261204P00550000": 0,
+    "BRKB261204C00630000": 0,
+    "BRKB261218P00475000": 0,
+    "BRKB261218C00645000": 0,
+    "BRKB261127C00567500": 0,
+    "BRKB261224P00630000": 0,
+    "BRKB261231P00330000": 0,
+    "BRKB261231C00500000": 0,
+    "BRKB261218P00680000": 0,
+    "BRKB261224C00300000": 0,
+    "BRKB261231P00665000": 0,
+    "BRKB261231C00535000": 0,
     "JPM261127C00185000": 0,
     "JPM261127P00185000": 11,
     "JPM261127C00190000": 0,
