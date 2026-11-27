@@ -1,6 +1,6 @@
 {
   "meta": {
-    "asOf": "2026-11-27T13:23:38.926Z",
+    "asOf": "2026-11-27T21:10:18.109Z",
     "source": "FRED public CSV",
     "rows": 13,
     "delay": "daily",
@@ -39,7 +39,7 @@
     },
     {
       "id": "BAMLH0A0HYM2",
-      "value": 3.72
+      "value": 3.77
     },
     {
       "id": "DFF",
@@ -71,7 +71,7 @@
     "DGS30": 5.3,
     "T10Y2Y": 0.24,
     "T10Y3M": 0.51,
-    "BAMLH0A0HYM2": 3.72,
+    "BAMLH0A0HYM2": 3.77,
     "DFF": 3.88,
     "CPIAUCSL": 337.476,
     "UNRATE": 4.1,

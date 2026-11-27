@@ -1,6 +1,6 @@
 {
   "meta": {
-    "asOf": "2026-11-27T13:21:35.059Z",
+    "asOf": "2026-11-27T21:08:43.712Z",
     "source": "SEC 13F-HR index",
     "rows": 20,
     "delay": "quarterly",
@@ -8,6 +8,27 @@
     "unavailable": false
   },
   "rows": [
+    {
+      "id": "0002037081-26-000013:primary_doc.xml",
+      "filed": "2026-06-30",
+      "names": [
+        "IronOak Wealth LLC.  (CIK 0002037081)"
+      ]
+    },
+    {
+      "id": "0002037081-26-000012:primary_doc.xml",
+      "filed": "2026-03-31",
+      "names": [
+        "IronOak Wealth LLC.  (CIK 0002037081)"
+      ]
+    },
+    {
+      "id": "0002037081-26-000009:primary_doc.xml",
+      "filed": "2025-12-31",
+      "names": [
+        "IronOak Wealth LLC.  (CIK 0002037081)"
+      ]
+    },
     {
       "id": "0001778131-26-000023:primary_doc.xml",
       "filed": "2026-09-30",
@@ -107,45 +128,24 @@
       ]
     },
     {
+      "id": "0001717977-26-000005:primary_doc.xml",
+      "filed": "2026-09-30",
+      "names": [
+        "AMS Capital Ltda  (CIK 0001717977)"
+      ]
+    },
+    {
+      "id": "0001046192-26-000018:primary_doc.xml",
+      "filed": "2026-09-30",
+      "names": [
+        "CANADA LIFE ASSURANCE Co  (CIK 0001046192)"
+      ]
+    },
+    {
       "id": "0002137529-26-000004:primary_doc.xml",
       "filed": "2026-03-31",
       "names": [
         "Regatta Research & Money Management  (CIK 0002137529)"
-      ]
-    },
-    {
-      "id": "0002137529-26-000003:primary_doc.xml",
-      "filed": "2025-12-31",
-      "names": [
-        "Regatta Research & Money Management  (CIK 0002137529)"
-      ]
-    },
-    {
-      "id": "0002132253-26-000002:primary_doc.xml",
-      "filed": "2026-09-30",
-      "names": [
-        "Allied Private Wealth LLC  (CIK 0002132253)"
-      ]
-    },
-    {
-      "id": "0002058915-26-000007:primary_doc.xml",
-      "filed": "2026-09-30",
-      "names": [
-        "Kilter Group LLC  (CIK 0002058915)"
-      ]
-    },
-    {
-      "id": "0002058426-26-000008:primary_doc.xml",
-      "filed": "2026-09-30",
-      "names": [
-        "Corient IA LP  (CIK 0002058426)"
-      ]
-    },
-    {
-      "id": "0002058426-26-000007:primary_doc.xml",
-      "filed": "2026-06-30",
-      "names": [
-        "Corient IA LP  (CIK 0002058426)"
       ]
     }
   ],

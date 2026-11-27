@@ -1,6 +1,6 @@
 {
   "meta": {
-    "asOf": "2026-11-27T13:21:33.521Z",
+    "asOf": "2026-11-27T21:08:42.961Z",
     "source": "SEC EDGAR Form 4",
     "rows": 25,
     "delay": "hours",
@@ -9,399 +9,76 @@
   },
   "rows": [
     {
-      "id": "0001686218-26-000006:primary_doc.xml",
-      "filed": "2026-11-24",
-      "names": [
-        "Hsieh Louis  (CIK 0001686218)",
-        "New Oriental Education & Technology Group Inc.  (CIK 0001372920)"
-      ],
-      "trade": {
-        "owner": "Hsieh Louis",
-        "ticker": "EDU",
-        "code": "S",
-        "shares": 10000,
-        "price": 49.107,
-        "acquired": false,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0001628280-26-076036:wk-form4_1795781770.xml",
+      "id": "0002155883-26-000006:form4-11272026_101101.xml",
       "filed": "2026-11-25",
       "names": [
-        "EISENSON MICHAEL R  (CIK 0001245724)",
-        "PENSKE AUTOMOTIVE GROUP, INC.  (CIK 0001019849)"
+        "Fink Christopher  (CIK 0002155883)",
+        "PURE CYCLE CORP  (CIK 0000276720)"
       ],
       "trade": {
-        "owner": "EISENSON MICHAEL R",
-        "ticker": "PAG",
-        "code": "G",
-        "shares": 23500,
-        "price": 0,
-        "acquired": false,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0001213900-26-124326:ownership.xml",
-      "filed": "2026-11-24",
-      "names": [
-        "KATZ ALEX  (CIK 0001396262)",
-        "Turbogen Ltd.  (CIK 0002088375)"
-      ],
-      "trade": {
-        "owner": "KATZ ALEX",
-        "ticker": "TRBG",
+        "owner": "Fink Christopher",
+        "ticker": "PCYO",
         "code": "P",
-        "shares": 1826,
-        "price": 2.738,
+        "shares": 2500,
+        "price": 10.01,
         "acquired": true,
         "form": "4"
       }
     },
     {
-      "id": "0001213900-26-124324:ownership.xml",
-      "filed": "2026-11-12",
-      "names": [
-        "LIU SER WEI  (CIK 0001927873)",
-        "VCI Global Ltd  (CIK 0001930510)"
-      ],
-      "trade": {
-        "owner": "LIU SER WEI",
-        "ticker": "VCIG",
-        "code": "A",
-        "shares": 26316,
-        "price": 0,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0001213900-26-124322:ownership.xml",
-      "filed": "2026-11-12",
-      "names": [
-        "HOO VOON HIM  (CIK 0001912875)",
-        "VCI Global Ltd  (CIK 0001930510)"
-      ],
-      "trade": {
-        "owner": "HOO VOON HIM",
-        "ticker": "VCIG",
-        "code": "A",
-        "shares": 26316,
-        "price": 0,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0001213900-26-124289:ownership.xml",
-      "filed": "2026-11-25",
-      "names": [
-        "LO WILLIAM WING YAN DR  (CIK 0001134441)",
-        "Regencell Bioscience Holdings Ltd  (CIK 0001829667)"
-      ],
-      "trade": {
-        "owner": "LO WILLIAM WING YAN DR",
-        "ticker": "RGC",
-        "code": "S",
-        "shares": 13671,
-        "price": 4.0868,
-        "acquired": false,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0001193125-26-479131:ownership.xml",
+      "id": "0002149827-26-000005:wk-form4_1795805123.xml",
       "filed": "2026-11-24",
       "names": [
-        "Zhao Bin  (CIK 0001843236)",
-        "Agora, Inc.  (CIK 0001802883)"
+        "Risner Brandon  (CIK 0002149827)",
+        "COMPASS MINERALS INTERNATIONAL INC  (CIK 0001227654)"
       ],
       "trade": {
-        "owner": "Zhao Bin",
-        "ticker": "API",
-        "code": "P",
-        "shares": 35911,
-        "price": 3.2197,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0001193125-26-479094:ownership.xml",
-      "filed": "2026-11-25",
-      "names": [
-        "Hori Akio  (CIK 0002127800)",
-        "NOMURA HOLDINGS INC  (CIK 0001163653)"
-      ],
-      "trade": {
-        "owner": "Hori Akio",
-        "ticker": "NMR",
-        "code": "A",
-        "shares": 73.218,
-        "price": 8.95,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0001193125-26-479091:ownership.xml",
-      "filed": "2026-11-25",
-      "names": [
-        "Ozaki Yukiko  (CIK 0002120479)",
-        "NOMURA HOLDINGS INC  (CIK 0001163653)"
-      ],
-      "trade": {
-        "owner": "Ozaki Yukiko",
-        "ticker": "NMR",
-        "code": "A",
-        "shares": 7.321,
-        "price": 8.95,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0001193125-26-479089:ownership.xml",
-      "filed": "2026-11-25",
-      "names": [
-        "Ogawa Shoji  (CIK 0002120477)",
-        "NOMURA HOLDINGS INC  (CIK 0001163653)"
-      ],
-      "trade": {
-        "owner": "Ogawa Shoji",
-        "ticker": "NMR",
-        "code": "A",
-        "shares": 219.656,
-        "price": 8.95,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0001193125-26-479088:ownership.xml",
-      "filed": "2026-11-25",
-      "names": [
-        "Tobari Akihito  (CIK 0002127897)",
-        "NOMURA HOLDINGS INC  (CIK 0001163653)"
-      ],
-      "trade": {
-        "owner": "Tobari Akihito",
-        "ticker": "NMR",
-        "code": "A",
-        "shares": 73.218,
-        "price": 8.95,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0001193125-26-479087:ownership.xml",
-      "filed": "2026-11-25",
-      "names": [
-        "Koike Hiroyasu  (CIK 0001857372)",
-        "NOMURA HOLDINGS INC  (CIK 0001163653)"
-      ],
-      "trade": {
-        "owner": "Koike Hiroyasu",
-        "ticker": "NMR",
-        "code": "A",
-        "shares": 292.875,
-        "price": 8.95,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0001193125-26-479086:ownership.xml",
-      "filed": "2026-11-25",
-      "names": [
-        "Ishizuka Masahiro  (CIK 0002120468)",
-        "NOMURA HOLDINGS INC  (CIK 0001163653)"
-      ],
-      "trade": {
-        "owner": "Ishizuka Masahiro",
-        "ticker": "NMR",
-        "code": "A",
-        "shares": 219.656,
-        "price": 8.95,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0001193125-26-478981:ownership.xml",
-      "filed": "2026-11-24",
-      "names": [
-        "Wang Yanjun  (CIK 0002113214)",
-        "Sea Ltd  (CIK 0001703399)"
-      ],
-      "trade": {
-        "owner": "Wang Yanjun",
-        "ticker": "SE",
-        "code": "S",
-        "shares": 620,
-        "price": 64.87,
-        "acquired": false,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0001178913-26-005392:ownership.xml",
-      "filed": "2026-11-25",
-      "names": [
-        "Nissan Yitzhak  (CIK 0001970576)",
-        "ELTEK LTD  (CIK 0001024672)"
-      ],
-      "trade": {
-        "owner": "Nissan Yitzhak",
-        "ticker": "ELTK",
-        "code": "P",
-        "shares": 1200,
-        "price": 4.3283,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0001178913-26-005389:ownership.xml",
-      "filed": "2026-11-24",
-      "names": [
-        "Trabelsi Arie  (CIK 0002115847)",
-        "SuperCom Ltd  (CIK 0001291855)"
-      ],
-      "trade": {
-        "owner": "Trabelsi Arie",
-        "ticker": "SPCB",
-        "code": "P",
-        "shares": 9419,
-        "price": 6.67,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002166516-26-000004:ownership.xml",
-      "filed": "2026-11-20",
-      "names": [
-        "Wilcoxen Lauren Michelle  (CIK 0002166516)",
-        "CytoDyn Inc.  (CIK 0001175680)"
-      ],
-      "trade": {
-        "owner": "Wilcoxen Lauren Michelle",
-        "ticker": "CYDY",
-        "code": "A",
-        "shares": 4500000,
-        "price": 0,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002154593-26-000005:wk-form4_1795643975.xml",
-      "filed": "2026-11-25",
-      "names": [
-        "Muneka Dritan  (CIK 0002154593)",
-        "Galaxy Digital Inc.  (CIK 0001859392)"
-      ],
-      "trade": {
-        "owner": "Muneka Dritan",
-        "ticker": "GLXY",
+        "owner": "Risner Brandon",
+        "ticker": "CMP",
         "code": "M",
-        "shares": 3483,
-        "price": 4.83,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002143781-26-000009:wk-form4_1795644391.xml",
-      "filed": "2026-11-23",
-      "names": [
-        "Heinzelman Kate Elizabeth  (CIK 0002143781)",
-        "Carlyle Group Inc.  (CIK 0001527166)"
-      ],
-      "trade": {
-        "owner": "Heinzelman Kate Elizabeth",
-        "ticker": "CG",
-        "code": "A",
-        "shares": 103,
+        "shares": 3343,
         "price": 0,
         "acquired": true,
         "form": "4"
       }
     },
     {
-      "id": "0002135300-26-000006:form4-11252026_101100.xml",
-      "filed": "2026-11-24",
-      "names": [
-        "Hemphill Gregg  (CIK 0002135300)",
-        "Newton Golf Company, Inc.  (CIK 0001934245)"
-      ],
-      "trade": {
-        "owner": "Hemphill Gregg",
-        "ticker": "NWTG",
-        "code": "P",
-        "shares": 10000,
-        "price": 0.8607,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002128637-26-000011:form4-11252026_021102.xml",
+      "id": "0002141696-26-000002:primarydocument.xml",
       "filed": "2026-11-25",
       "names": [
-        "Girod Jon Louis  (CIK 0002128637)",
-        "RIVERVIEW BANCORP INC  (CIK 0001041368)"
+        "Cook Jamie Leigh  (CIK 0002141696)",
+        "MOTORCAR PARTS OF AMERICA INC  (CIK 0000918251)"
       ],
       "trade": {
-        "owner": "Girod Jon Louis",
-        "ticker": "RVSB",
-        "code": "P",
-        "shares": 1500,
-        "price": 6.54,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002125667-26-000005:primary_doc.xml",
-      "filed": "2026-11-24",
-      "names": [
-        "Schuetz Arthur Josef Hermann  (CIK 0002125667)",
-        "SCHMID Group N.V.  (CIK 0001987240)"
-      ],
-      "trade": {
-        "owner": "Schuetz Arthur Josef Hermann",
-        "ticker": "SHMD",
-        "code": "P",
-        "shares": 60000,
-        "price": 1731429,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002120008-26-000014:wk-form4_1795640618.xml",
-      "filed": "2026-11-23",
-      "names": [
-        "Denny Jordan M.  (CIK 0002120008)",
-        "VALVOLINE INC  (CIK 0001674910)"
-      ],
-      "trade": {
-        "owner": "Denny Jordan M.",
-        "ticker": "VVV",
-        "code": "A",
-        "shares": 2530,
+        "owner": "Cook Jamie Leigh",
+        "ticker": "MPAA",
+        "code": "M",
+        "shares": 1446,
         "price": 0,
         "acquired": true,
         "form": "4"
       }
     },
     {
-      "id": "0002117905-26-000052:primary_doc.xml",
-      "filed": "2026-11-24",
+      "id": "0002118951-26-000002:primary_doc.xml",
+      "filed": "2026-11-26",
+      "names": [
+        "Wildeschutt Geralda  (CIK 0002118951)",
+        "Caledonia Mining Corp Plc  (CIK 0000766011)"
+      ],
+      "trade": {
+        "owner": "Wildeschutt Geralda",
+        "ticker": "CMCL",
+        "code": "P",
+        "shares": 4988,
+        "price": 17.69,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002117905-26-000053:primary_doc.xml",
+      "filed": "2026-11-26",
       "names": [
         "Sousa Mauad Bruno  (CIK 0002117905)",
         "Aura Minerals Inc.  (CIK 0001468642)"
@@ -410,25 +87,348 @@
         "owner": "Sousa Mauad Bruno",
         "ticker": "AUGO",
         "code": "P",
-        "shares": 47982,
-        "price": 20.38,
+        "shares": 10000,
+        "price": 21.777,
         "acquired": true,
         "form": "4"
       }
     },
     {
-      "id": "0002116135-26-000003:primarydocument.xml",
+      "id": "0002117102-26-000005:primary_doc.xml",
       "filed": "2026-11-23",
       "names": [
-        "Brown Robert Todd  (CIK 0002116135)",
-        "Lincoln International, Inc.  (CIK 0001925283)"
+        "Cuevas Argueta Fernando Alberto  (CIK 0002117102)",
+        "Vesta Real Estate Corporation, S.A.B. de C.V.  (CIK 0001969373)"
       ],
       "trade": {
-        "owner": "Brown Robert Todd",
-        "ticker": "LCLN",
-        "code": "G",
-        "shares": 325000,
+        "owner": "Cuevas Argueta Fernando Alberto",
+        "ticker": "VTMX",
+        "code": "S",
+        "shares": 2000,
+        "price": 3.48,
+        "acquired": false,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002109337-26-000021:primary_doc.xml",
+      "filed": "2026-11-25",
+      "names": [
+        "WANG CHUN KAI  (CIK 0002109337)",
+        "OBOOK HOLDINGS INC.  (CIK 0002025416)"
+      ],
+      "trade": {
+        "owner": "WANG CHUN KAI",
+        "ticker": "OWLS",
+        "code": "P",
+        "shares": 4080,
+        "price": 2.0163,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002090688-26-000003:wk-form4_1795805130.xml",
+      "filed": "2026-11-24",
+      "names": [
+        "Tills Amy  (CIK 0002090688)",
+        "COMPASS MINERALS INTERNATIONAL INC  (CIK 0001227654)"
+      ],
+      "trade": {
+        "owner": "Tills Amy",
+        "ticker": "CMP",
+        "code": "M",
+        "shares": 2993,
         "price": 0,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002070582-26-000006:wk-form4_1795813536.xml",
+      "filed": "2026-11-24",
+      "names": [
+        "Ahearn Matthew Fraser  (CIK 0002070582)",
+        "SHOULDER INNOVATIONS, INC.  (CIK 0001699350)"
+      ],
+      "trade": {
+        "owner": "Ahearn Matthew Fraser",
+        "ticker": "SI",
+        "code": "S",
+        "shares": 700,
+        "price": 22,
+        "acquired": false,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002058897-26-000353:wk-form4_1795792652.xml",
+      "filed": "2026-11-25",
+      "names": [
+        "Vatnick Silvina  (CIK 0002120729)",
+        "Grupo Cibest S.A.  (CIK 0002058897)"
+      ],
+      "trade": {
+        "owner": "Vatnick Silvina",
+        "ticker": "CIB",
+        "code": "D",
+        "shares": 1480.89,
+        "price": 8.07,
+        "acquired": false,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002054940-26-000005:wk-form4_1795805115.xml",
+      "filed": "2026-11-24",
+      "names": [
+        "Fjellman Peter  (CIK 0002054940)",
+        "COMPASS MINERALS INTERNATIONAL INC  (CIK 0001227654)"
+      ],
+      "trade": {
+        "owner": "Fjellman Peter",
+        "ticker": "CMP",
+        "code": "M",
+        "shares": 8348,
+        "price": 0,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002028332-26-000004:form4-11272026_061130.xml",
+      "filed": "2026-11-24",
+      "names": [
+        "ODEMS RAMON PARISES  (CIK 0002028332)",
+        "O REILLY AUTOMOTIVE INC  (CIK 0000898173)"
+      ],
+      "trade": {
+        "owner": "ODEMS RAMON PARISES",
+        "ticker": "ORLY",
+        "code": "M",
+        "shares": 30000,
+        "price": 16.5,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002015089-26-000008:wk-form4_1795805106.xml",
+      "filed": "2026-11-24",
+      "names": [
+        "Nichols Benjamin S.  (CIK 0002015089)",
+        "COMPASS MINERALS INTERNATIONAL INC  (CIK 0001227654)"
+      ],
+      "trade": {
+        "owner": "Nichols Benjamin S.",
+        "ticker": "CMP",
+        "code": "M",
+        "shares": 5859,
+        "price": 0,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0001999488-26-000015:wk-form4_1795803067.xml",
+      "filed": "2026-11-25",
+      "names": [
+        "Sharma Pankaj  (CIK 0001999488)",
+        "Remitly Global, Inc.  (CIK 0001782170)"
+      ],
+      "trade": {
+        "owner": "Sharma Pankaj",
+        "ticker": "RELY",
+        "code": "F",
+        "shares": 16107,
+        "price": 21.46,
+        "acquired": false,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0001990997-26-000015:form4.xml",
+      "filed": "2026-11-24",
+      "names": [
+        "Reed Andrew Phillips  (CIK 0001990997)",
+        "Klarna Group plc  (CIK 0002003292)"
+      ],
+      "trade": {
+        "owner": "Reed Andrew Phillips",
+        "ticker": "KLAR",
+        "code": "J",
+        "shares": 2188003,
+        "price": 0,
+        "acquired": false,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0001983979-26-000004:form4-11272026_061117.xml",
+      "filed": "2026-11-24",
+      "names": [
+        "CONN TAMARA F.  (CIK 0001983979)",
+        "O REILLY AUTOMOTIVE INC  (CIK 0000898173)"
+      ],
+      "trade": {
+        "owner": "CONN TAMARA F.",
+        "ticker": "ORLY",
+        "code": "M",
+        "shares": 2270,
+        "price": 16.71,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0001976408-26-000978:primary_doc.xml",
+      "filed": "2026-11-25",
+      "names": [
+        "Offer Or  (CIK 0001910424)",
+        "SIMILARWEB LTD.  (CIK 0001842731)"
+      ],
+      "trade": {
+        "owner": "Offer Or",
+        "ticker": "SMWB",
+        "code": "M",
+        "shares": 16000,
+        "price": 0,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0001934850-26-000135:form4.xml",
+      "filed": "2026-11-24",
+      "names": [
+        "Murphy Conor  (CIK 0001716520)",
+        "F&G Annuities & Life, Inc.  (CIK 0001934850)"
+      ],
+      "trade": {
+        "owner": "Murphy Conor",
+        "ticker": "FG",
+        "code": "A",
+        "shares": 156457,
+        "price": 0,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0001934850-26-000133:form4.xml",
+      "filed": "2026-11-24",
+      "names": [
+        "Gravelle Michael L  (CIK 0001350689)",
+        "F&G Annuities & Life, Inc.  (CIK 0001934850)"
+      ],
+      "trade": {
+        "owner": "Gravelle Michael L",
+        "ticker": "FG",
+        "code": "A",
+        "shares": 6611,
+        "price": 0,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0001934850-26-000131:form4.xml",
+      "filed": "2026-11-24",
+      "names": [
+        "FOLEY WILLIAM P II  (CIK 0000903213)",
+        "F&G Annuities & Life, Inc.  (CIK 0001934850)"
+      ],
+      "trade": {
+        "owner": "FOLEY WILLIAM P II",
+        "ticker": "FG",
+        "code": "A",
+        "shares": 143235,
+        "price": 0,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0001934850-26-000129:form4.xml",
+      "filed": "2026-11-24",
+      "names": [
+        "Blunt Christopher O  (CIK 0001662378)",
+        "F&G Annuities & Life, Inc.  (CIK 0001934850)"
+      ],
+      "trade": {
+        "owner": "Blunt Christopher O",
+        "ticker": "FG",
+        "code": "A",
+        "shares": 110181,
+        "price": 0,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0001934850-26-000127:form4.xml",
+      "filed": "2026-11-24",
+      "names": [
+        "Bailey Michael H  (CIK 0002146319)",
+        "F&G Annuities & Life, Inc.  (CIK 0001934850)"
+      ],
+      "trade": {
+        "owner": "Bailey Michael H",
+        "ticker": "FG",
+        "code": "A",
+        "shares": 45175,
+        "price": 0,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0001899688-26-000020:form4-11272026_041107.xml",
+      "filed": "2026-11-24",
+      "names": [
+        "Sherringham Tia  (CIK 0001899688)",
+        "DoorDash, Inc.  (CIK 0001792789)"
+      ],
+      "trade": {
+        "owner": "Sherringham Tia",
+        "ticker": "DASH",
+        "code": "S",
+        "shares": 1196,
+        "price": 160.307,
+        "acquired": false,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0001872886-26-000011:wk-form4_1795803043.xml",
+      "filed": "2026-11-25",
+      "names": [
+        "Mehta Vikas D  (CIK 0001872886)",
+        "Remitly Global, Inc.  (CIK 0001782170)"
+      ],
+      "trade": {
+        "owner": "Mehta Vikas D",
+        "ticker": "RELY",
+        "code": "F",
+        "shares": 31190,
+        "price": 21.46,
+        "acquired": false,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0001872870-26-000021:wk-form4_1795813332.xml",
+      "filed": "2026-11-24",
+      "names": [
+        "Singisetti Ravi Kumar  (CIK 0001872870)",
+        "COGNIZANT TECHNOLOGY SOLUTIONS CORP  (CIK 0001058290)"
+      ],
+      "trade": {
+        "owner": "Singisetti Ravi Kumar",
+        "ticker": "CTSH",
+        "code": "S",
+        "shares": 8333,
+        "price": 60.3962,
         "acquired": false,
         "form": "4"
       }
