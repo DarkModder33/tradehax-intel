@@ -1,6 +1,6 @@
 {
   "meta": {
-    "asOf": "2026-11-27T22:18:29.034Z",
+    "asOf": "2026-11-27T22:40:24.474Z",
     "source": "Yahoo most actives",
     "rows": 25,
     "delay": "delayed",
@@ -107,6 +107,13 @@
       "name": "American Airlines Group, Inc."
     },
     {
+      "symbol": "NIO",
+      "price": 2.85,
+      "change": 5.94795,
+      "volume": 32082030,
+      "name": "NIO Inc."
+    },
+    {
       "symbol": "VALE",
       "price": 10.27,
       "change": 4.68909,
@@ -119,13 +126,6 @@
       "change": 3.83561,
       "volume": 30463353,
       "name": "Nokia Corporation Sponsored"
-    },
-    {
-      "symbol": "NIO",
-      "price": 2.85,
-      "change": 5.94795,
-      "volume": 32082030,
-      "name": "NIO Inc."
     },
     {
       "symbol": "AMZN",
@@ -156,6 +156,13 @@
       "name": "Ambev S.A."
     },
     {
+      "symbol": "BTG",
+      "price": 4.85,
+      "change": 8.25893,
+      "volume": 25550250,
+      "name": "B2Gold Corp"
+    },
+    {
       "symbol": "CIFR",
       "price": 5.68,
       "change": 3.085292,
@@ -175,13 +182,6 @@
       "change": 18.0681,
       "volume": 23920261,
       "name": "XP Inc."
-    },
-    {
-      "symbol": "PBR",
-      "price": 16.84,
-      "change": 4.92212,
-      "volume": 23728725,
-      "name": "Petroleo Brasileiro S.A. Petrob"
     }
   ],
   "note": "A predefined list, not the full nightly universe."

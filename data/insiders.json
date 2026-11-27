@@ -1,6 +1,6 @@
 {
   "meta": {
-    "asOf": "2026-11-27T22:16:25.099Z",
+    "asOf": "2026-11-27T22:38:47.496Z",
     "source": "SEC EDGAR Form 4",
     "rows": 25,
     "delay": "hours",
@@ -383,6 +383,23 @@
       }
     },
     {
+      "id": "0001978942-26-000014:wk-form4_1795818623.xml",
+      "filed": "2026-11-24",
+      "names": [
+        "Maday David  (CIK 0001978942)",
+        "Aurora Innovation, Inc.  (CIK 0001828108)"
+      ],
+      "trade": {
+        "owner": "Maday David",
+        "ticker": "AUR",
+        "code": "G",
+        "shares": 98658,
+        "price": 0,
+        "acquired": false,
+        "form": "4"
+      }
+    },
+    {
       "id": "0001976408-26-000978:primary_doc.xml",
       "filed": "2026-11-25",
       "names": [
@@ -411,23 +428,6 @@
         "ticker": "FG",
         "code": "A",
         "shares": 156457,
-        "price": 0,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0001934850-26-000133:form4.xml",
-      "filed": "2026-11-24",
-      "names": [
-        "Gravelle Michael L  (CIK 0001350689)",
-        "F&G Annuities & Life, Inc.  (CIK 0001934850)"
-      ],
-      "trade": {
-        "owner": "Gravelle Michael L",
-        "ticker": "FG",
-        "code": "A",
-        "shares": 6611,
         "price": 0,
         "acquired": true,
         "form": "4"
