@@ -1,6 +1,6 @@
 {
   "meta": {
-    "asOf": "2026-11-27T04:33:36.814Z",
+    "asOf": "2026-11-27T13:21:33.521Z",
     "source": "SEC EDGAR Form 4",
     "rows": 25,
     "delay": "hours",
@@ -8,6 +8,278 @@
     "unavailable": false
   },
   "rows": [
+    {
+      "id": "0001686218-26-000006:primary_doc.xml",
+      "filed": "2026-11-24",
+      "names": [
+        "Hsieh Louis  (CIK 0001686218)",
+        "New Oriental Education & Technology Group Inc.  (CIK 0001372920)"
+      ],
+      "trade": {
+        "owner": "Hsieh Louis",
+        "ticker": "EDU",
+        "code": "S",
+        "shares": 10000,
+        "price": 49.107,
+        "acquired": false,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0001628280-26-076036:wk-form4_1795781770.xml",
+      "filed": "2026-11-25",
+      "names": [
+        "EISENSON MICHAEL R  (CIK 0001245724)",
+        "PENSKE AUTOMOTIVE GROUP, INC.  (CIK 0001019849)"
+      ],
+      "trade": {
+        "owner": "EISENSON MICHAEL R",
+        "ticker": "PAG",
+        "code": "G",
+        "shares": 23500,
+        "price": 0,
+        "acquired": false,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0001213900-26-124326:ownership.xml",
+      "filed": "2026-11-24",
+      "names": [
+        "KATZ ALEX  (CIK 0001396262)",
+        "Turbogen Ltd.  (CIK 0002088375)"
+      ],
+      "trade": {
+        "owner": "KATZ ALEX",
+        "ticker": "TRBG",
+        "code": "P",
+        "shares": 1826,
+        "price": 2.738,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0001213900-26-124324:ownership.xml",
+      "filed": "2026-11-12",
+      "names": [
+        "LIU SER WEI  (CIK 0001927873)",
+        "VCI Global Ltd  (CIK 0001930510)"
+      ],
+      "trade": {
+        "owner": "LIU SER WEI",
+        "ticker": "VCIG",
+        "code": "A",
+        "shares": 26316,
+        "price": 0,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0001213900-26-124322:ownership.xml",
+      "filed": "2026-11-12",
+      "names": [
+        "HOO VOON HIM  (CIK 0001912875)",
+        "VCI Global Ltd  (CIK 0001930510)"
+      ],
+      "trade": {
+        "owner": "HOO VOON HIM",
+        "ticker": "VCIG",
+        "code": "A",
+        "shares": 26316,
+        "price": 0,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0001213900-26-124289:ownership.xml",
+      "filed": "2026-11-25",
+      "names": [
+        "LO WILLIAM WING YAN DR  (CIK 0001134441)",
+        "Regencell Bioscience Holdings Ltd  (CIK 0001829667)"
+      ],
+      "trade": {
+        "owner": "LO WILLIAM WING YAN DR",
+        "ticker": "RGC",
+        "code": "S",
+        "shares": 13671,
+        "price": 4.0868,
+        "acquired": false,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0001193125-26-479131:ownership.xml",
+      "filed": "2026-11-24",
+      "names": [
+        "Zhao Bin  (CIK 0001843236)",
+        "Agora, Inc.  (CIK 0001802883)"
+      ],
+      "trade": {
+        "owner": "Zhao Bin",
+        "ticker": "API",
+        "code": "P",
+        "shares": 35911,
+        "price": 3.2197,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0001193125-26-479094:ownership.xml",
+      "filed": "2026-11-25",
+      "names": [
+        "Hori Akio  (CIK 0002127800)",
+        "NOMURA HOLDINGS INC  (CIK 0001163653)"
+      ],
+      "trade": {
+        "owner": "Hori Akio",
+        "ticker": "NMR",
+        "code": "A",
+        "shares": 73.218,
+        "price": 8.95,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0001193125-26-479091:ownership.xml",
+      "filed": "2026-11-25",
+      "names": [
+        "Ozaki Yukiko  (CIK 0002120479)",
+        "NOMURA HOLDINGS INC  (CIK 0001163653)"
+      ],
+      "trade": {
+        "owner": "Ozaki Yukiko",
+        "ticker": "NMR",
+        "code": "A",
+        "shares": 7.321,
+        "price": 8.95,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0001193125-26-479089:ownership.xml",
+      "filed": "2026-11-25",
+      "names": [
+        "Ogawa Shoji  (CIK 0002120477)",
+        "NOMURA HOLDINGS INC  (CIK 0001163653)"
+      ],
+      "trade": {
+        "owner": "Ogawa Shoji",
+        "ticker": "NMR",
+        "code": "A",
+        "shares": 219.656,
+        "price": 8.95,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0001193125-26-479088:ownership.xml",
+      "filed": "2026-11-25",
+      "names": [
+        "Tobari Akihito  (CIK 0002127897)",
+        "NOMURA HOLDINGS INC  (CIK 0001163653)"
+      ],
+      "trade": {
+        "owner": "Tobari Akihito",
+        "ticker": "NMR",
+        "code": "A",
+        "shares": 73.218,
+        "price": 8.95,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0001193125-26-479087:ownership.xml",
+      "filed": "2026-11-25",
+      "names": [
+        "Koike Hiroyasu  (CIK 0001857372)",
+        "NOMURA HOLDINGS INC  (CIK 0001163653)"
+      ],
+      "trade": {
+        "owner": "Koike Hiroyasu",
+        "ticker": "NMR",
+        "code": "A",
+        "shares": 292.875,
+        "price": 8.95,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0001193125-26-479086:ownership.xml",
+      "filed": "2026-11-25",
+      "names": [
+        "Ishizuka Masahiro  (CIK 0002120468)",
+        "NOMURA HOLDINGS INC  (CIK 0001163653)"
+      ],
+      "trade": {
+        "owner": "Ishizuka Masahiro",
+        "ticker": "NMR",
+        "code": "A",
+        "shares": 219.656,
+        "price": 8.95,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0001193125-26-478981:ownership.xml",
+      "filed": "2026-11-24",
+      "names": [
+        "Wang Yanjun  (CIK 0002113214)",
+        "Sea Ltd  (CIK 0001703399)"
+      ],
+      "trade": {
+        "owner": "Wang Yanjun",
+        "ticker": "SE",
+        "code": "S",
+        "shares": 620,
+        "price": 64.87,
+        "acquired": false,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0001178913-26-005392:ownership.xml",
+      "filed": "2026-11-25",
+      "names": [
+        "Nissan Yitzhak  (CIK 0001970576)",
+        "ELTEK LTD  (CIK 0001024672)"
+      ],
+      "trade": {
+        "owner": "Nissan Yitzhak",
+        "ticker": "ELTK",
+        "code": "P",
+        "shares": 1200,
+        "price": 4.3283,
+        "acquired": true,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0001178913-26-005389:ownership.xml",
+      "filed": "2026-11-24",
+      "names": [
+        "Trabelsi Arie  (CIK 0002115847)",
+        "SuperCom Ltd  (CIK 0001291855)"
+      ],
+      "trade": {
+        "owner": "Trabelsi Arie",
+        "ticker": "SPCB",
+        "code": "P",
+        "shares": 9419,
+        "price": 6.67,
+        "acquired": true,
+        "form": "4"
+      }
+    },
     {
       "id": "0002166516-26-000004:ownership.xml",
       "filed": "2026-11-20",
@@ -158,278 +430,6 @@
         "shares": 325000,
         "price": 0,
         "acquired": false,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002115511-26-000001:primarydocument.xml",
-      "filed": "2026-11-23",
-      "names": [
-        "Barr Robert Bruce  (CIK 0002115511)",
-        "Lincoln International, Inc.  (CIK 0001925283)"
-      ],
-      "trade": {
-        "owner": "Barr Robert Bruce",
-        "ticker": "LCLN",
-        "code": "G",
-        "shares": 195000,
-        "price": 0,
-        "acquired": false,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002115436-26-000044:form4.xml",
-      "filed": "2026-11-23",
-      "names": [
-        "Chapman Neil A  (CIK 0001628306)",
-        "ExxonMobil Holdings Corp  (CIK 0002115436)"
-      ],
-      "trade": {
-        "owner": "Chapman Neil A",
-        "ticker": "XOM",
-        "code": "F",
-        "shares": 20935,
-        "price": 158.16,
-        "acquired": false,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002115436-26-000042:form4.xml",
-      "filed": "2026-11-23",
-      "names": [
-        "Woods Darren W  (CIK 0001555145)",
-        "ExxonMobil Holdings Corp  (CIK 0002115436)"
-      ],
-      "trade": {
-        "owner": "Woods Darren W",
-        "ticker": "XOM",
-        "code": "F",
-        "shares": 42302,
-        "price": 158.16,
-        "acquired": false,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002115436-26-000040:form4.xml",
-      "filed": "2026-11-23",
-      "names": [
-        "Williams Jack P Jr  (CIK 0001495010)",
-        "ExxonMobil Holdings Corp  (CIK 0002115436)"
-      ],
-      "trade": {
-        "owner": "Williams Jack P Jr",
-        "ticker": "XOM",
-        "code": "F",
-        "shares": 20935,
-        "price": 158.16,
-        "acquired": false,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002115436-26-000038:form4.xml",
-      "filed": "2026-11-24",
-      "names": [
-        "Taylor Jeffrey Allen  (CIK 0002027175)",
-        "ExxonMobil Holdings Corp  (CIK 0002115436)"
-      ],
-      "trade": {
-        "owner": "Taylor Jeffrey Allen",
-        "ticker": "XOM",
-        "code": "A",
-        "shares": 65300,
-        "price": 0,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002115436-26-000036:form4.xml",
-      "filed": "2026-11-23",
-      "names": [
-        "Talley Darrin L  (CIK 0001918108)",
-        "ExxonMobil Holdings Corp  (CIK 0002115436)"
-      ],
-      "trade": {
-        "owner": "Talley Darrin L",
-        "ticker": "XOM",
-        "code": "F",
-        "shares": 6731,
-        "price": 158.16,
-        "acquired": false,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002115436-26-000034:form4.xml",
-      "filed": "2026-11-23",
-      "names": [
-        "Gibbs Jon M.  (CIK 0001853120)",
-        "ExxonMobil Holdings Corp  (CIK 0002115436)"
-      ],
-      "trade": {
-        "owner": "Gibbs Jon M.",
-        "ticker": "XOM",
-        "code": "F",
-        "shares": 6946,
-        "price": 158.16,
-        "acquired": false,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002115436-26-000032:form4.xml",
-      "filed": "2026-11-23",
-      "names": [
-        "Hansen Neil A  (CIK 0001744695)",
-        "ExxonMobil Holdings Corp  (CIK 0002115436)"
-      ],
-      "trade": {
-        "owner": "Hansen Neil A",
-        "ticker": "XOM",
-        "code": "F",
-        "shares": 17650,
-        "price": 158.16,
-        "acquired": false,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002115436-26-000030:form4.xml",
-      "filed": "2026-11-23",
-      "names": [
-        "Gjervik Staale  (CIK 0002098746)",
-        "ExxonMobil Holdings Corp  (CIK 0002115436)"
-      ],
-      "trade": {
-        "owner": "Gjervik Staale",
-        "ticker": "XOM",
-        "code": "F",
-        "shares": 6859,
-        "price": 158.16,
-        "acquired": false,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002115436-26-000028:form4.xml",
-      "filed": "2026-11-24",
-      "names": [
-        "Crocker Matthew Richard  (CIK 0002068398)",
-        "ExxonMobil Holdings Corp  (CIK 0002115436)"
-      ],
-      "trade": {
-        "owner": "Crocker Matthew Richard",
-        "ticker": "XOM",
-        "code": "A",
-        "shares": 76400,
-        "price": 0,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002115436-26-000026:form4.xml",
-      "filed": "2026-11-24",
-      "names": [
-        "Buchanan Susan Elaine  (CIK 0002133453)",
-        "ExxonMobil Holdings Corp  (CIK 0002115436)"
-      ],
-      "trade": {
-        "owner": "Buchanan Susan Elaine",
-        "ticker": "XOM",
-        "code": "A",
-        "shares": 24100,
-        "price": 0,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002115436-26-000024:form4.xml",
-      "filed": "2026-11-24",
-      "names": [
-        "Ammann Daniel  (CIK 0001492931)",
-        "ExxonMobil Holdings Corp  (CIK 0002115436)"
-      ],
-      "trade": {
-        "owner": "Ammann Daniel",
-        "ticker": "XOM",
-        "code": "A",
-        "shares": 102800,
-        "price": 0,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002114357-26-000001:primarydocument.xml",
-      "filed": "2026-11-23",
-      "names": [
-        "Lawson Lawrence James III  (CIK 0002114357)",
-        "Lincoln International, Inc.  (CIK 0001925283)"
-      ],
-      "trade": {
-        "owner": "Lawson Lawrence James III",
-        "ticker": "LCLN",
-        "code": "G",
-        "shares": 332800,
-        "price": 0,
-        "acquired": false,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002110643-26-000023:wk-form4_1795641814.xml",
-      "filed": "2026-11-23",
-      "names": [
-        "Milum Dwayne M  (CIK 0002110643)",
-        "Walmart Inc.  (CIK 0000104169)"
-      ],
-      "trade": {
-        "owner": "Milum Dwayne M",
-        "ticker": "WMT",
-        "code": "S",
-        "shares": 5808,
-        "price": 129.265,
-        "acquired": false,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002110450-26-000016:wk-form4_1795640623.xml",
-      "filed": "2026-11-23",
-      "names": [
-        "Worsham Adam C.  (CIK 0002110450)",
-        "VALVOLINE INC  (CIK 0001674910)"
-      ],
-      "trade": {
-        "owner": "Worsham Adam C.",
-        "ticker": "VVV",
-        "code": "A",
-        "shares": 4700,
-        "price": 0,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0002106572-26-000007:primary_doc.xml",
-      "filed": "2026-11-11",
-      "names": [
-        "EEME Energy SPV I, LLC  (CIK 0002106572)",
-        "XCF Global, Inc.  (CIK 0002019793)"
-      ],
-      "trade": {
-        "owner": "EEME Energy SPV I, LLC",
-        "ticker": "SAFX",
-        "code": "A",
-        "shares": 1335462,
-        "price": 0.1785,
-        "acquired": true,
         "form": "4"
       }
     }

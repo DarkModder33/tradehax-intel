@@ -1,6 +1,6 @@
 {
   "meta": {
-    "asOf": "2026-11-27T04:33:38.057Z",
+    "asOf": "2026-11-27T13:21:35.059Z",
     "source": "SEC 13F-HR index",
     "rows": 20,
     "delay": "quarterly",
@@ -8,6 +8,104 @@
     "unavailable": false
   },
   "rows": [
+    {
+      "id": "0001778131-26-000023:primary_doc.xml",
+      "filed": "2026-09-30",
+      "names": [
+        "BI Asset Management Fondsmaeglerselskab A/S  (CIK 0001778131)"
+      ]
+    },
+    {
+      "id": "0001778131-26-000022:primary_doc.xml",
+      "filed": "2026-06-30",
+      "names": [
+        "BI Asset Management Fondsmaeglerselskab A/S  (CIK 0001778131)"
+      ]
+    },
+    {
+      "id": "0001778131-26-000021:primary_doc.xml",
+      "filed": "2025-12-31",
+      "names": [
+        "BI Asset Management Fondsmaeglerselskab A/S  (CIK 0001778131)"
+      ]
+    },
+    {
+      "id": "0001778131-26-000020:primary_doc.xml",
+      "filed": "2025-09-30",
+      "names": [
+        "BI Asset Management Fondsmaeglerselskab A/S  (CIK 0001778131)"
+      ]
+    },
+    {
+      "id": "0001778131-26-000019:primary_doc.xml",
+      "filed": "2025-06-30",
+      "names": [
+        "BI Asset Management Fondsmaeglerselskab A/S  (CIK 0001778131)"
+      ]
+    },
+    {
+      "id": "0001778131-26-000018:primary_doc.xml",
+      "filed": "2025-03-31",
+      "names": [
+        "BI Asset Management Fondsmaeglerselskab A/S  (CIK 0001778131)"
+      ]
+    },
+    {
+      "id": "0001778131-26-000017:primary_doc.xml",
+      "filed": "2024-12-31",
+      "names": [
+        "BI Asset Management Fondsmaeglerselskab A/S  (CIK 0001778131)"
+      ]
+    },
+    {
+      "id": "0001778131-26-000016:primary_doc.xml",
+      "filed": "2024-09-30",
+      "names": [
+        "BI Asset Management Fondsmaeglerselskab A/S  (CIK 0001778131)"
+      ]
+    },
+    {
+      "id": "0001778131-26-000015:primary_doc.xml",
+      "filed": "2024-06-30",
+      "names": [
+        "BI Asset Management Fondsmaeglerselskab A/S  (CIK 0001778131)"
+      ]
+    },
+    {
+      "id": "0001778131-26-000014:primary_doc.xml",
+      "filed": "2024-03-31",
+      "names": [
+        "BI Asset Management Fondsmaeglerselskab A/S  (CIK 0001778131)"
+      ]
+    },
+    {
+      "id": "0001778131-26-000013:primary_doc.xml",
+      "filed": "2023-12-31",
+      "names": [
+        "BI Asset Management Fondsmaeglerselskab A/S  (CIK 0001778131)"
+      ]
+    },
+    {
+      "id": "0001778131-26-000012:primary_doc.xml",
+      "filed": "2023-09-30",
+      "names": [
+        "BI Asset Management Fondsmaeglerselskab A/S  (CIK 0001778131)"
+      ]
+    },
+    {
+      "id": "0001778131-26-000011:primary_doc.xml",
+      "filed": "2023-06-30",
+      "names": [
+        "BI Asset Management Fondsmaeglerselskab A/S  (CIK 0001778131)"
+      ]
+    },
+    {
+      "id": "0001778131-26-000010:primary_doc.xml",
+      "filed": "2023-03-31",
+      "names": [
+        "BI Asset Management Fondsmaeglerselskab A/S  (CIK 0001778131)"
+      ]
+    },
     {
       "id": "0002137529-26-000004:primary_doc.xml",
       "filed": "2026-03-31",
@@ -48,104 +146,6 @@
       "filed": "2026-06-30",
       "names": [
         "Corient IA LP  (CIK 0002058426)"
-      ]
-    },
-    {
-      "id": "0001729254-26-000004:primary_doc.xml",
-      "filed": "2026-09-30",
-      "names": [
-        "Front Row Advisors LLC  (CIK 0001729254)"
-      ]
-    },
-    {
-      "id": "0001641761-26-000004:primary_doc.xml",
-      "filed": "2026-09-30",
-      "names": [
-        "1 NORTH WEALTH SERVICES LLC  (CIK 0001641761)"
-      ]
-    },
-    {
-      "id": "0001577774-26-000011:primary_doc.xml",
-      "filed": "2026-06-30",
-      "names": [
-        "Regal Partners Ltd  (CIK 0001577774)"
-      ]
-    },
-    {
-      "id": "0001471265-26-000054:primary_doc.xml",
-      "filed": "2026-09-30",
-      "names": [
-        "Northwest Bancshares, Inc.  (NWBI)  (CIK 0001471265)"
-      ]
-    },
-    {
-      "id": "0001213900-26-123876:primary_doc.xml",
-      "filed": "2026-09-30",
-      "names": [
-        "Baader Bank Aktiengesellschaft  (CIK 0001542629)"
-      ]
-    },
-    {
-      "id": "0001062993-26-006287:primary_doc.xml",
-      "filed": "2026-09-30",
-      "names": [
-        "FARMERS TRUST CO  (CIK 0001318055)"
-      ]
-    },
-    {
-      "id": "0001062993-26-006286:primary_doc.xml",
-      "filed": "2026-06-30",
-      "names": [
-        "FARMERS TRUST CO  (CIK 0001318055)"
-      ]
-    },
-    {
-      "id": "0001056559-26-000004:primary_doc.xml",
-      "filed": "2026-09-30",
-      "names": [
-        "NORTH STAR ASSET MANAGEMENT INC  (CIK 0001056559)"
-      ]
-    },
-    {
-      "id": "0000902219-26-000399:primary_doc.xml",
-      "filed": "2026-09-30",
-      "names": [
-        "WELLINGTON MANAGEMENT GROUP LLP  (CIK 0000902219)"
-      ]
-    },
-    {
-      "id": "0000895421-26-000360:primary_doc.xml",
-      "filed": "2026-09-30",
-      "names": [
-        "MORGAN STANLEY  (MS, MS-PA, MS-PE, MS-PF, MS-PI, MS-PK, MS-PL, MS-PO, MS-PP, MS-PQ)  (CIK 0000895421)"
-      ]
-    },
-    {
-      "id": "0002166017-26-000001:primary_doc.xml",
-      "filed": "2026-09-30",
-      "names": [
-        "CAVU Wealth Advisors, LLC  (CIK 0002166017)"
-      ]
-    },
-    {
-      "id": "0002137529-26-000002:primary_doc.xml",
-      "filed": "2026-09-30",
-      "names": [
-        "Regatta Research & Money Management  (CIK 0002137529)"
-      ]
-    },
-    {
-      "id": "0001971230-26-000004:primary_doc.xml",
-      "filed": "2026-09-30",
-      "names": [
-        "Ruggaard & Associates LLC  (CIK 0001971230)"
-      ]
-    },
-    {
-      "id": "0001849529-26-000017:primary_doc.xml",
-      "filed": "2026-09-30",
-      "names": [
-        "Revere Asset Management, Inc  (CIK 0001849529)"
       ]
     }
   ],

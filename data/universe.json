@@ -1,8 +1,8 @@
 {
   "meta": {
-    "asOf": "2026-11-27T04:35:08.526Z",
+    "asOf": "2026-11-27T13:23:39.737Z",
     "source": "Nasdaq screener",
-    "rows": 3550,
+    "rows": 3551,
     "delay": "daily",
     "stale": false,
     "unavailable": false,
@@ -594,7 +594,7 @@
       "name": "Analog Devices Inc. Common Stock",
       "sector": "Technology",
       "industry": "Semiconductors",
-      "mcap": 161411179219,
+      "mcap": 160781926552,
       "price": 333.105,
       "change": 6.44,
       "volume": 9205503
@@ -684,7 +684,7 @@
       "name": "Autodesk Inc. Common Stock",
       "sector": "Technology",
       "industry": "Computer Software: Prepackaged Software",
-      "mcap": 51578065000,
+      "mcap": 51331280000,
       "price": 246.785,
       "change": -3.487,
       "volume": 3320956
@@ -1964,7 +1964,7 @@
       "name": "Amentum Holdings Inc. Common Stock",
       "sector": "Consumer Discretionary",
       "industry": "Business Services",
-      "mcap": 6083319555,
+      "mcap": 6091263366,
       "price": 24.88,
       "change": 0.323,
       "volume": 5577464
@@ -2114,7 +2114,7 @@
       "name": "Anthropic PBC Class A Common Stock",
       "sector": "Technology",
       "industry": "Computer Software: Prepackaged Software",
-      "mcap": 1083445623974,
+      "mcap": 1094454184030,
       "price": 82.79,
       "change": 1.081,
       "volume": 293740431
@@ -2534,7 +2534,7 @@
       "name": "Aramark Common Stock",
       "sector": "Consumer Discretionary",
       "industry": "Restaurants",
-      "mcap": 15229618792,
+      "mcap": 15218118691,
       "price": 57.77,
       "change": 1.654,
       "volume": 3040654
@@ -4514,7 +4514,7 @@
       "name": "BJ's Wholesale Club Holdings Inc. Common Stock",
       "sector": "Consumer Discretionary",
       "industry": "Department/Specialty Retail Stores",
-      "mcap": 12846204176,
+      "mcap": 12843392883,
       "price": 101.7,
       "change": -2.287,
       "volume": 2354084
@@ -5544,7 +5544,7 @@
       "name": "Burlington Stores Inc. Common Stock",
       "sector": "Consumer Discretionary",
       "industry": "Department/Specialty Retail Stores",
-      "mcap": 15708195814,
+      "mcap": 15637071905,
       "price": 250.07,
       "change": 2.345,
       "volume": 1747713
@@ -6584,7 +6584,7 @@
       "name": "Central Garden & Pet Company Common Stock",
       "sector": "Consumer Discretionary",
       "industry": "Consumer Specialties",
-      "mcap": 2386029836,
+      "mcap": 2390830135,
       "price": 38.12,
       "change": -7.588,
       "volume": 427122
@@ -6684,7 +6684,7 @@
       "name": "Capitol Federal Financial Inc. Common Stock",
       "sector": "Finance",
       "industry": "Savings Institutions",
-      "mcap": 1013128161,
+      "mcap": 988692498,
       "price": 8.06,
       "change": -0.617,
       "volume": 546272
@@ -7324,7 +7324,7 @@
       "name": "Commercial Metals Company Common Stock",
       "sector": "Industrials",
       "industry": "Steel/Iron Ore",
-      "mcap": 6289085811,
+      "mcap": 6285221649,
       "price": 57.185,
       "change": 1.662,
       "volume": 870226
@@ -7404,7 +7404,7 @@
       "name": "Compass Minerals Intl Inc Common Stock",
       "sector": "Industrials",
       "industry": "Mining & Quarrying of Nonmetallic Minerals (No Fuels)",
-      "mcap": 927777315,
+      "mcap": 931701215,
       "price": 22.1,
       "change": -5.069,
       "volume": 871437
@@ -9644,7 +9644,7 @@
       "name": "DiaMedica Therapeutics Inc. Common Stock",
       "sector": "Health Care",
       "industry": "Biotechnology: Pharmaceutical Preparations",
-      "mcap": 494790037,
+      "mcap": 593340027,
       "price": 9.17,
       "change": 0.548,
       "volume": 323254
@@ -10154,7 +10154,7 @@
       "name": "Dycom Industries Inc. Common Stock",
       "sector": "Industrials",
       "industry": "Water Sewer Pipeline Comm & Power Line Construction",
-      "mcap": 5355228720,
+      "mcap": 5294924473,
       "price": 177.555,
       "change": -0.813,
       "volume": 1198435
@@ -11964,7 +11964,7 @@
       "name": "FirstEnergy Corp. Common Stock",
       "sector": "Utilities",
       "industry": "Electric Utilities: Central",
-      "mcap": 27587161641,
+      "mcap": 27592723599,
       "price": 47.655,
       "change": 0.623,
       "volume": 4215649
@@ -13114,7 +13114,7 @@
       "name": "FrontView REIT Inc. Common Stock",
       "sector": "Real Estate",
       "industry": "Real Estate Investment Trusts",
-      "mcap": 486642856,
+      "mcap": 492557683,
       "price": 18.21,
       "change": -0.6,
       "volume": 225340
@@ -13354,7 +13354,7 @@
       "name": "Green Dot Corporation Class A Common Stock $0.001 par value",
       "sector": "Finance",
       "industry": "Finance: Consumer Services",
-      "mcap": 617692201,
+      "mcap": 617753419,
       "price": 10.835,
       "change": -0.869,
       "volume": 493656
@@ -13664,7 +13664,7 @@
       "name": "CGI Inc. Common Stock",
       "sector": "Consumer Discretionary",
       "industry": "Professional Services",
-      "mcap": 17272159698,
+      "mcap": 17243113333,
       "price": 83.41,
       "change": 1.336,
       "volume": 468221
@@ -17284,7 +17284,7 @@
       "name": "J & J Snack Foods Corp. Common Stock",
       "sector": "Consumer Staples",
       "industry": "Specialty Foods",
-      "mcap": 1776060473,
+      "mcap": 1773145436,
       "price": 95.07,
       "change": 0.838,
       "volume": 229904
@@ -19034,7 +19034,7 @@
       "name": "Lowe's Companies Inc. Common Stock",
       "sector": "Consumer Discretionary",
       "industry": "RETAIL: Building Materials",
-      "mcap": 132195547957,
+      "mcap": 132194109968,
       "price": 235.62,
       "change": 1.982,
       "volume": 3099377
@@ -19504,7 +19504,7 @@
       "name": "Magnera Corporation Common Stock",
       "sector": "Basic Materials",
       "industry": "Paper",
-      "mcap": 491534000,
+      "mcap": 492907000,
       "price": 13.73,
       "change": 0.365,
       "volume": 438970
@@ -28990,6 +28990,16 @@
       "volume": 12380117
     },
     {
+      "symbol": "SKYD.WS",
+      "name": "Skydance Corporation Warrants to Purchase Class B Common Stock",
+      "sector": "Industrials",
+      "industry": "Broadcasting",
+      "mcap": 14678687091,
+      "price": 2.91,
+      "change": 0.345,
+      "volume": 986483
+    },
+    {
       "symbol": "SKYH",
       "name": "Sky Harbour Group Corporation Class A Common Stock",
       "sector": "Finance",
@@ -29684,7 +29694,7 @@
       "name": "Suburban Propane Partners L.P. Common Stock",
       "sector": "Consumer Discretionary",
       "industry": "Other Specialty Stores",
-      "mcap": 1105424253,
+      "mcap": 1123555130,
       "price": 16.57,
       "change": 0,
       "volume": 282309
@@ -31054,7 +31064,7 @@
       "name": "Target Corporation Common Stock",
       "sector": "Consumer Discretionary",
       "industry": "Department/Specialty Retail Stores",
-      "mcap": 78216269037,
+      "mcap": 77948614072,
       "price": 172.17,
       "change": -2.209,
       "volume": 5082631
@@ -31304,7 +31314,7 @@
       "name": "Telix Pharmaceuticals Limited American Depositary Shares",
       "sector": "Health Care",
       "industry": "Biotechnology: Pharmaceutical Preparations",
-      "mcap": 3018503507,
+      "mcap": 3023865384,
       "price": 8.91,
       "change": 2.296,
       "volume": 294114
