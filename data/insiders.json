@@ -1,6 +1,6 @@
 {
   "meta": {
-    "asOf": "2026-11-27T22:38:47.496Z",
+    "asOf": "2026-11-28T04:16:06.389Z",
     "source": "SEC EDGAR Form 4",
     "rows": 25,
     "delay": "hours",
@@ -332,6 +332,40 @@
       }
     },
     {
+      "id": "0002001011-26-000159:edgardoc.xml",
+      "filed": "2026-11-25",
+      "names": [
+        "Klein Frank  (CIK 0002037530)",
+        "Rocket Lab Corp  (CIK 0001819994)"
+      ],
+      "trade": {
+        "owner": "Klein Frank",
+        "ticker": "RKLB",
+        "code": "S",
+        "shares": 12300,
+        "price": 42.6748,
+        "acquired": false,
+        "form": "4"
+      }
+    },
+    {
+      "id": "0002001011-26-000158:edgardoc.xml",
+      "filed": "2026-11-25",
+      "names": [
+        "Kampani Arjun  (CIK 0001671507)",
+        "Rocket Lab Corp  (CIK 0001819994)"
+      ],
+      "trade": {
+        "owner": "Kampani Arjun",
+        "ticker": "RKLB",
+        "code": "S",
+        "shares": 2200,
+        "price": 42.6714,
+        "acquired": false,
+        "form": "4"
+      }
+    },
+    {
       "id": "0001999488-26-000015:wk-form4_1795803067.xml",
       "filed": "2026-11-25",
       "names": [
@@ -396,40 +430,6 @@
         "shares": 98658,
         "price": 0,
         "acquired": false,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0001976408-26-000978:primary_doc.xml",
-      "filed": "2026-11-25",
-      "names": [
-        "Offer Or  (CIK 0001910424)",
-        "SIMILARWEB LTD.  (CIK 0001842731)"
-      ],
-      "trade": {
-        "owner": "Offer Or",
-        "ticker": "SMWB",
-        "code": "M",
-        "shares": 16000,
-        "price": 0,
-        "acquired": true,
-        "form": "4"
-      }
-    },
-    {
-      "id": "0001934850-26-000135:form4.xml",
-      "filed": "2026-11-24",
-      "names": [
-        "Murphy Conor  (CIK 0001716520)",
-        "F&G Annuities & Life, Inc.  (CIK 0001934850)"
-      ],
-      "trade": {
-        "owner": "Murphy Conor",
-        "ticker": "FG",
-        "code": "A",
-        "shares": 156457,
-        "price": 0,
-        "acquired": true,
         "form": "4"
       }
     }

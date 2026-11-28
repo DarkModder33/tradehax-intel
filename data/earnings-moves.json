@@ -1,6 +1,6 @@
 {
   "meta": {
-    "asOf": "2026-11-27T21:10:16.467Z",
+    "asOf": "2026-11-28T04:18:16.679Z",
     "source": "Nasdaq report dates, Alpaca SIP closes, Cboe/Alpaca straddles",
     "rows": 128,
     "delay": "daily",
@@ -1806,32 +1806,32 @@
     {
       "sym": "CRM",
       "reportDate": "2026-12-02",
-      "implied": 0.10609651555645201,
+      "implied": 0.11578975946136721,
       "impliedExpiry": "2026-12-04",
-      "spot": 198.31,
+      "spot": 184.17,
       "avgMove": 0.09293342852418479,
       "samples": 4,
-      "capturedAt": "2026-11-27T21:10:11.642Z"
+      "capturedAt": "2026-11-28T04:18:10.326Z"
     },
     {
       "sym": "AVGO",
       "reportDate": "2026-12-09",
-      "implied": null,
-      "impliedExpiry": null,
-      "spot": 312.55,
+      "implied": 0.12433022106715436,
+      "impliedExpiry": "2026-12-11",
+      "spot": 311.67,
       "avgMove": 0.08818401143131988,
       "samples": 4,
-      "capturedAt": "2026-11-27T21:10:05.483Z"
+      "capturedAt": "2026-11-28T04:18:00.208Z"
     },
     {
       "sym": "COST",
       "reportDate": "2026-12-10",
-      "implied": 0.04547813734952924,
+      "implied": 0.05374430358286537,
       "impliedExpiry": "2026-12-11",
-      "spot": 1098.22,
+      "spot": 1095.9301,
       "avgMove": 0.021812712303123455,
       "samples": 4,
-      "capturedAt": "2026-11-27T21:10:09.074Z"
+      "capturedAt": "2026-11-28T04:18:05.328Z"
     },
     {
       "sym": "ORCL",
@@ -1841,7 +1841,7 @@
       "spot": null,
       "avgMove": 0.08859002192527357,
       "samples": 4,
-      "capturedAt": "2026-11-27T21:10:12.029Z"
+      "capturedAt": "2026-11-28T04:18:10.897Z"
     },
     {
       "sym": "JPM",
@@ -1851,7 +1851,7 @@
       "spot": null,
       "avgMove": 0.028966046547422075,
       "samples": 4,
-      "capturedAt": "2026-11-27T21:10:06.208Z"
+      "capturedAt": "2026-11-28T04:18:01.180Z"
     },
     {
       "sym": "BAC",
@@ -1861,7 +1861,7 @@
       "spot": null,
       "avgMove": 0.028940391193794185,
       "samples": 4,
-      "capturedAt": "2026-11-27T21:10:10.615Z"
+      "capturedAt": "2026-11-28T04:18:08.040Z"
     },
     {
       "sym": "NFLX",
@@ -1871,7 +1871,7 @@
       "spot": null,
       "avgMove": 0.06490348455041686,
       "samples": 4,
-      "capturedAt": "2026-11-27T21:10:11.254Z"
+      "capturedAt": "2026-11-28T04:18:09.160Z"
     },
     {
       "sym": "JNJ",
@@ -1881,27 +1881,27 @@
       "spot": null,
       "avgMove": 0.01419663255708406,
       "samples": 4,
-      "capturedAt": "2026-11-27T21:10:10.195Z"
+      "capturedAt": "2026-11-28T04:18:07.379Z"
     }
   ],
   "captures": {
     "CRM|2026-12-02": {
-      "implied": 0.10609651555645201,
+      "implied": 0.11578975946136721,
       "expiry": "2026-12-04",
-      "spot": 198.31,
-      "at": "2026-11-27T21:10:11.642Z"
+      "spot": 184.17,
+      "at": "2026-11-28T04:18:10.326Z"
     },
     "AVGO|2026-12-09": {
-      "implied": 0.1411376751854905,
+      "implied": 0.12433022106715436,
       "expiry": "2026-12-11",
-      "spot": 303.25,
-      "at": "2026-11-26T18:49:45.890Z"
+      "spot": 311.67,
+      "at": "2026-11-28T04:18:00.208Z"
     },
     "COST|2026-12-10": {
-      "implied": 0.04547813734952924,
+      "implied": 0.05374430358286537,
       "expiry": "2026-12-11",
-      "spot": 1098.22,
-      "at": "2026-11-27T21:10:09.073Z"
+      "spot": 1095.9301,
+      "at": "2026-11-28T04:18:05.328Z"
     }
   }
 }
